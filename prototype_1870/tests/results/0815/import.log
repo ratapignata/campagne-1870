@@ -1,0 +1,224 @@
+Godot Engine v4.5.stable.official.876b29033 - https://godotengine.org
+
+ERROR: Condition "_sock == -1" is true. Returning: FAILED
+   at: open (drivers/unix/net_socket_unix.cpp:267)
+ERROR: Condition "err != OK" is true. Returning: ERR_CANT_CREATE
+   at: listen (core/io/tcp_server.cpp:57)
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Project initialization (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Scanning file structure...[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Loading global class names...[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Verifying GDExtensions...[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Creating autoload scripts...[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initializing plugins...[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Starting file scan...[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started Registering global classes... (48 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   2% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   4% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   6% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[   8% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  10% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  12% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  14% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  16% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  18% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  20% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  22% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  24% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  26% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  28% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  30% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  32% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  34% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  36% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  38% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  40% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  42% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  44% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  46% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  48% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  51% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  53% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  55% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  57% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  59% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  61% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  63% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  65% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  67% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  69% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  71% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  73% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  75% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  77% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  79% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  81% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  83% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  85% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  87% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  89% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  91% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  93% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  95% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started Scanning actions... (146 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | DejaVuSans-Bold.ttf[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | DejaVuSans.ttf[39m[0m
+[   1% ] [90m[1m_update_scan_actions[22m | DejaVuSerif-Bold.ttf[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | assault.wav[39m[0m
+[   2% ] [90m[1m_update_scan_actions[22m | cannon.wav[39m[0m
+[   3% ] [90m[1m_update_scan_actions[22m | cannon_alt.wav[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | rifle.wav[39m[0m
+[   4% ] [90m[1m_update_scan_actions[22m | rifle_alt.wav[39m[0m
+[   5% ] [90m[1m_update_scan_actions[22m | slow_world.ogg[39m[0m
+[   6% ] [90m[1m_update_scan_actions[22m | flag_de.svg[39m[0m
+[   6% ] [90m[1m_update_scan_actions[22m | flag_fr.svg[39m[0m
+[   7% ] [90m[1m_update_scan_actions[22m | logo.svg[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | 1870_v07_apercu_large.png[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | 1870_v07_artillerie_large.png[39m[0m
+[   9% ] [90m[1m_update_scan_actions[22m | 1870_v07_fiche_desorganise_retranche_large.png[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | 1870_v07_resultat_mineur_large.png[39m[0m
+[  10% ] [90m[1m_update_scan_actions[22m | 1870_v07_resultat_reconquete_large.png[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | 1870_v07_tir_en_hauteur_large.png[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | 1870_v08_choix_formations.png[39m[0m
+[  12% ] [90m[1m_update_scan_actions[22m | 1870_v08_choix_formations_large.png[39m[0m
+[  13% ] [90m[1m_update_scan_actions[22m | 1870_v08_cible_village_large.png[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | 1870_v08_fiche_tirailleurs.png[39m[0m
+[  14% ] [90m[1m_update_scan_actions[22m | 1870_v08_fiche_tirailleurs_large.png[39m[0m
+[  15% ] [90m[1m_update_scan_actions[22m | 1870_v071_cible_village_large.png[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | 1870_v071_ennemi_village_large.png[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | 1870_v071_pions_drapeaux_large.png[39m[0m
+[  17% ] [90m[1m_update_scan_actions[22m | 1870_v072_aide_desorganise_large.png[39m[0m
+[  18% ] [90m[1m_update_scan_actions[22m | 1870_v072_aide_retranchement_large.png[39m[0m
+[  19% ] [90m[1m_update_scan_actions[22m | 1870_v072_camp_large.png[39m[0m
+[  19% ] [90m[1m_update_scan_actions[22m | 1870_v072_cible_village_large.png[39m[0m
+[  20% ] [90m[1m_update_scan_actions[22m | 1870_v072_resultat_mineur_large.png[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | 1870_v081_bouton_formation.png[39m[0m
+[  21% ] [90m[1m_update_scan_actions[22m | 1870_v081_bouton_formation_large.png[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | 1870_v081_formation_ralliement.png[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | 1870_v081_formation_ralliement_large.png[39m[0m
+[  23% ] [90m[1m_update_scan_actions[22m | 1870_v082_bouton_indisponible.png[39m[0m
+[  24% ] [90m[1m_update_scan_actions[22m | 1870_v082_bouton_jaune.png[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | 1870_formation_button_regression.png[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | 1870_v083_formation_button.png[39m[0m
+[  26% ] [90m[1m_update_scan_actions[22m | 1870_v083_formation_button_large.png[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | 1870_v084_carte.png[39m[0m
+[  27% ] [90m[1m_update_scan_actions[22m | 1870_v084_pions_etats.png[39m[0m
+[  28% ] [90m[1m_update_scan_actions[22m | 1870_v084_pions_vue_large.png[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | 1870_v084_pions_zoom_minimum.png[39m[0m
+[  29% ] [90m[1m_update_scan_actions[22m | 1870_v084_pions_zoom_normal.png[39m[0m
+[  30% ] [90m[1m_update_scan_actions[22m | 1870_v085_aide.png[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | 1870_v085_aide_large.png[39m[0m
+[  31% ] [90m[1m_update_scan_actions[22m | 1870_v085_carte.png[39m[0m
+[  32% ] [90m[1m_update_scan_actions[22m | 1870_v085_carte_large.png[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | 1870_v085_cavalier.png[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | 1870_v085_cavalier_large.png[39m[0m
+[  34% ] [90m[1m_update_scan_actions[22m | 1870_v085_charge_confirmation.png[39m[0m
+[  35% ] [90m[1m_update_scan_actions[22m | 1870_v085_charge_confirmation_large.png[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | 1870_v085_charge_resultat.png[39m[0m
+[  36% ] [90m[1m_update_scan_actions[22m | 1870_v085_charge_resultat_large.png[39m[0m
+[  37% ] [90m[1m_update_scan_actions[22m | 1870_v086_aide_large.png[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | 1870_v086_carte_large.png[39m[0m
+[  38% ] [90m[1m_update_scan_actions[22m | 1870_v086_identifie_large.png[39m[0m
+[  39% ] [90m[1m_update_scan_actions[22m | 1870_v086_journal_large.png[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | 1870_v086_prusse_large.png[39m[0m
+[  40% ] [90m[1m_update_scan_actions[22m | 1870_v086_repere_large.png[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | 1870_v086_signalement_large.png[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | 1870_v087_contact_perdu.png[39m[0m
+[  42% ] [90m[1m_update_scan_actions[22m | 1870_v087_effectif_exact.png[39m[0m
+[  43% ] [90m[1m_update_scan_actions[22m | 1870_v088_choix_ia.png[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | 1870_v088_choix_ia_large.png[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | 1870_v088_menu.png[39m[0m
+[  45% ] [90m[1m_update_scan_actions[22m | 1870_v088_menu_large.png[39m[0m
+[  46% ] [90m[1m_update_scan_actions[22m | 1870_v06_animation.png[39m[0m
+[  46% ] [90m[1m_update_scan_actions[22m | 1870_v06_animation_large.png[39m[0m
+[  47% ] [90m[1m_update_scan_actions[22m | 1870_v06_apercu.png[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | 1870_v06_apercu_large.png[39m[0m
+[  48% ] [90m[1m_update_scan_actions[22m | 1870_v06_armes.png[39m[0m
+[  49% ] [90m[1m_update_scan_actions[22m | 1870_v06_armes_large.png[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | 1870_v06_artillerie.png[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | 1870_v06_artillerie_large.png[39m[0m
+[  51% ] [90m[1m_update_scan_actions[22m | 1870_v06_assaut.png[39m[0m
+[  52% ] [90m[1m_update_scan_actions[22m | 1870_v06_assaut_large.png[39m[0m
+[  53% ] [90m[1m_update_scan_actions[22m | 1870_v06_camp.png[39m[0m
+[  53% ] [90m[1m_update_scan_actions[22m | 1870_v06_camp_large.png[39m[0m
+[  54% ] [90m[1m_update_scan_actions[22m | 1870_v06_cibles.png[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | 1870_v06_cibles_large.png[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | 1870_v06_desorganise.png[39m[0m
+[  56% ] [90m[1m_update_scan_actions[22m | 1870_v06_desorganise_large.png[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | 1870_v06_fiche_terrain.png[39m[0m
+[  57% ] [90m[1m_update_scan_actions[22m | 1870_v06_fiche_terrain_large.png[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | 1870_v06_journal.png[39m[0m
+[  59% ] [90m[1m_update_scan_actions[22m | 1870_v06_journal_large.png[39m[0m
+[  59% ] [90m[1m_update_scan_actions[22m | 1870_v06_menu.png[39m[0m
+[  60% ] [90m[1m_update_scan_actions[22m | 1870_v06_menu_large.png[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | 1870_v06_moral.png[39m[0m
+[  61% ] [90m[1m_update_scan_actions[22m | 1870_v06_moral_large.png[39m[0m
+[  62% ] [90m[1m_update_scan_actions[22m | 1870_v06_resultat.png[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | 1870_v06_resultat_large.png[39m[0m
+[  63% ] [90m[1m_update_scan_actions[22m | 1870_v06_resultat_reconquete.png[39m[0m
+[  64% ] [90m[1m_update_scan_actions[22m | 1870_v06_resultat_reconquete_large.png[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | 1870_v06_retranchement.png[39m[0m
+[  65% ] [90m[1m_update_scan_actions[22m | 1870_v06_retranchement_large.png[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | 1870_v06_riposte.png[39m[0m
+[  67% ] [90m[1m_update_scan_actions[22m | 1870_v06_riposte_large.png[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | 1870_v06_terrains.png[39m[0m
+[  68% ] [90m[1m_update_scan_actions[22m | 1870_v06_terrains_large.png[39m[0m
+[  69% ] [90m[1m_update_scan_actions[22m | 1870_v06_tir.png[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | 1870_v06_tir_large.png[39m[0m
+[  70% ] [90m[1m_update_scan_actions[22m | 1870_v06_trajet_long.png[39m[0m
+[  71% ] [90m[1m_update_scan_actions[22m | 1870_v06_trajet_long_large.png[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | 1870_v089_fiche.png[39m[0m
+[  72% ] [90m[1m_update_scan_actions[22m | 1870_v089_fiche_large.png[39m[0m
+[  73% ] [90m[1m_update_scan_actions[22m | 1870_v089_isolee.png[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | 1870_v089_isolee_large.png[39m[0m
+[  74% ] [90m[1m_update_scan_actions[22m | 1870_v0810_cavalerie.png[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | 1870_v0810_cavalerie_large.png[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | 1870_v0810_fiche.png[39m[0m
+[  76% ] [90m[1m_update_scan_actions[22m | 1870_v0810_fiche_large.png[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | 1870_v0810_isolee.png[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | 1870_v0810_isolee_large.png[39m[0m
+[  78% ] [90m[1m_update_scan_actions[22m | 1870_v0810_trajet.png[39m[0m
+[  79% ] [90m[1m_update_scan_actions[22m | 1870_v0810_trajet_large.png[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | 1870_v0811_cavalerie.png[39m[0m
+[  80% ] [90m[1m_update_scan_actions[22m | 1870_v0811_cavalerie_large.png[39m[0m
+[  81% ] [90m[1m_update_scan_actions[22m | 1870_v0811_fiche.png[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | 1870_v0811_fiche_large.png[39m[0m
+[  82% ] [90m[1m_update_scan_actions[22m | 1870_v0811_isolee.png[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | 1870_v0811_isolee_large.png[39m[0m
+[  84% ] [90m[1m_update_scan_actions[22m | 1870_v0811_pions.png[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | 1870_v0811_pions_contact.png[39m[0m
+[  85% ] [90m[1m_update_scan_actions[22m | 1870_v0811_pions_contact_large.png[39m[0m
+[  86% ] [90m[1m_update_scan_actions[22m | 1870_v0811_pions_large.png[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | 1870_v0811_trajet.png[39m[0m
+[  87% ] [90m[1m_update_scan_actions[22m | 1870_v0811_trajet_large.png[39m[0m
+[  88% ] [90m[1m_update_scan_actions[22m | 1870_v0811_zoom_lointain.png[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | 1870_v0811_zoom_lointain_large.png[39m[0m
+[  89% ] [90m[1m_update_scan_actions[22m | 1870_v0811_zoom_normal.png[39m[0m
+[  90% ] [90m[1m_update_scan_actions[22m | 1870_v0811_zoom_normal_large.png[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | 1870_v0812_apercu.png[39m[0m
+[  91% ] [90m[1m_update_scan_actions[22m | 1870_v0813_alertes.png[39m[0m
+[  92% ] [90m[1m_update_scan_actions[22m | 1870_v0813_bouton_grise.png[39m[0m
+[  93% ] [90m[1m_update_scan_actions[22m | 1870_v0813_combat.png[39m[0m
+[  93% ] [90m[1m_update_scan_actions[22m | 1870_v0813_fiche.png[39m[0m
+[  94% ] [90m[1m_update_scan_actions[22m | 1870_v0813_zoom_lointain.png[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | cannon.mp3[39m[0m
+[  95% ] [90m[1m_update_scan_actions[22m | charge.mp3[39m[0m
+[  96% ] [90m[1m_update_scan_actions[22m | music.mp3[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | musket.mp3[39m[0m
+[  97% ] [90m[1m_update_scan_actions[22m | steps.mp3[39m[0m
+[  98% ] [90m[1m_update_scan_actions[22m | icon.svg[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Loading editor (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Loading editor layout...[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+ERROR: Condition "_sock == -1" is true. Returning: FAILED
+   at: open (drivers/unix/net_socket_unix.cpp:267)
+ERROR: Condition "err != OK" is true. Returning: ERR_CANT_CREATE
+   at: listen (core/io/tcp_server.cpp:57)
+10-02 23:12:36.625   434   434 F adb     : adb_utils.cpp:315 Cannot mkdir '/root/.android': Read-only file system

@@ -1,0 +1,54 @@
+Godot Engine v4.5.stable.official.876b29033 - https://godotengine.org
+
+UI viewport: (1520.0, 720.0)
+PASS: write genuine v0815 save
+PASS: resume v0815 without changing PA or rules
+PASS: both cavalry budgets four PA
+PASS: new battle uses corrected pack and independent save
+PASS: public height transitions have contour lines
+PASS: all 600 cells selectable with north on left
+PASS: tap selects French unit
+PASS: initial Sauer unit: separate button and text rectangles
+PASS: initial Sauer unit: heading fits reserved width
+PASS: initial Sauer unit: detail fits available height
+PASS: initial Sauer unit: unit rows and columns do not overlap
+PASS: second tap deselects
+PASS: tap destination previews ford and cost
+PASS: one blue marker on planned open-water crossing
+PASS: no ford marker on bridge
+PASS: ford preview: separate button and text rectangles
+PASS: ford preview: heading fits reserved width
+PASS: ford preview: detail fits available height
+PASS: ford preview: unit rows and columns do not overlap
+PASS: second destination tap crosses and stops movement
+PASS: brief crossing effect starts without input lock
+PASS: after crossing: separate button and text rectangles
+PASS: after crossing: heading fits reserved width
+PASS: after crossing: detail fits available height
+PASS: after crossing: unit rows and columns do not overlap
+PASS: touch cannot bypass halt
+PASS: UI save restores crossing state
+PASS: undo visible after reversible crossing
+PASS: undo restores cell PA and crossing permission
+PASS: actual fire locks undo
+PASS: undo visible but disabled after combat
+PASS: disabled undo explains reason
+PASS: disabled undo: separate button and text rectangles
+PASS: disabled undo: heading fits reserved width
+PASS: disabled undo: detail fits available height
+PASS: disabled undo: unit rows and columns do not overlap
+PASS: rest and undo separate
+PASS: rest and disabled undo: separate button and text rectangles
+PASS: rest and disabled undo: heading fits reserved width
+PASS: rest and disabled undo: detail fits available height
+PASS: rest and disabled undo: unit rows and columns do not overlap
+PASS: zero PA retains enabled undo button
+PASS: touch undo restores full PA after exhausted movement
+PASS: Prussian camp selectable
+PASS: Prussian unit: separate button and text rectangles
+PASS: Prussian unit: heading fits reserved width
+PASS: Prussian unit: detail fits available height
+PASS: Prussian unit: unit rows and columns do not overlap
+PASS: enemy hidden for crossing animation check
+PASS: hidden enemy crossing never leaks through animation
+UI 0816: 50/50 passed

@@ -1,0 +1,9 @@
+Godot Engine v4.5.stable.official.876b29033 - https://godotengine.org
+
+MOVE/FIRE fixture: { "kind": "move", "unit": "0_0", "path": [220, 250] }
+CHARGE easy: { "kind": "assault", "unit": "cavalry_0", "target": "1_0" }
+CHARGE hard: { "kind": "move", "unit": "cavalry_0", "path": [280, 279, 309, 339, 370] }
+BATTLE easy decisions=136 total_ms=25800 max_decision_ms=228 scores=[1, 5]
+BATTLE medium decisions=152 total_ms=66243 max_decision_ms=695 scores=[3, 3]
+BATTLE hard decisions=172 total_ms=69156 max_decision_ms=916 scores=[6, 0]
+AI 089: 28 / 28 passed

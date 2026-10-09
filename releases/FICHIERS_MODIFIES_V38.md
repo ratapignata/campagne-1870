@@ -1,0 +1,78 @@
+# Fichiers V38
+
+Comparaison à la copie originale V37 (commit local 4d5ea56). Les fichiers de scénario et ai_profiles.json, rules_base.gd, intel.gd et support.gd sont inchangés. Les tests historiques sont conservés.
+
+- `AUDIT_V37_PLAN_V38.md`
+- `BATAILLE_V38.md`
+- `README.md`
+- `README_V37.md`
+- `TESTS_V38.md`
+- `VERSION_0838.md`
+- `assets/fonts/DejaVuSerif-Italic.ttf`
+- `assets/fonts/DejaVuSerif-Italic.ttf.import`
+- `export_presets.cfg`
+- `packs/1870/fr.json`
+- `project.godot`
+- `tests/results/0838/C_turn12.json`
+- `tests/results/0838/E_final.json`
+- `tests/results/0838/artillery-budget-delivery.log`
+- `tests/results/0838/compare_easy_187037.json`
+- `tests/results/0838/compare_easy_187038.json`
+- `tests/results/0838/compare_hard_187037.json`
+- `tests/results/0838/compare_hard_187038.json`
+- `tests/results/0838/compare_medium_187037.json`
+- `tests/results/0838/compare_medium_187038.json`
+- `tests/results/0838/comparison_before_after.json`
+- `tests/results/0838/content_integrity.json`
+- `tests/results/0838/engine_function_integrity.json`
+- `tests/results/0838/french-hard-v37-187037.json`
+- `tests/results/0838/french-hard-v37-187038.json`
+- `tests/results/0838/french-hard-v38-187037.json`
+- `tests/results/0838/french-hard-v38-187038.json`
+- `tests/results/0838/full_battle.log`
+- `tests/results/0838/full_battle_analysis.json`
+- `tests/results/0838/full_battle_report.json`
+- `tests/results/0838/full_final_save.json`
+- `tests/results/0838/full_replay.log`
+- `tests/results/0838/full_resume.log`
+- `tests/results/0838/full_turn12.json`
+- `tests/results/0838/legacy-save.log`
+- `tests/results/0838/regression_final.json`
+- `tests/results/0838/regression_results.json`
+- `tests/results/0838/reinforcements.log`
+- `tests/results/0838/stabilization-delivery.log`
+- `tests/results/0838/test_artillery_budget.log`
+- `tests/results/0838/test_legacy_save.log`
+- `tests/results/0838/test_reinforcements.log`
+- `tests/results/0838/test_stabilization.log`
+- `tests/results/0838/test_ui.log`
+- `tests/results/0838/ui-delivery-layout.log`
+- `tests/v38/run_comparisons.py`
+- `tests/v38/run_full_battle.py`
+- `tests/v38/test_artillery_budget.gd`
+- `tests/v38/test_artillery_budget.gd.uid`
+- `tests/v38/test_comparison.gd`
+- `tests/v38/test_comparison.gd.uid`
+- `tests/v38/test_full_battle.gd`
+- `tests/v38/test_full_battle.gd.uid`
+- `tests/v38/test_legacy_save.gd`
+- `tests/v38/test_legacy_save.gd.uid`
+- `tests/v38/test_reinforcements.gd`
+- `tests/v38/test_reinforcements.gd.uid`
+- `tests/v38/test_replay.gd`
+- `tests/v38/test_replay.gd.uid`
+- `tests/v38/test_stabilization.gd`
+- `tests/v38/test_stabilization.gd.uid`
+- `tests/v38/test_ui.gd`
+- `tests/v38/test_ui.gd.uid`
+- `war_engine/ai/tactical_ai.gd`
+- `war_engine/core/engine.gd`
+- `war_engine/presentation/cartography.gd`
+- `war_engine/presentation/cartography.gd.uid`
+- `war_engine/presentation/main.gd`
+- `war_engine/presentation/map_view.gd`
+- `FICHIERS_MODIFIES_V38.md` : ce récapitulatif.
+
+- `tests/results/0838/regression_logs/` : sorties des 26 suites finales et import.
+- `tests/results/0838/initial_failures/` : échecs initiaux corrigés.
+- `tests/results/0838/archive_verification.json` : vérification indépendante de l’archive.

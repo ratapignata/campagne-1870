@@ -1,0 +1,1 @@
+Scripts de travail ponctuels archivés, non idempotents. Ne pas les réexécuter sur le projet final : le code et le pack actuels font autorité. Pour construire, ouvrir project.godot avec Godot 4.5 et utiliser le preset Android.

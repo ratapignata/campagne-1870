@@ -1,0 +1,94 @@
+[
+	{
+		"action": {
+			"kind": "move",
+			"path": [
+				96,
+				66,
+				37
+			],
+			"unit": "qg_fr_Ducrot"
+		},
+		"difficulty": "easy",
+		"ms": 683,
+		"side": 0
+	},
+	{
+		"action": {
+			"kind": "move",
+			"path": [
+				435,
+				465,
+				495,
+				526,
+				556
+			],
+			"unit": "qg_pr_Schmidt"
+		},
+		"difficulty": "easy",
+		"ms": 848,
+		"side": 1
+	},
+	{
+		"action": {
+			"kind": "move",
+			"path": [
+				101,
+				102,
+				72,
+				42
+			],
+			"unit": "qg_fr_Pellé"
+		},
+		"difficulty": "medium",
+		"ms": 659,
+		"side": 0
+	},
+	{
+		"action": {
+			"kind": "move",
+			"path": [
+				435,
+				465,
+				495,
+				526,
+				556
+			],
+			"unit": "qg_pr_Schmidt"
+		},
+		"difficulty": "medium",
+		"ms": 967,
+		"side": 1
+	},
+	{
+		"action": {
+			"kind": "move",
+			"path": [
+				101,
+				102,
+				72,
+				42
+			],
+			"unit": "qg_fr_Pellé"
+		},
+		"difficulty": "hard",
+		"ms": 617,
+		"side": 0
+	},
+	{
+		"action": {
+			"kind": "move",
+			"path": [
+				435,
+				465,
+				495,
+				526,
+				556
+			],
+			"unit": "qg_pr_Schmidt"
+		},
+		"difficulty": "hard",
+		"ms": 916,
+		"side": 1
+	}
+]

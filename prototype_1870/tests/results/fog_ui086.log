@@ -1,0 +1,25 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 20.1.2, 256 bits)
+
+PASS: old cavalry battle keeps progress and full visibility
+PASS: legacy cavalry also charges for two PA
+PASS: new game enables fog and charge two PA
+PASS: restart resumes new fog save
+PASS: touch hidden enemy cell only inspects known terrain
+PASS: terrain sheet explains unobserved sector
+PASS: spotted enemy shows type rather than unit identity
+PASS: enemy sheet hides exact strength and PA
+PASS: spotted enemy hides morale and formation
+PASS: near cavalry identifies enemy
+PASS: identified enemy still has no exact AP or reaction budget
+PASS: lost contact does not track hidden true position
+PASS: old marker opens dated report without selectable enemy
+PASS: stale report cannot be charged
+PASS: button and confirmation both show charge two PA
+PASS: first enemy tap does not charge
+PASS: second tap charges once for exactly two PA
+PASS: combat report separates own losses from enemy estimate
+PASS: Prussian player retains full own-unit information
+FOG UI 086: 19 / 19 passed

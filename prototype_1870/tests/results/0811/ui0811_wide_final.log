@@ -1,0 +1,65 @@
+Godot Engine v4.5.stable.official.876b29033 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 20.1.2, 256 bits)
+
+PASS: legacy battle restored without adding PA
+PASS: new battle uses 5 PA
+PASS: short morale and numeric PA
+PASS: links in right column
+PASS: infantry initial: separate button and text rectangles
+PASS: infantry initial: heading fits reserved width
+PASS: infantry initial: detail fits available height
+PASS: infantry initial: unit rows and columns do not overlap
+PASS: Prussian infantry 3 moved two cells, 2.75 AP, undo available
+PASS: infantry after move: separate button and text rectangles
+PASS: infantry after move: heading fits reserved width
+PASS: infantry after move: detail fits available height
+PASS: infantry after move: unit rows and columns do not overlap
+PASS: second route preview with undo reproduces reported case
+PASS: route plus undo: separate button and text rectangles
+PASS: route plus undo: heading fits reserved width
+PASS: route plus undo: detail fits available height
+PASS: route plus undo: unit rows and columns do not overlap
+PASS: undo remains clickable during preview
+PASS: cavalry 5 / 5 shown
+PASS: cavalry: separate button and text rectangles
+PASS: cavalry: heading fits reserved width
+PASS: cavalry: detail fits available height
+PASS: cavalry: unit rows and columns do not overlap
+PASS: artillery limbered: separate button and text rectangles
+PASS: artillery limbered: heading fits reserved width
+PASS: artillery limbered: detail fits available height
+PASS: artillery limbered: unit rows and columns do not overlap
+PASS: artillery deployed: separate button and text rectangles
+PASS: artillery deployed: heading fits reserved width
+PASS: artillery deployed: detail fits available height
+PASS: artillery deployed: unit rows and columns do not overlap
+PASS: entrenched and rest: separate button and text rectangles
+PASS: entrenched and rest: heading fits reserved width
+PASS: entrenched and rest: detail fits available height
+PASS: entrenched and rest: unit rows and columns do not overlap
+PASS: isolated disorganized: separate button and text rectangles
+PASS: isolated disorganized: heading fits reserved width
+PASS: isolated disorganized: detail fits available height
+PASS: isolated disorganized: unit rows and columns do not overlap
+PASS: terrain: separate button and text rectangles
+PASS: terrain: heading fits reserved width
+PASS: terrain: detail fits available height
+PASS: terrain: unit rows and columns do not overlap
+PASS: enemy exact effectif displayed without combat
+PASS: enemy private ammo links and PA remain hidden
+PASS: enemy adjacent: separate button and text rectangles
+PASS: enemy adjacent: heading fits reserved width
+PASS: enemy adjacent: detail fits available height
+PASS: enemy adjacent: unit rows and columns do not overlap
+PASS: friendly enlarged card: separate button and text rectangles
+PASS: friendly enlarged card: heading fits reserved width
+PASS: friendly enlarged card: detail fits available height
+PASS: friendly enlarged card: unit rows and columns do not overlap
+PASS: out of sight removes exact enemy information
+UI 0811: 55/55 passed
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+     at: cleanup (core/object/object.cpp:2514)
+ERROR: 2 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:795)

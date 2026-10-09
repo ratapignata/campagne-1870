@@ -1,0 +1,3962 @@
+{
+	"inactive_with_observed_opportunity": [
+		{
+			"ap": 9,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				13
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 1,
+			"unit": "pru_38"
+		},
+		{
+			"ap": 2,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				12
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 1,
+			"unit": "pru_41"
+		},
+		{
+			"ap": 10,
+			"assigned_goal": 161,
+			"cell": [
+				16,
+				12
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 1,
+			"unit": "pru_42"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				19,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 1,
+			"unit": "pru_55"
+		},
+		{
+			"ap": 10,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				11
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 2,
+			"unit": "pru_36"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				12
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 2,
+			"unit": "pru_39"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				12
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 2,
+			"unit": "pru_41"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				11
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 2,
+			"unit": "pru_43"
+		},
+		{
+			"ap": 7,
+			"assigned_goal": 161,
+			"cell": [
+				18,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen"
+			],
+			"side": 1,
+			"turn": 2,
+			"unit": "pru_54"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 2,
+			"unit": "pru_55"
+		},
+		{
+			"ap": 2,
+			"assigned_goal": 161,
+			"cell": [
+				19,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 2,
+			"unit": "art_pr_Schmidt0"
+		},
+		{
+			"ap": 8,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 3,
+			"unit": "pru_37"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				12
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 3,
+			"unit": "pru_39"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				16,
+				11
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 3,
+			"unit": "pru_40"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				11
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 3,
+			"unit": "pru_43"
+		},
+		{
+			"ap": 3,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 3,
+			"unit": "pru_55"
+		},
+		{
+			"ap": 2,
+			"assigned_goal": 161,
+			"cell": [
+				19,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 3,
+			"unit": "art_pr_Sandrart1"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 3,
+			"unit": "art_pr_Schmidt0"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 4,
+			"unit": "pru_36"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 4,
+			"unit": "pru_41"
+		},
+		{
+			"ap": 2,
+			"assigned_goal": 161,
+			"cell": [
+				22,
+				11
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 4,
+			"unit": "pru_45"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				9
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 4,
+			"unit": "pru_52"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 4,
+			"unit": "pru_55"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 4,
+			"unit": "art_pr_Schmidt0"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				11,
+				6
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 5,
+			"unit": "pru_36"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				9
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 5,
+			"unit": "pru_39"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 5,
+			"unit": "pru_40"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 5,
+			"unit": "pru_46"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				21,
+				11
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 5,
+			"unit": "pru_50"
+		},
+		{
+			"ap": 2,
+			"assigned_goal": 161,
+			"cell": [
+				22,
+				11
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 5,
+			"unit": "pru_51"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				9
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 5,
+			"unit": "pru_52"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 5,
+			"unit": "pru_55"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 5,
+			"unit": "pru_56"
+		},
+		{
+			"ap": 3,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 5,
+			"unit": "pru_57"
+		},
+		{
+			"ap": 2,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 5,
+			"unit": "art_pr_Sandrart1"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				11,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 5,
+			"unit": "art_pr_Schmidt0"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 135,
+			"cell": [
+				12,
+				6
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 6,
+			"unit": "pru_39"
+		},
+		{
+			"ap": 6,
+			"assigned_goal": 135,
+			"cell": [
+				14,
+				9
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 6,
+			"unit": "pru_47"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 135,
+			"cell": [
+				13,
+				5
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 6,
+			"unit": "pru_52"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 135,
+			"cell": [
+				17,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 6,
+			"unit": "pru_53"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 135,
+			"cell": [
+				13,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 6,
+			"unit": "pru_55"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 135,
+			"cell": [
+				18,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen"
+			],
+			"side": 1,
+			"turn": 6,
+			"unit": "pru_56"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 135,
+			"cell": [
+				14,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 6,
+			"unit": "pru_57"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 135,
+			"cell": [
+				12,
+				12
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 6,
+			"unit": "art_pr_Gersdorff0"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				6
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 7,
+			"unit": "pru_38"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 135,
+			"cell": [
+				17,
+				5
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 1,
+			"turn": 7,
+			"unit": "pru_44"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 7,
+			"unit": "pru_45"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				9
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 7,
+			"unit": "pru_47"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				11
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 7,
+			"unit": "pru_49"
+		},
+		{
+			"ap": 2,
+			"assigned_goal": 135,
+			"cell": [
+				20,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen"
+			],
+			"side": 1,
+			"turn": 7,
+			"unit": "pru_50"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 7,
+			"unit": "pru_55"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 7,
+			"unit": "pru_57"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 7,
+			"unit": "art_pr_Schmidt0"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 7,
+			"unit": "art_pr_Schmidt1"
+		},
+		{
+			"ap": 2,
+			"assigned_goal": 135,
+			"cell": [
+				19,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 7,
+			"unit": "art_pr_Gersdorff1"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 8,
+			"unit": "pru_41"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 8,
+			"unit": "pru_42"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 8,
+			"unit": "pru_45"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				9
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 8,
+			"unit": "pru_47"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				9
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 8,
+			"unit": "pru_51"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 8,
+			"unit": "pru_55"
+		},
+		{
+			"ap": 7,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				6
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 8,
+			"unit": "pru_56"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 8,
+			"unit": "pru_57"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 8,
+			"unit": "art_pr_Schmidt0"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 9,
+			"unit": "pru_41"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 9,
+			"unit": "pru_42"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 9,
+			"unit": "pru_45"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				9
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 9,
+			"unit": "pru_47"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 9,
+			"unit": "pru_49"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 135,
+			"cell": [
+				20,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 9,
+			"unit": "pru_50"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				9
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 9,
+			"unit": "pru_51"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 9,
+			"unit": "pru_55"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				6
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 9,
+			"unit": "pru_56"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				10
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 9,
+			"unit": "pru_57"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 9,
+			"unit": "art_pr_Schmidt0"
+		},
+		{
+			"ap": 2,
+			"assigned_goal": 135,
+			"cell": [
+				13,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 10,
+			"unit": "pru_41"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 135,
+			"cell": [
+				13,
+				6
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 10,
+			"unit": "pru_43"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 135,
+			"cell": [
+				12,
+				5
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 10,
+			"unit": "pru_48"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 135,
+			"cell": [
+				20,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 10,
+			"unit": "pru_50"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 135,
+			"cell": [
+				13,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 10,
+			"unit": "pru_55"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 135,
+			"cell": [
+				15,
+				6
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 10,
+			"unit": "pru_56"
+		},
+		{
+			"ap": 7,
+			"assigned_goal": 135,
+			"cell": [
+				16,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 10,
+			"unit": "pru_57"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 135,
+			"cell": [
+				13,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 10,
+			"unit": "art_pr_Schmidt0"
+		},
+		{
+			"ap": 6,
+			"assigned_goal": 135,
+			"cell": [
+				12,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 10,
+			"unit": "art_pr_Schachtmeyer0"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				9,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_2"
+		},
+		{
+			"ap": 8,
+			"assigned_goal": 161,
+			"cell": [
+				8,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_4"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_10"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_12"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_13"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_15"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				16,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_16"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_17"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				7,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_20"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				11,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_25"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_26"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_27"
+		},
+		{
+			"ap": 1,
+			"assigned_goal": 161,
+			"cell": [
+				22,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_28"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_29"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_30"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				6,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_31"
+		},
+		{
+			"ap": 2,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_32"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_33"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_34"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				9,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 11,
+			"unit": "art_fr_Raoult0"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 135,
+			"cell": [
+				14,
+				6
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 11,
+			"unit": "pru_38"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 135,
+			"cell": [
+				13,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 11,
+			"unit": "pru_41"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 135,
+			"cell": [
+				17,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen"
+			],
+			"side": 1,
+			"turn": 11,
+			"unit": "pru_42"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 135,
+			"cell": [
+				13,
+				8
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 11,
+			"unit": "pru_55"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 135,
+			"cell": [
+				15,
+				6
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 11,
+			"unit": "pru_56"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 135,
+			"cell": [
+				16,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 11,
+			"unit": "pru_57"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 135,
+			"cell": [
+				13,
+				6
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 1,
+			"turn": 11,
+			"unit": "art_pr_Schmidt0"
+		},
+		{
+			"ap": 8,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_3"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				8,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_4"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_13"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_14"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_15"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_17"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				7,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_20"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				11,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_25"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_26"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_27"
+		},
+		{
+			"ap": 8,
+			"assigned_goal": 161,
+			"cell": [
+				22,
+				7
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_28"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_29"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_30"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				6,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_31"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_32"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_33"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_34"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				9,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 12,
+			"unit": "art_fr_Raoult0"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_3"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				8,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_4"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				9,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_7"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				8,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_9"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_13"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_14"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_15"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_17"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				11,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_25"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_26"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_27"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_29"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_30"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				6,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_31"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_32"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_33"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_34"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				9,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 13,
+			"unit": "art_fr_Raoult0"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				7,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_1"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_3"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				8,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_4"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				8,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_5"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_10"
+		},
+		{
+			"ap": 8,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_12"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_15"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				11,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_25"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_26"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_27"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_29"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_30"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				6,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_31"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_32"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_33"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_34"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				9,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 14,
+			"unit": "art_fr_Raoult0"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				7,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_1"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_12"
+		},
+		{
+			"ap": 8,
+			"assigned_goal": 161,
+			"cell": [
+				16,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_19"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				7,
+				5
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_22"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				11,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_25"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_26"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_27"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_29"
+		},
+		{
+			"ap": 3,
+			"assigned_goal": 161,
+			"cell": [
+				5,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_30"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				6,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_31"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_32"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_34"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				7,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 15,
+			"unit": "art_fr_Raoult0"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_12"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_14"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				8,
+				9
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_24"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_26"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_27"
+		},
+		{
+			"ap": 5,
+			"assigned_goal": 161,
+			"cell": [
+				21,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_28"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_29"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				5,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_30"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				6,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_31"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_32"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_33"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_34"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				9,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 16,
+			"unit": "art_fr_Raoult0"
+		},
+		{
+			"ap": 2,
+			"assigned_goal": 161,
+			"cell": [
+				7,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_2"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_12"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				4,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_13"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_14"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_15"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				11,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_25"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_26"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_27"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				21,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_28"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_29"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				5,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_30"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				6,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_31"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_32"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_33"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_34"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				4,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_4"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				8,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_5"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				4,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_13"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_14"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				11,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_25"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_26"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				12,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_27"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				21,
+				4
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_28"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				13,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_29"
+		},
+		{
+			"ap": 16,
+			"assigned_goal": 161,
+			"cell": [
+				5,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_30"
+		},
+		{
+			"ap": 2,
+			"assigned_goal": 161,
+			"cell": [
+				4,
+				2
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_31"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				10,
+				1
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_32"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				15,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_33"
+		},
+		{
+			"ap": 12,
+			"assigned_goal": 161,
+			"cell": [
+				14,
+				0
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "fr_34"
+		},
+		{
+			"ap": 4,
+			"assigned_goal": 161,
+			"cell": [
+				6,
+				3
+			],
+			"holds_assigned_objective": false,
+			"legal_attacks": [],
+			"progress_to_enemy_objectives": [
+				"froeschwiller",
+				"elsasshausen",
+				"niederwald"
+			],
+			"side": 0,
+			"turn": 18,
+			"unit": "art_fr_Raoult0"
+		}
+	],
+	"note": "Only authorized observations examined. Legal progress is an opportunity proxy, not proof that a reserve should advance. Unit-turn observations may repeat the same unit.",
+	"pending_reinforcements": [
+		{
+			"arrival_turn": 3.0,
+			"cell": [
+				15,
+				4
+			],
+			"occupant_index": 45,
+			"unit": "qg_fr_Raoult"
+		}
+	],
+	"surrender_events": [
+		{
+			"cell": [
+				14,
+				7
+			],
+			"kind": "surrender",
+			"name_key": "reg_pru_54",
+			"prisoners": 158,
+			"serial": 27,
+			"side": 1,
+			"turn": 4,
+			"unit": "pru_54"
+		},
+		{
+			"cell": [
+				13,
+				5
+			],
+			"kind": "surrender",
+			"name_key": "reg_reserve_art_11",
+			"prisoners": 81,
+			"serial": 31,
+			"side": 1,
+			"turn": 6,
+			"unit": "reserve_art_11"
+		},
+		{
+			"cell": [
+				12,
+				5
+			],
+			"kind": "surrender",
+			"name_key": "reg_pru_52",
+			"prisoners": 203,
+			"serial": 39,
+			"side": 1,
+			"turn": 7,
+			"unit": "pru_52"
+		},
+		{
+			"cell": [
+				10,
+				6
+			],
+			"kind": "surrender",
+			"name_key": "reg_pru_36",
+			"prisoners": 872,
+			"serial": 49,
+			"side": 1,
+			"turn": 10,
+			"unit": "pru_36"
+		},
+		{
+			"cell": [
+				14,
+				5
+			],
+			"kind": "surrender",
+			"name_key": "reg_fr_6",
+			"prisoners": 176,
+			"serial": 52,
+			"side": 0,
+			"turn": 10,
+			"unit": "fr_6"
+		},
+		{
+			"cell": [
+				18,
+				4
+			],
+			"kind": "surrender",
+			"name_key": "reg_fr_11",
+			"prisoners": 259,
+			"serial": 53,
+			"side": 0,
+			"turn": 11,
+			"unit": "fr_11"
+		},
+		{
+			"cell": [
+				13,
+				4
+			],
+			"kind": "surrender",
+			"name_key": "reg_fr_8",
+			"prisoners": 361,
+			"serial": 61,
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_8"
+		},
+		{
+			"cell": [
+				10,
+				4
+			],
+			"kind": "surrender",
+			"name_key": "reg_pru_43",
+			"prisoners": 947,
+			"serial": 66,
+			"side": 1,
+			"turn": 14,
+			"unit": "pru_43"
+		}
+	]
+}

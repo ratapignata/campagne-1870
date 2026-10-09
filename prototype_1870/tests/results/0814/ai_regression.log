@@ -1,0 +1,4 @@
+Godot Engine v4.5.stable.official.876b29033 - https://godotengine.org
+
+MOVE/FIRE fixture: { "kind": "move", "unit": "0_0", "path": [220, 250] }
+CHARGE easy: { "kind": "assault", "unit": "cavalry_0", "target": "1_0" }

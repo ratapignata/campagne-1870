@@ -1,0 +1,10793 @@
+{
+  "id": "woerth_gunstett_workbench05",
+  "schema_version": 1,
+  "status": "ADAPTATION GAMEPLAY",
+  "runtime_ready": false,
+  "note": "Banc d’essai géographique, sans combat, formation, ZOC, fatigue ni troupes historiques. Les coûts et niveaux sont à tester.",
+  "width": 30,
+  "height": 20,
+  "neighbor_distance_m": 350,
+  "orientation": "north_left",
+  "tiles": [
+    {
+      "id": 0,
+      "q": 0,
+      "r": 0,
+      "xy": [
+        0.20207259421636903,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 1,
+      "q": 1,
+      "r": 0,
+      "xy": [
+        0.5051814855409226,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 2,
+      "q": 2,
+      "r": 0,
+      "xy": [
+        0.8082903768654761,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 3,
+      "q": 3,
+      "r": 0,
+      "xy": [
+        1.1113992681900298,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 4,
+      "q": 4,
+      "r": 0,
+      "xy": [
+        1.4145081595145832,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 5,
+      "q": 5,
+      "r": 0,
+      "xy": [
+        1.7176170508391368,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 6,
+      "q": 6,
+      "r": 0,
+      "xy": [
+        2.0207259421636903,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 7,
+      "q": 7,
+      "r": 0,
+      "xy": [
+        2.3238348334882435,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 8,
+      "q": 8,
+      "r": 0,
+      "xy": [
+        2.626943724812797,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 9,
+      "q": 9,
+      "r": 0,
+      "xy": [
+        2.930052616137351,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 10,
+      "q": 10,
+      "r": 0,
+      "xy": [
+        3.2331615074619044,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 11,
+      "q": 11,
+      "r": 0,
+      "xy": [
+        3.536270398786458,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 12,
+      "q": 12,
+      "r": 0,
+      "xy": [
+        3.8393792901110118,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 13,
+      "q": 13,
+      "r": 0,
+      "xy": [
+        4.142488181435565,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 14,
+      "q": 14,
+      "r": 0,
+      "xy": [
+        4.445597072760118,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 15,
+      "q": 15,
+      "r": 0,
+      "xy": [
+        4.748705964084672,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 16,
+      "q": 16,
+      "r": 0,
+      "xy": [
+        5.0518148554092255,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 17,
+      "q": 17,
+      "r": 0,
+      "xy": [
+        5.354923746733779,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 18,
+      "q": 18,
+      "r": 0,
+      "xy": [
+        5.658032638058333,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 19,
+      "q": 19,
+      "r": 0,
+      "xy": [
+        5.961141529382886,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 20,
+      "q": 20,
+      "r": 0,
+      "xy": [
+        6.26425042070744,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 21,
+      "q": 21,
+      "r": 0,
+      "xy": [
+        6.567359312031993,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 22,
+      "q": 22,
+      "r": 0,
+      "xy": [
+        6.8704682033565465,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 23,
+      "q": 23,
+      "r": 0,
+      "xy": [
+        7.1735770946811,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 24,
+      "q": 24,
+      "r": 0,
+      "xy": [
+        7.476685986005654,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 25,
+      "q": 25,
+      "r": 0,
+      "xy": [
+        7.7797948773302075,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 26,
+      "q": 26,
+      "r": 0,
+      "xy": [
+        8.082903768654761,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 27,
+      "q": 27,
+      "r": 0,
+      "xy": [
+        8.386012659979315,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 28,
+      "q": 28,
+      "r": 0,
+      "xy": [
+        8.689121551303868,
+        0.175
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 29,
+      "q": 29,
+      "r": 0,
+      "xy": [
+        8.992230442628422,
+        0.35
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 30,
+      "q": 0,
+      "r": 1,
+      "xy": [
+        0.20207259421636903,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 31,
+      "q": 1,
+      "r": 1,
+      "xy": [
+        0.5051814855409226,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 32,
+      "q": 2,
+      "r": 1,
+      "xy": [
+        0.8082903768654761,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 33,
+      "q": 3,
+      "r": 1,
+      "xy": [
+        1.1113992681900298,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 34,
+      "q": 4,
+      "r": 1,
+      "xy": [
+        1.4145081595145832,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 35,
+      "q": 5,
+      "r": 1,
+      "xy": [
+        1.7176170508391368,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 36,
+      "q": 6,
+      "r": 1,
+      "xy": [
+        2.0207259421636903,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 37,
+      "q": 7,
+      "r": 1,
+      "xy": [
+        2.3238348334882435,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 38,
+      "q": 8,
+      "r": 1,
+      "xy": [
+        2.626943724812797,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 39,
+      "q": 9,
+      "r": 1,
+      "xy": [
+        2.930052616137351,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 40,
+      "q": 10,
+      "r": 1,
+      "xy": [
+        3.2331615074619044,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 41,
+      "q": 11,
+      "r": 1,
+      "xy": [
+        3.536270398786458,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 42,
+      "q": 12,
+      "r": 1,
+      "xy": [
+        3.8393792901110118,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 43,
+      "q": 13,
+      "r": 1,
+      "xy": [
+        4.142488181435565,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 44,
+      "q": 14,
+      "r": 1,
+      "xy": [
+        4.445597072760118,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 45,
+      "q": 15,
+      "r": 1,
+      "xy": [
+        4.748705964084672,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 46,
+      "q": 16,
+      "r": 1,
+      "xy": [
+        5.0518148554092255,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 47,
+      "q": 17,
+      "r": 1,
+      "xy": [
+        5.354923746733779,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 48,
+      "q": 18,
+      "r": 1,
+      "xy": [
+        5.658032638058333,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 49,
+      "q": 19,
+      "r": 1,
+      "xy": [
+        5.961141529382886,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 50,
+      "q": 20,
+      "r": 1,
+      "xy": [
+        6.26425042070744,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 51,
+      "q": 21,
+      "r": 1,
+      "xy": [
+        6.567359312031993,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 52,
+      "q": 22,
+      "r": 1,
+      "xy": [
+        6.8704682033565465,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 53,
+      "q": 23,
+      "r": 1,
+      "xy": [
+        7.1735770946811,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 54,
+      "q": 24,
+      "r": 1,
+      "xy": [
+        7.476685986005654,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 55,
+      "q": 25,
+      "r": 1,
+      "xy": [
+        7.7797948773302075,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 56,
+      "q": 26,
+      "r": 1,
+      "xy": [
+        8.082903768654761,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 57,
+      "q": 27,
+      "r": 1,
+      "xy": [
+        8.386012659979315,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 58,
+      "q": 28,
+      "r": 1,
+      "xy": [
+        8.689121551303868,
+        0.5249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 59,
+      "q": 29,
+      "r": 1,
+      "xy": [
+        8.992230442628422,
+        0.7
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 60,
+      "q": 0,
+      "r": 2,
+      "xy": [
+        0.20207259421636903,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 61,
+      "q": 1,
+      "r": 2,
+      "xy": [
+        0.5051814855409226,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 62,
+      "q": 2,
+      "r": 2,
+      "xy": [
+        0.8082903768654761,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 63,
+      "q": 3,
+      "r": 2,
+      "xy": [
+        1.1113992681900298,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 64,
+      "q": 4,
+      "r": 2,
+      "xy": [
+        1.4145081595145832,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 65,
+      "q": 5,
+      "r": 2,
+      "xy": [
+        1.7176170508391368,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 66,
+      "q": 6,
+      "r": 2,
+      "xy": [
+        2.0207259421636903,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 67,
+      "q": 7,
+      "r": 2,
+      "xy": [
+        2.3238348334882435,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 68,
+      "q": 8,
+      "r": 2,
+      "xy": [
+        2.626943724812797,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 69,
+      "q": 9,
+      "r": 2,
+      "xy": [
+        2.930052616137351,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 70,
+      "q": 10,
+      "r": 2,
+      "xy": [
+        3.2331615074619044,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 71,
+      "q": 11,
+      "r": 2,
+      "xy": [
+        3.536270398786458,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 72,
+      "q": 12,
+      "r": 2,
+      "xy": [
+        3.8393792901110118,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 73,
+      "q": 13,
+      "r": 2,
+      "xy": [
+        4.142488181435565,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 74,
+      "q": 14,
+      "r": 2,
+      "xy": [
+        4.445597072760118,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 75,
+      "q": 15,
+      "r": 2,
+      "xy": [
+        4.748705964084672,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 76,
+      "q": 16,
+      "r": 2,
+      "xy": [
+        5.0518148554092255,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 77,
+      "q": 17,
+      "r": 2,
+      "xy": [
+        5.354923746733779,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 78,
+      "q": 18,
+      "r": 2,
+      "xy": [
+        5.658032638058333,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 79,
+      "q": 19,
+      "r": 2,
+      "xy": [
+        5.961141529382886,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 80,
+      "q": 20,
+      "r": 2,
+      "xy": [
+        6.26425042070744,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 81,
+      "q": 21,
+      "r": 2,
+      "xy": [
+        6.567359312031993,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 82,
+      "q": 22,
+      "r": 2,
+      "xy": [
+        6.8704682033565465,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 83,
+      "q": 23,
+      "r": 2,
+      "xy": [
+        7.1735770946811,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 84,
+      "q": 24,
+      "r": 2,
+      "xy": [
+        7.476685986005654,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 85,
+      "q": 25,
+      "r": 2,
+      "xy": [
+        7.7797948773302075,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 86,
+      "q": 26,
+      "r": 2,
+      "xy": [
+        8.082903768654761,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 87,
+      "q": 27,
+      "r": 2,
+      "xy": [
+        8.386012659979315,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 88,
+      "q": 28,
+      "r": 2,
+      "xy": [
+        8.689121551303868,
+        0.875
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 89,
+      "q": 29,
+      "r": 2,
+      "xy": [
+        8.992230442628422,
+        1.05
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 90,
+      "q": 0,
+      "r": 3,
+      "xy": [
+        0.20207259421636903,
+        1.2249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 91,
+      "q": 1,
+      "r": 3,
+      "xy": [
+        0.5051814855409226,
+        1.4
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 92,
+      "q": 2,
+      "r": 3,
+      "xy": [
+        0.8082903768654761,
+        1.2249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 93,
+      "q": 3,
+      "r": 3,
+      "xy": [
+        1.1113992681900298,
+        1.4
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 94,
+      "q": 4,
+      "r": 3,
+      "xy": [
+        1.4145081595145832,
+        1.2249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 95,
+      "q": 5,
+      "r": 3,
+      "xy": [
+        1.7176170508391368,
+        1.4
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 96,
+      "q": 6,
+      "r": 3,
+      "xy": [
+        2.0207259421636903,
+        1.2249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 97,
+      "q": 7,
+      "r": 3,
+      "xy": [
+        2.3238348334882435,
+        1.4
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 98,
+      "q": 8,
+      "r": 3,
+      "xy": [
+        2.626943724812797,
+        1.2249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 99,
+      "q": 9,
+      "r": 3,
+      "xy": [
+        2.930052616137351,
+        1.4
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 100,
+      "q": 10,
+      "r": 3,
+      "xy": [
+        3.2331615074619044,
+        1.2249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 101,
+      "q": 11,
+      "r": 3,
+      "xy": [
+        3.536270398786458,
+        1.4
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 102,
+      "q": 12,
+      "r": 3,
+      "xy": [
+        3.8393792901110118,
+        1.2249999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 103,
+      "q": 13,
+      "r": 3,
+      "xy": [
+        4.142488181435565,
+        1.4
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 104,
+      "q": 14,
+      "r": 3,
+      "xy": [
+        4.445597072760118,
+        1.2249999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 105,
+      "q": 15,
+      "r": 3,
+      "xy": [
+        4.748705964084672,
+        1.4
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 106,
+      "q": 16,
+      "r": 3,
+      "xy": [
+        5.0518148554092255,
+        1.2249999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 107,
+      "q": 17,
+      "r": 3,
+      "xy": [
+        5.354923746733779,
+        1.4
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 108,
+      "q": 18,
+      "r": 3,
+      "xy": [
+        5.658032638058333,
+        1.2249999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 109,
+      "q": 19,
+      "r": 3,
+      "xy": [
+        5.961141529382886,
+        1.4
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 110,
+      "q": 20,
+      "r": 3,
+      "xy": [
+        6.26425042070744,
+        1.2249999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 111,
+      "q": 21,
+      "r": 3,
+      "xy": [
+        6.567359312031993,
+        1.4
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 112,
+      "q": 22,
+      "r": 3,
+      "xy": [
+        6.8704682033565465,
+        1.2249999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 113,
+      "q": 23,
+      "r": 3,
+      "xy": [
+        7.1735770946811,
+        1.4
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 114,
+      "q": 24,
+      "r": 3,
+      "xy": [
+        7.476685986005654,
+        1.2249999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 115,
+      "q": 25,
+      "r": 3,
+      "xy": [
+        7.7797948773302075,
+        1.4
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 116,
+      "q": 26,
+      "r": 3,
+      "xy": [
+        8.082903768654761,
+        1.2249999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 117,
+      "q": 27,
+      "r": 3,
+      "xy": [
+        8.386012659979315,
+        1.4
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 118,
+      "q": 28,
+      "r": 3,
+      "xy": [
+        8.689121551303868,
+        1.2249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 119,
+      "q": 29,
+      "r": 3,
+      "xy": [
+        8.992230442628422,
+        1.4
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 120,
+      "q": 0,
+      "r": 4,
+      "xy": [
+        0.20207259421636903,
+        1.575
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 121,
+      "q": 1,
+      "r": 4,
+      "xy": [
+        0.5051814855409226,
+        1.75
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 122,
+      "q": 2,
+      "r": 4,
+      "xy": [
+        0.8082903768654761,
+        1.575
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 123,
+      "q": 3,
+      "r": 4,
+      "xy": [
+        1.1113992681900298,
+        1.75
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 124,
+      "q": 4,
+      "r": 4,
+      "xy": [
+        1.4145081595145832,
+        1.575
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 125,
+      "q": 5,
+      "r": 4,
+      "xy": [
+        1.7176170508391368,
+        1.75
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 126,
+      "q": 6,
+      "r": 4,
+      "xy": [
+        2.0207259421636903,
+        1.575
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 127,
+      "q": 7,
+      "r": 4,
+      "xy": [
+        2.3238348334882435,
+        1.75
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 128,
+      "q": 8,
+      "r": 4,
+      "xy": [
+        2.626943724812797,
+        1.575
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 129,
+      "q": 9,
+      "r": 4,
+      "xy": [
+        2.930052616137351,
+        1.75
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 130,
+      "q": 10,
+      "r": 4,
+      "xy": [
+        3.2331615074619044,
+        1.575
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 131,
+      "q": 11,
+      "r": 4,
+      "xy": [
+        3.536270398786458,
+        1.75
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 132,
+      "q": 12,
+      "r": 4,
+      "xy": [
+        3.8393792901110118,
+        1.575
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 133,
+      "q": 13,
+      "r": 4,
+      "xy": [
+        4.142488181435565,
+        1.75
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 134,
+      "q": 14,
+      "r": 4,
+      "xy": [
+        4.445597072760118,
+        1.575
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 135,
+      "q": 15,
+      "r": 4,
+      "xy": [
+        4.748705964084672,
+        1.75
+      ],
+      "active": true,
+      "terrain": "village",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 136,
+      "q": 16,
+      "r": 4,
+      "xy": [
+        5.0518148554092255,
+        1.575
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 137,
+      "q": 17,
+      "r": 4,
+      "xy": [
+        5.354923746733779,
+        1.75
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 138,
+      "q": 18,
+      "r": 4,
+      "xy": [
+        5.658032638058333,
+        1.575
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 139,
+      "q": 19,
+      "r": 4,
+      "xy": [
+        5.961141529382886,
+        1.75
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 140,
+      "q": 20,
+      "r": 4,
+      "xy": [
+        6.26425042070744,
+        1.575
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 141,
+      "q": 21,
+      "r": 4,
+      "xy": [
+        6.567359312031993,
+        1.75
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 142,
+      "q": 22,
+      "r": 4,
+      "xy": [
+        6.8704682033565465,
+        1.575
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 143,
+      "q": 23,
+      "r": 4,
+      "xy": [
+        7.1735770946811,
+        1.75
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 144,
+      "q": 24,
+      "r": 4,
+      "xy": [
+        7.476685986005654,
+        1.575
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 145,
+      "q": 25,
+      "r": 4,
+      "xy": [
+        7.7797948773302075,
+        1.75
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 146,
+      "q": 26,
+      "r": 4,
+      "xy": [
+        8.082903768654761,
+        1.575
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 147,
+      "q": 27,
+      "r": 4,
+      "xy": [
+        8.386012659979315,
+        1.75
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 148,
+      "q": 28,
+      "r": 4,
+      "xy": [
+        8.689121551303868,
+        1.575
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 149,
+      "q": 29,
+      "r": 4,
+      "xy": [
+        8.992230442628422,
+        1.75
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 150,
+      "q": 0,
+      "r": 5,
+      "xy": [
+        0.20207259421636903,
+        1.925
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 151,
+      "q": 1,
+      "r": 5,
+      "xy": [
+        0.5051814855409226,
+        2.1
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 152,
+      "q": 2,
+      "r": 5,
+      "xy": [
+        0.8082903768654761,
+        1.925
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 153,
+      "q": 3,
+      "r": 5,
+      "xy": [
+        1.1113992681900298,
+        2.1
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 154,
+      "q": 4,
+      "r": 5,
+      "xy": [
+        1.4145081595145832,
+        1.925
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 155,
+      "q": 5,
+      "r": 5,
+      "xy": [
+        1.7176170508391368,
+        2.1
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 156,
+      "q": 6,
+      "r": 5,
+      "xy": [
+        2.0207259421636903,
+        1.925
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 157,
+      "q": 7,
+      "r": 5,
+      "xy": [
+        2.3238348334882435,
+        2.1
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 158,
+      "q": 8,
+      "r": 5,
+      "xy": [
+        2.626943724812797,
+        1.925
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 159,
+      "q": 9,
+      "r": 5,
+      "xy": [
+        2.930052616137351,
+        2.1
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 160,
+      "q": 10,
+      "r": 5,
+      "xy": [
+        3.2331615074619044,
+        1.925
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 161,
+      "q": 11,
+      "r": 5,
+      "xy": [
+        3.536270398786458,
+        2.1
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 162,
+      "q": 12,
+      "r": 5,
+      "xy": [
+        3.8393792901110118,
+        1.925
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 163,
+      "q": 13,
+      "r": 5,
+      "xy": [
+        4.142488181435565,
+        2.1
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 164,
+      "q": 14,
+      "r": 5,
+      "xy": [
+        4.445597072760118,
+        1.925
+      ],
+      "active": true,
+      "terrain": "village",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 165,
+      "q": 15,
+      "r": 5,
+      "xy": [
+        4.748705964084672,
+        2.1
+      ],
+      "active": true,
+      "terrain": "village",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 166,
+      "q": 16,
+      "r": 5,
+      "xy": [
+        5.0518148554092255,
+        1.925
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 167,
+      "q": 17,
+      "r": 5,
+      "xy": [
+        5.354923746733779,
+        2.1
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 168,
+      "q": 18,
+      "r": 5,
+      "xy": [
+        5.658032638058333,
+        1.925
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 169,
+      "q": 19,
+      "r": 5,
+      "xy": [
+        5.961141529382886,
+        2.1
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 170,
+      "q": 20,
+      "r": 5,
+      "xy": [
+        6.26425042070744,
+        1.925
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 171,
+      "q": 21,
+      "r": 5,
+      "xy": [
+        6.567359312031993,
+        2.1
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 172,
+      "q": 22,
+      "r": 5,
+      "xy": [
+        6.8704682033565465,
+        1.925
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 173,
+      "q": 23,
+      "r": 5,
+      "xy": [
+        7.1735770946811,
+        2.1
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 174,
+      "q": 24,
+      "r": 5,
+      "xy": [
+        7.476685986005654,
+        1.925
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 175,
+      "q": 25,
+      "r": 5,
+      "xy": [
+        7.7797948773302075,
+        2.1
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 176,
+      "q": 26,
+      "r": 5,
+      "xy": [
+        8.082903768654761,
+        1.925
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 177,
+      "q": 27,
+      "r": 5,
+      "xy": [
+        8.386012659979315,
+        2.1
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 178,
+      "q": 28,
+      "r": 5,
+      "xy": [
+        8.689121551303868,
+        1.925
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 179,
+      "q": 29,
+      "r": 5,
+      "xy": [
+        8.992230442628422,
+        2.1
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 180,
+      "q": 0,
+      "r": 6,
+      "xy": [
+        0.20207259421636903,
+        2.2749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 181,
+      "q": 1,
+      "r": 6,
+      "xy": [
+        0.5051814855409226,
+        2.4499999999999993
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 182,
+      "q": 2,
+      "r": 6,
+      "xy": [
+        0.8082903768654761,
+        2.2749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 183,
+      "q": 3,
+      "r": 6,
+      "xy": [
+        1.1113992681900298,
+        2.4499999999999993
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 184,
+      "q": 4,
+      "r": 6,
+      "xy": [
+        1.4145081595145832,
+        2.2749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 185,
+      "q": 5,
+      "r": 6,
+      "xy": [
+        1.7176170508391368,
+        2.4499999999999993
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 186,
+      "q": 6,
+      "r": 6,
+      "xy": [
+        2.0207259421636903,
+        2.2749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 187,
+      "q": 7,
+      "r": 6,
+      "xy": [
+        2.3238348334882435,
+        2.4499999999999993
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 188,
+      "q": 8,
+      "r": 6,
+      "xy": [
+        2.626943724812797,
+        2.2749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 189,
+      "q": 9,
+      "r": 6,
+      "xy": [
+        2.930052616137351,
+        2.4499999999999993
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 190,
+      "q": 10,
+      "r": 6,
+      "xy": [
+        3.2331615074619044,
+        2.2749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 191,
+      "q": 11,
+      "r": 6,
+      "xy": [
+        3.536270398786458,
+        2.4499999999999993
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 192,
+      "q": 12,
+      "r": 6,
+      "xy": [
+        3.8393792901110118,
+        2.2749999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 193,
+      "q": 13,
+      "r": 6,
+      "xy": [
+        4.142488181435565,
+        2.4499999999999993
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 194,
+      "q": 14,
+      "r": 6,
+      "xy": [
+        4.445597072760118,
+        2.2749999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 195,
+      "q": 15,
+      "r": 6,
+      "xy": [
+        4.748705964084672,
+        2.4499999999999993
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 196,
+      "q": 16,
+      "r": 6,
+      "xy": [
+        5.0518148554092255,
+        2.2749999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 197,
+      "q": 17,
+      "r": 6,
+      "xy": [
+        5.354923746733779,
+        2.4499999999999993
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 198,
+      "q": 18,
+      "r": 6,
+      "xy": [
+        5.658032638058333,
+        2.2749999999999995
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 199,
+      "q": 19,
+      "r": 6,
+      "xy": [
+        5.961141529382886,
+        2.4499999999999993
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 200,
+      "q": 20,
+      "r": 6,
+      "xy": [
+        6.26425042070744,
+        2.2749999999999995
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 201,
+      "q": 21,
+      "r": 6,
+      "xy": [
+        6.567359312031993,
+        2.4499999999999993
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 202,
+      "q": 22,
+      "r": 6,
+      "xy": [
+        6.8704682033565465,
+        2.2749999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 203,
+      "q": 23,
+      "r": 6,
+      "xy": [
+        7.1735770946811,
+        2.4499999999999993
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 204,
+      "q": 24,
+      "r": 6,
+      "xy": [
+        7.476685986005654,
+        2.2749999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 205,
+      "q": 25,
+      "r": 6,
+      "xy": [
+        7.7797948773302075,
+        2.4499999999999993
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 206,
+      "q": 26,
+      "r": 6,
+      "xy": [
+        8.082903768654761,
+        2.2749999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 207,
+      "q": 27,
+      "r": 6,
+      "xy": [
+        8.386012659979315,
+        2.4499999999999993
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 208,
+      "q": 28,
+      "r": 6,
+      "xy": [
+        8.689121551303868,
+        2.2749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 209,
+      "q": 29,
+      "r": 6,
+      "xy": [
+        8.992230442628422,
+        2.4499999999999993
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 210,
+      "q": 0,
+      "r": 7,
+      "xy": [
+        0.20207259421636903,
+        2.6249999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 211,
+      "q": 1,
+      "r": 7,
+      "xy": [
+        0.5051814855409226,
+        2.7999999999999994
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 212,
+      "q": 2,
+      "r": 7,
+      "xy": [
+        0.8082903768654761,
+        2.6249999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 213,
+      "q": 3,
+      "r": 7,
+      "xy": [
+        1.1113992681900298,
+        2.7999999999999994
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 214,
+      "q": 4,
+      "r": 7,
+      "xy": [
+        1.4145081595145832,
+        2.6249999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 215,
+      "q": 5,
+      "r": 7,
+      "xy": [
+        1.7176170508391368,
+        2.7999999999999994
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 216,
+      "q": 6,
+      "r": 7,
+      "xy": [
+        2.0207259421636903,
+        2.6249999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 217,
+      "q": 7,
+      "r": 7,
+      "xy": [
+        2.3238348334882435,
+        2.7999999999999994
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 218,
+      "q": 8,
+      "r": 7,
+      "xy": [
+        2.626943724812797,
+        2.6249999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 219,
+      "q": 9,
+      "r": 7,
+      "xy": [
+        2.930052616137351,
+        2.7999999999999994
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 220,
+      "q": 10,
+      "r": 7,
+      "xy": [
+        3.2331615074619044,
+        2.6249999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 221,
+      "q": 11,
+      "r": 7,
+      "xy": [
+        3.536270398786458,
+        2.7999999999999994
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 222,
+      "q": 12,
+      "r": 7,
+      "xy": [
+        3.8393792901110118,
+        2.6249999999999996
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 223,
+      "q": 13,
+      "r": 7,
+      "xy": [
+        4.142488181435565,
+        2.7999999999999994
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 224,
+      "q": 14,
+      "r": 7,
+      "xy": [
+        4.445597072760118,
+        2.6249999999999996
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 225,
+      "q": 15,
+      "r": 7,
+      "xy": [
+        4.748705964084672,
+        2.7999999999999994
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 226,
+      "q": 16,
+      "r": 7,
+      "xy": [
+        5.0518148554092255,
+        2.6249999999999996
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 227,
+      "q": 17,
+      "r": 7,
+      "xy": [
+        5.354923746733779,
+        2.7999999999999994
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 228,
+      "q": 18,
+      "r": 7,
+      "xy": [
+        5.658032638058333,
+        2.6249999999999996
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 229,
+      "q": 19,
+      "r": 7,
+      "xy": [
+        5.961141529382886,
+        2.7999999999999994
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 230,
+      "q": 20,
+      "r": 7,
+      "xy": [
+        6.26425042070744,
+        2.6249999999999996
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 231,
+      "q": 21,
+      "r": 7,
+      "xy": [
+        6.567359312031993,
+        2.7999999999999994
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 232,
+      "q": 22,
+      "r": 7,
+      "xy": [
+        6.8704682033565465,
+        2.6249999999999996
+      ],
+      "active": true,
+      "terrain": "village",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 233,
+      "q": 23,
+      "r": 7,
+      "xy": [
+        7.1735770946811,
+        2.7999999999999994
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 234,
+      "q": 24,
+      "r": 7,
+      "xy": [
+        7.476685986005654,
+        2.6249999999999996
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 235,
+      "q": 25,
+      "r": 7,
+      "xy": [
+        7.7797948773302075,
+        2.7999999999999994
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 236,
+      "q": 26,
+      "r": 7,
+      "xy": [
+        8.082903768654761,
+        2.6249999999999996
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 237,
+      "q": 27,
+      "r": 7,
+      "xy": [
+        8.386012659979315,
+        2.7999999999999994
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 238,
+      "q": 28,
+      "r": 7,
+      "xy": [
+        8.689121551303868,
+        2.6249999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 239,
+      "q": 29,
+      "r": 7,
+      "xy": [
+        8.992230442628422,
+        2.7999999999999994
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 240,
+      "q": 0,
+      "r": 8,
+      "xy": [
+        0.20207259421636903,
+        2.9749999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 241,
+      "q": 1,
+      "r": 8,
+      "xy": [
+        0.5051814855409226,
+        3.1499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 242,
+      "q": 2,
+      "r": 8,
+      "xy": [
+        0.8082903768654761,
+        2.9749999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 243,
+      "q": 3,
+      "r": 8,
+      "xy": [
+        1.1113992681900298,
+        3.1499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 244,
+      "q": 4,
+      "r": 8,
+      "xy": [
+        1.4145081595145832,
+        2.9749999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 245,
+      "q": 5,
+      "r": 8,
+      "xy": [
+        1.7176170508391368,
+        3.1499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 246,
+      "q": 6,
+      "r": 8,
+      "xy": [
+        2.0207259421636903,
+        2.9749999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 247,
+      "q": 7,
+      "r": 8,
+      "xy": [
+        2.3238348334882435,
+        3.1499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 248,
+      "q": 8,
+      "r": 8,
+      "xy": [
+        2.626943724812797,
+        2.9749999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 249,
+      "q": 9,
+      "r": 8,
+      "xy": [
+        2.930052616137351,
+        3.1499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 250,
+      "q": 10,
+      "r": 8,
+      "xy": [
+        3.2331615074619044,
+        2.9749999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 251,
+      "q": 11,
+      "r": 8,
+      "xy": [
+        3.536270398786458,
+        3.1499999999999995
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 252,
+      "q": 12,
+      "r": 8,
+      "xy": [
+        3.8393792901110118,
+        2.9749999999999996
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 253,
+      "q": 13,
+      "r": 8,
+      "xy": [
+        4.142488181435565,
+        3.1499999999999995
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 254,
+      "q": 14,
+      "r": 8,
+      "xy": [
+        4.445597072760118,
+        2.9749999999999996
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 255,
+      "q": 15,
+      "r": 8,
+      "xy": [
+        4.748705964084672,
+        3.1499999999999995
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 256,
+      "q": 16,
+      "r": 8,
+      "xy": [
+        5.0518148554092255,
+        2.9749999999999996
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 257,
+      "q": 17,
+      "r": 8,
+      "xy": [
+        5.354923746733779,
+        3.1499999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 258,
+      "q": 18,
+      "r": 8,
+      "xy": [
+        5.658032638058333,
+        2.9749999999999996
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 259,
+      "q": 19,
+      "r": 8,
+      "xy": [
+        5.961141529382886,
+        3.1499999999999995
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 260,
+      "q": 20,
+      "r": 8,
+      "xy": [
+        6.26425042070744,
+        2.9749999999999996
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 261,
+      "q": 21,
+      "r": 8,
+      "xy": [
+        6.567359312031993,
+        3.1499999999999995
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 262,
+      "q": 22,
+      "r": 8,
+      "xy": [
+        6.8704682033565465,
+        2.9749999999999996
+      ],
+      "active": true,
+      "terrain": "village",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 263,
+      "q": 23,
+      "r": 8,
+      "xy": [
+        7.1735770946811,
+        3.1499999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 264,
+      "q": 24,
+      "r": 8,
+      "xy": [
+        7.476685986005654,
+        2.9749999999999996
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 265,
+      "q": 25,
+      "r": 8,
+      "xy": [
+        7.7797948773302075,
+        3.1499999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 266,
+      "q": 26,
+      "r": 8,
+      "xy": [
+        8.082903768654761,
+        2.9749999999999996
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 267,
+      "q": 27,
+      "r": 8,
+      "xy": [
+        8.386012659979315,
+        3.1499999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 268,
+      "q": 28,
+      "r": 8,
+      "xy": [
+        8.689121551303868,
+        2.9749999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 269,
+      "q": 29,
+      "r": 8,
+      "xy": [
+        8.992230442628422,
+        3.1499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 270,
+      "q": 0,
+      "r": 9,
+      "xy": [
+        0.20207259421636903,
+        3.3249999999999997
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 271,
+      "q": 1,
+      "r": 9,
+      "xy": [
+        0.5051814855409226,
+        3.4999999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 272,
+      "q": 2,
+      "r": 9,
+      "xy": [
+        0.8082903768654761,
+        3.3249999999999997
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 273,
+      "q": 3,
+      "r": 9,
+      "xy": [
+        1.1113992681900298,
+        3.4999999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 274,
+      "q": 4,
+      "r": 9,
+      "xy": [
+        1.4145081595145832,
+        3.3249999999999997
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 275,
+      "q": 5,
+      "r": 9,
+      "xy": [
+        1.7176170508391368,
+        3.4999999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 276,
+      "q": 6,
+      "r": 9,
+      "xy": [
+        2.0207259421636903,
+        3.3249999999999997
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 277,
+      "q": 7,
+      "r": 9,
+      "xy": [
+        2.3238348334882435,
+        3.4999999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 278,
+      "q": 8,
+      "r": 9,
+      "xy": [
+        2.626943724812797,
+        3.3249999999999997
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 279,
+      "q": 9,
+      "r": 9,
+      "xy": [
+        2.930052616137351,
+        3.4999999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 280,
+      "q": 10,
+      "r": 9,
+      "xy": [
+        3.2331615074619044,
+        3.3249999999999997
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 281,
+      "q": 11,
+      "r": 9,
+      "xy": [
+        3.536270398786458,
+        3.4999999999999996
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 282,
+      "q": 12,
+      "r": 9,
+      "xy": [
+        3.8393792901110118,
+        3.3249999999999997
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 283,
+      "q": 13,
+      "r": 9,
+      "xy": [
+        4.142488181435565,
+        3.4999999999999996
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 284,
+      "q": 14,
+      "r": 9,
+      "xy": [
+        4.445597072760118,
+        3.3249999999999997
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 285,
+      "q": 15,
+      "r": 9,
+      "xy": [
+        4.748705964084672,
+        3.4999999999999996
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 286,
+      "q": 16,
+      "r": 9,
+      "xy": [
+        5.0518148554092255,
+        3.3249999999999997
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 287,
+      "q": 17,
+      "r": 9,
+      "xy": [
+        5.354923746733779,
+        3.4999999999999996
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 288,
+      "q": 18,
+      "r": 9,
+      "xy": [
+        5.658032638058333,
+        3.3249999999999997
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 289,
+      "q": 19,
+      "r": 9,
+      "xy": [
+        5.961141529382886,
+        3.4999999999999996
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 290,
+      "q": 20,
+      "r": 9,
+      "xy": [
+        6.26425042070744,
+        3.3249999999999997
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 291,
+      "q": 21,
+      "r": 9,
+      "xy": [
+        6.567359312031993,
+        3.4999999999999996
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 292,
+      "q": 22,
+      "r": 9,
+      "xy": [
+        6.8704682033565465,
+        3.3249999999999997
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 293,
+      "q": 23,
+      "r": 9,
+      "xy": [
+        7.1735770946811,
+        3.4999999999999996
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 294,
+      "q": 24,
+      "r": 9,
+      "xy": [
+        7.476685986005654,
+        3.3249999999999997
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 295,
+      "q": 25,
+      "r": 9,
+      "xy": [
+        7.7797948773302075,
+        3.4999999999999996
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 296,
+      "q": 26,
+      "r": 9,
+      "xy": [
+        8.082903768654761,
+        3.3249999999999997
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 297,
+      "q": 27,
+      "r": 9,
+      "xy": [
+        8.386012659979315,
+        3.4999999999999996
+      ],
+      "active": true,
+      "terrain": "village",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 298,
+      "q": 28,
+      "r": 9,
+      "xy": [
+        8.689121551303868,
+        3.3249999999999997
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 299,
+      "q": 29,
+      "r": 9,
+      "xy": [
+        8.992230442628422,
+        3.4999999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 300,
+      "q": 0,
+      "r": 10,
+      "xy": [
+        0.20207259421636903,
+        3.675
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 301,
+      "q": 1,
+      "r": 10,
+      "xy": [
+        0.5051814855409226,
+        3.8499999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 302,
+      "q": 2,
+      "r": 10,
+      "xy": [
+        0.8082903768654761,
+        3.675
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 303,
+      "q": 3,
+      "r": 10,
+      "xy": [
+        1.1113992681900298,
+        3.8499999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 304,
+      "q": 4,
+      "r": 10,
+      "xy": [
+        1.4145081595145832,
+        3.675
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 305,
+      "q": 5,
+      "r": 10,
+      "xy": [
+        1.7176170508391368,
+        3.8499999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 306,
+      "q": 6,
+      "r": 10,
+      "xy": [
+        2.0207259421636903,
+        3.675
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 307,
+      "q": 7,
+      "r": 10,
+      "xy": [
+        2.3238348334882435,
+        3.8499999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 308,
+      "q": 8,
+      "r": 10,
+      "xy": [
+        2.626943724812797,
+        3.675
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 309,
+      "q": 9,
+      "r": 10,
+      "xy": [
+        2.930052616137351,
+        3.8499999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 310,
+      "q": 10,
+      "r": 10,
+      "xy": [
+        3.2331615074619044,
+        3.675
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 311,
+      "q": 11,
+      "r": 10,
+      "xy": [
+        3.536270398786458,
+        3.8499999999999996
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 312,
+      "q": 12,
+      "r": 10,
+      "xy": [
+        3.8393792901110118,
+        3.675
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 313,
+      "q": 13,
+      "r": 10,
+      "xy": [
+        4.142488181435565,
+        3.8499999999999996
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 314,
+      "q": 14,
+      "r": 10,
+      "xy": [
+        4.445597072760118,
+        3.675
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 315,
+      "q": 15,
+      "r": 10,
+      "xy": [
+        4.748705964084672,
+        3.8499999999999996
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 316,
+      "q": 16,
+      "r": 10,
+      "xy": [
+        5.0518148554092255,
+        3.675
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 317,
+      "q": 17,
+      "r": 10,
+      "xy": [
+        5.354923746733779,
+        3.8499999999999996
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 318,
+      "q": 18,
+      "r": 10,
+      "xy": [
+        5.658032638058333,
+        3.675
+      ],
+      "active": true,
+      "terrain": "forest",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 319,
+      "q": 19,
+      "r": 10,
+      "xy": [
+        5.961141529382886,
+        3.8499999999999996
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 320,
+      "q": 20,
+      "r": 10,
+      "xy": [
+        6.26425042070744,
+        3.675
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 321,
+      "q": 21,
+      "r": 10,
+      "xy": [
+        6.567359312031993,
+        3.8499999999999996
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 322,
+      "q": 22,
+      "r": 10,
+      "xy": [
+        6.8704682033565465,
+        3.675
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 323,
+      "q": 23,
+      "r": 10,
+      "xy": [
+        7.1735770946811,
+        3.8499999999999996
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 324,
+      "q": 24,
+      "r": 10,
+      "xy": [
+        7.476685986005654,
+        3.675
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 325,
+      "q": 25,
+      "r": 10,
+      "xy": [
+        7.7797948773302075,
+        3.8499999999999996
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 326,
+      "q": 26,
+      "r": 10,
+      "xy": [
+        8.082903768654761,
+        3.675
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 327,
+      "q": 27,
+      "r": 10,
+      "xy": [
+        8.386012659979315,
+        3.8499999999999996
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 328,
+      "q": 28,
+      "r": 10,
+      "xy": [
+        8.689121551303868,
+        3.675
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 329,
+      "q": 29,
+      "r": 10,
+      "xy": [
+        8.992230442628422,
+        3.8499999999999996
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 330,
+      "q": 0,
+      "r": 11,
+      "xy": [
+        0.20207259421636903,
+        4.0249999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 331,
+      "q": 1,
+      "r": 11,
+      "xy": [
+        0.5051814855409226,
+        4.199999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 332,
+      "q": 2,
+      "r": 11,
+      "xy": [
+        0.8082903768654761,
+        4.0249999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 333,
+      "q": 3,
+      "r": 11,
+      "xy": [
+        1.1113992681900298,
+        4.199999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 334,
+      "q": 4,
+      "r": 11,
+      "xy": [
+        1.4145081595145832,
+        4.0249999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 335,
+      "q": 5,
+      "r": 11,
+      "xy": [
+        1.7176170508391368,
+        4.199999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 336,
+      "q": 6,
+      "r": 11,
+      "xy": [
+        2.0207259421636903,
+        4.0249999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 337,
+      "q": 7,
+      "r": 11,
+      "xy": [
+        2.3238348334882435,
+        4.199999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 338,
+      "q": 8,
+      "r": 11,
+      "xy": [
+        2.626943724812797,
+        4.0249999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 339,
+      "q": 9,
+      "r": 11,
+      "xy": [
+        2.930052616137351,
+        4.199999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 340,
+      "q": 10,
+      "r": 11,
+      "xy": [
+        3.2331615074619044,
+        4.0249999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 341,
+      "q": 11,
+      "r": 11,
+      "xy": [
+        3.536270398786458,
+        4.199999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 342,
+      "q": 12,
+      "r": 11,
+      "xy": [
+        3.8393792901110118,
+        4.0249999999999995
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 343,
+      "q": 13,
+      "r": 11,
+      "xy": [
+        4.142488181435565,
+        4.199999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 344,
+      "q": 14,
+      "r": 11,
+      "xy": [
+        4.445597072760118,
+        4.0249999999999995
+      ],
+      "active": true,
+      "terrain": "village",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 345,
+      "q": 15,
+      "r": 11,
+      "xy": [
+        4.748705964084672,
+        4.199999999999999
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 346,
+      "q": 16,
+      "r": 11,
+      "xy": [
+        5.0518148554092255,
+        4.0249999999999995
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 347,
+      "q": 17,
+      "r": 11,
+      "xy": [
+        5.354923746733779,
+        4.199999999999999
+      ],
+      "active": true,
+      "terrain": "village",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 348,
+      "q": 18,
+      "r": 11,
+      "xy": [
+        5.658032638058333,
+        4.0249999999999995
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 349,
+      "q": 19,
+      "r": 11,
+      "xy": [
+        5.961141529382886,
+        4.199999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 350,
+      "q": 20,
+      "r": 11,
+      "xy": [
+        6.26425042070744,
+        4.0249999999999995
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 351,
+      "q": 21,
+      "r": 11,
+      "xy": [
+        6.567359312031993,
+        4.199999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 352,
+      "q": 22,
+      "r": 11,
+      "xy": [
+        6.8704682033565465,
+        4.0249999999999995
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 353,
+      "q": 23,
+      "r": 11,
+      "xy": [
+        7.1735770946811,
+        4.199999999999999
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 354,
+      "q": 24,
+      "r": 11,
+      "xy": [
+        7.476685986005654,
+        4.0249999999999995
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 355,
+      "q": 25,
+      "r": 11,
+      "xy": [
+        7.7797948773302075,
+        4.199999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 356,
+      "q": 26,
+      "r": 11,
+      "xy": [
+        8.082903768654761,
+        4.0249999999999995
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 357,
+      "q": 27,
+      "r": 11,
+      "xy": [
+        8.386012659979315,
+        4.199999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 358,
+      "q": 28,
+      "r": 11,
+      "xy": [
+        8.689121551303868,
+        4.0249999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 359,
+      "q": 29,
+      "r": 11,
+      "xy": [
+        8.992230442628422,
+        4.199999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 360,
+      "q": 0,
+      "r": 12,
+      "xy": [
+        0.20207259421636903,
+        4.374999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 361,
+      "q": 1,
+      "r": 12,
+      "xy": [
+        0.5051814855409226,
+        4.549999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 362,
+      "q": 2,
+      "r": 12,
+      "xy": [
+        0.8082903768654761,
+        4.374999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 363,
+      "q": 3,
+      "r": 12,
+      "xy": [
+        1.1113992681900298,
+        4.549999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 364,
+      "q": 4,
+      "r": 12,
+      "xy": [
+        1.4145081595145832,
+        4.374999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 365,
+      "q": 5,
+      "r": 12,
+      "xy": [
+        1.7176170508391368,
+        4.549999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 366,
+      "q": 6,
+      "r": 12,
+      "xy": [
+        2.0207259421636903,
+        4.374999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 367,
+      "q": 7,
+      "r": 12,
+      "xy": [
+        2.3238348334882435,
+        4.549999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 368,
+      "q": 8,
+      "r": 12,
+      "xy": [
+        2.626943724812797,
+        4.374999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 369,
+      "q": 9,
+      "r": 12,
+      "xy": [
+        2.930052616137351,
+        4.549999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 370,
+      "q": 10,
+      "r": 12,
+      "xy": [
+        3.2331615074619044,
+        4.374999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 371,
+      "q": 11,
+      "r": 12,
+      "xy": [
+        3.536270398786458,
+        4.549999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 372,
+      "q": 12,
+      "r": 12,
+      "xy": [
+        3.8393792901110118,
+        4.374999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 373,
+      "q": 13,
+      "r": 12,
+      "xy": [
+        4.142488181435565,
+        4.549999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 374,
+      "q": 14,
+      "r": 12,
+      "xy": [
+        4.445597072760118,
+        4.374999999999999
+      ],
+      "active": true,
+      "terrain": "village",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 375,
+      "q": 15,
+      "r": 12,
+      "xy": [
+        4.748705964084672,
+        4.549999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 376,
+      "q": 16,
+      "r": 12,
+      "xy": [
+        5.0518148554092255,
+        4.374999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 377,
+      "q": 17,
+      "r": 12,
+      "xy": [
+        5.354923746733779,
+        4.549999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 378,
+      "q": 18,
+      "r": 12,
+      "xy": [
+        5.658032638058333,
+        4.374999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 379,
+      "q": 19,
+      "r": 12,
+      "xy": [
+        5.961141529382886,
+        4.549999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 380,
+      "q": 20,
+      "r": 12,
+      "xy": [
+        6.26425042070744,
+        4.374999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 381,
+      "q": 21,
+      "r": 12,
+      "xy": [
+        6.567359312031993,
+        4.549999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 382,
+      "q": 22,
+      "r": 12,
+      "xy": [
+        6.8704682033565465,
+        4.374999999999999
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 383,
+      "q": 23,
+      "r": 12,
+      "xy": [
+        7.1735770946811,
+        4.549999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 384,
+      "q": 24,
+      "r": 12,
+      "xy": [
+        7.476685986005654,
+        4.374999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 385,
+      "q": 25,
+      "r": 12,
+      "xy": [
+        7.7797948773302075,
+        4.549999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 386,
+      "q": 26,
+      "r": 12,
+      "xy": [
+        8.082903768654761,
+        4.374999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 387,
+      "q": 27,
+      "r": 12,
+      "xy": [
+        8.386012659979315,
+        4.549999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 388,
+      "q": 28,
+      "r": 12,
+      "xy": [
+        8.689121551303868,
+        4.374999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 389,
+      "q": 29,
+      "r": 12,
+      "xy": [
+        8.992230442628422,
+        4.549999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 390,
+      "q": 0,
+      "r": 13,
+      "xy": [
+        0.20207259421636903,
+        4.725
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 391,
+      "q": 1,
+      "r": 13,
+      "xy": [
+        0.5051814855409226,
+        4.8999999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 392,
+      "q": 2,
+      "r": 13,
+      "xy": [
+        0.8082903768654761,
+        4.725
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 393,
+      "q": 3,
+      "r": 13,
+      "xy": [
+        1.1113992681900298,
+        4.8999999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 394,
+      "q": 4,
+      "r": 13,
+      "xy": [
+        1.4145081595145832,
+        4.725
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 395,
+      "q": 5,
+      "r": 13,
+      "xy": [
+        1.7176170508391368,
+        4.8999999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 396,
+      "q": 6,
+      "r": 13,
+      "xy": [
+        2.0207259421636903,
+        4.725
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 397,
+      "q": 7,
+      "r": 13,
+      "xy": [
+        2.3238348334882435,
+        4.8999999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 398,
+      "q": 8,
+      "r": 13,
+      "xy": [
+        2.626943724812797,
+        4.725
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 399,
+      "q": 9,
+      "r": 13,
+      "xy": [
+        2.930052616137351,
+        4.8999999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 400,
+      "q": 10,
+      "r": 13,
+      "xy": [
+        3.2331615074619044,
+        4.725
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 401,
+      "q": 11,
+      "r": 13,
+      "xy": [
+        3.536270398786458,
+        4.8999999999999995
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 402,
+      "q": 12,
+      "r": 13,
+      "xy": [
+        3.8393792901110118,
+        4.725
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 403,
+      "q": 13,
+      "r": 13,
+      "xy": [
+        4.142488181435565,
+        4.8999999999999995
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 404,
+      "q": 14,
+      "r": 13,
+      "xy": [
+        4.445597072760118,
+        4.725
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 405,
+      "q": 15,
+      "r": 13,
+      "xy": [
+        4.748705964084672,
+        4.8999999999999995
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 406,
+      "q": 16,
+      "r": 13,
+      "xy": [
+        5.0518148554092255,
+        4.725
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 407,
+      "q": 17,
+      "r": 13,
+      "xy": [
+        5.354923746733779,
+        4.8999999999999995
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 408,
+      "q": 18,
+      "r": 13,
+      "xy": [
+        5.658032638058333,
+        4.725
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 409,
+      "q": 19,
+      "r": 13,
+      "xy": [
+        5.961141529382886,
+        4.8999999999999995
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 410,
+      "q": 20,
+      "r": 13,
+      "xy": [
+        6.26425042070744,
+        4.725
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 411,
+      "q": 21,
+      "r": 13,
+      "xy": [
+        6.567359312031993,
+        4.8999999999999995
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 412,
+      "q": 22,
+      "r": 13,
+      "xy": [
+        6.8704682033565465,
+        4.725
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 413,
+      "q": 23,
+      "r": 13,
+      "xy": [
+        7.1735770946811,
+        4.8999999999999995
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 414,
+      "q": 24,
+      "r": 13,
+      "xy": [
+        7.476685986005654,
+        4.725
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 415,
+      "q": 25,
+      "r": 13,
+      "xy": [
+        7.7797948773302075,
+        4.8999999999999995
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 416,
+      "q": 26,
+      "r": 13,
+      "xy": [
+        8.082903768654761,
+        4.725
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 417,
+      "q": 27,
+      "r": 13,
+      "xy": [
+        8.386012659979315,
+        4.8999999999999995
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 418,
+      "q": 28,
+      "r": 13,
+      "xy": [
+        8.689121551303868,
+        4.725
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 419,
+      "q": 29,
+      "r": 13,
+      "xy": [
+        8.992230442628422,
+        4.8999999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "west",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 420,
+      "q": 0,
+      "r": 14,
+      "xy": [
+        0.20207259421636903,
+        5.074999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 421,
+      "q": 1,
+      "r": 14,
+      "xy": [
+        0.5051814855409226,
+        5.249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 422,
+      "q": 2,
+      "r": 14,
+      "xy": [
+        0.8082903768654761,
+        5.074999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 423,
+      "q": 3,
+      "r": 14,
+      "xy": [
+        1.1113992681900298,
+        5.249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 424,
+      "q": 4,
+      "r": 14,
+      "xy": [
+        1.4145081595145832,
+        5.074999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 425,
+      "q": 5,
+      "r": 14,
+      "xy": [
+        1.7176170508391368,
+        5.249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 426,
+      "q": 6,
+      "r": 14,
+      "xy": [
+        2.0207259421636903,
+        5.074999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 427,
+      "q": 7,
+      "r": 14,
+      "xy": [
+        2.3238348334882435,
+        5.249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 428,
+      "q": 8,
+      "r": 14,
+      "xy": [
+        2.626943724812797,
+        5.074999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 429,
+      "q": 9,
+      "r": 14,
+      "xy": [
+        2.930052616137351,
+        5.249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 430,
+      "q": 10,
+      "r": 14,
+      "xy": [
+        3.2331615074619044,
+        5.074999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 431,
+      "q": 11,
+      "r": 14,
+      "xy": [
+        3.536270398786458,
+        5.249999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 432,
+      "q": 12,
+      "r": 14,
+      "xy": [
+        3.8393792901110118,
+        5.074999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 433,
+      "q": 13,
+      "r": 14,
+      "xy": [
+        4.142488181435565,
+        5.249999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 434,
+      "q": 14,
+      "r": 14,
+      "xy": [
+        4.445597072760118,
+        5.074999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 435,
+      "q": 15,
+      "r": 14,
+      "xy": [
+        4.748705964084672,
+        5.249999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 436,
+      "q": 16,
+      "r": 14,
+      "xy": [
+        5.0518148554092255,
+        5.074999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 437,
+      "q": 17,
+      "r": 14,
+      "xy": [
+        5.354923746733779,
+        5.249999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 438,
+      "q": 18,
+      "r": 14,
+      "xy": [
+        5.658032638058333,
+        5.074999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 439,
+      "q": 19,
+      "r": 14,
+      "xy": [
+        5.961141529382886,
+        5.249999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 440,
+      "q": 20,
+      "r": 14,
+      "xy": [
+        6.26425042070744,
+        5.074999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 441,
+      "q": 21,
+      "r": 14,
+      "xy": [
+        6.567359312031993,
+        5.249999999999999
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 442,
+      "q": 22,
+      "r": 14,
+      "xy": [
+        6.8704682033565465,
+        5.074999999999999
+      ],
+      "active": true,
+      "terrain": "village",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 443,
+      "q": 23,
+      "r": 14,
+      "xy": [
+        7.1735770946811,
+        5.249999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 444,
+      "q": 24,
+      "r": 14,
+      "xy": [
+        7.476685986005654,
+        5.074999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 445,
+      "q": 25,
+      "r": 14,
+      "xy": [
+        7.7797948773302075,
+        5.249999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 446,
+      "q": 26,
+      "r": 14,
+      "xy": [
+        8.082903768654761,
+        5.074999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 447,
+      "q": 27,
+      "r": 14,
+      "xy": [
+        8.386012659979315,
+        5.249999999999999
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 448,
+      "q": 28,
+      "r": 14,
+      "xy": [
+        8.689121551303868,
+        5.074999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 449,
+      "q": 29,
+      "r": 14,
+      "xy": [
+        8.992230442628422,
+        5.249999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 450,
+      "q": 0,
+      "r": 15,
+      "xy": [
+        0.20207259421636903,
+        5.425
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 451,
+      "q": 1,
+      "r": 15,
+      "xy": [
+        0.5051814855409226,
+        5.6
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 452,
+      "q": 2,
+      "r": 15,
+      "xy": [
+        0.8082903768654761,
+        5.425
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 453,
+      "q": 3,
+      "r": 15,
+      "xy": [
+        1.1113992681900298,
+        5.6
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 454,
+      "q": 4,
+      "r": 15,
+      "xy": [
+        1.4145081595145832,
+        5.425
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 455,
+      "q": 5,
+      "r": 15,
+      "xy": [
+        1.7176170508391368,
+        5.6
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 456,
+      "q": 6,
+      "r": 15,
+      "xy": [
+        2.0207259421636903,
+        5.425
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 457,
+      "q": 7,
+      "r": 15,
+      "xy": [
+        2.3238348334882435,
+        5.6
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 458,
+      "q": 8,
+      "r": 15,
+      "xy": [
+        2.626943724812797,
+        5.425
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 459,
+      "q": 9,
+      "r": 15,
+      "xy": [
+        2.930052616137351,
+        5.6
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 460,
+      "q": 10,
+      "r": 15,
+      "xy": [
+        3.2331615074619044,
+        5.425
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 461,
+      "q": 11,
+      "r": 15,
+      "xy": [
+        3.536270398786458,
+        5.6
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 462,
+      "q": 12,
+      "r": 15,
+      "xy": [
+        3.8393792901110118,
+        5.425
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 463,
+      "q": 13,
+      "r": 15,
+      "xy": [
+        4.142488181435565,
+        5.6
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 464,
+      "q": 14,
+      "r": 15,
+      "xy": [
+        4.445597072760118,
+        5.425
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 465,
+      "q": 15,
+      "r": 15,
+      "xy": [
+        4.748705964084672,
+        5.6
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 466,
+      "q": 16,
+      "r": 15,
+      "xy": [
+        5.0518148554092255,
+        5.425
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 467,
+      "q": 17,
+      "r": 15,
+      "xy": [
+        5.354923746733779,
+        5.6
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 468,
+      "q": 18,
+      "r": 15,
+      "xy": [
+        5.658032638058333,
+        5.425
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 469,
+      "q": 19,
+      "r": 15,
+      "xy": [
+        5.961141529382886,
+        5.6
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 470,
+      "q": 20,
+      "r": 15,
+      "xy": [
+        6.26425042070744,
+        5.425
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 471,
+      "q": 21,
+      "r": 15,
+      "xy": [
+        6.567359312031993,
+        5.6
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 472,
+      "q": 22,
+      "r": 15,
+      "xy": [
+        6.8704682033565465,
+        5.425
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 473,
+      "q": 23,
+      "r": 15,
+      "xy": [
+        7.1735770946811,
+        5.6
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 474,
+      "q": 24,
+      "r": 15,
+      "xy": [
+        7.476685986005654,
+        5.425
+      ],
+      "active": true,
+      "terrain": "meadow",
+      "level": 0,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 475,
+      "q": 25,
+      "r": 15,
+      "xy": [
+        7.7797948773302075,
+        5.6
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 476,
+      "q": 26,
+      "r": 15,
+      "xy": [
+        8.082903768654761,
+        5.425
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 477,
+      "q": 27,
+      "r": 15,
+      "xy": [
+        8.386012659979315,
+        5.6
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 478,
+      "q": 28,
+      "r": 15,
+      "xy": [
+        8.689121551303868,
+        5.425
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 479,
+      "q": 29,
+      "r": 15,
+      "xy": [
+        8.992230442628422,
+        5.6
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 480,
+      "q": 0,
+      "r": 16,
+      "xy": [
+        0.20207259421636903,
+        5.7749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 481,
+      "q": 1,
+      "r": 16,
+      "xy": [
+        0.5051814855409226,
+        5.949999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 482,
+      "q": 2,
+      "r": 16,
+      "xy": [
+        0.8082903768654761,
+        5.7749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 483,
+      "q": 3,
+      "r": 16,
+      "xy": [
+        1.1113992681900298,
+        5.949999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 484,
+      "q": 4,
+      "r": 16,
+      "xy": [
+        1.4145081595145832,
+        5.7749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 485,
+      "q": 5,
+      "r": 16,
+      "xy": [
+        1.7176170508391368,
+        5.949999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 486,
+      "q": 6,
+      "r": 16,
+      "xy": [
+        2.0207259421636903,
+        5.7749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 487,
+      "q": 7,
+      "r": 16,
+      "xy": [
+        2.3238348334882435,
+        5.949999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 488,
+      "q": 8,
+      "r": 16,
+      "xy": [
+        2.626943724812797,
+        5.7749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 489,
+      "q": 9,
+      "r": 16,
+      "xy": [
+        2.930052616137351,
+        5.949999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 490,
+      "q": 10,
+      "r": 16,
+      "xy": [
+        3.2331615074619044,
+        5.7749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 491,
+      "q": 11,
+      "r": 16,
+      "xy": [
+        3.536270398786458,
+        5.949999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 492,
+      "q": 12,
+      "r": 16,
+      "xy": [
+        3.8393792901110118,
+        5.7749999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 493,
+      "q": 13,
+      "r": 16,
+      "xy": [
+        4.142488181435565,
+        5.949999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 494,
+      "q": 14,
+      "r": 16,
+      "xy": [
+        4.445597072760118,
+        5.7749999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 495,
+      "q": 15,
+      "r": 16,
+      "xy": [
+        4.748705964084672,
+        5.949999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 496,
+      "q": 16,
+      "r": 16,
+      "xy": [
+        5.0518148554092255,
+        5.7749999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 497,
+      "q": 17,
+      "r": 16,
+      "xy": [
+        5.354923746733779,
+        5.949999999999999
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 498,
+      "q": 18,
+      "r": 16,
+      "xy": [
+        5.658032638058333,
+        5.7749999999999995
+      ],
+      "active": true,
+      "terrain": "road",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 499,
+      "q": 19,
+      "r": 16,
+      "xy": [
+        5.961141529382886,
+        5.949999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 500,
+      "q": 20,
+      "r": 16,
+      "xy": [
+        6.26425042070744,
+        5.7749999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 501,
+      "q": 21,
+      "r": 16,
+      "xy": [
+        6.567359312031993,
+        5.949999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 502,
+      "q": 22,
+      "r": 16,
+      "xy": [
+        6.8704682033565465,
+        5.7749999999999995
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 503,
+      "q": 23,
+      "r": 16,
+      "xy": [
+        7.1735770946811,
+        5.949999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 504,
+      "q": 24,
+      "r": 16,
+      "xy": [
+        7.476685986005654,
+        5.7749999999999995
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 505,
+      "q": 25,
+      "r": 16,
+      "xy": [
+        7.7797948773302075,
+        5.949999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 506,
+      "q": 26,
+      "r": 16,
+      "xy": [
+        8.082903768654761,
+        5.7749999999999995
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 507,
+      "q": 27,
+      "r": 16,
+      "xy": [
+        8.386012659979315,
+        5.949999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 508,
+      "q": 28,
+      "r": 16,
+      "xy": [
+        8.689121551303868,
+        5.7749999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 509,
+      "q": 29,
+      "r": 16,
+      "xy": [
+        8.992230442628422,
+        5.949999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 510,
+      "q": 0,
+      "r": 17,
+      "xy": [
+        0.20207259421636903,
+        6.124999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 511,
+      "q": 1,
+      "r": 17,
+      "xy": [
+        0.5051814855409226,
+        6.299999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 512,
+      "q": 2,
+      "r": 17,
+      "xy": [
+        0.8082903768654761,
+        6.124999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 513,
+      "q": 3,
+      "r": 17,
+      "xy": [
+        1.1113992681900298,
+        6.299999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 514,
+      "q": 4,
+      "r": 17,
+      "xy": [
+        1.4145081595145832,
+        6.124999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 515,
+      "q": 5,
+      "r": 17,
+      "xy": [
+        1.7176170508391368,
+        6.299999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 516,
+      "q": 6,
+      "r": 17,
+      "xy": [
+        2.0207259421636903,
+        6.124999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 517,
+      "q": 7,
+      "r": 17,
+      "xy": [
+        2.3238348334882435,
+        6.299999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 518,
+      "q": 8,
+      "r": 17,
+      "xy": [
+        2.626943724812797,
+        6.124999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 519,
+      "q": 9,
+      "r": 17,
+      "xy": [
+        2.930052616137351,
+        6.299999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 520,
+      "q": 10,
+      "r": 17,
+      "xy": [
+        3.2331615074619044,
+        6.124999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 521,
+      "q": 11,
+      "r": 17,
+      "xy": [
+        3.536270398786458,
+        6.299999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 522,
+      "q": 12,
+      "r": 17,
+      "xy": [
+        3.8393792901110118,
+        6.124999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 523,
+      "q": 13,
+      "r": 17,
+      "xy": [
+        4.142488181435565,
+        6.299999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 524,
+      "q": 14,
+      "r": 17,
+      "xy": [
+        4.445597072760118,
+        6.124999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 525,
+      "q": 15,
+      "r": 17,
+      "xy": [
+        4.748705964084672,
+        6.299999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 526,
+      "q": 16,
+      "r": 17,
+      "xy": [
+        5.0518148554092255,
+        6.124999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 527,
+      "q": 17,
+      "r": 17,
+      "xy": [
+        5.354923746733779,
+        6.299999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 528,
+      "q": 18,
+      "r": 17,
+      "xy": [
+        5.658032638058333,
+        6.124999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 529,
+      "q": 19,
+      "r": 17,
+      "xy": [
+        5.961141529382886,
+        6.299999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 530,
+      "q": 20,
+      "r": 17,
+      "xy": [
+        6.26425042070744,
+        6.124999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 531,
+      "q": 21,
+      "r": 17,
+      "xy": [
+        6.567359312031993,
+        6.299999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 532,
+      "q": 22,
+      "r": 17,
+      "xy": [
+        6.8704682033565465,
+        6.124999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 533,
+      "q": 23,
+      "r": 17,
+      "xy": [
+        7.1735770946811,
+        6.299999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 534,
+      "q": 24,
+      "r": 17,
+      "xy": [
+        7.476685986005654,
+        6.124999999999999
+      ],
+      "active": true,
+      "terrain": "cultivated",
+      "level": 1,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 535,
+      "q": 25,
+      "r": 17,
+      "xy": [
+        7.7797948773302075,
+        6.299999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 536,
+      "q": 26,
+      "r": 17,
+      "xy": [
+        8.082903768654761,
+        6.124999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 537,
+      "q": 27,
+      "r": 17,
+      "xy": [
+        8.386012659979315,
+        6.299999999999999
+      ],
+      "active": true,
+      "terrain": "plain",
+      "level": 2,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 538,
+      "q": 28,
+      "r": 17,
+      "xy": [
+        8.689121551303868,
+        6.124999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 539,
+      "q": 29,
+      "r": 17,
+      "xy": [
+        8.992230442628422,
+        6.299999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 540,
+      "q": 0,
+      "r": 18,
+      "xy": [
+        0.20207259421636903,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 541,
+      "q": 1,
+      "r": 18,
+      "xy": [
+        0.5051814855409226,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 542,
+      "q": 2,
+      "r": 18,
+      "xy": [
+        0.8082903768654761,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 543,
+      "q": 3,
+      "r": 18,
+      "xy": [
+        1.1113992681900298,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 544,
+      "q": 4,
+      "r": 18,
+      "xy": [
+        1.4145081595145832,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 545,
+      "q": 5,
+      "r": 18,
+      "xy": [
+        1.7176170508391368,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 546,
+      "q": 6,
+      "r": 18,
+      "xy": [
+        2.0207259421636903,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 547,
+      "q": 7,
+      "r": 18,
+      "xy": [
+        2.3238348334882435,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 548,
+      "q": 8,
+      "r": 18,
+      "xy": [
+        2.626943724812797,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 549,
+      "q": 9,
+      "r": 18,
+      "xy": [
+        2.930052616137351,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 550,
+      "q": 10,
+      "r": 18,
+      "xy": [
+        3.2331615074619044,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 551,
+      "q": 11,
+      "r": 18,
+      "xy": [
+        3.536270398786458,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 552,
+      "q": 12,
+      "r": 18,
+      "xy": [
+        3.8393792901110118,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 553,
+      "q": 13,
+      "r": 18,
+      "xy": [
+        4.142488181435565,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 554,
+      "q": 14,
+      "r": 18,
+      "xy": [
+        4.445597072760118,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 555,
+      "q": 15,
+      "r": 18,
+      "xy": [
+        4.748705964084672,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 556,
+      "q": 16,
+      "r": 18,
+      "xy": [
+        5.0518148554092255,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 557,
+      "q": 17,
+      "r": 18,
+      "xy": [
+        5.354923746733779,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 558,
+      "q": 18,
+      "r": 18,
+      "xy": [
+        5.658032638058333,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 559,
+      "q": 19,
+      "r": 18,
+      "xy": [
+        5.961141529382886,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 560,
+      "q": 20,
+      "r": 18,
+      "xy": [
+        6.26425042070744,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 561,
+      "q": 21,
+      "r": 18,
+      "xy": [
+        6.567359312031993,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 562,
+      "q": 22,
+      "r": 18,
+      "xy": [
+        6.8704682033565465,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 563,
+      "q": 23,
+      "r": 18,
+      "xy": [
+        7.1735770946811,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 564,
+      "q": 24,
+      "r": 18,
+      "xy": [
+        7.476685986005654,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 565,
+      "q": 25,
+      "r": 18,
+      "xy": [
+        7.7797948773302075,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 566,
+      "q": 26,
+      "r": 18,
+      "xy": [
+        8.082903768654761,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 567,
+      "q": 27,
+      "r": 18,
+      "xy": [
+        8.386012659979315,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 568,
+      "q": 28,
+      "r": 18,
+      "xy": [
+        8.689121551303868,
+        6.475
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 569,
+      "q": 29,
+      "r": 18,
+      "xy": [
+        8.992230442628422,
+        6.6499999999999995
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 570,
+      "q": 0,
+      "r": 19,
+      "xy": [
+        0.20207259421636903,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 571,
+      "q": 1,
+      "r": 19,
+      "xy": [
+        0.5051814855409226,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 572,
+      "q": 2,
+      "r": 19,
+      "xy": [
+        0.8082903768654761,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 573,
+      "q": 3,
+      "r": 19,
+      "xy": [
+        1.1113992681900298,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 574,
+      "q": 4,
+      "r": 19,
+      "xy": [
+        1.4145081595145832,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 575,
+      "q": 5,
+      "r": 19,
+      "xy": [
+        1.7176170508391368,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 576,
+      "q": 6,
+      "r": 19,
+      "xy": [
+        2.0207259421636903,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 577,
+      "q": 7,
+      "r": 19,
+      "xy": [
+        2.3238348334882435,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 578,
+      "q": 8,
+      "r": 19,
+      "xy": [
+        2.626943724812797,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 579,
+      "q": 9,
+      "r": 19,
+      "xy": [
+        2.930052616137351,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 580,
+      "q": 10,
+      "r": 19,
+      "xy": [
+        3.2331615074619044,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 581,
+      "q": 11,
+      "r": 19,
+      "xy": [
+        3.536270398786458,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 582,
+      "q": 12,
+      "r": 19,
+      "xy": [
+        3.8393792901110118,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 583,
+      "q": 13,
+      "r": 19,
+      "xy": [
+        4.142488181435565,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 584,
+      "q": 14,
+      "r": 19,
+      "xy": [
+        4.445597072760118,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 585,
+      "q": 15,
+      "r": 19,
+      "xy": [
+        4.748705964084672,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 586,
+      "q": 16,
+      "r": 19,
+      "xy": [
+        5.0518148554092255,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 587,
+      "q": 17,
+      "r": 19,
+      "xy": [
+        5.354923746733779,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 588,
+      "q": 18,
+      "r": 19,
+      "xy": [
+        5.658032638058333,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 589,
+      "q": 19,
+      "r": 19,
+      "xy": [
+        5.961141529382886,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 590,
+      "q": 20,
+      "r": 19,
+      "xy": [
+        6.26425042070744,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 591,
+      "q": 21,
+      "r": 19,
+      "xy": [
+        6.567359312031993,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 592,
+      "q": 22,
+      "r": 19,
+      "xy": [
+        6.8704682033565465,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 593,
+      "q": 23,
+      "r": 19,
+      "xy": [
+        7.1735770946811,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 594,
+      "q": 24,
+      "r": 19,
+      "xy": [
+        7.476685986005654,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 595,
+      "q": 25,
+      "r": 19,
+      "xy": [
+        7.7797948773302075,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 596,
+      "q": 26,
+      "r": 19,
+      "xy": [
+        8.082903768654761,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 597,
+      "q": 27,
+      "r": 19,
+      "xy": [
+        8.386012659979315,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 598,
+      "q": 28,
+      "r": 19,
+      "xy": [
+        8.689121551303868,
+        6.824999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    },
+    {
+      "id": 599,
+      "q": 29,
+      "r": 19,
+      "xy": [
+        8.992230442628422,
+        6.999999999999999
+      ],
+      "active": false,
+      "terrain": null,
+      "level": null,
+      "bank": "east",
+      "status": "ADAPTATION GAMEPLAY"
+    }
+  ],
+  "adjacency": {
+    "101": [
+      102,
+      131,
+      132
+    ],
+    "102": [
+      101,
+      103,
+      132
+    ],
+    "103": [
+      102,
+      104,
+      132,
+      133,
+      134
+    ],
+    "104": [
+      103,
+      105,
+      134
+    ],
+    "105": [
+      104,
+      106,
+      134,
+      135,
+      136
+    ],
+    "106": [
+      105,
+      107,
+      136
+    ],
+    "107": [
+      106,
+      108,
+      136,
+      137,
+      138
+    ],
+    "108": [
+      107,
+      109,
+      138
+    ],
+    "109": [
+      108,
+      110,
+      138,
+      139,
+      140
+    ],
+    "110": [
+      109,
+      111,
+      140
+    ],
+    "111": [
+      110,
+      112,
+      140,
+      141,
+      142
+    ],
+    "112": [
+      111,
+      113,
+      142
+    ],
+    "113": [
+      112,
+      114,
+      142,
+      143,
+      144
+    ],
+    "114": [
+      113,
+      115,
+      144
+    ],
+    "115": [
+      114,
+      116,
+      144,
+      145,
+      146
+    ],
+    "116": [
+      115,
+      117,
+      146
+    ],
+    "117": [
+      116,
+      146,
+      147
+    ],
+    "131": [
+      101,
+      132,
+      161,
+      162
+    ],
+    "132": [
+      101,
+      102,
+      103,
+      131,
+      133,
+      162
+    ],
+    "133": [
+      103,
+      132,
+      134,
+      162,
+      163,
+      164
+    ],
+    "134": [
+      103,
+      104,
+      105,
+      133,
+      135,
+      164
+    ],
+    "135": [
+      105,
+      134,
+      136,
+      164,
+      165,
+      166
+    ],
+    "136": [
+      105,
+      106,
+      107,
+      135,
+      137,
+      166
+    ],
+    "137": [
+      107,
+      136,
+      138,
+      166,
+      167,
+      168
+    ],
+    "138": [
+      107,
+      108,
+      109,
+      137,
+      139,
+      168
+    ],
+    "139": [
+      109,
+      138,
+      140,
+      168,
+      169,
+      170
+    ],
+    "140": [
+      109,
+      110,
+      111,
+      139,
+      141,
+      170
+    ],
+    "141": [
+      111,
+      140,
+      142,
+      170,
+      171,
+      172
+    ],
+    "142": [
+      111,
+      112,
+      113,
+      141,
+      143,
+      172
+    ],
+    "143": [
+      113,
+      142,
+      144,
+      172,
+      173,
+      174
+    ],
+    "144": [
+      113,
+      114,
+      115,
+      143,
+      145,
+      174
+    ],
+    "145": [
+      115,
+      144,
+      146,
+      174,
+      175,
+      176
+    ],
+    "146": [
+      115,
+      116,
+      117,
+      145,
+      147,
+      176
+    ],
+    "147": [
+      117,
+      146,
+      176,
+      177
+    ],
+    "161": [
+      131,
+      162,
+      191,
+      192
+    ],
+    "162": [
+      131,
+      132,
+      133,
+      161,
+      163,
+      192
+    ],
+    "163": [
+      133,
+      162,
+      164,
+      192,
+      193,
+      194
+    ],
+    "164": [
+      133,
+      134,
+      135,
+      163,
+      165,
+      194
+    ],
+    "165": [
+      135,
+      164,
+      166,
+      194,
+      195,
+      196
+    ],
+    "166": [
+      135,
+      136,
+      137,
+      165,
+      167,
+      196
+    ],
+    "167": [
+      137,
+      166,
+      168,
+      196,
+      197,
+      198
+    ],
+    "168": [
+      137,
+      138,
+      139,
+      167,
+      169,
+      198
+    ],
+    "169": [
+      139,
+      168,
+      170,
+      198,
+      199,
+      200
+    ],
+    "170": [
+      139,
+      140,
+      141,
+      169,
+      171,
+      200
+    ],
+    "171": [
+      141,
+      170,
+      172,
+      200,
+      201,
+      202
+    ],
+    "172": [
+      141,
+      142,
+      143,
+      171,
+      173,
+      202
+    ],
+    "173": [
+      143,
+      172,
+      174,
+      202,
+      203,
+      204
+    ],
+    "174": [
+      143,
+      144,
+      145,
+      173,
+      175,
+      204
+    ],
+    "175": [
+      145,
+      174,
+      176,
+      204,
+      205,
+      206
+    ],
+    "176": [
+      145,
+      146,
+      147,
+      175,
+      177,
+      206
+    ],
+    "177": [
+      147,
+      176,
+      206,
+      207
+    ],
+    "191": [
+      161,
+      192,
+      221,
+      222
+    ],
+    "192": [
+      161,
+      162,
+      163,
+      191,
+      193,
+      222
+    ],
+    "193": [
+      163,
+      192,
+      194,
+      222,
+      223,
+      224
+    ],
+    "194": [
+      163,
+      164,
+      165,
+      193,
+      195,
+      224
+    ],
+    "195": [
+      165,
+      194,
+      196,
+      224,
+      225,
+      226
+    ],
+    "196": [
+      165,
+      166,
+      167,
+      195,
+      197,
+      226
+    ],
+    "197": [
+      167,
+      196,
+      198,
+      226,
+      227,
+      228
+    ],
+    "198": [
+      167,
+      168,
+      169,
+      197,
+      199,
+      228
+    ],
+    "199": [
+      169,
+      198,
+      200,
+      228,
+      229,
+      230
+    ],
+    "200": [
+      169,
+      170,
+      171,
+      199,
+      201,
+      230
+    ],
+    "201": [
+      171,
+      200,
+      202,
+      230,
+      231,
+      232
+    ],
+    "202": [
+      171,
+      172,
+      173,
+      201,
+      203,
+      232
+    ],
+    "203": [
+      173,
+      202,
+      204,
+      232,
+      233,
+      234
+    ],
+    "204": [
+      173,
+      174,
+      175,
+      203,
+      205,
+      234
+    ],
+    "205": [
+      175,
+      204,
+      206,
+      234,
+      235,
+      236
+    ],
+    "206": [
+      175,
+      176,
+      177,
+      205,
+      207,
+      236
+    ],
+    "207": [
+      177,
+      206,
+      236,
+      237
+    ],
+    "221": [
+      191,
+      222,
+      251,
+      252
+    ],
+    "222": [
+      191,
+      192,
+      193,
+      221,
+      223,
+      252
+    ],
+    "223": [
+      193,
+      222,
+      224,
+      252,
+      253,
+      254
+    ],
+    "224": [
+      193,
+      194,
+      195,
+      223,
+      225,
+      254
+    ],
+    "225": [
+      195,
+      224,
+      226,
+      254,
+      255,
+      256
+    ],
+    "226": [
+      195,
+      196,
+      197,
+      225,
+      227,
+      256
+    ],
+    "227": [
+      197,
+      226,
+      228,
+      256,
+      257,
+      258
+    ],
+    "228": [
+      197,
+      198,
+      199,
+      227,
+      229,
+      258
+    ],
+    "229": [
+      199,
+      228,
+      230,
+      258,
+      259,
+      260
+    ],
+    "230": [
+      199,
+      200,
+      201,
+      229,
+      231,
+      260
+    ],
+    "231": [
+      201,
+      230,
+      232,
+      260,
+      261,
+      262
+    ],
+    "232": [
+      201,
+      202,
+      203,
+      231,
+      233,
+      262
+    ],
+    "233": [
+      203,
+      232,
+      234,
+      262,
+      263,
+      264
+    ],
+    "234": [
+      203,
+      204,
+      205,
+      233,
+      235,
+      264
+    ],
+    "235": [
+      205,
+      234,
+      236,
+      264,
+      265,
+      266
+    ],
+    "236": [
+      205,
+      206,
+      207,
+      235,
+      237,
+      266
+    ],
+    "237": [
+      207,
+      236,
+      266,
+      267
+    ],
+    "251": [
+      221,
+      252,
+      281,
+      282
+    ],
+    "252": [
+      221,
+      222,
+      223,
+      251,
+      253,
+      282
+    ],
+    "253": [
+      223,
+      252,
+      254,
+      282,
+      283,
+      284
+    ],
+    "254": [
+      223,
+      224,
+      225,
+      253,
+      255,
+      284
+    ],
+    "255": [
+      225,
+      254,
+      256,
+      284,
+      285,
+      286
+    ],
+    "256": [
+      225,
+      226,
+      227,
+      255,
+      257,
+      286
+    ],
+    "257": [
+      227,
+      256,
+      258,
+      286,
+      287,
+      288
+    ],
+    "258": [
+      227,
+      228,
+      229,
+      257,
+      259,
+      288
+    ],
+    "259": [
+      229,
+      258,
+      260,
+      288,
+      289,
+      290
+    ],
+    "260": [
+      229,
+      230,
+      231,
+      259,
+      261,
+      290
+    ],
+    "261": [
+      231,
+      260,
+      262,
+      290,
+      291,
+      292
+    ],
+    "262": [
+      231,
+      232,
+      233,
+      261,
+      263,
+      292
+    ],
+    "263": [
+      233,
+      262,
+      264,
+      292,
+      293,
+      294
+    ],
+    "264": [
+      233,
+      234,
+      235,
+      263,
+      265,
+      294
+    ],
+    "265": [
+      235,
+      264,
+      266,
+      294,
+      295,
+      296
+    ],
+    "266": [
+      235,
+      236,
+      237,
+      265,
+      267,
+      296
+    ],
+    "267": [
+      237,
+      266,
+      296,
+      297
+    ],
+    "281": [
+      251,
+      282,
+      311,
+      312
+    ],
+    "282": [
+      251,
+      252,
+      253,
+      281,
+      283,
+      312
+    ],
+    "283": [
+      253,
+      282,
+      284,
+      312,
+      313,
+      314
+    ],
+    "284": [
+      253,
+      254,
+      255,
+      283,
+      285,
+      314
+    ],
+    "285": [
+      255,
+      284,
+      286,
+      314,
+      315,
+      316
+    ],
+    "286": [
+      255,
+      256,
+      257,
+      285,
+      287,
+      316
+    ],
+    "287": [
+      257,
+      286,
+      288,
+      316,
+      317,
+      318
+    ],
+    "288": [
+      257,
+      258,
+      259,
+      287,
+      289,
+      318
+    ],
+    "289": [
+      259,
+      288,
+      290,
+      318,
+      319,
+      320
+    ],
+    "290": [
+      259,
+      260,
+      261,
+      289,
+      291,
+      320
+    ],
+    "291": [
+      261,
+      290,
+      292,
+      320,
+      321,
+      322
+    ],
+    "292": [
+      261,
+      262,
+      263,
+      291,
+      293,
+      322
+    ],
+    "293": [
+      263,
+      292,
+      294,
+      322,
+      323,
+      324
+    ],
+    "294": [
+      263,
+      264,
+      265,
+      293,
+      295,
+      324
+    ],
+    "295": [
+      265,
+      294,
+      296,
+      324,
+      325,
+      326
+    ],
+    "296": [
+      265,
+      266,
+      267,
+      295,
+      297,
+      326
+    ],
+    "297": [
+      267,
+      296,
+      326,
+      327
+    ],
+    "311": [
+      281,
+      312,
+      341,
+      342
+    ],
+    "312": [
+      281,
+      282,
+      283,
+      311,
+      313,
+      342
+    ],
+    "313": [
+      283,
+      312,
+      314,
+      342,
+      343,
+      344
+    ],
+    "314": [
+      283,
+      284,
+      285,
+      313,
+      315,
+      344
+    ],
+    "315": [
+      285,
+      314,
+      316,
+      344,
+      345,
+      346
+    ],
+    "316": [
+      285,
+      286,
+      287,
+      315,
+      317,
+      346
+    ],
+    "317": [
+      287,
+      316,
+      318,
+      346,
+      347,
+      348
+    ],
+    "318": [
+      287,
+      288,
+      289,
+      317,
+      319,
+      348
+    ],
+    "319": [
+      289,
+      318,
+      320,
+      348,
+      349,
+      350
+    ],
+    "320": [
+      289,
+      290,
+      291,
+      319,
+      321,
+      350
+    ],
+    "321": [
+      291,
+      320,
+      322,
+      350,
+      351,
+      352
+    ],
+    "322": [
+      291,
+      292,
+      293,
+      321,
+      323,
+      352
+    ],
+    "323": [
+      293,
+      322,
+      324,
+      352,
+      353,
+      354
+    ],
+    "324": [
+      293,
+      294,
+      295,
+      323,
+      325,
+      354
+    ],
+    "325": [
+      295,
+      324,
+      326,
+      354,
+      355,
+      356
+    ],
+    "326": [
+      295,
+      296,
+      297,
+      325,
+      327,
+      356
+    ],
+    "327": [
+      297,
+      326,
+      356,
+      357
+    ],
+    "341": [
+      311,
+      342,
+      371,
+      372
+    ],
+    "342": [
+      311,
+      312,
+      313,
+      341,
+      343,
+      372
+    ],
+    "343": [
+      313,
+      342,
+      344,
+      372,
+      373,
+      374
+    ],
+    "344": [
+      313,
+      314,
+      315,
+      343,
+      345,
+      374
+    ],
+    "345": [
+      315,
+      344,
+      346,
+      374,
+      375,
+      376
+    ],
+    "346": [
+      315,
+      316,
+      317,
+      345,
+      347,
+      376
+    ],
+    "347": [
+      317,
+      346,
+      348,
+      376,
+      377,
+      378
+    ],
+    "348": [
+      317,
+      318,
+      319,
+      347,
+      349,
+      378
+    ],
+    "349": [
+      319,
+      348,
+      350,
+      378,
+      379,
+      380
+    ],
+    "350": [
+      319,
+      320,
+      321,
+      349,
+      351,
+      380
+    ],
+    "351": [
+      321,
+      350,
+      352,
+      380,
+      381,
+      382
+    ],
+    "352": [
+      321,
+      322,
+      323,
+      351,
+      353,
+      382
+    ],
+    "353": [
+      323,
+      352,
+      354,
+      382,
+      383,
+      384
+    ],
+    "354": [
+      323,
+      324,
+      325,
+      353,
+      355,
+      384
+    ],
+    "355": [
+      325,
+      354,
+      356,
+      384,
+      385,
+      386
+    ],
+    "356": [
+      325,
+      326,
+      327,
+      355,
+      357,
+      386
+    ],
+    "357": [
+      327,
+      356,
+      386,
+      387
+    ],
+    "371": [
+      341,
+      372,
+      401,
+      402
+    ],
+    "372": [
+      341,
+      342,
+      343,
+      371,
+      373,
+      402
+    ],
+    "373": [
+      343,
+      372,
+      374,
+      402,
+      403,
+      404
+    ],
+    "374": [
+      343,
+      344,
+      345,
+      373,
+      375,
+      404
+    ],
+    "375": [
+      345,
+      374,
+      376,
+      404,
+      405,
+      406
+    ],
+    "376": [
+      345,
+      346,
+      347,
+      375,
+      377,
+      406
+    ],
+    "377": [
+      347,
+      376,
+      378,
+      406,
+      407,
+      408
+    ],
+    "378": [
+      347,
+      348,
+      349,
+      377,
+      379,
+      408
+    ],
+    "379": [
+      349,
+      378,
+      380,
+      408,
+      409,
+      410
+    ],
+    "380": [
+      349,
+      350,
+      351,
+      379,
+      381,
+      410
+    ],
+    "381": [
+      351,
+      380,
+      382,
+      410,
+      411,
+      412
+    ],
+    "382": [
+      351,
+      352,
+      353,
+      381,
+      383,
+      412
+    ],
+    "383": [
+      353,
+      382,
+      384,
+      412,
+      413,
+      414
+    ],
+    "384": [
+      353,
+      354,
+      355,
+      383,
+      385,
+      414
+    ],
+    "385": [
+      355,
+      384,
+      386,
+      414,
+      415,
+      416
+    ],
+    "386": [
+      355,
+      356,
+      357,
+      385,
+      387,
+      416
+    ],
+    "387": [
+      357,
+      386,
+      416,
+      417
+    ],
+    "401": [
+      371,
+      402,
+      431,
+      432
+    ],
+    "402": [
+      371,
+      372,
+      373,
+      401,
+      403,
+      432
+    ],
+    "403": [
+      373,
+      402,
+      404,
+      432,
+      433,
+      434
+    ],
+    "404": [
+      373,
+      374,
+      375,
+      403,
+      405,
+      434
+    ],
+    "405": [
+      375,
+      404,
+      406,
+      434,
+      435,
+      436
+    ],
+    "406": [
+      375,
+      376,
+      377,
+      405,
+      407,
+      436
+    ],
+    "407": [
+      377,
+      406,
+      408,
+      436,
+      437,
+      438
+    ],
+    "408": [
+      377,
+      378,
+      379,
+      407,
+      409,
+      438
+    ],
+    "409": [
+      379,
+      408,
+      410,
+      438,
+      439,
+      440
+    ],
+    "410": [
+      379,
+      380,
+      381,
+      409,
+      411,
+      440
+    ],
+    "411": [
+      381,
+      410,
+      412,
+      440,
+      441,
+      442
+    ],
+    "412": [
+      381,
+      382,
+      383,
+      411,
+      413,
+      442
+    ],
+    "413": [
+      383,
+      412,
+      414,
+      442,
+      443,
+      444
+    ],
+    "414": [
+      383,
+      384,
+      385,
+      413,
+      415,
+      444
+    ],
+    "415": [
+      385,
+      414,
+      416,
+      444,
+      445,
+      446
+    ],
+    "416": [
+      385,
+      386,
+      387,
+      415,
+      417,
+      446
+    ],
+    "417": [
+      387,
+      416,
+      446,
+      447
+    ],
+    "431": [
+      401,
+      432,
+      461,
+      462
+    ],
+    "432": [
+      401,
+      402,
+      403,
+      431,
+      433,
+      462
+    ],
+    "433": [
+      403,
+      432,
+      434,
+      462,
+      463,
+      464
+    ],
+    "434": [
+      403,
+      404,
+      405,
+      433,
+      435,
+      464
+    ],
+    "435": [
+      405,
+      434,
+      436,
+      464,
+      465,
+      466
+    ],
+    "436": [
+      405,
+      406,
+      407,
+      435,
+      437,
+      466
+    ],
+    "437": [
+      407,
+      436,
+      438,
+      466,
+      467,
+      468
+    ],
+    "438": [
+      407,
+      408,
+      409,
+      437,
+      439,
+      468
+    ],
+    "439": [
+      409,
+      438,
+      440,
+      468,
+      469,
+      470
+    ],
+    "440": [
+      409,
+      410,
+      411,
+      439,
+      441,
+      470
+    ],
+    "441": [
+      411,
+      440,
+      442,
+      470,
+      471,
+      472
+    ],
+    "442": [
+      411,
+      412,
+      413,
+      441,
+      443,
+      472
+    ],
+    "443": [
+      413,
+      442,
+      444,
+      472,
+      473,
+      474
+    ],
+    "444": [
+      413,
+      414,
+      415,
+      443,
+      445,
+      474
+    ],
+    "445": [
+      415,
+      444,
+      446,
+      474,
+      475,
+      476
+    ],
+    "446": [
+      415,
+      416,
+      417,
+      445,
+      447,
+      476
+    ],
+    "447": [
+      417,
+      446,
+      476,
+      477
+    ],
+    "461": [
+      431,
+      462,
+      491,
+      492
+    ],
+    "462": [
+      431,
+      432,
+      433,
+      461,
+      463,
+      492
+    ],
+    "463": [
+      433,
+      462,
+      464,
+      492,
+      493,
+      494
+    ],
+    "464": [
+      433,
+      434,
+      435,
+      463,
+      465,
+      494
+    ],
+    "465": [
+      435,
+      464,
+      466,
+      494,
+      495,
+      496
+    ],
+    "466": [
+      435,
+      436,
+      437,
+      465,
+      467,
+      496
+    ],
+    "467": [
+      437,
+      466,
+      468,
+      496,
+      497,
+      498
+    ],
+    "468": [
+      437,
+      438,
+      439,
+      467,
+      469,
+      498
+    ],
+    "469": [
+      439,
+      468,
+      470,
+      498,
+      499,
+      500
+    ],
+    "470": [
+      439,
+      440,
+      441,
+      469,
+      471,
+      500
+    ],
+    "471": [
+      441,
+      470,
+      472,
+      500,
+      501,
+      502
+    ],
+    "472": [
+      441,
+      442,
+      443,
+      471,
+      473,
+      502
+    ],
+    "473": [
+      443,
+      472,
+      474,
+      502,
+      503,
+      504
+    ],
+    "474": [
+      443,
+      444,
+      445,
+      473,
+      475,
+      504
+    ],
+    "475": [
+      445,
+      474,
+      476,
+      504,
+      505,
+      506
+    ],
+    "476": [
+      445,
+      446,
+      447,
+      475,
+      477,
+      506
+    ],
+    "477": [
+      447,
+      476,
+      506,
+      507
+    ],
+    "491": [
+      461,
+      492,
+      521,
+      522
+    ],
+    "492": [
+      461,
+      462,
+      463,
+      491,
+      493,
+      522
+    ],
+    "493": [
+      463,
+      492,
+      494,
+      522,
+      523,
+      524
+    ],
+    "494": [
+      463,
+      464,
+      465,
+      493,
+      495,
+      524
+    ],
+    "495": [
+      465,
+      494,
+      496,
+      524,
+      525,
+      526
+    ],
+    "496": [
+      465,
+      466,
+      467,
+      495,
+      497,
+      526
+    ],
+    "497": [
+      467,
+      496,
+      498,
+      526,
+      527,
+      528
+    ],
+    "498": [
+      467,
+      468,
+      469,
+      497,
+      499,
+      528
+    ],
+    "499": [
+      469,
+      498,
+      500,
+      528,
+      529,
+      530
+    ],
+    "500": [
+      469,
+      470,
+      471,
+      499,
+      501,
+      530
+    ],
+    "501": [
+      471,
+      500,
+      502,
+      530,
+      531,
+      532
+    ],
+    "502": [
+      471,
+      472,
+      473,
+      501,
+      503,
+      532
+    ],
+    "503": [
+      473,
+      502,
+      504,
+      532,
+      533,
+      534
+    ],
+    "504": [
+      473,
+      474,
+      475,
+      503,
+      505,
+      534
+    ],
+    "505": [
+      475,
+      504,
+      506,
+      534,
+      535,
+      536
+    ],
+    "506": [
+      475,
+      476,
+      477,
+      505,
+      507,
+      536
+    ],
+    "507": [
+      477,
+      506,
+      536,
+      537
+    ],
+    "521": [
+      491,
+      522
+    ],
+    "522": [
+      491,
+      492,
+      493,
+      521,
+      523
+    ],
+    "523": [
+      493,
+      522,
+      524
+    ],
+    "524": [
+      493,
+      494,
+      495,
+      523,
+      525
+    ],
+    "525": [
+      495,
+      524,
+      526
+    ],
+    "526": [
+      495,
+      496,
+      497,
+      525,
+      527
+    ],
+    "527": [
+      497,
+      526,
+      528
+    ],
+    "528": [
+      497,
+      498,
+      499,
+      527,
+      529
+    ],
+    "529": [
+      499,
+      528,
+      530
+    ],
+    "530": [
+      499,
+      500,
+      501,
+      529,
+      531
+    ],
+    "531": [
+      501,
+      530,
+      532
+    ],
+    "532": [
+      501,
+      502,
+      503,
+      531,
+      533
+    ],
+    "533": [
+      503,
+      532,
+      534
+    ],
+    "534": [
+      503,
+      504,
+      505,
+      533,
+      535
+    ],
+    "535": [
+      505,
+      534,
+      536
+    ],
+    "536": [
+      505,
+      506,
+      507,
+      535,
+      537
+    ],
+    "537": [
+      507,
+      536
+    ]
+  },
+  "river_edges": [
+    {
+      "a": 311,
+      "b": 341,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 313,
+      "b": 343,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 315,
+      "b": 345,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 341,
+      "b": 342,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 342,
+      "b": 343,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 342,
+      "b": 372,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 343,
+      "b": 344,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 344,
+      "b": 345,
+      "river": "Sauer",
+      "crossings": [
+        "C1"
+      ]
+    },
+    {
+      "a": 344,
+      "b": 374,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 345,
+      "b": 346,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 346,
+      "b": 376,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 347,
+      "b": 376,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 347,
+      "b": 377,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 347,
+      "b": 378,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 348,
+      "b": 378,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 349,
+      "b": 378,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 349,
+      "b": 379,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 349,
+      "b": 380,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 350,
+      "b": 380,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 351,
+      "b": 380,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 351,
+      "b": 381,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 381,
+      "b": 382,
+      "river": "Sauer",
+      "crossings": [
+        "C2"
+      ]
+    },
+    {
+      "a": 382,
+      "b": 412,
+      "river": "Sauer",
+      "crossings": [
+        "C3"
+      ]
+    },
+    {
+      "a": 383,
+      "b": 412,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 383,
+      "b": 413,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 387,
+      "b": 417,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 413,
+      "b": 414,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 414,
+      "b": 444,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 415,
+      "b": 444,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 415,
+      "b": 445,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 415,
+      "b": 446,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 416,
+      "b": 417,
+      "river": "Sauer",
+      "crossings": []
+    },
+    {
+      "a": 416,
+      "b": 446,
+      "river": "Sauer",
+      "crossings": []
+    }
+  ],
+  "crossings": [
+    {
+      "id": "C1",
+      "label": "Wœrth · passage à pied",
+      "a": 344,
+      "b": 345,
+      "mode": "ford",
+      "scan_pixel_hint": [
+        1205,
+        799
+      ],
+      "source": "S12 pp. 29–31 ; S2 pp. 14–15",
+      "historical_status": "CONFIRMÉ",
+      "edge_status": "ADAPTATION GAMEPLAY",
+      "position_validated": false
+    },
+    {
+      "id": "C2",
+      "label": "Bruchmühle · passerelle",
+      "a": 381,
+      "b": 382,
+      "mode": "footbridge",
+      "scan_pixel_hint": [
+        1243,
+        1090
+      ],
+      "source": "S12 p. 29",
+      "historical_status": "PROBABLE",
+      "edge_status": "ADAPTATION GAMEPLAY",
+      "position_validated": false
+    },
+    {
+      "id": "C3",
+      "label": "Gunstett · pont routier",
+      "a": 382,
+      "b": 412,
+      "mode": "bridge",
+      "scan_pixel_hint": [
+        1265,
+        1102
+      ],
+      "source": "S12 pp. 25,29",
+      "historical_status": "PROBABLE",
+      "edge_status": "ADAPTATION GAMEPLAY",
+      "position_validated": false
+    }
+  ],
+  "profiles": {
+    "infantry": {
+      "label": "Infanterie",
+      "ap": 16,
+      "costs": {
+        "plain": 4,
+        "meadow": 4,
+        "road": 2,
+        "forest": 8,
+        "village": 6,
+        "cultivated": 6
+      }
+    },
+    "cavalry": {
+      "label": "Cavalerie",
+      "ap": 20,
+      "costs": {
+        "plain": 2,
+        "meadow": 4,
+        "road": 1,
+        "forest": 8,
+        "village": 6,
+        "cultivated": 6
+      }
+    },
+    "artillery": {
+      "label": "Artillerie attelée",
+      "ap": 16,
+      "costs": {
+        "plain": 4,
+        "meadow": 6,
+        "road": 2,
+        "forest": 12,
+        "village": 6,
+        "cultivated": 8
+      }
+    }
+  },
+  "river_xy": [
+    [
+      3.3149928765394048,
+      4.013262630233408
+    ],
+    [
+      3.8002799889747196,
+      4.088434219992454
+    ],
+    [
+      4.4914973157078935,
+      4.103876204188902
+    ],
+    [
+      5.017548058205151,
+      4.296018000742853
+    ],
+    [
+      5.618094553968105,
+      4.356521385575828
+    ],
+    [
+      6.178451066678244,
+      4.124983278801338
+    ],
+    [
+      6.794990116097361,
+      4.327768174431851
+    ],
+    [
+      7.065412042300894,
+      4.6780088985934505
+    ],
+    [
+      7.623578266430732,
+      5.114924788375989
+    ],
+    [
+      8.20070957871857,
+      4.7869346222001
+    ],
+    [
+      9.023178842435547,
+      4.929989912268017
+    ],
+    [
+      9.845100534007447,
+      5.240158701475188
+    ]
+  ],
+  "towns": {
+    "Wœrth": [
+      4.417288385946759,
+      4.147978973503603
+    ],
+    "Elsasshausen": [
+      4.663234765684712,
+      1.9218144021603076
+    ],
+    "Spachbach": [
+      5.470354640911168,
+      4.237824496699483
+    ],
+    "Gunstett": [
+      6.940878713806665,
+      5.011467846112351
+    ],
+    "Albrechtshäuser": [
+      6.824767566400972,
+      2.7745620211560085
+    ],
+    "Morsbronn": [
+      8.517162257522386,
+      3.6466728471504157
+    ]
+  },
+  "roads_xy": [
+    [
+      [
+        4.663234765684712,
+        1.9218144021603076
+      ],
+      [
+        4.561386524472166,
+        2.8665848995404173
+      ],
+      [
+        4.4914973157078935,
+        4.103876204188902
+      ]
+    ],
+    [
+      [
+        4.4914973157078935,
+        4.103876204188902
+      ],
+      [
+        5.166513489872495,
+        4.040698962974194
+      ],
+      [
+        5.989817149239109,
+        3.929105111496575
+      ],
+      [
+        7.001702576316756,
+        4.029304998670316
+      ],
+      [
+        7.874131190670111,
+        3.9944131099602003
+      ],
+      [
+        8.517162257522386,
+        3.6466728471504157
+      ]
+    ],
+    [
+      [
+        6.940878713806665,
+        5.011467846112351
+      ],
+      [
+        6.983910857041062,
+        4.436110699330335
+      ],
+      [
+        7.133241336805122,
+        4.069382662135505
+      ],
+      [
+        7.463652729869107,
+        3.6921096804006015
+      ]
+    ],
+    [
+      [
+        6.940878713806665,
+        5.011467846112351
+      ],
+      [
+        6.059045779966464,
+        5.404939405781786
+      ],
+      [
+        5.316434985074095,
+        6.005122812394758
+      ]
+    ]
+  ],
+  "reference_start": 442,
+  "reference_goal": 232,
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://www.dilibri.de/ubtr/content/titleinfo/1925170",
+      "type": "Carte 1874, tracés approximatifs"
+    },
+    {
+      "id": "S12",
+      "url": "https://doi.org/10.3931/e-rara-101646",
+      "pages": "20–31,67,71,95",
+      "type": "Kunz 1891, description des terrains et franchissements"
+    }
+  ],
+  "limits": {
+    "georeference_rms_m": 266.61966184118586,
+    "bridges_exact": false,
+    "roads_exact": false,
+    "forest_boundaries_exact": false,
+    "elevations": "niveaux relatifs simplifiés ; pas altitudes historiques",
+    "crossing_notes": "Si C2 et C3 partagent une arête, ils sont des itinéraires alternatifs locaux, pas deux traversées successives. C4 non ouvert sans preuve d’horaire."
+  }
+}

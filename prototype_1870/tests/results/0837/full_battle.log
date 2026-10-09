@@ -1,0 +1,180 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+FULL BATTLE START turn=1 units=81 pending=50 resume=false
+FULL PROGRESS turn=1 side=0 action=1 kind=move decision_ms=958
+FULL PROGRESS turn=1 side=0 action=11 kind=formation decision_ms=813
+FULL PROGRESS turn=1 side=0 action=21 kind=move decision_ms=596
+FULL BOUNDARY turn=1 side=0 actions=26 counts=[{"end":1,"entrench":1,"formation":13,"move":11},{}] pending=50 losses=[0, 0] elapsed_s=23
+FULL PROGRESS turn=1 side=1 action=31 kind=move decision_ms=1239
+FULL PROGRESS turn=1 side=1 action=41 kind=move decision_ms=996
+FULL BOUNDARY turn=1 side=1 actions=51 counts=[{"end":1,"entrench":1,"formation":13,"move":11},{"deploy":1,"end":1,"fire":1,"formation":1,"move":21}] pending=50 losses=[32, 0] elapsed_s=55
+FULL PROGRESS turn=1 side=1 action=51 kind=end decision_ms=568
+FULL PROGRESS turn=2 side=0 action=61 kind=move decision_ms=664
+FULL BOUNDARY turn=2 side=0 actions=67 counts=[{"end":2,"entrench":3,"formation":16,"move":21},{"deploy":1,"end":1,"fire":1,"formation":1,"move":21}] pending=50 losses=[32, 0] elapsed_s=69
+FULL PROGRESS turn=2 side=1 action=71 kind=formation decision_ms=1398
+FULL PROGRESS turn=2 side=1 action=81 kind=move decision_ms=922
+FULL PROGRESS turn=2 side=1 action=91 kind=move decision_ms=655
+FULL BOUNDARY turn=2 side=1 actions=92 counts=[{"end":2,"entrench":3,"formation":16,"move":21},{"deploy":2,"end":2,"fire":2,"formation":2,"limber":1,"move":41}] pending=27 losses=[66, 0] elapsed_s=100
+FULL PROGRESS turn=3 side=0 action=101 kind=move decision_ms=3347
+FULL PROGRESS turn=3 side=0 action=111 kind=formation decision_ms=2407
+FULL PROGRESS turn=3 side=0 action=121 kind=move decision_ms=2033
+FULL PROGRESS turn=3 side=0 action=131 kind=move decision_ms=2203
+FULL BOUNDARY turn=3 side=0 actions=132 counts=[{"end":3,"entrench":6,"formation":22,"move":51},{"deploy":2,"end":2,"fire":2,"formation":2,"limber":1,"move":41}] pending=25 losses=[66, 0] elapsed_s=219
+FULL PROGRESS turn=3 side=1 action=141 kind=formation decision_ms=1718
+FULL PROGRESS turn=3 side=1 action=151 kind=fire decision_ms=1402
+FULL PROGRESS turn=3 side=1 action=161 kind=move decision_ms=986
+FULL BOUNDARY turn=3 side=1 actions=164 counts=[{"end":3,"entrench":6,"formation":22,"move":51},{"assault":2,"deploy":4,"end":3,"entrench":1,"fire":4,"formation":9,"limber":2,"move":57}] pending=25 losses=[296, 45] elapsed_s=277
+FULL PROGRESS turn=4 side=0 action=171 kind=fire decision_ms=3471
+FULL PROGRESS turn=4 side=0 action=181 kind=fire decision_ms=2832
+FULL PROGRESS turn=4 side=0 action=191 kind=move decision_ms=2325
+FULL PROGRESS turn=4 side=0 action=201 kind=deploy decision_ms=1870
+FULL BOUNDARY turn=4 side=0 actions=211 counts=[{"deploy":2,"end":4,"entrench":10,"fire":7,"formation":31,"move":75},{"assault":2,"deploy":4,"end":3,"entrench":1,"fire":4,"formation":9,"limber":2,"move":57}] pending=8 losses=[346, 655] elapsed_s=413
+FULL PROGRESS turn=4 side=0 action=211 kind=end decision_ms=1528
+FULL PROGRESS turn=4 side=1 action=221 kind=move decision_ms=4943
+FULL PROGRESS turn=4 side=1 action=231 kind=deploy decision_ms=3991
+FULL PROGRESS turn=4 side=1 action=241 kind=move decision_ms=2819
+FULL PROGRESS turn=4 side=1 action=251 kind=formation decision_ms=2351
+FULL BOUNDARY turn=4 side=1 actions=259 counts=[{"deploy":2,"end":4,"entrench":10,"fire":7,"formation":31,"move":75},{"assault":2,"deploy":5,"end":4,"entrench":3,"fire":9,"formation":12,"limber":3,"move":91,"rest":1}] pending=1 losses=[557, 700] elapsed_s=606
+FULL PROGRESS turn=5 side=0 action=261 kind=move decision_ms=4948
+FULL PROGRESS turn=5 side=0 action=271 kind=formation decision_ms=4265
+FULL PROGRESS turn=5 side=0 action=281 kind=fire decision_ms=3857
+FULL PROGRESS turn=5 side=0 action=291 kind=entrench decision_ms=3259
+FULL PROGRESS turn=5 side=0 action=301 kind=move decision_ms=3538
+FULL BOUNDARY turn=5 side=0 actions=306 counts=[{"deploy":3,"end":5,"entrench":21,"fire":17,"formation":43,"move":86,"rest":1},{"assault":2,"deploy":5,"end":4,"entrench":3,"fire":9,"formation":12,"limber":3,"move":91,"rest":1}] pending=1 losses=[697, 1361] elapsed_s=809
+FULL PROGRESS turn=5 side=1 action=311 kind=move decision_ms=6348
+FULL PROGRESS turn=5 side=1 action=321 kind=deploy decision_ms=5061
+FULL PROGRESS turn=5 side=1 action=331 kind=fire decision_ms=4126
+FULL PROGRESS turn=5 side=1 action=341 kind=fire decision_ms=4276
+FULL PROGRESS turn=5 side=1 action=351 kind=move decision_ms=2884
+FULL BOUNDARY turn=5 side=1 actions=359 counts=[{"deploy":3,"end":5,"entrench":21,"fire":17,"formation":43,"move":86,"rest":1},{"assault":3,"deploy":7,"end":5,"entrench":4,"fire":26,"formation":14,"limber":3,"move":120,"rest":1}] pending=1 losses=[1490, 1543] elapsed_s=1072
+FULL PROGRESS turn=6 side=0 action=361 kind=move decision_ms=4346
+FULL PROGRESS turn=6 side=0 action=371 kind=formation decision_ms=3702
+FULL PROGRESS turn=6 side=0 action=381 kind=fire decision_ms=3524
+FULL PROGRESS turn=6 side=0 action=391 kind=move decision_ms=2605
+FULL BOUNDARY turn=6 side=0 actions=400 counts=[{"assault":1,"deploy":4,"end":6,"entrench":29,"fire":28,"formation":49,"move":97,"rest":3},{"assault":3,"deploy":7,"end":5,"entrench":4,"fire":26,"formation":14,"limber":3,"move":120,"rest":1}] pending=1 losses=[1552, 2403] elapsed_s=1222
+FULL PROGRESS turn=6 side=1 action=401 kind=assault decision_ms=5841
+FULL PROGRESS turn=6 side=1 action=411 kind=formation decision_ms=4530
+FULL PROGRESS turn=6 side=1 action=421 kind=move decision_ms=3262
+FULL PROGRESS turn=6 side=1 action=431 kind=fire decision_ms=2650
+FULL PROGRESS turn=6 side=1 action=441 kind=move decision_ms=1937
+FULL PROGRESS turn=6 side=1 action=451 kind=move decision_ms=1601
+FULL BOUNDARY turn=6 side=1 actions=454 counts=[{"assault":1,"deploy":4,"end":6,"entrench":29,"fire":28,"formation":49,"move":97,"rest":3},{"assault":4,"deploy":8,"end":6,"entrench":6,"fire":35,"formation":23,"limber":5,"move":143,"rest":7}] pending=1 losses=[2066, 2550] elapsed_s=1408
+FULL PROGRESS turn=7 side=0 action=461 kind=fire decision_ms=4330
+FULL PROGRESS turn=7 side=0 action=471 kind=formation decision_ms=3606
+FULL PROGRESS turn=7 side=0 action=481 kind=fire decision_ms=3159
+FULL PROGRESS turn=7 side=0 action=491 kind=move decision_ms=2733
+FULL BOUNDARY turn=7 side=0 actions=497 counts=[{"assault":1,"deploy":4,"end":7,"entrench":35,"fire":46,"formation":58,"move":105,"rest":4},{"assault":4,"deploy":8,"end":6,"entrench":6,"fire":35,"formation":23,"limber":5,"move":143,"rest":7}] pending=1 losses=[2267, 3531] elapsed_s=1570
+FULL PROGRESS turn=7 side=1 action=501 kind=assault decision_ms=4424
+FULL PROGRESS turn=7 side=1 action=511 kind=fire decision_ms=3930
+FULL PROGRESS turn=7 side=1 action=521 kind=fire decision_ms=3340
+FULL PROGRESS turn=7 side=1 action=531 kind=fire decision_ms=2460
+FULL BOUNDARY turn=7 side=1 actions=540 counts=[{"assault":1,"deploy":4,"end":7,"entrench":35,"fire":46,"formation":58,"move":105,"rest":4},{"assault":6,"deploy":10,"end":7,"entrench":7,"fire":50,"formation":25,"limber":5,"move":161,"rest":9}] pending=1 losses=[3305, 3816] elapsed_s=1730
+FULL PROGRESS turn=8 side=0 action=541 kind=move decision_ms=4030
+FULL PROGRESS turn=8 side=0 action=551 kind=fire decision_ms=3478
+FULL PROGRESS turn=8 side=0 action=561 kind=move decision_ms=3501
+FULL PROGRESS turn=8 side=0 action=571 kind=move decision_ms=3038
+FULL PROGRESS turn=8 side=0 action=581 kind=fire decision_ms=2595
+FULL BOUNDARY turn=8 side=0 actions=584 counts=[{"assault":2,"deploy":4,"end":8,"entrench":39,"fire":60,"formation":64,"move":117,"rest":10},{"assault":6,"deploy":10,"end":7,"entrench":7,"fire":50,"formation":25,"limber":5,"move":161,"rest":9}] pending=1 losses=[3550, 4636] elapsed_s=1887
+FULL PROGRESS turn=8 side=1 action=591 kind=fire decision_ms=3756
+FULL PROGRESS turn=8 side=1 action=601 kind=deploy decision_ms=3321
+FULL PROGRESS turn=8 side=1 action=611 kind=fire decision_ms=2785
+FULL PROGRESS turn=8 side=1 action=621 kind=move decision_ms=2432
+FULL PROGRESS turn=8 side=1 action=631 kind=rest decision_ms=2571
+FULL BOUNDARY turn=8 side=1 actions=635 counts=[{"assault":2,"deploy":4,"end":8,"entrench":39,"fire":60,"formation":64,"move":117,"rest":10},{"assault":10,"deploy":13,"end":8,"entrench":9,"fire":67,"formation":28,"limber":6,"move":177,"rest":13}] pending=1 losses=[4929, 5085] elapsed_s=2058
+FULL PROGRESS turn=9 side=0 action=641 kind=rest decision_ms=3855
+FULL PROGRESS turn=9 side=0 action=651 kind=formation decision_ms=3173
+FULL PROGRESS turn=9 side=0 action=661 kind=fire decision_ms=4174
+FULL PROGRESS turn=9 side=0 action=671 kind=move decision_ms=3104
+FULL BOUNDARY turn=9 side=0 actions=677 counts=[{"assault":3,"deploy":6,"end":9,"entrench":42,"fire":76,"formation":69,"move":126,"rally":1,"rest":14},{"assault":10,"deploy":13,"end":8,"entrench":9,"fire":67,"formation":28,"limber":6,"move":177,"rest":13}] pending=1 losses=[5187, 6120] elapsed_s=2206
+FULL PROGRESS turn=9 side=1 action=681 kind=rest decision_ms=3924
+FULL PROGRESS turn=9 side=1 action=691 kind=fire decision_ms=4218
+FULL PROGRESS turn=9 side=1 action=701 kind=fire decision_ms=2741
+FULL PROGRESS turn=9 side=1 action=711 kind=move decision_ms=2360
+FULL BOUNDARY turn=9 side=1 actions=716 counts=[{"assault":3,"deploy":6,"end":9,"entrench":42,"fire":76,"formation":69,"move":126,"rally":1,"rest":14},{"assault":10,"deploy":14,"end":9,"entrench":11,"fire":83,"formation":34,"limber":7,"move":181,"rally":1,"rest":20}] pending=1 losses=[5913, 6310] elapsed_s=2341
+FULL PROGRESS turn=10 side=0 action=721 kind=fire decision_ms=3670
+FULL PROGRESS turn=10 side=0 action=731 kind=move decision_ms=3464
+FULL PROGRESS turn=10 side=0 action=741 kind=fire decision_ms=2916
+FULL PROGRESS turn=10 side=0 action=751 kind=rest decision_ms=2455
+FULL PROGRESS turn=10 side=0 action=761 kind=move decision_ms=2390
+FULL BOUNDARY turn=10 side=0 actions=764 counts=[{"assault":6,"deploy":6,"end":10,"entrench":48,"fire":90,"formation":74,"move":139,"rally":2,"rest":19},{"assault":10,"deploy":14,"end":9,"entrench":11,"fire":83,"formation":34,"limber":7,"move":181,"rally":1,"rest":20}] pending=1 losses=[6039, 7397] elapsed_s=2498
+FULL PROGRESS turn=10 side=1 action=771 kind=deploy decision_ms=3884
+FULL PROGRESS turn=10 side=1 action=781 kind=fire decision_ms=3078
+FULL PROGRESS turn=10 side=1 action=791 kind=fire decision_ms=2525
+FULL PROGRESS turn=10 side=1 action=801 kind=fire decision_ms=2258
+FULL BOUNDARY turn=10 side=1 actions=810 counts=[{"assault":6,"deploy":6,"end":10,"entrench":48,"fire":90,"formation":74,"move":139,"rally":2,"rest":19},{"assault":11,"deploy":18,"end":10,"entrench":14,"fire":106,"formation":34,"limber":11,"move":190,"rally":1,"rest":21}] pending=1 losses=[7249, 7827] elapsed_s=2646
+FULL PROGRESS turn=11 side=0 action=811 kind=move decision_ms=3894
+FULL PROGRESS turn=11 side=0 action=821 kind=fire decision_ms=3369
+FULL PROGRESS turn=11 side=0 action=831 kind=fire decision_ms=3005
+FULL PROGRESS turn=11 side=0 action=841 kind=entrench decision_ms=2674
+FULL PROGRESS turn=11 side=0 action=851 kind=move decision_ms=2248
+FULL BOUNDARY turn=11 side=0 actions=855 counts=[{"assault":6,"deploy":6,"end":11,"entrench":56,"fire":102,"formation":79,"move":149,"rally":3,"rest":27},{"assault":11,"deploy":18,"end":10,"entrench":14,"fire":106,"formation":34,"limber":11,"move":190,"rally":1,"rest":21}] pending=1 losses=[7380, 8557] elapsed_s=2797
+FULL PROGRESS turn=11 side=1 action=861 kind=move decision_ms=3550
+FULL PROGRESS turn=11 side=1 action=871 kind=deploy decision_ms=3006
+FULL PROGRESS turn=11 side=1 action=881 kind=rest decision_ms=2549
+FULL BOUNDARY turn=11 side=1 actions=887 counts=[{"assault":6,"deploy":6,"end":11,"entrench":56,"fire":102,"formation":79,"move":149,"rally":3,"rest":27},{"assault":12,"deploy":19,"end":11,"entrench":15,"fire":112,"formation":36,"limber":12,"move":199,"rally":1,"rest":31}] pending=1 losses=[7706, 8634] elapsed_s=2901
+FULL PROGRESS turn=12 side=0 action=891 kind=rest decision_ms=3870
+FULL PROGRESS turn=12 side=0 action=901 kind=fire decision_ms=3442
+FULL PROGRESS turn=12 side=0 action=911 kind=fire decision_ms=3143
+FULL PROGRESS turn=12 side=0 action=921 kind=move decision_ms=2426
+FULL BOUNDARY turn=12 side=0 actions=923 counts=[{"assault":6,"deploy":6,"end":12,"entrench":60,"fire":117,"formation":82,"move":156,"rally":3,"rest":33},{"assault":12,"deploy":19,"end":11,"entrench":15,"fire":112,"formation":36,"limber":12,"move":199,"rally":1,"rest":31}] pending=1 losses=[7790, 9246] elapsed_s=3030
+FULL PROGRESS turn=12 side=1 action=931 kind=entrench decision_ms=3669
+FULL PROGRESS turn=12 side=1 action=941 kind=fire decision_ms=3245
+FULL PROGRESS turn=12 side=1 action=951 kind=limber decision_ms=2871
+FULL PROGRESS turn=12 side=1 action=961 kind=fire decision_ms=2416
+FULL BOUNDARY turn=12 side=1 actions=968 counts=[{"assault":6,"deploy":6,"end":12,"entrench":60,"fire":117,"formation":82,"move":156,"rally":3,"rest":33},{"assault":15,"deploy":20,"end":12,"entrench":20,"fire":127,"formation":37,"limber":16,"move":211,"rally":2,"rest":33}] pending=1 losses=[9001, 9726] elapsed_s=3183
+FULL PROGRESS turn=13 side=0 action=971 kind=rest decision_ms=3766
+FULL PROGRESS turn=13 side=0 action=981 kind=formation decision_ms=3201
+FULL PROGRESS turn=13 side=0 action=991 kind=fire decision_ms=2981
+FULL PROGRESS turn=13 side=0 action=1001 kind=rest decision_ms=2691
+FULL BOUNDARY turn=13 side=0 actions=1007 counts=[{"assault":7,"deploy":6,"end":13,"entrench":64,"fire":126,"formation":86,"move":168,"rally":4,"rest":40},{"assault":15,"deploy":20,"end":12,"entrench":20,"fire":127,"formation":37,"limber":16,"move":211,"rally":2,"rest":33}] pending=1 losses=[9062, 10352] elapsed_s=3313
+FULL PROGRESS turn=13 side=1 action=1011 kind=rest decision_ms=3989
+FULL PROGRESS turn=13 side=1 action=1021 kind=fire decision_ms=3471
+FULL PROGRESS turn=13 side=1 action=1031 kind=move decision_ms=3201
+FULL PROGRESS turn=13 side=1 action=1041 kind=move decision_ms=2558
+FULL BOUNDARY turn=13 side=1 actions=1042 counts=[{"assault":7,"deploy":6,"end":13,"entrench":64,"fire":126,"formation":86,"move":168,"rally":4,"rest":40},{"assault":15,"deploy":21,"end":13,"entrench":21,"fire":139,"formation":42,"limber":16,"move":219,"rally":2,"rest":40}] pending=1 losses=[9452, 10445] elapsed_s=3441
+FULL PROGRESS turn=14 side=0 action=1051 kind=fire decision_ms=3694
+FULL PROGRESS turn=14 side=0 action=1061 kind=fire decision_ms=3327
+FULL PROGRESS turn=14 side=0 action=1071 kind=fire decision_ms=2959
+FULL PROGRESS turn=14 side=0 action=1081 kind=move decision_ms=2388
+FULL BOUNDARY turn=14 side=0 actions=1088 counts=[{"assault":9,"deploy":6,"end":14,"entrench":71,"fire":144,"formation":90,"move":180,"rally":4,"rest":42},{"assault":15,"deploy":21,"end":13,"entrench":21,"fire":139,"formation":42,"limber":16,"move":219,"rally":2,"rest":40}] pending=1 losses=[9645, 11417] elapsed_s=3597
+FULL PROGRESS turn=14 side=1 action=1091 kind=rest decision_ms=3737
+FULL PROGRESS turn=14 side=1 action=1101 kind=fire decision_ms=3525
+FULL PROGRESS turn=14 side=1 action=1111 kind=rest decision_ms=3094
+FULL BOUNDARY turn=14 side=1 actions=1116 counts=[{"assault":9,"deploy":6,"end":14,"entrench":71,"fire":144,"formation":90,"move":180,"rally":4,"rest":42},{"assault":15,"deploy":21,"end":14,"entrench":22,"fire":155,"formation":43,"limber":16,"move":225,"rally":2,"rest":43}] pending=1 losses=[10348, 11662] elapsed_s=3702
+FULL PROGRESS turn=15 side=0 action=1121 kind=rest decision_ms=3463
+FULL PROGRESS turn=15 side=0 action=1131 kind=deploy decision_ms=3137
+FULL PROGRESS turn=15 side=0 action=1141 kind=entrench decision_ms=2527
+FULL BOUNDARY turn=15 side=0 actions=1149 counts=[{"assault":11,"deploy":7,"end":15,"entrench":75,"fire":152,"formation":94,"move":184,"rally":5,"rest":50},{"assault":15,"deploy":21,"end":14,"entrench":22,"fire":155,"formation":43,"limber":16,"move":225,"rally":2,"rest":43}] pending=1 losses=[10453, 12248] elapsed_s=3808
+FULL PROGRESS turn=15 side=1 action=1151 kind=rest decision_ms=3710
+FULL PROGRESS turn=15 side=1 action=1161 kind=fire decision_ms=3142
+FULL PROGRESS turn=15 side=1 action=1171 kind=formation decision_ms=3026
+FULL BOUNDARY turn=15 side=1 actions=1177 counts=[{"assault":11,"deploy":7,"end":15,"entrench":75,"fire":152,"formation":94,"move":184,"rally":5,"rest":50},{"assault":15,"deploy":22,"end":15,"entrench":23,"fire":169,"formation":46,"limber":17,"move":228,"rally":2,"rest":47}] pending=1 losses=[11171, 12441] elapsed_s=3904
+FULL PROGRESS turn=16 side=0 action=1181 kind=fire decision_ms=3748
+FULL PROGRESS turn=16 side=0 action=1191 kind=move decision_ms=3478
+FULL PROGRESS turn=16 side=0 action=1201 kind=move decision_ms=3068
+FULL PROGRESS turn=16 side=0 action=1211 kind=move decision_ms=2442
+FULL BOUNDARY turn=16 side=0 actions=1219 counts=[{"assault":14,"deploy":7,"end":16,"entrench":77,"fire":171,"formation":98,"move":196,"rally":5,"rest":51},{"assault":15,"deploy":22,"end":15,"entrench":23,"fire":169,"formation":46,"limber":17,"move":228,"rally":2,"rest":47}] pending=1 losses=[11285, 13160] elapsed_s=4055
+FULL PROGRESS turn=16 side=1 action=1221 kind=assault decision_ms=3857
+FULL PROGRESS turn=16 side=1 action=1231 kind=fire decision_ms=3410
+FULL PROGRESS turn=16 side=1 action=1241 kind=move decision_ms=3008
+FULL BOUNDARY turn=16 side=1 actions=1249 counts=[{"assault":14,"deploy":7,"end":16,"entrench":77,"fire":171,"formation":98,"move":196,"rally":5,"rest":51},{"assault":16,"deploy":22,"end":16,"entrench":25,"fire":181,"formation":46,"limber":17,"move":237,"rally":3,"rest":51}] pending=1 losses=[12014, 13462] elapsed_s=4163
+FULL PROGRESS turn=17 side=0 action=1251 kind=move decision_ms=4016
+FULL PROGRESS turn=17 side=0 action=1261 kind=formation decision_ms=3293
+FULL PROGRESS turn=17 side=0 action=1271 kind=fire decision_ms=2930
+FULL PROGRESS turn=17 side=0 action=1281 kind=fire decision_ms=2432
+FULL BOUNDARY turn=17 side=0 actions=1287 counts=[{"assault":14,"deploy":7,"end":17,"entrench":81,"fire":190,"formation":102,"move":199,"rally":6,"rest":57},{"assault":16,"deploy":22,"end":16,"entrench":25,"fire":181,"formation":46,"limber":17,"move":237,"rally":3,"rest":51}] pending=1 losses=[12085, 14032] elapsed_s=4291
+FULL PROGRESS turn=17 side=1 action=1291 kind=rest decision_ms=3603
+FULL PROGRESS turn=17 side=1 action=1301 kind=fire decision_ms=3200
+FULL PROGRESS turn=17 side=1 action=1311 kind=rest decision_ms=3377
+FULL BOUNDARY turn=17 side=1 actions=1312 counts=[{"assault":14,"deploy":7,"end":17,"entrench":81,"fire":190,"formation":102,"move":199,"rally":6,"rest":57},{"assault":16,"deploy":23,"end":17,"entrench":26,"fire":196,"formation":46,"limber":17,"move":239,"rally":3,"rest":56}] pending=1 losses=[12536, 14101] elapsed_s=4380
+FULL PROGRESS turn=18 side=0 action=1321 kind=formation decision_ms=3880
+FULL PROGRESS turn=18 side=0 action=1331 kind=fire decision_ms=3457
+FULL PROGRESS turn=18 side=0 action=1341 kind=move decision_ms=2785
+FULL BOUNDARY turn=18 side=0 actions=1345 counts=[{"assault":14,"deploy":7,"end":18,"entrench":82,"fire":210,"formation":104,"move":202,"rally":6,"rest":63},{"assault":16,"deploy":23,"end":17,"entrench":26,"fire":196,"formation":46,"limber":17,"move":239,"rally":3,"rest":56}] pending=1 losses=[12573, 14540] elapsed_s=4505
+FULL PROGRESS turn=18 side=1 action=1351 kind=fire decision_ms=3638
+FULL PROGRESS turn=18 side=1 action=1361 kind=fire decision_ms=3167
+FULL PROGRESS turn=18 side=1 action=1371 kind=entrench decision_ms=2400
+FULL BOUNDARY turn=18 side=1 actions=1372 counts=[{"assault":14,"deploy":7,"end":18,"entrench":82,"fire":210,"formation":104,"move":202,"rally":6,"rest":63},{"assault":16,"deploy":23,"end":18,"entrench":27,"fire":208,"formation":47,"limber":18,"move":245,"rally":3,"rest":61}] pending=1 losses=[12970, 14624] elapsed_s=4598
+FAIL: all scheduled reinforcements entered
+FULL RESULT {"captures":[{"objective":"froeschwiller","owner":1,"side":1,"turn":6},{"objective":"elsasshausen","owner":1,"side":1,"turn":11},{"objective":"niederwald","owner":1,"side":1,"turn":11}],"checks":1484,"counts":[{"assault":14,"deploy":7,"end":18,"entrench":82,"fire":210,"formation":104,"move":202,"rally":6,"rest":63},{"assault":16,"deploy":23,"end":18,"entrench":27,"fire":208,"formation":47,"limber":18,"move":245,"rally":3,"rest":61}],"elapsed_s":4599,"failures":1,"final":{"distribution":[{"elsasshausen":16,"froeschwiller":23,"niederwald":2},{"elsasshausen":7,"froeschwiller":18,"niederwald":4}],"finished":true,"losses":[12970,14624],"owners":{"elsasshausen":1,"froeschwiller":1,"niederwald":1},"pending":1,"prisoners":[0,236],"routed":[1,0],"score":{"level":"minor_win","loss_advantage":-0.0462156420292442,"margin":62.4090204927485,"parts":[[0.0,8.33333333333333,6.61915367483296],[60.0,11.6666666666667,5.69484083424808]],"reason":"losses_close","totals":[14.9524870081663,77.3615075009148],"winner":1},"turn":18},"max_routed":[2,1],"turns":18}
+V37 FULL BATTLE 1483/1484

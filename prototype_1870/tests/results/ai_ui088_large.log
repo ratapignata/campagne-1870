@@ -1,0 +1,30 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 20.1.2, 256 bits)
+
+PASS: existing 087 save continues with previous AI and preserved PA
+PASS: medium selected by default
+PASS: touch selects easy
+PASS: selection does not alter current saved battle
+PASS: large difficulty touch target easy
+PASS: large difficulty touch target medium
+PASS: large difficulty touch target hard
+PASS: touch selects medium
+PASS: selection does not alter current saved battle
+PASS: large difficulty touch target easy
+PASS: large difficulty touch target medium
+PASS: large difficulty touch target hard
+PASS: touch selects hard
+PASS: selection does not alter current saved battle
+PASS: large difficulty touch target easy
+PASS: large difficulty touch target medium
+PASS: large difficulty touch target hard
+PASS: camp confirmation starts hard battle
+PASS: restart restores exact battle and chosen difficulty
+PASS: AI thinking starts on worker thread
+PASS: menu pauses commands while worker finishes
+PASS: new battle discards old pending AI decision
+PASS: application suspension applies no AI commands
+PASS: AI resumes and executes a command
+AI UI 088: 24 / 24 passed

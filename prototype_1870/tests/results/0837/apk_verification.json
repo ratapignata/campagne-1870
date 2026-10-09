@@ -1,0 +1,14 @@
+{
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "apk": "1870_v0.8.37.apk",
+  "bytes": 87876685,
+  "sha256": "17d3cde5764840dfd9164e8f80a8fa2aaf2553d6ca97cf84923faf91773459a8",
+  "version": "0.8.37",
+  "version_code": 50,
+  "signature_v2": true,
+  "signature_v3": true,
+  "alignment_16KiB": true,
+  "certificate_sha256": "57c00efad8c9b822d4a1d63238a4137b9afc97b6e9248076f4f54bb292ae846c",
+  "physical_device_test": false,
+  "emulator_test": false
+}

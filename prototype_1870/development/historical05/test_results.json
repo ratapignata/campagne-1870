@@ -1,0 +1,272 @@
+{
+  "checks": 1475,
+  "failures": 0,
+  "godot": "4.5-stable (official)",
+  "results": [
+    {
+      "kind": "infantry",
+      "route": {
+        "elapsed": 30,
+        "movement_ap": 28,
+        "path": [
+          442,
+          412,
+          382,
+          352,
+          323,
+          293,
+          263,
+          233,
+          232
+        ],
+        "steps": [
+          {
+            "ap": 2,
+            "crossing": "",
+            "from": 442,
+            "stop": false,
+            "to": 412,
+            "turn": 1
+          },
+          {
+            "ap": 2,
+            "crossing": "C3",
+            "from": 412,
+            "stop": false,
+            "to": 382,
+            "turn": 1
+          },
+          {
+            "ap": 2,
+            "crossing": "",
+            "from": 382,
+            "stop": false,
+            "to": 352,
+            "turn": 1
+          },
+          {
+            "ap": 2,
+            "crossing": "",
+            "from": 352,
+            "stop": false,
+            "to": 323,
+            "turn": 1
+          },
+          {
+            "ap": 6,
+            "crossing": "",
+            "from": 323,
+            "stop": false,
+            "to": 293,
+            "turn": 1
+          },
+          {
+            "ap": 4,
+            "crossing": "",
+            "from": 293,
+            "stop": false,
+            "to": 263,
+            "turn": 2
+          },
+          {
+            "ap": 4,
+            "crossing": "",
+            "from": 263,
+            "stop": false,
+            "to": 233,
+            "turn": 2
+          },
+          {
+            "ap": 6,
+            "crossing": "",
+            "from": 233,
+            "stop": false,
+            "to": 232,
+            "turn": 2
+          }
+        ],
+        "turns": 2
+      }
+    },
+    {
+      "kind": "cavalry",
+      "route": {
+        "elapsed": 17,
+        "movement_ap": 17,
+        "path": [
+          442,
+          412,
+          382,
+          352,
+          323,
+          324,
+          293,
+          263,
+          233,
+          232
+        ],
+        "steps": [
+          {
+            "ap": 1,
+            "crossing": "",
+            "from": 442,
+            "stop": false,
+            "to": 412,
+            "turn": 1
+          },
+          {
+            "ap": 1,
+            "crossing": "C3",
+            "from": 412,
+            "stop": false,
+            "to": 382,
+            "turn": 1
+          },
+          {
+            "ap": 1,
+            "crossing": "",
+            "from": 382,
+            "stop": false,
+            "to": 352,
+            "turn": 1
+          },
+          {
+            "ap": 1,
+            "crossing": "",
+            "from": 352,
+            "stop": false,
+            "to": 323,
+            "turn": 1
+          },
+          {
+            "ap": 1,
+            "crossing": "",
+            "from": 323,
+            "stop": false,
+            "to": 324,
+            "turn": 1
+          },
+          {
+            "ap": 2,
+            "crossing": "",
+            "from": 324,
+            "stop": false,
+            "to": 293,
+            "turn": 1
+          },
+          {
+            "ap": 2,
+            "crossing": "",
+            "from": 293,
+            "stop": false,
+            "to": 263,
+            "turn": 1
+          },
+          {
+            "ap": 2,
+            "crossing": "",
+            "from": 263,
+            "stop": false,
+            "to": 233,
+            "turn": 1
+          },
+          {
+            "ap": 6,
+            "crossing": "",
+            "from": 233,
+            "stop": false,
+            "to": 232,
+            "turn": 1
+          }
+        ],
+        "turns": 1
+      }
+    },
+    {
+      "kind": "artillery",
+      "route": {
+        "elapsed": 30,
+        "movement_ap": 28,
+        "path": [
+          442,
+          412,
+          382,
+          352,
+          323,
+          293,
+          263,
+          233,
+          232
+        ],
+        "steps": [
+          {
+            "ap": 2,
+            "crossing": "",
+            "from": 442,
+            "stop": false,
+            "to": 412,
+            "turn": 1
+          },
+          {
+            "ap": 2,
+            "crossing": "C3",
+            "from": 412,
+            "stop": false,
+            "to": 382,
+            "turn": 1
+          },
+          {
+            "ap": 2,
+            "crossing": "",
+            "from": 382,
+            "stop": false,
+            "to": 352,
+            "turn": 1
+          },
+          {
+            "ap": 2,
+            "crossing": "",
+            "from": 352,
+            "stop": false,
+            "to": 323,
+            "turn": 1
+          },
+          {
+            "ap": 6,
+            "crossing": "",
+            "from": 323,
+            "stop": false,
+            "to": 293,
+            "turn": 1
+          },
+          {
+            "ap": 4,
+            "crossing": "",
+            "from": 293,
+            "stop": false,
+            "to": 263,
+            "turn": 2
+          },
+          {
+            "ap": 4,
+            "crossing": "",
+            "from": 263,
+            "stop": false,
+            "to": 233,
+            "turn": 2
+          },
+          {
+            "ap": 6,
+            "crossing": "",
+            "from": 233,
+            "stop": false,
+            "to": 232,
+            "turn": 2
+          }
+        ],
+        "turns": 2
+      }
+    }
+  ],
+  "scope": "isolated generic navigation module; no battle or Android test"
+}

@@ -1,0 +1,29 @@
+{
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "source_zip_import": true,
+  "saves": "43/43",
+  "contract": "110/110",
+  "ui": "11/11",
+  "results": [
+    {
+      "test": "import",
+      "exit": 0,
+      "errors": []
+    },
+    {
+      "test": "v36/test_saves",
+      "exit": 0,
+      "errors": []
+    },
+    {
+      "test": "v36/test_contract",
+      "exit": 0,
+      "errors": []
+    },
+    {
+      "test": "v36/test_ui",
+      "exit": 0,
+      "errors": []
+    }
+  ]
+}
