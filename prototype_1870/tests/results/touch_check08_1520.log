@@ -1,0 +1,169 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 20.1.2, 256 bits)
+
+PASS: start opens camp selection
+PASS: touch starts through real button
+PASS: no move button
+PASS: no general view or zoom buttons
+PASS: empty terrain tap shows terrain sheet
+PASS: terrain sheet shows movement protection and line of fire
+PASS: selection opens unit sheet
+PASS: touch produces one selection
+PASS: objective banner removed
+PASS: four PA segments shown
+PASS: larger header type
+PASS: first destination tap previews only
+PASS: destination terrain fits beneath selected unit summary
+PASS: cost and remaining AP explicit
+PASS: retap deselects unit and cancels route
+PASS: second destination tap executes once
+PASS: undo button restores move
+PASS: free selection after other unit moves
+PASS: long request exposes reachable limit
+PASS: retapping far goal does not move
+PASS: retapping limit moves to it
+PASS: touch opens help
+PASS: terrain help tab available
+PASS: terrain help scrolls with one finger
+PASS: touch closes help
+PASS: pan without stray selection
+PASS: pinch without stray selection
+PASS: end turn asks while AP remain
+PASS: cancel end turn keeps camp
+PASS: no confirmation when all AP spent
+PASS: touch selects valid fire target
+PASS: first target tap never fires
+PASS: enemy sheet shown without changing shooter
+PASS: target terrain shown in first line
+PASS: shooter distinguished from inspected enemy
+PASS: enemy sheet uses target's own weapon and strength
+PASS: name and terrain fields do not overlap
+PASS: no forecast before shot
+PASS: adjacent target exposes separate assault button
+PASS: retap deselects without firing prepared target
+PASS: fire button removed
+PASS: second tap shoots and animates
+PASS: touch fire applies attacker losses through reaction
+PASS: reaction sound triggers without extending animation
+PASS: extra tap during animation ignored
+PASS: feedback after short animation
+PASS: fresh shot needs new selection
+PASS: shot disables undo
+PASS: journal available after shot
+PASS: menu continue preserves session
+PASS: physical mouse still opens help
+PASS: selected infantry offers entrenchment
+PASS: touch digging spends two PA
+PASS: moving abandons shelter and offers undo
+PASS: digging and undo controls do not overlap
+PASS: touch undo restores shelter
+PASS: battery shows deployment control
+PASS: battery weapon shown in sheet
+PASS: touch deploy spends one PA
+PASS: deployed unit shows no movement range
+PASS: sheet explains ready battery reaction
+PASS: touch limber restores movement
+PASS: help lists weapon rules from pack
+PASS: limbered target selection offers deployment
+PASS: deployed Krupp exposes fire command
+PASS: second tap fires Krupp once
+PASS: UI autosave restores battery and firing state
+PASS: selecting unit leaves camera still
+PASS: routed safe unit offers rally
+PASS: routing hint describes rally instead of movement
+PASS: sheet uses new morale name
+PASS: rally touch applies one state improvement
+PASS: sound setting toggles
+PASS: selecting target does not launch assault
+PASS: assault emits its separate sound
+PASS: assault button launches assault instead of fire
+PASS: touch assault takes objective automatically for three PA
+PASS: postcombat message names camps and outcome
+PASS: UI autosaves assault and spent defender reaction exactly
+PASS: context text area avoids end turn controls
+PASS: German choice gives first turn to French AI
+PASS: application pause suspends AI
+PASS: menu pauses AI
+PASS: AI completes turn and hands control to German player
+PASS: player controls enabled after AI
+PASS: six full rounds show result
+PASS: result follows selected German camp
+PASS: inspect closes result with enabled return button
+PASS: postbattle inspection hides military controls
+PASS: postbattle retap deselects
+PASS: postbattle map taps never change battle
+PASS: results reopen from map
+PASS: user example with final French control is major victory
+PASS: result explanation fits panel
+PASS: menu music off leaves effects setting intact
+PASS: menu music on starts playback
+PASS: both audio choices persisted separately
+PASS: background pauses music
+PASS: resume restores music
+PASS: friendly blocker explained without automatic marker
+PASS: retap cannot fire blocked gun
+PASS: elevated gun permits normal confirmation
+PASS: overhead shot spares friendly troops
+PASS: morale and shelter share one readable line
+PASS: strength and AP rectangles do not overlap
+PASS: weapon and reaction rectangles do not overlap
+PASS: no duplicate player-turn message in footer
+PASS: top band retains player turn
+PASS: sheet text fits: Batterie Krupp
+PASS: sheet text fits: 250 / 250 hommes
+PASS: sheet text fits: 4 / 4 PA
+PASS: sheet text fits: Désorganisé · Retranché
+PASS: sheet text fits: Krupp · 6 cases
+PASS: sheet text fits: Riposte prête
+PASS: sheet text fits: Plaine
+PASS: minor result explains missing military edge
+PASS: direct enemy inspection shows terrain and no INF prefix
+PASS: enemy inspection exposes no military orders
+PASS: inspection does not mutate battle
+PASS: enemy retap clears sheet and terrain
+PASS: target terrain replaces shooter terrain during aim
+PASS: returning to shooter restores its terrain
+PASS: undo hidden without reversible action
+PASS: French flag replaces camp suffix
+PASS: target German flag replaces camp suffix
+PASS: flag name terrain do not overlap
+PASS: holding D opens disorganization explanation
+PASS: help does not count as combat animation
+PASS: long press on already targeted enemy cannot fire or change selection
+PASS: explanation remains briefly after release
+PASS: holding shovel opens shelter explanation
+PASS: shovel help cannot spend AP or change shelter
+PASS: help stays inside map
+PASS: help text fits bubble
+PASS: drag cancels hold without firing
+PASS: second finger cancels hold and suppresses tap
+PASS: interruption cancels pending gesture
+PASS: cancelled touch never confirms shot
+PASS: mouse hold opens help without attack
+PASS: help hides after timeout
+PASS: normal tap after long press still fires once from original shooter
+PASS: undo hidden after irreversible combat
+PASS: undo appears after reversible move
+PASS: undo hides after use
+PASS: flag hidden with empty sheet
+PASS: own infantry shows line control
+PASS: morale and formation do not overlap
+PASS: current choice disabled
+PASS: opening costs no AP
+PASS: column costs one PA
+PASS: sheet reflects formation and AP
+PASS: route and terrain show column cost
+PASS: column movement uses three quarters
+PASS: undo preserves chosen formation
+PASS: second change charged and clears undo
+PASS: UI save exact restore
+PASS: long morale fits
+PASS: enemy formation read only
+PASS: own shooter retained
+PASS: disabled below 1 PA
+PASS: disabled routed
+PASS: battery has no formation control
+PASS: postbattle read only
+INPUT CHECKS: 163 passed / 163 total

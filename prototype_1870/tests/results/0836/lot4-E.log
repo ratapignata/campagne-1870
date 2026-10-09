@@ -1,0 +1,8 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+E_final boundary 17/0 actions 13
+E_final boundary 17/1 actions 26
+E_final boundary 18/0 actions 40
+E_final boundary 18/1 actions 53
+RESULT E_final {"captures":[{"objective":"froeschwiller","owner":1,"turn":18}],"counts":[{"deploy":1,"end":2,"entrench":3,"fire":14,"formation":2,"move":5},{"assault":1,"end":2,"entrench":2,"fire":4,"formation":3,"move":13,"rest":1}],"final":{"distribution":[{"elsasshausen":4,"froeschwiller":2,"niederwald":1},{"elsasshausen":4,"froeschwiller":1,"niederwald":2}],"finished":true,"losses":[1256,1899],"owners":{"elsasshausen":1,"froeschwiller":1,"niederwald":0},"prisoners":[0,0],"routed":[1,0],"score":{"level":"minor_win","loss_advantage":-0.0443354037267081,"margin":39.4836622958362,"parts":[[10.0,0.925925925925926,3.61714285714286],[50.0,1.2962962962963,2.7304347826087]],"reason":"losses_close","totals":[14.5430687830688,54.026731078905],"winner":1},"turn":18},"inactive":0}
+V36 AI ACTIVE 8/8

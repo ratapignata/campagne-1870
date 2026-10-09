@@ -1,0 +1,52 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 20.1.2, 256 bits)
+
+PASS: Prussian infantry 3 moved two cells, 2.75 AP, undo available
+PASS: selected infantry 3 has expected AP
+PASS: formation button enabled infantry 3
+PASS: formation and entrench do not overlap infantry 3
+PASS: distinct hit area undo
+PASS: distinct hit area entrench
+PASS: undo header fits
+PASS: touch opens formation dialog infantry 3
+PASS: opening formation does not entrench or spend AP infantry 3
+PASS: column to line spends exactly 1 PA infantry 3
+PASS: Prussian infantry 3 moved two cells, 2.75 AP, undo available
+PASS: selected infantry 2 has expected AP
+PASS: formation button enabled infantry 2
+PASS: formation and entrench do not overlap infantry 2
+PASS: distinct hit area undo
+PASS: distinct hit area entrench
+PASS: undo header fits
+PASS: touch opens formation dialog infantry 2
+PASS: opening formation does not entrench or spend AP infantry 2
+PASS: column to line spends exactly 1 PA infantry 2
+PASS: Prussian infantry 3 moved two cells, 2.75 AP, undo available
+PASS: selected infantry 4 has expected AP
+PASS: formation button enabled infantry 4
+PASS: formation and entrench do not overlap infantry 4
+PASS: distinct hit area undo
+PASS: distinct hit area entrench
+PASS: undo header fits
+PASS: touch opens formation dialog infantry 4
+PASS: opening formation does not entrench or spend AP infantry 4
+PASS: column to line spends exactly 1 PA infantry 4
+PASS: Prussian infantry 3 moved two cells, 2.75 AP, undo available
+PASS: selected infantry 1 has expected AP
+PASS: formation button enabled infantry 1
+PASS: formation and entrench do not overlap infantry 1
+PASS: distinct hit area undo
+PASS: distinct hit area entrench
+PASS: undo header fits
+PASS: touch opens formation dialog infantry 1
+PASS: opening formation does not entrench or spend AP infantry 1
+PASS: column to line spends exactly 1 PA infantry 1
+PASS: Prussian infantry 3 moved two cells, 2.75 AP, undo available
+PASS: undo remains accessible and restores move
+PASS: Prussian infantry 3 moved two cells, 2.75 AP, undo available
+PASS: entrench remains accessible and costs 2 PA
+PASS: formation still opens after entrenchment
+PASS: formation after entrenchment costs 1 PA and preserves shelter
+FORMATION BUTTON UI: 46 passed / 46 total

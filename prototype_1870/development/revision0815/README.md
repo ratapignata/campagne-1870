@@ -1,0 +1,1 @@
+Les routes sont une adaptation de la carte de travail : échantillonnage des axes du secteur 05, liaisons explicites et arrondi visuel. Correction manuelle de continuité sur la même rive près de Wœrth : [344, 315, 346]. Le pack prototype.json fait autorité. roads.py est un outil de préparation, pas une commande de construction du pack final. Aucun second pont ajouté.

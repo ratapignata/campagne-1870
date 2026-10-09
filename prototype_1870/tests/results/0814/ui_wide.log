@@ -1,0 +1,31 @@
+Godot Engine v4.5.stable.official.876b29033 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 25.2.8-0ubuntu0.24.04.2 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 20.1.2, 256 bits)
+
+PASS: playable initial state
+PASS: all 600 cells selectable with north on left
+PASS: tap selects French unit
+PASS: initial Sauer unit: separate button and text rectangles
+PASS: initial Sauer unit: heading fits reserved width
+PASS: initial Sauer unit: detail fits available height
+PASS: initial Sauer unit: unit rows and columns do not overlap
+PASS: second tap deselects
+PASS: tap destination previews ford and cost
+PASS: ford preview: separate button and text rectangles
+PASS: ford preview: heading fits reserved width
+PASS: ford preview: detail fits available height
+PASS: ford preview: unit rows and columns do not overlap
+PASS: second destination tap crosses and stops movement
+PASS: after crossing: separate button and text rectangles
+PASS: after crossing: heading fits reserved width
+PASS: after crossing: detail fits available height
+PASS: after crossing: unit rows and columns do not overlap
+PASS: touch cannot bypass halt
+PASS: UI save restores crossing state
+PASS: Prussian camp selectable
+PASS: Prussian unit: separate button and text rectangles
+PASS: Prussian unit: heading fits reserved width
+PASS: Prussian unit: detail fits available height
+PASS: Prussian unit: unit rows and columns do not overlap
+UI SAUER: 25/25 passed

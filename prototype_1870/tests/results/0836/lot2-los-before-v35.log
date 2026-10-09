@@ -1,0 +1,12 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+FAIL blocking ridge between open endpoints fire
+FAIL blocking ridge between open endpoints reverse fire
+FAIL low ridge still intersects ray fire
+FAIL low ridge still intersects ray reverse fire
+FAIL one edge variant intersects ridge 249 fire
+FAIL one edge variant intersects ridge 249 reverse fire
+FAIL one edge variant intersects ridge 278 fire
+FAIL one edge variant intersects ridge 278 reverse fire
+FAIL overhead fire does not bypass terrain
+V36 LOS 31/40
