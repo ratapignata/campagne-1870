@@ -1,0 +1,5 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+DIFF scores [120,0] OLD [120.0,0]
+FAIL: save roundtrip
+V39 LOT1 32/33

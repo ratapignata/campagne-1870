@@ -1,0 +1,32 @@
+[
+  {
+    "mode": "baseline",
+    "seed": 187037,
+    "exit": 0
+  },
+  {
+    "mode": "medium",
+    "seed": 187037,
+    "exit": 0
+  },
+  {
+    "mode": "hard",
+    "seed": 187037,
+    "exit": 0
+  },
+  {
+    "mode": "baseline",
+    "seed": 187038,
+    "exit": 0
+  },
+  {
+    "mode": "medium",
+    "seed": 187038,
+    "exit": 0
+  },
+  {
+    "mode": "hard",
+    "seed": 187038,
+    "exit": 0
+  }
+]

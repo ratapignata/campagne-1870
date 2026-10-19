@@ -1,0 +1,46 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)
+
+FAIL rendered dark core on plain zoom 0.55
+FAIL rendered dark core on plain zoom 0.72
+FAIL rendered dark core on plain zoom 1.0
+FAIL rendered dark core on plain zoom 1.6
+FAIL rendered dark core on forest zoom 0.55
+FAIL rendered dark core on forest zoom 0.72
+FAIL rendered dark core on forest zoom 1.0
+FAIL rendered dark core on forest zoom 1.6
+FAIL rendered dark core on hill zoom 0.55
+FAIL rendered dark core on hill zoom 0.72
+FAIL rendered dark core on hill zoom 1.0
+FAIL rendered dark core on hill zoom 1.6
+FAIL rendered dark core on road zoom 0.55
+FAIL rendered dark core on road zoom 0.72
+FAIL rendered dark core on road zoom 1.0
+FAIL rendered dark core on road zoom 1.6
+FAIL rendered dark core on village zoom 0.55
+FAIL rendered dark core on village zoom 0.72
+FAIL rendered dark core on village zoom 1.0
+FAIL rendered dark core on village zoom 1.6
+FAIL rendered dark core on water zoom 0.55
+FAIL rendered dark core on water zoom 0.72
+FAIL rendered dark core on water zoom 1.0
+FAIL rendered dark core on water zoom 1.6
+FAIL rendered dark core on bridge zoom 0.55
+FAIL rendered dark core on bridge zoom 0.72
+FAIL rendered dark core on bridge zoom 1.0
+FAIL rendered dark core on bridge zoom 1.6
+FAIL rendered dark core on meadow zoom 0.55
+FAIL rendered dark core on meadow zoom 0.72
+FAIL rendered dark core on meadow zoom 1.0
+FAIL rendered dark core on meadow zoom 1.6
+FAIL rendered dark core on cultivated zoom 0.55
+FAIL rendered dark core on cultivated zoom 0.72
+FAIL rendered dark core on cultivated zoom 1.0
+FAIL rendered dark core on cultivated zoom 1.6
+FAIL rendered dark core on offmap zoom 0.55
+FAIL rendered dark core on offmap zoom 0.72
+FAIL rendered dark core on offmap zoom 1.0
+FAIL rendered dark core on offmap zoom 1.6
+V43 ANIMATION RENDER 13/53

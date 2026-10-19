@@ -1,0 +1,7876 @@
+{
+	"actions": [
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"formation": "skirmish",
+				"kind": "formation",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"formation": "skirmish",
+				"kind": "formation",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					103,
+					104,
+					74
+				],
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					101,
+					132,
+					162
+				],
+				"unit": "art_fr_Ducrot0"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					136,
+					166
+				],
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					162,
+					132,
+					102,
+					72
+				],
+				"unit": "art_fr_Ducrot0"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					72,
+					102,
+					132,
+					162
+				],
+				"unit": "art_fr_Ducrot0"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					132,
+					102,
+					72
+				],
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					286,
+					256,
+					225,
+					224,
+					193
+				],
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"formation": "line",
+				"kind": "formation",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"formation": "line",
+				"kind": "formation",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					313,
+					314
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_1",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_1",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					225,
+					224,
+					223,
+					222,
+					221
+				],
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					314,
+					344,
+					313
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					258,
+					227,
+					226,
+					225
+				],
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					250,
+					219,
+					218,
+					188,
+					158,
+					128,
+					97,
+					96
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					226,
+					225
+				],
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					284,
+					253,
+					223,
+					222,
+					191
+				],
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					74,
+					44
+				],
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"formation": "line",
+				"kind": "formation",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"formation": "line",
+				"kind": "formation",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"formation": "line",
+				"kind": "formation",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_39",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "deploy",
+				"unit": "art_fr_Ducrot0"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "art_fr_Ducrot0"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "assault",
+				"target": "fr_1",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					313,
+					312,
+					281
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "deploy",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"formation": "skirmish",
+				"kind": "formation",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_fr_Ducrot0",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"formation": "skirmish",
+				"kind": "formation",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"formation": "skirmish",
+				"kind": "formation",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					225,
+					195
+				],
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					221,
+					222,
+					193,
+					194
+				],
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					281,
+					282
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					96,
+					97,
+					128,
+					99,
+					130,
+					101,
+					102,
+					72,
+					42
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					101,
+					131,
+					161,
+					192,
+					222,
+					223
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"decision": {
+				"kind": "rally",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					44,
+					43
+				],
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_39",
+				"unit": "art_fr_Ducrot0"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"formation": "skirmish",
+				"kind": "formation",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"formation": "line",
+				"kind": "formation",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					72,
+					102,
+					132
+				],
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "assault",
+				"target": "art_fr_Ducrot0",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					282,
+					283
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					222,
+					192,
+					162,
+					133
+				],
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "limber",
+				"path": [
+					193,
+					163
+				],
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					193,
+					163
+				],
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					223,
+					222,
+					192,
+					162,
+					133,
+					134,
+					105,
+					136,
+					107,
+					108,
+					79
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					134,
+					105,
+					136,
+					107,
+					108,
+					79
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					136,
+					107,
+					108,
+					79
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					107,
+					108,
+					79
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					162,
+					192
+				],
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					192,
+					162
+				],
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					132,
+					131,
+					161
+				],
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					43,
+					44
+				],
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					166,
+					137
+				],
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					97,
+					128,
+					99
+				],
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_39",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					283,
+					253,
+					254
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					195,
+					194,
+					163,
+					162,
+					132
+				],
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					79,
+					108,
+					107,
+					136,
+					105,
+					104,
+					103,
+					102,
+					72
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					107,
+					136,
+					105,
+					104,
+					103,
+					102,
+					72
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					136,
+					105,
+					104,
+					103,
+					102,
+					72
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "deploy",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					105,
+					104,
+					103,
+					102,
+					72
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					194,
+					193,
+					222
+				],
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					104,
+					103,
+					102,
+					72
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					254,
+					223
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"decision": {
+				"formation": "line",
+				"kind": "formation",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_39",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_39",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_39",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					44,
+					74
+				],
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					74,
+					44
+				],
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					137,
+					136,
+					106
+				],
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					223,
+					253
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					132,
+					131
+				],
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"formation": "line",
+				"kind": "formation",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					131,
+					132
+				],
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_39",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					133,
+					132,
+					131
+				],
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"formation": "skirmish",
+				"kind": "formation",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_39",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_38",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "limber",
+				"path": [
+					163,
+					162,
+					161
+				],
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					163,
+					162,
+					161
+				],
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					253,
+					252
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					132,
+					133
+				],
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_1",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"formation": "skirmish",
+				"kind": "formation",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					162,
+					132,
+					103
+				],
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					72,
+					102,
+					103,
+					104,
+					105,
+					136,
+					107,
+					108,
+					79
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					105,
+					136,
+					107,
+					108,
+					79
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					107,
+					108,
+					79
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					108,
+					79
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"decision": {
+				"kind": "rally",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					44,
+					13,
+					12
+				],
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					252,
+					223
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "deploy",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					222,
+					192,
+					162,
+					133,
+					134
+				],
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					79,
+					108,
+					107,
+					136,
+					105,
+					104
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					107,
+					138
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"formation": "skirmish",
+				"kind": "formation",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_54",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_54",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					127,
+					128
+				],
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					12,
+					13,
+					14
+				],
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"formation": "line",
+				"kind": "formation",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_1",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_1",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					138,
+					107,
+					136,
+					105,
+					104
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					107,
+					138
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 9
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_54",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_54",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_1",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_1",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					138,
+					107,
+					136,
+					105,
+					104
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					107,
+					138
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 10
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					103,
+					133,
+					163
+				],
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					138,
+					107,
+					136,
+					105,
+					104,
+					103
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					107,
+					138
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 11
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					14,
+					13
+				],
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_54",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_54",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_1",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_1",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					138,
+					107,
+					136,
+					105,
+					104,
+					103
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					107,
+					138
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 12
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_54",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "rally",
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					223,
+					254
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_1",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_1",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					170,
+					140,
+					109,
+					108
+				],
+				"unit": "pru_54"
+			},
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "rally",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_54",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_54",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_3"
+			},
+			"side": 0,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					254,
+					223,
+					222
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 14
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"formation": "line",
+				"kind": "formation",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					99,
+					98
+				],
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					131,
+					132,
+					103
+				],
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					222,
+					223
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 15
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					13,
+					12
+				],
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					103,
+					133,
+					164
+				],
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					223,
+					253
+				],
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_pr_Sandrart"
+			},
+			"side": 1,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 16
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					12,
+					13
+				],
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"formation": "skirmish",
+				"kind": "formation",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					98,
+					99
+				],
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"formation": "line",
+				"kind": "formation",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 17
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					99,
+					130,
+					131,
+					161
+				],
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					13,
+					14
+				],
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "entrench",
+				"unit": "qg_fr_Ducrot"
+			},
+			"side": 0,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_5"
+			},
+			"side": 0,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_1"
+			},
+			"side": 0,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "art_pr_Sandrart0",
+				"unit": "fr_4"
+			},
+			"side": 0,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "pru_37",
+				"unit": "fr_2"
+			},
+			"side": 0,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 0,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "rest",
+				"unit": "pru_37"
+			},
+			"side": 1,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_36"
+			},
+			"side": 1,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_4",
+				"unit": "art_pr_Sandrart0"
+			},
+			"side": 1,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_1",
+				"unit": "pru_38"
+			},
+			"side": 1,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "move",
+				"path": [
+					163,
+					164,
+					165
+				],
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "fire",
+				"target": "fr_2",
+				"unit": "pru_39"
+			},
+			"side": 1,
+			"turn": 18
+		},
+		{
+			"decision": {
+				"kind": "end"
+			},
+			"side": 1,
+			"turn": 18
+		}
+	],
+	"artillery": [
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 12,
+				"cell": [
+					12,
+					5
+				],
+				"command": true,
+				"deployed": false,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_fr_Ducrot0"
+			},
+			"ammo": 0,
+			"ap": 16,
+			"cell": [
+				11,
+				3
+			],
+			"command": true,
+			"deployed": false,
+			"kind": "move",
+			"legal_targets": [],
+			"side": 0,
+			"supply": true,
+			"turn": 1,
+			"unit": "art_fr_Ducrot0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 6,
+				"cell": [
+					12,
+					2
+				],
+				"command": true,
+				"deployed": false,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_fr_Ducrot0"
+			},
+			"ammo": 0,
+			"ap": 12,
+			"cell": [
+				12,
+				5
+			],
+			"command": true,
+			"deployed": false,
+			"kind": "move",
+			"legal_targets": [],
+			"side": 0,
+			"supply": true,
+			"turn": 1,
+			"unit": "art_fr_Ducrot0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 0,
+				"cell": [
+					12,
+					5
+				],
+				"command": true,
+				"deployed": false,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_fr_Ducrot0"
+			},
+			"ammo": 0,
+			"ap": 6,
+			"cell": [
+				12,
+				2
+			],
+			"command": true,
+			"deployed": false,
+			"kind": "move",
+			"legal_targets": [],
+			"side": 0,
+			"supply": true,
+			"turn": 1,
+			"unit": "art_fr_Ducrot0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 0,
+				"cell": [
+					13,
+					6
+				],
+				"command": true,
+				"deployed": false,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 16,
+			"cell": [
+				16,
+				9
+			],
+			"command": true,
+			"deployed": false,
+			"kind": "move",
+			"legal_targets": [],
+			"side": 1,
+			"supply": true,
+			"turn": 1,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 12,
+				"cell": [
+					12,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"pru_36",
+					"art_pr_Sandrart0"
+				],
+				"supply": true,
+				"unit": "art_fr_Ducrot0"
+			},
+			"ammo": 0,
+			"ap": 16,
+			"cell": [
+				12,
+				5
+			],
+			"command": true,
+			"deployed": false,
+			"kind": "deploy",
+			"legal_targets": [],
+			"side": 0,
+			"supply": true,
+			"turn": 2,
+			"unit": "art_fr_Ducrot0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 0,
+				"cell": [
+					12,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_fr_Ducrot0"
+			},
+			"ammo": 0,
+			"ap": 12,
+			"cell": [
+				12,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"pru_36",
+				"art_pr_Sandrart0"
+			],
+			"objective_target": false,
+			"side": 0,
+			"supply": true,
+			"target": "pru_36",
+			"target_cell": [
+				12,
+				7
+			],
+			"target_type": "",
+			"turn": 2,
+			"unit": "art_fr_Ducrot0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 12,
+				"cell": [
+					13,
+					6
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"fr_2",
+					"fr_3",
+					"fr_5",
+					"art_fr_Ducrot0"
+				],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 16,
+			"cell": [
+				13,
+				6
+			],
+			"command": true,
+			"deployed": false,
+			"kind": "deploy",
+			"legal_targets": [],
+			"side": 1,
+			"supply": true,
+			"turn": 2,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 4,
+				"cell": [
+					13,
+					6
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 12,
+			"cell": [
+				13,
+				6
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_2",
+				"fr_3",
+				"fr_5",
+				"art_fr_Ducrot0"
+			],
+			"objective_target": true,
+			"side": 1,
+			"supply": true,
+			"target": "fr_2",
+			"target_cell": [
+				15,
+				4
+			],
+			"target_type": "",
+			"turn": 2,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 4,
+				"cell": [
+					12,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_fr_Ducrot0"
+			},
+			"ammo": 0,
+			"ap": 16,
+			"cell": [
+				12,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"pru_36",
+				"pru_37",
+				"pru_39",
+				"art_pr_Sandrart0"
+			],
+			"objective_target": true,
+			"side": 0,
+			"supply": true,
+			"target": "pru_39",
+			"target_cell": [
+				11,
+				5
+			],
+			"target_type": "",
+			"turn": 3,
+			"unit": "art_fr_Ducrot0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 12,
+				"cell": [
+					13,
+					6
+				],
+				"command": true,
+				"deployed": false,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 16,
+			"cell": [
+				13,
+				6
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "limber",
+			"legal_targets": [],
+			"side": 1,
+			"supply": true,
+			"turn": 3,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 8,
+				"cell": [
+					13,
+					5
+				],
+				"command": true,
+				"deployed": false,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 12,
+			"cell": [
+				13,
+				6
+			],
+			"command": true,
+			"deployed": false,
+			"kind": "move",
+			"legal_targets": [],
+			"side": 1,
+			"supply": true,
+			"turn": 3,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 8,
+				"cell": [
+					13,
+					5
+				],
+				"command": true,
+				"deployed": false,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 8,
+			"cell": [
+				13,
+				5
+			],
+			"command": true,
+			"deployed": false,
+			"kind": "rest",
+			"legal_targets": [],
+			"side": 1,
+			"supply": true,
+			"turn": 3,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 12,
+				"cell": [
+					13,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"fr_2"
+				],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 16,
+			"cell": [
+				13,
+				5
+			],
+			"command": true,
+			"deployed": false,
+			"kind": "deploy",
+			"legal_targets": [],
+			"side": 1,
+			"supply": true,
+			"turn": 4,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 4,
+				"cell": [
+					13,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 12,
+			"cell": [
+				13,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_2"
+			],
+			"objective_target": true,
+			"side": 1,
+			"supply": true,
+			"target": "fr_2",
+			"target_cell": [
+				15,
+				4
+			],
+			"target_type": "",
+			"turn": 4,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 8,
+				"cell": [
+					13,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"fr_2"
+				],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 16,
+			"cell": [
+				13,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_2"
+			],
+			"objective_target": true,
+			"side": 1,
+			"supply": true,
+			"target": "fr_2",
+			"target_cell": [
+				15,
+				4
+			],
+			"target_type": "",
+			"turn": 5,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 0,
+				"cell": [
+					13,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 8,
+			"cell": [
+				13,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_2"
+			],
+			"objective_target": true,
+			"side": 1,
+			"supply": true,
+			"target": "fr_2",
+			"target_cell": [
+				15,
+				4
+			],
+			"target_type": "",
+			"turn": 5,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 8,
+				"cell": [
+					13,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"fr_2"
+				],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 16,
+			"cell": [
+				13,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_2"
+			],
+			"objective_target": true,
+			"side": 1,
+			"supply": true,
+			"target": "fr_2",
+			"target_cell": [
+				15,
+				4
+			],
+			"target_type": "",
+			"turn": 6,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 0,
+				"cell": [
+					13,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 8,
+			"cell": [
+				13,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_2"
+			],
+			"objective_target": true,
+			"side": 1,
+			"supply": true,
+			"target": "fr_2",
+			"target_cell": [
+				15,
+				4
+			],
+			"target_type": "",
+			"turn": 6,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 12,
+				"cell": [
+					13,
+					5
+				],
+				"command": true,
+				"deployed": false,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 16,
+			"cell": [
+				13,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "limber",
+			"legal_targets": [
+				"fr_2"
+			],
+			"side": 1,
+			"supply": true,
+			"turn": 7,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 2,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": false,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 12,
+			"cell": [
+				13,
+				5
+			],
+			"command": true,
+			"deployed": false,
+			"kind": "move",
+			"legal_targets": [],
+			"side": 1,
+			"supply": true,
+			"turn": 7,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 2,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": false,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 2,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": false,
+			"kind": "rest",
+			"legal_targets": [],
+			"side": 1,
+			"supply": true,
+			"turn": 7,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 12,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"fr_1",
+					"fr_4"
+				],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 16,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": false,
+			"kind": "deploy",
+			"legal_targets": [],
+			"side": 1,
+			"supply": true,
+			"turn": 8,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 4,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 12,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "entrench",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"side": 1,
+			"supply": true,
+			"turn": 8,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 8,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"fr_1",
+					"fr_4"
+				],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 16,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 9,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 0,
+				"ap": 0,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 0,
+			"ap": 8,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 9,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 8,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"fr_1",
+					"fr_4"
+				],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 16,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 10,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 0,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 8,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 10,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 2,
+				"ap": 16,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 2,
+			"ap": 16,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "rest",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"side": 1,
+			"supply": true,
+			"turn": 11,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 8,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"fr_1",
+					"fr_4"
+				],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 16,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 12,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 0,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 8,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 12,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 2,
+				"ap": 8,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"fr_1",
+					"fr_4"
+				],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 16,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 13,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 2,
+				"ap": 0,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 2,
+			"ap": 8,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 13,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 2,
+				"ap": 16,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 2,
+			"ap": 16,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "rest",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"side": 1,
+			"supply": true,
+			"turn": 14,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 8,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"fr_1",
+					"fr_4"
+				],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 16,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 15,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 0,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 8,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 15,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 2,
+				"ap": 8,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"fr_1",
+					"fr_4"
+				],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 16,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 16,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 2,
+				"ap": 0,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 2,
+			"ap": 8,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 16,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 2,
+				"ap": 16,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 2,
+			"ap": 16,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "rest",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"side": 1,
+			"supply": true,
+			"turn": 17,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 8,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [
+					"fr_1",
+					"fr_4"
+				],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 16,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 18,
+			"unit": "art_pr_Sandrart0"
+		},
+		{
+			"after": {
+				"ammo": 1,
+				"ap": 0,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"ammo": 1,
+			"ap": 8,
+			"cell": [
+				11,
+				5
+			],
+			"command": true,
+			"deployed": true,
+			"kind": "fire",
+			"legal_targets": [
+				"fr_1",
+				"fr_4"
+			],
+			"objective_target": false,
+			"side": 1,
+			"supply": true,
+			"target": "fr_4",
+			"target_cell": [
+				8,
+				4
+			],
+			"target_type": "",
+			"turn": 18,
+			"unit": "art_pr_Sandrart0"
+		}
+	],
+	"artillery_idle": [
+		{
+			"side": 1,
+			"snapshot": {
+				"ammo": 0,
+				"ap": 4,
+				"cell": [
+					13,
+					6
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"turn": 2
+		},
+		{
+			"side": 0,
+			"snapshot": {
+				"ammo": 1,
+				"ap": 4,
+				"cell": [
+					12,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_fr_Ducrot0"
+			},
+			"turn": 3
+		},
+		{
+			"side": 1,
+			"snapshot": {
+				"ammo": 0,
+				"ap": 4,
+				"cell": [
+					13,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"turn": 4
+		},
+		{
+			"side": 1,
+			"snapshot": {
+				"ammo": 0,
+				"ap": 4,
+				"cell": [
+					11,
+					5
+				],
+				"command": true,
+				"deployed": true,
+				"legal_targets": [],
+				"supply": true,
+				"unit": "art_pr_Sandrart0"
+			},
+			"turn": 8
+		}
+	],
+	"boundaries": [
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 3,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 1,
+					"froeschwiller": 4,
+					"niederwald": 2
+				}
+			],
+			"finished": false,
+			"losses": [
+				12,
+				196
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 0,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 60.3472463768116,
+				"parts": [
+					[
+						60.0,
+						0.0,
+						0.373333333333333
+					],
+					[
+						0.0,
+						0.0,
+						0.0260869565217391
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					60.3733333333333,
+					0.0260869565217391
+				],
+				"winner": -1
+			},
+			"turn": 1
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 3,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 1,
+					"froeschwiller": 6
+				}
+			],
+			"finished": false,
+			"losses": [
+				48,
+				231
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 0,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 61.4467632850242,
+				"parts": [
+					[
+						60.0,
+						1.11111111111111,
+						0.44
+					],
+					[
+						0.0,
+						0.0,
+						0.104347826086957
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					61.5511111111111,
+					0.104347826086957
+				],
+				"winner": -1
+			},
+			"turn": 2
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 3,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 1,
+					"froeschwiller": 6
+				}
+			],
+			"finished": false,
+			"losses": [
+				86,
+				588
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 0,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 62.044154589372,
+				"parts": [
+					[
+						60.0,
+						1.11111111111111,
+						1.12
+					],
+					[
+						0.0,
+						0.0,
+						0.18695652173913
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					62.2311111111111,
+					0.18695652173913
+				],
+				"winner": -1
+			},
+			"turn": 2
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 3,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 5
+				}
+			],
+			"finished": false,
+			"losses": [
+				449,
+				821
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				1,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 1.69883367839889,
+				"parts": [
+					[
+						30.0,
+						1.66666666666667,
+						1.56380952380952
+					],
+					[
+						30.0,
+						0.555555555555556,
+						0.976086956521739
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					33.2304761904762,
+					31.5316425120773
+				],
+				"winner": -1
+			},
+			"turn": 3
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 3,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 5
+				}
+			],
+			"finished": false,
+			"losses": [
+				507,
+				1167
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 2.23179434092477,
+				"parts": [
+					[
+						30.0,
+						1.66666666666667,
+						2.22285714285714
+					],
+					[
+						30.0,
+						0.555555555555556,
+						1.10217391304348
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					33.8895238095238,
+					31.657729468599
+				],
+				"winner": -1
+			},
+			"turn": 3
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 4
+				}
+			],
+			"finished": false,
+			"losses": [
+				792,
+				1242
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 1.75508626639061,
+				"parts": [
+					[
+						30.0,
+						2.22222222222222,
+						2.36571428571429
+					],
+					[
+						30.0,
+						1.11111111111111,
+						1.72173913043478
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					34.5879365079365,
+					32.8328502415459
+				],
+				"winner": -1
+			},
+			"turn": 4
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 4
+				}
+			],
+			"finished": false,
+			"losses": [
+				792,
+				1350
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 0,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 61.9608005521049,
+				"parts": [
+					[
+						60.0,
+						2.22222222222222,
+						2.57142857142857
+					],
+					[
+						0.0,
+						1.11111111111111,
+						1.72173913043478
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					64.7936507936508,
+					2.83285024154589
+				],
+				"winner": -1
+			},
+			"turn": 4
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"froeschwiller": 7
+				}
+			],
+			"finished": false,
+			"losses": [
+				960,
+				1427
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 0,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 62.8533609385783,
+				"parts": [
+					[
+						60.0,
+						3.33333333333333,
+						2.71809523809524
+					],
+					[
+						0.0,
+						1.11111111111111,
+						2.08695652173913
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					66.0514285714286,
+					3.19806763285024
+				],
+				"winner": -1
+			},
+			"turn": 5
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"froeschwiller": 7
+				}
+			],
+			"finished": false,
+			"losses": [
+				991,
+				1642
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 0,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 63.1954934437543,
+				"parts": [
+					[
+						60.0,
+						3.33333333333333,
+						3.12761904761905
+					],
+					[
+						0.0,
+						1.11111111111111,
+						2.15434782608696
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					66.4609523809524,
+					3.26545893719807
+				],
+				"winner": -1
+			},
+			"turn": 5
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"froeschwiller": 7
+				}
+			],
+			"finished": false,
+			"losses": [
+				1231,
+				1687
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 0,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 63.8705797101449,
+				"parts": [
+					[
+						60.0,
+						4.44444444444444,
+						3.21333333333333
+					],
+					[
+						0.0,
+						1.11111111111111,
+						2.67608695652174
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					67.6577777777778,
+					3.78719806763285
+				],
+				"winner": -1
+			},
+			"turn": 6
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"froeschwiller": 7
+				}
+			],
+			"finished": false,
+			"losses": [
+				1252,
+				1893
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 0,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 64.2173084886128,
+				"parts": [
+					[
+						60.0,
+						4.44444444444444,
+						3.60571428571429
+					],
+					[
+						0.0,
+						1.11111111111111,
+						2.72173913043478
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					68.0501587301587,
+					3.83285024154589
+				],
+				"winner": -1
+			},
+			"turn": 6
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"froeschwiller": 7
+				}
+			],
+			"finished": false,
+			"losses": [
+				1400,
+				1927
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 0,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				1,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 65.0714423740511,
+				"parts": [
+					[
+						60.0,
+						5.55555555555556,
+						3.67047619047619
+					],
+					[
+						0.0,
+						1.11111111111111,
+						3.04347826086957
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					69.2260317460318,
+					4.15458937198068
+				],
+				"winner": -1
+			},
+			"turn": 7
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"froeschwiller": 7
+				}
+			],
+			"finished": false,
+			"losses": [
+				1400,
+				1985
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 0,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				1,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 65.1819185645273,
+				"parts": [
+					[
+						60.0,
+						5.55555555555556,
+						3.78095238095238
+					],
+					[
+						0.0,
+						1.11111111111111,
+						3.04347826086957
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					69.3365079365079,
+					4.15458937198068
+				],
+				"winner": -1
+			},
+			"turn": 7
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 5
+				}
+			],
+			"finished": false,
+			"losses": [
+				1500,
+				2012
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				1,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 5.015955831608,
+				"parts": [
+					[
+						30.0,
+						6.11111111111111,
+						3.83238095238095
+					],
+					[
+						30.0,
+						1.66666666666667,
+						3.26086956521739
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					39.9434920634921,
+					34.9275362318841
+				],
+				"winner": -1
+			},
+			"turn": 8
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 3,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 5
+				}
+			],
+			"finished": false,
+			"losses": [
+				1500,
+				2012
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 5.015955831608,
+				"parts": [
+					[
+						30.0,
+						6.11111111111111,
+						3.83238095238095
+					],
+					[
+						30.0,
+						1.66666666666667,
+						3.26086956521739
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					39.9434920634921,
+					34.9275362318841
+				],
+				"winner": -1
+			},
+			"turn": 8
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 3,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 4,
+					"niederwald": 1
+				}
+			],
+			"finished": false,
+			"losses": [
+				1558,
+				2029
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 4.92224982746722,
+				"parts": [
+					[
+						30.0,
+						6.66666666666667,
+						3.8647619047619
+					],
+					[
+						30.0,
+						2.22222222222222,
+						3.38695652173913
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					40.5314285714286,
+					35.6091787439614
+				],
+				"winner": -1
+			},
+			"turn": 9
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 4,
+					"niederwald": 1
+				}
+			],
+			"finished": false,
+			"losses": [
+				1570,
+				2204
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 5.22949620427882,
+				"parts": [
+					[
+						30.0,
+						6.66666666666667,
+						4.19809523809524
+					],
+					[
+						30.0,
+						2.22222222222222,
+						3.41304347826087
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					40.8647619047619,
+					35.6352657004831
+				],
+				"winner": -1
+			},
+			"turn": 9
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 4,
+					"niederwald": 1
+				}
+			],
+			"finished": false,
+			"losses": [
+				1798,
+				2254
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 4.82908212560386,
+				"parts": [
+					[
+						30.0,
+						7.22222222222222,
+						4.29333333333333
+					],
+					[
+						30.0,
+						2.77777777777778,
+						3.90869565217391
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					41.5155555555556,
+					36.6864734299517
+				],
+				"winner": -1
+			},
+			"turn": 10
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 4,
+					"niederwald": 1
+				}
+			],
+			"finished": false,
+			"losses": [
+				1842,
+				2351
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 4.91819185645272,
+				"parts": [
+					[
+						30.0,
+						7.22222222222222,
+						4.47809523809524
+					],
+					[
+						30.0,
+						2.77777777777778,
+						4.00434782608696
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					41.7003174603175,
+					36.7821256038647
+				],
+				"winner": -1
+			},
+			"turn": 10
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 4,
+					"niederwald": 1
+				}
+			],
+			"finished": false,
+			"losses": [
+				2110,
+				2391
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 4.41177363699102,
+				"parts": [
+					[
+						30.0,
+						7.77777777777778,
+						4.55428571428571
+					],
+					[
+						30.0,
+						3.33333333333333,
+						4.58695652173913
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					42.3320634920635,
+					37.9202898550725
+				],
+				"winner": -1
+			},
+			"turn": 11
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 4,
+					"niederwald": 1
+				}
+			],
+			"finished": false,
+			"losses": [
+				2158,
+				2393
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 4.3112353347136,
+				"parts": [
+					[
+						30.0,
+						7.77777777777778,
+						4.55809523809524
+					],
+					[
+						30.0,
+						3.33333333333333,
+						4.69130434782609
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					42.335873015873,
+					38.0246376811594
+				],
+				"winner": -1
+			},
+			"turn": 11
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 1,
+					"froeschwiller": 5,
+					"niederwald": 1
+				}
+			],
+			"finished": false,
+			"losses": [
+				2248,
+				2417
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 4.16129744651484,
+				"parts": [
+					[
+						30.0,
+						8.33333333333333,
+						4.60380952380952
+					],
+					[
+						30.0,
+						3.88888888888889,
+						4.88695652173913
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					42.9371428571429,
+					38.775845410628
+				],
+				"winner": -1
+			},
+			"turn": 12
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 1,
+					"froeschwiller": 5,
+					"niederwald": 1
+				}
+			],
+			"finished": false,
+			"losses": [
+				2260,
+				2574
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 4.43425810904073,
+				"parts": [
+					[
+						30.0,
+						8.33333333333333,
+						4.90285714285714
+					],
+					[
+						30.0,
+						3.88888888888889,
+						4.91304347826087
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					43.2361904761905,
+					38.8019323671498
+				],
+				"winner": -1
+			},
+			"turn": 12
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 1,
+					"froeschwiller": 5,
+					"niederwald": 1
+				}
+			],
+			"finished": false,
+			"losses": [
+				2524,
+				2600
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 3.90986887508626,
+				"parts": [
+					[
+						30.0,
+						8.88888888888889,
+						4.95238095238095
+					],
+					[
+						30.0,
+						4.44444444444444,
+						5.48695652173913
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					43.8412698412698,
+					39.9314009661836
+				],
+				"winner": -1
+			},
+			"turn": 13
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 1,
+					"froeschwiller": 5,
+					"niederwald": 1
+				}
+			],
+			"finished": false,
+			"losses": [
+				2536,
+				2707
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				1
+			],
+			"score": {
+				"level": "pending",
+				"margin": 4.08759144237405,
+				"parts": [
+					[
+						30.0,
+						8.88888888888889,
+						5.15619047619048
+					],
+					[
+						30.0,
+						4.44444444444444,
+						5.51304347826087
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					44.0450793650794,
+					39.9574879227053
+				],
+				"winner": -1
+			},
+			"turn": 13
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 5
+				}
+			],
+			"finished": false,
+			"losses": [
+				2706,
+				2720
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 3.74278812974465,
+				"parts": [
+					[
+						30.0,
+						9.44444444444444,
+						5.18095238095238
+					],
+					[
+						30.0,
+						5.0,
+						5.88260869565217
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					44.6253968253968,
+					40.8826086956522
+				],
+				"winner": -1
+			},
+			"turn": 14
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 1,
+					"froeschwiller": 5
+				}
+			],
+			"finished": false,
+			"losses": [
+				2736,
+				2757
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 3.74804692891649,
+				"parts": [
+					[
+						30.0,
+						9.44444444444444,
+						5.25142857142857
+					],
+					[
+						30.0,
+						5.0,
+						5.94782608695652
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					44.695873015873,
+					40.9478260869565
+				],
+				"winner": -1
+			},
+			"turn": 14
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 1,
+					"froeschwiller": 5
+				}
+			],
+			"finished": false,
+			"losses": [
+				2833,
+				2788
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 3.59622498274673,
+				"parts": [
+					[
+						30.0,
+						10.0,
+						5.31047619047619
+					],
+					[
+						30.0,
+						5.55555555555556,
+						6.15869565217391
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					45.3104761904762,
+					41.7142512077295
+				],
+				"winner": -1
+			},
+			"turn": 15
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 1,
+					"froeschwiller": 5
+				}
+			],
+			"finished": false,
+			"losses": [
+				2863,
+				2954
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 3.84719806763285,
+				"parts": [
+					[
+						30.0,
+						10.0,
+						5.62666666666667
+					],
+					[
+						30.0,
+						5.55555555555556,
+						6.22391304347826
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					45.6266666666667,
+					41.7794685990338
+				],
+				"winner": -1
+			},
+			"turn": 15
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 4
+				}
+			],
+			"finished": false,
+			"losses": [
+				2994,
+				2955
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 3.56432022084196,
+				"parts": [
+					[
+						30.0,
+						10.5555555555556,
+						5.62857142857143
+					],
+					[
+						30.0,
+						6.11111111111111,
+						6.50869565217391
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					46.184126984127,
+					42.619806763285
+				],
+				"winner": -1
+			},
+			"turn": 16
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 3,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 4
+				}
+			],
+			"finished": false,
+			"losses": [
+				3006,
+				3189
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 3.98394755003451,
+				"parts": [
+					[
+						30.0,
+						10.5555555555556,
+						6.07428571428571
+					],
+					[
+						30.0,
+						6.11111111111111,
+						6.53478260869565
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					46.6298412698413,
+					42.6458937198068
+				],
+				"winner": -1
+			},
+			"turn": 16
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 3,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 4
+				}
+			],
+			"finished": false,
+			"losses": [
+				3197,
+				3211
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 3.61063492063493,
+				"parts": [
+					[
+						30.0,
+						11.1111111111111,
+						6.11619047619048
+					],
+					[
+						30.0,
+						6.66666666666667,
+						6.95
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					47.2273015873016,
+					43.6166666666667
+				],
+				"winner": -1
+			},
+			"turn": 17
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 4
+				}
+			],
+			"finished": false,
+			"losses": [
+				3223,
+				3216
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 3.5636369910283,
+				"parts": [
+					[
+						30.0,
+						11.1111111111111,
+						6.12571428571429
+					],
+					[
+						30.0,
+						6.66666666666667,
+						7.00652173913043
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					47.2368253968254,
+					43.6731884057971
+				],
+				"winner": -1
+			},
+			"turn": 17
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 4
+				}
+			],
+			"finished": false,
+			"losses": [
+				3293,
+				3240
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 3.45717736369911,
+				"parts": [
+					[
+						30.0,
+						11.6666666666667,
+						6.17142857142857
+					],
+					[
+						30.0,
+						7.22222222222222,
+						7.15869565217391
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					47.8380952380952,
+					44.3809178743961
+				],
+				"winner": -1
+			},
+			"turn": 18
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 2,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 2,
+					"froeschwiller": 4
+				}
+			],
+			"finished": false,
+			"losses": [
+				3330,
+				3485
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "pending",
+				"margin": 3.84340924775708,
+				"parts": [
+					[
+						30.0,
+						11.6666666666667,
+						6.63809523809524
+					],
+					[
+						30.0,
+						7.22222222222222,
+						7.23913043478261
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					48.3047619047619,
+					44.4613526570048
+				],
+				"winner": -1
+			},
+			"turn": 18
+		},
+		{
+			"distribution": [
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 1,
+					"niederwald": 1
+				},
+				{
+					"elsasshausen": 3,
+					"froeschwiller": 3
+				}
+			],
+			"finished": true,
+			"losses": [
+				3532,
+				3518
+			],
+			"owners": {
+				"elsasshausen": 0,
+				"froeschwiller": 1,
+				"niederwald": 0
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"routed": [
+				0,
+				0
+			],
+			"score": {
+				"level": "draw",
+				"margin": 3.46713595583161,
+				"parts": [
+					[
+						30.0,
+						12.2222222222222,
+						6.70095238095238
+					],
+					[
+						30.0,
+						7.77777777777778,
+						7.67826086956522
+					]
+				],
+				"reason": "weighted",
+				"totals": [
+					48.9231746031746,
+					45.456038647343
+				],
+				"winner": -1
+			},
+			"turn": 18
+		}
+	],
+	"captures": [
+		{
+			"objective": "froeschwiller",
+			"owner": 1,
+			"turn": 2
+		},
+		{
+			"objective": "froeschwiller",
+			"owner": 0,
+			"turn": 4
+		},
+		{
+			"objective": "froeschwiller",
+			"owner": 1,
+			"turn": 7
+		}
+	],
+	"checks": 813,
+	"completed_turns": 18,
+	"counts": [
+		{
+			"deploy": 1,
+			"end": 18,
+			"entrench": 15,
+			"fire": 81,
+			"formation": 11,
+			"move": 26,
+			"rally": 3,
+			"rest": 31
+		},
+		{
+			"assault": 2,
+			"deploy": 3,
+			"end": 18,
+			"entrench": 10,
+			"fire": 86,
+			"formation": 10,
+			"limber": 2,
+			"move": 65,
+			"rally": 1,
+			"rest": 23
+		}
+	],
+	"decision_ms": [
+		498,
+		493,
+		504,
+		492,
+		598,
+		579,
+		538,
+		517,
+		476,
+		441,
+		391,
+		376,
+		366,
+		357,
+		337,
+		226,
+		85,
+		908,
+		756,
+		875,
+		859,
+		828,
+		840,
+		801,
+		819,
+		746,
+		685,
+		674,
+		458,
+		449,
+		432,
+		631,
+		600,
+		529,
+		534,
+		567,
+		534,
+		536,
+		496,
+		361,
+		367,
+		366,
+		349,
+		350,
+		156,
+		1061,
+		877,
+		911,
+		822,
+		774,
+		858,
+		818,
+		691,
+		591,
+		617,
+		568,
+		547,
+		474,
+		423,
+		322,
+		627,
+		651,
+		634,
+		587,
+		516,
+		456,
+		482,
+		484,
+		488,
+		488,
+		489,
+		458,
+		468,
+		432,
+		276,
+		133,
+		766,
+		800,
+		784,
+		773,
+		756,
+		753,
+		725,
+		720,
+		685,
+		675,
+		8,
+		676,
+		477,
+		404,
+		933,
+		436,
+		331,
+		521,
+		403,
+		1018,
+		1244,
+		454,
+		409,
+		338,
+		336,
+		338,
+		285,
+		259,
+		252,
+		236,
+		207,
+		161,
+		1056,
+		1047,
+		1184,
+		977,
+		963,
+		916,
+		898,
+		865,
+		690,
+		654,
+		647,
+		616,
+		592,
+		558,
+		551,
+		483,
+		350,
+		267,
+		581,
+		546,
+		534,
+		504,
+		487,
+		451,
+		296,
+		292,
+		205,
+		91,
+		1025,
+		1001,
+		958,
+		953,
+		910,
+		919,
+		883,
+		739,
+		710,
+		626,
+		601,
+		564,
+		539,
+		413,
+		547,
+		528,
+		515,
+		487,
+		437,
+		405,
+		346,
+		322,
+		162,
+		1008,
+		969,
+		944,
+		930,
+		900,
+		781,
+		752,
+		733,
+		574,
+		544,
+		524,
+		508,
+		483,
+		451,
+		301,
+		1009,
+		8,
+		790,
+		754,
+		720,
+		710,
+		709,
+		676,
+		658,
+		654,
+		535,
+		542,
+		514,
+		484,
+		388,
+		382,
+		370,
+		296,
+		503,
+		482,
+		454,
+		456,
+		276,
+		282,
+		300,
+		99,
+		618,
+		577,
+		540,
+		544,
+		522,
+		510,
+		491,
+		462,
+		468,
+		474,
+		448,
+		354,
+		330,
+		211,
+		508,
+		494,
+		498,
+		494,
+		478,
+		465,
+		311,
+		313,
+		261,
+		256,
+		248,
+		115,
+		576,
+		529,
+		530,
+		486,
+		570,
+		549,
+		521,
+		517,
+		384,
+		418,
+		278,
+		526,
+		471,
+		468,
+		470,
+		460,
+		433,
+		275,
+		246,
+		254,
+		661,
+		708,
+		701,
+		604,
+		502,
+		478,
+		522,
+		478,
+		404,
+		299,
+		521,
+		521,
+		526,
+		458,
+		292,
+		261,
+		100,
+		656,
+		614,
+		578,
+		556,
+		449,
+		424,
+		415,
+		415,
+		304,
+		541,
+		540,
+		531,
+		511,
+		509,
+		481,
+		337,
+		303,
+		285,
+		255,
+		99,
+		758,
+		842,
+		780,
+		619,
+		566,
+		555,
+		458,
+		431,
+		420,
+		407,
+		302,
+		522,
+		469,
+		473,
+		472,
+		279,
+		243,
+		98,
+		575,
+		637,
+		592,
+		479,
+		463,
+		468,
+		440,
+		437,
+		395,
+		379,
+		359,
+		306,
+		525,
+		446,
+		411,
+		389,
+		361,
+		197,
+		196,
+		143,
+		97,
+		489,
+		464,
+		526,
+		385,
+		397,
+		364,
+		334,
+		229,
+		221,
+		504,
+		498,
+		481,
+		458,
+		448,
+		416,
+		298,
+		240,
+		141,
+		461,
+		423,
+		297,
+		297,
+		257,
+		285,
+		241,
+		239,
+		220,
+		525,
+		477,
+		296,
+		264,
+		270,
+		243,
+		244,
+		244,
+		144,
+		482,
+		625,
+		429,
+		416,
+		376,
+		355,
+		258,
+		272,
+		230,
+		230,
+		222,
+		593,
+		579,
+		481,
+		446,
+		447,
+		454,
+		276,
+		318,
+		305,
+		137,
+		444,
+		415,
+		399,
+		382,
+		362,
+		350,
+		311,
+		471,
+		509,
+		483,
+		483,
+		460,
+		400,
+		382,
+		339,
+		319,
+		322,
+		274,
+		451,
+		422,
+		393,
+		288,
+		290,
+		254,
+		218,
+		197,
+		190
+	],
+	"failures": 0,
+	"final": {
+		"distribution": [
+			{
+				"elsasshausen": 3,
+				"froeschwiller": 1,
+				"niederwald": 1
+			},
+			{
+				"elsasshausen": 3,
+				"froeschwiller": 3
+			}
+		],
+		"finished": true,
+		"losses": [
+			3532,
+			3518
+		],
+		"owners": {
+			"elsasshausen": 0,
+			"froeschwiller": 1,
+			"niederwald": 0
+		},
+		"prisoners": [
+			0,
+			0
+		],
+		"routed": [
+			0,
+			0
+		],
+		"score": {
+			"level": "draw",
+			"margin": 3.46713595583161,
+			"parts": [
+				[
+					30.0,
+					12.2222222222222,
+					6.70095238095238
+				],
+				[
+					30.0,
+					7.77777777777778,
+					7.67826086956522
+				]
+			],
+			"reason": "weighted",
+			"totals": [
+				48.9231746031746,
+				45.456038647343
+			],
+			"winner": -1
+		},
+		"turn": 18
+	},
+	"fixture": "14 units, synthetic deployment on original terrain, no reinforcements; identical initial state except selected Prussian policy",
+	"mode_french": "medium",
+	"mode_prussian": "medium",
+	"seed": 187038
+}

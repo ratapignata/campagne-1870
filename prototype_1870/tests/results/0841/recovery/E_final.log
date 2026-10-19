@@ -1,0 +1,12 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+E_final boundary 17/0 actions 14
+E_final boundary 17/1 actions 30
+E_final boundary 18/0 actions 46
+E_final boundary 18/1 actions 59
+E_final boundary 19/0 actions 77
+E_final boundary 19/1 actions 92
+E_final boundary 20/0 actions 106
+E_final boundary 20/1 actions 122
+RESULT E_final {"captures":[{"objective":"froeschwiller","owner":1,"turn":17},{"objective":"froeschwiller","owner":0,"turn":19},{"objective":"niederwald","owner":1,"turn":19}],"counts":[{"assault":1,"deploy":2,"end":4,"entrench":7,"fire":18,"formation":7,"move":16,"rally":2,"rest":5},{"assault":2,"deploy":1,"end":4,"entrench":4,"fire":20,"formation":3,"move":23,"rally":1,"rest":2}],"final":{"distribution":[{"elsasshausen":2,"froeschwiller":4,"niederwald":1},{"elsasshausen":1,"froeschwiller":4,"niederwald":2}],"finished":true,"losses":[1873,2455],"owners":{"elsasshausen":1,"froeschwiller":0,"niederwald":1},"prisoners":[0,0],"routed":[0,0],"score":{"level":"draw","margin":0.728881987577644,"parts":[[30.0,1.33333333333333,4.67619047619048],[30.0,2.66666666666667,4.07173913043478]],"reason":"weighted","totals":[36.0095238095238,36.7384057971014],"winner":-1},"turn":20},"inactive":0}
+V36 AI ACTIVE 12/12

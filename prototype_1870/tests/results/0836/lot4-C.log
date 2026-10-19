@@ -1,0 +1,18 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+C_turn12 boundary 12/0 actions 16
+C_turn12 boundary 12/1 actions 28
+C_turn12 boundary 13/0 actions 43
+C_turn12 boundary 13/1 actions 54
+C_turn12 boundary 14/0 actions 65
+C_turn12 boundary 14/1 actions 78
+C_turn12 boundary 15/0 actions 95
+C_turn12 boundary 15/1 actions 107
+C_turn12 boundary 16/0 actions 116
+C_turn12 boundary 16/1 actions 131
+C_turn12 boundary 17/0 actions 144
+C_turn12 boundary 17/1 actions 159
+C_turn12 boundary 18/0 actions 169
+C_turn12 boundary 18/1 actions 176
+RESULT C_turn12 {"captures":[{"objective":"froeschwiller","owner":1,"turn":13},{"objective":"niederwald","owner":1,"turn":14}],"counts":[{"assault":1,"deploy":1,"end":7,"entrench":5,"fire":44,"formation":7,"move":16,"rally":2,"rest":8},{"assault":1,"end":7,"entrench":6,"fire":23,"formation":4,"move":39,"rest":5}],"final":{"distribution":[{"elsasshausen":4,"froeschwiller":3},{"elsasshausen":3,"froeschwiller":2,"niederwald":1}],"finished":true,"losses":[2122,3033],"owners":{"elsasshausen":1,"froeschwiller":1,"niederwald":1},"prisoners":[0,0],"routed":[0,0],"score":{"level":"minor_win","loss_advantage":-0.0582049689440994,"margin":64.7618265470439,"parts":[[0.0,0.925925925925926,5.77714285714286],[60.0,6.85185185185185,4.61304347826087]],"reason":"losses_close","totals":[6.70306878306878,71.4648953301127],"winner":1},"turn":18},"inactive":0}
+V36 AI ACTIVE 18/18

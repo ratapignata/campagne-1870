@@ -1,0 +1,35 @@
+V42 LOT 8 — LIVRAISON TECHNIQUE DU 18 OCTOBRE 2026
+
+Version Android 0.8.42.1, code 56.
+Ouvrir project.godot avec Godot 4.5.1.
+Choisir « V42 · Répartition lot 8 » pour essayer la nouvelle variante.
+
+95 000 Allemands, 50 unités allemandes et 45 françaises.
+30 unités Dreyse à 2 900 hommes, 2 Jäger à 1 450 ; les autres effectifs
+sont inchangés. Les 14 renforts génériques sont rattachés à des QG
+existants, à titre provisoire. Horaires et cases d’arrivée conservés.
+L’ancienne répartition et sa sauvegarde restent disponibles séparément.
+
+Cavalerie à 2 PA, ripostes, 20 tours et score 60/20/20 conservés.
+Aucun bonus artificiel ajouté et aucune modification tactique de l’IA.
+Corrections fusionnées : numéros à trois chiffres, contour rouge extérieur,
+compatibilité des historiques V42 ; prisonniers affichés séparément.
+
+Validation : quatre campagnes réelles de 95 unités terminées en 20 tours,
+six petites campagnes tactiques de 20 tours, dix relectures déterministes,
+301 contrôles du contrat, 258 contrôles des effectifs, 49 contrôles de
+contre-attaque/repli et huit suites de régression réussies. Le libellé
+interne du scénario a été corrigé ; 15 contrôles supplémentaires valident
+la reprise des sauvegardes de l’APK de test, avec des données de jeu identiques.
+
+APK compilé et signature vérifiée. Installation, performances et confort
+sur téléphone non testés ici. Suivre Essai_Android_Galaxy_S10.txt.
+
+SCÉNARIO EXPÉRIMENTAL : ni validation historique ni certification
+d’équilibre contre un joueur humain. La redistribution modifie à la fois
+la puissance des pions et la masse des vagues de renforts.
+
+Consulter Rapport_V42_Lot8.html et Ecarts_historiques_Lot8.txt dans
+l’archive des rapports. Reproduire_les_tests.txt donne les commandes.
+Les anciens documents V35–V42 du projet décrivent les lots antérieurs ;
+le présent fichier et le rapport lot 8 décrivent cette livraison.

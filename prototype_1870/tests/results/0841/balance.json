@@ -1,0 +1,29 @@
+{
+	"checks": 1540,
+	"duels": {
+		"0": {
+			"mean_damage": 65.75390625,
+			"mean_return_loss": 37.20703125
+		},
+		"1": {
+			"mean_damage": 56.98828125,
+			"mean_return_loss": 42.8828125
+		}
+	},
+	"duels_per_initiator": 256,
+	"failures": 0,
+	"ratio": 1.15365034965035,
+	"samples": 5000,
+	"shots": {
+		"chassepot": {
+			"max": 73,
+			"mean": 65.9888,
+			"min": 59
+		},
+		"dreyse": {
+			"max": 63,
+			"mean": 57.2,
+			"min": 51
+		}
+	}
+}

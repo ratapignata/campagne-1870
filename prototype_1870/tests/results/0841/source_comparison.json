@@ -1,0 +1,30 @@
+{
+  "changed_from_experimental": [
+    "V41_OPTIMISATION_IA.md",
+    "V41_RAPPORT_EXPERIMENTAL.md",
+    "packs/1870/regimental_trial.json"
+  ],
+  "missing": [],
+  "scenario_changed_keys": [
+    "save_migrations"
+  ],
+  "v40_fingerprint": "f73f6698da6070fe55ebff4eb0cafda06dbff64db994d557a054e82748835947",
+  "experimental_fingerprint": "f87600ad4fda5480cf80f0f34e3424da9b28fc3ecca8a3792c7a5af1f2e5bb9a",
+  "original_migrations": {
+    "404e5f83598aef703663be6c7457e532946fe85985cd4fa3fca4defd9589983e": {
+      "turns": 18
+    }
+  },
+  "final_migrations": {
+    "404e5f83598aef703663be6c7457e532946fe85985cd4fa3fca4defd9589983e": {
+      "turns": 18
+    },
+    "f73f6698da6070fe55ebff4eb0cafda06dbff64db994d557a054e82748835947": {
+      "turns": 20
+    },
+    "f87600ad4fda5480cf80f0f34e3424da9b28fc3ecca8a3792c7a5af1f2e5bb9a": {
+      "turns": 20
+    }
+  },
+  "production_ai_identical": true
+}

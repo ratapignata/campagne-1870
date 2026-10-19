@@ -1,0 +1,40 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+AB_active boundary 1/0 actions 17
+AB_active boundary 1/1 actions 31
+AB_active boundary 2/0 actions 45
+AB_active boundary 2/1 actions 60
+AB_active boundary 3/0 actions 76
+AB_active boundary 3/1 actions 95
+AB_active boundary 4/0 actions 108
+AB_active boundary 4/1 actions 126
+AB_active boundary 5/0 actions 136
+AB_active boundary 5/1 actions 150
+AB_active boundary 6/0 actions 159
+AB_active boundary 6/1 actions 169
+AB_active boundary 7/0 actions 174
+AB_active boundary 7/1 actions 192
+AB_active boundary 8/0 actions 200
+AB_active boundary 8/1 actions 214
+AB_active boundary 9/0 actions 226
+AB_active boundary 9/1 actions 237
+AB_active boundary 10/0 actions 246
+AB_active boundary 10/1 actions 256
+AB_active boundary 11/0 actions 263
+AB_active boundary 11/1 actions 272
+AB_active boundary 12/0 actions 283
+AB_active boundary 12/1 actions 296
+AB_active boundary 13/0 actions 304
+AB_active boundary 13/1 actions 316
+AB_active boundary 14/0 actions 324
+AB_active boundary 14/1 actions 333
+AB_active boundary 15/0 actions 343
+AB_active boundary 15/1 actions 355
+AB_active boundary 16/0 actions 364
+AB_active boundary 16/1 actions 378
+AB_active boundary 17/0 actions 388
+AB_active boundary 17/1 actions 397
+AB_active boundary 18/0 actions 410
+AB_active boundary 18/1 actions 425
+RESULT AB_active {"captures":[{"objective":"froeschwiller","owner":1,"turn":2},{"objective":"froeschwiller","owner":0,"turn":4},{"objective":"froeschwiller","owner":1,"turn":7},{"objective":"elsasshausen","owner":1,"turn":18}],"counts":[{"deploy":1,"end":18,"entrench":15,"fire":78,"formation":11,"move":28,"rally":3,"rest":35},{"assault":2,"deploy":3,"end":18,"entrench":11,"fire":85,"formation":10,"limber":2,"move":81,"rally":1,"rest":23}],"final":{"distribution":[{"elsasshausen":3,"froeschwiller":2,"niederwald":1},{"elsasshausen":3,"froeschwiller":1,"niederwald":3}],"finished":true,"losses":[3513,3367],"owners":{"elsasshausen":1,"froeschwiller":1,"niederwald":0},"prisoners":[0,0],"routed":[0,0],"score":{"level":"minor_win","loss_advantage":0.0611811594202898,"margin":37.5199194847021,"parts":[[10.0,11.8518518518519,6.41333333333333],[50.0,8.14814814814815,7.63695652173913]],"reason":"losses_close","totals":[28.2651851851852,65.7851046698873],"winner":1},"turn":18},"inactive":0}
+V36 AI ACTIVE 40/40

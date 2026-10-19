@@ -1,0 +1,19 @@
+{
+  "test": "v38_test_legacy_save",
+  "exit": 124,
+  "errors": [
+    "FAIL: actual delivered V37 final battle save loads in V38",
+    "FAIL: real V37 battle state remains valid and complete",
+    "FAIL: legacy state does not invent retrospective history",
+    "SCRIPT ERROR: Invalid access to property or key 'state' on a base object of type 'Dictionary'."
+  ],
+  "seconds": 300.043519961,
+  "command": [
+    "/tmp/1870-v41-godot",
+    "--headless",
+    "--path",
+    "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+    "--script",
+    "res://tests/v38/test_legacy_save.gd"
+  ]
+}

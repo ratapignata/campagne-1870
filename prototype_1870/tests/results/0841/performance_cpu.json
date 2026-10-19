@@ -1,0 +1,536 @@
+{
+	"checks": 17,
+	"failures": 0,
+	"platform": "Linux process utime+stime from /proc/self/stat",
+	"samples": [
+		{
+			"candidates": 149,
+			"mode": "medium",
+			"optimized": {
+				"cpu_ticks": 168,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 1685083
+			},
+			"reference": {
+				"cpu_ticks": 174,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 1740078
+			},
+			"repeat": 0,
+			"turn_pressure": 1
+		},
+		{
+			"candidates": 149,
+			"mode": "medium",
+			"optimized": {
+				"cpu_ticks": 176,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 1758045
+			},
+			"reference": {
+				"cpu_ticks": 172,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 1717314
+			},
+			"repeat": 1,
+			"turn_pressure": 1
+		},
+		{
+			"candidates": 149,
+			"mode": "medium",
+			"optimized": {
+				"cpu_ticks": 164,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 1646395
+			},
+			"reference": {
+				"cpu_ticks": 180,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 1799407
+			},
+			"repeat": 2,
+			"turn_pressure": 1
+		},
+		{
+			"candidates": 149,
+			"mode": "medium",
+			"optimized": {
+				"cpu_ticks": 446,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 4429527
+			},
+			"reference": {
+				"cpu_ticks": 212,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 2111983
+			},
+			"repeat": 3,
+			"turn_pressure": 1
+		},
+		{
+			"candidates": 155,
+			"mode": "medium",
+			"optimized": {
+				"cpu_ticks": 815,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 8004614
+			},
+			"reference": {
+				"cpu_ticks": 269,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 2688065
+			},
+			"repeat": 0,
+			"turn_pressure": 12
+		},
+		{
+			"candidates": 155,
+			"mode": "medium",
+			"optimized": {
+				"cpu_ticks": 270,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 2692009
+			},
+			"reference": {
+				"cpu_ticks": 280,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 2792965
+			},
+			"repeat": 1,
+			"turn_pressure": 12
+		},
+		{
+			"candidates": 155,
+			"mode": "medium",
+			"optimized": {
+				"cpu_ticks": 344,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 3432700
+			},
+			"reference": {
+				"cpu_ticks": 180,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 1791055
+			},
+			"repeat": 2,
+			"turn_pressure": 12
+		},
+		{
+			"candidates": 155,
+			"mode": "medium",
+			"optimized": {
+				"cpu_ticks": 221,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 2199039
+			},
+			"reference": {
+				"cpu_ticks": 207,
+				"decision": {
+					"kind": "fire",
+					"target": "fr_1",
+					"unit": "pru_36"
+				},
+				"wall_us": 2070119
+			},
+			"repeat": 3,
+			"turn_pressure": 12
+		},
+		{
+			"candidates": 151,
+			"mode": "hard",
+			"optimized": {
+				"cpu_ticks": 218,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 2175829
+			},
+			"reference": {
+				"cpu_ticks": 230,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 2299036
+			},
+			"repeat": 0,
+			"turn_pressure": 1
+		},
+		{
+			"candidates": 151,
+			"mode": "hard",
+			"optimized": {
+				"cpu_ticks": 225,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 2241906
+			},
+			"reference": {
+				"cpu_ticks": 219,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 2188386
+			},
+			"repeat": 1,
+			"turn_pressure": 1
+		},
+		{
+			"candidates": 151,
+			"mode": "hard",
+			"optimized": {
+				"cpu_ticks": 218,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 2169315
+			},
+			"reference": {
+				"cpu_ticks": 218,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 2176519
+			},
+			"repeat": 2,
+			"turn_pressure": 1
+		},
+		{
+			"candidates": 151,
+			"mode": "hard",
+			"optimized": {
+				"cpu_ticks": 179,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 1780033
+			},
+			"reference": {
+				"cpu_ticks": 198,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 1977502
+			},
+			"repeat": 3,
+			"turn_pressure": 1
+		},
+		{
+			"candidates": 159,
+			"mode": "hard",
+			"optimized": {
+				"cpu_ticks": 214,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 2133134
+			},
+			"reference": {
+				"cpu_ticks": 205,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 2025149
+			},
+			"repeat": 0,
+			"turn_pressure": 12
+		},
+		{
+			"candidates": 159,
+			"mode": "hard",
+			"optimized": {
+				"cpu_ticks": 254,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 2542417
+			},
+			"reference": {
+				"cpu_ticks": 205,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 2045801
+			},
+			"repeat": 1,
+			"turn_pressure": 12
+		},
+		{
+			"candidates": 159,
+			"mode": "hard",
+			"optimized": {
+				"cpu_ticks": 265,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 2646010
+			},
+			"reference": {
+				"cpu_ticks": 331,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 3305930
+			},
+			"repeat": 2,
+			"turn_pressure": 12
+		},
+		{
+			"candidates": 159,
+			"mode": "hard",
+			"optimized": {
+				"cpu_ticks": 762,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 7621529
+			},
+			"reference": {
+				"cpu_ticks": 302,
+				"decision": {
+					"kind": "move",
+					"path": [
+						250,
+						221,
+						222,
+						192,
+						162,
+						133,
+						134,
+						135
+					],
+					"unit": "pru_54"
+				},
+				"wall_us": 3018380
+			},
+			"repeat": 3,
+			"turn_pressure": 12
+		}
+	],
+	"ticks_per_second": 100
+}

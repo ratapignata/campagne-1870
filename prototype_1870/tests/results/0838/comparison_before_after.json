@@ -1,0 +1,1617 @@
+[
+  {
+    "mode": "easy",
+    "seed": 187037,
+    "same_actions": true,
+    "before": {
+      "counts": [
+        {
+          "assault": 1,
+          "deploy": 1,
+          "end": 18,
+          "entrench": 18,
+          "fire": 78,
+          "formation": 12,
+          "move": 41,
+          "rally": 1,
+          "rest": 21
+        },
+        {
+          "assault": 4,
+          "deploy": 2,
+          "end": 18,
+          "entrench": 18,
+          "fire": 64,
+          "formation": 11,
+          "limber": 2,
+          "move": 73,
+          "rally": 4,
+          "rest": 18
+        }
+      ],
+      "final": {
+        "distribution": [
+          {
+            "elsasshausen": 2,
+            "froeschwiller": 1,
+            "niederwald": 1
+          },
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 3
+          }
+        ],
+        "finished": true,
+        "losses": [
+          3820,
+          4473
+        ],
+        "owners": {
+          "elsasshausen": 1,
+          "froeschwiller": 1,
+          "niederwald": 1
+        },
+        "prisoners": [
+          1332,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "score": {
+          "level": "major_win",
+          "loss_advantage": 0.134,
+          "margin": 66.0133333333333,
+          "parts": [
+            [
+              0.0,
+              8.33333333333333,
+              8.52
+            ],
+            [
+              60.0,
+              11.6666666666667,
+              11.2
+            ]
+          ],
+          "reason": "major",
+          "totals": [
+            16.8533333333333,
+            82.8666666666667
+          ],
+          "winner": 1
+        },
+        "turn": 18
+      },
+      "captures": [
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 2
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 4
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 6
+        },
+        {
+          "objective": "elsasshausen",
+          "owner": 1,
+          "turn": 9
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 10
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 11
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 13
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 14
+        },
+        {
+          "objective": "niederwald",
+          "owner": 1,
+          "turn": 15
+        }
+      ],
+      "artillery_counts": [
+        {
+          "move": 3,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 2,
+          "rest": 0
+        },
+        {
+          "move": 6,
+          "limber": 2,
+          "deploy": 2,
+          "fire": 15,
+          "rest": 4
+        }
+      ],
+      "artillery_objective_shots": [
+        1,
+        11
+      ]
+    },
+    "after": {
+      "counts": [
+        {
+          "assault": 1,
+          "deploy": 1,
+          "end": 18,
+          "entrench": 18,
+          "fire": 78,
+          "formation": 12,
+          "move": 41,
+          "rally": 1,
+          "rest": 21
+        },
+        {
+          "assault": 4,
+          "deploy": 2,
+          "end": 18,
+          "entrench": 18,
+          "fire": 64,
+          "formation": 11,
+          "limber": 2,
+          "move": 73,
+          "rally": 4,
+          "rest": 18
+        }
+      ],
+      "final": {
+        "distribution": [
+          {
+            "elsasshausen": 2,
+            "froeschwiller": 1,
+            "niederwald": 1
+          },
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 3
+          }
+        ],
+        "finished": true,
+        "losses": [
+          3820,
+          4473
+        ],
+        "owners": {
+          "elsasshausen": 1,
+          "froeschwiller": 1,
+          "niederwald": 1
+        },
+        "prisoners": [
+          1332,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "score": {
+          "level": "major_win",
+          "loss_advantage": 0.134,
+          "margin": 66.0133333333333,
+          "parts": [
+            [
+              0.0,
+              8.33333333333333,
+              8.52
+            ],
+            [
+              60.0,
+              11.6666666666667,
+              11.2
+            ]
+          ],
+          "reason": "major",
+          "totals": [
+            16.8533333333333,
+            82.8666666666667
+          ],
+          "winner": 1
+        },
+        "turn": 18
+      },
+      "captures": [
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 2
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 4
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 6
+        },
+        {
+          "objective": "elsasshausen",
+          "owner": 1,
+          "turn": 9
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 10
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 11
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 13
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 14
+        },
+        {
+          "objective": "niederwald",
+          "owner": 1,
+          "turn": 15
+        }
+      ],
+      "artillery_counts": [
+        {
+          "move": 3,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 2,
+          "rest": 0
+        },
+        {
+          "move": 6,
+          "limber": 2,
+          "deploy": 2,
+          "fire": 15,
+          "rest": 4
+        }
+      ],
+      "artillery_objective_shots": [
+        1,
+        11
+      ]
+    },
+    "checks": 811,
+    "failures": 0,
+    "decisions": 405,
+    "mean_decision_ms": 881.0172839506173,
+    "max_decision_ms": 2810
+  },
+  {
+    "mode": "easy",
+    "seed": 187038,
+    "same_actions": true,
+    "before": {
+      "counts": [
+        {
+          "assault": 1,
+          "deploy": 1,
+          "end": 18,
+          "entrench": 19,
+          "fire": 81,
+          "formation": 16,
+          "move": 50,
+          "rest": 24
+        },
+        {
+          "assault": 5,
+          "deploy": 3,
+          "end": 18,
+          "entrench": 14,
+          "fire": 73,
+          "formation": 11,
+          "limber": 1,
+          "move": 69,
+          "rally": 2,
+          "rest": 20
+        }
+      ],
+      "final": {
+        "distribution": [
+          {
+            "elsasshausen": 4,
+            "froeschwiller": 2
+          },
+          {
+            "elsasshausen": 2,
+            "froeschwiller": 3,
+            "niederwald": 1
+          }
+        ],
+        "finished": true,
+        "losses": [
+          3820,
+          4978
+        ],
+        "owners": {
+          "elsasshausen": 1,
+          "froeschwiller": 1,
+          "niederwald": 1
+        },
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "score": {
+          "level": "minor_win",
+          "loss_advantage": -0.0588778467908903,
+          "margin": 61.7854060271452,
+          "parts": [
+            [
+              0.0,
+              8.51851851851852,
+              9.48190476190476
+            ],
+            [
+              60.0,
+              11.4814814814815,
+              8.30434782608696
+            ]
+          ],
+          "reason": "losses_close",
+          "totals": [
+            18.0004232804233,
+            79.7858293075684
+          ],
+          "winner": 1
+        },
+        "turn": 18
+      },
+      "captures": [
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 2
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 4
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 6
+        },
+        {
+          "objective": "elsasshausen",
+          "owner": 1,
+          "turn": 10
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 11
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 13
+        },
+        {
+          "objective": "niederwald",
+          "owner": 1,
+          "turn": 14
+        }
+      ],
+      "artillery_counts": [
+        {
+          "move": 3,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 2,
+          "rest": 0
+        },
+        {
+          "move": 2,
+          "limber": 1,
+          "deploy": 3,
+          "fire": 20,
+          "rest": 4
+        }
+      ],
+      "artillery_objective_shots": [
+        1,
+        11
+      ]
+    },
+    "after": {
+      "counts": [
+        {
+          "assault": 1,
+          "deploy": 1,
+          "end": 18,
+          "entrench": 19,
+          "fire": 81,
+          "formation": 16,
+          "move": 50,
+          "rest": 24
+        },
+        {
+          "assault": 5,
+          "deploy": 3,
+          "end": 18,
+          "entrench": 14,
+          "fire": 73,
+          "formation": 11,
+          "limber": 1,
+          "move": 69,
+          "rally": 2,
+          "rest": 20
+        }
+      ],
+      "final": {
+        "distribution": [
+          {
+            "elsasshausen": 4,
+            "froeschwiller": 2
+          },
+          {
+            "elsasshausen": 2,
+            "froeschwiller": 3,
+            "niederwald": 1
+          }
+        ],
+        "finished": true,
+        "losses": [
+          3820,
+          4978
+        ],
+        "owners": {
+          "elsasshausen": 1,
+          "froeschwiller": 1,
+          "niederwald": 1
+        },
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "score": {
+          "level": "minor_win",
+          "loss_advantage": -0.0588778467908903,
+          "margin": 61.7854060271452,
+          "parts": [
+            [
+              0.0,
+              8.51851851851852,
+              9.48190476190476
+            ],
+            [
+              60.0,
+              11.4814814814815,
+              8.30434782608696
+            ]
+          ],
+          "reason": "losses_close",
+          "totals": [
+            18.0004232804233,
+            79.7858293075684
+          ],
+          "winner": 1
+        },
+        "turn": 18
+      },
+      "captures": [
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 2
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 4
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 6
+        },
+        {
+          "objective": "elsasshausen",
+          "owner": 1,
+          "turn": 10
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 11
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 13
+        },
+        {
+          "objective": "niederwald",
+          "owner": 1,
+          "turn": 14
+        }
+      ],
+      "artillery_counts": [
+        {
+          "move": 3,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 2,
+          "rest": 0
+        },
+        {
+          "move": 2,
+          "limber": 1,
+          "deploy": 3,
+          "fire": 20,
+          "rest": 4
+        }
+      ],
+      "artillery_objective_shots": [
+        1,
+        11
+      ]
+    },
+    "checks": 853,
+    "failures": 0,
+    "decisions": 426,
+    "mean_decision_ms": 748.3615023474179,
+    "max_decision_ms": 2499
+  },
+  {
+    "mode": "medium",
+    "seed": 187037,
+    "same_actions": true,
+    "before": {
+      "counts": [
+        {
+          "deploy": 1,
+          "end": 18,
+          "entrench": 15,
+          "fire": 79,
+          "formation": 11,
+          "move": 27,
+          "rally": 3,
+          "rest": 33
+        },
+        {
+          "assault": 2,
+          "deploy": 3,
+          "end": 18,
+          "entrench": 10,
+          "fire": 88,
+          "formation": 10,
+          "limber": 2,
+          "move": 75,
+          "rally": 1,
+          "rest": 22
+        }
+      ],
+      "final": {
+        "distribution": [
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 1,
+            "niederwald": 1
+          },
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 4
+          }
+        ],
+        "finished": true,
+        "losses": [
+          3579,
+          3466
+        ],
+        "owners": {
+          "elsasshausen": 0,
+          "froeschwiller": 1,
+          "niederwald": 0
+        },
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "score": {
+          "level": "draw",
+          "margin": 3.26591442374051,
+          "parts": [
+            [
+              30.0,
+              12.2222222222222,
+              6.60190476190476
+            ],
+            [
+              30.0,
+              7.77777777777778,
+              7.7804347826087
+            ]
+          ],
+          "reason": "weighted",
+          "totals": [
+            48.824126984127,
+            45.5582125603865
+          ],
+          "winner": -1
+        },
+        "turn": 18
+      },
+      "captures": [
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 2
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 4
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 7
+        }
+      ],
+      "artillery_counts": [
+        {
+          "move": 3,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 2,
+          "rest": 0
+        },
+        {
+          "move": 3,
+          "limber": 2,
+          "deploy": 3,
+          "fire": 20,
+          "rest": 5
+        }
+      ],
+      "artillery_objective_shots": [
+        1,
+        6
+      ]
+    },
+    "after": {
+      "counts": [
+        {
+          "deploy": 1,
+          "end": 18,
+          "entrench": 15,
+          "fire": 79,
+          "formation": 11,
+          "move": 27,
+          "rally": 3,
+          "rest": 33
+        },
+        {
+          "assault": 2,
+          "deploy": 3,
+          "end": 18,
+          "entrench": 10,
+          "fire": 88,
+          "formation": 10,
+          "limber": 2,
+          "move": 75,
+          "rally": 1,
+          "rest": 22
+        }
+      ],
+      "final": {
+        "distribution": [
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 1,
+            "niederwald": 1
+          },
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 4
+          }
+        ],
+        "finished": true,
+        "losses": [
+          3579,
+          3466
+        ],
+        "owners": {
+          "elsasshausen": 0,
+          "froeschwiller": 1,
+          "niederwald": 0
+        },
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "score": {
+          "level": "draw",
+          "margin": 3.26591442374051,
+          "parts": [
+            [
+              30.0,
+              12.2222222222222,
+              6.60190476190476
+            ],
+            [
+              30.0,
+              7.77777777777778,
+              7.7804347826087
+            ]
+          ],
+          "reason": "weighted",
+          "totals": [
+            48.824126984127,
+            45.5582125603865
+          ],
+          "winner": -1
+        },
+        "turn": 18
+      },
+      "captures": [
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 2
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 4
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 7
+        }
+      ],
+      "artillery_counts": [
+        {
+          "move": 3,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 2,
+          "rest": 0
+        },
+        {
+          "move": 3,
+          "limber": 2,
+          "deploy": 3,
+          "fire": 20,
+          "rest": 5
+        }
+      ],
+      "artillery_objective_shots": [
+        1,
+        6
+      ]
+    },
+    "checks": 837,
+    "failures": 0,
+    "decisions": 418,
+    "mean_decision_ms": 716.8325358851674,
+    "max_decision_ms": 2188
+  },
+  {
+    "mode": "medium",
+    "seed": 187038,
+    "same_actions": true,
+    "before": {
+      "counts": [
+        {
+          "deploy": 1,
+          "end": 18,
+          "entrench": 15,
+          "fire": 81,
+          "formation": 11,
+          "move": 26,
+          "rally": 3,
+          "rest": 31
+        },
+        {
+          "assault": 2,
+          "deploy": 3,
+          "end": 18,
+          "entrench": 10,
+          "fire": 86,
+          "formation": 10,
+          "limber": 2,
+          "move": 65,
+          "rally": 1,
+          "rest": 23
+        }
+      ],
+      "final": {
+        "distribution": [
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 1,
+            "niederwald": 1
+          },
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 3
+          }
+        ],
+        "finished": true,
+        "losses": [
+          3532,
+          3518
+        ],
+        "owners": {
+          "elsasshausen": 0,
+          "froeschwiller": 1,
+          "niederwald": 0
+        },
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "score": {
+          "level": "draw",
+          "margin": 3.46713595583161,
+          "parts": [
+            [
+              30.0,
+              12.2222222222222,
+              6.70095238095238
+            ],
+            [
+              30.0,
+              7.77777777777778,
+              7.67826086956522
+            ]
+          ],
+          "reason": "weighted",
+          "totals": [
+            48.9231746031746,
+            45.456038647343
+          ],
+          "winner": -1
+        },
+        "turn": 18
+      },
+      "captures": [
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 2
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 4
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 7
+        }
+      ],
+      "artillery_counts": [
+        {
+          "move": 3,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 2,
+          "rest": 0
+        },
+        {
+          "move": 3,
+          "limber": 2,
+          "deploy": 3,
+          "fire": 20,
+          "rest": 5
+        }
+      ],
+      "artillery_objective_shots": [
+        1,
+        6
+      ]
+    },
+    "after": {
+      "counts": [
+        {
+          "deploy": 1,
+          "end": 18,
+          "entrench": 15,
+          "fire": 81,
+          "formation": 11,
+          "move": 26,
+          "rally": 3,
+          "rest": 31
+        },
+        {
+          "assault": 2,
+          "deploy": 3,
+          "end": 18,
+          "entrench": 10,
+          "fire": 86,
+          "formation": 10,
+          "limber": 2,
+          "move": 65,
+          "rally": 1,
+          "rest": 23
+        }
+      ],
+      "final": {
+        "distribution": [
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 1,
+            "niederwald": 1
+          },
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 3
+          }
+        ],
+        "finished": true,
+        "losses": [
+          3532,
+          3518
+        ],
+        "owners": {
+          "elsasshausen": 0,
+          "froeschwiller": 1,
+          "niederwald": 0
+        },
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "score": {
+          "level": "draw",
+          "margin": 3.46713595583161,
+          "parts": [
+            [
+              30.0,
+              12.2222222222222,
+              6.70095238095238
+            ],
+            [
+              30.0,
+              7.77777777777778,
+              7.67826086956522
+            ]
+          ],
+          "reason": "weighted",
+          "totals": [
+            48.9231746031746,
+            45.456038647343
+          ],
+          "winner": -1
+        },
+        "turn": 18
+      },
+      "captures": [
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 2
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 4
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 7
+        }
+      ],
+      "artillery_counts": [
+        {
+          "move": 3,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 2,
+          "rest": 0
+        },
+        {
+          "move": 3,
+          "limber": 2,
+          "deploy": 3,
+          "fire": 20,
+          "rest": 5
+        }
+      ],
+      "artillery_objective_shots": [
+        1,
+        6
+      ]
+    },
+    "checks": 813,
+    "failures": 0,
+    "decisions": 406,
+    "mean_decision_ms": 488.04926108374383,
+    "max_decision_ms": 1244
+  },
+  {
+    "mode": "hard",
+    "seed": 187037,
+    "same_actions": false,
+    "before": {
+      "counts": [
+        {
+          "assault": 1,
+          "deploy": 1,
+          "end": 18,
+          "entrench": 14,
+          "fire": 53,
+          "formation": 12,
+          "move": 60,
+          "rally": 2,
+          "rest": 23
+        },
+        {
+          "assault": 4,
+          "deploy": 2,
+          "end": 18,
+          "entrench": 8,
+          "fire": 87,
+          "formation": 7,
+          "limber": 1,
+          "move": 103,
+          "rest": 27
+        }
+      ],
+      "final": {
+        "distribution": [
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 1,
+            "niederwald": 1
+          },
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 3,
+            "niederwald": 1
+          }
+        ],
+        "finished": true,
+        "losses": [
+          3619,
+          3279
+        ],
+        "owners": {
+          "elsasshausen": 0,
+          "froeschwiller": 1,
+          "niederwald": 0
+        },
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "score": {
+          "level": "draw",
+          "margin": 0.600545203588688,
+          "parts": [
+            [
+              30.0,
+              11.1111111111111,
+              6.24571428571429
+            ],
+            [
+              30.0,
+              8.88888888888889,
+              7.86739130434783
+            ]
+          ],
+          "reason": "weighted",
+          "totals": [
+            47.3568253968254,
+            46.7562801932367
+          ],
+          "winner": -1
+        },
+        "turn": 18
+      },
+      "captures": [
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 3
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 6
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 6
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 16
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 16
+        }
+      ],
+      "artillery_counts": [
+        {
+          "move": 3,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 3,
+          "rest": 0
+        },
+        {
+          "move": 2,
+          "limber": 1,
+          "deploy": 2,
+          "fire": 27,
+          "rest": 2
+        }
+      ],
+      "artillery_objective_shots": [
+        1,
+        27
+      ]
+    },
+    "after": {
+      "counts": [
+        {
+          "assault": 2,
+          "deploy": 1,
+          "end": 18,
+          "entrench": 13,
+          "fire": 56,
+          "formation": 11,
+          "move": 25,
+          "rally": 3,
+          "rest": 44
+        },
+        {
+          "assault": 4,
+          "deploy": 1,
+          "end": 18,
+          "entrench": 12,
+          "fire": 109,
+          "formation": 7,
+          "move": 139,
+          "rally": 3,
+          "rest": 18
+        }
+      ],
+      "final": {
+        "distribution": [
+          {
+            "elsasshausen": 2,
+            "froeschwiller": 1,
+            "niederwald": 2
+          },
+          {
+            "elsasshausen": 1,
+            "froeschwiller": 5
+          }
+        ],
+        "finished": true,
+        "losses": [
+          3915,
+          3209
+        ],
+        "owners": {
+          "elsasshausen": 1,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "score": {
+          "level": "minor_loss",
+          "loss_advantage": -0.119924430641822,
+          "margin": 26.4904002760524,
+          "parts": [
+            [
+              40.0,
+              14.4444444444444,
+              6.11238095238095
+            ],
+            [
+              20.0,
+              5.55555555555556,
+              8.51086956521739
+            ]
+          ],
+          "reason": "losses_close",
+          "totals": [
+            60.5568253968254,
+            34.0664251207729
+          ],
+          "winner": 0
+        },
+        "turn": 18
+      },
+      "captures": [
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 2
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 5
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 12
+        },
+        {
+          "objective": "elsasshausen",
+          "owner": 1,
+          "turn": 16
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 17
+        }
+      ],
+      "artillery_counts": [
+        {
+          "move": 3,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 2,
+          "rest": 0
+        },
+        {
+          "move": 1,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 33,
+          "rest": 0
+        }
+      ],
+      "artillery_objective_shots": [
+        1,
+        33
+      ]
+    },
+    "checks": 969,
+    "failures": 0,
+    "decisions": 484,
+    "mean_decision_ms": 809.2727272727273,
+    "max_decision_ms": 2421
+  },
+  {
+    "mode": "hard",
+    "seed": 187038,
+    "same_actions": false,
+    "before": {
+      "counts": [
+        {
+          "deploy": 1,
+          "end": 18,
+          "entrench": 18,
+          "fire": 54,
+          "formation": 12,
+          "move": 57,
+          "rally": 1,
+          "rest": 20
+        },
+        {
+          "assault": 4,
+          "deploy": 3,
+          "end": 18,
+          "entrench": 11,
+          "fire": 97,
+          "formation": 6,
+          "limber": 3,
+          "move": 90,
+          "rest": 21
+        }
+      ],
+      "final": {
+        "distribution": [
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 1,
+            "niederwald": 1
+          },
+          {
+            "elsasshausen": 3,
+            "froeschwiller": 2,
+            "niederwald": 2
+          }
+        ],
+        "finished": true,
+        "losses": [
+          3875,
+          3253
+        ],
+        "owners": {
+          "elsasshausen": 1,
+          "froeschwiller": 1,
+          "niederwald": 0
+        },
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "score": {
+          "level": "major_win",
+          "loss_advantage": 0.111386128364389,
+          "margin": 39.2647596043248,
+          "parts": [
+            [
+              10.0,
+              11.4814814814815,
+              6.19619047619048
+            ],
+            [
+              50.0,
+              8.51851851851852,
+              8.42391304347826
+            ]
+          ],
+          "reason": "major",
+          "totals": [
+            27.677671957672,
+            66.9424315619968
+          ],
+          "winner": 1
+        },
+        "turn": 18
+      },
+      "captures": [
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 3
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 6
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 6
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 16
+        },
+        {
+          "objective": "elsasshausen",
+          "owner": 1,
+          "turn": 17
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 18
+        }
+      ],
+      "artillery_counts": [
+        {
+          "move": 3,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 3,
+          "rest": 0
+        },
+        {
+          "move": 4,
+          "limber": 3,
+          "deploy": 3,
+          "fire": 21,
+          "rest": 5
+        }
+      ],
+      "artillery_objective_shots": [
+        1,
+        14
+      ]
+    },
+    "after": {
+      "counts": [
+        {
+          "assault": 1,
+          "deploy": 1,
+          "end": 18,
+          "entrench": 15,
+          "fire": 79,
+          "formation": 10,
+          "move": 30,
+          "rally": 3,
+          "rest": 25
+        },
+        {
+          "assault": 3,
+          "deploy": 1,
+          "end": 18,
+          "entrench": 10,
+          "fire": 99,
+          "formation": 9,
+          "limber": 1,
+          "move": 58,
+          "rally": 2,
+          "rest": 20
+        }
+      ],
+      "final": {
+        "distribution": [
+          {
+            "elsasshausen": 2,
+            "froeschwiller": 1,
+            "niederwald": 2
+          },
+          {
+            "elsasshausen": 3,
+            "niederwald": 3
+          }
+        ],
+        "finished": true,
+        "losses": [
+          3613,
+          3808
+        ],
+        "owners": {
+          "elsasshausen": 1,
+          "froeschwiller": 1,
+          "niederwald": 0
+        },
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "score": {
+          "level": "minor_win",
+          "loss_advantage": 0.0300507246376812,
+          "margin": 33.934347826087,
+          "parts": [
+            [
+              10.0,
+              13.3333333333333,
+              7.25333333333333
+            ],
+            [
+              50.0,
+              6.66666666666667,
+              7.85434782608696
+            ]
+          ],
+          "reason": "losses_close",
+          "totals": [
+            30.5866666666667,
+            64.5210144927536
+          ],
+          "winner": 1
+        },
+        "turn": 18
+      },
+      "captures": [
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 2
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 0,
+          "turn": 5
+        },
+        {
+          "objective": "froeschwiller",
+          "owner": 1,
+          "turn": 12
+        },
+        {
+          "objective": "elsasshausen",
+          "owner": 1,
+          "turn": 16
+        }
+      ],
+      "artillery_counts": [
+        {
+          "move": 3,
+          "limber": 0,
+          "deploy": 1,
+          "fire": 2,
+          "rest": 0
+        },
+        {
+          "move": 2,
+          "limber": 1,
+          "deploy": 1,
+          "fire": 29,
+          "rest": 1
+        }
+      ],
+      "artillery_objective_shots": [
+        1,
+        29
+      ]
+    },
+    "checks": 807,
+    "failures": 0,
+    "decisions": 403,
+    "mean_decision_ms": 511.46401985111663,
+    "max_decision_ms": 1986
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "engine_modified_functions": [
+    "new_game",
+    "normalize",
+    "validate",
+    "result_for"
+  ],
+  "engine_added_functions": [
+    "normalize_difficulty",
+    "battle_turn_limit"
+  ],
+  "unchanged_engine_functions": 80,
+  "combat_parameters_identical": true
+}

@@ -1,0 +1,18 @@
+{
+  "medium": {
+    "wall_optimized_ms": 2190.955975,
+    "wall_reference_ms": 2353.0799,
+    "wall_reduction_percent": 6.889860603543485,
+    "cpu_optimized_ms": 3255.0,
+    "cpu_reference_ms": 2092.5,
+    "median_cpu_paired_reduction_percent": -4.54443320975172
+  },
+  "hard": {
+    "wall_optimized_ms": 2729.595525,
+    "wall_reference_ms": 2287.032775,
+    "wall_reduction_percent": -19.3509579240726,
+    "cpu_optimized_ms": 2918.75,
+    "cpu_reference_ms": 2385.0,
+    "median_cpu_paired_reduction_percent": -1.3698630136986356
+  }
+}

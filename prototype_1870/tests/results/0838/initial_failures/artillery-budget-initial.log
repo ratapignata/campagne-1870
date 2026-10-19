@@ -1,0 +1,10 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+FAIL: actual uncommanded supplied French gun has three PA
+FAIL: future target is actually observed
+FAIL: hard prepares useful deployment despite insufficient PA for same-turn French shot
+FAIL: deployment consumes one PA, no free action
+FAIL: French shot still requires three PA
+FAIL: next own turn allows existing three-PA shot
+FAIL: real French shot consumes all three PA
+V38 ARTILLERY BUDGET 2/9

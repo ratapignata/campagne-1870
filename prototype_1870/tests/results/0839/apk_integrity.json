@@ -1,0 +1,16 @@
+{
+  "apk_size_bytes": 88110651,
+  "sha256": "0ad81055933db1f04dca3852f34104d286baa574ecb0567f1a4e8a21891f0ef4",
+  "zip_valid": true,
+  "pack_bytes_match_sources": true,
+  "native_libraries": [
+    "lib/arm64-v8a/libc++_shared.so",
+    "lib/arm64-v8a/libgodot_android.so",
+    "lib/armeabi-v7a/libc++_shared.so",
+    "lib/armeabi-v7a/libgodot_android.so",
+    "lib/x86_64/libc++_shared.so",
+    "lib/x86_64/libgodot_android.so"
+  ],
+  "no_test_or_development_resources": true,
+  "font_license": true
+}

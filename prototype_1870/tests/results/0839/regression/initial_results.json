@@ -1,0 +1,364 @@
+{
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "results": [
+    {
+      "test": "import",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--editor",
+        "--import",
+        "--quit"
+      ]
+    },
+    {
+      "test": "v36/test_saves",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/v36/test_saves.gd"
+      ]
+    },
+    {
+      "test": "v36/test_los",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/v36/test_los.gd"
+      ]
+    },
+    {
+      "test": "v36/test_isolation",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/v36/test_isolation.gd"
+      ]
+    },
+    {
+      "test": "v36/test_contract",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/v36/test_contract.gd"
+      ]
+    },
+    {
+      "test": "v36/test_ui",
+      "exit": 1,
+      "errors": [
+        "FAIL final clock adds no turn"
+      ],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/v36/test_ui.gd"
+      ]
+    },
+    {
+      "test": "v36/test_hidden_worlds",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/v36/test_hidden_worlds.gd"
+      ]
+    },
+    {
+      "test": "test_strict0833",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_strict0833.gd"
+      ]
+    },
+    {
+      "test": "test_isolation0835",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_isolation0835.gd"
+      ]
+    },
+    {
+      "test": "test_release0830",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_release0830.gd"
+      ]
+    },
+    {
+      "test": "test_artillery0823",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_artillery0823.gd"
+      ]
+    },
+    {
+      "test": "test_revision0830",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_revision0830.gd"
+      ]
+    },
+    {
+      "test": "test_weapons",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_weapons.gd"
+      ]
+    },
+    {
+      "test": "test_combat_routes",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_combat_routes.gd"
+      ]
+    },
+    {
+      "test": "test_exchange_assault",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_exchange_assault.gd"
+      ]
+    },
+    {
+      "test": "test_formations08",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_formations08.gd"
+      ]
+    },
+    {
+      "test": "test_positions_results",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_positions_results.gd"
+      ]
+    },
+    {
+      "test": "test_multi_objectives",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_multi_objectives.gd"
+      ]
+    },
+    {
+      "test": "test_multi_objectives_ui",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_multi_objectives_ui.gd"
+      ]
+    },
+    {
+      "test": "test_cavalry085",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_cavalry085.gd"
+      ]
+    },
+    {
+      "test": "test_exact_intel087",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_exact_intel087.gd"
+      ]
+    },
+    {
+      "test": "test_support0820",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_support0820.gd"
+      ]
+    },
+    {
+      "test": "test_ai_compat0833",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_ai_compat0833.gd"
+      ]
+    },
+    {
+      "test": "test_regimental0835_ui",
+      "exit": 1,
+      "errors": [
+        "FAIL 3 objectives 18 turns",
+        "FAIL 3 objectives 18 turns"
+      ],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_regimental0835_ui.gd"
+      ]
+    },
+    {
+      "test": "test_river0814",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_river0814.gd",
+        "--",
+        "--quick"
+      ]
+    },
+    {
+      "test": "test_morale_ai",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_morale_ai.gd"
+      ]
+    },
+    {
+      "test": "test_fog086",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/workspace/scratch/a5562e07a140/tooling/Godot_v4.5.1-stable_linux.x86_64",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v39/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_fog086.gd"
+      ]
+    }
+  ]
+}

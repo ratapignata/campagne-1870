@@ -1,0 +1,131 @@
+{
+	"checks": 1701,
+	"failures": 0,
+	"normalization": "1000 * (strength / 1000)^0.90; symmetric infantry-only melee. Ratios before defensive volley; actual combat samples include unchanged defensive volley.",
+	"samples": [
+		{
+			"attacker_strength": 2900,
+			"attacking_side": 0,
+			"defender_entrenched": false,
+			"defender_strength": 1000,
+			"results": [
+				{
+					"defence": 1000.0,
+					"mean_inflicted": 356.390625,
+					"mean_received": 161.6875,
+					"power": 2900.0,
+					"ratio": 2.9,
+					"reactions_of_64": 64,
+					"routed_of_64": 0,
+					"taken_of_64": 64,
+					"version": "V42"
+				},
+				{
+					"defence": 1000.0,
+					"mean_inflicted": 321.28125,
+					"mean_received": 161.6875,
+					"power": 2607.10305242386,
+					"ratio": 2.60710305242386,
+					"reactions_of_64": 64,
+					"routed_of_64": 0,
+					"taken_of_64": 64,
+					"version": "V43 B"
+				}
+			],
+			"terrain": "plain"
+		},
+		{
+			"attacker_strength": 2900,
+			"attacking_side": 1,
+			"defender_entrenched": false,
+			"defender_strength": 1000,
+			"results": [
+				{
+					"defence": 1000.0,
+					"mean_inflicted": 356.390625,
+					"mean_received": 161.6875,
+					"power": 2900.0,
+					"ratio": 2.9,
+					"reactions_of_64": 64,
+					"routed_of_64": 0,
+					"taken_of_64": 64,
+					"version": "V42"
+				},
+				{
+					"defence": 1000.0,
+					"mean_inflicted": 321.28125,
+					"mean_received": 161.6875,
+					"power": 2607.10305242386,
+					"ratio": 2.60710305242386,
+					"reactions_of_64": 64,
+					"routed_of_64": 0,
+					"taken_of_64": 64,
+					"version": "V43 B"
+				}
+			],
+			"terrain": "plain"
+		},
+		{
+			"attacker_strength": 2900,
+			"attacking_side": 0,
+			"defender_entrenched": true,
+			"defender_strength": 1000,
+			"results": [
+				{
+					"defence": 1875.0,
+					"mean_inflicted": 356.390625,
+					"mean_received": 240.6875,
+					"power": 2900.0,
+					"ratio": 1.54666666666667,
+					"reactions_of_64": 64,
+					"routed_of_64": 0,
+					"taken_of_64": 64,
+					"version": "V42"
+				},
+				{
+					"defence": 1875.0,
+					"mean_inflicted": 321.28125,
+					"mean_received": 240.6875,
+					"power": 2607.10305242386,
+					"ratio": 1.39045496129272,
+					"reactions_of_64": 64,
+					"routed_of_64": 0,
+					"taken_of_64": 64,
+					"version": "V43 B"
+				}
+			],
+			"terrain": "village"
+		},
+		{
+			"attacker_strength": 2900,
+			"attacking_side": 1,
+			"defender_entrenched": true,
+			"defender_strength": 1000,
+			"results": [
+				{
+					"defence": 1875.0,
+					"mean_inflicted": 356.390625,
+					"mean_received": 240.6875,
+					"power": 2900.0,
+					"ratio": 1.54666666666667,
+					"reactions_of_64": 64,
+					"routed_of_64": 0,
+					"taken_of_64": 64,
+					"version": "V42"
+				},
+				{
+					"defence": 1875.0,
+					"mean_inflicted": 321.28125,
+					"mean_received": 240.6875,
+					"power": 2607.10305242386,
+					"ratio": 1.39045496129272,
+					"reactions_of_64": 64,
+					"routed_of_64": 0,
+					"taken_of_64": 64,
+					"version": "V43 B"
+				}
+			],
+			"terrain": "village"
+		}
+	]
+}

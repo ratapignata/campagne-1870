@@ -1,0 +1,29 @@
+1870 prototype 0.5 — Enregistrements sonores
+
+Musket Shot.wav — mlsulli, 26 avril 2014 — CC0
+https://freesound.org/people/mlsulli/sounds/234869/
+Source : aperçu HQ public 234869_3883507-hq.mp3.
+Montage : extrait recadré, cinq départs irréguliers pour une salve,
+normalisation et fondus, deux variantes.
+
+Cannon Shot — qubodup, 7 mai 2013 — CC0
+https://freesound.org/people/qubodup/sounds/187767/
+Source : aperçu HQ public 187767_71257-hq.mp3.
+Montage : deux extraits de 1,4 s, normalisation et fondus.
+
+Licence : https://creativecommons.org/publicdomain/zero/1.0/
+Ces bruitages sont des adaptations d'ambiance. Ils ne prétendent pas
+reconstituer exactement le son du Chassepot, du Dreyse ou du Krupp de 1870.
+Les sources et le script reproductible figurent dans development/.
+
+AJOUTS 0.6 — tous sous CC0 (https://creativecommons.org/publicdomain/zero/1.0/)
+Slow World — szegvari, 8 décembre 2020.
+https://freesound.org/people/szegvari/sounds/547382/
+Musique entière (~84 s), fondus début/fin, conversion Ogg, volume réduit en jeu.
+Middle Ages War Cry 3.wav — joelcarrsound, 11 juin 2020.
+https://freesound.org/people/joelcarrsound/sounds/521831/
+Footsteps of a runner on gravel — florianreichelt, 6 janvier 2019.
+https://freesound.org/people/florianreichelt/sounds/456038/
+Assaut : montage de 1,15 s de cris et pas, normalisation et fondus.
+Sources : aperçus HQ publics, URLs exactes dans development/audio_sources/*.json.
+Musique et bruitages évocateurs ; aucune authenticité militaire 1870 revendiquée.

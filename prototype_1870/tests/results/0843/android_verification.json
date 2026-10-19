@@ -1,0 +1,179 @@
+{
+  "sha256": "25f1e9ca8218d1c12a2453c24833a5438c32ec358e7758f836a0ee430c1ffdc6",
+  "checks": [
+    {
+      "test": "signature",
+      "exit": 0,
+      "output": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): true\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\nSigner #1 certificate DN: CN=1870 Prototype Development, O=Prototype, C=FR\nSigner #1 certificate SHA-256 digest: 57c00efad8c9b822d4a1d63238a4137b9afc97b6e9248076f4f54bb292ae846c\nSigner #1 certificate SHA-1 digest: 560b0f67fb210d4ff1a3279a9fd751b91cfe0ca0\nSigner #1 certificate MD5 digest: f1ff4b86de767c6be987ecfe8222b215\nSigner #1 key algorithm: RSA\nSigner #1 key size (bits): 2048\nSigner #1 public key SHA-256 digest: 4fc4b46a4db9c47e153da677fd85b6dc780dcda6fc30b18948691f26c1056aed\nSigner #1 public key SHA-1 digest: f65f289fe292eba41a538d037c2a2108334836ee\nSigner #1 public key MD5 digest: 815a45711b4bbd8f178b52152011cdb9\n"
+    },
+    {
+      "test": "alignment",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "test": "metadata",
+      "exit": 0,
+      "output": "package: name='org.woerth1870.prototype.v02' versionCode='57' versionName='0.8.43' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'\ninstall-location:'auto'\nsdkVersion:'24'\ntargetSdkVersion:'35'\napplication-label:'1870 \u00b7 Prototype 0.8.43'\napplication-label-af:'1870 \u00b7 Prototype 0.8.43'\napplication-label-am:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ar:'1870 \u00b7 Prototype 0.8.43'\napplication-label-as:'1870 \u00b7 Prototype 0.8.43'\napplication-label-az:'1870 \u00b7 Prototype 0.8.43'\napplication-label-be:'1870 \u00b7 Prototype 0.8.43'\napplication-label-bg:'1870 \u00b7 Prototype 0.8.43'\napplication-label-bn:'1870 \u00b7 Prototype 0.8.43'\napplication-label-bs:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ca:'1870 \u00b7 Prototype 0.8.43'\napplication-label-cs:'1870 \u00b7 Prototype 0.8.43'\napplication-label-da:'1870 \u00b7 Prototype 0.8.43'\napplication-label-de:'1870 \u00b7 Prototype 0.8.43'\napplication-label-el:'1870 \u00b7 Prototype 0.8.43'\napplication-label-en:'1870 \u00b7 Prototype 0.8.43'\napplication-label-en-AU:'1870 \u00b7 Prototype 0.8.43'\napplication-label-en-CA:'1870 \u00b7 Prototype 0.8.43'\napplication-label-en-GB:'1870 \u00b7 Prototype 0.8.43'\napplication-label-en-IN:'1870 \u00b7 Prototype 0.8.43'\napplication-label-en-XC:'1870 \u00b7 Prototype 0.8.43'\napplication-label-es:'1870 \u00b7 Prototype 0.8.43'\napplication-label-es-ES:'1870 \u00b7 Prototype 0.8.43'\napplication-label-es-US:'1870 \u00b7 Prototype 0.8.43'\napplication-label-et:'1870 \u00b7 Prototype 0.8.43'\napplication-label-eu:'1870 \u00b7 Prototype 0.8.43'\napplication-label-fa:'1870 \u00b7 Prototype 0.8.43'\napplication-label-fi:'1870 \u00b7 Prototype 0.8.43'\napplication-label-fr:'1870 \u00b7 Prototype 0.8.43'\napplication-label-fr-CA:'1870 \u00b7 Prototype 0.8.43'\napplication-label-gl:'1870 \u00b7 Prototype 0.8.43'\napplication-label-gu:'1870 \u00b7 Prototype 0.8.43'\napplication-label-hi:'1870 \u00b7 Prototype 0.8.43'\napplication-label-hr:'1870 \u00b7 Prototype 0.8.43'\napplication-label-hu:'1870 \u00b7 Prototype 0.8.43'\napplication-label-hy:'1870 \u00b7 Prototype 0.8.43'\napplication-label-in:'1870 \u00b7 Prototype 0.8.43'\napplication-label-is:'1870 \u00b7 Prototype 0.8.43'\napplication-label-it:'1870 \u00b7 Prototype 0.8.43'\napplication-label-iw:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ja:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ka:'1870 \u00b7 Prototype 0.8.43'\napplication-label-kk:'1870 \u00b7 Prototype 0.8.43'\napplication-label-km:'1870 \u00b7 Prototype 0.8.43'\napplication-label-kn:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ko:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ky:'1870 \u00b7 Prototype 0.8.43'\napplication-label-lo:'1870 \u00b7 Prototype 0.8.43'\napplication-label-lt:'1870 \u00b7 Prototype 0.8.43'\napplication-label-lv:'1870 \u00b7 Prototype 0.8.43'\napplication-label-mk:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ml:'1870 \u00b7 Prototype 0.8.43'\napplication-label-mn:'1870 \u00b7 Prototype 0.8.43'\napplication-label-mr:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ms:'1870 \u00b7 Prototype 0.8.43'\napplication-label-my:'1870 \u00b7 Prototype 0.8.43'\napplication-label-nb:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ne:'1870 \u00b7 Prototype 0.8.43'\napplication-label-nl:'1870 \u00b7 Prototype 0.8.43'\napplication-label-or:'1870 \u00b7 Prototype 0.8.43'\napplication-label-pa:'1870 \u00b7 Prototype 0.8.43'\napplication-label-pl:'1870 \u00b7 Prototype 0.8.43'\napplication-label-pt:'1870 \u00b7 Prototype 0.8.43'\napplication-label-pt-BR:'1870 \u00b7 Prototype 0.8.43'\napplication-label-pt-PT:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ro:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ru:'1870 \u00b7 Prototype 0.8.43'\napplication-label-si:'1870 \u00b7 Prototype 0.8.43'\napplication-label-sk:'1870 \u00b7 Prototype 0.8.43'\napplication-label-sl:'1870 \u00b7 Prototype 0.8.43'\napplication-label-sq:'1870 \u00b7 Prototype 0.8.43'\napplication-label-sr:'1870 \u00b7 Prototype 0.8.43'\napplication-label-sr-Latn:'1870 \u00b7 Prototype 0.8.43'\napplication-label-sv:'1870 \u00b7 Prototype 0.8.43'\napplication-label-sw:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ta:'1870 \u00b7 Prototype 0.8.43'\napplication-label-te:'1870 \u00b7 Prototype 0.8.43'\napplication-label-th:'1870 \u00b7 Prototype 0.8.43'\napplication-label-tl:'1870 \u00b7 Prototype 0.8.43'\napplication-label-tr:'1870 \u00b7 Prototype 0.8.43'\napplication-label-uk:'1870 \u00b7 Prototype 0.8.43'\napplication-label-ur:'1870 \u00b7 Prototype 0.8.43'\napplication-label-uz:'1870 \u00b7 Prototype 0.8.43'\napplication-label-vi:'1870 \u00b7 Prototype 0.8.43'\napplication-label-zh:'1870 \u00b7 Prototype 0.8.43'\napplication-label-zh-CN:'1870 \u00b7 Prototype 0.8.43'\napplication-label-zh-HK:'1870 \u00b7 Prototype 0.8.43'\napplication-label-zh-TW:'1870 \u00b7 Prototype 0.8.43'\napplication-label-zu:'1870 \u00b7 Prototype 0.8.43'\napplication-icon-160:'res/mipmap-anydpi-v26/icon.xml'\napplication-icon-240:'res/mipmap-anydpi-v26/icon.xml'\napplication-icon-320:'res/mipmap-anydpi-v26/icon.xml'\napplication-icon-480:'res/mipmap-anydpi-v26/icon.xml'\napplication-icon-640:'res/mipmap-anydpi-v26/icon.xml'\napplication-icon-65534:'res/mipmap-anydpi-v26/icon.xml'\napplication: label='1870 \u00b7 Prototype 0.8.43' icon='res/mipmap-anydpi-v26/icon.xml'\napplication-debuggable\nlaunchable-activity: name='com.godot.game.GodotApp'  label='1870 \u00b7 Prototype 0.8.43' icon=''\nfeature-group: label=''\n  uses-gl-es: '0x30000'\n  uses-feature: name='android.hardware.faketouch'\n  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'\n  uses-feature: name='android.hardware.screen.landscape'\n  uses-implied-feature: name='android.hardware.screen.landscape' reason='one or more activities have specified a landscape orientation'\nmain\nother-activities\nother-receivers\nother-services\nsupports-screens: 'small' 'normal' 'large' 'xlarge'\nsupports-any-density: 'true'\nlocales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-ES' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'hi' 'hr' 'hu' 'hy' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'\ndensities: '160' '240' '320' '480' '640' '65534'\nnative-code: 'arm64-v8a' 'armeabi-v7a' 'x86_64'\n"
+    }
+  ],
+  "native_libraries": {
+    "lib/arm64-v8a/libc++_shared.so": {
+      "elf_bits": 64,
+      "segments": [
+        {
+          "offset": 0,
+          "virtual": 0,
+          "align": 16384
+        },
+        {
+          "offset": 624800,
+          "virtual": 641184,
+          "align": 16384
+        },
+        {
+          "offset": 1210520,
+          "virtual": 1243288,
+          "align": 16384
+        },
+        {
+          "offset": 1250352,
+          "virtual": 1299504,
+          "align": 16384
+        }
+      ],
+      "sha256": "ad74bf43eb1fd576518168f664ad16a74e00eeda9595875c33dd87f6dd197869"
+    },
+    "lib/arm64-v8a/libgodot_android.so": {
+      "elf_bits": 64,
+      "segments": [
+        {
+          "offset": 0,
+          "virtual": 0,
+          "align": 16384
+        },
+        {
+          "offset": 18727824,
+          "virtual": 18744208,
+          "align": 16384
+        },
+        {
+          "offset": 74350976,
+          "virtual": 74383744,
+          "align": 16384
+        },
+        {
+          "offset": 75977440,
+          "virtual": 76026592,
+          "align": 16384
+        }
+      ],
+      "sha256": "2fc857a437493c6c78302c0d3804919b8c58cdd38423d59da4728470680f277d"
+    },
+    "lib/armeabi-v7a/libc++_shared.so": {
+      "elf_bits": 32,
+      "segments": [
+        {
+          "offset": 0,
+          "virtual": 0,
+          "align": 4096
+        },
+        {
+          "offset": 429440,
+          "virtual": 433536,
+          "align": 4096
+        },
+        {
+          "offset": 828016,
+          "virtual": 836208,
+          "align": 4096
+        },
+        {
+          "offset": 848192,
+          "virtual": 860480,
+          "align": 4096
+        }
+      ],
+      "sha256": "c2b3f4fd8523deb930b272ef230134cd9500dbf6c6c71cb1f3ecf6eae21417ea"
+    },
+    "lib/armeabi-v7a/libgodot_android.so": {
+      "elf_bits": 32,
+      "segments": [
+        {
+          "offset": 0,
+          "virtual": 0,
+          "align": 4096
+        },
+        {
+          "offset": 10259760,
+          "virtual": 10263856,
+          "align": 4096
+        },
+        {
+          "offset": 81822864,
+          "virtual": 81831056,
+          "align": 4096
+        },
+        {
+          "offset": 82659304,
+          "virtual": 82671592,
+          "align": 4096
+        }
+      ],
+      "sha256": "ae4e884af688a64c703513459b4d24f0e656f659824226264e4e79887edd9838"
+    },
+    "lib/x86_64/libc++_shared.so": {
+      "elf_bits": 64,
+      "segments": [
+        {
+          "offset": 0,
+          "virtual": 0,
+          "align": 16384
+        },
+        {
+          "offset": 604448,
+          "virtual": 620832,
+          "align": 16384
+        },
+        {
+          "offset": 1187008,
+          "virtual": 1219776,
+          "align": 16384
+        },
+        {
+          "offset": 1226704,
+          "virtual": 1275856,
+          "align": 16384
+        }
+      ],
+      "sha256": "294e0ce4e88589103952c57c9484f917c26509d66170bc86d07d48f0fc879de4"
+    },
+    "lib/x86_64/libgodot_android.so": {
+      "elf_bits": 64,
+      "segments": [
+        {
+          "offset": 0,
+          "virtual": 0,
+          "align": 16384
+        },
+        {
+          "offset": 17754880,
+          "virtual": 17771264,
+          "align": 16384
+        },
+        {
+          "offset": 79437744,
+          "virtual": 79470512,
+          "align": 16384
+        },
+        {
+          "offset": 81050528,
+          "virtual": 81099680,
+          "align": 16384
+        }
+      ],
+      "sha256": "76b9442b3727323215ec4aa7695381a0598b86fe4fd54f9eb35d02ea789a4b47"
+    }
+  },
+  "font_license_included": true
+}

@@ -1,0 +1,269 @@
+{
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "results": [
+    {
+      "test": "v36/test_saves",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "V36 SAVES 43/43"
+      ]
+    },
+    {
+      "test": "v36/test_los",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "V36 LOS 40/40"
+      ]
+    },
+    {
+      "test": "v36/test_isolation",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "V36 ISOLATION 45/45"
+      ]
+    },
+    {
+      "test": "v36/test_contract",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "V36 CONTRACT 110/110"
+      ]
+    },
+    {
+      "test": "v36/test_ui",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "V36 UI 11/11"
+      ]
+    },
+    {
+      "test": "v36/test_hidden_worlds",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "V35 HIDDEN WORLDS 18/18"
+      ]
+    },
+    {
+      "test": "test_strict0833",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "STRICT 0833 22/22"
+      ]
+    },
+    {
+      "test": "test_isolation0835",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "ISOLATION 0835 9/9"
+      ]
+    },
+    {
+      "test": "test_release0830",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "RELEASE 0830 119/119"
+      ]
+    },
+    {
+      "test": "test_artillery0823",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "ARTILLERY 0823 1188/1188"
+      ]
+    },
+    {
+      "test": "test_revision0830",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "REVISION 0830 18/18"
+      ]
+    },
+    {
+      "test": "test_weapons",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "WEAPON CHECKS: 33 passed / 33 total"
+      ]
+    },
+    {
+      "test": "test_combat_routes",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "ROUTE/COMBAT CHECKS: 35 passed / 35 total"
+      ]
+    },
+    {
+      "test": "test_exchange_assault",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "EXCHANGE/ASSAULT CHECKS: 45 passed / 45"
+      ]
+    },
+    {
+      "test": "test_formations08",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "FORMATIONS08 CHECKS: 39 passed / 39"
+      ]
+    },
+    {
+      "test": "test_positions_results",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "POSITIONS/RESULTS CHECKS: 34 passed / 34"
+      ]
+    },
+    {
+      "test": "test_multi_objectives",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "MULTI OBJECTIVES: 28 checks, 0 failures"
+      ]
+    },
+    {
+      "test": "test_multi_objectives_ui",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "MULTI UI: 7 checks, 0 failures (headless)"
+      ]
+    },
+    {
+      "test": "test_cavalry085",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "CAVALRY 085: 41 / 41 passed"
+      ]
+    },
+    {
+      "test": "test_exact_intel087",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "EXACT INTEL 087: 35 / 35 passed"
+      ]
+    },
+    {
+      "test": "test_support0820",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "SUPPORT 0820: 29/29"
+      ]
+    },
+    {
+      "test": "test_ai_compat0833",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "AI COMPAT 18/18"
+      ]
+    },
+    {
+      "test": "test_regimental0835_ui",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "REGIMENTAL UI 0835 27/27"
+      ]
+    },
+    {
+      "test": "test_river0814",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "SAUER 0814: 108 / 108 passed"
+      ]
+    },
+    {
+      "test": "test_morale_ai",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Battle 13: scores [3, 3] losses 1719/1604 prisoners 0/0 assaults 4",
+        "Battle 71: scores [3, 3] losses 1708/1610 prisoners 0/0 assaults 4",
+        "Battle 1870: scores [3, 3] losses 1718/1593 prisoners 0/0 assaults 4",
+        "Battle 2026: scores [3, 3] losses 1714/1586 prisoners 0/0 assaults 4",
+        "AI simulations: 544 actions, 244 shots, 16 assaults, slowest decision 276.0 ms",
+        "MORALE/AI CHECKS: 43 passed / 43"
+      ]
+    },
+    {
+      "test": "test_fog086",
+      "exit": 0,
+      "errors": [],
+      "summary": [
+        "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org",
+        "",
+        "AI steps: 148; desktop ms: 35437",
+        "FOG 086: 41 / 41 passed"
+      ]
+    }
+  ]
+}

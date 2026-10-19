@@ -1,0 +1,15 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+FIRST medium { "kind": "move", "unit": "pru_37", "path": [283, 282, 251, 221, 191, 161] }
+FIRE 4 0 range
+FIRE 4 1 range
+FIRE 5 0 blocked_friendly
+FIRE 5 1 ok
+FAIL: battery prepares offensive before infantry medium
+FIRST hard { "kind": "move", "unit": "pru_37", "path": [283, 282, 251, 221, 191, 161] }
+FIRE 4 0 range
+FIRE 4 1 range
+FIRE 5 0 blocked_friendly
+FIRE 5 1 ok
+FAIL: battery prepares offensive before infantry hard
+V39 LOT2 21/23

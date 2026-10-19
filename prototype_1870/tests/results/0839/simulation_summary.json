@@ -1,0 +1,129 @@
+{
+  "means": {
+    "baseline": 78.59239130434784,
+    "medium": 78.55905797101451,
+    "hard": 84.0960144927536
+  },
+  "runs": [
+    {
+      "mode": "baseline",
+      "seed": 187037,
+      "revision": "lot2",
+      "checks": 1425,
+      "failures": 0,
+      "score_pr": 78.6398550724638,
+      "prepared_fire": 17,
+      "prepared_assault": 0
+    },
+    {
+      "mode": "baseline",
+      "seed": 187038,
+      "revision": "lot2",
+      "checks": 1464,
+      "failures": 0,
+      "score_pr": 78.5449275362319,
+      "prepared_fire": 10,
+      "prepared_assault": 0
+    },
+    {
+      "mode": "hard",
+      "seed": 187037,
+      "revision": "lot2",
+      "checks": 1479,
+      "failures": 0,
+      "score_pr": 67.486231884058,
+      "prepared_fire": 59,
+      "prepared_assault": 0
+    },
+    {
+      "mode": "hard",
+      "seed": 187038,
+      "revision": "lot2",
+      "checks": 1563,
+      "failures": 0,
+      "score_pr": 81.4239130434783,
+      "prepared_fire": 57,
+      "prepared_assault": 1
+    },
+    {
+      "mode": "medium",
+      "seed": 187037,
+      "revision": "lot2",
+      "checks": 1395,
+      "failures": 0,
+      "score_pr": 79.2521739130435,
+      "prepared_fire": 14,
+      "prepared_assault": 0
+    },
+    {
+      "mode": "medium",
+      "seed": 187038,
+      "revision": "lot2",
+      "checks": 1401,
+      "failures": 0,
+      "score_pr": 77.8659420289855,
+      "prepared_fire": 16,
+      "prepared_assault": 0
+    },
+    {
+      "mode": "hard",
+      "seed": 187037,
+      "revision": "interm\u00e9diaire",
+      "checks": 1479,
+      "failures": 0,
+      "score_pr": 67.486231884058,
+      "prepared_fire": 59,
+      "prepared_assault": 0
+    },
+    {
+      "mode": "hard",
+      "seed": 187038,
+      "revision": "interm\u00e9diaire",
+      "checks": 1563,
+      "failures": 0,
+      "score_pr": 81.4239130434783,
+      "prepared_fire": 57,
+      "prepared_assault": 1
+    },
+    {
+      "mode": "hard",
+      "seed": 187037,
+      "revision": "interm\u00e9diaire",
+      "checks": 1479,
+      "failures": 0,
+      "score_pr": 67.486231884058,
+      "prepared_fire": 59,
+      "prepared_assault": 0
+    },
+    {
+      "mode": "hard",
+      "seed": 187038,
+      "revision": "interm\u00e9diaire",
+      "checks": 1563,
+      "failures": 0,
+      "score_pr": 81.4239130434783,
+      "prepared_fire": 57,
+      "prepared_assault": 1
+    },
+    {
+      "mode": "hard",
+      "seed": 187037,
+      "revision": "finale",
+      "checks": 1617,
+      "failures": 0,
+      "score_pr": 86.031884057971,
+      "prepared_fire": 44,
+      "prepared_assault": 1
+    },
+    {
+      "mode": "hard",
+      "seed": 187038,
+      "revision": "finale",
+      "checks": 1578,
+      "failures": 0,
+      "score_pr": 82.1601449275362,
+      "prepared_fire": 38,
+      "prepared_assault": 0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "results": [
+    {
+      "test": "import",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/tmp/1870-v41-godot",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+        "--headless",
+        "--editor",
+        "--import",
+        "--quit"
+      ]
+    },
+    {
+      "test": "test_artillery0823",
+      "exit": 0,
+      "errors": [],
+      "command": [
+        "/tmp/1870-v41-godot",
+        "--path",
+        "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+        "--headless",
+        "--script",
+        "res://tests/test_artillery0823.gd"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "rendering": "OpenGL Compatibility, Mesa llvmpipe, 1280x720",
+  "screenshots": [
+    "sauer_0.72.png",
+    "sauer_1.18.png",
+    "sauer_2.3.png",
+    "menu.png"
+  ],
+  "inspected": true,
+  "phone_tested": false,
+  "observations": [
+    "Two blue outlined river labels visible at all three inspected zooms",
+    "High zoom placement margin corrected",
+    "Normal and Difficile menu buttons visible without overlap",
+    "No terrain/river changes"
+  ]
+}

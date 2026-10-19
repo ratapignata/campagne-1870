@@ -1,0 +1,32 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+FULL BATTLE START turn=1 units=81 pending=50 resume=false
+FULL PROGRESS turn=1 side=0 action=1 kind=move decision_ms=906
+FULL PROGRESS turn=1 side=0 action=11 kind=formation decision_ms=751
+FULL PROGRESS turn=1 side=0 action=21 kind=move decision_ms=573
+FULL BOUNDARY turn=1 side=0 actions=26 counts=[{"end":1,"entrench":1,"formation":13,"move":11},{}] pending=50 losses=[0, 0] elapsed_s=22
+FULL PROGRESS turn=1 side=1 action=31 kind=move decision_ms=1228
+FULL PROGRESS turn=1 side=1 action=41 kind=move decision_ms=936
+FULL BOUNDARY turn=1 side=1 actions=51 counts=[{"end":1,"entrench":1,"formation":13,"move":11},{"deploy":1,"end":1,"fire":1,"formation":1,"move":21}] pending=50 losses=[32, 0] elapsed_s=53
+FULL PROGRESS turn=1 side=1 action=51 kind=end decision_ms=569
+FULL PROGRESS turn=2 side=0 action=61 kind=move decision_ms=659
+FULL BOUNDARY turn=2 side=0 actions=67 counts=[{"end":2,"entrench":3,"formation":16,"move":21},{"deploy":1,"end":1,"fire":1,"formation":1,"move":21}] pending=50 losses=[32, 0] elapsed_s=67
+FULL PROGRESS turn=2 side=1 action=71 kind=formation decision_ms=1428
+FULL PROGRESS turn=2 side=1 action=81 kind=move decision_ms=805
+FULL BOUNDARY turn=2 side=1 actions=91 counts=[{"end":2,"entrench":3,"formation":16,"move":21},{"deploy":1,"end":2,"fire":1,"formation":2,"limber":1,"move":42}] pending=27 losses=[32, 0] elapsed_s=100
+FULL PROGRESS turn=2 side=1 action=91 kind=end decision_ms=1200
+FULL PROGRESS turn=3 side=0 action=101 kind=move decision_ms=5393
+FULL PROGRESS turn=3 side=0 action=111 kind=entrench decision_ms=4589
+FULL PROGRESS turn=3 side=0 action=121 kind=move decision_ms=3357
+FULL BOUNDARY turn=3 side=0 actions=131 counts=[{"end":3,"entrench":6,"formation":22,"move":51},{"deploy":1,"end":2,"fire":1,"formation":2,"limber":1,"move":42}] pending=25 losses=[32, 0] elapsed_s=293
+FULL PROGRESS turn=3 side=0 action=131 kind=end decision_ms=2302
+FULL PROGRESS turn=3 side=1 action=141 kind=formation decision_ms=2470
+FULL PROGRESS turn=3 side=1 action=151 kind=move decision_ms=2092
+FULL BOUNDARY turn=3 side=1 actions=160 counts=[{"end":3,"entrench":6,"formation":22,"move":51},{"assault":2,"deploy":2,"end":3,"entrench":1,"fire":2,"formation":9,"limber":1,"move":58}] pending=25 losses=[241, 45] elapsed_s=378
+FULL PROGRESS turn=4 side=0 action=161 kind=move decision_ms=5883
+FULL PROGRESS turn=4 side=0 action=171 kind=formation decision_ms=6920
+FULL PROGRESS turn=4 side=0 action=181 kind=move decision_ms=6089
+FULL PROGRESS turn=4 side=0 action=191 kind=move decision_ms=4474
+FULL PROGRESS turn=4 side=0 action=201 kind=move decision_ms=2942
+FULL BOUNDARY turn=4 side=0 actions=207 counts=[{"deploy":2,"end":4,"entrench":10,"fire":7,"formation":31,"move":75},{"assault":2,"deploy":2,"end":3,"entrench":1,"fire":2,"formation":9,"limber":1,"move":58}] pending=8 losses=[294, 647] elapsed_s=636
+FULL PROGRESS turn=4 side=1 action=211 kind=move decision_ms=10592

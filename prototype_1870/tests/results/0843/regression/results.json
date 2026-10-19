@@ -1,0 +1,140 @@
+[
+  {
+    "test": "v42_lot8/test_contract",
+    "exit": 0,
+    "errors": [],
+    "seconds": 12.273705244064331
+  },
+  {
+    "test": "v42_lot8/test_balance",
+    "exit": 0,
+    "errors": [],
+    "seconds": 0.9012107849121094
+  },
+  {
+    "test": "v42_lot8/test_counterattack",
+    "exit": 0,
+    "errors": [],
+    "seconds": 4.238187074661255
+  },
+  {
+    "test": "v42_lot8/test_ui",
+    "exit": 0,
+    "errors": [],
+    "seconds": 1.8869123458862305
+  },
+  {
+    "test": "v42/test_contract",
+    "exit": 0,
+    "errors": [],
+    "seconds": 11.675524473190308
+  },
+  {
+    "test": "v42/test_ui",
+    "exit": 0,
+    "errors": [],
+    "seconds": 1.7933168411254883
+  },
+  {
+    "test": "v42/test_coordination",
+    "exit": 0,
+    "errors": [],
+    "seconds": 2.556091785430908
+  },
+  {
+    "test": "v36/test_hidden_worlds",
+    "exit": 0,
+    "errors": [],
+    "seconds": 2.462745428085327
+  },
+  {
+    "test": "v36/test_saves",
+    "exit": 0,
+    "errors": [],
+    "seconds": 1.2432456016540527
+  },
+  {
+    "test": "v36/test_isolation",
+    "exit": 0,
+    "errors": [],
+    "seconds": 3.001619338989258
+  },
+  {
+    "test": "v36/test_los",
+    "exit": 0,
+    "errors": [],
+    "seconds": 0.4985504150390625
+  },
+  {
+    "test": "v39/test_capture_opportunity",
+    "exit": 0,
+    "errors": [],
+    "seconds": 1.058978796005249
+  },
+  {
+    "test": "v38/test_reinforcements",
+    "exit": 0,
+    "errors": [],
+    "seconds": 1.141871690750122
+  },
+  {
+    "test": "v41/test_legacy_save",
+    "exit": 0,
+    "errors": [],
+    "seconds": 1.2328412532806396
+  },
+  {
+    "test": "test_combat_routes",
+    "exit": 0,
+    "errors": [],
+    "seconds": 0.6963498592376709
+  },
+  {
+    "test": "test_exchange_assault",
+    "exit": 0,
+    "errors": [],
+    "seconds": 0.49183130264282227
+  },
+  {
+    "test": "test_weapons",
+    "exit": 0,
+    "errors": [],
+    "seconds": 0.5000207424163818
+  },
+  {
+    "test": "test_cavalry085",
+    "exit": 0,
+    "errors": [],
+    "seconds": 24.222827196121216
+  },
+  {
+    "test": "test_isolation0835",
+    "exit": 0,
+    "errors": [],
+    "seconds": 1.0672430992126465
+  },
+  {
+    "test": "test_multi_objectives",
+    "exit": 0,
+    "errors": [],
+    "seconds": 2.6303224563598633
+  },
+  {
+    "test": "test_support0820",
+    "exit": 0,
+    "errors": [],
+    "seconds": 0.8715832233428955
+  },
+  {
+    "test": "test_regimental0835_ui",
+    "exit": 0,
+    "errors": [],
+    "seconds": 2.542612314224243,
+    "initial_exit": 1,
+    "initial_errors": [
+      "FAIL restart loads trial"
+    ],
+    "rerun_log": "regimental-ui-final.log",
+    "reason": "Expected startup changed intentionally from historical prototype to current V43; archived save still verified."
+  }
+]

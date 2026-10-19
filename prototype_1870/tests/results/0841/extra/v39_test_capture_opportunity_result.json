@@ -1,0 +1,14 @@
+{
+  "test": "v39_test_capture_opportunity",
+  "exit": 0,
+  "errors": [],
+  "seconds": 1.5048302550000017,
+  "command": [
+    "/tmp/1870-v41-godot",
+    "--headless",
+    "--path",
+    "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+    "--script",
+    "res://tests/v39/test_capture_opportunity.gd"
+  ]
+}

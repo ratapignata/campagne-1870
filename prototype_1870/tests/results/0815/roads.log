@@ -1,0 +1,1 @@
+PASS: 36 explicit adjacent road edges, 37 connected nodes; no triangles; one connected network including bridge and villages; no crossing without bridge; no isolated road tile.

@@ -1,0 +1,136 @@
+[
+  {
+    "mode": "hard",
+    "seed": 430001,
+    "checks": 486,
+    "failures": 0,
+    "turns": 20,
+    "counts": [
+      {
+        "deploy": 1,
+        "end": 20,
+        "entrench": 8,
+        "fire": 80,
+        "move": 137,
+        "rest": 4
+      },
+      {
+        "assault": 2,
+        "deploy": 3,
+        "end": 20,
+        "entrench": 16,
+        "fire": 78,
+        "formation": 3,
+        "limber": 2,
+        "move": 91,
+        "rally": 4,
+        "rest": 14
+      }
+    ],
+    "score": [
+      16.4366666666667,
+      83.77
+    ]
+  },
+  {
+    "mode": "hard",
+    "seed": 430002,
+    "checks": 524,
+    "failures": 0,
+    "turns": 20,
+    "counts": [
+      {
+        "deploy": 2,
+        "end": 20,
+        "entrench": 4,
+        "fire": 103,
+        "move": 145,
+        "rest": 4
+      },
+      {
+        "assault": 3,
+        "deploy": 3,
+        "end": 20,
+        "entrench": 17,
+        "fire": 83,
+        "formation": 4,
+        "limber": 2,
+        "move": 91,
+        "rally": 4,
+        "rest": 16
+      }
+    ],
+    "score": [
+      25.45,
+      74.58
+    ]
+  },
+  {
+    "mode": "medium",
+    "seed": 430001,
+    "checks": 394,
+    "failures": 0,
+    "turns": 20,
+    "counts": [
+      {
+        "deploy": 5,
+        "end": 20,
+        "entrench": 5,
+        "fire": 104,
+        "limber": 2,
+        "move": 60,
+        "rally": 4,
+        "rest": 4
+      },
+      {
+        "assault": 3,
+        "deploy": 1,
+        "end": 20,
+        "entrench": 14,
+        "fire": 74,
+        "formation": 6,
+        "move": 54,
+        "rally": 2,
+        "rest": 13
+      }
+    ],
+    "score": [
+      27.1133333333333,
+      74.19
+    ]
+  },
+  {
+    "mode": "medium",
+    "seed": 430002,
+    "checks": 429,
+    "failures": 0,
+    "turns": 20,
+    "counts": [
+      {
+        "deploy": 5,
+        "end": 20,
+        "entrench": 4,
+        "fire": 104,
+        "limber": 2,
+        "move": 99,
+        "rally": 1,
+        "rest": 4
+      },
+      {
+        "assault": 2,
+        "deploy": 1,
+        "end": 20,
+        "entrench": 11,
+        "fire": 80,
+        "formation": 6,
+        "move": 46,
+        "rally": 3,
+        "rest": 18
+      }
+    ],
+    "score": [
+      26.5566666666667,
+      74.1333333333333
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "unchanged_core_files": [
+    "support.gd",
+    "intel.gd",
+    "rules_base.gd",
+    "engine.gd",
+    "edge_navigation.gd"
+  ],
+  "scenario_only_changes": {
+    "chassepot_distance2": [
+      0.65,
+      0.6
+    ],
+    "dreyse_distance2": [
+      0.5,
+      0.52
+    ]
+  },
+  "turns": 20,
+  "victory": {
+    "final_control": 60,
+    "duration": 20,
+    "military": 20,
+    "draw_margin": 5,
+    "major_margin": 25,
+    "major_loss_advantage": 0.1,
+    "major_requires_objective": true
+  },
+  "cavalry_charge_internal": 8,
+  "combat": {
+    "reactions": 1,
+    "reaction_factor": 0.65,
+    "battery_target_factor": 0.42
+  }
+}

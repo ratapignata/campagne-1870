@@ -1,0 +1,9 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+FAIL: actual delivered V37 final battle save loads in V38
+FAIL: real V37 battle state remains valid and complete
+FAIL: legacy state does not invent retrospective history
+SCRIPT ERROR: Invalid access to property or key 'state' on a base object of type 'Dictionary'.
+          at: _initialize (res://tests/v38/test_legacy_save.gd:8)
+          GDScript backtrace (most recent call first):
+              [0] _initialize (res://tests/v38/test_legacy_save.gd:8)

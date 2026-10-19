@@ -1,0 +1,6 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+SAVE STATUS true true path user://blocked_hq.json valid true tmp {  }
+KEYS BEFORE ["turn", "side", "units", "scores", "owner", "active", "finished", "moves", "shots", "seed", "events", "undo_reason", &"objective_owners", &"ai_difficulty", &"ai_style", &"human_side", &"assaults", &"support_events", &"support_serial", &"battle_history", &"loss_history", &"command_hq", &"contacts", &"revealed", &"reinforcements_arrived"] AFTER ["active", "ai_difficulty", "ai_style", "assaults", "battle_history", "command_hq", "contacts", "events", "finished", "human_side", "loss_history", "moves", "objective_owners", "owner", "reinforcements_arrived", "revealed", "scores", "seed", "shots", "side", "support_events", "support_serial", "turn", "undo_reason", "units"]
+FAIL blocked arrival physical save and reload exact
+V43 RAOULT 39/40

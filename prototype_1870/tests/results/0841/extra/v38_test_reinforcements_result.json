@@ -1,0 +1,14 @@
+{
+  "test": "v38_test_reinforcements",
+  "exit": 0,
+  "errors": [],
+  "seconds": 4.669820646000062,
+  "command": [
+    "/tmp/1870-v41-godot",
+    "--headless",
+    "--path",
+    "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+    "--script",
+    "res://tests/v38/test_reinforcements.gd"
+  ]
+}

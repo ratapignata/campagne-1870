@@ -1,0 +1,7 @@
+{
+  "same_all_recorded_combat_fields": true,
+  "before_checks": 4096,
+  "after_checks": 4096,
+  "failures_before": 0,
+  "failures_after": 0
+}

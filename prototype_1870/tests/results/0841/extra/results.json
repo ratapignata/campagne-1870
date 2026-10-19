@@ -1,0 +1,105 @@
+[
+  {
+    "test": "v38_test_artillery_budget",
+    "exit": 0,
+    "errors": [],
+    "seconds": 6.10017459300002,
+    "command": [
+      "/tmp/1870-v41-godot",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+      "--script",
+      "res://tests/v38/test_artillery_budget.gd"
+    ]
+  },
+  {
+    "test": "v38_test_reinforcements",
+    "exit": 0,
+    "errors": [],
+    "seconds": 4.669820646000062,
+    "command": [
+      "/tmp/1870-v41-godot",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+      "--script",
+      "res://tests/v38/test_reinforcements.gd"
+    ]
+  },
+  {
+    "test": "v38_test_ui",
+    "exit": 0,
+    "errors": [],
+    "seconds": 8.903319487999966,
+    "command": [
+      "/tmp/1870-v41-godot",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+      "--script",
+      "res://tests/v38/test_ui.gd"
+    ]
+  },
+  {
+    "test": "v38_test_legacy_save",
+    "exit": 124,
+    "errors": [
+      "FAIL: actual delivered V37 final battle save loads in V38",
+      "FAIL: real V37 battle state remains valid and complete",
+      "FAIL: legacy state does not invent retrospective history",
+      "SCRIPT ERROR: Invalid access to property or key 'state' on a base object of type 'Dictionary'."
+    ],
+    "seconds": 300.043519961,
+    "command": [
+      "/tmp/1870-v41-godot",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+      "--script",
+      "res://tests/v38/test_legacy_save.gd"
+    ]
+  },
+  {
+    "test": "v39_test_lot1",
+    "exit": 0,
+    "errors": [],
+    "seconds": 78.99506455200003,
+    "command": [
+      "/tmp/1870-v41-godot",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+      "--script",
+      "res://tests/v39/test_lot1.gd"
+    ]
+  },
+  {
+    "test": "v39_test_lot2",
+    "exit": 0,
+    "errors": [],
+    "seconds": 26.323709065999992,
+    "command": [
+      "/tmp/1870-v41-godot",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+      "--script",
+      "res://tests/v39/test_lot2.gd"
+    ]
+  },
+  {
+    "test": "v39_test_capture_opportunity",
+    "exit": 0,
+    "errors": [],
+    "seconds": 1.5048302550000017,
+    "command": [
+      "/tmp/1870-v41-godot",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+      "--script",
+      "res://tests/v39/test_capture_opportunity.gd"
+    ]
+  }
+]

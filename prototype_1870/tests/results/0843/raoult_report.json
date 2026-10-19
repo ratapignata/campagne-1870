@@ -1,0 +1,290 @@
+{
+	"checks": 42,
+	"failures": 0,
+	"finding": "Raoult scheduled T3 (15,4), village; legal cavalry occupation T2 delays arrival. Mechanics unchanged, missing UI explanation corrected.",
+	"legal_cavalry_actions": [
+		{
+			"ap_after": 0,
+			"ap_before": 16,
+			"from": [
+				17,
+				15
+			],
+			"path": [
+				467,
+				468,
+				439,
+				440,
+				441,
+				442,
+				412,
+				382,
+				353,
+				323,
+				293,
+				263,
+				233,
+				232
+			],
+			"result": "moved",
+			"side": 1,
+			"to": [
+				22,
+				7
+			],
+			"turn": 1
+		},
+		{
+			"ap_after": 6,
+			"ap_before": 12,
+			"from": [
+				22,
+				7
+			],
+			"path": [
+				232,
+				201,
+				171,
+				141,
+				111,
+				110,
+				79,
+				108,
+				107,
+				136,
+				135
+			],
+			"result": "discovered",
+			"side": 1,
+			"to": [
+				19,
+				2
+			],
+			"turn": 2
+		},
+		{
+			"ap_after": 5,
+			"ap_before": 6,
+			"from": [
+				19,
+				2
+			],
+			"path": [
+				79,
+				108,
+				107,
+				136,
+				135
+			],
+			"result": "discovered",
+			"side": 1,
+			"to": [
+				18,
+				3
+			],
+			"turn": 2
+		},
+		{
+			"ap_after": 4,
+			"ap_before": 5,
+			"from": [
+				18,
+				3
+			],
+			"path": [
+				108,
+				107,
+				136,
+				135
+			],
+			"result": "discovered",
+			"side": 1,
+			"to": [
+				17,
+				3
+			],
+			"turn": 2
+		},
+		{
+			"ap_after": 3,
+			"ap_before": 4,
+			"from": [
+				17,
+				3
+			],
+			"path": [
+				107,
+				136,
+				135
+			],
+			"result": "discovered",
+			"side": 1,
+			"to": [
+				16,
+				4
+			],
+			"turn": 2
+		},
+		{
+			"ap_after": 2,
+			"ap_before": 3,
+			"from": [
+				16,
+				4
+			],
+			"path": [
+				136,
+				135
+			],
+			"result": "discovered",
+			"side": 1,
+			"to": [
+				15,
+				4
+			],
+			"turn": 2
+		},
+		{
+			"ap_after": 0,
+			"ap_before": 16,
+			"from": [
+				17,
+				15
+			],
+			"path": [
+				467,
+				468,
+				439,
+				440,
+				441,
+				442,
+				412,
+				382,
+				353,
+				323,
+				293,
+				263,
+				233,
+				232
+			],
+			"result": "moved",
+			"side": 1,
+			"to": [
+				22,
+				7
+			],
+			"turn": 1
+		},
+		{
+			"ap_after": 6,
+			"ap_before": 12,
+			"from": [
+				22,
+				7
+			],
+			"path": [
+				232,
+				201,
+				171,
+				141,
+				111,
+				110,
+				79,
+				108,
+				107,
+				136,
+				135
+			],
+			"result": "discovered",
+			"side": 1,
+			"to": [
+				19,
+				2
+			],
+			"turn": 2
+		},
+		{
+			"ap_after": 5,
+			"ap_before": 6,
+			"from": [
+				19,
+				2
+			],
+			"path": [
+				79,
+				108,
+				107,
+				136,
+				135
+			],
+			"result": "discovered",
+			"side": 1,
+			"to": [
+				18,
+				3
+			],
+			"turn": 2
+		},
+		{
+			"ap_after": 4,
+			"ap_before": 5,
+			"from": [
+				18,
+				3
+			],
+			"path": [
+				108,
+				107,
+				136,
+				135
+			],
+			"result": "discovered",
+			"side": 1,
+			"to": [
+				17,
+				3
+			],
+			"turn": 2
+		},
+		{
+			"ap_after": 3,
+			"ap_before": 4,
+			"from": [
+				17,
+				3
+			],
+			"path": [
+				107,
+				136,
+				135
+			],
+			"result": "discovered",
+			"side": 1,
+			"to": [
+				16,
+				4
+			],
+			"turn": 2
+		},
+		{
+			"ap_after": 2,
+			"ap_before": 3,
+			"from": [
+				16,
+				4
+			],
+			"path": [
+				136,
+				135
+			],
+			"result": "discovered",
+			"side": 1,
+			"to": [
+				15,
+				4
+			],
+			"turn": 2
+		}
+	],
+	"seed": 187037
+}

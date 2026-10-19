@@ -1,0 +1,79 @@
+[
+  {
+    "test": "medium_187038",
+    "exit": 0,
+    "errors": [],
+    "seconds": 855.247025348,
+    "command": [
+      "/tmp/1870-v41-godot",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+      "--script",
+      "res://tests/v41/test_comparison.gd",
+      "--",
+      "medium",
+      "187038"
+    ]
+  },
+  {
+    "test": "C_turn12",
+    "exit": 0,
+    "errors": [],
+    "seconds": 333.338843731,
+    "command": [
+      "/tmp/1870-v41-godot",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+      "--script",
+      "res://tests/v36/test_ai_active.gd",
+      "--",
+      "C_turn12"
+    ]
+  },
+  {
+    "test": "E_final",
+    "exit": 0,
+    "errors": [],
+    "seconds": 190.34016178900004,
+    "command": [
+      "/tmp/1870-v41-godot",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+      "--script",
+      "res://tests/v36/test_ai_active.gd",
+      "--",
+      "E_final"
+    ]
+  },
+  {
+    "test": "migration",
+    "exit": 0,
+    "errors": [],
+    "seconds": 33.073396022,
+    "command": [
+      "/tmp/1870-v41-godot",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+      "--script",
+      "res://tests/v41/test_migration.gd"
+    ]
+  },
+  {
+    "test": "legacy",
+    "exit": 0,
+    "errors": [],
+    "seconds": 4.4881627590000335,
+    "command": [
+      "/tmp/1870-v41-godot",
+      "--headless",
+      "--path",
+      "/workspace/scratch/a5562e07a140/v41-work/prototype_1870",
+      "--script",
+      "res://tests/v41/test_legacy_save.gd"
+    ]
+  }
+]
