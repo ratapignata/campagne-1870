@@ -6,7 +6,7 @@ Base : V42 Lot 8 finale, conservée à part. Godot 4.5.1 ; Android 0.8.43, code 
 - Charges : terrain défendu explicite. Résistance du village reproduite ; aucune anomalie de force ou bonus national constatée. Aucun coefficient de cavalerie modifié.
 - Variante B : infanterie contre infanterie uniquement, force normalisée 1000 × (effectif / 1000)^0,90, identique pour les deux camps. IA alignée sur cette formule pour sa seule estimation après riposte ; doctrine et coefficients conservés.
 - Projectile de canon anthracite avec fin liseré clair pour le contraste ; trajectoire, rayon du cœur, éclair, fumée, impact et durées conservés. Projectile d’infanterie inchangé.
-- Nouveau scénario V43 et sauvegarde save_v43.json. Import automatique d’une sauvegarde compatible save_v42_lot8.json, sans modifier l’originale. Le passé enregistré n’est pas recalculé ; les futurs assauts d’infanterie suivent B. Les sauvegardes des autres anciens scénarios ne sont pas converties arbitrairement vers les 95 unités.
+- Nouveau scénario V43 et sauvegarde save_v43.json. Import automatique d’une sauvegarde compatible save_v42_lot8.json, y compris l’ancienne empreinte de libellé déjà supportée par V42, sans modifier l’originale. Le fichier principal compatible est prioritaire sur sa copie de secours, même quand leurs empreintes de libellé diffèrent. Le passé enregistré n’est pas recalculé ; les futurs assauts d’infanterie suivent B. Les sauvegardes des autres anciens scénarios ne sont pas converties arbitrairement vers les 95 unités.
 
 Règles conservées : charge 2 PA, isolement et reddition, ripostes, 20 tours, score 60/20/20, 95 000 Allemands et 50 unités allemandes, absence de bouton TIRER, absence de bonus artificiel IA.
 

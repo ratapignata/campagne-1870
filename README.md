@@ -18,7 +18,7 @@ Variante B d’infanterie : 1000 × (effectif / 1000)^0,90, identique pour les d
 
 95 000 Allemands, 50 unités allemandes, 20 tours, Normal/Difficile. Charge 2 PA, ripostes, isolement, reddition et score 60/20/20 conservés. Aucun bouton TIRER ni bonus artificiel IA.
 
-22 suites historiques réussies, 5 946 contrôles ciblés et quatre petites campagnes tactiques de 20 tours. Aucune nouvelle bataille complète de 95 unités et aucun essai physique Android. L’équilibre de B et la validité historique du scénario restent expérimentaux.
+22 suites historiques réussies, 5 950 contrôles ciblés et quatre petites campagnes tactiques de 20 tours. Aucune nouvelle bataille complète de 95 unités et aucun essai physique Android. L’équilibre de B et la validité historique du scénario restent expérimentaux.
 
 Sur téléphone : télécharger l’APK, ouvrir Mes fichiers → Téléchargements → 1870_v0.8.43.apk, puis installer la mise à jour. APK signé avec le certificat de développement existant. Ne pas désinstaller l’ancienne application si l’on veut conserver ses données.
 

@@ -47,5 +47,20 @@ func run():
  check(JSON.parse_string(JSON.stringify(game.engine.state))==JSON.parse_string(JSON.stringify(old.state)),"actual migration preserves all saved state")
  check(FileAccess.get_file_as_string(old_store.path)==prior,"V42 save remains byte-identical")
  game.playing=false;game.queue_free();await process_frame
+ # Older Lot 8 APK saves with the label-only fingerprint are already supported by V42.
+ var migrations=JSON.parse_string(old_raw).get("save_migrations",{})
+ for prior_hash in migrations:
+  var older_store=Store.new("user://save_v42_lot8.json",prior_hash)
+  check(older_store.save_game(old),"pre-label Lot 8 physical save created")
+  var preserved=FileAccess.get_file_as_string(older_store.path)
+  var stale=Rules.new(JSON.parse_string(old_raw));stale.new_game(0,"medium");stale.state.seed=999
+  var backup=Store.new("user://save_v42_lot8.json.bak",old_raw.sha256_text())
+  check(backup.save_game(stale),"stale but valid differently-fingerprinted backup physically created")
+  for suffix in ["",".bak"]:
+   if FileAccess.file_exists("user://save_v43.json"+suffix):DirAccess.remove_absolute("user://save_v43.json"+suffix)
+  game=scene()
+  check(game.has_save and game.active_scenario()=="v43" and JSON.parse_string(JSON.stringify(game.engine.state))==JSON.parse_string(JSON.stringify(old.state)),"startup also imports already-supported label-only Lot 8 save")
+  check(FileAccess.get_file_as_string(older_store.path)==preserved,"pre-label source save unchanged")
+  game.playing=false;game.queue_free();await process_frame
  var f=FileAccess.open("user://ui_v43_report.json",FileAccess.WRITE);f.store_string(JSON.stringify({"checks":checks,"failures":failures},"\t"));f.close()
  print("V43 UI ",checks-failures,"/",checks);quit(1 if failures else 0)
