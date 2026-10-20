@@ -1,0 +1,13 @@
+{
+	"actual_raoult_entry": [
+		15,
+		3
+	],
+	"arrival_turn": 3,
+	"checks": 32,
+	"failures": 0,
+	"original_entry": [
+		15,
+		4
+	]
+}

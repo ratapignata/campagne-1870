@@ -1,0 +1,17 @@
+{
+  "original_archive_sha256": "0ae2e18bb4bda599bc0ba3054de4024ac0e20644090ec91a4dcf384f092b410c",
+  "original_extracted_files_unchanged": true,
+  "core_functions_changed": [
+    "attack_power_against",
+    "defence_power_against",
+    "arrive_reinforcements"
+  ],
+  "new_functions": [
+    "melee_strength"
+  ],
+  "core_functions_unchanged": 83,
+  "unchanged_support_intel_rules_base_ai_profiles": true,
+  "roster_and_map_identical": true,
+  "animation_change_limited_to_projectile": true,
+  "animation_timing_smoke_flash_impact_unchanged": true
+}

@@ -19,9 +19,17 @@ Pour le test de rendu, un véritable affichage X11/OpenGL est nécessaire : lanc
 Configurer les templates officiels Godot 4.5.1, Java 21 (ou la version supportée par le moteur), SDK Android 35 et build-tools 35.0.0 dans l’éditeur. Le préréglage Android conserve le certificat de développement du prototype et le paquet historique.
 
 ```sh
-godot --headless --path . --export-debug Android ../1870_v0.8.43.apk
-apksigner verify --verbose --print-certs ../1870_v0.8.43.apk
-zipalign -c -P 16 4 ../1870_v0.8.43.apk
+godot --headless --path . --export-debug Android ../1870_v0.8.43.1.apk
+apksigner verify --verbose --print-certs ../1870_v0.8.43.1.apk
+zipalign -c -P 16 4 ../1870_v0.8.43.1.apk
 ```
 
 Ce certificat sert aux APK de test ; ce n’est pas une nouvelle clé de production pour un magasin. Ne pas effacer l’ancienne application pour installer une mise à jour compatible si l’on souhaite conserver ses données.
+
+## Arrivée voisine V43.1
+
+```sh
+godot --headless --path . --script res://tests/v43/test_adjacent_reinforcements.gd
+```
+
+Cette suite teste aussi une sauvegarde V43 antérieure à la règle et son entrée voisine au prochain tour propre.

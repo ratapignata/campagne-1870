@@ -41,3 +41,11 @@ Base : copie exacte V42 Lot 8 finale, commit local 0f829db0231dd3addf978117aeb9c
 - `tests/results/0843/` : rapports JSON, sorties exécutées, captures de rendu et échecs initiaux documentés.
 
 Les scénarios V42 d’origine, le roster et la carte sont conservés. Le nouveau fichier regimental_trial_v43.json ajoute uniquement l’identité/version V43, sa description, le paramétrage de B et la compatibilité de sauvegarde. rules_base.gd, support.gd, intel.gd et ai_profiles.json sont inchangés. Les calculs de réaction, isolement, reddition, dégâts et portée de tir n’ont pas été modifiés. Le test de démarrage historique a une attente adaptée au remplacement demandé par V43.
+
+## V43.1 — 20 octobre
+
+- engine.gd : arrivée sur une case voisine si ennemi à l’entrée ; anciens scénarios inchangés.
+- regimental_trial_v43.json : activation de cette règle et empreinte de compatibilité V43.
+- project.godot, export_presets.cfg, fr.json : version 0.8.43.1 / code 58.
+- tests/v43/test_adjacent_reinforcements.gd, sa fixture V43 antérieure et tests/results/0843_1 : nouvelles validations.
+- Rapports, README et archives de livraison mis à jour.

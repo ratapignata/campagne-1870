@@ -652,8 +652,16 @@ func arrive_reinforcements() -> void:
 	for n in range(state.units.size()):
 		var u=state.units[n]
 		if not u.get("pending",false) or int(u.side)!=int(state.side) or int(u.get("arrival_turn",1))>int(state.turn):continue
-		# An occupied entry waits; no teleportation or displacement of an occupant.
-		if unit_at(unit_cell(u))>=0:continue
+		var entry=unit_cell(u);var occupant=unit_at(entry)
+		if occupant>=0:
+			# V43.1: only an enemy-held entry may use an adjacent replacement.
+			if not pack.rules.get("enemy_entry_adjacent_reinforcements",false) or int(state.units[occupant].side)==int(u.side):continue
+			var destination=-1;var adjacent=neighbours(entry).duplicate();adjacent.sort()
+			for pos in adjacent:
+				if unit_at(pos)>=0 or movement_cost(n,pos)<0 or open_river(entry,pos) or not edge_allowed(n,entry,pos):continue
+				destination=pos;break
+			if destination<0:continue
+			u.cell=[cell(destination).x,cell(destination).y]
 		u.pending=false;u.strength=int(u.initial_strength);u.ap=max_ap(n);u.done=false
 		state.reinforcements_arrived+=1
 func losses(side: int) -> int:

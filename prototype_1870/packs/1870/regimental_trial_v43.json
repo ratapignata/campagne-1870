@@ -1,6 +1,6 @@
 {
   "id": "regimental_trial_v43",
-  "version": "0.8.43",
+  "version": "0.8.43.1",
   "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
   "map": {
     "width": 30,
@@ -2215,7 +2215,8 @@
       "historical_status": "ADAPTATION_GAMEPLAY"
     },
     "undo_player_discovery_only": true,
-    "roads_follow_edges": true
+    "roads_follow_edges": true,
+    "enemy_entry_adjacent_reinforcements": true
   },
   "objective": {
     "cell": [
@@ -4189,6 +4190,9 @@
       "turns": 20
     },
     "1032f35599f4b4c914e1de063b1a5432a2a3645f43eccdb5b1d18f3d8811c91d": {
+      "turns": 20
+    },
+    "9b7f2605c70b9095b0f5f002b4dbccaa1db8ef5817af2284ab5ca9160a051f67": {
       "turns": 20
     }
   },

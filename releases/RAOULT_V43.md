@@ -1,27 +1,11 @@
-# Raoult — diagnostic et correction V43
+# Raoult — mise à jour V43.1
 
-Base exacte : archive V42 Lot 8 finale du 18 octobre, application 0.8.42.1, code 56. Les sources originales restent dans une copie distincte, inchangées. Godot utilisé : 4.5.1.
+**V43.1 change désormais la règle d’arrivée**, conformément à la demande du 20 octobre. Voir VERSION_0843_1.md et TESTS_V43_1.md.
 
-## Reproduction déterministe
+Reproduction déterministe : Raoult (qg_fr_Raoult, 250 hommes) est prévu au tour 3 en (15,4). La cavalerie pru_55 peut légalement y entrer au tour 2. Cette case est un village, ce qui explique les quatre charges françaises repoussées dans les essais détaillés dans COMBATS_V43.md.
 
-Graine 187037, style 0, scénario Lot 8 non modifié, France immobile. Le scénario contient 95 identifiants uniques. Raoult porte l’identifiant qg_fr_Raoult, camp français, effectif 250, entrée (15,4) prévue au tour 3. Il n’est donc pas attendu aux tours 1 ou 2.
+Dans la V43 initiale, cette occupation reportait l’arrivée du QG ; seul le manque d’information avait été corrigé. Dans la V43.1, si une case voisine libre et praticable existe, Raoult y entre au tour prévu, sans déplacer la cavalerie. Dans le cas réel testé, il entre en (15,3) au tour 3 ; pru_55 demeure en (15,4). La nouvelle position est conservée après sauvegarde/reprise.
 
-Une politique de test dirige uniquement la cavalerie pru_55 vers cette entrée avec les fonctions réelles de cheminement, de déplacement, de découverte et de changement de phase. Ce n’est pas une preuve que l’IA choisit toujours cet itinéraire. La cavalerie commence en (17,15), atteint (22,7) au tour 1 et (15,4) au tour 2, après plusieurs interruptions de reconnaissance. Aucun PA ni position n’est restauré artificiellement. L’autre cavalerie testée, pru_54, ne bloque pas cette entrée avant le tour 3 dans ce parcours.
+Si aucune case voisine n’est disponible, il attend. Aucun empilement, déplacement d’un occupant, arrivée avant calendrier, franchissement non ponté ou immunité supplémentaire n’est ajouté. Une partie V43 déjà retardée avant la mise à jour réessaie au prochain début de tour français.
 
-Les commandes et PA effectivement consommés figurent dans tests/results/0843/raoult_report.json. Les états intermédiaires sont validés. Au début français du tour 3, l’hexagone est occupé par pru_55 : Raoult demeure pending, avec force zéro, et n’occupe pas la case. Aucun échange d’identité ou empilement n’a lieu.
-
-Une fois la cavalerie déplacée légalement au tour prussien 3, Raoult entre au prochain début français, tour 4, exactement en (15,4). Sa visibilité pour son propre camp est immédiate. La sauvegarde physique de l’attente, son chargement et la poursuite de l’arrivée sont testés. Un QG détruit ne réapparaît pas comme renfort.
-
-## Cause et portée de la correction
-
-Le report d’un renfort sur une entrée occupée est un comportement explicitement prévu dans arrive_reinforcements, pas une disparition par brouillard. Cette reproduction ne révèle aucun défaut de déplacement ni de déploiement. Modifier le tour, déplacer le QG, expulser l’occupant ou réserver cette case aurait changé les règles : aucune de ces modifications n’est faite.
-
-Le défaut d’information est confirmé : V42 n’expliquait pas le report du QG. L’avis mentionne l’occupation au dernier contrôle, sans prétendre que la case reste occupée après sa libération en cours de phase. Un QG prussien prévu au tour 4 n’est pas présenté comme retardé pendant la phase française 4, avant sa propre phase. V43 affiche son arrivée prévue dans le journal, puis son entrée occupée et la prochaine tentative au début du tour suivant. Un avis apparaît au changement de tour. Seuls les calendriers des QG du joueur sont exposés ; le message n’identifie pas l’occupant caché. Le terrain du défenseur est maintenant explicite dans l’aperçu d’une charge.
-
-La case (15,4) est un **village**, élévation 2. Les cases d’attaque (16,4) et (15,5) sont de la plaine : cela ne transforme pas la case défendue en plaine. Le pion masque visuellement une partie du village. La force de charge de 400 cavaliers est ainsi 400 × 1,6 × 0,55 = 352, contre 400 × 1,5 = 600 en défense. Les quatre assauts réels sont repoussés : fr_25, fr_31, fr_26 puis fr_32. Les deux dernières unités approchent par des mouvements légaux avant de charger. Pertes défenseur/attaquant : 32/76, 32/70, 32/64 puis 32/57, sans tir de riposte au sabre. Le défenseur termine à 272 hommes. Une sauvegarde physique après le deuxième assaut est rechargée avant les suivants : 28/28 contrôles supplémentaires passent.
-
-## Limite explicite
-
-V43 ne garantit pas l’entrée de Raoult tant que la case reste occupée. C’est la règle conservée, désormais expliquée. Aucun « correctif » ne supprime artificiellement la présence prussienne. Si un autre cas survient en véritable plaine avec des caractéristiques différentes, il faudra sa sauvegarde pour le reproduire exactement.
-
-Validation ciblée : 42/42 contrôles. Les comparaisons de cavalerie, les sauvegardes et l’interface sont détaillées dans COMBATS_V43.md et TESTS_V43.md.
+La règle vaut aussi pour les autres renforts des deux camps du scénario courant. Les packs V42 archivés restent inchangés pour préserver les comparaisons.

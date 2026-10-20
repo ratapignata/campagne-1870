@@ -1,0 +1,42 @@
+[
+  {
+    "test": "v43/test_adjacent_reinforcements",
+    "exit": 0,
+    "errors": []
+  },
+  {
+    "test": "v43/test_ui",
+    "exit": 0,
+    "errors": []
+  },
+  {
+    "test": "v43/test_variant_b",
+    "exit": 0,
+    "errors": []
+  },
+  {
+    "test": "v43/test_raoult",
+    "exit": 0,
+    "errors": []
+  },
+  {
+    "test": "v36/test_saves",
+    "exit": 0,
+    "errors": []
+  },
+  {
+    "test": "v38/test_reinforcements",
+    "exit": 0,
+    "errors": []
+  },
+  {
+    "test": "v36/test_isolation",
+    "exit": 0,
+    "errors": []
+  },
+  {
+    "test": "v42_lot8/test_contract",
+    "exit": 0,
+    "errors": []
+  }
+]

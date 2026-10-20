@@ -1,3 +1,5 @@
+> Rapport de la V43 initiale du 19 octobre. La mise à jour courante est V43.1 : voir VERSION_0843_1.md et TESTS_V43_1.md. La règle de renfort a changé le 20 octobre.
+
 # Tests V43 — résultats réellement exécutés
 
 ## Environnement

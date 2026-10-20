@@ -1,3 +1,5 @@
+> Rapport de la V43 initiale du 19 octobre. La mise à jour courante est V43.1 : voir VERSION_0843_1.md et TESTS_V43_1.md. La règle de renfort a changé le 20 octobre.
+
 # V43 — prototype courant
 
 Base : V42 Lot 8 finale, conservée à part. Godot 4.5.1 ; Android 0.8.43, code 57. V43 remplace les variantes anciennes dans le menu de jeu, avec seulement Normal et Difficile. Les anciennes sources et sauvegardes restent archivées.
