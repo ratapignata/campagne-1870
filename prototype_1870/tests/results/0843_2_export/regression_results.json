@@ -1,0 +1,50 @@
+[
+  {
+    "test": "test_adjacent_reinforcements",
+    "exit": 0,
+    "errors": [],
+    "summary": [
+      "V43.1 ADJACENT REINFORCEMENTS 32/32"
+    ]
+  },
+  {
+    "test": "test_raoult",
+    "exit": 0,
+    "errors": [],
+    "summary": [
+      "V43 RAOULT 42/42"
+    ]
+  },
+  {
+    "test": "test_cavalry",
+    "exit": 0,
+    "errors": [],
+    "summary": [
+      "V43 CAVALRY 4096/4096"
+    ]
+  },
+  {
+    "test": "test_variant_b",
+    "exit": 0,
+    "errors": [],
+    "summary": [
+      "V43 VARIANT B 1701/1701"
+    ]
+  },
+  {
+    "test": "test_real_charges",
+    "exit": 0,
+    "errors": [],
+    "summary": [
+      "V43 REAL SUCCESSIVE CHARGES 28/28"
+    ]
+  },
+  {
+    "test": "test_ui",
+    "exit": 0,
+    "errors": [],
+    "summary": [
+      "V43 UI 30/30"
+    ]
+  }
+]

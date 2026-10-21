@@ -48,6 +48,7 @@ var route: Array=[]
 var full_route: Array=[]
 var playing=false
 var has_save=false
+var export_in_progress=false
 var legacy_game=false
 var modal: Control
 var modal_box: Control
@@ -608,8 +609,8 @@ func modal_base(w: float,h: float) -> Control:
 	panel(modal,0,0,size.x,size.y,Color(0.035,0.08,0.08,0.78));modal_box=panel(modal,(size.x-w)/2,(size.y-h)/2,w,h,INK)
 	panel(modal_box,0,0,w,3,GOLD);return modal_box
 func show_menu():
-	if playing:persist()
-	var box=modal_base(874,604)
+	# Actions already autosave; opening the export menu must not rotate the slot.
+	var box=modal_base(874,660)
 	logo(box,38,22,798,237)
 	label(box,t("subtitle"),40,277,794,41,31,PAPER,true).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	label(box,t("badge"),40,323,794,25,17,GOLD).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
@@ -619,6 +620,45 @@ func show_menu():
 	button(box,t("sound_on" if sound_enabled else "sound_off"),449,459,385,43,func():toggle_sound();show_menu())
 	button(box,t("continue") if has_save else t("start"),40,516,491,60,resume if has_save else show_camp_choice,true)
 	button(box,t("again") if has_save else t("help"),550,516,284,60,confirm_new if has_save else show_help)
+	var export_button=button(box,"Exporter la sauvegarde",40,592,794,44,export_current_save)
+	export_button.disabled=not (playing or has_save)
+func export_current_save():
+	# A menu pauses command dispatch. Capture once, before the external picker opens.
+	var snapshot=saver.export_snapshot(engine,{"version":ProjectSettings.get_setting("application/config/version",""),"created_utc":Time.get_datetime_string_from_system(true),"ai_relocation":ai.relocation.duplicate(true) if ai_thread==null else {},"ai_pending":ai_pending.duplicate(true) if ai_thread==null else {},"ai_worker_busy":ai_thread!=null})
+	if snapshot.is_empty():show_export_notice(false);return
+	var filename="1870_V43_T%02d_%s.json"%[int(engine.state.turn),Time.get_datetime_string_from_system(true).replace(":","-")]
+	export_in_progress=true
+	if DisplayServer.has_feature(DisplayServer.FEATURE_NATIVE_DIALOG_FILE):
+		var error=DisplayServer.file_dialog_show("Exporter la sauvegarde",OS.get_system_dir(OS.SYSTEM_DIR_DOWNLOADS),filename,false,DisplayServer.FILE_DIALOG_MODE_SAVE_FILE,PackedStringArray(["*.json"]),complete_save_export.bind(snapshot))
+		if error!=OK:export_in_progress=false;show_export_notice(false)
+	elif OS.get_name()=="Android":
+		export_in_progress=false
+		var box=modal_base(874,340)
+		label(box,"Export indisponible",30,25,814,45,25,PAPER,true)
+		label(box,"L’enregistrement de document nécessite Android 10 ou ultérieur.",30,100,814,90,21)
+		button(box,"Retour au menu",30,252,814,52,show_menu,true)
+	else:
+		var dialog=FileDialog.new();add_child(dialog)
+		dialog.file_mode=FileDialog.FILE_MODE_SAVE_FILE;dialog.access=FileDialog.ACCESS_FILESYSTEM
+		dialog.filters=PackedStringArray(["*.json ; Sauvegarde JSON"]);dialog.current_file=filename
+		dialog.file_selected.connect(func(location):complete_save_export(true,PackedStringArray([location]),0,snapshot);dialog.queue_free())
+		dialog.canceled.connect(func():export_in_progress=false;dialog.queue_free())
+		dialog.popup_centered(Vector2i(900,540))
+func complete_save_export(ok: bool,paths: PackedStringArray,_filter: int,snapshot: String):
+	export_in_progress=false
+	if not ok:return
+	show_export_notice(paths.size()==1 and saver.export_copy(paths[0],snapshot))
+func show_export_notice(ok: bool):
+	var box=modal_base(874,340)
+	label(box,"Sauvegarde exportée" if ok else "Échec de l’export",30,25,814,45,25,PAPER,true)
+	var notice=Label.new();place(notice,box,30,100,814,110)
+	notice.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
+	# Set wrapping before text, so its unwrapped minimum width cannot enlarge the modal.
+	notice.text="Le fichier JSON est enregistré à l’emplacement choisi. Vous pouvez le joindre depuis l’application Fichiers." if ok else "Le fichier n’a pas pu être enregistré. Réessayez dans Téléchargements. La sauvegarde de la partie est conservée."
+	notice.add_theme_font_override("font",BODY);notice.add_theme_font_size_override("font_size",21);notice.add_theme_color_override("font_color",PAPER)
+	notice.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	button(box,"Retour au menu",30,252,814,52,show_menu,true)
+
 func resume():
 	support_notice_seen=int(engine.state.get("support_serial",0))
 	playing=true;close_modal();refresh(t("save_recovered") if saver.recovered else t("hint_select"))
@@ -809,7 +849,7 @@ func _notification(what):
 	elif what==NOTIFICATION_APPLICATION_RESUMED:
 		app_suspended=false
 		if music_player!=null:music_player.stream_paused=false
-	if what in [NOTIFICATION_APPLICATION_PAUSED,NOTIFICATION_APPLICATION_FOCUS_OUT] and playing and saver!=null:persist()
+	if what in [NOTIFICATION_APPLICATION_PAUSED,NOTIFICATION_APPLICATION_FOCUS_OUT] and playing and saver!=null and not export_in_progress:persist()
 	if what==NOTIFICATION_WM_GO_BACK_REQUEST:
 		if is_instance_valid(modal) and playing:close_modal()
 		else:show_menu()

@@ -50,3 +50,27 @@ func import_compatible(e,entries: Array) -> bool:
 			recovered=legacy.recovered
 			return save_game(e)
 	return false
+
+# Export is a separate snapshot: never rotate or rewrite the live save/backup.
+func export_snapshot(e,metadata: Dictionary={}) -> String:
+	if not e.validate(e.state):return ""
+	var payload=JSON.stringify({"state":e.state,"previous":e.previous})
+	return JSON.stringify({"schema":1,"pack_hash":fingerprint,"payload":payload,"checksum":payload.sha256_text(),"export_info":metadata.duplicate(true)},"\t")
+
+func export_copy(location: String,snapshot: String) -> bool:
+	var destination=ProjectSettings.globalize_path(location).simplify_path()
+	var original=ProjectSettings.globalize_path(path).simplify_path()
+	if destination in [original,original+".bak",original+".tmp"] or snapshot.is_empty():return false
+	var envelope=JSON.parse_string(snapshot)
+	if not envelope is Dictionary or envelope.get("pack_hash","")!=fingerprint:return false
+	var payload=envelope.get("payload",null)
+	if not payload is String or payload.sha256_text()!=envelope.get("checksum",""):return false
+	var data=JSON.parse_string(payload)
+	if not data is Dictionary or not data.get("state",null) is Dictionary:return false
+	var f=FileAccess.open(location,FileAccess.WRITE)
+	if f==null:return false
+	f.store_string(snapshot);f.flush()
+	var error=f.get_error();f.close()
+	if error!=OK:return false
+	# Verify all serialized fields, including the undo snapshot, without normalization.
+	return read_slot(location)==data

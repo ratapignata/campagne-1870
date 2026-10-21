@@ -1,0 +1,26 @@
+[
+  {
+    "test": "v36/test_saves",
+    "exit": 0,
+    "errors": [],
+    "summary": []
+  },
+  {
+    "test": "v36/test_isolation",
+    "exit": 0,
+    "errors": [],
+    "summary": []
+  },
+  {
+    "test": "v36/test_los",
+    "exit": 0,
+    "errors": [],
+    "summary": []
+  },
+  {
+    "test": "v36/test_hidden_worlds",
+    "exit": 0,
+    "errors": [],
+    "summary": []
+  }
+]
