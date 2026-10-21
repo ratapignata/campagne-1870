@@ -1,0 +1,52 @@
+[
+  {
+    "file": "war_engine/ai/tactical_ai.gd",
+    "sha256": "a6c30a1fce67e1fed59d101b5aec285ffa0f317976766e5438476df8da2453a7",
+    "production_unchanged": true
+  },
+  {
+    "file": "war_engine/ai/planning_engine.gd",
+    "sha256": "9e148dc12c0fb3e409ff64ec0ba090619579c98e93a2eb4cb96d4b5b5bf01a12",
+    "production_unchanged": true
+  },
+  {
+    "file": "war_engine/ai/legacy_ai.gd",
+    "sha256": "e746608abea221ea08f97a213e3d5926ffbea567e9ddb4a8c2170b2043b14e84",
+    "production_unchanged": true
+  },
+  {
+    "file": "war_engine/core/engine.gd",
+    "sha256": "c7c0beedcac5fffcdb6d317d4e963ec1971209dec5515d1aca160ffd075ef572",
+    "production_unchanged": true
+  },
+  {
+    "file": "war_engine/core/rules_base.gd",
+    "sha256": "cf1b34fba262c8ff3cd0b559040836bc0057a2ddac8a20daf9aaa0e11dc8bc1e",
+    "production_unchanged": true
+  },
+  {
+    "file": "war_engine/core/support.gd",
+    "sha256": "a8189e843fd8be89c906983bdcffe635af7708e86e4120a7eced7cff81ddfd23",
+    "production_unchanged": true
+  },
+  {
+    "file": "war_engine/core/intel.gd",
+    "sha256": "cb8a8db28b5e75d52b0cb164ccd5b3f1a2775054cabba6b1bb3a5a0abc145cbd",
+    "production_unchanged": true
+  },
+  {
+    "file": "packs/1870/ai_profiles.json",
+    "sha256": "aad01be17ae30b0ef03c30882dc4c396eb9e894244b2558aca685265b415b82c",
+    "production_unchanged": true
+  },
+  {
+    "file": "packs/1870/regimental_trial_v43.json",
+    "sha256": "d8109880a4629d07e5e744537be9b05aa90f4213ebe130051f5db157d7652898",
+    "production_unchanged": true
+  },
+  {
+    "file": "war_engine/presentation/map_view.gd",
+    "sha256": "f3de34729b572ca7ea5649ca2ce6bd746e11c6ccc776e8361f9db21f34b04b01",
+    "production_unchanged": true
+  }
+]

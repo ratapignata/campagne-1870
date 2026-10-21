@@ -1,0 +1,2371 @@
+{
+  "checks": 1,
+  "decision": {
+    "kind": "end"
+  },
+  "failures": 0,
+  "units": {
+    "art_pr_Schmidt0": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        10,
+        9
+      ],
+      "best_move_score": -15.0,
+      "best_progress": 0.0,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": -15.0,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": 0.0,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        13,
+        10
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            13,
+            9
+          ],
+          "unit": "qg_pr_Schmidt"
+        },
+        {
+          "cell": [
+            14,
+            10
+          ],
+          "unit": "pru_56"
+        },
+        {
+          "cell": [
+            14,
+            11
+          ],
+          "unit": "qg_pr_Sandrart"
+        },
+        {
+          "cell": [
+            12,
+            9
+          ],
+          "unit": "v42_de_reserve_12"
+        },
+        {
+          "cell": [
+            14,
+            9
+          ],
+          "unit": "pru_39"
+        },
+        {
+          "cell": [
+            13,
+            8
+          ],
+          "unit": "v42_de_reserve_01"
+        },
+        {
+          "cell": [
+            14,
+            8
+          ],
+          "unit": "pru_50"
+        },
+        {
+          "cell": [
+            12,
+            8
+          ],
+          "unit": "pru_45"
+        },
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            11,
+            8
+          ],
+          "unit": "v42_de_reserve_09"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            14,
+            7
+          ],
+          "unit": "pru_44"
+        },
+        {
+          "cell": [
+            15,
+            7
+          ],
+          "unit": "v42_de_reserve_02"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        }
+      ],
+      "friendly_occupied": 26,
+      "future_fire_destinations": 0,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 0.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 40,
+      "supply_ok": true,
+      "weapon": "krupp"
+    },
+    "art_pr_Schmidt1": {
+      "ap": 4,
+      "attacks": [],
+      "best_move_score": -1e+20,
+      "cell": [
+        23,
+        4
+      ],
+      "command_ok": false,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [],
+      "friendly_occupied": 0,
+      "future_fire_destinations": 0,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 0,
+      "supply_ok": true,
+      "weapon": "krupp"
+    },
+    "pru_38": {
+      "ap": 4,
+      "attacks": [
+        {
+          "status": "isolated",
+          "target": "fr_13"
+        }
+      ],
+      "best_destination": [
+        14,
+        3
+      ],
+      "best_move_score": -61.57,
+      "best_progress": 0.0,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": 0.0,
+        "fire_exploitation_and_ap": -7.0,
+        "hq_safety": 0.0,
+        "links": -90.0,
+        "progress": 0.0,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 18.0,
+        "threat": 17.43
+      },
+      "cell": [
+        15,
+        3
+      ],
+      "command_ok": false,
+      "current_fire_nextturn": 69.0,
+      "forward_empty": 1,
+      "forward_occupied": [],
+      "friendly_occupied": 0,
+      "future_fire_destinations": 2,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 52.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 2,
+      "supply_ok": false,
+      "weapon": "dreyse"
+    },
+    "pru_39": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        16,
+        8
+      ],
+      "best_move_score": -83.66,
+      "best_progress": -2.0,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": -7.5,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -76.16,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        14,
+        9
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            13,
+            8
+          ],
+          "unit": "v42_de_reserve_01"
+        },
+        {
+          "cell": [
+            12,
+            8
+          ],
+          "unit": "pru_45"
+        },
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "cell": [
+            13,
+            5
+          ],
+          "unit": "pru_41"
+        },
+        {
+          "cell": [
+            10,
+            7
+          ],
+          "unit": "v42_de_reserve_08"
+        }
+      ],
+      "friendly_occupied": 33,
+      "future_fire_destinations": 0,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 0.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 32,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "pru_40": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        16,
+        7
+      ],
+      "best_move_score": -114.24,
+      "best_progress": -3.0,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": 0.0,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -114.24,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        13,
+        7
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        }
+      ],
+      "friendly_occupied": 35,
+      "future_fire_destinations": 1,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 84.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 18,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "pru_44": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        16,
+        6
+      ],
+      "best_move_score": -76.16,
+      "best_progress": -2.0,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": 0.0,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -76.16,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        14,
+        7
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            13,
+            5
+          ],
+          "unit": "pru_41"
+        },
+        {
+          "cell": [
+            12,
+            8
+          ],
+          "unit": "pru_45"
+        },
+        {
+          "cell": [
+            13,
+            8
+          ],
+          "unit": "v42_de_reserve_01"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            10,
+            7
+          ],
+          "unit": "v42_de_reserve_08"
+        }
+      ],
+      "friendly_occupied": 34,
+      "future_fire_destinations": 3,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 94.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 11,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "pru_45": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        9,
+        8
+      ],
+      "best_move_score": -57.12,
+      "best_progress": -1.5,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": 0.0,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -57.12,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        12,
+        8
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            10,
+            7
+          ],
+          "unit": "v42_de_reserve_08"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            13,
+            5
+          ],
+          "unit": "pru_41"
+        }
+      ],
+      "friendly_occupied": 33,
+      "future_fire_destinations": 2,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 112.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 11,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "pru_49": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        9,
+        8
+      ],
+      "best_move_score": -87.7,
+      "best_progress": -2.5,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": 7.5,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -95.2,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        12,
+        7
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        }
+      ],
+      "friendly_occupied": 36,
+      "future_fire_destinations": 3,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 113.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 12,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "pru_50": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        16,
+        7
+      ],
+      "best_move_score": -83.66,
+      "best_progress": -2.0,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": -7.5,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -76.16,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        14,
+        8
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            13,
+            8
+          ],
+          "unit": "v42_de_reserve_01"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            12,
+            8
+          ],
+          "unit": "pru_45"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "cell": [
+            13,
+            5
+          ],
+          "unit": "pru_41"
+        },
+        {
+          "cell": [
+            10,
+            7
+          ],
+          "unit": "v42_de_reserve_08"
+        }
+      ],
+      "friendly_occupied": 32,
+      "future_fire_destinations": 1,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 88.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 12,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "pru_51": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        16,
+        8
+      ],
+      "best_move_score": 2.02,
+      "best_progress": 0.25,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": -7.5,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": 9.52,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        15,
+        9
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 3,
+      "forward_occupied": [
+        {
+          "cell": [
+            14,
+            9
+          ],
+          "unit": "pru_39"
+        },
+        {
+          "cell": [
+            14,
+            10
+          ],
+          "unit": "pru_56"
+        },
+        {
+          "cell": [
+            15,
+            8
+          ],
+          "unit": "v42_de_reserve_06"
+        },
+        {
+          "cell": [
+            13,
+            9
+          ],
+          "unit": "qg_pr_Schmidt"
+        },
+        {
+          "cell": [
+            14,
+            11
+          ],
+          "unit": "qg_pr_Sandrart"
+        },
+        {
+          "cell": [
+            13,
+            8
+          ],
+          "unit": "v42_de_reserve_01"
+        },
+        {
+          "cell": [
+            14,
+            8
+          ],
+          "unit": "pru_50"
+        },
+        {
+          "cell": [
+            15,
+            7
+          ],
+          "unit": "v42_de_reserve_02"
+        },
+        {
+          "cell": [
+            12,
+            8
+          ],
+          "unit": "pru_45"
+        },
+        {
+          "cell": [
+            12,
+            9
+          ],
+          "unit": "v42_de_reserve_12"
+        },
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            14,
+            7
+          ],
+          "unit": "pru_44"
+        },
+        {
+          "cell": [
+            15,
+            6
+          ],
+          "unit": "pru_42"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            11,
+            9
+          ],
+          "unit": "v42_de_reserve_13"
+        },
+        {
+          "cell": [
+            14,
+            6
+          ],
+          "unit": "pru_48"
+        },
+        {
+          "cell": [
+            15,
+            5
+          ],
+          "unit": "pru_37"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "cell": [
+            13,
+            5
+          ],
+          "unit": "pru_41"
+        }
+      ],
+      "friendly_occupied": 29,
+      "future_fire_destinations": 0,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 0.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 42,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "pru_54": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        8,
+        8
+      ],
+      "best_move_score": -10.65,
+      "best_progress": -0.5,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": 0.0,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -19.04,
+        "reserve": 0.0,
+        "scouting": 1.1,
+        "style_and_entries": 0.0,
+        "support": 18.0,
+        "threat": -10.71
+      },
+      "cell": [
+        9,
+        7
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            10,
+            7
+          ],
+          "unit": "v42_de_reserve_08"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            12,
+            8
+          ],
+          "unit": "pru_45"
+        },
+        {
+          "cell": [
+            13,
+            5
+          ],
+          "unit": "pru_41"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            13,
+            8
+          ],
+          "unit": "v42_de_reserve_01"
+        }
+      ],
+      "friendly_occupied": 38,
+      "future_fire_destinations": 0,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 0.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 86,
+      "supply_ok": true,
+      "weapon": "sabre"
+    },
+    "pru_56": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        8,
+        8
+      ],
+      "best_move_score": -1.13,
+      "best_progress": -0.25,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": 0.0,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -9.52,
+        "reserve": 0.0,
+        "scouting": 1.1,
+        "style_and_entries": 0.0,
+        "support": 18.0,
+        "threat": -10.71
+      },
+      "cell": [
+        14,
+        10
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            14,
+            9
+          ],
+          "unit": "pru_39"
+        },
+        {
+          "cell": [
+            13,
+            8
+          ],
+          "unit": "v42_de_reserve_01"
+        },
+        {
+          "cell": [
+            14,
+            8
+          ],
+          "unit": "pru_50"
+        },
+        {
+          "cell": [
+            12,
+            8
+          ],
+          "unit": "pru_45"
+        },
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            14,
+            7
+          ],
+          "unit": "pru_44"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "cell": [
+            13,
+            5
+          ],
+          "unit": "pru_41"
+        },
+        {
+          "cell": [
+            14,
+            6
+          ],
+          "unit": "pru_48"
+        },
+        {
+          "cell": [
+            10,
+            7
+          ],
+          "unit": "v42_de_reserve_08"
+        },
+        {
+          "cell": [
+            10,
+            8
+          ],
+          "unit": "pru_57"
+        },
+        {
+          "cell": [
+            11,
+            8
+          ],
+          "unit": "v42_de_reserve_09"
+        },
+        {
+          "cell": [
+            14,
+            5
+          ],
+          "unit": "pru_53"
+        },
+        {
+          "cell": [
+            9,
+            6
+          ],
+          "unit": "v42_de_reserve_07"
+        },
+        {
+          "cell": [
+            9,
+            7
+          ],
+          "unit": "pru_54"
+        }
+      ],
+      "friendly_occupied": 39,
+      "future_fire_destinations": 0,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 0.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 178,
+      "supply_ok": true,
+      "weapon": "sabre"
+    },
+    "pru_57": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        8,
+        8
+      ],
+      "best_move_score": -18.15,
+      "best_progress": -0.5,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": -7.5,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -19.04,
+        "reserve": 0.0,
+        "scouting": 1.1,
+        "style_and_entries": 0.0,
+        "support": 18.0,
+        "threat": -10.71
+      },
+      "cell": [
+        10,
+        8
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            10,
+            7
+          ],
+          "unit": "v42_de_reserve_08"
+        },
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            12,
+            8
+          ],
+          "unit": "pru_45"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            13,
+            5
+          ],
+          "unit": "pru_41"
+        },
+        {
+          "cell": [
+            13,
+            8
+          ],
+          "unit": "v42_de_reserve_01"
+        }
+      ],
+      "friendly_occupied": 38,
+      "future_fire_destinations": 0,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 0.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 91,
+      "supply_ok": true,
+      "weapon": "sabre"
+    },
+    "qg_pr_Gersdorff": {
+      "ap": 2,
+      "attacks": [],
+      "best_move_score": -1e+20,
+      "cell": [
+        15,
+        11
+      ],
+      "command_ok": true,
+      "forward_empty": 0,
+      "forward_occupied": [],
+      "friendly_occupied": 0,
+      "future_fire_destinations": 0,
+      "goal": [
+        15,
+        11
+      ],
+      "hold": "garrison",
+      "legal_fire_targets": [],
+      "max_future_fire": 0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 0,
+      "supply_ok": true,
+      "weapon": "escort_dreyse"
+    },
+    "qg_pr_Sandrart": {
+      "ap": 16,
+      "attacks": [],
+      "best_move_score": -1e+20,
+      "cell": [
+        14,
+        11
+      ],
+      "command_ok": true,
+      "forward_empty": 0,
+      "forward_occupied": [],
+      "friendly_occupied": 0,
+      "future_fire_destinations": 0,
+      "goal": [
+        14,
+        11
+      ],
+      "hold": "garrison",
+      "legal_fire_targets": [],
+      "max_future_fire": 0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 0,
+      "supply_ok": true,
+      "weapon": "escort_dreyse"
+    },
+    "qg_pr_Schachtmeyer": {
+      "ap": 8,
+      "attacks": [],
+      "best_move_score": -1e+20,
+      "cell": [
+        15,
+        10
+      ],
+      "command_ok": true,
+      "forward_empty": 0,
+      "forward_occupied": [],
+      "friendly_occupied": 0,
+      "future_fire_destinations": 0,
+      "goal": [
+        15,
+        10
+      ],
+      "hold": "garrison",
+      "legal_fire_targets": [],
+      "max_future_fire": 0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 0,
+      "supply_ok": true,
+      "weapon": "escort_dreyse"
+    },
+    "qg_pr_Schmidt": {
+      "ap": 8,
+      "attacks": [],
+      "best_move_score": -1e+20,
+      "cell": [
+        13,
+        9
+      ],
+      "command_ok": true,
+      "forward_empty": 0,
+      "forward_occupied": [],
+      "friendly_occupied": 0,
+      "future_fire_destinations": 0,
+      "goal": [
+        13,
+        9
+      ],
+      "hold": "garrison",
+      "legal_fire_targets": [],
+      "max_future_fire": 0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 0,
+      "supply_ok": true,
+      "weapon": "escort_dreyse"
+    },
+    "v42_de_reserve_01": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        16,
+        8
+      ],
+      "best_move_score": -102.7,
+      "best_progress": -2.5,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": -7.5,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -95.2,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        13,
+        8
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "cell": [
+            13,
+            5
+          ],
+          "unit": "pru_41"
+        },
+        {
+          "cell": [
+            10,
+            7
+          ],
+          "unit": "v42_de_reserve_08"
+        }
+      ],
+      "friendly_occupied": 35,
+      "future_fire_destinations": 0,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 0.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 24,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "v42_de_reserve_02": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        16,
+        7
+      ],
+      "best_move_score": -38.08,
+      "best_progress": -1.0,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": 0.0,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -38.08,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        15,
+        7
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            14,
+            7
+          ],
+          "unit": "pru_44"
+        },
+        {
+          "cell": [
+            14,
+            8
+          ],
+          "unit": "pru_50"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            14,
+            6
+          ],
+          "unit": "pru_48"
+        },
+        {
+          "cell": [
+            13,
+            8
+          ],
+          "unit": "v42_de_reserve_01"
+        },
+        {
+          "cell": [
+            14,
+            9
+          ],
+          "unit": "pru_39"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            13,
+            5
+          ],
+          "unit": "pru_41"
+        },
+        {
+          "cell": [
+            12,
+            8
+          ],
+          "unit": "pru_45"
+        },
+        {
+          "cell": [
+            14,
+            5
+          ],
+          "unit": "pru_53"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            14,
+            10
+          ],
+          "unit": "pru_56"
+        }
+      ],
+      "friendly_occupied": 27,
+      "future_fire_destinations": 1,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 88.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 13,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "v42_de_reserve_06": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        16,
+        8
+      ],
+      "best_move_score": -26.54,
+      "best_progress": -0.5,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": -7.5,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -19.04,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        15,
+        8
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            14,
+            8
+          ],
+          "unit": "pru_50"
+        },
+        {
+          "cell": [
+            14,
+            9
+          ],
+          "unit": "pru_39"
+        },
+        {
+          "cell": [
+            15,
+            7
+          ],
+          "unit": "v42_de_reserve_02"
+        },
+        {
+          "cell": [
+            14,
+            7
+          ],
+          "unit": "pru_44"
+        },
+        {
+          "cell": [
+            15,
+            6
+          ],
+          "unit": "pru_42"
+        },
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            13,
+            8
+          ],
+          "unit": "v42_de_reserve_01"
+        },
+        {
+          "cell": [
+            13,
+            9
+          ],
+          "unit": "qg_pr_Schmidt"
+        },
+        {
+          "cell": [
+            14,
+            10
+          ],
+          "unit": "pru_56"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            14,
+            6
+          ],
+          "unit": "pru_48"
+        },
+        {
+          "cell": [
+            15,
+            5
+          ],
+          "unit": "pru_37"
+        },
+        {
+          "cell": [
+            12,
+            8
+          ],
+          "unit": "pru_45"
+        },
+        {
+          "cell": [
+            12,
+            9
+          ],
+          "unit": "v42_de_reserve_12"
+        },
+        {
+          "cell": [
+            14,
+            11
+          ],
+          "unit": "qg_pr_Sandrart"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "cell": [
+            13,
+            5
+          ],
+          "unit": "pru_41"
+        },
+        {
+          "cell": [
+            14,
+            5
+          ],
+          "unit": "pru_53"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        }
+      ],
+      "friendly_occupied": 29,
+      "future_fire_destinations": 0,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 0.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 17,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "v42_de_reserve_09": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        9,
+        8
+      ],
+      "best_move_score": -38.08,
+      "best_progress": -1.0,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": 0.0,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -38.08,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        11,
+        8
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            12,
+            8
+          ],
+          "unit": "pru_45"
+        },
+        {
+          "cell": [
+            10,
+            7
+          ],
+          "unit": "v42_de_reserve_08"
+        },
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            13,
+            8
+          ],
+          "unit": "v42_de_reserve_01"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            13,
+            5
+          ],
+          "unit": "pru_41"
+        }
+      ],
+      "friendly_occupied": 23,
+      "future_fire_destinations": 2,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 114.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 10,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "v42_de_reserve_10": {
+      "ap": 16,
+      "attacks": [],
+      "best_destination": [
+        9,
+        8
+      ],
+      "best_move_score": -68.66,
+      "best_progress": -2.0,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": 7.5,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -76.16,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        11,
+        7
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            11,
+            6
+          ],
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        }
+      ],
+      "friendly_occupied": 32,
+      "future_fire_destinations": 4,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 117.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 9,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "v42_de_reserve_12": {
+      "ap": 12,
+      "attacks": [],
+      "best_destination": [
+        10,
+        9
+      ],
+      "best_move_score": -19.04,
+      "best_progress": -0.5,
+      "best_score_breakdown": {
+        "adjacency": 0.0,
+        "cover_and_capture": 0.0,
+        "fire_exploitation_and_ap": 0.0,
+        "hq_safety": 0.0,
+        "links": 0.0,
+        "progress": -19.04,
+        "reserve": 0.0,
+        "scouting": 0.0,
+        "style_and_entries": 0.0,
+        "support": 0.0,
+        "threat": 0.0
+      },
+      "cell": [
+        12,
+        9
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            11,
+            8
+          ],
+          "unit": "v42_de_reserve_09"
+        },
+        {
+          "cell": [
+            12,
+            8
+          ],
+          "unit": "pru_45"
+        },
+        {
+          "cell": [
+            13,
+            8
+          ],
+          "unit": "v42_de_reserve_01"
+        },
+        {
+          "cell": [
+            10,
+            8
+          ],
+          "unit": "pru_57"
+        },
+        {
+          "cell": [
+            11,
+            7
+          ],
+          "unit": "v42_de_reserve_10"
+        },
+        {
+          "cell": [
+            12,
+            7
+          ],
+          "unit": "pru_49"
+        },
+        {
+          "cell": [
+            13,
+            7
+          ],
+          "unit": "pru_40"
+        },
+        {
+          "cell": [
+            14,
+            8
+          ],
+          "unit": "pru_50"
+        },
+        {
+          "cell": [
+            14,
+            9
+          ],
+          "unit": "pru_39"
+        },
+        {
+          "cell": [
+            14,
+            10
+          ],
+          "unit": "pru_56"
+        },
+        {
+          "cell": [
+            13,
+            6
+          ],
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "cell": [
+            14,
+            7
+          ],
+          "unit": "pru_44"
+        },
+        {
+          "cell": [
+            12,
+            6
+          ],
+          "unit": "v42_de_reserve_03"
+        }
+      ],
+      "friendly_occupied": 18,
+      "future_fire_destinations": 0,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 0.0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 5,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "v42_de_reserve_13": {
+      "ap": 1,
+      "attacks": [],
+      "best_move_score": -1e+20,
+      "cell": [
+        11,
+        9
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [],
+      "friendly_occupied": 0,
+      "future_fire_destinations": 0,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 0,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    },
+    "v42_de_reserve_14": {
+      "ap": 2,
+      "attacks": [],
+      "best_move_score": -1e+20,
+      "cell": [
+        13,
+        11
+      ],
+      "command_ok": true,
+      "current_fire_nextturn": 0.0,
+      "forward_empty": 0,
+      "forward_occupied": [
+        {
+          "cell": [
+            14,
+            11
+          ],
+          "unit": "qg_pr_Sandrart"
+        }
+      ],
+      "friendly_occupied": 2,
+      "future_fire_destinations": 0,
+      "goal": [
+        11,
+        5
+      ],
+      "hold": "",
+      "legal_fire_targets": [],
+      "max_future_fire": 0,
+      "morale": "stable",
+      "offers": [],
+      "reachable_empty": 0,
+      "supply_ok": true,
+      "weapon": "dreyse"
+    }
+  }
+}

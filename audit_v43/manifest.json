@@ -1,0 +1,22 @@
+{
+  "initial_remote_main": "9c3b9f40e2e5f0bb1c83fa5fc7d9c74323ac94c6",
+  "current_export_main": "a38acd197d8d391047616a5aa6c9e651f70b9280",
+  "source_base_commit": "afb27f7",
+  "export_source_commit": "2f29818",
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "baseline_project": "/workspace/v43/prototype_1870",
+  "instrumented_project": "/workspace/v43_audit/diagnostic",
+  "production_export_project": "/workspace/v43_audit/prototype_1870",
+  "seed": 430012,
+  "difficulty": "hard",
+  "ai_style": 0,
+  "original_save_available": false,
+  "battle_screenshot_available": false,
+  "ai_behavior_changes_in_production": false,
+  "campaign_completed_turns": 20,
+  "campaign_checks": 1936,
+  "window_checks": 737,
+  "original_instrumented_snapshot_parity_checks": 10,
+  "export_late_checks": 7,
+  "apk_physical_test": false
+}

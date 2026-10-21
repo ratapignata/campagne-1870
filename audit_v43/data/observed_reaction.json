@@ -1,0 +1,195 @@
+{
+  "case": {
+    "actual_ratio_no_reaction": 1.25258760274509,
+    "actual_reactions": 0,
+    "attacker_strength": 1320,
+    "decision": {
+      "kind": "move",
+      "path": [
+        162,
+        133,
+        134,
+        135
+      ],
+      "unit": "pru_36"
+    },
+    "defender_strength": 655,
+    "estimated_ratio_with_phantom_reaction": 1.20637382620814,
+    "estimated_response": 54.0,
+    "hypotheses": "3-unit fixture, original map, support/fog disabled, enemy explicitly provided; attacker strength searched to isolate estimator threshold effect. No new combat rule.",
+    "observed_own_exchange": {
+      "advance": [],
+      "attacker_eliminated": false,
+      "attacker_new_morale": "stable",
+      "attacker_old_morale": "stable",
+      "attacker_prisoners": 0,
+      "attacker_retreat": [],
+      "cannon": false,
+      "eliminated": false,
+      "from": [
+        11,
+        6
+      ],
+      "kind": "fire",
+      "loss": 45,
+      "new_morale": "stable",
+      "old_morale": "stable",
+      "outcome": "exchange",
+      "prisoners": 0,
+      "reaction": true,
+      "reaction_cannon": false,
+      "retreat": [],
+      "return_loss": 54,
+      "shooter": 2,
+      "side": 1,
+      "target": 1,
+      "to": [
+        11,
+        5
+      ],
+      "turn": 12
+    },
+    "observed_reactions": 1,
+    "trace": {
+      "pru_36": {
+        "ap": 16,
+        "attacks": [
+          {
+            "status": "ok",
+            "target": "fr_1"
+          },
+          {
+            "accepted": false,
+            "minimum": 1.25,
+            "ratio": 1.20637382620814,
+            "reaction_estimate": 54.0,
+            "target": "fr_1"
+          }
+        ],
+        "best_destination": [
+          15,
+          4
+        ],
+        "best_move_score": 238.54,
+        "best_progress": -1.5,
+        "best_score_breakdown": {
+          "adjacency": 0.0,
+          "cover_and_capture": 288.94,
+          "fire_exploitation_and_ap": 0.0,
+          "hq_safety": 0.0,
+          "links": 0.0,
+          "progress": -76.44,
+          "reserve": 0.0,
+          "scouting": 0.0,
+          "style_and_entries": 0.0,
+          "support": 0.0,
+          "threat": 26.04
+        },
+        "cell": [
+          12,
+          5
+        ],
+        "command_ok": true,
+        "forward_empty": 2,
+        "forward_occupied": [],
+        "friendly_occupied": 1,
+        "goal": [
+          11,
+          5
+        ],
+        "hold": "",
+        "legal_fire_targets": [
+          "fr_1"
+        ],
+        "morale": "stable",
+        "offers": [
+          {
+            "kind": "move",
+            "score": 238.54,
+            "target": ""
+          },
+          {
+            "kind": "fire",
+            "score": 206.35,
+            "target": "fr_1"
+          },
+          {
+            "kind": "move",
+            "score": 203.22,
+            "target": ""
+          }
+        ],
+        "reachable_empty": 100,
+        "supply_ok": true,
+        "weapon": "dreyse"
+      },
+      "pru_37": {
+        "ap": 8,
+        "attacks": [
+          {
+            "status": "no_ap",
+            "target": "fr_1"
+          }
+        ],
+        "best_destination": [
+          12,
+          4
+        ],
+        "best_move_score": 31.78,
+        "best_progress": 0.25,
+        "best_score_breakdown": {
+          "adjacency": 0.0,
+          "cover_and_capture": 0.0,
+          "fire_exploitation_and_ap": -7.0,
+          "hq_safety": 0.0,
+          "links": 0.0,
+          "progress": 12.74,
+          "reserve": 0.0,
+          "scouting": 0.0,
+          "style_and_entries": 0.0,
+          "support": 0.0,
+          "threat": 26.04
+        },
+        "cell": [
+          11,
+          6
+        ],
+        "command_ok": true,
+        "forward_empty": 2,
+        "forward_occupied": [],
+        "friendly_occupied": 1,
+        "goal": [
+          11,
+          5
+        ],
+        "hold": "",
+        "legal_fire_targets": [
+          "fr_1"
+        ],
+        "morale": "stable",
+        "offers": [
+          {
+            "kind": "fire",
+            "score": 205.9,
+            "target": "fr_1"
+          },
+          {
+            "kind": "move",
+            "score": 31.78,
+            "target": ""
+          },
+          {
+            "kind": "move",
+            "score": 10.22,
+            "target": ""
+          }
+        ],
+        "reachable_empty": 20,
+        "supply_ok": true,
+        "weapon": "dreyse"
+      }
+    }
+  },
+  "checks": 6,
+  "failures": 0
+}

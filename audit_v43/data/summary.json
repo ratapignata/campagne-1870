@@ -1,0 +1,835 @@
+{
+  "full_counts": [
+    {
+      "deploy": 7,
+      "end": 20,
+      "entrench": 26,
+      "fire": 214,
+      "move": 404,
+      "rally": 25,
+      "rest": 11
+    },
+    {
+      "assault": 21,
+      "deploy": 31,
+      "end": 20,
+      "entrench": 27,
+      "fire": 395,
+      "formation": 59,
+      "limber": 26,
+      "move": 433,
+      "rally": 1,
+      "rest": 79
+    }
+  ],
+  "full_final": {
+    "distribution": [
+      {
+        "elsasshausen": 2,
+        "froeschwiller": 17
+      },
+      {
+        "elsasshausen": 12,
+        "froeschwiller": 30,
+        "niederwald": 5
+      }
+    ],
+    "finished": true,
+    "losses": [
+      31398,
+      12216
+    ],
+    "owners": {
+      "elsasshausen": 1,
+      "froeschwiller": 1,
+      "niederwald": 1
+    },
+    "pending": 0,
+    "prisoners": [
+      4486,
+      3527
+    ],
+    "routed": [
+      2,
+      0
+    ],
+    "score": {
+      "level": "major_win",
+      "loss_advantage": 0.622077843896239,
+      "margin": 65.7748902112581,
+      "parts": [
+        [
+          0.0,
+          13.3333333333333,
+          3.31431578947368
+        ],
+        [
+          60.0,
+          6.66666666666667,
+          15.7558726673985
+        ]
+      ],
+      "reason": "major",
+      "totals": [
+        16.647649122807,
+        82.4225393340651
+      ],
+      "winner": 1
+    },
+    "turn": 20
+  },
+  "captures": [
+    {
+      "objective": "froeschwiller",
+      "owner": 1,
+      "side": 1,
+      "turn": 8
+    },
+    {
+      "objective": "froeschwiller",
+      "owner": 0,
+      "side": 0,
+      "turn": 9
+    },
+    {
+      "objective": "niederwald",
+      "owner": 1,
+      "side": 1,
+      "turn": 10
+    },
+    {
+      "objective": "elsasshausen",
+      "owner": 1,
+      "side": 1,
+      "turn": 11
+    },
+    {
+      "objective": "froeschwiller",
+      "owner": 1,
+      "side": 1,
+      "turn": 19
+    }
+  ],
+  "completed_turns": 20,
+  "elapsed_ms": 2669876,
+  "checks": 1936,
+  "failures": 0,
+  "prussian_decision_mean_ms": 1900.3855311355312,
+  "prussian_decision_median_ms": 1945.0,
+  "prussian_decision_p95_ms": 3165,
+  "prussian_decision_max_ms": 4373,
+  "windows_checks": 737,
+  "parity_checks": 10,
+  "phases": [
+    {
+      "bridge_occupants": [
+        {
+          "cell": [
+            14,
+            11
+          ],
+          "side": 1,
+          "unit": "v42_de_reserve_03"
+        }
+      ],
+      "command_cut": 1,
+      "counts": {
+        "artillery_fire": 6,
+        "assault": 1,
+        "assaults_after_artillery": 0,
+        "deploy": 4,
+        "end": 1,
+        "entrench": 1,
+        "fire": 17,
+        "formation": 4,
+        "infantry_fire": 11,
+        "limber": 3,
+        "move": 31,
+        "rest": 2
+      },
+      "crossings": [
+        {
+          "ford": false,
+          "from": 343.0,
+          "to": 344.0,
+          "unit": "v42_de_reserve_05"
+        },
+        {
+          "ford": false,
+          "from": 343.0,
+          "to": 344.0,
+          "unit": "v42_de_reserve_04"
+        },
+        {
+          "ford": false,
+          "from": 343.0,
+          "to": 344.0,
+          "unit": "v42_de_reserve_03"
+        },
+        {
+          "ford": false,
+          "from": 412.0,
+          "to": 382.0,
+          "unit": "pru_51"
+        },
+        {
+          "ford": true,
+          "from": 378.0,
+          "to": 348.0,
+          "unit": "qg_pr_Schachtmeyer"
+        },
+        {
+          "ford": false,
+          "from": 412.0,
+          "to": 382.0,
+          "unit": "art_pr_Gersdorff0"
+        }
+      ],
+      "double_cut": 1,
+      "inactive_units": 4,
+      "legally_attackable_at_end": 0,
+      "legally_mobile_at_end": 9,
+      "losses_at_end": [
+        4751,
+        2499
+      ],
+      "losses_during_prussian_phase": [
+        1615,
+        58
+      ],
+      "moved_units": 27,
+      "objectives": {
+        "elsasshausen": 0,
+        "froeschwiller": 0,
+        "niederwald": 0
+      },
+      "prussian_decision_ms": [
+        3167,
+        3201,
+        3153,
+        3193,
+        3137,
+        3154,
+        3114,
+        3056,
+        3034,
+        3059,
+        3080,
+        3058,
+        3184,
+        3056,
+        3062,
+        2986,
+        3028,
+        2948,
+        2931,
+        2956,
+        2924,
+        2873,
+        2791,
+        2592,
+        2532,
+        2476,
+        9,
+        2491,
+        2391,
+        2386,
+        2250,
+        2116,
+        2135,
+        2057,
+        2024,
+        2019,
+        2046,
+        1845,
+        1823,
+        7,
+        1818,
+        1810,
+        1808,
+        1654,
+        1675,
+        1543,
+        8,
+        1552,
+        1397,
+        1404,
+        1460,
+        1405,
+        1424,
+        1327,
+        1341,
+        1201,
+        1152,
+        1142,
+        1119,
+        1107,
+        1103,
+        1064,
+        965,
+        950
+      ],
+      "prussian_pending": 9,
+      "stationary_units": 13,
+      "supply_cut": 1,
+      "turn": 6,
+      "unused_ap": 115,
+      "initial_units": 40,
+      "initial_ap_quarters": 636,
+      "unused_ap_percent": 18.08176100628931,
+      "physically_changed_cell": 27,
+      "urgency": 1.535,
+      "decision_mean_ms": 2105.828125,
+      "decision_max_ms": 3201,
+      "backtracks": 0
+    },
+    {
+      "bridge_occupants": [
+        {
+          "cell": [
+            14,
+            11
+          ],
+          "side": 1,
+          "unit": "qg_pr_Sandrart"
+        }
+      ],
+      "command_cut": 6,
+      "counts": {
+        "artillery_fire": 9,
+        "assault": 2,
+        "assaults_after_artillery": 1,
+        "deploy": 3,
+        "end": 1,
+        "entrench": 2,
+        "fire": 28,
+        "formation": 4,
+        "infantry_fire": 19,
+        "limber": 4,
+        "move": 31,
+        "rest": 3
+      },
+      "crossings": [
+        {
+          "ford": false,
+          "from": 343.0,
+          "to": 344.0,
+          "unit": "qg_pr_Sandrart"
+        },
+        {
+          "ford": true,
+          "from": 349.0,
+          "to": 379.0,
+          "unit": "qg_pr_Gersdorff"
+        },
+        {
+          "ford": false,
+          "from": 344.0,
+          "to": 343.0,
+          "unit": "art_pr_Schachtmeyer1"
+        },
+        {
+          "ford": true,
+          "from": 377.0,
+          "to": 347.0,
+          "unit": "qg_pr_Schmidt"
+        }
+      ],
+      "double_cut": 1,
+      "inactive_units": 3,
+      "legally_attackable_at_end": 0,
+      "legally_mobile_at_end": 7,
+      "losses_at_end": [
+        12182,
+        5563
+      ],
+      "losses_during_prussian_phase": [
+        2063,
+        226
+      ],
+      "moved_units": 29,
+      "objectives": {
+        "elsasshausen": 0,
+        "froeschwiller": 0,
+        "niederwald": 0
+      },
+      "prussian_decision_ms": [
+        3007,
+        3017,
+        3024,
+        3001,
+        3042,
+        3012,
+        3002,
+        2975,
+        2965,
+        2974,
+        3039,
+        2966,
+        2833,
+        2873,
+        2938,
+        2817,
+        2843,
+        2826,
+        2805,
+        2810,
+        2816,
+        2756,
+        2709,
+        2699,
+        2619,
+        2693,
+        2504,
+        2430,
+        2422,
+        2405,
+        2402,
+        2381,
+        2645,
+        2380,
+        2477,
+        2375,
+        2561,
+        2341,
+        2304,
+        2274,
+        2148,
+        2145,
+        2150,
+        2078,
+        9,
+        2054,
+        8,
+        2042,
+        1971,
+        1918,
+        1804,
+        1812,
+        1777,
+        1771,
+        1661,
+        1644,
+        1502,
+        1463,
+        10,
+        1415,
+        1494,
+        1369,
+        1341,
+        1313,
+        11,
+        1294,
+        1215,
+        1312,
+        1192,
+        1109,
+        1027,
+        913,
+        899,
+        892,
+        883,
+        877,
+        867,
+        866
+      ],
+      "prussian_pending": 0,
+      "stationary_units": 18,
+      "supply_cut": 1,
+      "turn": 9,
+      "unused_ap": 131,
+      "initial_units": 49,
+      "initial_ap_quarters": 756,
+      "unused_ap_percent": 17.32804232804233,
+      "physically_changed_cell": 31,
+      "urgency": 1.6775,
+      "decision_mean_ms": 2041.2564102564102,
+      "decision_max_ms": 3042,
+      "backtracks": 0
+    },
+    {
+      "bridge_occupants": [
+        {
+          "cell": [
+            13,
+            11
+          ],
+          "side": 1,
+          "unit": "v42_de_reserve_14"
+        },
+        {
+          "cell": [
+            14,
+            11
+          ],
+          "side": 1,
+          "unit": "qg_pr_Sandrart"
+        }
+      ],
+      "command_cut": 4,
+      "counts": {
+        "artillery_fire": 9,
+        "assault": 1,
+        "assaults_after_artillery": 0,
+        "end": 1,
+        "entrench": 2,
+        "fire": 26,
+        "formation": 3,
+        "infantry_fire": 17,
+        "limber": 1,
+        "move": 7,
+        "rest": 8
+      },
+      "crossings": [
+        {
+          "ford": false,
+          "from": 344.0,
+          "to": 343.0,
+          "unit": "qg_pr_Gersdorff"
+        },
+        {
+          "ford": false,
+          "from": 343.0,
+          "to": 344.0,
+          "unit": "v42_de_reserve_13"
+        },
+        {
+          "ford": false,
+          "from": 344.0,
+          "to": 343.0,
+          "unit": "v42_de_reserve_14"
+        }
+      ],
+      "double_cut": 1,
+      "inactive_units": 17,
+      "legally_attackable_at_end": 0,
+      "legally_mobile_at_end": 21,
+      "losses_at_end": [
+        18807,
+        8498
+      ],
+      "losses_during_prussian_phase": [
+        1843,
+        168
+      ],
+      "moved_units": 7,
+      "objectives": {
+        "elsasshausen": 1,
+        "froeschwiller": 0,
+        "niederwald": 1
+      },
+      "prussian_decision_ms": [
+        2332,
+        2336,
+        2333,
+        2336,
+        2419,
+        2327,
+        2313,
+        2282,
+        2347,
+        2276,
+        2348,
+        2229,
+        2198,
+        2194,
+        2179,
+        2213,
+        2129,
+        2114,
+        2104,
+        2176,
+        2061,
+        2068,
+        2021,
+        2063,
+        1993,
+        1985,
+        1941,
+        1912,
+        2080,
+        2016,
+        1932,
+        1885,
+        1868,
+        1832,
+        1832,
+        1841,
+        1815,
+        1775,
+        1746,
+        1716,
+        10,
+        1653,
+        1652,
+        1527,
+        1472,
+        1463,
+        1496,
+        1453,
+        1394
+      ],
+      "prussian_pending": 0,
+      "stationary_units": 39,
+      "supply_cut": 1,
+      "turn": 12,
+      "unused_ap": 425,
+      "initial_units": 47,
+      "initial_ap_quarters": 748,
+      "unused_ap_percent": 56.81818181818182,
+      "physically_changed_cell": 8,
+      "urgency": 1.36,
+      "decision_mean_ms": 1952.795918367347,
+      "decision_max_ms": 2419,
+      "backtracks": 0
+    },
+    {
+      "bridge_occupants": [
+        {
+          "cell": [
+            14,
+            11
+          ],
+          "side": 1,
+          "unit": "reserve_art_10"
+        }
+      ],
+      "command_cut": 3,
+      "counts": {
+        "artillery_fire": 8,
+        "assault": 2,
+        "assaults_after_artillery": 0,
+        "deploy": 2,
+        "end": 1,
+        "entrench": 3,
+        "fire": 26,
+        "formation": 3,
+        "infantry_fire": 18,
+        "limber": 4,
+        "move": 23,
+        "rest": 3
+      },
+      "crossings": [
+        {
+          "ford": false,
+          "from": 343.0,
+          "to": 344.0,
+          "unit": "qg_pr_Sandrart"
+        },
+        {
+          "ford": false,
+          "from": 343.0,
+          "to": 344.0,
+          "unit": "reserve_art_10"
+        }
+      ],
+      "double_cut": 2,
+      "inactive_units": 11,
+      "legally_attackable_at_end": 0,
+      "legally_mobile_at_end": 18,
+      "losses_at_end": [
+        24386,
+        10592
+      ],
+      "losses_during_prussian_phase": [
+        2023,
+        226
+      ],
+      "moved_units": 18,
+      "objectives": {
+        "elsasshausen": 1,
+        "froeschwiller": 0,
+        "niederwald": 1
+      },
+      "prussian_decision_ms": [
+        2494,
+        2482,
+        2460,
+        2424,
+        2417,
+        2441,
+        2361,
+        2406,
+        2421,
+        2345,
+        2308,
+        2318,
+        2284,
+        2270,
+        2232,
+        2236,
+        2244,
+        2230,
+        2263,
+        2213,
+        2203,
+        2207,
+        2136,
+        2132,
+        2123,
+        2111,
+        2029,
+        12,
+        1985,
+        1963,
+        1894,
+        1827,
+        1825,
+        1797,
+        1775,
+        1829,
+        1740,
+        1652,
+        1633,
+        1632,
+        1624,
+        1588,
+        1583,
+        13,
+        1633,
+        1510,
+        1412,
+        1386,
+        1356,
+        1337,
+        1259,
+        1263,
+        14,
+        1210,
+        1202,
+        1187,
+        16,
+        1172,
+        1148,
+        1120,
+        1129,
+        1110,
+        1084,
+        1055,
+        1021,
+        1012,
+        977
+      ],
+      "prussian_pending": 0,
+      "stationary_units": 29,
+      "supply_cut": 2,
+      "turn": 15,
+      "unused_ap": 286,
+      "initial_units": 47,
+      "initial_ap_quarters": 744,
+      "unused_ap_percent": 38.44086021505376,
+      "physically_changed_cell": 18,
+      "urgency": 1.45,
+      "decision_mean_ms": 1698.134328358209,
+      "decision_max_ms": 2494,
+      "backtracks": 3
+    },
+    {
+      "bridge_occupants": [],
+      "command_cut": 0,
+      "counts": {
+        "artillery_fire": 12,
+        "assaults_after_artillery": 0,
+        "end": 1,
+        "entrench": 1,
+        "fire": 32,
+        "formation": 3,
+        "infantry_fire": 20,
+        "move": 18,
+        "rest": 3
+      },
+      "crossings": [],
+      "double_cut": 0,
+      "inactive_units": 16,
+      "legally_attackable_at_end": 0,
+      "legally_mobile_at_end": 20,
+      "losses_at_end": [
+        30589,
+        12113
+      ],
+      "losses_during_prussian_phase": [
+        2102,
+        123
+      ],
+      "moved_units": 12,
+      "objectives": {
+        "elsasshausen": 1,
+        "froeschwiller": 0,
+        "niederwald": 1
+      },
+      "prussian_decision_ms": [
+        2556,
+        2510,
+        2553,
+        2475,
+        2516,
+        2385,
+        2383,
+        2343,
+        2308,
+        2231,
+        2214,
+        2166,
+        2192,
+        2122,
+        2117,
+        2077,
+        2094,
+        2113,
+        2073,
+        2034,
+        2003,
+        2000,
+        1979,
+        2041,
+        1945,
+        1943,
+        1945,
+        1918,
+        1908,
+        2001,
+        1884,
+        1906,
+        1969,
+        1890,
+        1886,
+        1873,
+        1850,
+        1804,
+        1730,
+        1700,
+        1683,
+        1639,
+        1597,
+        1567,
+        1531,
+        1479,
+        1471,
+        1431,
+        1397,
+        1333,
+        1330,
+        1298,
+        1323,
+        1294,
+        1318,
+        1302,
+        1282,
+        1199
+      ],
+      "prussian_pending": 0,
+      "stationary_units": 35,
+      "supply_cut": 0,
+      "turn": 18,
+      "unused_ap": 339,
+      "initial_units": 47,
+      "initial_ap_quarters": 752,
+      "unused_ap_percent": 45.079787234042556,
+      "physically_changed_cell": 12,
+      "urgency": 1.54,
+      "decision_mean_ms": 1881.2241379310344,
+      "decision_max_ms": 2556,
+      "backtracks": 4
+    }
+  ]
+}
