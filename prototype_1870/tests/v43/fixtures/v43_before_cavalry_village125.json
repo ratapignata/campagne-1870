@@ -1,0 +1,4207 @@
+{
+  "id": "regimental_trial_v43",
+  "version": "0.8.43.1",
+  "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+  "map": {
+    "width": 30,
+    "height": 20,
+    "tiles": [
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "village",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "village",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "village",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "village",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "village",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "cultivated",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "forest",
+      "forest",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "cultivated",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "village",
+      "plain",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "forest",
+      "plain",
+      "cultivated",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "plain",
+      "plain",
+      "plain",
+      "cultivated",
+      "village",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "village",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "plain",
+      "cultivated",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "cultivated",
+      "plain",
+      "cultivated",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "plain",
+      "cultivated",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "plain",
+      "cultivated",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "plain",
+      "cultivated",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "village",
+      "cultivated",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "village",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "cultivated",
+      "plain",
+      "cultivated",
+      "plain",
+      "plain",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "cultivated",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "cultivated",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "forest",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain",
+      "plain"
+    ],
+    "elevations": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "north_left": true,
+    "neighbor_distance_m": 350,
+    "river_edges": [
+      {
+        "a": 311,
+        "b": 341,
+        "bridge": false
+      },
+      {
+        "a": 313,
+        "b": 343,
+        "bridge": false
+      },
+      {
+        "a": 315,
+        "b": 345,
+        "bridge": false
+      },
+      {
+        "a": 335,
+        "b": 365,
+        "bridge": false
+      },
+      {
+        "a": 337,
+        "b": 367,
+        "bridge": false
+      },
+      {
+        "a": 337,
+        "b": 368,
+        "bridge": false
+      },
+      {
+        "a": 338,
+        "b": 368,
+        "bridge": false
+      },
+      {
+        "a": 339,
+        "b": 368,
+        "bridge": false
+      },
+      {
+        "a": 339,
+        "b": 369,
+        "bridge": false
+      },
+      {
+        "a": 339,
+        "b": 370,
+        "bridge": false
+      },
+      {
+        "a": 340,
+        "b": 341,
+        "bridge": false
+      },
+      {
+        "a": 340,
+        "b": 370,
+        "bridge": false
+      },
+      {
+        "a": 341,
+        "b": 342,
+        "bridge": false
+      },
+      {
+        "a": 342,
+        "b": 343,
+        "bridge": false
+      },
+      {
+        "a": 342,
+        "b": 372,
+        "bridge": false
+      },
+      {
+        "a": 343,
+        "b": 344,
+        "bridge": false,
+        "bridge_from_turn": 4,
+        "name_key": "bridge_woerth"
+      },
+      {
+        "a": 344,
+        "b": 345,
+        "bridge": false
+      },
+      {
+        "a": 344,
+        "b": 374,
+        "bridge": false
+      },
+      {
+        "a": 345,
+        "b": 346,
+        "bridge": false
+      },
+      {
+        "a": 346,
+        "b": 376,
+        "bridge": false
+      },
+      {
+        "a": 347,
+        "b": 376,
+        "bridge": false
+      },
+      {
+        "a": 347,
+        "b": 377,
+        "bridge": false
+      },
+      {
+        "a": 347,
+        "b": 378,
+        "bridge": false
+      },
+      {
+        "a": 348,
+        "b": 378,
+        "bridge": false
+      },
+      {
+        "a": 349,
+        "b": 378,
+        "bridge": false
+      },
+      {
+        "a": 349,
+        "b": 379,
+        "bridge": false
+      },
+      {
+        "a": 349,
+        "b": 380,
+        "bridge": false
+      },
+      {
+        "a": 350,
+        "b": 380,
+        "bridge": false
+      },
+      {
+        "a": 351,
+        "b": 380,
+        "bridge": false
+      },
+      {
+        "a": 351,
+        "b": 381,
+        "bridge": false
+      },
+      {
+        "a": 363,
+        "b": 393,
+        "bridge": false
+      },
+      {
+        "a": 363,
+        "b": 394,
+        "bridge": false
+      },
+      {
+        "a": 364,
+        "b": 365,
+        "bridge": false
+      },
+      {
+        "a": 364,
+        "b": 394,
+        "bridge": false
+      },
+      {
+        "a": 365,
+        "b": 366,
+        "bridge": false
+      },
+      {
+        "a": 366,
+        "b": 367,
+        "bridge": false
+      },
+      {
+        "a": 366,
+        "b": 396,
+        "bridge": false
+      },
+      {
+        "a": 381,
+        "b": 382,
+        "bridge": false
+      },
+      {
+        "a": 382,
+        "b": 412,
+        "bridge": true
+      },
+      {
+        "a": 383,
+        "b": 412,
+        "bridge": false
+      },
+      {
+        "a": 383,
+        "b": 413,
+        "bridge": false
+      },
+      {
+        "a": 387,
+        "b": 417,
+        "bridge": false
+      },
+      {
+        "a": 390,
+        "b": 420,
+        "bridge": false
+      },
+      {
+        "a": 391,
+        "b": 420,
+        "bridge": false
+      },
+      {
+        "a": 391,
+        "b": 421,
+        "bridge": false
+      },
+      {
+        "a": 391,
+        "b": 422,
+        "bridge": false
+      },
+      {
+        "a": 392,
+        "b": 393,
+        "bridge": false
+      },
+      {
+        "a": 392,
+        "b": 422,
+        "bridge": false
+      },
+      {
+        "a": 413,
+        "b": 414,
+        "bridge": false
+      },
+      {
+        "a": 414,
+        "b": 444,
+        "bridge": false
+      },
+      {
+        "a": 415,
+        "b": 444,
+        "bridge": false
+      },
+      {
+        "a": 415,
+        "b": 445,
+        "bridge": false
+      },
+      {
+        "a": 415,
+        "b": 446,
+        "bridge": false
+      },
+      {
+        "a": 416,
+        "b": 417,
+        "bridge": false
+      },
+      {
+        "a": 416,
+        "b": 446,
+        "bridge": false
+      },
+      {
+        "a": 417,
+        "b": 418,
+        "bridge": false
+      },
+      {
+        "a": 418,
+        "b": 448,
+        "bridge": false
+      },
+      {
+        "a": 419,
+        "b": 448,
+        "bridge": false
+      },
+      {
+        "a": 419,
+        "b": 449,
+        "bridge": false
+      }
+    ],
+    "view": {
+      "focus_cell": [
+        16,
+        9
+      ],
+      "zoom": 0.72
+    },
+    "labels": [
+      {
+        "cell": [
+          11,
+          5
+        ],
+        "text": "Frœschwiller"
+      },
+      {
+        "cell": [
+          13,
+          10
+        ],
+        "text": "Wœrth"
+      },
+      {
+        "cell": [
+          3,
+          7
+        ],
+        "text": "Langensoultzbach"
+      },
+      {
+        "cell": [
+          6,
+          3
+        ],
+        "text": "Nehwiller"
+      },
+      {
+        "cell": [
+          15,
+          4
+        ],
+        "text": "Elsasshausen"
+      },
+      {
+        "cell": [
+          17,
+          11
+        ],
+        "text": "Spachbach"
+      },
+      {
+        "cell": [
+          22,
+          14
+        ],
+        "text": "Gunstett"
+      },
+      {
+        "cell": [
+          28,
+          10
+        ],
+        "text": "Morsbronn"
+      },
+      {
+        "cell": [
+          9,
+          15
+        ],
+        "text": "Gœrsdorf"
+      },
+      {
+        "cell": [
+          22,
+          7
+        ],
+        "text": "Albrechtshäuser"
+      },
+      {
+        "cell": [
+          18,
+          6
+        ],
+        "text": "Niederwald"
+      },
+      {
+        "cell": [
+          6,
+          2
+        ],
+        "text": "Vers Reichshoffen",
+        "arrow_cell": [
+          5,
+          0
+        ]
+      }
+    ],
+    "road_edges": [
+      [
+        5,
+        35
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        42
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        35,
+        65
+      ],
+      [
+        41,
+        42
+      ],
+      [
+        42,
+        72
+      ],
+      [
+        65,
+        95
+      ],
+      [
+        72,
+        102
+      ],
+      [
+        79,
+        108
+      ],
+      [
+        79,
+        110
+      ],
+      [
+        95,
+        96
+      ],
+      [
+        95,
+        125
+      ],
+      [
+        96,
+        97
+      ],
+      [
+        97,
+        128
+      ],
+      [
+        99,
+        128
+      ],
+      [
+        99,
+        130
+      ],
+      [
+        101,
+        130
+      ],
+      [
+        101,
+        132
+      ],
+      [
+        102,
+        132
+      ],
+      [
+        103,
+        132
+      ],
+      [
+        103,
+        133
+      ],
+      [
+        107,
+        108
+      ],
+      [
+        107,
+        136
+      ],
+      [
+        110,
+        111
+      ],
+      [
+        111,
+        141
+      ],
+      [
+        125,
+        154
+      ],
+      [
+        131,
+        132
+      ],
+      [
+        131,
+        161
+      ],
+      [
+        132,
+        162
+      ],
+      [
+        133,
+        134
+      ],
+      [
+        134,
+        135
+      ],
+      [
+        135,
+        136
+      ],
+      [
+        141,
+        171
+      ],
+      [
+        154,
+        184
+      ],
+      [
+        162,
+        192
+      ],
+      [
+        171,
+        201
+      ],
+      [
+        183,
+        184
+      ],
+      [
+        183,
+        213
+      ],
+      [
+        192,
+        222
+      ],
+      [
+        201,
+        232
+      ],
+      [
+        222,
+        223
+      ],
+      [
+        223,
+        253
+      ],
+      [
+        232,
+        233
+      ],
+      [
+        233,
+        264
+      ],
+      [
+        253,
+        284
+      ],
+      [
+        264,
+        265
+      ],
+      [
+        265,
+        296
+      ],
+      [
+        284,
+        314
+      ],
+      [
+        296,
+        297
+      ],
+      [
+        297,
+        326
+      ],
+      [
+        297,
+        328
+      ],
+      [
+        313,
+        344
+      ],
+      [
+        314,
+        344
+      ],
+      [
+        315,
+        344
+      ],
+      [
+        315,
+        346
+      ],
+      [
+        317,
+        318
+      ],
+      [
+        317,
+        346
+      ],
+      [
+        318,
+        319
+      ],
+      [
+        319,
+        350
+      ],
+      [
+        321,
+        350
+      ],
+      [
+        321,
+        352
+      ],
+      [
+        323,
+        324
+      ],
+      [
+        323,
+        352
+      ],
+      [
+        323,
+        353
+      ],
+      [
+        324,
+        325
+      ],
+      [
+        325,
+        326
+      ],
+      [
+        343,
+        344
+      ],
+      [
+        343,
+        372
+      ],
+      [
+        353,
+        382
+      ],
+      [
+        372,
+        402
+      ],
+      [
+        382,
+        412
+      ],
+      [
+        402,
+        432
+      ],
+      [
+        412,
+        442
+      ],
+      [
+        431,
+        432
+      ],
+      [
+        431,
+        461
+      ],
+      [
+        432,
+        433
+      ],
+      [
+        433,
+        464
+      ],
+      [
+        439,
+        440
+      ],
+      [
+        439,
+        468
+      ],
+      [
+        440,
+        441
+      ],
+      [
+        441,
+        442
+      ],
+      [
+        459,
+        460
+      ],
+      [
+        460,
+        461
+      ],
+      [
+        464,
+        465
+      ],
+      [
+        465,
+        495
+      ],
+      [
+        467,
+        468
+      ],
+      [
+        467,
+        497
+      ],
+      [
+        495,
+        496
+      ],
+      [
+        496,
+        497
+      ],
+      [
+        496,
+        526
+      ],
+      [
+        526,
+        556
+      ],
+      [
+        556,
+        557
+      ],
+      [
+        556,
+        586
+      ],
+      [
+        557,
+        588
+      ]
+    ],
+    "roads_note": "Tracés candidats de l’atelier11 ; raccords des chariots ajoutés pour cet essai.",
+    "supply_road_paths": [
+      {
+        "side": 0,
+        "cells": [
+          41,
+          42
+        ],
+        "historical_status": "ADAPTATION_GAMEPLAY"
+      },
+      {
+        "side": 1,
+        "cells": [
+          588,
+          557,
+          556
+        ],
+        "historical_status": "ADAPTATION_GAMEPLAY"
+      }
+    ],
+    "road_exits": [
+      {
+        "cell": [
+          5,
+          0
+        ],
+        "direction": [
+          0,
+          -1
+        ]
+      }
+    ],
+    "show_relief": false,
+    "elsasshausen_morsbronn_route": [
+      135,
+      136,
+      107,
+      108,
+      79,
+      110,
+      111,
+      141,
+      171,
+      201,
+      232,
+      233,
+      264,
+      265,
+      296,
+      297,
+      328
+    ]
+  },
+  "rules": {
+    "ap": 16,
+    "turns": 20,
+    "minutes": 30,
+    "start_hour": 8,
+    "morale": {
+      "shaken_below": 65,
+      "routed_below": 40,
+      "loss_shock": 100,
+      "shaken_fire": 0.7,
+      "rally_ap": 8,
+      "rally_distance": 3,
+      "rally_shaken": 48,
+      "rally_stable": 80,
+      "retreat_steps": 2,
+      "major_losses": 0.4,
+      "single_shock": 0.4,
+      "quiet_recovery": 35
+    },
+    "combat": {
+      "reactions": 1,
+      "reaction_factor": 0.65,
+      "battery_target_factor": 0.42
+    },
+    "assault": {
+      "ap": 12,
+      "shaken_factor": 0.75,
+      "routed_factor": 0.25,
+      "battery_deployed": 0.6,
+      "battery_limbered": 0.4,
+      "variance": 0.08,
+      "loss_rate": 0.09,
+      "loser_loss": 1.4,
+      "infantry_strength_exponent": 0.9,
+      "infantry_strength_reference": 1000
+    },
+    "victory": {
+      "final_control": 60,
+      "duration": 20,
+      "military": 20,
+      "draw_margin": 5,
+      "major_margin": 25,
+      "major_loss_advantage": 0.1,
+      "major_requires_objective": true
+    },
+    "entrenchment": {
+      "ap": 8,
+      "fire_received": 0.75,
+      "assault_defence": 1.25
+    },
+    "line_of_fire": {
+      "sight_height": 0.4,
+      "unit_height": 0.4,
+      "friendly_clearance": 0.2,
+      "elevated_artillery_overhead": true,
+      "plain_relief_tolerance": true,
+      "open_ground_relief_tolerance": true
+    },
+    "formations": {
+      "default": "line",
+      "change_ap": 4,
+      "types": {
+        "line": {
+          "move": 1,
+          "fire": 1,
+          "fire_received": 1,
+          "assault_attack": 1,
+          "assault_defence": 1
+        },
+        "column": {
+          "move": 0.75,
+          "fire": 0.65,
+          "fire_received": 1.25,
+          "assault_attack": 0.9,
+          "assault_defence": 0.9
+        },
+        "skirmish": {
+          "move": 1,
+          "fire": 0.85,
+          "fire_received": 0.8,
+          "assault_attack": 0.7,
+          "assault_defence": 0.85
+        }
+      },
+      "initial": "column"
+    },
+    "fog": {
+      "enabled": true,
+      "infantry_range": 4,
+      "artillery_range": 4,
+      "cavalry_range": 6,
+      "height_bonus": 1,
+      "identify_range": 2,
+      "concealment_range": 2,
+      "identify_cover_range": 1,
+      "estimate_step": 250,
+      "identified_estimate_step": 100,
+      "public_objective": true,
+      "exact_adjacent": true
+    },
+    "support": {
+      "enabled": true,
+      "command_radius": 10,
+      "cavalry_command_radius": 12,
+      "rally_extra_ap": 0,
+      "isolated_recovery_factor": 0.5,
+      "blocked_retreat_shock": 5,
+      "salvos_per_level": 3,
+      "ammo_factors": [
+        1.0,
+        1.0,
+        0.65
+      ],
+      "supply_sources": [
+        [
+          [
+            11,
+            1
+          ]
+        ],
+        [
+          [
+            18,
+            19
+          ]
+        ]
+      ],
+      "rear_columns": [
+        0,
+        29
+      ],
+      "recovery_mode": "no_voluntary_attack",
+      "rear_rows": [
+        0,
+        19
+      ],
+      "fixed_hq": true,
+      "supply_requires_bridge": true,
+      "command_requires_bridge": true,
+      "preferred_hq": {
+        "fr_Ducrot": "qg_fr_Ducrot",
+        "fr_Pellé": "qg_fr_Pellé",
+        "fr_Raoult": "qg_fr_Raoult",
+        "fr_Lartigue": "qg_fr_Lartigue",
+        "fr_Conseil-Dumesnil": "qg_fr_Conseil-Dumesnil",
+        "pr_Sandrart": "qg_pr_Sandrart",
+        "pr_Schmidt": "qg_pr_Schmidt",
+        "pr_Schachtmeyer": "qg_pr_Schachtmeyer",
+        "pr_Gersdorff": "qg_pr_Gersdorff"
+      },
+      "separate_hq": true,
+      "strict_links": true,
+      "supply_detour": 3,
+      "command_detour": 2,
+      "uncommanded_ap_penalty": 4,
+      "isolated_ap": 8,
+      "isolation_shaken_turns": 2,
+      "isolation_surrender_turns": 3
+    },
+    "river": {
+      "infantry_extra_ap": 8,
+      "repairs": false,
+      "historical_status": "ADAPTATION_GAMEPLAY"
+    },
+    "undo_player_discovery_only": true,
+    "roads_follow_edges": true,
+    "enemy_entry_adjacent_reinforcements": true
+  },
+  "objective": {
+    "cell": [
+      11,
+      5
+    ],
+    "points": 3
+  },
+  "units": [
+    {
+      "id": "fr_1",
+      "name_key": "reg_fr_1",
+      "side": 0,
+      "cell": [
+        7,
+        4
+      ],
+      "initial_strength": 700,
+      "weapon": "chassepot",
+      "number": 1,
+      "command_group": "fr_Ducrot",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_1",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_2",
+      "name_key": "reg_fr_2",
+      "side": 0,
+      "cell": [
+        6,
+        4
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 2,
+      "command_group": "fr_Ducrot",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_2",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_3",
+      "name_key": "reg_fr_3",
+      "side": 0,
+      "cell": [
+        7,
+        3
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 3,
+      "command_group": "fr_Ducrot",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_3",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_4",
+      "name_key": "reg_fr_4",
+      "side": 0,
+      "cell": [
+        7,
+        5
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 4,
+      "command_group": "fr_Ducrot",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_4",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_5",
+      "name_key": "reg_fr_5",
+      "side": 0,
+      "cell": [
+        8,
+        4
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 5,
+      "command_group": "fr_Ducrot",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_5",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_6",
+      "name_key": "reg_fr_6",
+      "side": 0,
+      "cell": [
+        12,
+        4
+      ],
+      "initial_strength": 700,
+      "weapon": "chassepot",
+      "number": 6,
+      "command_group": "fr_Pellé",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_6",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_7",
+      "name_key": "reg_fr_7",
+      "side": 0,
+      "cell": [
+        11,
+        4
+      ],
+      "initial_strength": 1400,
+      "weapon": "chassepot",
+      "number": 7,
+      "command_group": "fr_Pellé",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_7",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_8",
+      "name_key": "reg_fr_8",
+      "side": 0,
+      "cell": [
+        12,
+        3
+      ],
+      "initial_strength": 1400,
+      "weapon": "chassepot",
+      "number": 8,
+      "command_group": "fr_Pellé",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_8",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_9",
+      "name_key": "reg_fr_9",
+      "side": 0,
+      "cell": [
+        12,
+        5
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 9,
+      "command_group": "fr_Pellé",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_9",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_10",
+      "name_key": "reg_fr_10",
+      "side": 0,
+      "cell": [
+        13,
+        4
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 10,
+      "command_group": "fr_Pellé",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_10",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_11",
+      "name_key": "reg_fr_11",
+      "side": 0,
+      "cell": [
+        17,
+        5
+      ],
+      "initial_strength": 700,
+      "weapon": "chassepot",
+      "number": 11,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_11",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_12",
+      "name_key": "reg_fr_12",
+      "side": 0,
+      "cell": [
+        16,
+        5
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 12,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_12",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_13",
+      "name_key": "reg_fr_13",
+      "side": 0,
+      "cell": [
+        17,
+        4
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 13,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_13",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_14",
+      "name_key": "reg_fr_14",
+      "side": 0,
+      "cell": [
+        17,
+        6
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 14,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_14",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_15",
+      "name_key": "reg_fr_15",
+      "side": 0,
+      "cell": [
+        18,
+        5
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 15,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_15",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_16",
+      "name_key": "reg_fr_16",
+      "side": 0,
+      "cell": [
+        22,
+        6
+      ],
+      "initial_strength": 700,
+      "weapon": "chassepot",
+      "number": 16,
+      "command_group": "fr_Lartigue",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_16",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_17",
+      "name_key": "reg_fr_17",
+      "side": 0,
+      "cell": [
+        21,
+        6
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 17,
+      "command_group": "fr_Lartigue",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_17",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_18",
+      "name_key": "reg_fr_18",
+      "side": 0,
+      "cell": [
+        22,
+        5
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 18,
+      "command_group": "fr_Lartigue",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_18",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_19",
+      "name_key": "reg_fr_19",
+      "side": 0,
+      "cell": [
+        22,
+        7
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 19,
+      "command_group": "fr_Lartigue",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_19",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_20",
+      "name_key": "reg_fr_20",
+      "side": 0,
+      "cell": [
+        8,
+        8
+      ],
+      "initial_strength": 700,
+      "weapon": "chassepot",
+      "number": 20,
+      "command_group": "fr_Conseil-Dumesnil",
+      "arrival_turn": 5,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_20",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_21",
+      "name_key": "reg_fr_21",
+      "side": 0,
+      "cell": [
+        7,
+        8
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 21,
+      "command_group": "fr_Conseil-Dumesnil",
+      "arrival_turn": 5,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_21",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_22",
+      "name_key": "reg_fr_22",
+      "side": 0,
+      "cell": [
+        8,
+        7
+      ],
+      "initial_strength": 700,
+      "weapon": "chassepot",
+      "number": 22,
+      "command_group": "fr_Conseil-Dumesnil",
+      "arrival_turn": 5,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_22",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_23",
+      "name_key": "reg_fr_23",
+      "side": 0,
+      "cell": [
+        8,
+        9
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 23,
+      "command_group": "fr_Conseil-Dumesnil",
+      "arrival_turn": 5,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_23",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_24",
+      "name_key": "reg_fr_24",
+      "side": 0,
+      "cell": [
+        9,
+        8
+      ],
+      "initial_strength": 2000,
+      "weapon": "chassepot",
+      "number": 24,
+      "command_group": "fr_Conseil-Dumesnil",
+      "arrival_turn": 5,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_24",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_25",
+      "name_key": "reg_fr_25",
+      "side": 0,
+      "cell": [
+        16,
+        4
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 25,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_25",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_26",
+      "name_key": "reg_fr_26",
+      "side": 0,
+      "cell": [
+        16,
+        6
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 26,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_26",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_27",
+      "name_key": "reg_fr_27",
+      "side": 0,
+      "cell": [
+        18,
+        4
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 27,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_27",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_28",
+      "name_key": "reg_fr_28",
+      "side": 0,
+      "cell": [
+        18,
+        6
+      ],
+      "initial_strength": 200,
+      "weapon": "sabre",
+      "number": 28,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_28",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_29",
+      "name_key": "reg_fr_29",
+      "side": 0,
+      "cell": [
+        23,
+        6
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 29,
+      "command_group": "fr_Lartigue",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_29",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_30",
+      "name_key": "reg_fr_30",
+      "side": 0,
+      "cell": [
+        21,
+        5
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 30,
+      "command_group": "fr_Lartigue",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_30",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_31",
+      "name_key": "reg_fr_31",
+      "side": 0,
+      "cell": [
+        15,
+        5
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 31,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_31",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_32",
+      "name_key": "reg_fr_32",
+      "side": 0,
+      "cell": [
+        17,
+        3
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 32,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_32",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_33",
+      "name_key": "reg_fr_33",
+      "side": 0,
+      "cell": [
+        17,
+        7
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 33,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_33",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "fr_34",
+      "name_key": "reg_fr_34",
+      "side": 0,
+      "cell": [
+        19,
+        5
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 34,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "fr_34",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "pru_36",
+      "name_key": "reg_pru_36",
+      "side": 1,
+      "cell": [
+        10,
+        15
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 1,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 1,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_36",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_37",
+      "name_key": "reg_pru_37",
+      "side": 1,
+      "cell": [
+        9,
+        15
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 2,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 1,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_37",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_38",
+      "name_key": "reg_pru_38",
+      "side": 1,
+      "cell": [
+        10,
+        14
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 3,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 1,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_38",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_39",
+      "name_key": "reg_pru_39",
+      "side": 1,
+      "cell": [
+        10,
+        16
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 4,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 1,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_39",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_40",
+      "name_key": "reg_pru_40",
+      "side": 1,
+      "cell": [
+        16,
+        15
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 5,
+      "command_group": "pr_Schmidt",
+      "arrival_turn": 1,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_40",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_41",
+      "name_key": "reg_pru_41",
+      "side": 1,
+      "cell": [
+        15,
+        15
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 6,
+      "command_group": "pr_Schmidt",
+      "arrival_turn": 1,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_41",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_42",
+      "name_key": "reg_pru_42",
+      "side": 1,
+      "cell": [
+        16,
+        14
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 7,
+      "command_group": "pr_Schmidt",
+      "arrival_turn": 1,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_42",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_43",
+      "name_key": "reg_pru_43",
+      "side": 1,
+      "cell": [
+        16,
+        16
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 8,
+      "command_group": "pr_Schmidt",
+      "arrival_turn": 1,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_43",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_44",
+      "name_key": "reg_pru_44",
+      "side": 1,
+      "cell": [
+        22,
+        15
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 9,
+      "command_group": "pr_Schachtmeyer",
+      "arrival_turn": 4,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_44",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_45",
+      "name_key": "reg_pru_45",
+      "side": 1,
+      "cell": [
+        21,
+        15
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 10,
+      "command_group": "pr_Schachtmeyer",
+      "arrival_turn": 4,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_45",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_46",
+      "name_key": "reg_pru_46",
+      "side": 1,
+      "cell": [
+        22,
+        14
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 11,
+      "command_group": "pr_Schachtmeyer",
+      "arrival_turn": 4,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_46",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_47",
+      "name_key": "reg_pru_47",
+      "side": 1,
+      "cell": [
+        22,
+        16
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 12,
+      "command_group": "pr_Schachtmeyer",
+      "arrival_turn": 4,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_47",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_48",
+      "name_key": "reg_pru_48",
+      "side": 1,
+      "cell": [
+        25,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 13,
+      "command_group": "pr_Gersdorff",
+      "arrival_turn": 4,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_48",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_49",
+      "name_key": "reg_pru_49",
+      "side": 1,
+      "cell": [
+        24,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 14,
+      "command_group": "pr_Gersdorff",
+      "arrival_turn": 4,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_49",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_50",
+      "name_key": "reg_pru_50",
+      "side": 1,
+      "cell": [
+        25,
+        16
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 15,
+      "command_group": "pr_Gersdorff",
+      "arrival_turn": 4,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_50",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_51",
+      "name_key": "reg_pru_51",
+      "side": 1,
+      "cell": [
+        25,
+        18
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 16,
+      "command_group": "pr_Gersdorff",
+      "arrival_turn": 4,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_51",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_52",
+      "name_key": "reg_pru_52",
+      "side": 1,
+      "cell": [
+        11,
+        15
+      ],
+      "initial_strength": 1450,
+      "weapon": "dreyse",
+      "number": 17,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 1,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_52",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_53",
+      "name_key": "reg_pru_53",
+      "side": 1,
+      "cell": [
+        23,
+        15
+      ],
+      "initial_strength": 1450,
+      "weapon": "dreyse",
+      "number": 18,
+      "command_group": "pr_Schachtmeyer",
+      "arrival_turn": 4,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": "pru_53",
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement."
+    },
+    {
+      "id": "pru_54",
+      "name_key": "reg_pru_54",
+      "side": 1,
+      "cell": [
+        9,
+        14
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 19,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "pru_54",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "pru_55",
+      "name_key": "reg_pru_55",
+      "side": 1,
+      "cell": [
+        17,
+        15
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 20,
+      "command_group": "pr_Schmidt",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "pru_55",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "pru_56",
+      "name_key": "reg_pru_56",
+      "side": 1,
+      "cell": [
+        21,
+        14
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 21,
+      "command_group": "pr_Schachtmeyer",
+      "arrival_turn": 4,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "pru_56",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "pru_57",
+      "name_key": "reg_pru_57",
+      "side": 1,
+      "cell": [
+        26,
+        17
+      ],
+      "initial_strength": 400,
+      "weapon": "sabre",
+      "number": 22,
+      "command_group": "pr_Gersdorff",
+      "arrival_turn": 4,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": "pru_57",
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "qg_fr_Ducrot",
+      "name_key": "reg_qg_fr_Ducrot",
+      "side": 0,
+      "cell": [
+        6,
+        3
+      ],
+      "initial_strength": 250,
+      "weapon": "escort_chassepot",
+      "number": 35,
+      "command_group": "fr_Ducrot",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_fr_Ducrot0",
+      "name_key": "reg_art_fr_Ducrot0",
+      "side": 0,
+      "cell": [
+        6,
+        5
+      ],
+      "initial_strength": 250,
+      "weapon": "french_rifled",
+      "number": 36,
+      "command_group": "fr_Ducrot",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "qg_fr_Pellé",
+      "name_key": "reg_qg_fr_Pellé",
+      "side": 0,
+      "cell": [
+        11,
+        3
+      ],
+      "initial_strength": 250,
+      "weapon": "escort_chassepot",
+      "number": 37,
+      "command_group": "fr_Pellé",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_fr_Pellé0",
+      "name_key": "reg_art_fr_Pellé0",
+      "side": 0,
+      "cell": [
+        11,
+        5
+      ],
+      "initial_strength": 250,
+      "weapon": "french_rifled",
+      "number": 38,
+      "command_group": "fr_Pellé",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "qg_fr_Raoult",
+      "name_key": "reg_qg_fr_Raoult",
+      "side": 0,
+      "cell": [
+        15,
+        4
+      ],
+      "initial_strength": 250,
+      "weapon": "escort_chassepot",
+      "number": 39,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_fr_Raoult0",
+      "name_key": "reg_art_fr_Raoult0",
+      "side": 0,
+      "cell": [
+        15,
+        6
+      ],
+      "initial_strength": 250,
+      "weapon": "french_rifled",
+      "number": 40,
+      "command_group": "fr_Raoult",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "qg_fr_Lartigue",
+      "name_key": "reg_qg_fr_Lartigue",
+      "side": 0,
+      "cell": [
+        21,
+        7
+      ],
+      "initial_strength": 250,
+      "weapon": "escort_chassepot",
+      "number": 41,
+      "command_group": "fr_Lartigue",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_fr_Lartigue0",
+      "name_key": "reg_art_fr_Lartigue0",
+      "side": 0,
+      "cell": [
+        23,
+        5
+      ],
+      "initial_strength": 250,
+      "weapon": "french_rifled",
+      "number": 42,
+      "command_group": "fr_Lartigue",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "qg_fr_Conseil-Dumesnil",
+      "name_key": "reg_qg_fr_Conseil-Dumesnil",
+      "side": 0,
+      "cell": [
+        7,
+        7
+      ],
+      "initial_strength": 250,
+      "weapon": "escort_chassepot",
+      "number": 43,
+      "command_group": "fr_Conseil-Dumesnil",
+      "arrival_turn": 5,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_fr_Conseil-Dumesnil0",
+      "name_key": "reg_art_fr_Conseil-Dumesnil0",
+      "side": 0,
+      "cell": [
+        7,
+        9
+      ],
+      "initial_strength": 250,
+      "weapon": "french_rifled",
+      "number": 44,
+      "command_group": "fr_Conseil-Dumesnil",
+      "arrival_turn": 5,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "qg_pr_Sandrart",
+      "name_key": "reg_qg_pr_Sandrart",
+      "side": 1,
+      "cell": [
+        9,
+        16
+      ],
+      "initial_strength": 250,
+      "weapon": "escort_dreyse",
+      "number": 23,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_pr_Sandrart0",
+      "name_key": "reg_art_pr_Sandrart0",
+      "side": 1,
+      "cell": [
+        11,
+        14
+      ],
+      "initial_strength": 250,
+      "weapon": "krupp",
+      "number": 24,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_pr_Sandrart1",
+      "name_key": "reg_art_pr_Sandrart1",
+      "side": 1,
+      "cell": [
+        11,
+        16
+      ],
+      "initial_strength": 250,
+      "weapon": "krupp",
+      "number": 25,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "qg_pr_Schmidt",
+      "name_key": "reg_qg_pr_Schmidt",
+      "side": 1,
+      "cell": [
+        15,
+        14
+      ],
+      "initial_strength": 250,
+      "weapon": "escort_dreyse",
+      "number": 26,
+      "command_group": "pr_Schmidt",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_pr_Schmidt0",
+      "name_key": "reg_art_pr_Schmidt0",
+      "side": 1,
+      "cell": [
+        15,
+        16
+      ],
+      "initial_strength": 250,
+      "weapon": "krupp",
+      "number": 27,
+      "command_group": "pr_Schmidt",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_pr_Schmidt1",
+      "name_key": "reg_art_pr_Schmidt1",
+      "side": 1,
+      "cell": [
+        17,
+        14
+      ],
+      "initial_strength": 250,
+      "weapon": "krupp",
+      "number": 28,
+      "command_group": "pr_Schmidt",
+      "arrival_turn": 1,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "qg_pr_Schachtmeyer",
+      "name_key": "reg_qg_pr_Schachtmeyer",
+      "side": 1,
+      "cell": [
+        21,
+        16
+      ],
+      "initial_strength": 250,
+      "weapon": "escort_dreyse",
+      "number": 29,
+      "command_group": "pr_Schachtmeyer",
+      "arrival_turn": 4,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_pr_Schachtmeyer0",
+      "name_key": "reg_art_pr_Schachtmeyer0",
+      "side": 1,
+      "cell": [
+        23,
+        14
+      ],
+      "initial_strength": 250,
+      "weapon": "krupp",
+      "number": 30,
+      "command_group": "pr_Schachtmeyer",
+      "arrival_turn": 4,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_pr_Schachtmeyer1",
+      "name_key": "reg_art_pr_Schachtmeyer1",
+      "side": 1,
+      "cell": [
+        23,
+        16
+      ],
+      "initial_strength": 250,
+      "weapon": "krupp",
+      "number": 31,
+      "command_group": "pr_Schachtmeyer",
+      "arrival_turn": 4,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "qg_pr_Gersdorff",
+      "name_key": "reg_qg_pr_Gersdorff",
+      "side": 1,
+      "cell": [
+        24,
+        16
+      ],
+      "initial_strength": 250,
+      "weapon": "escort_dreyse",
+      "number": 32,
+      "command_group": "pr_Gersdorff",
+      "arrival_turn": 4,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_pr_Gersdorff0",
+      "name_key": "reg_art_pr_Gersdorff0",
+      "side": 1,
+      "cell": [
+        24,
+        18
+      ],
+      "initial_strength": 250,
+      "weapon": "krupp",
+      "number": 33,
+      "command_group": "pr_Gersdorff",
+      "arrival_turn": 4,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "art_pr_Gersdorff1",
+      "name_key": "reg_art_pr_Gersdorff1",
+      "side": 1,
+      "cell": [
+        26,
+        16
+      ],
+      "initial_strength": 250,
+      "weapon": "krupp",
+      "number": 34,
+      "command_group": "pr_Gersdorff",
+      "arrival_turn": 4,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "reserve_art_00",
+      "name_key": "reg_reserve_art_00",
+      "side": 0,
+      "cell": [
+        8,
+        3
+      ],
+      "initial_strength": 250,
+      "weapon": "french_rifled",
+      "number": 45,
+      "command_group": "fr_Ducrot",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "reserve_art_10",
+      "name_key": "reg_reserve_art_10",
+      "side": 1,
+      "cell": [
+        8,
+        15
+      ],
+      "initial_strength": 250,
+      "weapon": "krupp",
+      "number": 35,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "reserve_art_11",
+      "name_key": "reg_reserve_art_11",
+      "side": 1,
+      "cell": [
+        10,
+        13
+      ],
+      "initial_strength": 250,
+      "weapon": "krupp",
+      "number": 36,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 3,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "historical_unit_id": null,
+      "simulation_note": "Effectif et entrée de test, non historiques."
+    },
+    {
+      "id": "v42_de_reserve_01",
+      "name_key": "v42_de_reserve_01",
+      "side": 1,
+      "cell": [
+        1,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 101,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 5,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Sandrart"
+    },
+    {
+      "id": "v42_de_reserve_02",
+      "name_key": "v42_de_reserve_02",
+      "side": 1,
+      "cell": [
+        3,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 102,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 5,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Sandrart"
+    },
+    {
+      "id": "v42_de_reserve_03",
+      "name_key": "v42_de_reserve_03",
+      "side": 1,
+      "cell": [
+        5,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 103,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 5,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Sandrart"
+    },
+    {
+      "id": "v42_de_reserve_04",
+      "name_key": "v42_de_reserve_04",
+      "side": 1,
+      "cell": [
+        7,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 104,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 5,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Sandrart"
+    },
+    {
+      "id": "v42_de_reserve_05",
+      "name_key": "v42_de_reserve_05",
+      "side": 1,
+      "cell": [
+        9,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 105,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 5,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Sandrart"
+    },
+    {
+      "id": "v42_de_reserve_06",
+      "name_key": "v42_de_reserve_06",
+      "side": 1,
+      "cell": [
+        11,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 106,
+      "command_group": "pr_Sandrart",
+      "arrival_turn": 7,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Sandrart"
+    },
+    {
+      "id": "v42_de_reserve_07",
+      "name_key": "v42_de_reserve_07",
+      "side": 1,
+      "cell": [
+        13,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 107,
+      "command_group": "pr_Schmidt",
+      "arrival_turn": 7,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Schmidt"
+    },
+    {
+      "id": "v42_de_reserve_08",
+      "name_key": "v42_de_reserve_08",
+      "side": 1,
+      "cell": [
+        15,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 108,
+      "command_group": "pr_Schmidt",
+      "arrival_turn": 7,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Schmidt"
+    },
+    {
+      "id": "v42_de_reserve_09",
+      "name_key": "v42_de_reserve_09",
+      "side": 1,
+      "cell": [
+        17,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 109,
+      "command_group": "pr_Schachtmeyer",
+      "arrival_turn": 7,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Schachtmeyer"
+    },
+    {
+      "id": "v42_de_reserve_10",
+      "name_key": "v42_de_reserve_10",
+      "side": 1,
+      "cell": [
+        19,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 110,
+      "command_group": "pr_Schachtmeyer",
+      "arrival_turn": 7,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Schachtmeyer"
+    },
+    {
+      "id": "v42_de_reserve_11",
+      "name_key": "v42_de_reserve_11",
+      "side": 1,
+      "cell": [
+        21,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 111,
+      "command_group": "pr_Schachtmeyer",
+      "arrival_turn": 9,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Schachtmeyer"
+    },
+    {
+      "id": "v42_de_reserve_12",
+      "name_key": "v42_de_reserve_12",
+      "side": 1,
+      "cell": [
+        23,
+        17
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 112,
+      "command_group": "pr_Gersdorff",
+      "arrival_turn": 9,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Gersdorff"
+    },
+    {
+      "id": "v42_de_reserve_13",
+      "name_key": "v42_de_reserve_13",
+      "side": 1,
+      "cell": [
+        25,
+        19
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 113,
+      "command_group": "pr_Gersdorff",
+      "arrival_turn": 9,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Gersdorff"
+    },
+    {
+      "id": "v42_de_reserve_14",
+      "name_key": "v42_de_reserve_14",
+      "side": 1,
+      "cell": [
+        27,
+        19
+      ],
+      "initial_strength": 2900,
+      "weapon": "dreyse",
+      "number": 114,
+      "command_group": "pr_Gersdorff",
+      "arrival_turn": 9,
+      "historical_status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+      "historical_unit_id": null,
+      "simulation_note": "Redistribution de jeu lot 8 ; effectif et rattachement non attestés historiquement.",
+      "provisional_command_hq": "qg_pr_Gersdorff"
+    }
+  ],
+  "terrains": {
+    "plain": {
+      "cost": 4,
+      "color": "d7d6b6",
+      "fire_received": 1.0,
+      "blocks_fire": false,
+      "assault_defence": 1.0,
+      "elevation": 0.0,
+      "obstacle_height": 0.0,
+      "visibility_key": "visibility_open"
+    },
+    "forest": {
+      "cost": 8,
+      "color": "9aaf87",
+      "fire_received": 0.65,
+      "blocks_fire": true,
+      "assault_defence": 1.3,
+      "elevation": 0.0,
+      "obstacle_height": 1.5,
+      "visibility_key": "visibility_cover"
+    },
+    "hill": {
+      "cost": 6,
+      "color": "c7c59e",
+      "fire_received": 0.85,
+      "blocks_fire": true,
+      "assault_defence": 1.2,
+      "elevation": 2.0,
+      "obstacle_height": 0.0,
+      "visibility_key": "visibility_height"
+    },
+    "road": {
+      "cost": 2,
+      "color": "dcd7b6",
+      "fire_received": 1.0,
+      "blocks_fire": false,
+      "assault_defence": 1.0,
+      "elevation": 0.0,
+      "obstacle_height": 0.0,
+      "visibility_key": "visibility_open"
+    },
+    "village": {
+      "cost": 6,
+      "color": "d6c7a6",
+      "fire_received": 0.55,
+      "blocks_fire": true,
+      "assault_defence": 1.5,
+      "elevation": 0.0,
+      "obstacle_height": 1.0,
+      "visibility_key": "visibility_cover"
+    },
+    "water": {
+      "cost": -1,
+      "color": "8bafae",
+      "fire_received": 1.0,
+      "blocks_fire": false,
+      "assault_defence": 1.0,
+      "elevation": 0.0,
+      "obstacle_height": 0.0,
+      "visibility_key": "visibility_open"
+    },
+    "bridge": {
+      "cost": 4,
+      "color": "b2bca8",
+      "fire_received": 1.0,
+      "blocks_fire": false,
+      "assault_defence": 1.0,
+      "elevation": 0.0,
+      "obstacle_height": 0.0,
+      "visibility_key": "visibility_open"
+    },
+    "meadow": {
+      "cost": 4,
+      "color": "d7d6b6",
+      "fire_received": 1.0,
+      "blocks_fire": false,
+      "assault_defence": 1.0,
+      "elevation": 0.0,
+      "obstacle_height": 0.0,
+      "visibility_key": "visibility_open"
+    },
+    "cultivated": {
+      "cost": 6,
+      "color": "cbbc94",
+      "fire_received": 0.85,
+      "blocks_fire": false,
+      "assault_defence": 1.1,
+      "elevation": 0.0,
+      "obstacle_height": 0.0,
+      "visibility_key": "visibility_open"
+    },
+    "offmap": {
+      "cost": -1,
+      "color": "bcc1ac",
+      "fire_received": 1.0,
+      "blocks_fire": false,
+      "assault_defence": 1.0,
+      "elevation": 0.0,
+      "obstacle_height": 0.0,
+      "visibility_key": "visibility_open"
+    }
+  },
+  "weapons": {
+    "chassepot": {
+      "name_key": "weapon_chassepot",
+      "range": 3,
+      "ap": 8,
+      "base_losses": 110,
+      "variance": 0.1,
+      "distance_factors": [
+        1,
+        0.6,
+        0.36
+      ],
+      "historical_status": "ADAPTATION_GAMEPLAY"
+    },
+    "dreyse": {
+      "name_key": "weapon_dreyse",
+      "range": 2,
+      "ap": 8,
+      "base_losses": 110,
+      "variance": 0.1,
+      "distance_factors": [
+        1,
+        0.52
+      ],
+      "historical_status": "ADAPTATION_GAMEPLAY"
+    },
+    "french_rifled": {
+      "name_key": "weapon_french_rifled",
+      "range": 6,
+      "ap": 12,
+      "base_losses": 100,
+      "variance": 0.1,
+      "distance_factors": [
+        1,
+        0.9,
+        0.72,
+        0.52,
+        0.32,
+        0.18
+      ],
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "requires_deployment": true,
+      "deployment_ap": 4,
+      "short_name_key": "weapon_french_short"
+    },
+    "krupp": {
+      "name_key": "weapon_krupp",
+      "range": 8,
+      "ap": 8,
+      "base_losses": 131,
+      "variance": 0.1,
+      "distance_factors": [
+        1,
+        0.95,
+        0.85,
+        0.72,
+        0.59,
+        0.45,
+        0.35,
+        0.25
+      ],
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "requires_deployment": true,
+      "deployment_ap": 4
+    },
+    "sabre": {
+      "name_key": "weapon_sabre",
+      "range": 0,
+      "ap": 0,
+      "can_fire": false,
+      "unit_type": "cavalry",
+      "historical_status": "ADAPTATION_GAMEPLAY"
+    },
+    "escort_chassepot": {
+      "name_key": "weapon_chassepot",
+      "range": 3,
+      "ap": 8,
+      "base_losses": 16,
+      "variance": 0.1,
+      "distance_factors": [
+        1,
+        0.65,
+        0.36
+      ],
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "unit_type": "hq",
+      "concealed_as": "chassepot"
+    },
+    "escort_dreyse": {
+      "name_key": "weapon_dreyse",
+      "range": 2,
+      "ap": 8,
+      "base_losses": 16,
+      "variance": 0.1,
+      "distance_factors": [
+        1,
+        0.5
+      ],
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "unit_type": "hq",
+      "concealed_as": "dreyse"
+    }
+  },
+  "scale_note": "Carte abstraite de test : aucune conversion des hexagones en mètres validée.",
+  "historical_references": {
+    "chassepot": [
+      "https://archives-nationales-travail.culture.gouv.fr/Decouvrir/Dossiers-du-mois/La-guerre-de-1870-un-desastre-economique-et-social",
+      "https://www.cheminsdememoire.gouv.fr/fr/le-fusil-chassepot"
+    ],
+    "krupp": [
+      "https://www.6aout1870.com/docHisto.php?nom=declaration",
+      "https://www.napoleon.org/histoire-des-2-empires/articles/une-chronique-de-christophe-pommier-pourquoi-la-france-ne-sest-elle-pas-equipee-de-canons-krupp-avant-1870/"
+    ]
+  },
+  "ai": {
+    "goal_progress": 12,
+    "cover": 8,
+    "firing_position": 18,
+    "adjacent_threat": 14,
+    "capture": 100,
+    "fire": 90,
+    "rally": 130,
+    "assault": 110,
+    "assault_min_ratio": 1.15,
+    "entrench_objective": 112,
+    "entrench_position": 60,
+    "formation_priority": 86,
+    "formation_safe_distance": 5,
+    "formation_column_goal_distance": 5,
+    "formation_column_min_ap": 12,
+    "formation_cover_threshold": 0.85,
+    "charge_min_ratio": 1.15,
+    "attacking_side": 1
+  },
+  "sounds": {
+    "rifle": "res://assets/sounds/rifle.wav",
+    "cannon": "res://assets/sounds/cannon.wav",
+    "rifle_alt": "res://assets/sounds/rifle_alt.wav",
+    "cannon_alt": "res://assets/sounds/cannon_alt.wav",
+    "assault": "res://assets/sounds/assault.wav"
+  },
+  "save_compatibility": "regimental_trial0829",
+  "music": {
+    "path": "res://assets/sounds/slow_world.ogg",
+    "volume_db": -25,
+    "combat_volume_db": -32
+  },
+  "unit_types": {
+    "cavalry": {
+      "movement_costs": {
+        "plain": 2,
+        "road": 1,
+        "forest": 8,
+        "village": 6,
+        "hill": 4,
+        "bridge": 4,
+        "meadow": 2,
+        "cultivated": 6
+      },
+      "fire_received": 1.2,
+      "assault_attack": 1.6,
+      "assault_defence": 1.0,
+      "charge_ap": 8,
+      "charge_terrain": {
+        "plain": 1.0,
+        "road": 1.0,
+        "forest": 0.55,
+        "village": 0.55,
+        "hill": 0.75,
+        "bridge": 0.65,
+        "meadow": 1.0,
+        "cultivated": 0.65
+      },
+      "orderly_infantry_defence": 1.2,
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "ap": 16
+    },
+    "hq": {
+      "ap": 16,
+      "historical_status": "ADAPTATION_GAMEPLAY"
+    }
+  },
+  "historical_note": "Variante technique V42 lot 8 : total imposé 95 000, 50 unités allemandes. Effectifs, identités et rattachements des renforts non validés historiquement.",
+  "initial_owner": 0,
+  "description_key": "v43_detail",
+  "objectives": [
+    {
+      "id": "froeschwiller",
+      "cell": [
+        11,
+        5
+      ],
+      "points": 3,
+      "initial_owner": 0,
+      "name_key": "goal_historical_froeschwiller"
+    },
+    {
+      "id": "elsasshausen",
+      "cell": [
+        15,
+        4
+      ],
+      "points": 2,
+      "initial_owner": 0,
+      "name_key": "goal_historical_elsasshausen"
+    },
+    {
+      "id": "niederwald",
+      "cell": [
+        18,
+        6
+      ],
+      "points": 1,
+      "initial_owner": 0,
+      "name_key": "goal_historical_niederwald"
+    }
+  ],
+  "scenario_status": "V42 LOT 8 - VARIANTE EXPERIMENTALE NON VALIDEE HISTORIQUEMENT",
+  "simulation_adaptations": {
+    "scope": "France + Ve/XIe corps uniquement ; pas de scénario complet",
+    "strength": "Valeurs de test, non effectifs historiques",
+    "arrival": "Tours 1/3/4/5 de test ; pas chronologie attestée",
+    "positions": "Zones de déploiement de test",
+    "artillery": "Groupes abstraits sans identité de batterie historique",
+    "cavalry_command": "Rattachement aux QG infanterie pour cet essai",
+    "woerth_bridge": "Ouverture automatique tour 4 (9 h 30), adaptation et non horaire attesté."
+  },
+  "save_migrations": {
+    "86ef1097843ff7b3fd2ba0d1c2cb3791502a221010e8d0faaa07257f9d4c0c3c": {
+      "turns": 20
+    },
+    "1032f35599f4b4c914e1de063b1a5432a2a3645f43eccdb5b1d18f3d8811c91d": {
+      "turns": 20
+    },
+    "9b7f2605c70b9095b0f5f002b4dbccaa1db8ef5817af2284ab5ca9160a051f67": {
+      "turns": 20
+    }
+  },
+  "v42_experimental": {
+    "status": "PROVISIONAL_GAMEPLAY_NOT_VERIFIED",
+    "target_german_strength": 95000,
+    "distribution": "30 unités Dreyse à 2900, 2 Jäger à 1450 ; autres unités inchangées",
+    "command_assignment": "QG existant le plus proche de la case d’arrivée initiale, distance hexagonale ; rattachement de jeu uniquement",
+    "arrival_schedule": "identique au lot 6, provisoire",
+    "baseline_sha256": "6a022b586ab175afb7d99ca7a0b6d17e4cc54fdc98f63761cb88e704e178273a"
+  }
+}

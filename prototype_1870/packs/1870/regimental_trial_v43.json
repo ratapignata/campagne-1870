@@ -4133,7 +4133,10 @@
       },
       "orderly_infantry_defence": 1.2,
       "historical_status": "ADAPTATION_GAMEPLAY",
-      "ap": 16
+      "ap": 16,
+      "terrain_assault_defence": {
+        "village": 1.25
+      }
     },
     "hq": {
       "ap": 16,
@@ -4193,6 +4196,9 @@
       "turns": 20
     },
     "9b7f2605c70b9095b0f5f002b4dbccaa1db8ef5817af2284ab5ca9160a051f67": {
+      "turns": 20
+    },
+    "d8109880a4629d07e5e744537be9b05aa90f4213ebe130051f5db157d7652898": {
       "turns": 20
     }
   },

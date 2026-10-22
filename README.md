@@ -1,3 +1,13 @@
+# Prototype courant : V43.7
+
+- [Télécharger l’APK V43.7](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.7.apk)
+- [Sources complètes V43.7](releases/1870_v0.8.43.7_Sources.zip)
+- [Règle validée, tests et compatibilité](releases/VERSION_0843_7.md)
+
+Défense de cavalerie en village réduite de 1,50 à 1,25 pour les deux camps, conformément à la validation utilisateur. Infanterie à 1,50, charge à 2 PA, tirs et ripostes conservés. Sauvegardes précédentes compatibles. 4 825 vérifications réussies. APK compilé et signé, aucun essai physique Android. Installer par-dessus sans désinstaller.
+
+---
+
 # Prototype courant : V43.6
 
 - [Télécharger l’APK V43.6](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.6.apk)

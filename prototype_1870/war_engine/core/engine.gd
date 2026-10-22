@@ -480,7 +480,8 @@ func assault_power(n: int,defending: bool) -> float:
 	elif u.morale=="routed":result*=float(cfg.routed_factor)
 	if artillery(n):result*=float(cfg.battery_deployed if u.deployed else cfg.battery_limbered)
 	if defending:
-		result*=float(pack.terrains[pack.map.tiles[unit_cell(u)]].assault_defence)
+		var terrain=str(pack.map.tiles[unit_cell(u)])
+		result*=float(unit_profile(n).get("terrain_assault_defence",{}).get(terrain,pack.terrains[terrain].assault_defence))
 		if u.get("entrenched",false):result*=float(pack.rules.entrenchment.assault_defence)
 	return result
 func assault(attacker: int,target: int) -> Dictionary:
