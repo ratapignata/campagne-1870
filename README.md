@@ -1,3 +1,13 @@
+# Prototype courant : V43.6
+
+- [Télécharger l’APK V43.6](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.6.apk)
+- [Sources complètes V43.6](releases/1870_v0.8.43.6_Sources.zip)
+- [Correction de l’export, tests et limites](releases/VERSION_0843_6.md)
+
+Correction d’un faux échec d’export après écriture sur Android ; relecture intégrale obligatoire conservée. 67 vérifications réussies. Aucun test physique Android. Installer par-dessus sans désinstaller. Corrections V43.5 conservées, aucune modification de l’IA ou des règles.
+
+---
+
 # Prototype courant : V43.5
 
 - [Télécharger l’APK V43.5](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.5.apk)

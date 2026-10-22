@@ -67,10 +67,15 @@ func export_copy(location: String,snapshot: String) -> bool:
 	if not payload is String or payload.sha256_text()!=envelope.get("checksum",""):return false
 	var data=JSON.parse_string(payload)
 	if not data is Dictionary or not data.get("state",null) is Dictionary:return false
-	var f=FileAccess.open(location,FileAccess.WRITE)
+	var f=open_export_file(location)
 	if f==null:return false
 	f.store_string(snapshot);f.flush()
 	var error=f.get_error();f.close()
-	if error!=OK:return false
+	# Android get_error() reports EOF when the cursor reaches the written length.
+	# This is not proof of a failed write; the mandatory read-back below is decisive.
+	if error!=OK and error!=ERR_FILE_EOF:return false
 	# Verify all serialized fields, including the undo snapshot, without normalization.
 	return read_slot(location)==data
+
+func open_export_file(location: String):
+	return FileAccess.open(location,FileAccess.WRITE)
