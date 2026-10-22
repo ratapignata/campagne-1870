@@ -1,0 +1,37 @@
+[
+  {
+    "test": "v43/test_enclosed_links",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nENCLOSED LINKS 25/25\n"
+  },
+  {
+    "test": "test_strict0833",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nSTRICT 0833 22/22\n"
+  },
+  {
+    "test": "v36/test_isolation",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV36 ISOLATION 45/45\n"
+  },
+  {
+    "test": "v36/test_hidden_worlds",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV35 HIDDEN WORLDS 18/18\n"
+  },
+  {
+    "test": "v43/test_adjacent_reinforcements",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43.1 ADJACENT REINFORCEMENTS 32/32\n"
+  },
+  {
+    "test": "v43/test_ui",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 UI 30/30\nWARNING: ObjectDB instances leaked at exit (run with --verbose for details).\n     at: cleanup (core/object/object.cpp:2514)\nERROR: 2 resources still in use at exit (run with --verbose for details).\n   at: clear (core/io/resource.cpp:795)\n"
+  },
+  {
+    "test": "v43_export/test_export",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 EXPORT 28/28\n"
+  }
+]

@@ -95,13 +95,31 @@ static func terminal_distance(e, pos: int, field: Dictionary, bridges_only: bool
 		if field.has(next):best=mini(best,int(field[next])+1)
 	return best
 
+# A completely enclosed enemy holds its own hex, but cannot cut links through
+# the six active opposing units containing it. Partial rings retain strict rules.
+static func link_blockers(e, side: int) -> Dictionary:
+	var occupied={};var blocked={}
+	for n in range(e.state.units.size()):
+		if e.alive(n):occupied[e.unit_cell(e.state.units[n])]=n
+	for pos in occupied:
+		var n=int(occupied[pos]);var u=e.state.units[n]
+		if int(u.side)==side:continue
+		blocked[pos]=true
+		if u.morale=="routed":continue
+		var adjacent=e.neighbours(pos);var contained=adjacent.size()==6
+		for next in adjacent:
+			if not occupied.has(next):contained=false;break
+			var guard=e.state.units[int(occupied[next])]
+			if int(guard.side)!=side or guard.morale=="routed":contained=false;break
+		if not contained:
+			for next in adjacent:blocked[next]=true
+	return blocked
+
 static func strict_networks(e, side: int) -> Dictionary:
-	var cfg=e.pack.rules.support;var blocked={};var enemy_cells={};var leaders={}
+	var cfg=e.pack.rules.support;var blocked=link_blockers(e,side);var enemy_cells={};var leaders={}
 	for n in range(e.state.units.size()):
 		if not e.alive(n) or int(e.state.units[n].side)==side:continue
-		var pos=e.unit_cell(e.state.units[n]);enemy_cells[pos]=true;blocked[pos]=true
-		if e.state.units[n].morale!="routed":
-			for next in e.neighbours(pos):blocked[next]=true
+		var pos=e.unit_cell(e.state.units[n]);enemy_cells[pos]=true
 	var supply_seeds=[]
 	for c in cfg.supply_sources[side]:supply_seeds.append(e.index(Vector2i(int(c[0]),int(c[1]))))
 	var bridge_supply=bool(cfg.get("supply_requires_bridge",false));var bridge_command=bool(cfg.get("command_requires_bridge",false))
@@ -144,12 +162,10 @@ static func supply_coverage(e, side: int, source_index: int=-1) -> Dictionary:
 		if source_index>=0 and j!=source_index:continue
 		var c=cfg.supply_sources[side][j]
 		seeds.append(e.index(Vector2i(int(c[0]),int(c[1]))))
-	var blocked={};var enemy_cells={}
+	var blocked=link_blockers(e,side);var enemy_cells={}
 	for n in range(e.state.units.size()):
 		if not e.alive(n) or int(e.state.units[n].side)==side:continue
-		var pos=e.unit_cell(e.state.units[n]);blocked[pos]=true;enemy_cells[pos]=true
-		if e.state.units[n].morale!="routed":
-			for adj in e.neighbours(pos):blocked[adj]=true
+		var pos=e.unit_cell(e.state.units[n]);enemy_cells[pos]=true
 	var bridges=bool(cfg.get("supply_requires_bridge",false))
 	var reachable=flood(e,seeds,blocked,10000,bridges)
 	var clear=flood(e,seeds,{},10000,bridges)

@@ -470,9 +470,9 @@ func _draw():
 		# Draw outside the counter and selection so the red border stays visible.
 		# Both links must be cut; enemy logistics are never exposed.
 		if int(u.side)==int(engine.state.human_side) and not u.get("command_ok",true) and not u.get("supply_ok",true):
-			var isolated_rect=Rect2(p+Vector2(-36,-37)*z,Vector2(72,74)*z)
-			draw_rect(isolated_rect,Color("4a1015"),false,maxf(4.0,5.0*z))
-			draw_rect(isolated_rect,Color("ff4545"),false,maxf(2.0,3.0*z))
+			var isolated_rect=Rect2(p+Vector2(-29,-30)*z,Vector2(58,60)*z)
+			draw_rect(isolated_rect,Color("4a1015"),false,maxf(3,4*z))
+			draw_rect(isolated_rect,Color("ff4545"),false,maxf(1.75,2.25*z))
 		if n==target:
 			draw_arc(p,33*z,0,TAU,32,Color("b04f42"),3*z,true)
 			for v in [Vector2(-1,0),Vector2(1,0),Vector2(0,-1),Vector2(0,1)]:draw_line(p+v*28*z,p+v*37*z,Color("b04f42"),3*z,true)

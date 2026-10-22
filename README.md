@@ -1,3 +1,13 @@
+# Prototype courant : V43.5
+
+- [Télécharger l’APK V43.5](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.5.apk)
+- [Sources complètes V43.5](releases/1870_v0.8.43.5_Sources.zip)
+- [Changements, tests et limites](releases/VERSION_0843_5.md)
+
+Contour rouge de même taille que le vert fluo. Correction de la coupure logistique causée par un ennemi totalement encerclé sur ses six hexagones voisins. Chiffre de force conservé. 200 vérifications réussies ; aucun essai Android physique. Installer par-dessus sans désinstaller.
+
+---
+
 # Prototype courant : V43.4
 
 - [Télécharger l’APK V43.4](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.4.apk)
