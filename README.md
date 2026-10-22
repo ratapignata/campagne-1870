@@ -1,3 +1,13 @@
+# Prototype courant : V43.3 — pions sans numéros
+
+- [Télécharger l’APK V43.3](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.3.apk)
+- [Sources complètes V43.3](releases/1870_v0.8.43.3_Sources.zip)
+- [Changements et vérifications](releases/VERSION_0843_3.md)
+
+Numéros d’unité et chiffres d’effectif retirés des pions ; effectifs consultables dans les fiches. Export de sauvegarde et corrections précédentes conservés. Aucun changement de comportement de l’IA. Installer sans désinstaller l’ancienne version. APK compilé et signé ; aucun essai sur appareil physique.
+
+---
+
 # 1870 : Frœschwiller-Wœrth — V43.2
 
 **V43.2 ajoute l’export de la partie courante en JSON. Le comportement de l’IA et toutes les règles V43.1 sont conservés.**
