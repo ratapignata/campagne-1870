@@ -455,6 +455,7 @@ func _draw():
 				draw_rect(flag_rect,flag_colors[stripe])
 			draw_rect(Rect2(flag_origin,Vector2(12,8)*z),Color("d9d9c5"),false,maxf(0.4,0.6*z))
 		draw_rect(Rect2(p+Vector2(-4,12)*z,Vector2(28,14)*z),Color("963047") if int(u.side)==0 else Color("162c31"))
+		draw_string(COUNTER_FONT,p+Vector2(-3,25)*z,str(maxi(1,ceili(float(u.strength)/float(u.initial_strength)*10))),HORIZONTAL_ALIGNMENT_CENTER,26*z,maxi(6,int(14*z)),Color("ffffff"))
 		if u.done or int(u.ap)==0:draw_string(font,p+Vector2(9,8)*z,"✓",HORIZONTAL_ALIGNMENT_LEFT,-1,maxi(10,int(16*z)),Color("e9e1c9"))
 		if u.morale=="shaken":
 			disorder_badge(p,z)
@@ -547,6 +548,7 @@ func draw_contact(n: int):
 		for stripe in range(3):
 			var rect=Rect2(flag_origin+Vector2(stripe*4,0)*z,Vector2(4,8)*z) if side==1 else Rect2(flag_origin+Vector2(0,stripe*8.0/3)*z,Vector2(12,8.0/3)*z)
 			draw_rect(rect,colors[stripe])
+	draw_string(COUNTER_FONT,p+Vector2(-3,25)*z,contact_power_text(n),HORIZONTAL_ALIGNMENT_CENTER,26*z,maxi(8,int(14*z)),Color("fff3dc"))
 	if current and int(report.level)==2:
 		if report.morale=="shaken":
 			disorder_badge(p,z)

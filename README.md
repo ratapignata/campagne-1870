@@ -1,3 +1,13 @@
+# Prototype courant : V43.4
+
+- [Télécharger l’APK V43.4](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.4.apk)
+- [Sources complètes V43.4](releases/1870_v0.8.43.4_Sources.zip)
+- [Changements et vérifications](releases/VERSION_0843_4.md)
+
+Seul le numéro d’unité en haut à droite est retiré. Le chiffre de force reste en bas du pion. Installer sans désinstaller l’application. Règles et IA inchangées.
+
+---
+
 # Prototype courant : V43.3 — pions sans numéros
 
 - [Télécharger l’APK V43.3](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.3.apk)
