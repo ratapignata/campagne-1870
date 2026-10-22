@@ -1,3 +1,14 @@
+# Prototype courant : V43.8
+
+- [Télécharger l’APK V43.8](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.8.apk)
+- [Sources complètes V43.8](releases/1870_v0.8.43.8_Sources.zip)
+- [Changements et vérifications](releases/VERSION_0843_8.md)
+- [Partie réelle T20 : diagnostic du flanc droit et propositions IA](audit_v43/ANALYSE_PARTIE_T20_FLANC_DROIT.md)
+
+Nom et portée du fusil retirés de la fiche des fantassins et QG, sans modifier le tir. Cavalerie en village à 1,25 conservée. IA de production inchangée ; diagnostic et proposition de débordement séparés. 85 vérifications réussies ; aucun essai Android physique. Installer sans désinstaller.
+
+---
+
 # Prototype courant : V43.7
 
 - [Télécharger l’APK V43.7](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.7.apk)

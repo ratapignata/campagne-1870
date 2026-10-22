@@ -332,6 +332,7 @@ func refresh(message: String=""):
 		terrain_label.text=terrain_caption(engine.unit_cell(u))
 		unit_info.text=t("unit_strength")%[u.strength,u.initial_strength]
 		weapon_label.text=t("cavalry_weapon_info") if engine.cavalry(shown) else t("weapon_info")%[t(engine.weapon(shown).get("short_name_key",engine.weapon(shown).name_key)),engine.weapon(shown).range]
+		if not engine.artillery(shown) and not engine.cavalry(shown):weapon_label.text=""
 		unit_state.add_theme_color_override("font_color",PAPER if u.morale=="stable" else Color("f3bf72"))
 		unit_state.text=t("morale_"+u.morale)+( " · "+t("unit_shelter") if u.get("entrenched",false) else "")
 		unit_reaction.text=t("cavalry_contact") if engine.cavalry(shown) else t("reaction_routed" if u.morale=="routed" else "reaction_limbered" if engine.artillery(shown) and not u.deployed else "reaction_ready" if int(u.reactions)>0 else "reaction_spent")
