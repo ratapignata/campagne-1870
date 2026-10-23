@@ -1,0 +1,27 @@
+[
+  {
+    "test": "v43/test_rifle_label",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nRIFLE LABEL 18/18\n"
+  },
+  {
+    "test": "v43/test_ui",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 UI 30/30\nWARNING: ObjectDB instances leaked at exit (run with --verbose for details).\n     at: cleanup (core/object/object.cpp:2514)\nERROR: 2 resources still in use at exit (run with --verbose for details).\n   at: clear (core/io/resource.cpp:795)\n"
+  },
+  {
+    "test": "v43_export/test_export",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 EXPORT 28/28\n"
+  },
+  {
+    "test": "v43_export/test_android_eof",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nANDROID EXPORT EOF 9/9\n"
+  },
+  {
+    "test": "v43/test_cavalry_village125",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43.7 CAVALRY VILLAGE 20/20\n"
+  }
+]

@@ -10,7 +10,7 @@ func run():
  var board=load("res://tests/v43/animation_board.gd").new();root.add_child(board);board.size=Vector2(1600,1200);board.set_process(false)
  var pack=JSON.parse_string(FileAccess.get_file_as_string("res://packs/1870/regimental_trial_v43.json"))
  for key in pack.terrains:board.terrain_colors.append({"name":key,"color":Color(pack.terrains[key].color)})
- check(board.projectile_ink(true)==Color("252a30"),"cannon projectile anthracite")
+ check(board.projectile_ink(true)==Color("101214"),"cannon projectile black")
  check(board.projectile_ink(false)==Color(1.0,0.81,0.40,0.9),"infantry projectile unchanged")
  check(DisplayServer.get_name()!="headless","actual X11 software renderer, not dummy renderer")
  for phase in board.phases:

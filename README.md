@@ -1,3 +1,13 @@
+# Prototype courant : V43.9
+
+- [Télécharger l’APK V43.9](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.9.apk)
+- [Sources complètes V43.9](releases/1870_v0.8.43.9_Sources.zip)
+- [Changements, tests et limites](releases/VERSION_0843_9.md)
+
+Noms de l’infanterie prussienne précisés (régiments et bataillons), ligne d’arme retirée aussi pour l’artillerie et la cavalerie, fiche réorganisée avec textes plus grands. Bille d’artillerie noire avec contour gris et traînée sombre. Règles et IA inchangées, réglage de cavalerie à 1,25 et sauvegardes conservés. 246 vérifications réussies ; aucun essai physique Android. Installer sans désinstaller.
+
+---
+
 # Prototype courant : V43.8
 
 - [Télécharger l’APK V43.8](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.8.apk)

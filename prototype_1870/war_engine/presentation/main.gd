@@ -246,12 +246,16 @@ func layout_cards():
 	unit_state.size.x=w-175 if formation_label.visible else w-24
 	var has_support=not support_label.text.is_empty()
 	weapon_label.position=Vector2(22,98);weapon_label.size=Vector2(w-214 if has_support else w-24,24)
-	ammo_label.position=Vector2(22,123);ammo_label.size=Vector2(w-214 if has_support else w-24,24)
-	unit_reaction.position=Vector2(22,147);unit_reaction.size=Vector2(w-214 if has_support else w-24,24)
+	var compact=weapon_label.text.is_empty()
+	ammo_label.position=Vector2(22,100 if compact else 123);ammo_label.size=Vector2(w-214 if has_support else w-24,28 if compact else 24)
+	ammo_label.add_theme_font_size_override("font_size",20 if compact else 18)
+	unit_reaction.position=Vector2(22,134 if compact else 147);unit_reaction.size=Vector2(w-214 if has_support else w-24,28 if compact else 24)
+	unit_reaction.add_theme_font_size_override("font_size",20 if compact else 18)
 	unit_reaction.horizontal_alignment=HORIZONTAL_ALIGNMENT_LEFT
-	support_label.position=Vector2(12+w-186,98);support_label.size=Vector2(176,24)
-	supply_label.position=Vector2(12+w-186,123);supply_label.size=Vector2(176,24)
-	encircled_label.position=Vector2(12+w-186,147);encircled_label.size=Vector2(176,24)
+	support_label.position=Vector2(12+w-186,100 if compact else 98);support_label.size=Vector2(176,24)
+	supply_label.position=Vector2(12+w-186,130 if compact else 123);supply_label.size=Vector2(176,24)
+	encircled_label.position=Vector2(12+w-186,154 if compact else 147);encircled_label.size=Vector2(176,20 if compact else 24)
+	encircled_label.add_theme_font_size_override("font_size",15 if compact else 18)
 	# All right-column text shares the same right edge, including each support line.
 	var right_edge=unit_card.position.x+w-12
 	for field in [terrain_label,unit_ap,formation_label,support_label,supply_label,encircled_label]:
@@ -331,8 +335,7 @@ func refresh(message: String=""):
 		var u=engine.state.units[shown];unit_label.text=unit_heading(shown);unit_flag.texture=FLAGS[int(u.side)]
 		terrain_label.text=terrain_caption(engine.unit_cell(u))
 		unit_info.text=t("unit_strength")%[u.strength,u.initial_strength]
-		weapon_label.text=t("cavalry_weapon_info") if engine.cavalry(shown) else t("weapon_info")%[t(engine.weapon(shown).get("short_name_key",engine.weapon(shown).name_key)),engine.weapon(shown).range]
-		if not engine.artillery(shown) and not engine.cavalry(shown):weapon_label.text=""
+		weapon_label.text=""
 		unit_state.add_theme_color_override("font_color",PAPER if u.morale=="stable" else Color("f3bf72"))
 		unit_state.text=t("morale_"+u.morale)+( " · "+t("unit_shelter") if u.get("entrenched",false) else "")
 		unit_reaction.text=t("cavalry_contact") if engine.cavalry(shown) else t("reaction_routed" if u.morale=="routed" else "reaction_limbered" if engine.artillery(shown) and not u.deployed else "reaction_ready" if int(u.reactions)>0 else "reaction_spent")

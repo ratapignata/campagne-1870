@@ -18,7 +18,7 @@ func run():
    seen[kind]=true
    if u.get("pending",false):u.pending=false;u.strength=u.initial_strength;u.ap=16;u.done=false
    game.selected=n;game.target=-1;game.refresh()
-   check(game.weapon_label.text.is_empty() if kind in ["infantry","hq"] else not game.weapon_label.text.is_empty(),"rifle label removed only for infantry/HQ "+str(side)+"/"+kind)
+   check(game.weapon_label.text.is_empty(),"weapon line removed for all arms "+str(side)+"/"+kind)
    check(not game.unit_info.text.is_empty() and not game.unit_ap.text.is_empty(),"strength and AP remain visible")
   check(seen.has("infantry") and seen.has("hq") and seen.has("artillery") and seen.has("cavalry"),"four arms checked")
  game.playing=false;game.queue_free();await process_frame
