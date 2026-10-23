@@ -74,6 +74,11 @@ func choose(view: Dictionary) -> Dictionary:
 				if hard_planning and offensive and not e.cavalry(n) and e.state.units[j].morale in ["shaken","routed"] and friends_near(e,n,e.unit_cell(e.state.units[j]))>=1:
 					minimum_ratio=maxf(1.05,minimum_ratio-0.15)
 				if ratio>=minimum_ratio:
+					# Melee does not consume ammunition. Do not abandon an already
+					# accepted infantry assault merely to refill an empty ammo level.
+					if hard_planning and offensive and not e.cavalry(n) and not e.headquarters(n):
+						var charging_unit=str(u.id)
+						ranked=ranked.filter(func(item):return item.action.kind!="rest" or str(item.action.get("unit",""))!=charging_unit)
 					var score=float(settings.assault)+(30.0*urgency if offensive else 0.0)+minf(2.0,ratio)*float(settings.ratio_value)-response*float(settings.return_risk)
 					if e.unit_cell(e.state.units[j])==goal:score+=float(settings.objective_target)
 					if offensive:score+=target_priority(e,j)

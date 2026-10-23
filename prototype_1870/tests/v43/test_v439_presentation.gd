@@ -9,7 +9,7 @@ func run():
  var game=load("res://main.tscn").instantiate();root.add_child(game);game.ai_enabled=false;game.sound_enabled=false;game.music_player.stop()
  for i in range(36,54):
   var name=game.t("reg_pru_"+str(i))
-  check("régiment" in name or "bataillon" in name,"unit echelon explicit "+str(i))
+  check("RI" in name or "bataillon" in name,"unit echelon explicit "+str(i))
  for side in [0,1]:
   game.new_game(side);game.ai_enabled=false;game.music_player.stop()
   for dimensions in [Vector2i(1280,606),Vector2i(1520,720)]:
@@ -22,6 +22,7 @@ func run():
     if u.pending:u.pending=false;u.strength=u.initial_strength;u.ap=16;u.done=false
     game.selected=n;game.target=-1;game.map.focus=game.map.world(game.engine.unit_cell(u));game.map.zoom=1.15;game.refresh();await process_frame
     check(game.weapon_label.text.is_empty(),"weapon line empty "+id)
+    check("QG" not in game.unit_label.text,"no HQ suffix on regiment "+id)
     check(is_equal_approx(game.ammo_label.position.y,100.0),"gap removed "+id)
     check(game.ammo_label.position.y>=game.unit_state.position.y+game.unit_state.size.y,"state and ammunition do not overlap")
     check(game.unit_reaction.position.y>=game.ammo_label.position.y+game.ammo_label.size.y,"ammunition and reaction do not overlap")

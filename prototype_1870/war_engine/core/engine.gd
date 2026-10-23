@@ -107,22 +107,27 @@ func support_budget(n: int) -> int:
 	return mini(base,int(pack.rules.support.get("isolated_ap",8))) if not u.get("supply_ok",true) else maxi(0,base-int(pack.rules.support.get("uncommanded_ap_penalty",4)))
 func max_ap(n: int) -> int:
 	return int(state.units[n].get("turn_ap_limit",super.max_ap(n))) if strict_links() else super.max_ap(n)
-func support_event(n: int,kind: String,amount: int=0):
+func support_event(n: int,kind: String,amount: int=0,known_names: Dictionary={}):
 	if not state.has("support_events"):state.support_events=[]
 	state.support_serial=int(state.get("support_serial",0))+1
 	var u=state.units[n]
-	state.support_events.append({"serial":state.support_serial,"turn":state.turn,"side":u.side,"unit":u.id,"name_key":u.name_key,"kind":kind,"prisoners":amount,"cell":u.cell.duplicate()})
+	state.support_events.append({"serial":state.support_serial,"turn":state.turn,"side":u.side,"unit":u.id,"name_key":u.name_key,"kind":kind,"prisoners":amount,"cell":u.cell.duplicate(),"known_names":known_names.duplicate()})
 	if kind=="surrender" and state.has("battle_history"):
-		state.battle_history.append({"turn":state.turn,"side":u.side,"unit":u.id,"kind":kind,"prisoners":amount})
+		state.battle_history.append({"turn":state.turn,"side":u.side,"unit":u.id,"kind":kind,"prisoners":amount,"known_names":known_names.duplicate()})
 		if state.battle_history.size()>512:state.battle_history.pop_front()
 	if state.support_events.size()>256:state.support_events.pop_front()
 func surrender(n: int) -> int:
 	if not alive(n):return 0
-	var u=state.units[n];var count=int(u.strength)
+	var u=state.units[n];var count=int(u.strength);var known_names={}
+	for viewer in [0,1]:
+		if viewer==int(u.side) or not fog_enabled():known_names[str(viewer)]=str(u.name_key)
+		else:
+			var level=int(Intel.compute(self,viewer).levels.get(str(n),0))
+			if level>0:known_names[str(viewer)]=str(u.name_key) if level==2 else "fog_enemy_generic"
 	u.prisoners+=count;u.strength=0;u.ap=0;u.done=true;u.deployed=false;u.entrenched=false;u.reactions=0
 	if int(state.active)==n:state.active=-1
 	state.surrender_serial=int(state.get("surrender_serial",0))+1
-	previous={};state.undo_reason="surrender";support_event(n,"surrender",count)
+	previous={};state.undo_reason="surrender";support_event(n,"surrender",count,known_names)
 	return count
 func resolve_surrenders():
 	if not strict_links() or resolving_surrenders or state.finished:return

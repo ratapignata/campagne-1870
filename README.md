@@ -1,3 +1,17 @@
+# Prototype courant : V43.10
+
+- [Télécharger l’APK V43.10](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.10.apk)
+- [Sources complètes V43.10](releases/1870_v0.8.43.10_Sources.zip)
+- [Changements](releases/VERSION_0843_10.md) et [tests réellement exécutés](releases/TESTS_V43_10.md)
+- [Diagnostic réel T12 et comparaison IA](releases/DIAGNOSTIC_IA_T12_V43_10.md)
+- [Avis sur Wœrth comme objectif et la fusion](releases/PROPOSITIONS_OBJECTIFS_FUSION_V43_10.md)
+
+Redditions confirmées nommées dans le journal ; noms RI sans suffixe de QG ; effet du canon V43.8 rétabli et nouvelle animation de volée d’infanterie. Correction locale en Difficile : un assaut d’infanterie déjà accepté n’est plus abandonné pour refaire les munitions. La comparaison T12 passe d’un à deux assauts, mais le verrou de Wœrth et les limites de mobilité subsistent ; ce n’est pas une validation globale de l’IA.
+
+Les objectifs actuels sont conservés et aucune fusion n’est ajoutée. Cavalerie en village à 1,25 et autres règles conservées. 431 contrôles réussis, APK signé, aucun essai physique Android. Installer sans désinstaller.
+
+---
+
 # Prototype courant : V43.9
 
 - [Télécharger l’APK V43.9](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.9.apk)

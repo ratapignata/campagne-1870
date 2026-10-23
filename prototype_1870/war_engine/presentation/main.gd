@@ -79,13 +79,10 @@ var hq_seen: Dictionary={}
 var pending_hq_notice=""
 func unit_heading(n: int) -> String:
 	var u=engine.state.units[n];var title=t(str(u.name_key)+"_short")
-	if int(u.side)==int(engine.state.human_side) and not engine.artillery(n) and not engine.headquarters(n):
-		var leader=engine.unit_index(str(u.get("hq_id","")))
-		if leader>=0:title=title.replace(" · Prusse","")+" · "+t(str(engine.state.units[leader].name_key)+"_short")
 	var fs=21
 	while fs>14 and BODY.get_string_size(title,HORIZONTAL_ALIGNMENT_LEFT,-1,fs).x>unit_label.size.x:fs-=1
 	unit_label.add_theme_font_size_override("font_size",fs)
-	unit_label.tooltip_text=title
+	unit_label.tooltip_text=t(str(u.name_key))
 	return title
 func t(key: String) -> String:
 	if engine!=null and engine.river_links.is_empty():
@@ -749,6 +746,31 @@ func hq_arrival_lines(overdue_only: bool=false) -> Array:
 		if overdue_only and not overdue:continue
 		lines.append(t("hq_arrival_delayed" if overdue else "hq_arrival_scheduled")%[t(u.name_key),due,int(u.cell[0]),int(u.cell[1])])
 	return lines
+func surrender_journal_lines() -> Array:
+	var side=int(engine.state.human_side);var found={};var records=[]
+	for event in engine.state.get("support_events",[]):
+		if event.kind=="surrender":records.append(event)
+	for event in engine.state.get("battle_history",[]):
+		if event.kind=="surrender":records.append(event)
+	var lines=[]
+	for event in records:
+		var id=str(event.unit)
+		if found.has(id):continue
+		var n=engine.unit_index(id)
+		if n<0:continue
+		var name=""
+		if int(event.side)==side or not engine.fog_enabled() or engine.state.finished:name=str(engine.state.units[n].name_key)
+		elif event.get("known_names",{}) is Dictionary:name=str(event.get("known_names",{}).get(str(side),""))
+		if name.is_empty():
+			for combat in engine.state.events:
+				if int(combat.turn)!=int(event.turn):continue
+				var slot=1 if int(combat.target)==n and int(combat.prisoners)>0 else 0 if int(combat.shooter)==n and int(combat.attacker_prisoners)>0 else -1
+				if slot>=0:name=str(combat.get("fog_names",{}).get(str(side),["fog_enemy_generic","fog_enemy_generic"])[slot]);break
+		if name.is_empty():continue
+		found[id]=true
+		lines.append("Tour %d — %s : %s se rend (%d prisonniers)."%[int(event.turn),camp(int(event.side)),t(name),int(event.prisoners)])
+	return lines
+
 func show_journal():
 	var box=modal_base(1040,630);label(box,t("journal"),30,18,980,42,27,GOLD,true)
 	var content=t("journal_empty")
@@ -759,8 +781,10 @@ func show_journal():
 	var french_total=str(engine.losses(0)) if exact_totals or own_side==0 else "?"
 	var german_total=str(engine.losses(1)) if exact_totals or own_side==1 else "?"
 	var cumulative_header="Tour %d — Pertes cumulées : %s %s | %s %s" % [int(engine.state.turn),camp(0),french_total,camp(1),german_total]
-	var arrivals=hq_arrival_lines()
 	if not exact_totals:cumulative_header+=" (pertes adverses non confirmées)"
+	var capitulations=surrender_journal_lines()
+	cumulative_header+="\n\nRedditions confirmées"+"\n"+("\n".join(capitulations) if not capitulations.is_empty() else "Aucune reddition confirmée.")
+	var arrivals=hq_arrival_lines()
 	if not arrivals.is_empty():cumulative_header+="\n\n"+"\n".join(arrivals)
 	if not engine.state.events.is_empty():
 		content=""
@@ -776,7 +800,7 @@ func show_journal():
 			content+="\n\n"
 
 	for event in engine.state.get("support_events",[]):
-		if int(event.side)!=int(engine.state.human_side):continue
+		if event.kind=="surrender" or int(event.side)!=int(engine.state.human_side):continue
 		content+="\n"+t("support_journal_turn")%int(event.turn)+" · "+(t("support_surrender_notice")%[t(event.name_key),int(event.prisoners)] if event.kind=="surrender" else t("support_cut_notice")%t(event.name_key))
 	if active_scenario() in ["v43","v42_experimental","v42_lot8"]:content=("V43 — variante B expérimentale" if active_scenario()=="v43" else "V42 expérimentale")+" — Frœschwiller : 3 points ; Elsasshausen : 2 ; Niederwald : 1. Score final : contrôle 60 %, durée 20 %, pertes 20 %. Formations et renforts non validés historiquement."+"\n\n"+content
 	elif engine.objective_definitions().size()>1:content=t("scenario_help")+"\n\n"+content

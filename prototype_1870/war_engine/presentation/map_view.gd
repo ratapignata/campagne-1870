@@ -250,9 +250,36 @@ func animate_crossing(n: int):
 	crossing_unit=n;crossing_cell=engine.unit_cell(engine.state.units[n]);crossing_ttl=0.65
 	set_process(true);queue_redraw()
 func projectile_ink(is_cannon: bool) -> Color:
-	return Color("101214") if is_cannon else Color(1.0,0.81,0.40,0.9)
+	return Color("252a30") if is_cannon else Color("d8ddd9")
+func rifle_volley(origin: Vector2,dest: Vector2,progress: float):
+	var direction=(dest-origin).normalized()
+	if direction.length_squared()<0.01:return
+	var side=Vector2(-direction.y,direction.x)
+	for k in range(3):
+		var phase=progress-float(k)*0.08
+		if phase<0.0:continue
+		var muzzle=origin+direction*19.0*zoom+side*float(k-1)*6.0*zoom
+		if phase<0.14:
+			var fade=1.0-phase/0.14
+			draw_line(muzzle,muzzle+direction*13.0*zoom,Color(1.0,0.83,0.4,fade),maxf(1,4.0*zoom*fade),true)
+			draw_circle(muzzle,3.0*zoom*fade,Color(1.0,0.96,0.75,fade))
+		if phase<0.75:
+			for puff in range(3):
+				var drift=direction*(float(puff)*4+phase*9)+side*float(k-1)*2+Vector2(0,-phase*18)
+				draw_circle(muzzle+drift*zoom,(3+float(puff)*1.5+phase*6)*zoom,Color(0.85,0.85,0.79,0.45*(1-phase/0.75)))
+		if phase>=0.05 and phase<0.34:
+			var t=(phase-0.05)/0.29;var endpoint=dest+side*float(k-1)*3.0*zoom
+			var head=muzzle.lerp(endpoint,t);var tail=muzzle.lerp(endpoint,maxf(0,t-0.035))
+			draw_line(tail,head,projectile_ink(false),maxf(1,1.3*zoom),true)
+	if progress>=0.38:
+		var phase=(progress-0.38)/0.62
+		for k in range(3):
+			var impact=dest+side*float(k-1)*5.0*zoom+Vector2(0,-phase*10)*zoom
+			draw_circle(impact,(2.0+phase*5.0)*zoom,Color(0.49,0.42,0.31,0.65*(1-phase)))
+
 func shot_effect(origin: Vector2,dest: Vector2,progress: float,is_cannon: bool):
 	if progress<0.0 or progress>1.0:return
+	if not is_cannon:rifle_volley(origin,dest,progress);return
 	var direction=(dest-origin).normalized()
 	if direction.length_squared()<0.01:return
 	var side=Vector2(-direction.y,direction.x)
@@ -278,12 +305,8 @@ func shot_effect(origin: Vector2,dest: Vector2,progress: float,is_cannon: bool):
 	if progress>=0.12 and progress<0.63:
 		var travel=(progress-0.12)/0.51
 		var tracer=muzzle.lerp(dest,travel)
-		if is_cannon:
-			var radius=maxf(2.2,4.5*zoom)
-			draw_line(tracer-direction*12.0*zoom,tracer,Color(0.06,0.07,0.08,0.6),maxf(1.0,2.0*zoom),true)
-			draw_circle(tracer,radius+maxf(0.65,0.65*zoom),Color("b1b7b8"))
-			draw_circle(tracer,radius,projectile_ink(true))
-		else:draw_circle(tracer,2.8*zoom,projectile_ink(false))
+		if is_cannon:draw_circle(tracer,4.5*zoom+maxf(0.8,0.8*zoom),Color("e6e1d4"))
+		draw_circle(tracer,(4.5 if is_cannon else 2.8)*zoom,projectile_ink(is_cannon))
 	if progress>=0.48:
 		var phase=(progress-0.48)/0.52
 		var fade=1.0-phase

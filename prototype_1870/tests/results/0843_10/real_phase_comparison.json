@@ -1,0 +1,128 @@
+{
+  "reference": {
+    "checks": 114,
+    "failures": 0,
+    "elapsed_ms": 158026,
+    "counts": {
+      "assault": 1,
+      "end": 1,
+      "entrench": 2,
+      "fire": 26,
+      "formation": 4,
+      "move": 19,
+      "rest": 4
+    },
+    "unused_ap_quarters": 322,
+    "moved_units": 13,
+    "inactive_units": 15,
+    "objectives": {
+      "elsasshausen": 0,
+      "froeschwiller": 0,
+      "niederwald": 0
+    },
+    "losses_during_phase": [
+      937,
+      200
+    ],
+    "woerth_defender": {
+      "strength": 759,
+      "cell": [
+        13,
+        10
+      ],
+      "morale": "shaken"
+    },
+    "exploited_weak_defender": {
+      "strength": 353,
+      "cell": [
+        17,
+        8
+      ],
+      "morale": "stable"
+    }
+  },
+  "discarded_fire_cap": {
+    "checks": 112,
+    "failures": 0,
+    "elapsed_ms": 153780,
+    "counts": {
+      "assault": 1,
+      "end": 1,
+      "entrench": 2,
+      "fire": 24,
+      "formation": 4,
+      "move": 19,
+      "rest": 5
+    },
+    "unused_ap_quarters": 338,
+    "moved_units": 13,
+    "inactive_units": 15,
+    "objectives": {
+      "elsasshausen": 0,
+      "froeschwiller": 0,
+      "niederwald": 0
+    },
+    "losses_during_phase": [
+      916,
+      208
+    ],
+    "woerth_defender": {
+      "strength": 782,
+      "cell": [
+        13,
+        10
+      ],
+      "morale": "shaken"
+    },
+    "exploited_weak_defender": {
+      "strength": 353,
+      "cell": [
+        17,
+        8
+      ],
+      "morale": "stable"
+    }
+  },
+  "delivered_assault_priority": {
+    "checks": 100,
+    "failures": 0,
+    "elapsed_ms": 143218,
+    "counts": {
+      "assault": 2,
+      "end": 1,
+      "entrench": 2,
+      "fire": 25,
+      "formation": 3,
+      "move": 13,
+      "rest": 4
+    },
+    "unused_ap_quarters": 356,
+    "moved_units": 9,
+    "inactive_units": 17,
+    "objectives": {
+      "elsasshausen": 0,
+      "froeschwiller": 0,
+      "niederwald": 0
+    },
+    "losses_during_phase": [
+      1010,
+      235
+    ],
+    "woerth_defender": {
+      "strength": 760,
+      "cell": [
+        13,
+        10
+      ],
+      "morale": "shaken"
+    },
+    "exploited_weak_defender": {
+      "strength": 220,
+      "cell": [
+        18,
+        7
+      ],
+      "morale": "shaken"
+    }
+  }
+}
