@@ -16,4 +16,6 @@ func _draw():
    var origin=area.position+Vector2(12,46);var dest=area.position+Vector2(360,46)
    shot_effect(origin,dest,phase,cannon_mode)
    var muzzle=origin+Vector2(19*zoom,0);var center=muzzle.lerp(dest,(phase-0.12)/0.51)
-   if phase>=0.12 and phase<0.63:samples.append({"center":center,"radius":4.5*zoom,"terrain":entry.name,"zoom":zoom})
+   if cannon_mode and phase>=0.12 and phase<0.63:samples.append({"center":center,"radius":4.5*zoom,"terrain":entry.name,"zoom":zoom})
+
+   if not cannon_mode and is_equal_approx(phase,0.20):samples.append({"center":muzzle.lerp(dest,(phase-0.08-0.05)/0.29),"terrain":entry.name,"zoom":zoom})

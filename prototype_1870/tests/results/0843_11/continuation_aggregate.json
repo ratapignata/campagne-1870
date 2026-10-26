@@ -1,0 +1,169 @@
+{
+  "reference": {
+    "checks": 400,
+    "failures": 0,
+    "elapsed_ms": 345778,
+    "phases": [
+      {
+        "counts": {
+          "end": 1,
+          "entrench": 15,
+          "fire": 31,
+          "rally": 3,
+          "rest": 1
+        },
+        "elapsed_ms": 17122,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "side": 0,
+        "turn": 13,
+        "woerth_occupant": 6
+      },
+      {
+        "counts": {
+          "assault": 1,
+          "end": 1,
+          "entrench": 2,
+          "fire": 25,
+          "formation": 4,
+          "move": 16,
+          "rest": 3
+        },
+        "elapsed_ms": 159508,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "side": 1,
+        "turn": 13,
+        "woerth_occupant": 6
+      },
+      {
+        "counts": {
+          "end": 1,
+          "entrench": 3,
+          "fire": 27,
+          "rally": 1,
+          "rest": 3
+        },
+        "elapsed_ms": 11714,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "side": 0,
+        "turn": 14,
+        "woerth_occupant": -1
+      },
+      {
+        "counts": {
+          "end": 1,
+          "entrench": 2,
+          "fire": 22,
+          "formation": 4,
+          "move": 27,
+          "rally": 1,
+          "rest": 5
+        },
+        "elapsed_ms": 157432,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "side": 1,
+        "turn": 14,
+        "woerth_occupant": 91
+      }
+    ]
+  },
+  "new": {
+    "checks": 458,
+    "failures": 0,
+    "elapsed_ms": 415011,
+    "phases": [
+      {
+        "counts": {
+          "end": 1,
+          "entrench": 15,
+          "fire": 31,
+          "rally": 1,
+          "rest": 1
+        },
+        "elapsed_ms": 16692,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "side": 0,
+        "turn": 13,
+        "woerth_occupant": 6
+      },
+      {
+        "counts": {
+          "deploy": 6,
+          "end": 1,
+          "entrench": 3,
+          "fire": 21,
+          "formation": 5,
+          "move": 30,
+          "rally": 1,
+          "rest": 3
+        },
+        "elapsed_ms": 190384,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "side": 1,
+        "turn": 13,
+        "woerth_occupant": 91
+      },
+      {
+        "counts": {
+          "end": 1,
+          "entrench": 2,
+          "fire": 32,
+          "rally": 1
+        },
+        "elapsed_ms": 14823,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "side": 0,
+        "turn": 14,
+        "woerth_occupant": 91
+      },
+      {
+        "counts": {
+          "assault": 2,
+          "end": 1,
+          "entrench": 2,
+          "fire": 28,
+          "formation": 4,
+          "limber": 1,
+          "move": 33,
+          "rest": 3
+        },
+        "elapsed_ms": 193111,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "side": 1,
+        "turn": 14,
+        "woerth_occupant": 91
+      }
+    ]
+  }
+}

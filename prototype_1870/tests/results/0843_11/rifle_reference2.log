@@ -1,0 +1,46 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+WARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.
+     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)
+OpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)
+
+FAIL visible dark projectile outline on plain z=0.42
+FAIL visible dark projectile outline on plain z=0.72
+FAIL visible dark projectile outline on plain z=1.0
+FAIL visible dark projectile outline on plain z=2.3
+FAIL visible dark projectile outline on forest z=0.42
+FAIL visible dark projectile outline on forest z=0.72
+FAIL visible dark projectile outline on forest z=1.0
+FAIL visible dark projectile outline on forest z=2.3
+FAIL visible dark projectile outline on hill z=0.42
+FAIL visible dark projectile outline on hill z=0.72
+FAIL visible dark projectile outline on hill z=1.0
+FAIL visible dark projectile outline on hill z=2.3
+FAIL visible dark projectile outline on road z=0.42
+FAIL visible dark projectile outline on road z=0.72
+FAIL visible dark projectile outline on road z=1.0
+FAIL visible dark projectile outline on road z=2.3
+FAIL visible dark projectile outline on village z=0.42
+FAIL visible dark projectile outline on village z=0.72
+FAIL visible dark projectile outline on village z=1.0
+FAIL visible dark projectile outline on village z=2.3
+FAIL visible dark projectile outline on water z=0.42
+FAIL visible dark projectile outline on water z=0.72
+FAIL visible dark projectile outline on water z=1.0
+FAIL visible dark projectile outline on water z=2.3
+FAIL visible dark projectile outline on bridge z=0.42
+FAIL visible dark projectile outline on bridge z=0.72
+FAIL visible dark projectile outline on bridge z=1.0
+FAIL visible dark projectile outline on bridge z=2.3
+FAIL visible dark projectile outline on meadow z=0.42
+FAIL visible dark projectile outline on meadow z=0.72
+FAIL visible dark projectile outline on meadow z=1.0
+FAIL visible dark projectile outline on meadow z=2.3
+FAIL visible dark projectile outline on cultivated z=0.42
+FAIL visible dark projectile outline on cultivated z=0.72
+FAIL visible dark projectile outline on cultivated z=1.0
+FAIL visible dark projectile outline on cultivated z=2.3
+FAIL visible dark projectile outline on offmap z=0.42
+FAIL visible dark projectile outline on offmap z=0.72
+FAIL visible dark projectile outline on offmap z=1.0
+FAIL visible dark projectile outline on offmap z=2.3
+RIFLE RENDER 14/54

@@ -19,5 +19,13 @@ func run():
   var picture=root.get_texture().get_image();hashes.append(picture.get_data().hex_encode().sha256_text())
   check(picture.save_png("user://rifle_phase_%02d.png"%int(phase*100))==OK,"rifle phase screenshot")
   check(picture.get_width()==1600 and picture.get_height()==1200,"rifle render dimensions")
+  for sample in board.samples:
+   var dark=0;var center=sample.center.round()
+   var reach=maxi(3,ceili(3.0*float(sample.zoom)))
+   for dx in range(-reach,reach+1):
+    for dy in range(-reach,reach+1):
+     var pixel=picture.get_pixel(int(center.x)+dx,int(center.y)+dy)
+     if maxf(pixel.r,maxf(pixel.g,pixel.b))<0.3:dark+=1
+   check(dark>0,"visible dark projectile outline on "+sample.terrain+" z="+str(sample.zoom))
  check(hashes[0]!=hashes[2] and hashes[2]!=hashes[4],"distinct firing, flight and impact frames")
  board.queue_free();await process_frame;print("RIFLE RENDER ",checks-failures,"/",checks);quit(1 if failures else 0)

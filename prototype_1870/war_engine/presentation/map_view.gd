@@ -249,6 +249,9 @@ func animate_crossing(n: int):
 	if not engine.alive(n) or not engine.visible_to(int(engine.state.human_side),n):return
 	crossing_unit=n;crossing_cell=engine.unit_cell(engine.state.units[n]);crossing_ttl=0.65
 	set_process(true);queue_redraw()
+func settlement_label_offset(name: String) -> Vector2:
+	# Keep Spachbach's name on its village's bank, below the river-facing counter.
+	return Vector2(0,43) if name=="Spachbach" else Vector2(0,-38)
 func projectile_ink(is_cannon: bool) -> Color:
 	return Color("252a30") if is_cannon else Color("d8ddd9")
 func rifle_volley(origin: Vector2,dest: Vector2,progress: float):
@@ -269,8 +272,11 @@ func rifle_volley(origin: Vector2,dest: Vector2,progress: float):
 				draw_circle(muzzle+drift*zoom,(3+float(puff)*1.5+phase*6)*zoom,Color(0.85,0.85,0.79,0.45*(1-phase/0.75)))
 		if phase>=0.05 and phase<0.34:
 			var t=(phase-0.05)/0.29;var endpoint=dest+side*float(k-1)*3.0*zoom
-			var head=muzzle.lerp(endpoint,t);var tail=muzzle.lerp(endpoint,maxf(0,t-0.035))
-			draw_line(tail,head,projectile_ink(false),maxf(1,1.3*zoom),true)
+			var head=muzzle.lerp(endpoint,t);var tail=muzzle.lerp(endpoint,maxf(0,t-0.07))
+			draw_line(tail,head,Color("243033"),maxf(3.0,4.0*zoom),true)
+			draw_line(tail,head,projectile_ink(false),maxf(1.8,2.2*zoom),true)
+			draw_circle(head,maxf(2.0,2.8*zoom),Color("243033"))
+			draw_circle(head,maxf(1.1,1.6*zoom),projectile_ink(false))
 	if progress>=0.38:
 		var phase=(progress-0.38)/0.62
 		for k in range(3):
@@ -399,7 +405,7 @@ func _draw():
 				draw_line(middle+Vector2(-10,10)*zoom,middle+Vector2(10,-10)*zoom,Color("963c31"),3*zoom,true)
 	draw_sauer()
 	for location in engine.pack.map.get("labels",[]):
-		var c=location.cell;var anchor=screen(engine.index(Vector2i(int(c[0]),int(c[1]))));var p=anchor+Vector2(0,-38)*zoom
+		var c=location.cell;var anchor=screen(engine.index(Vector2i(int(c[0]),int(c[1]))));var p=anchor+settlement_label_offset(str(location.text))*zoom
 		var fs=maxi(11,int(16*zoom));var text_size=font.get_string_size(location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs)
 		if location.has("arrow_cell"):
 			if anchor.x< -text_size.x or anchor.x>size.x+text_size.x or anchor.y< -80 or anchor.y>size.y+100:continue

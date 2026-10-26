@@ -17,6 +17,7 @@ var mobile_threats: Dictionary={}
 var hard_planning=false
 var objective_pressure: Dictionary={}
 var enemy_screen: Dictionary={}
+var bridge_targets: Dictionary={}
 func choose(view: Dictionary) -> Dictionary:
 	var difficulty=str(view.state.get("ai_difficulty","legacy"))
 	if difficulty=="legacy" or not profiles.has(difficulty):return Legacy.new().choose(view)
@@ -31,6 +32,7 @@ func choose(view: Dictionary) -> Dictionary:
 	var continuation=continue_relocation(e)
 	if not continuation.is_empty():return continuation
 	offensive=int(e.pack.ai.get("attacking_side",-1))==int(e.state.side)
+	bridge_targets=bridgehead_targets(e) if hard_planning and offensive else {}
 	urgency=1.0+0.6*float(e.state.turn)/maxf(1,float(e.pack.rules.turns))
 	if hard_planning and offensive and e.controlled_value(int(e.state.side))<e.objective_value_total()/2:
 		urgency+=0.25+0.35*float(e.state.turn)/maxf(1,float(e.pack.rules.turns))
@@ -63,7 +65,7 @@ func choose(view: Dictionary) -> Dictionary:
 				score+=float(settings.get("focus_fire",0))*friends_near(e,n,e.unit_cell(e.state.units[j]))
 				if offensive:
 					score+=target_priority(e,j)
-					if e.artillery(n):score+=(55.0 if hard_planning else 35.0)+preparation_value(e,n,j)+artillery_target_value(e,n,j)
+					if e.artillery(n):score+=(55.0 if hard_planning else 35.0)+preparation_value(e,n,j)+artillery_target_value(e,n,j)+float(bridge_targets.get(j,0.0))
 				elif hard_planning and e.artillery(n):score+=preparation_value(e,n,j)
 				offer({"kind":"fire","unit":u.id,"target":e.state.units[j].id},score)
 			if e.assault_status(n,j)=="ok":
@@ -81,7 +83,7 @@ func choose(view: Dictionary) -> Dictionary:
 						ranked=ranked.filter(func(item):return item.action.kind!="rest" or str(item.action.get("unit",""))!=charging_unit)
 					var score=float(settings.assault)+(30.0*urgency if offensive else 0.0)+minf(2.0,ratio)*float(settings.ratio_value)-response*float(settings.return_risk)
 					if e.unit_cell(e.state.units[j])==goal:score+=float(settings.objective_target)
-					if offensive:score+=target_priority(e,j)
+					if offensive:score+=target_priority(e,j)+float(bridge_targets.get(j,0.0))
 					offer({"kind":"assault","unit":u.id,"target":e.state.units[j].id},score)
 		if e.artillery(n) and not u.deployed and (int(u.ap)>=int(e.weapon(n).deployment_ap)+int(e.weapon(n).ap) or (hard_planning or offensive) and int(u.ap)>=int(e.weapon(n).deployment_ap)):
 			u.deployed=true;u.ap-=int(e.weapon(n).deployment_ap)
@@ -101,9 +103,10 @@ func choose(view: Dictionary) -> Dictionary:
 		var original_ap=int(u.ap);var original_deployed=bool(u.deployed)
 		var current_threat=threat(e,n);var current_cover=float(e.pack.terrains[e.pack.map.tiles[start]].fire_received)
 		var current_fire=best_fire(e,n,true)
+		var current_bridge=bridge_fire(e,n) if e.artillery(n) else 0.0
 		# A battery with a useful lane waits for its next shot instead of using its
 		# remaining AP to limber and drift toward the objective like infantry.
-		if offensive and original_deployed and current_fire>0 and e.enemy_distance(n,start)>1 and current_threat<maxf(100,float(u.strength)*0.35):continue
+		if offensive and original_deployed and current_fire>0 and e.enemy_distance(n,start)>1 and current_threat<maxf(100,float(u.strength)*0.35) and (bridge_targets.is_empty() or current_bridge>0):continue
 		if original_deployed:
 			if int(u.ap)<=int(e.weapon(n).deployment_ap):continue
 			u.deployed=false;u.ap-=int(e.weapon(n).deployment_ap)
@@ -118,9 +121,11 @@ func choose(view: Dictionary) -> Dictionary:
 			if dest==start or e.unit_at(dest)>=0:continue
 			var progress=(float(field.get(start,10000))-float(field.get(dest,10000)))/4.0
 			var c=e.cell(dest);e.set_planning_cell(n,[c.x,c.y]);u.ap=move_ap-int(reachable.costs[dest])
+			var preserves_links=true
 			var score=progress*float(settings.progress)*(2.8*urgency if offensive and not e.headquarters(n) else 1.0)
 			if not networks.is_empty():
 				var links=Support.strict_report(e,n,networks,dest)
+				preserves_links=links.command_ok and links.supply_ok
 				var before=old_link_count;var after=int(links.supply_ok)+int(links.command_ok)
 				var link_priority=float(settings.get("link_safety",0))
 				# A supported advance may temporarily outrun command while keeping supply.
@@ -161,6 +166,9 @@ func choose(view: Dictionary) -> Dictionary:
 				# shorter move would leave AP for a real shot/assault.
 				if not e.artillery(n) and int(u.ap)<mini(int(e.weapon(n).ap),e.assault_cost(n)) and e.enemy_distance(n,dest)<=2:score-=25.0
 			var danger=threat(e,n)
+			if hard_planning and offensive and e.artillery(n) and current_bridge<=0 and preserves_links and e.enemy_distance(n,dest)>1 and danger<=current_threat:
+				var next_bridge=bridge_fire(e,n)
+				if next_bridge>0:score+=2.0*float(settings.capture)+next_bridge
 			if offensive and e.artillery(n):score-=maxf(0,3-e.enemy_distance(n,dest))*45.0
 			score+=(current_threat-danger)*float(settings.threat)*(0.28 if hard_planning and offensive and not e.headquarters(n) and not e.artillery(n) else 0.35 if offensive and not e.headquarters(n) else 1.0)
 			if e.enemy_distance(n,dest)==1:score-=float(settings.adjacent)*(2 if e.artillery(n) else 0.5 if offensive else 1)
@@ -209,6 +217,38 @@ func continue_relocation(e) -> Dictionary:
 	while reach.parents.has(path[0]):path.push_front(reach.parents[path[0]])
 	if path.size()<2:return {}
 	return {"kind":"move","unit":u.id,"path":path}
+
+# Public crossings and observed defenders only; no live/hidden state is read.
+func bridgehead_targets(e) -> Dictionary:
+	var result={}
+	for edge in e.pack.map.get("river_edges",[]):
+		if not bool(edge.get("bridge",false)) and not (edge.has("bridge_from_turn") and int(e.state.turn)>=int(edge.bridge_from_turn)):continue
+		var a=int(edge.a);var b=int(edge.b)
+		if e.open_river(a,b):continue
+		for j in range(e.state.units.size()):
+			var foe=e.state.units[j]
+			if int(foe.side)==int(e.state.side) or foe.morale=="routed":continue
+			var target=e.unit_cell(foe)
+			if mini(e.distance(target,a),e.distance(target,b))>1:continue
+			var waiting=0;var river_screen=false
+			for k in range(e.state.units.size()):
+				var ally=e.state.units[k]
+				if int(ally.side)!=int(e.state.side) or e.artillery(k) or e.cavalry(k) or e.headquarters(k) or ally.morale=="routed":continue
+				var pos=e.unit_cell(ally)
+				if e.distance(pos,target)<=3:waiting+=1
+				if e.distance(pos,target)==1 and e.open_river(pos,target):river_screen=true
+			if waiting>=2 and river_screen:result[j]=float(settings.capture)+minf(3,waiting)*float(settings.support)
+	return result
+
+func bridge_fire(e,n: int) -> float:
+	if bridge_targets.is_empty():return 0.0
+	var u=e.state.units[n];var ap=int(u.ap);var done=bool(u.done);var deployed=bool(u.deployed)
+	u.ap=e.max_ap(n);u.done=false;u.deployed=true
+	var best=0.0
+	for j in bridge_targets:
+		if e.fire_status(n,int(j))=="ok":best=maxf(best,float(bridge_targets[j]))
+	u.ap=ap;u.done=done;u.deployed=deployed
+	return best
 
 func target_priority(e,j: int) -> float:
 	var pos=e.unit_cell(e.state.units[j]);var value=0.0
