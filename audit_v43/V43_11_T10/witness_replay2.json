@@ -1,0 +1,518 @@
+{
+	"attacks_on_garrison": [
+		{
+			"attacker": "art_pr_Schmidt1",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 2000,
+			"turn": 1.0
+		},
+		{
+			"attacker": "art_pr_Schmidt1",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1950,
+			"turn": 2.0
+		},
+		{
+			"attacker": "art_pr_Schmidt1",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1918,
+			"turn": 2.0
+		},
+		{
+			"attacker": "art_pr_Schmidt0",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1887,
+			"turn": 2.0
+		},
+		{
+			"attacker": "art_pr_Schmidt0",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1854,
+			"turn": 2.0
+		},
+		{
+			"attacker": "art_pr_Sandrart1",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1822,
+			"turn": 2.0
+		},
+		{
+			"attacker": "pru_41",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1745,
+			"turn": 2.0
+		},
+		{
+			"attacker": "pru_41",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1720,
+			"turn": 2.0
+		},
+		{
+			"attacker": "pru_37",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1694,
+			"turn": 2.0
+		},
+		{
+			"attacker": "pru_37",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1668,
+			"turn": 2.0
+		},
+		{
+			"attacker": "pru_39",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1641,
+			"turn": 2.0
+		},
+		{
+			"attacker": "pru_39",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1596,
+			"turn": 2.0
+		},
+		{
+			"attacker": "art_pr_Sandrart1",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1529,
+			"turn": 3.0
+		},
+		{
+			"attacker": "art_pr_Sandrart1",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1452,
+			"turn": 3.0
+		},
+		{
+			"attacker": "art_pr_Schmidt1",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1381,
+			"turn": 3.0
+		},
+		{
+			"attacker": "art_pr_Schmidt1",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1352,
+			"turn": 3.0
+		},
+		{
+			"attacker": "reserve_art_11",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1323,
+			"turn": 3.0
+		},
+		{
+			"attacker": "pru_42",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1254,
+			"turn": 3.0
+		},
+		{
+			"attacker": "pru_39",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1191,
+			"turn": 3.0
+		},
+		{
+			"attacker": "pru_39",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1144,
+			"turn": 3.0
+		},
+		{
+			"attacker": "pru_37",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1091,
+			"turn": 3.0
+		},
+		{
+			"attacker": "pru_37",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1065,
+			"turn": 3.0
+		},
+		{
+			"attacker": "art_pr_Schmidt0",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1040,
+			"turn": 3.0
+		},
+		{
+			"attacker": "art_pr_Schmidt0",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1012,
+			"turn": 3.0
+		},
+		{
+			"attacker": "pru_41",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 984,
+			"turn": 3.0
+		},
+		{
+			"attacker": "pru_41",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 958,
+			"turn": 3.0
+		},
+		{
+			"attacker": "art_pr_Sandrart1",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 916,
+			"turn": 4.0
+		},
+		{
+			"attacker": "art_pr_Sandrart1",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 841,
+			"turn": 4.0
+		},
+		{
+			"attacker": "reserve_art_11",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 678,
+			"turn": 4.0
+		},
+		{
+			"attacker": "art_pr_Sandrart0",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 554,
+			"turn": 4.0
+		},
+		{
+			"attacker": "art_pr_Schmidt1",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 460,
+			"turn": 4.0
+		},
+		{
+			"attacker": "art_pr_Schmidt1",
+			"defender": "fr_9",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 374,
+			"turn": 4.0
+		},
+		{
+			"attacker": "reserve_art_10",
+			"defender": "fr_13",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1247,
+			"turn": 6.0
+		},
+		{
+			"attacker": "reserve_art_10",
+			"defender": "fr_13",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1178,
+			"turn": 6.0
+		},
+		{
+			"attacker": "reserve_art_11",
+			"defender": "fr_13",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1114,
+			"turn": 6.0
+		},
+		{
+			"attacker": "art_pr_Sandrart1",
+			"defender": "fr_13",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 1049,
+			"turn": 6.0
+		},
+		{
+			"attacker": "art_pr_Sandrart1",
+			"defender": "fr_13",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 996,
+			"turn": 6.0
+		},
+		{
+			"attacker": "reserve_art_11",
+			"defender": "fr_13",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 949,
+			"turn": 6.0
+		},
+		{
+			"attacker": "art_pr_Schmidt1",
+			"defender": "fr_13",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 904,
+			"turn": 6.0
+		},
+		{
+			"attacker": "art_pr_Schmidt1",
+			"defender": "fr_13",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 884,
+			"turn": 6.0
+		},
+		{
+			"attacker": "art_pr_Schachtmeyer1",
+			"defender": "fr_13",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 863,
+			"turn": 6.0
+		},
+		{
+			"attacker": "art_pr_Schachtmeyer0",
+			"defender": "fr_13",
+			"kind": "fire",
+			"side": 1.0,
+			"strength_before": 811,
+			"turn": 6.0
+		}
+	],
+	"checks": 1243,
+	"failures": 0,
+	"prussian_crossings": [
+		{
+			"actual_endpoint": 344,
+			"endpoint_is_woerth": false,
+			"garrison_before": -1,
+			"path": [
+				312.0,
+				313.0,
+				344.0
+			],
+			"turn": 5.0,
+			"unit": "pru_43"
+		}
+	],
+	"transitions": [
+		{
+			"occupant": "empty",
+			"occupant_side": -1,
+			"side_phase": 0.0,
+			"trigger": {
+				"kind": "move",
+				"path": [
+					162.0,
+					192.0,
+					222.0,
+					223.0,
+					253.0,
+					284.0,
+					314.0,
+					344.0,
+					313.0
+				],
+				"unit": "fr_9"
+			},
+			"turn": 1.0
+		},
+		{
+			"occupant": "fr_9",
+			"occupant_side": 0,
+			"side_phase": 0.0,
+			"trigger": {
+				"kind": "move",
+				"path": [
+					314.0,
+					344.0,
+					313.0
+				],
+				"unit": "fr_9"
+			},
+			"turn": 1.0
+		},
+		{
+			"occupant": "empty",
+			"occupant_side": -1,
+			"side_phase": 1.0,
+			"trigger": {
+				"kind": "fire",
+				"target": "fr_9",
+				"unit": "art_pr_Sandrart1"
+			},
+			"turn": 4.0
+		},
+		{
+			"occupant": "fr_9",
+			"occupant_side": 0,
+			"side_phase": 1.0,
+			"trigger": {
+				"kind": "fire",
+				"target": "fr_9",
+				"unit": "reserve_art_11"
+			},
+			"turn": 4.0
+		},
+		{
+			"occupant": "empty",
+			"occupant_side": -1,
+			"side_phase": 1.0,
+			"trigger": {
+				"kind": "fire",
+				"target": "fr_9",
+				"unit": "reserve_art_11"
+			},
+			"turn": 4.0
+		},
+		{
+			"occupant": "fr_9",
+			"occupant_side": 0,
+			"side_phase": 1.0,
+			"trigger": {
+				"kind": "fire",
+				"target": "fr_9",
+				"unit": "art_pr_Sandrart0"
+			},
+			"turn": 4.0
+		},
+		{
+			"occupant": "empty",
+			"occupant_side": -1,
+			"side_phase": 1.0,
+			"trigger": {
+				"kind": "fire",
+				"target": "fr_9",
+				"unit": "art_pr_Sandrart0"
+			},
+			"turn": 4.0
+		},
+		{
+			"occupant": "fr_9",
+			"occupant_side": 0,
+			"side_phase": 1.0,
+			"trigger": {
+				"kind": "fire",
+				"target": "fr_9",
+				"unit": "reserve_art_10"
+			},
+			"turn": 4.0
+		},
+		{
+			"occupant": "empty",
+			"occupant_side": -1,
+			"side_phase": 1.0,
+			"trigger": {
+				"kind": "fire",
+				"target": "fr_9",
+				"unit": "art_pr_Schmidt1"
+			},
+			"turn": 4.0
+		},
+		{
+			"occupant": "fr_9",
+			"occupant_side": 0,
+			"side_phase": 1.0,
+			"trigger": {
+				"kind": "fire",
+				"target": "fr_9",
+				"unit": "pru_52"
+			},
+			"turn": 4.0
+		},
+		{
+			"occupant": "empty",
+			"occupant_side": -1,
+			"side_phase": 1.0,
+			"trigger": {
+				"kind": "fire",
+				"target": "fr_9",
+				"unit": "art_pr_Schmidt1"
+			},
+			"turn": 4.0
+		},
+		{
+			"occupant": "fr_13",
+			"occupant_side": 0,
+			"side_phase": 0.0,
+			"trigger": {
+				"kind": "move",
+				"path": [
+					283.0,
+					313.0
+				],
+				"unit": "fr_13"
+			},
+			"turn": 6.0
+		},
+		{
+			"occupant": "empty",
+			"occupant_side": -1,
+			"side_phase": 1.0,
+			"trigger": {
+				"kind": "fire",
+				"target": "fr_13",
+				"unit": "art_pr_Schachtmeyer0"
+			},
+			"turn": 6.0
+		}
+	]
+}

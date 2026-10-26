@@ -3,6 +3,7 @@
 - [Télécharger l’APK V43.11](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.11.apk)
 - [Sources complètes V43.11](releases/1870_v0.8.43.11_Sources.zip)
 - [Changements](releases/VERSION_0843_11.md) et [tests](releases/TESTS_V43_11.md)
+- [Test depuis le début : Wœrth pris au T9 et tenu fin T10](audit_v43/V43_11_T10/RAPPORT.md)
 - [Comparaison IA Wœrth](releases/IA_WOERTH_V43_11.md) et [vérification Spachbach](releases/SPACHBACH_V43_11.md)
 
 Difficile : préparation d’artillerie des passages et repositionnement légal. Comparaison depuis T12 : Wœrth occupé au T13 contre T14, avec davantage de pertes prussiennes ; ce n’est pas une validation globale de l’équilibre. Normal inchangé. Projectiles d’infanterie plus visibles ; canon inchangé. Texte de Spachbach repositionné, village et rivière inchangés ; référence historique originale non accessible pour une nouvelle vérification indépendante.
