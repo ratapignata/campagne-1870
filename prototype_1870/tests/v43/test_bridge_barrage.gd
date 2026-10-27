@@ -32,6 +32,13 @@ func _initialize():
  e=fixture();e.state.turn=9;ai.choose(e.observation(1,[1,4]));check(not ai.bridge_targets.is_empty(),"bridge mission already active at turn 9")
  e=fixture();e.state.turn=3;ai.choose(e.observation(1,[1,4]));check(ai.bridge_targets.is_empty(),"closed bridge creates no crossing mission")
  e=fixture();view=e.observation(1,[]);check(ai.choose(view)==old.choose(view) and ai.bridge_targets.is_empty(),"hidden defenders do not affect decisions")
- e=fixture();e.state.ai_difficulty="medium";view=e.observation(1,[1,4]);check(ai.choose(view)==old.choose(view),"Normal doctrine unchanged")
+ e=fixture();e.state.ai_difficulty="medium";view=e.observation(1,[1,4]);var expected=view.duplicate(true);expected.state.ai_difficulty="hard";var former=load("res://war_engine/ai/v4311_ai.gd").new();former.profiles=profiles;check(ai.choose(view)==former.choose(expected),"Normal uses V43.11 Hard doctrine")
+
+ e=fixture();e.state.ai_difficulty="medium";view=e.observation(1,[1,4]);var normal_ai=AI.new();normal_ai.profiles=profiles;var baseline=load("res://war_engine/ai/v4311_ai.gd").new();baseline.profiles=profiles;var old_view=view.duplicate(true);old_view.state.ai_difficulty="hard"
+ var normal_order=normal_ai.choose(view);var baseline_order=baseline.choose(old_view)
+ check(normal_order==baseline_order and normal_ai.relocation==baseline.relocation,"Normal relocation identical to V43.11")
+ check(normal_order.kind=="limber" and e.toggle_deployment(3),"Normal attelage legal")
+ var restored=AI.new();restored.profiles=profiles;restored.relocation=normal_ai.relocation.duplicate(true);view=e.observation(1,[1,4]);old_view=view.duplicate(true);old_view.state.ai_difficulty="hard"
+ check(restored.choose(view)==baseline.choose(old_view),"Normal relocation resumes identically after AI restoration")
  e=fixture();e.state.side=0;view=e.observation(0,[0,2,3]);check(ai.choose(view)==old.choose(view),"French doctrine unchanged")
  print("BRIDGE BARRAGE ",checks-failures,"/",checks);quit(1 if failures else 0)

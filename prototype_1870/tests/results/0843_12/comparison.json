@@ -1,0 +1,1856 @@
+{
+  "reference_v4311_hard": {
+    "version": "V43.11",
+    "seed": 18704311,
+    "style": 0,
+    "completed_turns": 10,
+    "checks": 1959,
+    "failures": 0,
+    "first_prussian_occupation": {
+      "action": {
+        "kind": "move",
+        "path": [
+          370,
+          341,
+          372,
+          343,
+          344,
+          313
+        ],
+        "unit": "pru_52"
+      },
+      "occupant": {
+        "id": "pru_52",
+        "side": 1,
+        "strength": 554
+      },
+      "side_phase": 1,
+      "turn": 9
+    },
+    "counts": [
+      {
+        "move": 137,
+        "entrench": 44,
+        "formation": 57,
+        "end": 10,
+        "fire": 142,
+        "deploy": 5,
+        "rest": 20,
+        "rally": 3,
+        "limber": 1
+      },
+      {
+        "move": 244,
+        "deploy": 15,
+        "fire": 190,
+        "formation": 41,
+        "end": 10,
+        "entrench": 18,
+        "limber": 5,
+        "rest": 16,
+        "assault": 9,
+        "rally": 2
+      }
+    ],
+    "shots": [
+      {
+        "infantry": 124,
+        "artillery": 18
+      },
+      {
+        "artillery": 111,
+        "infantry": 79
+      }
+    ],
+    "first_objective_control_at_phase_end": {
+      "elsasshausen": {
+        "turn": 2,
+        "side_phase": 1
+      },
+      "niederwald": {
+        "turn": 6,
+        "side_phase": 1
+      },
+      "froeschwiller": {
+        "turn": 10,
+        "side_phase": 1
+      }
+    },
+    "end_turn_10": {
+      "ap_used_quarters": 545,
+      "counts": {
+        "assault": 2,
+        "deploy": 3,
+        "end": 1,
+        "entrench": 3,
+        "fire": 30,
+        "formation": 6,
+        "limber": 2,
+        "move": 25,
+        "rest": 4
+      },
+      "elapsed_ms": 198651,
+      "goals": {
+        "elsasshausen": 1,
+        "froeschwiller": 1,
+        "niederwald": 1
+      },
+      "losses": [
+        10902,
+        8855
+      ],
+      "moved_units": 23,
+      "prisoners": [
+        524,
+        213
+      ],
+      "routed": [
+        1,
+        0
+      ],
+      "side": 1,
+      "turn": 10,
+      "woerth": {
+        "id": "pru_52",
+        "side": 1,
+        "strength": 554
+      }
+    },
+    "wing_end_t10": [
+      {
+        "id": "art_pr_Gersdorff0",
+        "cell": [
+          22,
+          7
+        ],
+        "strength": 250,
+        "weapon": "krupp"
+      }
+    ],
+    "phases": [
+      {
+        "ap_used_quarters": 169,
+        "counts": {
+          "end": 1,
+          "entrench": 1,
+          "formation": 9,
+          "move": 14
+        },
+        "elapsed_ms": 14851,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "losses": [
+          0,
+          0
+        ],
+        "moved_units": 12,
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "side": 0,
+        "turn": 1,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0,
+          "strength": 2000
+        }
+      },
+      {
+        "ap_used_quarters": 248,
+        "counts": {
+          "deploy": 3,
+          "end": 1,
+          "fire": 2,
+          "formation": 5,
+          "move": 20
+        },
+        "elapsed_ms": 25384,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "losses": [
+          69,
+          0
+        ],
+        "moved_units": 16,
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "side": 1,
+        "turn": 1,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0,
+          "strength": 1966
+        }
+      },
+      {
+        "ap_used_quarters": 110,
+        "counts": {
+          "end": 1,
+          "entrench": 2,
+          "fire": 2,
+          "formation": 2,
+          "move": 7
+        },
+        "elapsed_ms": 9750,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "losses": [
+          85,
+          104
+        ],
+        "moved_units": 7,
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "side": 0,
+        "turn": 2,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0,
+          "strength": 1950
+        }
+      },
+      {
+        "ap_used_quarters": 220,
+        "counts": {
+          "deploy": 1,
+          "end": 1,
+          "entrench": 2,
+          "fire": 13,
+          "formation": 3,
+          "move": 12
+        },
+        "elapsed_ms": 28717,
+        "goals": {
+          "elsasshausen": 1,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "losses": [
+          558,
+          135
+        ],
+        "moved_units": 7,
+        "prisoners": [
+          0,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "side": 1,
+        "turn": 2,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0,
+          "strength": 1546
+        }
+      },
+      {
+        "ap_used_quarters": 419,
+        "counts": {
+          "deploy": 1,
+          "end": 1,
+          "entrench": 2,
+          "fire": 9,
+          "formation": 3,
+          "move": 26
+        },
+        "elapsed_ms": 72042,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "losses": [
+          575,
+          494
+        ],
+        "moved_units": 23,
+        "prisoners": [
+          0,
+          120
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "side": 0,
+        "turn": 3,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0,
+          "strength": 1529
+        }
+      },
+      {
+        "ap_used_quarters": 259,
+        "counts": {
+          "deploy": 1,
+          "end": 1,
+          "entrench": 2,
+          "fire": 16,
+          "move": 13
+        },
+        "elapsed_ms": 33855,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "losses": [
+          1253,
+          512
+        ],
+        "moved_units": 10,
+        "prisoners": [
+          0,
+          120
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "side": 1,
+        "turn": 3,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0,
+          "strength": 932
+        }
+      },
+      {
+        "ap_used_quarters": 295,
+        "counts": {
+          "deploy": 1,
+          "end": 1,
+          "entrench": 3,
+          "fire": 8,
+          "formation": 10,
+          "move": 12,
+          "rest": 4
+        },
+        "elapsed_ms": 71520,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "losses": [
+          1269,
+          884
+        ],
+        "moved_units": 12,
+        "prisoners": [
+          0,
+          120
+        ],
+        "routed": [
+          0,
+          1
+        ],
+        "side": 0,
+        "turn": 4,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0,
+          "strength": 916
+        }
+      },
+      {
+        "ap_used_quarters": 483,
+        "counts": {
+          "deploy": 2,
+          "end": 1,
+          "entrench": 1,
+          "fire": 10,
+          "limber": 1,
+          "move": 34,
+          "rest": 2
+        },
+        "elapsed_ms": 77548,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "losses": [
+          1832,
+          884
+        ],
+        "moved_units": 28,
+        "prisoners": [
+          0,
+          120
+        ],
+        "routed": [
+          1,
+          1
+        ],
+        "side": 1,
+        "turn": 4,
+        "woerth": {
+          "side": -1
+        }
+      },
+      {
+        "ap_used_quarters": 374,
+        "counts": {
+          "deploy": 2,
+          "end": 1,
+          "entrench": 1,
+          "fire": 19,
+          "formation": 6,
+          "move": 18
+        },
+        "elapsed_ms": 94841,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "losses": [
+          1857,
+          1640
+        ],
+        "moved_units": 16,
+        "prisoners": [
+          0,
+          213
+        ],
+        "routed": [
+          1,
+          0
+        ],
+        "side": 0,
+        "turn": 5,
+        "woerth": {
+          "side": -1
+        }
+      },
+      {
+        "ap_used_quarters": 571,
+        "counts": {
+          "end": 1,
+          "entrench": 1,
+          "fire": 17,
+          "formation": 4,
+          "move": 39
+        },
+        "elapsed_ms": 156572,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "losses": [
+          2771,
+          1682
+        ],
+        "moved_units": 32,
+        "prisoners": [
+          0,
+          213
+        ],
+        "routed": [
+          1,
+          0
+        ],
+        "side": 1,
+        "turn": 5,
+        "woerth": {
+          "side": -1
+        }
+      },
+      {
+        "ap_used_quarters": 353,
+        "counts": {
+          "end": 1,
+          "entrench": 7,
+          "fire": 24,
+          "formation": 5,
+          "move": 11,
+          "rally": 1,
+          "rest": 6
+        },
+        "elapsed_ms": 128775,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 0
+        },
+        "losses": [
+          2869,
+          2658
+        ],
+        "moved_units": 10,
+        "prisoners": [
+          0,
+          213
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "side": 0,
+        "turn": 6,
+        "woerth": {
+          "id": "fr_13",
+          "side": 0,
+          "strength": 1247
+        }
+      },
+      {
+        "ap_used_quarters": 506,
+        "counts": {
+          "assault": 2,
+          "deploy": 2,
+          "end": 1,
+          "entrench": 2,
+          "fire": 18,
+          "formation": 7,
+          "move": 29,
+          "rest": 2
+        },
+        "elapsed_ms": 139346,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 1
+        },
+        "losses": [
+          3946,
+          2879
+        ],
+        "moved_units": 24,
+        "prisoners": [
+          0,
+          213
+        ],
+        "routed": [
+          1,
+          0
+        ],
+        "side": 1,
+        "turn": 6,
+        "woerth": {
+          "side": -1
+        }
+      },
+      {
+        "ap_used_quarters": 413,
+        "counts": {
+          "end": 1,
+          "entrench": 6,
+          "fire": 21,
+          "formation": 3,
+          "limber": 1,
+          "move": 21,
+          "rest": 3
+        },
+        "elapsed_ms": 117913,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 1
+        },
+        "losses": [
+          4041,
+          3887
+        ],
+        "moved_units": 16,
+        "prisoners": [
+          0,
+          213
+        ],
+        "routed": [
+          1,
+          1
+        ],
+        "side": 0,
+        "turn": 7,
+        "woerth": {
+          "side": -1
+        }
+      },
+      {
+        "ap_used_quarters": 566,
+        "counts": {
+          "deploy": 2,
+          "end": 1,
+          "entrench": 2,
+          "fire": 33,
+          "formation": 7,
+          "move": 26
+        },
+        "elapsed_ms": 187737,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 1
+        },
+        "losses": [
+          5428,
+          4090
+        ],
+        "moved_units": 22,
+        "prisoners": [
+          0,
+          213
+        ],
+        "routed": [
+          2,
+          1
+        ],
+        "side": 1,
+        "turn": 7,
+        "woerth": {
+          "side": -1
+        }
+      },
+      {
+        "ap_used_quarters": 349,
+        "counts": {
+          "deploy": 1,
+          "end": 1,
+          "entrench": 10,
+          "fire": 17,
+          "formation": 6,
+          "move": 11,
+          "rally": 1,
+          "rest": 4
+        },
+        "elapsed_ms": 106311,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 1
+        },
+        "losses": [
+          5539,
+          5060
+        ],
+        "moved_units": 8,
+        "prisoners": [
+          0,
+          213
+        ],
+        "routed": [
+          1,
+          1
+        ],
+        "side": 0,
+        "turn": 8,
+        "woerth": {
+          "id": "fr_3",
+          "side": 0,
+          "strength": 1356
+        }
+      },
+      {
+        "ap_used_quarters": 456,
+        "counts": {
+          "assault": 2,
+          "deploy": 1,
+          "end": 1,
+          "entrench": 3,
+          "fire": 26,
+          "formation": 6,
+          "limber": 1,
+          "move": 22,
+          "rally": 1,
+          "rest": 3
+        },
+        "elapsed_ms": 141987,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 1
+        },
+        "losses": [
+          7018,
+          5503
+        ],
+        "moved_units": 20,
+        "prisoners": [
+          0,
+          213
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "side": 1,
+        "turn": 8,
+        "woerth": {
+          "id": "fr_3",
+          "side": 0,
+          "strength": 1004
+        }
+      },
+      {
+        "ap_used_quarters": 345,
+        "counts": {
+          "end": 1,
+          "entrench": 8,
+          "fire": 24,
+          "formation": 8,
+          "move": 5,
+          "rest": 1
+        },
+        "elapsed_ms": 102609,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 0,
+          "niederwald": 1
+        },
+        "losses": [
+          7192,
+          6932
+        ],
+        "moved_units": 5,
+        "prisoners": [
+          0,
+          213
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "side": 0,
+        "turn": 9,
+        "woerth": {
+          "id": "fr_3",
+          "side": 0,
+          "strength": 1004
+        }
+      },
+      {
+        "ap_used_quarters": 501,
+        "counts": {
+          "assault": 3,
+          "end": 1,
+          "entrench": 2,
+          "fire": 25,
+          "formation": 3,
+          "limber": 1,
+          "move": 24,
+          "rally": 1,
+          "rest": 5
+        },
+        "elapsed_ms": 149078,
+        "goals": {
+          "elsasshausen": 1,
+          "froeschwiller": 0,
+          "niederwald": 1
+        },
+        "losses": [
+          8905,
+          7373
+        ],
+        "moved_units": 22,
+        "prisoners": [
+          524,
+          213
+        ],
+        "routed": [
+          1,
+          0
+        ],
+        "side": 1,
+        "turn": 9,
+        "woerth": {
+          "id": "pru_52",
+          "side": 1,
+          "strength": 554
+        }
+      },
+      {
+        "ap_used_quarters": 306,
+        "counts": {
+          "end": 1,
+          "entrench": 4,
+          "fire": 18,
+          "formation": 5,
+          "move": 12,
+          "rally": 1,
+          "rest": 2
+        },
+        "elapsed_ms": 88465,
+        "goals": {
+          "elsasshausen": 1,
+          "froeschwiller": 0,
+          "niederwald": 1
+        },
+        "losses": [
+          9013,
+          8402
+        ],
+        "moved_units": 10,
+        "prisoners": [
+          524,
+          213
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "side": 0,
+        "turn": 10,
+        "woerth": {
+          "id": "pru_52",
+          "side": 1,
+          "strength": 554
+        }
+      },
+      {
+        "ap_used_quarters": 545,
+        "counts": {
+          "assault": 2,
+          "deploy": 3,
+          "end": 1,
+          "entrench": 3,
+          "fire": 30,
+          "formation": 6,
+          "limber": 2,
+          "move": 25,
+          "rest": 4
+        },
+        "elapsed_ms": 198651,
+        "goals": {
+          "elsasshausen": 1,
+          "froeschwiller": 1,
+          "niederwald": 1
+        },
+        "losses": [
+          10902,
+          8855
+        ],
+        "moved_units": 23,
+        "prisoners": [
+          524,
+          213
+        ],
+        "routed": [
+          1,
+          0
+        ],
+        "side": 1,
+        "turn": 10,
+        "woerth": {
+          "id": "pru_52",
+          "side": 1,
+          "strength": 554
+        }
+      }
+    ],
+    "elapsed_ms": 1946108
+  },
+  "v4312_hard": {
+    "version": "V43.12",
+    "seed": 18704311.0,
+    "style": 0.0,
+    "completed_turns": 10,
+    "checks": 2117,
+    "failures": 0,
+    "first_prussian_occupation": {
+      "action": {
+        "kind": "move",
+        "path": [
+          345.0,
+          374.0,
+          343.0,
+          344.0,
+          313.0
+        ],
+        "unit": "pru_41"
+      },
+      "occupant": {
+        "id": "pru_41",
+        "side": 1.0,
+        "strength": 2900.0
+      },
+      "side_phase": 1.0,
+      "turn": 4.0
+    },
+    "counts": [
+      {
+        "move": 118,
+        "entrench": 42,
+        "formation": 55,
+        "end": 10,
+        "fire": 133,
+        "deploy": 5,
+        "rest": 18,
+        "limber": 1,
+        "rally": 5,
+        "assault": 1
+      },
+      {
+        "move": 337,
+        "deploy": 11,
+        "fire": 207,
+        "formation": 47,
+        "end": 10,
+        "entrench": 17,
+        "limber": 5,
+        "rest": 20,
+        "rally": 6,
+        "assault": 7
+      }
+    ],
+    "shots": [
+      {
+        "infantry": 122,
+        "artillery": 11
+      },
+      {
+        "artillery": 90,
+        "infantry": 116,
+        "hq": 1
+      }
+    ],
+    "first_objective_control_at_phase_end": {
+      "niederwald": {
+        "turn": 6.0,
+        "side_phase": 1.0
+      },
+      "froeschwiller": {
+        "turn": 8,
+        "side_phase": 1
+      }
+    },
+    "end_turn_10": {
+      "ap_used_quarters": 566,
+      "counts": {
+        "deploy": 1,
+        "end": 1,
+        "entrench": 2,
+        "fire": 42,
+        "formation": 4,
+        "move": 25,
+        "rally": 1,
+        "rest": 3
+      },
+      "elapsed_ms": 198440,
+      "goals": {
+        "elsasshausen": 0,
+        "froeschwiller": 1,
+        "niederwald": 1
+      },
+      "losses": [
+        10106,
+        8428
+      ],
+      "moved_units": 17,
+      "prisoners": [
+        6238,
+        0
+      ],
+      "routed": [
+        2,
+        0
+      ],
+      "side": 1,
+      "turn": 10,
+      "woerth": {
+        "id": "pru_41",
+        "side": 1,
+        "strength": 2900
+      }
+    },
+    "wing_end_t10": [
+      {
+        "id": "pru_48",
+        "cell": [
+          19,
+          2
+        ],
+        "strength": 2900,
+        "weapon": "dreyse"
+      },
+      {
+        "id": "pru_56",
+        "cell": [
+          20,
+          3
+        ],
+        "strength": 125,
+        "weapon": "sabre"
+      },
+      {
+        "id": "qg_pr_Schachtmeyer",
+        "cell": [
+          19,
+          8
+        ],
+        "strength": 250,
+        "weapon": "escort_dreyse"
+      },
+      {
+        "id": "art_pr_Schachtmeyer1",
+        "cell": [
+          21,
+          3
+        ],
+        "strength": 250,
+        "weapon": "krupp"
+      },
+      {
+        "id": "qg_pr_Gersdorff",
+        "cell": [
+          21,
+          8
+        ],
+        "strength": 250,
+        "weapon": "escort_dreyse"
+      },
+      {
+        "id": "art_pr_Gersdorff0",
+        "cell": [
+          19,
+          1
+        ],
+        "strength": 250,
+        "weapon": "krupp"
+      },
+      {
+        "id": "art_pr_Gersdorff1",
+        "cell": [
+          20,
+          2
+        ],
+        "strength": 250,
+        "weapon": "krupp"
+      },
+      {
+        "id": "v42_de_reserve_09",
+        "cell": [
+          19,
+          3
+        ],
+        "strength": 2900,
+        "weapon": "dreyse"
+      },
+      {
+        "id": "v42_de_reserve_11",
+        "cell": [
+          21,
+          4
+        ],
+        "strength": 2900,
+        "weapon": "dreyse"
+      },
+      {
+        "id": "v42_de_reserve_12",
+        "cell": [
+          22,
+          7
+        ],
+        "strength": 2900,
+        "weapon": "dreyse"
+      },
+      {
+        "id": "v42_de_reserve_13",
+        "cell": [
+          24,
+          9
+        ],
+        "strength": 2900,
+        "weapon": "dreyse"
+      },
+      {
+        "id": "v42_de_reserve_14",
+        "cell": [
+          24,
+          10
+        ],
+        "strength": 2900,
+        "weapon": "dreyse"
+      }
+    ],
+    "phases": [
+      {
+        "ap_used_quarters": 169.0,
+        "counts": {
+          "end": 1.0,
+          "entrench": 1.0,
+          "formation": 9.0,
+          "move": 14.0
+        },
+        "elapsed_ms": 14677.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 0.0
+        },
+        "losses": [
+          0.0,
+          0.0
+        ],
+        "moved_units": 12.0,
+        "prisoners": [
+          0.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          0.0
+        ],
+        "side": 0.0,
+        "turn": 1.0,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0.0,
+          "strength": 2000.0
+        }
+      },
+      {
+        "ap_used_quarters": 249.0,
+        "counts": {
+          "deploy": 3.0,
+          "end": 1.0,
+          "fire": 2.0,
+          "formation": 4.0,
+          "move": 21.0
+        },
+        "elapsed_ms": 18030.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 0.0
+        },
+        "losses": [
+          69.0,
+          0.0
+        ],
+        "moved_units": 16.0,
+        "prisoners": [
+          0.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          0.0
+        ],
+        "side": 1.0,
+        "turn": 1.0,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0.0,
+          "strength": 1966.0
+        }
+      },
+      {
+        "ap_used_quarters": 110.0,
+        "counts": {
+          "end": 1.0,
+          "entrench": 2.0,
+          "fire": 2.0,
+          "formation": 2.0,
+          "move": 7.0
+        },
+        "elapsed_ms": 9718.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 0.0
+        },
+        "losses": [
+          100.0,
+          172.0
+        ],
+        "moved_units": 7.0,
+        "prisoners": [
+          0.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          0.0
+        ],
+        "side": 0.0,
+        "turn": 2.0,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0.0,
+          "strength": 1935.0
+        }
+      },
+      {
+        "ap_used_quarters": 249.0,
+        "counts": {
+          "deploy": 2.0,
+          "end": 1.0,
+          "entrench": 2.0,
+          "fire": 14.0,
+          "formation": 4.0,
+          "move": 17.0
+        },
+        "elapsed_ms": 24233.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 0.0
+        },
+        "losses": [
+          616.0,
+          204.0
+        ],
+        "moved_units": 8.0,
+        "prisoners": [
+          0.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          0.0
+        ],
+        "side": 1.0,
+        "turn": 2.0,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0.0,
+          "strength": 1528.0
+        }
+      },
+      {
+        "ap_used_quarters": 404.0,
+        "counts": {
+          "end": 1.0,
+          "entrench": 2.0,
+          "fire": 2.0,
+          "formation": 9.0,
+          "move": 29.0
+        },
+        "elapsed_ms": 82173.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 0.0
+        },
+        "losses": [
+          660.0,
+          277.0
+        ],
+        "moved_units": 26.0,
+        "prisoners": [
+          0.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          0.0
+        ],
+        "side": 0.0,
+        "turn": 3.0,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0.0,
+          "strength": 1484.0
+        }
+      },
+      {
+        "ap_used_quarters": 481.0,
+        "counts": {
+          "deploy": 2.0,
+          "end": 1.0,
+          "entrench": 3.0,
+          "fire": 13.0,
+          "formation": 5.0,
+          "limber": 1.0,
+          "move": 44.0,
+          "rest": 2.0
+        },
+        "elapsed_ms": 106635.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 0.0
+        },
+        "losses": [
+          1358.0,
+          292.0
+        ],
+        "moved_units": 25.0,
+        "prisoners": [
+          0.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          0.0
+        ],
+        "side": 1.0,
+        "turn": 3.0,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0.0,
+          "strength": 858.0
+        }
+      },
+      {
+        "ap_used_quarters": 240.0,
+        "counts": {
+          "end": 1.0,
+          "entrench": 1.0,
+          "fire": 7.0,
+          "formation": 4.0,
+          "move": 15.0
+        },
+        "elapsed_ms": 57011.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 0.0
+        },
+        "losses": [
+          1403.0,
+          740.0
+        ],
+        "moved_units": 15.0,
+        "prisoners": [
+          0.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          1.0
+        ],
+        "side": 0.0,
+        "turn": 4.0,
+        "woerth": {
+          "id": "fr_9",
+          "side": 0.0,
+          "strength": 813.0
+        }
+      },
+      {
+        "ap_used_quarters": 554.0,
+        "counts": {
+          "end": 1.0,
+          "entrench": 2.0,
+          "fire": 8.0,
+          "formation": 6.0,
+          "limber": 2.0,
+          "move": 53.0,
+          "rally": 1.0,
+          "rest": 3.0
+        },
+        "elapsed_ms": 115678.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 0.0
+        },
+        "losses": [
+          1725.0,
+          740.0
+        ],
+        "moved_units": 35.0,
+        "prisoners": [
+          735.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          0.0
+        ],
+        "side": 1.0,
+        "turn": 4.0,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1.0,
+          "strength": 2900.0
+        }
+      },
+      {
+        "ap_used_quarters": 324.0,
+        "counts": {
+          "deploy": 2.0,
+          "end": 1.0,
+          "entrench": 2.0,
+          "fire": 16.0,
+          "formation": 9.0,
+          "move": 14.0
+        },
+        "elapsed_ms": 92843.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 0.0
+        },
+        "losses": [
+          1769.0,
+          1342.0
+        ],
+        "moved_units": 13.0,
+        "prisoners": [
+          735.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          2.0
+        ],
+        "side": 0.0,
+        "turn": 5.0,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1.0,
+          "strength": 2900.0
+        }
+      },
+      {
+        "ap_used_quarters": 535.0,
+        "counts": {
+          "deploy": 3.0,
+          "end": 1.0,
+          "entrench": 3.0,
+          "fire": 14.0,
+          "formation": 5.0,
+          "move": 36.0,
+          "rally": 2.0,
+          "rest": 2.0
+        },
+        "elapsed_ms": 178719.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 0.0
+        },
+        "losses": [
+          2270.0,
+          1391.0
+        ],
+        "moved_units": 28.0,
+        "prisoners": [
+          735.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          0.0
+        ],
+        "side": 1.0,
+        "turn": 5.0,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1.0,
+          "strength": 2900.0
+        }
+      },
+      {
+        "ap_used_quarters": 360.0,
+        "counts": {
+          "deploy": 2.0,
+          "end": 1.0,
+          "entrench": 11.0,
+          "fire": 19.0,
+          "formation": 5.0,
+          "limber": 1.0,
+          "move": 11.0,
+          "rest": 3.0
+        },
+        "elapsed_ms": 109747.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 0.0
+        },
+        "losses": [
+          2296.0,
+          1937.0
+        ],
+        "moved_units": 11.0,
+        "prisoners": [
+          735.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          0.0
+        ],
+        "side": 0.0,
+        "turn": 6.0,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1.0,
+          "strength": 2900.0
+        }
+      },
+      {
+        "ap_used_quarters": 611.0,
+        "counts": {
+          "end": 1.0,
+          "entrench": 1.0,
+          "fire": 23.0,
+          "formation": 3.0,
+          "limber": 1.0,
+          "move": 45.0
+        },
+        "elapsed_ms": 208544.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 1.0
+        },
+        "losses": [
+          3159.0,
+          2134.0
+        ],
+        "moved_units": 34.0,
+        "prisoners": [
+          735.0,
+          0.0
+        ],
+        "routed": [
+          1.0,
+          0.0
+        ],
+        "side": 1.0,
+        "turn": 6.0,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1.0,
+          "strength": 2900.0
+        }
+      },
+      {
+        "ap_used_quarters": 385.0,
+        "counts": {
+          "end": 1.0,
+          "entrench": 8.0,
+          "fire": 23.0,
+          "formation": 5.0,
+          "move": 13.0,
+          "rally": 1.0,
+          "rest": 2.0
+        },
+        "elapsed_ms": 120398.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 0.0
+        },
+        "losses": [
+          3207.0,
+          3412.0
+        ],
+        "moved_units": 12.0,
+        "prisoners": [
+          735.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          1.0
+        ],
+        "side": 0.0,
+        "turn": 7.0,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1.0,
+          "strength": 2900.0
+        }
+      },
+      {
+        "ap_used_quarters": 525.0,
+        "counts": {
+          "assault": 1.0,
+          "end": 1.0,
+          "fire": 24.0,
+          "formation": 8.0,
+          "move": 32.0,
+          "rally": 2.0,
+          "rest": 3.0
+        },
+        "elapsed_ms": 210848.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 1.0
+        },
+        "losses": [
+          4228.0,
+          3651.0
+        ],
+        "moved_units": 25.0,
+        "prisoners": [
+          735.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          0.0
+        ],
+        "side": 1.0,
+        "turn": 7.0,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1.0,
+          "strength": 2900.0
+        }
+      },
+      {
+        "ap_used_quarters": 316.0,
+        "counts": {
+          "end": 1.0,
+          "entrench": 6.0,
+          "fire": 23.0,
+          "formation": 6.0,
+          "move": 6.0,
+          "rally": 1.0,
+          "rest": 3.0
+        },
+        "elapsed_ms": 102838.0,
+        "goals": {
+          "elsasshausen": 0.0,
+          "froeschwiller": 0.0,
+          "niederwald": 1.0
+        },
+        "losses": [
+          4355.0,
+          4661.0
+        ],
+        "moved_units": 5.0,
+        "prisoners": [
+          735.0,
+          0.0
+        ],
+        "routed": [
+          0.0,
+          0.0
+        ],
+        "side": 0.0,
+        "turn": 8.0,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1.0,
+          "strength": 2900.0
+        }
+      },
+      {
+        "ap_used_quarters": 647,
+        "counts": {
+          "assault": 4,
+          "end": 1,
+          "entrench": 2,
+          "fire": 33,
+          "formation": 3,
+          "move": 39,
+          "rest": 1
+        },
+        "elapsed_ms": 245911,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 1,
+          "niederwald": 1
+        },
+        "losses": [
+          6403,
+          5047
+        ],
+        "moved_units": 29,
+        "prisoners": [
+          1305,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "side": 1,
+        "turn": 8,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1,
+          "strength": 2900
+        }
+      },
+      {
+        "ap_used_quarters": 252,
+        "counts": {
+          "deploy": 1,
+          "end": 1,
+          "entrench": 5,
+          "fire": 19,
+          "formation": 5,
+          "move": 3,
+          "rally": 1,
+          "rest": 4
+        },
+        "elapsed_ms": 77493,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 1,
+          "niederwald": 1
+        },
+        "losses": [
+          6626,
+          6483
+        ],
+        "moved_units": 3,
+        "prisoners": [
+          1305,
+          0
+        ],
+        "routed": [
+          0,
+          0
+        ],
+        "side": 0,
+        "turn": 9,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1,
+          "strength": 2900
+        }
+      },
+      {
+        "ap_used_quarters": 536,
+        "counts": {
+          "assault": 2,
+          "end": 1,
+          "entrench": 2,
+          "fire": 34,
+          "formation": 5,
+          "limber": 1,
+          "move": 25,
+          "rest": 6
+        },
+        "elapsed_ms": 205439,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 1,
+          "niederwald": 1
+        },
+        "losses": [
+          8421,
+          6861
+        ],
+        "moved_units": 20,
+        "prisoners": [
+          1418,
+          0
+        ],
+        "routed": [
+          2,
+          0
+        ],
+        "side": 1,
+        "turn": 9,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1,
+          "strength": 2900
+        }
+      },
+      {
+        "ap_used_quarters": 272,
+        "counts": {
+          "assault": 1,
+          "end": 1,
+          "entrench": 4,
+          "fire": 22,
+          "formation": 1,
+          "move": 6,
+          "rally": 2,
+          "rest": 6
+        },
+        "elapsed_ms": 85406,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 1,
+          "niederwald": 1
+        },
+        "losses": [
+          8536,
+          8201
+        ],
+        "moved_units": 5,
+        "prisoners": [
+          1418,
+          0
+        ],
+        "routed": [
+          0,
+          1
+        ],
+        "side": 0,
+        "turn": 10,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1,
+          "strength": 2900
+        }
+      },
+      {
+        "ap_used_quarters": 566,
+        "counts": {
+          "deploy": 1,
+          "end": 1,
+          "entrench": 2,
+          "fire": 42,
+          "formation": 4,
+          "move": 25,
+          "rally": 1,
+          "rest": 3
+        },
+        "elapsed_ms": 198440,
+        "goals": {
+          "elsasshausen": 0,
+          "froeschwiller": 1,
+          "niederwald": 1
+        },
+        "losses": [
+          10106,
+          8428
+        ],
+        "moved_units": 17,
+        "prisoners": [
+          6238,
+          0
+        ],
+        "routed": [
+          2,
+          0
+        ],
+        "side": 1,
+        "turn": 10,
+        "woerth": {
+          "id": "pru_41",
+          "side": 1,
+          "strength": 2900
+        }
+      }
+    ],
+    "elapsed_ms": 1019343
+  }
+}

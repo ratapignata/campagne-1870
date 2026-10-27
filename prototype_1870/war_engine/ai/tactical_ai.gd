@@ -1,6 +1,7 @@
 extends RefCounted
 # Decisions consume a sanitized observation only. No access to the live engine.
 const Rules=preload("res://war_engine/ai/planning_engine.gd")
+const Normal4311=preload("res://war_engine/ai/v4311_ai.gd")
 const Legacy=preload("res://war_engine/ai/legacy_ai.gd")
 const Support=preload("res://war_engine/core/support.gd")
 const Intel=preload("res://war_engine/core/intel.gd")
@@ -18,8 +19,20 @@ var hard_planning=false
 var objective_pressure: Dictionary={}
 var enemy_screen: Dictionary={}
 var bridge_targets: Dictionary={}
+var normal_brain
+var operation_goals: Dictionary={}
+var hard_offensive=false
 func choose(view: Dictionary) -> Dictionary:
 	var difficulty=str(view.state.get("ai_difficulty","legacy"))
+	# Normal is exactly the former V43.11 Hard policy, including relocation state.
+	if difficulty=="medium":
+		if normal_brain==null:
+			normal_brain=Normal4311.new()
+			normal_brain.profiles=JSON.parse_string(FileAccess.get_file_as_string("res://packs/1870/ai_profiles_v4311.json"))
+		normal_brain.relocation=relocation.duplicate(true)
+		var normal_view=view.duplicate(true);normal_view.state.ai_difficulty="hard"
+		var chosen=normal_brain.choose(normal_view);relocation=normal_brain.relocation.duplicate(true)
+		return chosen
 	if difficulty=="legacy" or not profiles.has(difficulty):return Legacy.new().choose(view)
 	settings=profiles[difficulty];tactic=int(view.state.get("ai_style",0));ranked=[]
 	var e=Rules.new(view.pack,view.state)
@@ -32,6 +45,11 @@ func choose(view: Dictionary) -> Dictionary:
 	var continuation=continue_relocation(e)
 	if not continuation.is_empty():return continuation
 	offensive=int(e.pack.ai.get("attacking_side",-1))==int(e.state.side)
+	hard_offensive=hard_planning and offensive and str(e.pack.id)=="regimental_trial_v43"
+	operation_goals={}
+	if hard_offensive:
+		for k in range(e.state.units.size()):
+			if int(e.state.units[k].side)==int(e.state.side):operation_goals[k]=operational_goal(e,k)
 	bridge_targets=bridgehead_targets(e) if hard_planning and offensive else {}
 	urgency=1.0+0.6*float(e.state.turn)/maxf(1,float(e.pack.rules.turns))
 	if hard_planning and offensive and e.controlled_value(int(e.state.side))<e.objective_value_total()/2:
@@ -62,9 +80,10 @@ func choose(view: Dictionary) -> Dictionary:
 				var loss=mean_loss(e,n,j);var response=mean_loss(e,j,n,float(e.pack.rules.combat.reaction_factor)) if e.reaction_status(j,n)=="ok" else 0.0
 				var score=float(settings.fire)+loss*float(settings.damage)-response*float(settings.return_risk)
 				if e.unit_cell(e.state.units[j])==goal:score+=float(settings.objective_target)
+				if hard_offensive:score+=45.0 if not e.artillery(n) else 65.0
 				score+=float(settings.get("focus_fire",0))*friends_near(e,n,e.unit_cell(e.state.units[j]))
 				if offensive:
-					score+=target_priority(e,j)
+					score+=target_priority(e,j)+operation_target(e,j)
 					if e.artillery(n):score+=(55.0 if hard_planning else 35.0)+preparation_value(e,n,j)+artillery_target_value(e,n,j)+float(bridge_targets.get(j,0.0))
 				elif hard_planning and e.artillery(n):score+=preparation_value(e,n,j)
 				offer({"kind":"fire","unit":u.id,"target":e.state.units[j].id},score)
@@ -75,6 +94,8 @@ func choose(view: Dictionary) -> Dictionary:
 				var minimum_ratio=float(settings.charge_ratio if e.cavalry(n) else settings.assault_ratio)
 				if hard_planning and offensive and not e.cavalry(n) and e.state.units[j].morale in ["shaken","routed"] and friends_near(e,n,e.unit_cell(e.state.units[j]))>=1:
 					minimum_ratio=maxf(1.05,minimum_ratio-0.15)
+				if hard_offensive and not e.cavalry(n) and not e.headquarters(n) and friends_near(e,n,e.unit_cell(e.state.units[j]))>=2 and int(e.state.turn)>=8 and float(u.strength)>=float(u.initial_strength)*0.35:
+					minimum_ratio=minf(minimum_ratio,1.15 if e.state.units[j].get("entrenched",false) else 1.10)
 				if ratio>=minimum_ratio:
 					# Melee does not consume ammunition. Do not abandon an already
 					# accepted infantry assault merely to refill an empty ammo level.
@@ -82,8 +103,9 @@ func choose(view: Dictionary) -> Dictionary:
 						var charging_unit=str(u.id)
 						ranked=ranked.filter(func(item):return item.action.kind!="rest" or str(item.action.get("unit",""))!=charging_unit)
 					var score=float(settings.assault)+(30.0*urgency if offensive else 0.0)+minf(2.0,ratio)*float(settings.ratio_value)-response*float(settings.return_risk)
+					if hard_offensive and int(e.state.turn)>=8 and not e.cavalry(n) and not e.headquarters(n):score+=float(settings.get("assault_commitment",0))
 					if e.unit_cell(e.state.units[j])==goal:score+=float(settings.objective_target)
-					if offensive:score+=target_priority(e,j)+float(bridge_targets.get(j,0.0))
+					if offensive:score+=target_priority(e,j)+float(bridge_targets.get(j,0.0))+operation_target(e,j)
 					offer({"kind":"assault","unit":u.id,"target":e.state.units[j].id},score)
 		if e.artillery(n) and not u.deployed and (int(u.ap)>=int(e.weapon(n).deployment_ap)+int(e.weapon(n).ap) or (hard_planning or offensive) and int(u.ap)>=int(e.weapon(n).deployment_ap)):
 			u.deployed=true;u.ap-=int(e.weapon(n).deployment_ap)
@@ -131,12 +153,12 @@ func choose(view: Dictionary) -> Dictionary:
 				# A supported advance may temporarily outrun command while keeping supply.
 				# Losing both links remains fully penalized; batteries and HQ stay cautious.
 				if hard_planning and offensive and not e.artillery(n) and not e.headquarters(n) and links.supply_ok and friends_near(e,n,dest)>0:
-					link_priority*=0.6
+					link_priority*=0.45 if hard_offensive else 0.6
 				score+=(after-before)*link_priority
 				if after==0:score-=float(settings.get("link_safety",0))
 			if e.headquarters(n) and float(settings.get("hq_safety",0))>0:
 				score-=maxf(0,4-e.enemy_distance(n,dest))*float(settings.hq_safety)
-				score+=(group_distance(e,n,start)-group_distance(e,n,dest))*float(settings.get("formation_cohesion",0))
+				score+=(group_distance(e,n,start)-group_distance(e,n,dest))*(18.0 if hard_offensive else float(settings.get("formation_cohesion",0)))
 			var cover=float(e.pack.terrains[e.pack.map.tiles[dest]].fire_received)
 			score+=(current_cover-cover)*float(settings.cover)
 			if dest==goal and not own_goal:score+=float(settings.capture)
@@ -402,6 +424,11 @@ func group_distance(e,n: int,pos: int) -> float:
 	return total/maxi(1,count)
 
 func mission_goal(e,n: int,fields: Dictionary) -> int:
+	if hard_offensive and not e.headquarters(n):
+		var own_here=e.objective_at(e.unit_cell(e.state.units[n]))
+		if not own_here.is_empty():return e.unit_cell(e.state.units[n])
+		var assigned=int(operation_goals.get(n,-1))
+		if assigned>=0:return assigned
 	if not offensive or e.headquarters(n):return Legacy.new().target_goal(e,n,fields)
 	var start=e.unit_cell(e.state.units[n]);var own=e.objective_at(start)
 	if not own.is_empty():return start
@@ -446,3 +473,32 @@ func sector_pressure(e,goal: int) -> Dictionary:
 		result[key]+=float(e.state.units[j].strength)*(1.0 if distance<=2 else 0.4)
 	objective_pressure[goal]=result
 	return result
+
+# Public operational axes. These are movement priorities, never extra objectives,
+# legal moves, combat power or knowledge of hidden defenders.
+func operational_goal(e,n: int) -> int:
+	var u=e.state.units[n];var pos=e.cell(e.unit_cell(u));var group=str(u.get("command_group",""))
+	var cfg=settings.get("operation_axes",{})
+	if not cfg.has(group):return -1
+	var axis=cfg[group]
+	if axis=="centre":
+		var town=e.index(Vector2i(13,10));var holder=e.unit_at(town)
+		var secured=holder>=0 and int(e.state.units[holder].side)==int(u.side) and e.state.units[holder].morale!="routed"
+		if e.unit_cell(u)==town or (pos.y>=10 and not secured):return town
+		for objective in e.objective_definitions():
+			if str(objective.id)=="froeschwiller" and e.objective_owner(objective)!=int(u.side):return e.objective_cell(objective)
+	elif axis=="right":
+		if pos.y>=12:return e.index(Vector2i(22,11))
+		if pos.x>=20 and pos.y>=8:return e.index(Vector2i(23,7))
+		for objective in e.objective_definitions():
+			if str(objective.id)=="niederwald" and e.objective_owner(objective)!=int(u.side):return e.objective_cell(objective)
+	return -1
+func operation_target(e,j: int) -> float:
+	if not hard_offensive:return 0.0
+	var target=e.unit_cell(e.state.units[j]);var best=0.0;var supporters=0
+	for k in operation_goals:
+		if e.headquarters(k) or e.artillery(k) or e.state.units[k].morale=="routed":continue
+		var goal=int(operation_goals[k])
+		if goal>=0 and e.distance(goal,target)<=2:best=55.0
+		if e.distance(e.unit_cell(e.state.units[k]),target)<=3:supporters+=1
+	return best+minf(3,supporters)*12.0 if best>0 else 0.0

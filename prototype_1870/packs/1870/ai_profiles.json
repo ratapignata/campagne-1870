@@ -96,6 +96,13 @@
     "link_safety": 90,
     "hq_safety": 48,
     "focus_fire": 12,
-    "formation_cohesion": 5
+    "formation_cohesion": 5,
+    "operation_axes": {
+      "pr_Sandrart": "centre",
+      "pr_Schmidt": "centre",
+      "pr_Schachtmeyer": "right",
+      "pr_Gersdorff": "right"
+    },
+    "assault_commitment": 60
   }
 }

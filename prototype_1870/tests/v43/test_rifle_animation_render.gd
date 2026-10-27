@@ -12,7 +12,7 @@ func run():
  for key in p.terrains:board.terrain_colors.append({"name":key,"color":Color(p.terrains[key].color)})
  check(DisplayServer.get_name()!="headless","actual graphical renderer")
  check(board.projectile_ink(true)==Color("252a30"),"cannon colour restored")
- check(board.projectile_ink(false)==Color("d8ddd9"),"infantry tracer colour")
+ check(board.projectile_ink(false)==Color("080a0c"),"black infantry bullet")
  var hashes=[]
  for phase in board.phases:
   board.phase=phase;board.queue_redraw();await process_frame;await RenderingServer.frame_post_draw

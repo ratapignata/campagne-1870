@@ -1,0 +1,31 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+PREFIX REPLAY 100
+PREFIX REPLAY 200
+PREFIX REPLAY 300
+PREFIX REPLAY 400
+PREFIX REPLAY 500
+PREFIX REPLAY 600
+PREFIX REPLAY 700
+PROGRESS T8 side1 decisions1 counts {"fire":1}
+PROGRESS T8 side1 decisions26 counts {"assault":2,"fire":21,"move":3}
+PROGRESS T8 side1 decisions51 counts {"assault":4,"entrench":2,"fire":30,"formation":1,"move":14}
+PROGRESS T8 side1 decisions76 counts {"assault":4,"entrench":2,"fire":33,"formation":3,"move":34}
+DONE {"ap_used_quarters":647,"counts":{"assault":4,"end":1,"entrench":2,"fire":33,"formation":3,"move":39,"rest":1},"elapsed_ms":245911,"goals":{"elsasshausen":0,"froeschwiller":1,"niederwald":1},"losses":[6403,5047],"moved_units":29,"prisoners":[1305,0],"routed":[0,0],"side":1,"turn":8,"woerth":{"id":"pru_41","side":1,"strength":2900}}
+PROGRESS T9 side0 decisions1 counts {"fire":1}
+PROGRESS T9 side0 decisions26 counts {"entrench":1,"fire":17,"move":3,"rally":1,"rest":4}
+DONE {"ap_used_quarters":252,"counts":{"deploy":1,"end":1,"entrench":5,"fire":19,"formation":5,"move":3,"rally":1,"rest":4},"elapsed_ms":77493,"goals":{"elsasshausen":0,"froeschwiller":1,"niederwald":1},"losses":[6626,6483],"moved_units":3,"prisoners":[1305,0],"routed":[0,0],"side":0,"turn":9,"woerth":{"id":"pru_41","side":1,"strength":2900}}
+PROGRESS T9 side1 decisions1 counts {"fire":1}
+PROGRESS T9 side1 decisions26 counts {"assault":2,"fire":23,"move":1}
+PROGRESS T9 side1 decisions51 counts {"assault":2,"entrench":2,"fire":32,"formation":3,"limber":1,"move":9,"rest":2}
+PROGRESS T9 side1 decisions76 counts {"assault":2,"end":1,"entrench":2,"fire":34,"formation":5,"limber":1,"move":25,"rest":6}
+DONE {"ap_used_quarters":536,"counts":{"assault":2,"end":1,"entrench":2,"fire":34,"formation":5,"limber":1,"move":25,"rest":6},"elapsed_ms":205439,"goals":{"elsasshausen":0,"froeschwiller":1,"niederwald":1},"losses":[8421,6861],"moved_units":20,"prisoners":[1418,0],"routed":[2,0],"side":1,"turn":9,"woerth":{"id":"pru_41","side":1,"strength":2900}}
+PROGRESS T10 side0 decisions1 counts {"move":1}
+PROGRESS T10 side0 decisions26 counts {"fire":19,"move":3,"rally":2,"rest":2}
+DONE {"ap_used_quarters":272,"counts":{"assault":1,"end":1,"entrench":4,"fire":22,"formation":1,"move":6,"rally":2,"rest":6},"elapsed_ms":85406,"goals":{"elsasshausen":0,"froeschwiller":1,"niederwald":1},"losses":[8536,8201],"moved_units":5,"prisoners":[1418,0],"routed":[0,1],"side":0,"turn":10,"woerth":{"id":"pru_41","side":1,"strength":2900}}
+PROGRESS T10 side1 decisions1 counts {"fire":1}
+PROGRESS T10 side1 decisions26 counts {"fire":25,"move":1}
+PROGRESS T10 side1 decisions51 counts {"deploy":1,"entrench":2,"fire":40,"formation":1,"move":5,"rally":1,"rest":1}
+PROGRESS T10 side1 decisions76 counts {"deploy":1,"entrench":2,"fire":42,"formation":4,"move":23,"rally":1,"rest":3}
+DONE {"ap_used_quarters":566,"counts":{"deploy":1,"end":1,"entrench":2,"fire":42,"formation":4,"move":25,"rally":1,"rest":3},"elapsed_ms":198440,"goals":{"elsasshausen":0,"froeschwiller":1,"niederwald":1},"losses":[10106,8428],"moved_units":17,"prisoners":[6238,0],"routed":[2,0],"side":1,"turn":10,"woerth":{"id":"pru_41","side":1,"strength":2900}}
+FINISHED 2117/2117 capture {"action":{"kind":"move","path":[345.0,374.0,343.0,344.0,313.0],"unit":"pru_41"},"occupant":{"id":"pru_41","side":1.0,"strength":2900.0},"side_phase":1.0,"turn":4.0}

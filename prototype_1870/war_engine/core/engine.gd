@@ -653,11 +653,17 @@ func end_side() -> void:
 			retreat(n)
 			if alive(n) and enemy_distance(n,unit_cell(u))>=int(pack.rules.morale.rally_distance):u.ap=max_ap(n);u.done=false
 	refresh_support();refresh_intel()
+func reinforcement_turn(u: Dictionary) -> int:
+	var scheduled=int(u.get("arrival_turn",1))
+	# Keep stored dates and V43.11 save fingerprints intact. Only Hard's
+	# Prussian calendar changes, as explicitly requested; no extra units/AP.
+	if str(pack.id)=="regimental_trial_v43" and state.get("ai_difficulty","medium")=="hard" and int(u.side)==1 and scheduled>1:return scheduled-1
+	return scheduled
 func arrive_reinforcements() -> void:
 	state.reinforcements_arrived=0
 	for n in range(state.units.size()):
 		var u=state.units[n]
-		if not u.get("pending",false) or int(u.side)!=int(state.side) or int(u.get("arrival_turn",1))>int(state.turn):continue
+		if not u.get("pending",false) or int(u.side)!=int(state.side) or reinforcement_turn(u)>int(state.turn):continue
 		var entry=unit_cell(u);var occupant=unit_at(entry)
 		if occupant>=0:
 			# V43.1: only an enemy-held entry may use an adjacent replacement.
@@ -718,7 +724,7 @@ func observation(side: int,visible_enemies: Array=[]) -> Dictionary:
 	if fog_enabled():data.rules.fog.enabled=false
 	var incoming=[]
 	for u in state.units:
-		if int(u.side)==side and u.get("pending",false):incoming.append({"id":u.id,"cell":u.cell.duplicate(),"arrival_turn":int(u.get("arrival_turn",1))})
+		if int(u.side)==side and u.get("pending",false):incoming.append({"id":u.id,"cell":u.cell.duplicate(),"arrival_turn":reinforcement_turn(u)})
 	return {"own_reinforcements":incoming,"pack":data,"state":safe,"observed_cells":vision_cache[side].cells.duplicate() if fog_enabled() else {},"recon_rules":pack.rules.get("fog",{}).duplicate(true) if fog_enabled() else {}}
 func validate(s: Dictionary) -> bool:
 	if not whole_number(s.get("turn",null)):return false

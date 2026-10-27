@@ -1,3 +1,17 @@
+# Prototype courant : V43.12
+
+- [Télécharger l’APK V43.12](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.12.apk)
+- [Sources complètes V43.12](releases/1870_v0.8.43.12_Sources.zip)
+- [Changements](releases/VERSION_0843_12.md), [tests](releases/TESTS_V43_12.md) et [analyse comparative](releases/ANALYSE_IA_V43_12.md)
+
+**Normal reprend le Difficile apprécié de V43.11**, avec son calendrier habituel. Nouveau Difficile : axes Wœrth–Frœschwiller et aile droite française, tirs préparatoires et priorité aux assauts favorables dès T8. Renforts prussiens un tour plus tôt en Difficile, dates françaises inchangées. Balles d’infanterie noires avec contour discret ; canon conservé.
+
+Comparaison chronologique contrôlée : Wœrth occupé T4 contre T9, Frœschwiller contrôlé T8 contre T10. 207 tirs contre 190 ; infanterie 116 contre 79, canon 90 contre 111 ; sept assauts contre neuf au total, mais quatre contre deux au T8. Le gain n’est donc pas uniforme. Elsasshausen reste français en fin T10 dans le nouveau test ; détails, pertes et méthode de rejeu/continuation dans le rapport. Le calendrier avancé contribue au résultat ; aucune validation globale de l’équilibre sur 20 tours.
+
+2 492 contrôles techniques réussis et 2 117 contrôles de rejeu/continuation. APK compilé et signature vérifiée, aucun essai physique Android. Installer sans désinstaller pour conserver les données.
+
+---
+
 # Prototype courant : V43.11
 
 - [Télécharger l’APK V43.11](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.11.apk)

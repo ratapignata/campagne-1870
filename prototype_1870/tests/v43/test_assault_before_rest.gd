@@ -31,7 +31,7 @@ func _initialize():
  check(view==before,"AI input not mutated")
  check(e.assault(0,1).status=="ok" and e.validate(e.state),"real selected assault legal and state valid")
  for difficulty in ["medium"]:
-  e=fixture();e.state.ai_difficulty=difficulty;view=e.observation(1,[1]);check(old.choose(view)==current.choose(view),"Normal choice unchanged")
+  e=fixture();e.state.ai_difficulty=difficulty;view=e.observation(1,[1]);var reference=load("res://war_engine/ai/v4311_ai.gd").new();reference.profiles=profiles;var expected=view.duplicate(true);expected.state.ai_difficulty="hard";check(reference.choose(expected)==current.choose(view),"Normal uses V43.11 Hard policy")
  e=fixture();e.state.side=0;view=e.observation(0,[0,2]);check(old.choose(view)==current.choose(view),"French hard policy unchanged")
  e=fixture();e.state.units[0].weapon="escort_dreyse";e.state.units[0].formation="line";view=e.observation(1,[1]);check(old.choose(view)==current.choose(view),"HQ policy unchanged")
  e=fixture();e.state.units[0].strength=200;e.state.units[0].casualties=2700;e.state.units[1].strength=353;e.state.units[1].casualties=0

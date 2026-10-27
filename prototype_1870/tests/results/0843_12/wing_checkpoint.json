@@ -1,0 +1,124 @@
+{
+  "turn": 5,
+  "side_phase": 0,
+  "definition": "side=Prussian, alive, x>=19 and y<=11",
+  "units": [
+    {
+      "id": "pru_44",
+      "cell": [
+        22,
+        9
+      ],
+      "strength": 2900,
+      "weapon": "dreyse"
+    },
+    {
+      "id": "pru_45",
+      "cell": [
+        22,
+        8
+      ],
+      "strength": 2900,
+      "weapon": "dreyse"
+    },
+    {
+      "id": "pru_46",
+      "cell": [
+        23,
+        7
+      ],
+      "strength": 2900,
+      "weapon": "dreyse"
+    },
+    {
+      "id": "pru_47",
+      "cell": [
+        24,
+        8
+      ],
+      "strength": 2900,
+      "weapon": "dreyse"
+    },
+    {
+      "id": "pru_48",
+      "cell": [
+        22,
+        11
+      ],
+      "strength": 2900,
+      "weapon": "dreyse"
+    },
+    {
+      "id": "pru_49",
+      "cell": [
+        23,
+        11
+      ],
+      "strength": 2900,
+      "weapon": "dreyse"
+    },
+    {
+      "id": "pru_50",
+      "cell": [
+        23,
+        10
+      ],
+      "strength": 2900,
+      "weapon": "dreyse"
+    },
+    {
+      "id": "pru_51",
+      "cell": [
+        21,
+        10
+      ],
+      "strength": 2900,
+      "weapon": "dreyse"
+    },
+    {
+      "id": "pru_53",
+      "cell": [
+        22,
+        7
+      ],
+      "strength": 1450,
+      "weapon": "dreyse"
+    },
+    {
+      "id": "pru_56",
+      "cell": [
+        21,
+        4
+      ],
+      "strength": 296,
+      "weapon": "sabre"
+    },
+    {
+      "id": "pru_57",
+      "cell": [
+        23,
+        9
+      ],
+      "strength": 400,
+      "weapon": "sabre"
+    },
+    {
+      "id": "art_pr_Gersdorff0",
+      "cell": [
+        21,
+        11
+      ],
+      "strength": 250,
+      "weapon": "krupp"
+    },
+    {
+      "id": "art_pr_Gersdorff1",
+      "cell": [
+        24,
+        10
+      ],
+      "strength": 250,
+      "weapon": "krupp"
+    }
+  ]
+}

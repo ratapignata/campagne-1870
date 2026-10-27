@@ -253,7 +253,7 @@ func settlement_label_offset(name: String) -> Vector2:
 	# Keep Spachbach's name on its village's bank, below the river-facing counter.
 	return Vector2(0,43) if name=="Spachbach" else Vector2(0,-38)
 func projectile_ink(is_cannon: bool) -> Color:
-	return Color("252a30") if is_cannon else Color("d8ddd9")
+	return Color("252a30") if is_cannon else Color("080a0c")
 func rifle_volley(origin: Vector2,dest: Vector2,progress: float):
 	var direction=(dest-origin).normalized()
 	if direction.length_squared()<0.01:return
@@ -273,9 +273,9 @@ func rifle_volley(origin: Vector2,dest: Vector2,progress: float):
 		if phase>=0.05 and phase<0.34:
 			var t=(phase-0.05)/0.29;var endpoint=dest+side*float(k-1)*3.0*zoom
 			var head=muzzle.lerp(endpoint,t);var tail=muzzle.lerp(endpoint,maxf(0,t-0.07))
-			draw_line(tail,head,Color("243033"),maxf(3.0,4.0*zoom),true)
+			draw_line(tail,head,Color("b5bab0"),maxf(3.0,4.0*zoom),true)
 			draw_line(tail,head,projectile_ink(false),maxf(1.8,2.2*zoom),true)
-			draw_circle(head,maxf(2.0,2.8*zoom),Color("243033"))
+			draw_circle(head,maxf(2.0,2.8*zoom),Color("b5bab0"))
 			draw_circle(head,maxf(1.1,1.6*zoom),projectile_ink(false))
 	if progress>=0.38:
 		var phase=(progress-0.38)/0.62
