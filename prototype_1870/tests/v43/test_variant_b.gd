@@ -63,7 +63,7 @@ func _initialize():
  var old_raw=FileAccess.get_file_as_string("res://packs/1870/regimental_trial_v42_lot8.json");var new_raw=FileAccess.get_file_as_string("res://packs/1870/regimental_trial_v43.json");var p=JSON.parse_string(new_raw);var fresh=Rules.new(p)
  var source=Store.new("user://v42_lot8_legacy.json",old_raw.sha256_text());var destination=Store.new("user://v43_imported.json",new_raw.sha256_text(),p.save_migrations)
  check(source.save_game(old) and destination.import_compatible(fresh,[{"path":source.path,"pack_hash":old_raw.sha256_text()}]),"real V42 physical save migrates into separate V43 slot")
- check(JSON.parse_string(JSON.stringify(fresh.state))==JSON.parse_string(JSON.stringify(old.state)),"migration preserves every persisted field")
+ check(same_persisted_state(fresh.state,old.state),"migration preserves every persisted field")
  check(fresh.pack.id=="regimental_trial_v43" and fresh.pack.rules.assault.infantry_strength_exponent==0.9,"resumed battle adopts variant B for future melee only")
  var copy=Rules.new(p);check(destination.load_game(copy) and copy.state==fresh.state,"V43 save reload stable")
  var units=p.units;var sum=0;var count=0
@@ -77,3 +77,9 @@ func _initialize():
  report.checks=checks;report.failures=failures
  var f=FileAccess.open("user://variant_b_report.json",FileAccess.WRITE);f.store_string(JSON.stringify(report,"\t"));f.close()
  print("V43 VARIANT B ",checks-failures,"/",checks);quit(1 if failures else 0)
+
+func same_persisted_state(actual: Dictionary,original: Dictionary) -> bool:
+ var copy=actual.duplicate(true)
+ if copy.get("objective_layout","")!="v4312":return false
+ copy.erase("objective_layout")
+ return JSON.parse_string(JSON.stringify(copy))==JSON.parse_string(JSON.stringify(original))

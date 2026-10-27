@@ -727,6 +727,7 @@ func observation(side: int,visible_enemies: Array=[]) -> Dictionary:
 		if int(u.side)==side and u.get("pending",false):incoming.append({"id":u.id,"cell":u.cell.duplicate(),"arrival_turn":reinforcement_turn(u)})
 	return {"own_reinforcements":incoming,"pack":data,"state":safe,"observed_cells":vision_cache[side].cells.duplicate() if fog_enabled() else {},"recon_rules":pack.rules.get("fog",{}).duplicate(true) if fog_enabled() else {}}
 func validate(s: Dictionary) -> bool:
+	if s.has("objective_layout") and s.objective_layout!="v4312":return false
 	if not whole_number(s.get("turn",null)):return false
 	# The recovered V42 branch used 'casualties' for the same history field.
 	# Validate a normalized copy; never rewrite or discard the user's original save.

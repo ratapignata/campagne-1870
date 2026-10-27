@@ -44,7 +44,7 @@ func run():
  var prefs=ConfigFile.new();prefs.set_value("game","scenario","v42_lot8");prefs.save("user://preferences.cfg")
  game=scene()
  check(game.has_save and game.active_scenario()=="v43" and game.engine.state.ai_difficulty=="hard" and game.engine.state.human_side==1,"actual startup upgrades V42 to V43 with camp and difficulty preserved")
- check(JSON.parse_string(JSON.stringify(game.engine.state))==JSON.parse_string(JSON.stringify(old.state)),"actual migration preserves all saved state")
+ check(same_persisted_state(game.engine.state,old.state),"actual migration preserves all saved state")
  check(FileAccess.get_file_as_string(old_store.path)==prior,"V42 save remains byte-identical")
  game.playing=false;game.queue_free();await process_frame
  # Older Lot 8 APK saves with the label-only fingerprint are already supported by V42.
@@ -59,8 +59,14 @@ func run():
   for suffix in ["",".bak"]:
    if FileAccess.file_exists("user://save_v43.json"+suffix):DirAccess.remove_absolute("user://save_v43.json"+suffix)
   game=scene()
-  check(game.has_save and game.active_scenario()=="v43" and JSON.parse_string(JSON.stringify(game.engine.state))==JSON.parse_string(JSON.stringify(old.state)),"startup also imports already-supported label-only Lot 8 save")
+  check(game.has_save and game.active_scenario()=="v43" and same_persisted_state(game.engine.state,old.state),"startup also imports already-supported label-only Lot 8 save")
   check(FileAccess.get_file_as_string(older_store.path)==preserved,"pre-label source save unchanged")
   game.playing=false;game.queue_free();await process_frame
  var f=FileAccess.open("user://ui_v43_report.json",FileAccess.WRITE);f.store_string(JSON.stringify({"checks":checks,"failures":failures},"\t"));f.close()
  print("V43 UI ",checks-failures,"/",checks);quit(1 if failures else 0)
+
+func same_persisted_state(actual: Dictionary,original: Dictionary) -> bool:
+ var copy=actual.duplicate(true)
+ if copy.get("objective_layout","")!="v4312":return false
+ copy.erase("objective_layout")
+ return JSON.parse_string(JSON.stringify(copy))==JSON.parse_string(JSON.stringify(original))

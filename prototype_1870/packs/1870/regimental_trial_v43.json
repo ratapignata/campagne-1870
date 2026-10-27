@@ -4160,12 +4160,12 @@
     {
       "id": "elsasshausen",
       "cell": [
-        15,
-        4
+        13,
+        10
       ],
       "points": 2,
       "initial_owner": 0,
-      "name_key": "goal_historical_elsasshausen"
+      "name_key": "goal_historical_woerth"
     },
     {
       "id": "niederwald",
@@ -4190,16 +4190,24 @@
   },
   "save_migrations": {
     "86ef1097843ff7b3fd2ba0d1c2cb3791502a221010e8d0faaa07257f9d4c0c3c": {
-      "turns": 20
+      "turns": 20,
+      "objective_layout": "v4312"
     },
     "1032f35599f4b4c914e1de063b1a5432a2a3645f43eccdb5b1d18f3d8811c91d": {
-      "turns": 20
+      "turns": 20,
+      "objective_layout": "v4312"
     },
     "9b7f2605c70b9095b0f5f002b4dbccaa1db8ef5817af2284ab5ca9160a051f67": {
-      "turns": 20
+      "turns": 20,
+      "objective_layout": "v4312"
     },
     "d8109880a4629d07e5e744537be9b05aa90f4213ebe130051f5db157d7652898": {
-      "turns": 20
+      "turns": 20,
+      "objective_layout": "v4312"
+    },
+    "6a44f0421df5983355ea59792e27ed67a9e9ac89def0c295b8ebdfab2a12574b": {
+      "turns": 20,
+      "objective_layout": "v4312"
     }
   },
   "v42_experimental": {
@@ -4209,5 +4217,37 @@
     "command_assignment": "QG existant le plus proche de la case d’arrivée initiale, distance hexagonale ; rattachement de jeu uniquement",
     "arrival_schedule": "identique au lot 6, provisoire",
     "baseline_sha256": "6a022b586ab175afb7d99ca7a0b6d17e4cc54fdc98f63761cb88e704e178273a"
-  }
+  },
+  "previous_objectives": [
+    {
+      "id": "froeschwiller",
+      "cell": [
+        11,
+        5
+      ],
+      "points": 3,
+      "initial_owner": 0,
+      "name_key": "goal_historical_froeschwiller"
+    },
+    {
+      "id": "elsasshausen",
+      "cell": [
+        15,
+        4
+      ],
+      "points": 2,
+      "initial_owner": 0,
+      "name_key": "goal_historical_elsasshausen"
+    },
+    {
+      "id": "niederwald",
+      "cell": [
+        18,
+        6
+      ],
+      "points": 1,
+      "initial_owner": 0,
+      "name_key": "goal_historical_niederwald"
+    }
+  ]
 }

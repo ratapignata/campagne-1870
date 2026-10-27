@@ -1,7 +1,7 @@
 {
   "title": "1870",
   "subtitle": "FRŒSCHWILLER–WŒRTH",
-  "badge": "Prototype Android · v0.8.43.12",
+  "badge": "Prototype Android · v0.8.43.13",
   "start": "Commencer la bataille",
   "continue": "Continuer",
   "menu": "Menu",
@@ -712,5 +712,6 @@
   "hq_arrival_scheduled": "%s : arrivée prévue T%d en (%d, %d).",
   "hq_arrival_delayed": "%s : arrivée T%d reportée (entrée occupée lors du contrôle en %d, %d). Nouvel essai au prochain début de tour.",
   "charge_target_terrain": "Terrain défendu : %s",
-  "v43_detail": "V43 · 95 000 Allemands · 20 tours · variante B expérimentale"
+  "v43_detail": "20 tours · Frœschwiller 3, Wœrth 2, Niederwald 1.\nLes anciennes sauvegardes conservent leurs objectifs historiques.",
+  "goal_historical_woerth": "Wœrth"
 }

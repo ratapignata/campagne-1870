@@ -14,6 +14,10 @@ func read_slot(location: String) -> Dictionary:
 	if parser.parse(raw.payload)!=OK:return {}
 	if not parser.data is Dictionary:return {}
 	var data=parser.data
+	if not data.get("state",null) is Dictionary:return {}
+	if raw.pack_hash!=fingerprint and migrations.get(raw.pack_hash,{}).has("objective_layout"):
+		for key in ["state","previous"]:
+			if data.get(key,null) is Dictionary and not data[key].is_empty():data[key].objective_layout=str(migrations[raw.pack_hash].objective_layout)
 	if raw.pack_hash!=fingerprint and data.get("state",{}).get("finished",false):
 		# A completed V38 result retains its original duration denominator.
 		data.state.completed_turn_limit=int(migrations[raw.pack_hash].turns)
@@ -47,6 +51,9 @@ func import_compatible(e,entries: Array) -> bool:
 	for entry in entries:
 		var legacy=get_script().new(str(entry.path),str(entry.pack_hash))
 		if legacy.load_game(e):
+			if e.pack.has("previous_objectives") and str(entry.pack_hash)!=fingerprint:
+				e.state.objective_layout="v4312"
+				if not e.previous.is_empty():e.previous.objective_layout="v4312"
 			recovered=legacy.recovered
 			return save_game(e)
 	return false

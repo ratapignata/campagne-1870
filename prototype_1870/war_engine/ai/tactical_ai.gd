@@ -37,6 +37,8 @@ func choose(view: Dictionary) -> Dictionary:
 	settings=profiles[difficulty];tactic=int(view.state.get("ai_style",0));ranked=[]
 	var e=Rules.new(view.pack,view.state)
 	hard_planning=difficulty=="hard";mobile_threats={}
+	offensive=int(e.pack.ai.get("attacking_side",-1))==int(e.state.side)
+	hard_offensive=hard_planning and offensive and str(e.pack.id)=="regimental_trial_v43"
 	objective_pressure={};enemy_screen={}
 	for j in range(e.state.units.size()):
 		if int(e.state.units[j].side)!=int(e.state.side) and e.state.units[j].morale!="routed":
@@ -44,8 +46,6 @@ func choose(view: Dictionary) -> Dictionary:
 			enemy_screen[pos]=6 if e.state.units[j].get("entrenched",false) else 3
 	var continuation=continue_relocation(e)
 	if not continuation.is_empty():return continuation
-	offensive=int(e.pack.ai.get("attacking_side",-1))==int(e.state.side)
-	hard_offensive=hard_planning and offensive and str(e.pack.id)=="regimental_trial_v43"
 	operation_goals={}
 	if hard_offensive:
 		for k in range(e.state.units.size()):
@@ -57,6 +57,9 @@ func choose(view: Dictionary) -> Dictionary:
 	# Stable variation depends only on public/observed state, never on battle RNG.
 	signature=JSON.stringify(view.state)
 	var fields={}
+	if hard_offensive:
+		for k in operation_goals:
+			if int(operation_goals[k])<0:operation_goals[k]=mission_goal(e,int(k),fields)
 	var networks=Support.strict_networks(e,int(e.state.side)) if e.strict_links() else {}
 	var observed=view.get("observed_cells",{});var scout_cache={}
 	for n in range(e.state.units.size()):
@@ -88,14 +91,8 @@ func choose(view: Dictionary) -> Dictionary:
 				elif hard_planning and e.artillery(n):score+=preparation_value(e,n,j)
 				offer({"kind":"fire","unit":u.id,"target":e.state.units[j].id},score)
 			if e.assault_status(n,j)=="ok":
-				var response=mean_loss(e,j,n,float(e.pack.rules.combat.reaction_factor)) if e.reaction_status(j,n)=="ok" else 0.0
-				var power=e.attack_power_against(n,j)*e.melee_strength(n,j,maxf(0.0,float(u.strength)-response))/maxf(1,e.melee_strength(n,j,float(u.strength)))
-				var ratio=power/maxf(1,e.defence_power_against(j,n))
-				var minimum_ratio=float(settings.charge_ratio if e.cavalry(n) else settings.assault_ratio)
-				if hard_planning and offensive and not e.cavalry(n) and e.state.units[j].morale in ["shaken","routed"] and friends_near(e,n,e.unit_cell(e.state.units[j]))>=1:
-					minimum_ratio=maxf(1.05,minimum_ratio-0.15)
-				if hard_offensive and not e.cavalry(n) and not e.headquarters(n) and friends_near(e,n,e.unit_cell(e.state.units[j]))>=2 and int(e.state.turn)>=8 and float(u.strength)>=float(u.initial_strength)*0.35:
-					minimum_ratio=minf(minimum_ratio,1.15 if e.state.units[j].get("entrenched",false) else 1.10)
+				var forecast=assault_forecast(e,n,j)
+				var response=float(forecast.response);var ratio=float(forecast.ratio);var minimum_ratio=float(forecast.minimum)
 				if ratio>=minimum_ratio:
 					# Melee does not consume ammunition. Do not abandon an already
 					# accepted infantry assault merely to refill an empty ammo level.
@@ -103,19 +100,23 @@ func choose(view: Dictionary) -> Dictionary:
 						var charging_unit=str(u.id)
 						ranked=ranked.filter(func(item):return item.action.kind!="rest" or str(item.action.get("unit",""))!=charging_unit)
 					var score=float(settings.assault)+(30.0*urgency if offensive else 0.0)+minf(2.0,ratio)*float(settings.ratio_value)-response*float(settings.return_risk)
-					if hard_offensive and int(e.state.turn)>=8 and not e.cavalry(n) and not e.headquarters(n):score+=float(settings.get("assault_commitment",0))
+					if hard_offensive and int(e.state.turn)>=4 and not e.cavalry(n) and not e.headquarters(n):score+=float(settings.get("assault_commitment",0))
 					if e.unit_cell(e.state.units[j])==goal:score+=float(settings.objective_target)
 					if offensive:score+=target_priority(e,j)+float(bridge_targets.get(j,0.0))+operation_target(e,j)
 					offer({"kind":"assault","unit":u.id,"target":e.state.units[j].id},score)
+		var ready_battery=false
 		if e.artillery(n) and not u.deployed and (int(u.ap)>=int(e.weapon(n).deployment_ap)+int(e.weapon(n).ap) or (hard_planning or offensive) and int(u.ap)>=int(e.weapon(n).deployment_ap)):
 			u.deployed=true;u.ap-=int(e.weapon(n).deployment_ap)
-			if best_fire(e,n)>0:offer({"kind":"deploy","unit":u.id},float(settings.deploy)+(45 if offensive else 0))
+			if best_fire(e,n)>0:
+				ready_battery=hard_offensive and e.enemy_distance(n,start)>1 and threat(e,n)<maxf(100,float(u.strength)*0.35) and (not has_bridge_mission(e,n) or bridge_fire(e,n)>0)
+				offer({"kind":"deploy","unit":u.id},float(settings.deploy)+(45 if offensive else 0)+(300.0 if ready_battery else 0.0))
 			elif (hard_planning or offensive) and best_fire(e,n,true)>0:
 				# At a 3-AP command limit, a French battery can deploy now and fire next turn.
 				offer({"kind":"deploy","unit":u.id},0.8*float(settings.deploy)+(45 if offensive else 0))
 			u.deployed=false;u.ap+=int(e.weapon(n).deployment_ap)
 		if e.entrench_status(n)=="ok" and (start==goal or (not offensive and e.enemy_distance(n,start)<=int(e.weapon(n).range))):
 			offer({"kind":"entrench","unit":u.id},float(settings.entrench_goal if start==goal else settings.entrench))
+		if ready_battery:continue
 		# The objective's garrison stays in place; other troops can support it.
 		var clear_entry=false
 		if hard_planning and e.enemy_distance(n,start)>2:
@@ -126,9 +127,10 @@ func choose(view: Dictionary) -> Dictionary:
 		var current_threat=threat(e,n);var current_cover=float(e.pack.terrains[e.pack.map.tiles[start]].fire_received)
 		var current_fire=best_fire(e,n,true)
 		var current_bridge=bridge_fire(e,n) if e.artillery(n) else 0.0
+		var battery_anchor=infantry_distance(e,n,start) if hard_offensive and e.artillery(n) else 0
 		# A battery with a useful lane waits for its next shot instead of using its
 		# remaining AP to limber and drift toward the objective like infantry.
-		if offensive and original_deployed and current_fire>0 and e.enemy_distance(n,start)>1 and current_threat<maxf(100,float(u.strength)*0.35) and (bridge_targets.is_empty() or current_bridge>0):continue
+		if offensive and original_deployed and current_fire>0 and e.enemy_distance(n,start)>1 and current_threat<maxf(100,float(u.strength)*0.35) and (not has_bridge_mission(e,n) or current_bridge>0):continue
 		if original_deployed:
 			if int(u.ap)<=int(e.weapon(n).deployment_ap):continue
 			u.deployed=false;u.ap-=int(e.weapon(n).deployment_ap)
@@ -143,6 +145,7 @@ func choose(view: Dictionary) -> Dictionary:
 			if dest==start or e.unit_at(dest)>=0:continue
 			var progress=(float(field.get(start,10000))-float(field.get(dest,10000)))/4.0
 			var c=e.cell(dest);e.set_planning_cell(n,[c.x,c.y]);u.ap=move_ap-int(reachable.costs[dest])
+			var follow_assault=""
 			var preserves_links=true
 			var score=progress*float(settings.progress)*(2.8*urgency if offensive and not e.headquarters(n) else 1.0)
 			if not networks.is_empty():
@@ -183,10 +186,17 @@ func choose(view: Dictionary) -> Dictionary:
 				else:
 					if immediate_fire>0:score+=40.0 if hard_planning else 20.0
 					if hard_planning:score+=exploitation_value(e,n,goal)
+					if hard_offensive:
+						follow_assault=move_assault_target(e,n)
+						if not follow_assault.is_empty():score+=150.0
 					if hard_planning and progress>=-1.0 and e.distance(dest,goal)<=e.distance(start,goal)+1:score+=interdiction_value(e,n,dest,goal)
 				# Do not spend the whole activation advancing into contact when a
 				# shorter move would leave AP for a real shot/assault.
 				if not e.artillery(n) and int(u.ap)<mini(int(e.weapon(n).ap),e.assault_cost(n)) and e.enemy_distance(n,dest)<=2:score-=25.0
+			if hard_offensive and e.artillery(n) and e.enemy_distance(n,start)>1:
+				var support_distance=infantry_distance(e,n,dest)
+				score-=maxi(0,support_distance-3)*80.0
+				if next_fire<=0 and support_distance>battery_anchor:score-=120.0
 			var danger=threat(e,n)
 			if hard_planning and offensive and e.artillery(n) and current_bridge<=0 and preserves_links and e.enemy_distance(n,dest)>1 and danger<=current_threat:
 				var next_bridge=bridge_fire(e,n)
@@ -214,7 +224,7 @@ func choose(view: Dictionary) -> Dictionary:
 			if score>float(settings.minimum_move):
 				var path=[int(dest)]
 				while reachable.parents.has(path[0]):path.push_front(reachable.parents[path[0]])
-				offer({"kind":"limber" if original_deployed else "move","unit":u.id,"path":path},score)
+				offer({"kind":"limber" if original_deployed else "move","unit":u.id,"path":path},score,follow_assault)
 			e.set_planning_cell(n,[e.cell(start).x,e.cell(start).y]);u.ap=move_ap
 		u.ap=original_ap;u.deployed=original_deployed
 	if ranked.is_empty():return {"kind":"end"}
@@ -223,6 +233,10 @@ func choose(view: Dictionary) -> Dictionary:
 	if action.kind=="limber" and action.has("path"):
 		var n=e.unit_index(action.unit)
 		relocation={"unit":action.unit,"path":action.path.duplicate(),"turn":e.state.turn,"side":e.state.side,"ap":int(e.state.units[n].ap)-int(e.weapon(n).deployment_ap)}
+	elif action.kind=="move" and not str(ranked[0].get("assault_target","")).is_empty():
+		var n=e.unit_index(action.unit);var cost=0
+		for step in range(1,action.path.size()):cost+=e.step_cost(n,int(action.path[step-1]),int(action.path[step]))
+		relocation={"kind":"assault_approach","unit":action.unit,"target":ranked[0].assault_target,"path":action.path.duplicate(),"turn":e.state.turn,"side":e.state.side,"ap":int(e.state.units[n].ap)-cost}
 	return action
 
 func continue_relocation(e) -> Dictionary:
@@ -231,6 +245,12 @@ func continue_relocation(e) -> Dictionary:
 	var n=e.unit_index(str(plan.unit))
 	if n<0 or not e.can_act(n) or int(e.state.turn)!=int(plan.turn) or int(e.state.side)!=int(plan.side):return {}
 	var u=e.state.units[n]
+	if str(plan.get("kind",""))=="assault_approach":
+		var target=e.unit_index(str(plan.target))
+		if not hard_offensive or target<0 or e.unit_cell(u)!=int(plan.path[-1]) or int(u.ap)!=int(plan.ap) or e.assault_status(n,target)!="ok":return {}
+		var forecast=assault_forecast(e,n,target)
+		if float(forecast.ratio)>=float(forecast.minimum):return {"kind":"assault","unit":u.id,"target":e.state.units[target].id}
+		return {}
 	if u.deployed or int(u.ap)!=int(plan.ap) or e.unit_cell(u)!=int(plan.path[0]):return {}
 	# Rebuild through the new observation: a revealed enemy may invalidate the old path.
 	var dest=int(plan.path[-1]);var reach=e.reach(n)
@@ -268,6 +288,7 @@ func bridge_fire(e,n: int) -> float:
 	u.ap=e.max_ap(n);u.done=false;u.deployed=true
 	var best=0.0
 	for j in bridge_targets:
+		if not bridge_relevant(e,n,int(j)):continue
 		if e.fire_status(n,int(j))=="ok":best=maxf(best,float(bridge_targets[j]))
 	u.ap=ap;u.done=done;u.deployed=deployed
 	return best
@@ -368,12 +389,12 @@ func mobile_contact(e,j: int,pos: int) -> bool:
 				if not e.open_river(int(cell),int(adjacent)):cells[int(adjacent)]=true
 		e.state.units[j]=old;e.state.side=side;mobile_threats[key]=cells
 	return mobile_threats[key].has(pos)
-func offer(action: Dictionary,score: float):
+func offer(action: Dictionary,score: float,assault_target: String=""):
 	var noise=float(settings.get("variation",0))
 	if noise>0:
 		var value=posmod((signature+JSON.stringify(action)).hash(),1001)/1000.0
 		score+=(value-0.5)*2*noise
-	if score>0:ranked.append({"action":action,"score":score})
+	if score>0:ranked.append({"action":action,"score":score,"assault_target":assault_target})
 func mean_loss(e,a: int,b: int,factor: float=1.0) -> float:
 	var w=e.weapon(a);var variance=float(w.variance);w.variance=0.0
 	var value=e.shot_loss(a,b,mean_rng,factor);w.variance=variance
@@ -502,3 +523,35 @@ func operation_target(e,j: int) -> float:
 		if goal>=0 and e.distance(goal,target)<=2:best=55.0
 		if e.distance(e.unit_cell(e.state.units[k]),target)<=3:supporters+=1
 	return best+minf(3,supporters)*12.0 if best>0 else 0.0
+
+func bridge_relevant(e,n: int,j: int) -> bool:
+	if not hard_offensive:return true
+	var goal=int(operation_goals.get(n,-1))
+	return goal<0 or e.distance(e.unit_cell(e.state.units[j]),goal)<=4
+func has_bridge_mission(e,n: int) -> bool:
+	for j in bridge_targets:
+		if bridge_relevant(e,n,int(j)):return true
+	return false
+func infantry_distance(e,n: int,pos: int) -> int:
+	var nearest=999;var group=str(e.state.units[n].get("command_group",""))
+	for k in range(e.state.units.size()):
+		var ally=e.state.units[k]
+		if int(ally.side)!=int(e.state.side) or e.artillery(k) or e.cavalry(k) or e.headquarters(k) or ally.morale=="routed":continue
+		if str(ally.get("command_group",""))==group:nearest=mini(nearest,e.distance(pos,e.unit_cell(ally)))
+	return 0 if nearest==999 else nearest
+func assault_forecast(e,n: int,j: int) -> Dictionary:
+	var u=e.state.units[n]
+	var response=mean_loss(e,j,n,float(e.pack.rules.combat.reaction_factor)) if e.reaction_status(j,n)=="ok" else 0.0
+	var power=e.attack_power_against(n,j)*e.melee_strength(n,j,maxf(0.0,float(u.strength)-response))/maxf(1,e.melee_strength(n,j,float(u.strength)))
+	var minimum=float(settings.charge_ratio if e.cavalry(n) else settings.assault_ratio)
+	if hard_planning and offensive and not e.cavalry(n) and e.state.units[j].morale in ["shaken","routed"] and friends_near(e,n,e.unit_cell(e.state.units[j]))>=1:minimum=maxf(1.05,minimum-0.15)
+	if hard_offensive and not e.cavalry(n) and not e.headquarters(n) and friends_near(e,n,e.unit_cell(e.state.units[j]))>=2 and int(e.state.turn)>=4 and float(u.strength)>=float(u.initial_strength)*0.35:minimum=minf(minimum,1.15 if e.state.units[j].get("entrenched",false) else 1.10)
+	return {"response":response,"ratio":power/maxf(1,e.defence_power_against(j,n)),"minimum":minimum}
+func move_assault_target(e,n: int) -> String:
+	if e.cavalry(n) or e.headquarters(n) or int(e.state.units[n].ap)<e.assault_cost(n):return ""
+	for cell in e.neighbours(e.unit_cell(e.state.units[n])):
+		var j=e.unit_at(cell)
+		if j<0 or int(e.state.units[j].side)==int(e.state.side) or e.assault_status(n,j)!="ok":continue
+		var f=assault_forecast(e,n,j)
+		if float(f.ratio)>=float(f.minimum):return str(e.state.units[j].id)
+	return ""

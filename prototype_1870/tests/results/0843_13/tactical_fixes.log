@@ -1,0 +1,7 @@
+Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org
+
+WING GUN {"kind":"limber","path":[439,440,441],"unit":"art_pr_Schmidt0"} -> {"kind":"fire","target":"fr_18","unit":"art_pr_Schmidt0"}
+WING DEPLOY {"kind":"move","path":[439,440,441],"unit":"art_pr_Schmidt0"} -> {"kind":"deploy","unit":"art_pr_Schmidt0"}
+MOVE ASSAULT {"kind":"fire","target":"fr_7","unit":"pru_36"} -> {"kind":"move","path":[253,223,222],"unit":"pru_36"}
+FOLLOW {"kind":"assault","target":"fr_7","unit":"pru_36"}
+V43.13 27/27

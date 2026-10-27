@@ -20,6 +20,12 @@ func _initialize():
  var legacy=Store.new("user://v436.json",old_raw.sha256_text());check(legacy.save_game(old),"physical previous-version save")
  var raw=FileAccess.get_file_as_string("res://packs/1870/regimental_trial_v43.json");var current=Rules.new(JSON.parse_string(raw));var slot=Store.new(legacy.path,raw.sha256_text(),current.pack.save_migrations);var before=FileAccess.get_file_as_bytes(legacy.path)
  check(slot.load_game(current) and current.validate(current.state),"previous fingerprint accepted by new scenario")
- check(JSON.parse_string(JSON.stringify(current.state))==JSON.parse_string(JSON.stringify(old.state)),"migration preserves complete game state")
+ check(same_persisted_state(current.state,old.state),"migration preserves complete game state")
  check(FileAccess.get_file_as_bytes(legacy.path)==before,"loading does not rewrite original")
  print("V43.7 CAVALRY VILLAGE ",checks-failures,"/",checks);quit(1 if failures else 0)
+
+func same_persisted_state(actual: Dictionary,original: Dictionary) -> bool:
+ var copy=actual.duplicate(true)
+ if copy.get("objective_layout","")!="v4312":return false
+ copy.erase("objective_layout")
+ return JSON.parse_string(JSON.stringify(copy))==JSON.parse_string(JSON.stringify(original))

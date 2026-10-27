@@ -1,3 +1,17 @@
+# Prototype courant : V43.13
+
+- [Télécharger l’APK V43.13](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.13.apk)
+- [Sources complètes V43.13](releases/1870_v0.8.43.13_Sources.zip)
+- [Changements](releases/VERSION_0843_13.md), [tests](releases/TESTS_V43_13.md) et [comparaison Normal / Difficile](releases/COMPARAISON_NORMAL_DIFFICILE_V43_13.md)
+
+**Nouvelles parties : Frœschwiller 3, Wœrth 2, Niederwald 1.** Elsasshausen redevient un village sans objectif. Les anciennes parties conservent leurs anciens objectifs et leurs scores.
+
+Le Normal garde son IA V43.11. Le Difficile stabilise ses batteries en position de tir et conserve les PA d’approche pour lancer les assauts favorables. Comparaison de dix tours sur les mêmes nouveaux objectifs : **144 tirs de canon et 29 assauts en Difficile, contre 117 et 15 en Normal**. Trois objectifs prussiens en fin T8 en Difficile ; Frœschwiller reste français fin T10 en Normal. Une seule graine/style, défense française active de test ; aucune garantie universelle ni simulation de vingt tours.
+
+2 522 contrôles techniques réussis et 4 564 contrôles de légalité/état des deux simulations. Avertissement ObjectDB restant à la fermeture du test UI, documenté dans les tests. APK signé, aucun essai physique Android. Installer sans désinstaller ; démarrer une nouvelle partie pour déplacer l’objectif 2 à Wœrth.
+
+---
+
 # Prototype courant : V43.12
 
 - [Télécharger l’APK V43.12](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.12.apk)

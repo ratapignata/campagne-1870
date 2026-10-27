@@ -160,6 +160,7 @@ func move(n: int,path: Array) -> String:
 	return "moved"
 # Single-objective packs remain valid. The legacy owner mirrors the first objective.
 func objective_definitions() -> Array:
+	if state.get("objective_layout","")=="v4312" and pack.has("previous_objectives"):return pack.previous_objectives
 	if pack.has("objectives") and not pack.objectives.is_empty():return pack.objectives
 	var legacy=pack.objective.duplicate(true);legacy.id="primary"
 	return [legacy]
