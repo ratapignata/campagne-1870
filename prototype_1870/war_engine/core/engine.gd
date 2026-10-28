@@ -42,6 +42,7 @@ func normalize() -> void:
 	for event in state.get("support_events",[]):
 		for key in ["serial","turn","side","prisoners"]:event[key]=int(event[key])
 		for k in range(event.cell.size()):event.cell[k]=int(event.cell[k])
+		if event.has("links"):event.links.command_distance=int(event.links.command_distance)
 	for u in state.units:
 		if u.has("turn_ap_limit"):u.turn_ap_limit=int(u.turn_ap_limit)
 		if u.has("isolation_turns"):u.isolation_turns=int(u.isolation_turns)
@@ -107,11 +108,15 @@ func support_budget(n: int) -> int:
 	return mini(base,int(pack.rules.support.get("isolated_ap",8))) if not u.get("supply_ok",true) else maxi(0,base-int(pack.rules.support.get("uncommanded_ap_penalty",4)))
 func max_ap(n: int) -> int:
 	return int(state.units[n].get("turn_ap_limit",super.max_ap(n))) if strict_links() else super.max_ap(n)
-func support_event(n: int,kind: String,amount: int=0,known_names: Dictionary={}):
+func support_event(n: int,kind: String,amount: int=0,known_names: Dictionary={},links: Dictionary={}):
 	if not state.has("support_events"):state.support_events=[]
 	state.support_serial=int(state.get("support_serial",0))+1
 	var u=state.units[n]
 	state.support_events.append({"serial":state.support_serial,"turn":state.turn,"side":u.side,"unit":u.id,"name_key":u.name_key,"kind":kind,"prisoners":amount,"cell":u.cell.duplicate(),"known_names":known_names.duplicate()})
+	if not links.is_empty():
+		var detail={}
+		for key in ["command_ok","supply_ok","command_reason","supply_reason","command_distance","hq_id"]:detail[key]=links[key]
+		state.support_events[-1].links=detail
 	if kind=="surrender" and state.has("battle_history"):
 		state.battle_history.append({"turn":state.turn,"side":u.side,"unit":u.id,"kind":kind,"prisoners":amount,"known_names":known_names.duplicate()})
 		if state.battle_history.size()>512:state.battle_history.pop_front()
@@ -150,7 +155,7 @@ func update_support(side: int) -> void:
 			if int(u.side)==side:u.is_hq=false
 	var reports=Support.assess_side(self,side)
 	for n in reports:
-		if strict_links() and (state.units[n].get("command_ok",true) and not reports[n].command_ok or state.units[n].get("supply_ok",true) and not reports[n].supply_ok):support_event(n,"cut")
+		if strict_links() and (state.units[n].get("command_ok",true) and not reports[n].command_ok or state.units[n].get("supply_ok",true) and not reports[n].supply_ok):support_event(n,"cut",0,{},reports[n])
 		for key in reports[n]:state.units[n][key]=reports[n][key]
 		if reports[n].supply_ok or reports[n].command_ok:state.units[n].isolation_turns=0
 		if fixed_hq() and not reports[n].supply_ok:state.units[n].supply_interrupted=true
@@ -790,6 +795,13 @@ func validate(s: Dictionary) -> bool:
 			if event.get("kind","") not in ["cut","surrender"] or not event.get("unit",null) is String or not event.get("name_key",null) is String:return false
 			if not event.get("cell",null) is Array or event.cell.size()!=2:return false
 			if not whole_number(event.cell[0]) or not whole_number(event.cell[1]):return false
+			if event.has("links"):
+				var detail=event.links
+				if not detail is Dictionary:return false
+				for key in ["command_ok","supply_ok"]:
+					if not detail.get(key,null) is bool:return false
+				if detail.get("command_reason","") not in ["ok","no_hq","river","distance","enemy"] or detail.get("supply_reason","") not in ["ok","river","enemy","detour"]:return false
+				if not whole_number(detail.get("command_distance",null)) or detail.command_distance< -1 or not detail.get("hq_id",null) is String:return false
 	if s.get("undo_reason","none") not in ["none","available","capture","turn","rest","deployment","formation","discovery","information","assault","fire","rally","retreat","entrench","surrender"]:return false
 	if s.has("completed_turn_limit") and (not whole_number(s.completed_turn_limit) or not s.finished or int(s.completed_turn_limit)!=int(s.turn)):return false
 	if not s.get("ai_difficulty","legacy") in ["legacy","easy","medium","hard","normal","Normal","NORMAL","moyen","Moyen","facile","Facile","difficile","Difficile","DIFFICILE"]:return false

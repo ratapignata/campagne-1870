@@ -6,6 +6,7 @@ const BODY=preload("res://assets/fonts/DejaVuSans.ttf")
 const TITLE=preload("res://assets/fonts/DejaVuSerif-Bold.ttf")
 const FLAGS=[preload("res://assets/flag_fr.svg"),preload("res://assets/flag_de.svg")]
 const LOGO=preload("res://assets/logo.svg")
+const BattleReport=preload("res://war_engine/presentation/battle_report.gd")
 const TacticalAI=preload("res://war_engine/ai/tactical_ai.gd")
 const INK=Color("192f31")
 const GOLD=Color("d4b06c")
@@ -352,7 +353,8 @@ func refresh(message: String=""):
 	if shown>=0 and engine.support_enabled() and int(engine.state.units[shown].side)==int(engine.state.human_side):
 		var u=engine.state.units[shown]
 		ammo_label.text=t("ammo_na") if engine.cavalry(shown) else t("ammo_status")%t("ammo_"+str(u.ammo_level))
-		if u.encircled:encircled_label.text=t("support_encircled")
+		if not u.command_ok and not u.supply_ok:encircled_label.text=t("link_double_short")
+		elif u.encircled:encircled_label.text=t("support_encircled")
 		support_label.text=t("command_status")%t("link_ok" if u.command_ok else "command_cut")
 		supply_label.text=t("supply_status")%t("link_ok" if u.supply_ok else "link_cut")
 		ammo_label.add_theme_color_override("font_color",Color("f3bf72") if int(u.ammo_level)==2 else PAPER)
@@ -575,21 +577,39 @@ func show_terrain_info():
 		if edge.has("bridge_from_turn") and inspected in [int(edge.a),int(edge.b)]:
 			weapon_label.size.x=425;weapon_label.add_theme_font_size_override("font_size",16);unit_reaction.text=""
 			weapon_label.text=t("bridge_wait")%int(edge.bridge_from_turn) if engine.open_river(int(edge.a),int(edge.b)) else t("bridge_open_notice")
+func link_info_text(n: int,command: bool) -> String:
+	if n<0 or n>=engine.state.units.size() or int(engine.state.units[n].side)!=int(engine.state.human_side):return ""
+	var u=engine.state.units[n];var c=bool(u.get("command_ok",true));var r=bool(u.get("supply_ok",true))
+	var content=t("link_state_both" if not c and not r else "link_state_command" if not c else "link_state_supply" if not r else "link_state_ok")
+	content+="\n\n"+t("link_"+("command_"+str(u.get("command_reason","ok")) if command else "supply_"+str(u.get("supply_reason","ok"))))
+	var leader=engine.unit_index(str(u.get("hq_id","")))
+	if leader>=0 and int(engine.state.units[leader].side)==int(u.side):
+		content+="\n\n"+t("hq_detail")%[t(str(engine.state.units[leader].name_key)+"_short").trim_prefix("QG "),int(engine.pack.rules.support.cavalry_command_radius if engine.cavalry(n) else engine.pack.rules.support.command_radius)]
+	if command and int(u.get("command_distance",-1))>=0:content+="\n"+t("link_distance_detail")%int(u.command_distance)
+	if engine.strict_links():
+		content+="\n"+t("link_ap_detail")%[ap_text(engine.max_ap(n)),ap_text(engine.support_budget(n)),ap_text(engine.action_budget(u))]
+		content+="\n\n"+t("link_safe_corridor")
+	content+="\n\n"+t("command_effect_strict" if engine.strict_links() else "command_effect") if command else "\n\n"+t("supply_effect")
+	if engine.pack.rules.support.has("isolation_surrender_turns") and not c and not r:content+="\n\n"+t("isolation_count")%[int(u.get("isolation_turns",0)),int(engine.pack.rules.support.isolation_surrender_turns)]
+	return content
 func show_link_info(command: bool):
 	var n=target if target>=0 else selected
-	if n<0 or not engine.fixed_hq() or int(engine.state.units[n].side)!=int(engine.state.human_side):return
-	var u=engine.state.units[n]
-	var box=modal_base(800,392)
-	label(box,t("link_title_command" if command else "link_title_supply"),30,20,740,38,27,GOLD,true)
-	var content=t("link_"+("command_"+str(u.get("command_reason","ok")) if command else "supply_"+str(u.get("supply_reason","ok"))))
-	if command:
-		var leader=engine.unit_index(str(u.get("hq_id","")))
-		if leader>=0:content+="\n\n"+t("hq_detail")%[t(str(engine.state.units[leader].name_key)+"_short"),int(engine.pack.rules.support.cavalry_command_radius if engine.cavalry(n) else engine.pack.rules.support.command_radius)]
-		content+="\n\n"+t("command_effect_strict" if engine.strict_links() else "command_effect")
-	else:content+="\n\n"+t("supply_effect")
-	if engine.pack.rules.support.has("isolation_surrender_turns") and not u.get("command_ok",true) and not u.get("supply_ok",true):content+="\n\n"+t("isolation_count")%[int(u.get("isolation_turns",0)),int(engine.pack.rules.support.isolation_surrender_turns)]
-	scroll_text(box,content,72,232)
-	button(box,t("close"),30,326,740,48,close_modal,true)
+	if n<0 or not engine.fixed_hq():return
+	var content=link_info_text(n,command)
+	if content.is_empty():return
+	var box=modal_base(880,540)
+	label(box,t("link_title_command" if command else "link_title_supply"),30,20,820,38,27,GOLD,true)
+	scroll_text(box,content,72,374)
+	button(box,t("close"),30,467,820,48,close_modal,true)
+func link_journal_detail(event: Dictionary) -> String:
+	if int(event.side)!=int(engine.state.human_side):return ""
+	var detail=event.get("links",{})
+	if detail.is_empty():return t("link_old_detail")
+	var status=t("link_state_both" if not detail.command_ok and not detail.supply_ok else "link_state_command" if not detail.command_ok else "link_state_supply" if not detail.supply_ok else "link_state_ok")
+	var leader=engine.unit_index(str(detail.get("hq_id","")))
+	if leader>=0 and int(engine.state.units[leader].side)==int(engine.state.human_side):status+=" · "+t(str(engine.state.units[leader].name_key)+"_short")
+	if int(detail.get("command_distance",-1))>=0:status+=" · "+t("link_distance_detail")%int(detail.command_distance)
+	return status+" · "+t("link_command_"+str(detail.command_reason))+" "+t("link_supply_"+str(detail.supply_reason))
 func play_assault_sound():
 	if sound_enabled and not app_suspended:assault_player.stream=sound_streams.assault;assault_player.play()
 func commit_entrench():
@@ -803,8 +823,11 @@ func show_journal():
 
 	for event in engine.state.get("support_events",[]):
 		if event.kind=="surrender" or int(event.side)!=int(engine.state.human_side):continue
-		content+="\n"+t("support_journal_turn")%int(event.turn)+" · "+(t("support_surrender_notice")%[t(event.name_key),int(event.prisoners)] if event.kind=="surrender" else t("support_cut_notice")%t(event.name_key))
-	if active_scenario() in ["v43","v42_experimental","v42_lot8"]:content=("V43 — variante B expérimentale" if active_scenario()=="v43" else "V42 expérimentale")+" — Frœschwiller : 3 points ; Elsasshausen : 2 ; Niederwald : 1. Score final : contrôle 60 %, durée 20 %, pertes 20 %. Formations et renforts non validés historiquement."+"\n\n"+content
+		content+="\n"+t("support_journal_turn")%int(event.turn)+" · "+(t("support_surrender_notice")%[t(event.name_key),int(event.prisoners)] if event.kind=="surrender" else t("support_cut_notice")%t(event.name_key))+"\n"+link_journal_detail(event)
+	if active_scenario() in ["v43","v42_experimental","v42_lot8"]:
+		var goals=[]
+		for goal in engine.objective_definitions():goals.append(t(goal.get("name_key","objective"))+" : "+str(int(goal.points))+" points")
+		content=" · ".join(goals)+". Score : contrôle 60 %, durée 20 %, pertes 20 %.\n\n"+content
 	elif engine.objective_definitions().size()>1:content=t("scenario_help")+"\n\n"+content
 	var history="Historique en fin de tour — pertes cumulées ; prisonniers séparés\n"
 	if engine.state.get("loss_history",[]).is_empty():history+="Aucun tour enregistré. Les anciennes sauvegardes ne permettent pas de reconstituer les tours passés.\n"
@@ -854,20 +877,7 @@ func show_battle_details():
 	if not engine.state.finished:return
 	var box=modal_base(1040,650)
 	label(box,t("battle_details"),38,15,964,38,25,GOLD,true)
-	var lines=[]
-	for goal in engine.objective_definitions():
-		var owner=engine.objective_owner(goal)
-		lines.append(t(str(goal.get("name_key","objective")))+" : "+(camp(owner) if owner in [0,1] else "—"))
-	lines.append("")
-	if not engine.state.has("battle_history"):lines.append(t("battle_details_legacy"))
-	for event in engine.state.get("battle_history",[]):
-		if event.kind=="capture":
-			for goal in engine.objective_definitions():
-				if goal.id==event.objective:lines.append("Tour %d — %s : %s"%[event.turn,t(str(goal.get("name_key","objective"))),camp(int(event.side))])
-		else:
-			var n=engine.unit_index(event.unit)
-			if n>=0:lines.append("Tour %d — %s (%s) : %d prisonniers"%[event.turn,t(engine.state.units[n].name_key),camp(int(event.side)),event.prisoners])
-	scroll_text(box,"\n".join(lines),72,470)
+	scroll_text(box,BattleReport.build(engine,texts),72,470)
 	button(box,t("close"),38,569,964,56,show_result,true)
 func _notification(what):
 	if what==NOTIFICATION_APPLICATION_FOCUS_OUT and map!=null:map.cancel_interaction()

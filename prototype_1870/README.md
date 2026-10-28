@@ -1,12 +1,16 @@
-# 1870 : Frœschwiller-Wœrth — V43.1
+# 1870 : Frœschwiller-Wœrth — V43.14
 
-Prototype courant, Godot 4.5.1. Si un ennemi occupe l’entrée d’un renfort, celui-ci arrive sur un hexagone immédiatement voisin libre et praticable. Si aucun n’est disponible, il attend. Le renfort n’est jamais anticipé et aucun occupant n’est déplacé.
+Prototype Android, Godot 4.5.1. L’ossature offensive V43.13 approuvée est conservée. Cette version explique les liaisons, corrige une mission de batterie inactive, protège les avances individuelles sans soutien et enrichit le rapport final.
 
-- [Changements V43.1](VERSION_0843_1.md)
-- [Tests V43.1](TESTS_V43_1.md)
-- [Cas Raoult](RAOULT_V43.md)
-- [Comparaisons de combats V43](COMBATS_V43.md)
+- [Changements](VERSION_0843_14.md)
+- [Tests réellement exécutés](TESTS_V43_14.md)
+- [Référence tactique approuvée](REFERENCE_IA_V43.md)
+- [Comparaison précédente des difficultés](COMPARAISON_NORMAL_DIFFICILE_V43_13.md)
 
-95 000 Allemands, 50 unités allemandes, 20 tours, Normal/Difficile. Variante B 0,90 et projectile anthracite conservés. Charge 2 PA, ripostes, isolement/reddition et score 60/20/20 inchangés. Aucun bouton TIRER ni bonus IA.
+Toucher **Cmd.** ou **Ravit.** sur la fiche d’une unité pour comprendre ses liaisons. À la fin de la partie, ouvrir **Rapport détaillé de bataille** sur l’écran de résultat.
 
-Les anciennes sauvegardes V43 et V42 Lot 8 compatibles sont conservées et reprises. Pour une unité déjà en attente dans une ancienne partie, la nouvelle tentative a lieu au prochain début du tour de son camp. Aucun essai physique Android.
+95 000 Allemands / 50 unités, 20 tours, Normal et Difficile, charge 2 PA, variante B 0,90, score 60/20/20. Aucun bouton TIRER. Objectifs actuels : Frœschwiller 3, Wœrth 2, Niederwald 1 ; les anciennes parties conservent leur disposition. Coûts, combats, ripostes, isolement/reddition et animations inchangés.
+
+Les renforts dont la case d’entrée est occupée par un ennemi cherchent une case immédiatement voisine libre et praticable ; à défaut ils attendent. Le décalage d’un tour plus tôt des renforts prussiens en Difficile, déjà autorisé, est conservé.
+
+Installer l’APK comme mise à jour sans désinstaller l’application. Anciennes sauvegardes compatibles conservées. Aucun essai physique Android.

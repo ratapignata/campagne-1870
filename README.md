@@ -1,4 +1,20 @@
-# Prototype courant : V43.13
+# Prototype courant : V43.14
+
+- [Télécharger l’APK V43.14](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.14.apk)
+- [Sources complètes V43.14](releases/1870_v0.8.43.14_Sources.zip)
+- [Changements](releases/VERSION_0843_14.md), [tests exécutés](releases/TESTS_V43_14.md) et [référence d’IA conservée](releases/REFERENCE_IA_V43.md)
+
+**Ossature et agressivité V43.13 conservées.** Les fiches Cmd./Ravit. expliquent la double coupure, le QG et les plafonds de PA. Les nouvelles coupures sont documentées dans le journal sans révéler les ennemis cachés. Le rapport final présente objectifs, pertes, prisonniers, capitulations, chronologie et calcul 60/20/20.
+
+En Difficile prussien : une batterie sans ligne de tir peut quitter une garnison devenue inutile pour soutenir un combat observé ; les mouvements individuels abandonnant les deux liaisons sans soutien sous menace visible sont évités. Normal inchangé, aucun nouveau bonus de combat ni modification des règles.
+
+2 560 contrôles techniques réussis, plus 944 contrôles de légalité/état dans la comparaison de reprise T11–T12. Sur ces deux tours : 28 tirs de canon et 10 assauts dans chaque version, trois objectifs conservés. Pas de nouvelle campagne complète T1–T20 ni de test physique Android. APK compilé et signature vérifiée.
+
+Installer comme mise à jour **sans désinstaller** pour conserver la partie. Aucun nouveau départ nécessaire pour les améliorations ; les anciennes dispositions d’objectifs restent respectées.
+
+---
+
+# Archive : V43.13
 
 - [Télécharger l’APK V43.13](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.13.apk)
 - [Sources complètes V43.13](releases/1870_v0.8.43.13_Sources.zip)
@@ -12,7 +28,7 @@ Le Normal garde son IA V43.11. Le Difficile stabilise ses batteries en position 
 
 ---
 
-# Prototype courant : V43.12
+# Archive : V43.12
 
 - [Télécharger l’APK V43.12](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.12.apk)
 - [Sources complètes V43.12](releases/1870_v0.8.43.12_Sources.zip)
@@ -26,7 +42,7 @@ Comparaison chronologique contrôlée : Wœrth occupé T4 contre T9, Frœschwill
 
 ---
 
-# Prototype courant : V43.11
+# Archive : V43.11
 
 - [Télécharger l’APK V43.11](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.11.apk)
 - [Sources complètes V43.11](releases/1870_v0.8.43.11_Sources.zip)
@@ -40,7 +56,7 @@ Difficile : préparation d’artillerie des passages et repositionnement légal.
 
 ---
 
-# Prototype courant : V43.10
+# Archive : V43.10
 
 - [Télécharger l’APK V43.10](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.10.apk)
 - [Sources complètes V43.10](releases/1870_v0.8.43.10_Sources.zip)
@@ -54,7 +70,7 @@ Les objectifs actuels sont conservés et aucune fusion n’est ajoutée. Cavaler
 
 ---
 
-# Prototype courant : V43.9
+# Archive : V43.9
 
 - [Télécharger l’APK V43.9](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.9.apk)
 - [Sources complètes V43.9](releases/1870_v0.8.43.9_Sources.zip)
@@ -64,7 +80,7 @@ Noms de l’infanterie prussienne précisés (régiments et bataillons), ligne d
 
 ---
 
-# Prototype courant : V43.8
+# Archive : V43.8
 
 - [Télécharger l’APK V43.8](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.8.apk)
 - [Sources complètes V43.8](releases/1870_v0.8.43.8_Sources.zip)
@@ -75,7 +91,7 @@ Nom et portée du fusil retirés de la fiche des fantassins et QG, sans modifier
 
 ---
 
-# Prototype courant : V43.7
+# Archive : V43.7
 
 - [Télécharger l’APK V43.7](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.7.apk)
 - [Sources complètes V43.7](releases/1870_v0.8.43.7_Sources.zip)
@@ -85,7 +101,7 @@ Défense de cavalerie en village réduite de 1,50 à 1,25 pour les deux camps, c
 
 ---
 
-# Prototype courant : V43.6
+# Archive : V43.6
 
 - [Télécharger l’APK V43.6](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.6.apk)
 - [Sources complètes V43.6](releases/1870_v0.8.43.6_Sources.zip)
@@ -95,7 +111,7 @@ Correction d’un faux échec d’export après écriture sur Android ; relectur
 
 ---
 
-# Prototype courant : V43.5
+# Archive : V43.5
 
 - [Télécharger l’APK V43.5](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.5.apk)
 - [Sources complètes V43.5](releases/1870_v0.8.43.5_Sources.zip)
@@ -105,7 +121,7 @@ Contour rouge de même taille que le vert fluo. Correction de la coupure logisti
 
 ---
 
-# Prototype courant : V43.4
+# Archive : V43.4
 
 - [Télécharger l’APK V43.4](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.4.apk)
 - [Sources complètes V43.4](releases/1870_v0.8.43.4_Sources.zip)
@@ -115,7 +131,7 @@ Seul le numéro d’unité en haut à droite est retiré. Le chiffre de force re
 
 ---
 
-# Prototype courant : V43.3 — pions sans numéros
+# Archive : V43.3 — pions sans numéros
 
 - [Télécharger l’APK V43.3](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.3.apk)
 - [Sources complètes V43.3](releases/1870_v0.8.43.3_Sources.zip)

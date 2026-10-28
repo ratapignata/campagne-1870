@@ -1,0 +1,12 @@
+[
+  {
+    "test": "test_animation_render",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\nWARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.\n     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)\nOpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)\n\nV43 ANIMATION RENDER 53/53\n"
+  },
+  {
+    "test": "test_rifle_animation_render",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\nWARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.\n     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)\nOpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)\n\nRIFLE RENDER 54/54\n"
+  }
+]

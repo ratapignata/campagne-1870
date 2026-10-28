@@ -1,0 +1,48 @@
+{
+  "reference": {
+    "complete": true,
+    "checks": 471,
+    "failures": 0,
+    "prussian_cannon": 28,
+    "prussian_fire": 53,
+    "prussian_assault": 10,
+    "prussian_moves": 58,
+    "prussian_phase_ms": 395419,
+    "final_goals": {
+      "elsasshausen": 1,
+      "froeschwiller": 1,
+      "niederwald": 1
+    },
+    "losses": [
+      19299,
+      11997
+    ],
+    "prisoners": [
+      4544,
+      275
+    ]
+  },
+  "current": {
+    "complete": true,
+    "checks": 473,
+    "failures": 0,
+    "prussian_cannon": 28,
+    "prussian_fire": 53,
+    "prussian_assault": 10,
+    "prussian_moves": 59,
+    "prussian_phase_ms": 422881,
+    "final_goals": {
+      "elsasshausen": 1,
+      "froeschwiller": 1,
+      "niederwald": 1
+    },
+    "losses": [
+      19274,
+      11996
+    ],
+    "prisoners": [
+      4544,
+      275
+    ]
+  }
+}

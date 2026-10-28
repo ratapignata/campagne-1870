@@ -22,6 +22,7 @@ var bridge_targets: Dictionary={}
 var normal_brain
 var operation_goals: Dictionary={}
 var hard_offensive=false
+var battery_targets: Dictionary={}
 func choose(view: Dictionary) -> Dictionary:
 	var difficulty=str(view.state.get("ai_difficulty","legacy"))
 	# Normal is exactly the former V43.11 Hard policy, including relocation state.
@@ -39,7 +40,7 @@ func choose(view: Dictionary) -> Dictionary:
 	hard_planning=difficulty=="hard";mobile_threats={}
 	offensive=int(e.pack.ai.get("attacking_side",-1))==int(e.state.side)
 	hard_offensive=hard_planning and offensive and str(e.pack.id)=="regimental_trial_v43"
-	objective_pressure={};enemy_screen={}
+	objective_pressure={};enemy_screen={};battery_targets={}
 	for j in range(e.state.units.size()):
 		if int(e.state.units[j].side)!=int(e.state.side) and e.state.units[j].morale!="routed":
 			var pos=e.unit_cell(e.state.units[j])
@@ -159,6 +160,12 @@ func choose(view: Dictionary) -> Dictionary:
 					link_priority*=0.45 if hard_offensive else 0.6
 				score+=(after-before)*link_priority
 				if after==0:score-=float(settings.get("link_safety",0))
+				if hard_offensive and not e.artillery(n) and not e.headquarters(n):
+					var protection=advance_protection(e,n,start,dest,before,links)
+					if protection==-INF:
+						e.set_planning_cell(n,[e.cell(start).x,e.cell(start).y]);u.ap=move_ap
+						continue
+					score+=protection
 			if e.headquarters(n) and float(settings.get("hq_safety",0))>0:
 				score-=maxf(0,4-e.enemy_distance(n,dest))*float(settings.hq_safety)
 				score+=(group_distance(e,n,start)-group_distance(e,n,dest))*(18.0 if hard_offensive else float(settings.get("formation_cohesion",0)))
@@ -445,6 +452,9 @@ func group_distance(e,n: int,pos: int) -> float:
 	return total/maxi(1,count)
 
 func mission_goal(e,n: int,fields: Dictionary) -> int:
+	if hard_offensive and e.artillery(n):
+		var support_goal=battery_support_goal(e,n)
+		if support_goal>=0:return support_goal
 	if hard_offensive and not e.headquarters(n):
 		var own_here=e.objective_at(e.unit_cell(e.state.units[n]))
 		if not own_here.is_empty():return e.unit_cell(e.state.units[n])
@@ -482,6 +492,45 @@ func mission_goal(e,n: int,fields: Dictionary) -> int:
 
 		if score>value:value=score;best=goal
 	return best if best>=0 else Legacy.new().target_goal(e,n,fields)
+
+# A silent battery is not an objective garrison. Follow an observed engagement,
+# keeping the existing LOS, AP, danger and formation-distance movement checks.
+# No target is inferred from hidden positions or the live engine.
+func battery_support_goal(e,n: int) -> int:
+	if battery_targets.has(n):return int(battery_targets[n])
+	var result=-1;var best=-INF
+	if best_fire(e,n,true)<=0:
+		for j in range(e.state.units.size()):
+			var foe=e.state.units[j]
+			if int(foe.side)==int(e.state.side) or e.headquarters(j) or foe.morale=="routed":continue
+			var target=e.unit_cell(foe);var infantry=0
+			for k in range(e.state.units.size()):
+				var ally=e.state.units[k]
+				if int(ally.side)==int(e.state.side) and not e.headquarters(k) and not e.artillery(k) and not e.cavalry(k) and ally.morale!="routed" and e.distance(e.unit_cell(ally),target)<=3:infantry+=1
+			if infantry==0:continue
+			var score=target_priority(e,j)+minf(3,infantry)*12.0-e.distance(e.unit_cell(e.state.units[n]),target)*8.0
+			if score>best:best=score;result=target
+	battery_targets[n]=result
+	return result
+
+func advance_protection(e,n: int,start: int,dest: int,old_links: int,links: Dictionary) -> float:
+	if not hard_offensive or e.artillery(n) or e.headquarters(n):return 0.0
+	var enemies=0;var supporters=0;var origin_support=0
+	for k in range(e.state.units.size()):
+		if k==n:continue
+		var other=e.state.units[k]
+		if other.morale=="routed":continue
+		var pos=e.unit_cell(other)
+		if int(other.side)!=int(e.state.side):
+			if e.distance(pos,dest)<=2:enemies+=1
+		elif not e.headquarters(k) and not e.artillery(k):
+			if e.distance(pos,dest)<=2:supporters+=1
+			if e.distance(pos,start)<=2:origin_support+=1
+	# Only an unsupported move abandoning BOTH links under a visible pincer is
+	# rejected. Massed infantry attacks and legal charges keep their old scores.
+	if old_links>0 and not links.command_ok and not links.supply_ok and supporters==0 and enemies>=2:return -INF
+	if old_links==0 and origin_support==0 and (links.command_ok or links.supply_ok):return 120.0
+	return 0.0
 
 func sector_pressure(e,goal: int) -> Dictionary:
 	if objective_pressure.has(goal):return objective_pressure[goal]

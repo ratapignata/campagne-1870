@@ -1,7 +1,7 @@
 {
   "title": "1870",
   "subtitle": "FRŒSCHWILLER–WŒRTH",
-  "badge": "Prototype Android · v0.8.43.13",
+  "badge": "Prototype Android · v0.8.43.14",
   "start": "Commencer la bataille",
   "continue": "Continuer",
   "menu": "Menu",
@@ -418,7 +418,7 @@
   "link_title_supply": "Liaison de ravitaillement",
   "link_command_ok": "Liaison assurée avec le QG.",
   "link_command_distance": "QG trop éloigné : aucun chemin praticable dans le rayon de commandement.",
-  "link_command_enemy": "Liaison coupée : les positions ennemies empêchent un passage dans le rayon du QG.",
+  "link_command_enemy": "Le chemin sûr est interrompu ou impose un détour excessif vers le QG.",
   "link_command_river": "Aucun passage praticable jusqu’au QG. Les liaisons traversent la rivière par les ponts.",
   "link_command_no_hq": "QG indisponible : détruit ou en déroute. Un QG rallié peut rétablir la liaison.",
   "link_supply_ok": "Un passage reste ouvert vers une zone arrière.",
@@ -679,7 +679,7 @@
   "link_supply_detour": "Détour trop important sous la pression ennemie.",
   "isolation_count": "Double coupure persistante : %d / %d constats au début de vos tours. Désorganisation au deuxième, déroute au troisième ; reddition seulement sans retraite légale. Rétablir une liaison remet le compteur à zéro.",
   "command_effect_strict": "Hors commandement : plafond de 3 PA au début du prochain tour de votre camp ; 2 PA si le ravitaillement est également coupé. Une liaison rétablie remet le compteur d’isolement à zéro. La récupération automatique de désorganisation est réduite de moitié. Rallier conserve son coût actuel.",
-  "battle_details": "Objectifs et capitulations",
+  "battle_details": "Rapport détaillé de bataille",
   "battle_details_legacy": "Historique non enregistré pour cette ancienne sauvegarde.",
   "v42_de_reserve_01": "Renfort allemand provisoire 01",
   "v42_de_reserve_01_short": "Renfort provisoire 01",
@@ -713,5 +713,14 @@
   "hq_arrival_delayed": "%s : arrivée T%d reportée (entrée occupée lors du contrôle en %d, %d). Nouvel essai au prochain début de tour.",
   "charge_target_terrain": "Terrain défendu : %s",
   "v43_detail": "20 tours · Frœschwiller 3, Wœrth 2, Niederwald 1.\nLes anciennes sauvegardes conservent leurs objectifs historiques.",
-  "goal_historical_woerth": "Wœrth"
+  "goal_historical_woerth": "Wœrth",
+  "link_state_both": "Double coupure : commandement et ravitaillement perdus.",
+  "link_state_command": "Hors commandement ; ravitaillement assuré.",
+  "link_state_supply": "Hors ravitaillement ; commandement assuré.",
+  "link_state_ok": "Commandement et ravitaillement assurés.",
+  "link_double_short": "Double coupure",
+  "link_ap_detail": "Plafond du tour actuel : %s PA. Avec ces liaisons au renouvellement : %s / %s PA.",
+  "link_safe_corridor": "Des amis voisins ne suffisent pas : il faut un chemin sûr vers le QG et le dépôt. Une case amie sous influence ennemie ne relaie pas la liaison. La double coupure ne signifie pas forcément encerclement ou déroute.",
+  "link_old_detail": "Motif détaillé non enregistré dans cette ancienne sauvegarde.",
+  "link_distance_detail": "Chemin sûr mesuré : %d hexagones."
 }
