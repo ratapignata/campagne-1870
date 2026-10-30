@@ -1,0 +1,140 @@
+[
+  {
+    "test": "v43/test_v4315",
+    "exit": 0,
+    "seconds": 13.405,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nCOVER {\"formation\":\"skirmish\",\"kind\":\"formation\",\"unit\":\"fr_8\"} -> {\"kind\":\"move\",\"path\":[160,190],\"unit\":\"fr_8\"}\nCOVER FOLLOW {\"kind\":\"entrench\",\"unit\":\"fr_8\"}\nBATTERY {\"kind\":\"limber\",\"path\":[160,190],\"unit\":\"art_fr_Pell\u00e90\"} -> {\"kind\":\"end\"}\nCOUNTERATTACK {\"kind\":\"assault\",\"target\":\"pru_36\",\"unit\":\"fr_9\"}\nSECTORS {\"0\":161,\"1\":161,\"2\":161,\"3\":313,\"4\":161,\"5\":161,\"6\":161,\"7\":161,\"8\":313,\"9\":198,\"11\":161,\"13\":161} RESERVES {\"0\":false,\"1\":true,\"2\":false,\"3\":false,\"4\":false,\"5\":false,\"7\":true}\nV43.15 DEFENCE 28/28\n"
+  },
+  {
+    "test": "v43/test_v4314",
+    "exit": 0,
+    "seconds": 2.596,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nSILENT OBJECTIVE BATTERY {\"kind\":\"end\"} -> {\"kind\":\"limber\",\"path\":[313,283,253,223,222],\"unit\":\"art_pr_Schmidt0\"}\nBATTERY FOLLOW {\"kind\":\"deploy\",\"unit\":\"art_pr_Schmidt0\"}\nBATTERY FOLLOW {\"kind\":\"fire\",\"target\":\"fr_7\",\"unit\":\"art_pr_Schmidt0\"}\nV43.14 CORE 25/25\n"
+  },
+  {
+    "test": "v43/test_v4314_ui",
+    "exit": 0,
+    "seconds": 1.62,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43.14 UI 14/14\n"
+  },
+  {
+    "test": "v43/test_v4313",
+    "exit": 0,
+    "seconds": 3.966,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nWING GUN {\"kind\":\"limber\",\"path\":[439,440,441],\"unit\":\"art_pr_Schmidt0\"} -> {\"kind\":\"fire\",\"target\":\"fr_18\",\"unit\":\"art_pr_Schmidt0\"}\nWING DEPLOY {\"kind\":\"move\",\"path\":[439,440,441],\"unit\":\"art_pr_Schmidt0\"} -> {\"kind\":\"deploy\",\"unit\":\"art_pr_Schmidt0\"}\nMOVE ASSAULT {\"kind\":\"fire\",\"target\":\"fr_7\",\"unit\":\"pru_36\"} -> {\"kind\":\"move\",\"path\":[253,223,222],\"unit\":\"pru_36\"}\nFOLLOW {\"kind\":\"assault\",\"target\":\"fr_7\",\"unit\":\"pru_36\"}\nV43.13 30/30\n"
+  },
+  {
+    "test": "v43/test_assault_commitment",
+    "exit": 0,
+    "seconds": 23.555,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nPRIORITY FLIPS [{\"kind\":\"assault\",\"target\":\"fr_7\",\"unit\":\"pru_40\"},{\"kind\":\"assault\",\"target\":\"art_fr_Lartigue0\",\"unit\":\"pru_51\"},{\"kind\":\"assault\",\"target\":\"fr_16\",\"unit\":\"pru_51\"},{\"kind\":\"assault\",\"target\":\"art_fr_Lartigue0\",\"unit\":\"pru_49\"}]\nASSAULT COMMITMENT 11/11\n"
+  },
+  {
+    "test": "v43/test_v4312",
+    "exit": 0,
+    "seconds": 3.853,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43.12 247/247\n"
+  },
+  {
+    "test": "v43/test_bridge_barrage",
+    "exit": 0,
+    "seconds": 2.618,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nBRIDGE CHOICES {\"kind\":\"fire\",\"target\":\"fr_18\",\"unit\":\"art_pr_Schmidt0\"} -> {\"kind\":\"limber\",\"path\":[439,468,467,496,465],\"unit\":\"art_pr_Schmidt0\"}\nBRIDGE BARRAGE 17/17\n"
+  },
+  {
+    "test": "v43/test_assault_before_rest",
+    "exit": 0,
+    "seconds": 0.782,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nCHOICES {\"kind\":\"rest\",\"unit\":\"pru_44\"} -> {\"kind\":\"assault\",\"target\":\"fr_11\",\"unit\":\"pru_44\"}\nASSAULT BEFORE REST 8/8\n"
+  },
+  {
+    "test": "test_ai_compat0833",
+    "exit": 0,
+    "seconds": 3.687,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nAI COMPAT 18/18\n"
+  },
+  {
+    "test": "v36/test_hidden_worlds",
+    "exit": 0,
+    "seconds": 3.219,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV35 HIDDEN WORLDS 18/18\n"
+  },
+  {
+    "test": "v36/test_isolation",
+    "exit": 0,
+    "seconds": 4.684,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV36 ISOLATION 45/45\n"
+  },
+  {
+    "test": "v43/test_enclosed_links",
+    "exit": 0,
+    "seconds": 1.447,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nENCLOSED LINKS 25/25\n"
+  },
+  {
+    "test": "v43/test_adjacent_reinforcements",
+    "exit": 0,
+    "seconds": 7.882,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43.1 ADJACENT REINFORCEMENTS 32/32\n"
+  },
+  {
+    "test": "v43/test_ui",
+    "exit": 0,
+    "seconds": 4.007,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 UI 30/30\n"
+  },
+  {
+    "test": "v43_export/test_export",
+    "exit": 0,
+    "seconds": 2.654,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 EXPORT 28/28\n"
+  },
+  {
+    "test": "v43_export/test_android_eof",
+    "exit": 0,
+    "seconds": 1.224,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nANDROID EXPORT EOF 9/9\n"
+  },
+  {
+    "test": "v43/test_cavalry_village125",
+    "exit": 0,
+    "seconds": 1.16,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43.7 CAVALRY VILLAGE 20/20\n"
+  },
+  {
+    "test": "v43/test_rifle_label",
+    "exit": 0,
+    "seconds": 1.937,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nRIFLE LABEL 18/18\n"
+  },
+  {
+    "test": "v43/test_v439_presentation",
+    "exit": 0,
+    "seconds": 2.462,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43.9 PRESENTATION 102/102\n"
+  },
+  {
+    "test": "v43/test_surrender_journal",
+    "exit": 0,
+    "seconds": 1.903,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nSURRENDER JOURNAL 11/11\n"
+  },
+  {
+    "test": "v43/test_variant_b",
+    "exit": 0,
+    "seconds": 16.69,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 VARIANT B 1701/1701\n"
+  },
+  {
+    "test": "v43/test_raoult",
+    "exit": 0,
+    "seconds": 14.261,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 RAOULT 42/42\n"
+  },
+  {
+    "test": "v43/test_v4315_ui",
+    "exit": 0,
+    "seconds": 2.903,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43.15 FRENCH UI 8/8\n"
+  }
+]

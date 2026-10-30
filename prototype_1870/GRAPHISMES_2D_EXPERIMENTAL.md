@@ -1,52 +1,62 @@
-# Essai graphique 2D — V43.15-g2d1
+# Essai graphique 2D № 2 — version 0.8.43.15-g2d2
 
 30 octobre 2026. Branche `v43-graphismes-2d-experimental`.
 
-## Base et périmètre
+## Demande et base conservée
 
-Base complète V43.15, commit `34d8f73ecdce503adc7fc149474653876176af41`. Elle comprend la défense française Difficile, l’ossature prussienne conservée, les corrections Raoult, les renforts adjacents, les exports de sauvegarde et les améliorations précédentes. La branche stable et son APK sont conservés. Aucun développement de règles dans cet essai.
+Deuxième essai visuel, inspiré de l’image fournie par le joueur : carte plus naturelle, pions historiquement illustrés, bandeaux haut/bas bleu nuit avec finitions laiton. La photo guide l’apparence ; les données et règles de V43.15 restent la référence.
 
-## Résultat visuel
+Base stable complète : `34d8f73ecdce503adc7fc149474653876176af41`. Premier essai conservé au commit source `b43be4a` et dans son ZIP/APK déjà livrés. Aucune intégration de ces graphismes dans la branche principale. La défense française Difficile et l’ossature prussienne de la base restent inchangées.
 
-- Atlas original unique de 29 images : prairies, champs aux sillons discrets, nuances ocre/vert, feuillages irréguliers, maisons et toitures. Les motifs se répètent volontairement pour limiter la mémoire ; variantes déterministes, sans appel au générateur aléatoire du moteur.
-- Relief : légère teinte selon l’altitude publique et ombrage des ruptures existantes. Les données de hauteur et les calculs de LOS demeurent inchangés. Le pack conserve `show_relief=false` pour les anciennes courbes ; le nouvel ombrage est purement visuel.
-- Routes : deux traits fins sur les points et courbes existants. Sauer : eau bleue, trait de berge et quelques reflets ; extrémités et segments strictement identiques, deux noms bleus conservés. Ponts, villages, route et flèche Reichshoffen non déplacés.
-- Pions : illustrations historiques d’infanterie, cavalerie, artillerie et QG conservées. Même géométrie et taille ; bordures plus nettes, léger dégradé et ombre allégée. Force, états, contours tactiques et information masquée conservés. Aucun numéro d’unité redondant.
-- Fiche inférieure gauche : code de mise en page et contenu inchangés ; cinq comparaisons de son rectangle complet donnent des pixels identiques.
-- Bandeaux : hauteurs inchangées, simple filet sous l’en-tête. Boutons aux mêmes emplacements et dimensions, couleurs et bordures ajustées ; aucun bouton ajouté, supprimé ou renommé. Les textes, conditions d’activation et callbacks restent identiques.
+## Améliorations réalisées
 
-## Fichiers modifiés
+- **Carte** : deux planches de ressources 2D peintes. Prairies avec touffes discrètes, champs ocre/vert, sous-bois, feuillages denses et villages à maisons/toits détaillés. Variantes choisies par index d’hexagone, sans appel au RNG du jeu. Décors limités au polygone de leur hexagone ; grille et surimpressions tactiques restent au-dessus.
+- **Sauer et routes** : pinceaux de berge/eau plus riches et reflets statiques. Les mêmes segments et extrémités de rivière sont utilisés ; aucune courbe nouvelle, case de rivière, liaison ou règle de passage ajoutée. Routes sur leurs points existants ; ponts et deux inscriptions Sauer conservés. Le nom des localités utilise une police sérif plus lisible. Flèche et ancre de Reichshoffen conservées.
+- **Pions** : illustrations de fantassins, cavaliers et batteries françaises/prussiennes plus détaillées. Fond légèrement ombré et bordure laiton. Même encombrement et mêmes centres ; force, drapeaux, statut, états de tir et contours tactiques sont dessinés après les illustrations. Aucun numéro redondant réintroduit. Les QG conservent leur drapeau et leurs contours.
+- **Bandeaux** : habillage bleu nuit et laiton par neuf-tranches et gradients SVG légers. Les informations, dimensions, positions et interactions restent celles du jeu. La fiche inférieure gauche conserve son organisation et son contenu ; sa peau graphique est modernisée à la demande du joueur. Aucun ajout de commande ni de bouton TIRER. Boutons actifs, pressés, survolés, désactivés et focus distincts.
 
-Cinq fichiers existants changent :
+Les nouvelles illustrations militaires sont génériques par arme et camp, sans modification des caractéristiques des régiments. Les PNG originaux sont livrés ; les sources des peaux SVG et le manifeste des régions aussi. Voir `development/graphics2d2/CREDITS.md`.
 
-| Fichier | Modification |
+## Fichiers et portée technique
+
+Cinq fichiers déjà présents dans la base stable changent :
+
+| Fichier | Portée |
 | --- | --- |
-| `war_engine/presentation/map_view.gd` | Appels de dessin des terrains, routes, eau, relief et fond des pions ; initialisation de l’atlas et filtrage. |
-| `war_engine/presentation/main.gd` | Styles du bouton commun et filet décoratif non interactif de l’en-tête. |
-| `project.godot` | Nom et version expérimentaux, dossier utilisateur distinct. Dimensions et moteur de rendu conservés. |
-| `export_presets.cfg` | APK et identifiant Android distincts, version expérimentale. Certificat et permissions conservés. |
-| `packs/1870/fr.json` | Seul le badge de version devient « ESSAI GRAPHIQUE 2D · BASE V43.15 ». |
+| `war_engine/presentation/map_view.gd` | Appels du rendu terrain, statique des pions, police des localités et ordre des surimpressions. Aucune modification de l’input, des positions ou du déroulement des animations. |
+| `war_engine/presentation/main.gd` | Fabrication des peaux de panneaux/boutons et ligne décorative d’en-tête. Callbacks, disponibilité et disposition inchangés. |
+| `project.godot` | Nom/version/dossier de l’application expérimentale ; moteur et dimensions conservés. |
+| `export_presets.cfg` | Paquet distinct de la stable, numéro d’APK expérimental et version. |
+| `packs/1870/fr.json` | Seulement le badge de version expérimentale. Aucun nom, texte de commande ou donnée d’unité modifié. |
 
-Ajouts : `graphics2d_art.gd`, atlas PNG et réglages d’import, sources SVG et générateur dans `development/graphics2d`, tests et outils de comparaison dans `tests/graphics`, ce rapport, rapport de tests et captures/preuves dans `captures/graphismes2d`.
+Modules expérimentaux : `graphics2d_art.gd` utilise maintenant les deux planches peintes ; `graphics2d_skin.gd` fournit les peaux de bandeaux et boutons. Ressources nouvelles dans `assets/graphics2d2`, sources/crédits dans `development/graphics2d2`, tests dans `tests/graphics`, comparaisons dans `captures/graphismes2d2`.
 
-`FICHIERS_GRAPHISMES_2D.txt` donne l’inventaire exhaustif. Les `.import` et `.uid` sont des réglages/références Godot ; les caches `.godot`, APK, temporaires et fichiers Git ne sont pas inclus dans les sources ZIP.
+L’inventaire exhaustif par rapport à V43.15 est dans `FICHIERS_GRAPHISMES_2D.txt`. Les fichiers `.import` et `.uid` sont des réglages/références nécessaires à Godot, et non des caches. Les sources ZIP excluent caches `.godot`, Git, APK, compilations et temporaires.
 
-## Systèmes préservés
+## Règles et sauvegardes
 
-Vérification binaire contre la base : 1 333 fichiers existants identiques, dont l’intégralité des modules IA, moteur et plateforme, scènes et données géographiques/scénario. Dans les deux scripts de présentation modifiés : 123 fonctions sur 128 identiques ; seules `_ready`, `_draw`, `counter_back`, `button` et `build_ui` changent.
+1 333 fichiers de la base stable restent identiques en octets, dont tous les modules IA, moteur, plateforme, scènes, packs de scénarios et données de carte. Sur les 128 fonctions des deux scripts de présentation existants, 118 restent identiques ; dix fonctions de rendu/fabrication de peau changent. Les routines de projectile, impacts, durées, sons, input, transformations de caméra et affichage d’état restent identiques.
 
-Les animations de combat, dessins des soldats, transformations écran/carte, gestes tactiles, affichage du brouillard et objectifs, ripostes, charge 2 PA, variante B, 20 tours, score 60/20/20, renforts, sauvegardes et IA Normal/Difficile ne changent pas. Le hash du scénario reste `5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57`.
+Carte 30 × 20, 20 tours, charge à 2 PA, coûts/portées, ripostes, variante B, commandement/ravitaillement, isolement/reddition, effectifs, renforts, brouillard et score 60/20/20 conservés. Objectifs de nouvelle partie conservés : Frœschwiller 3, Wœrth 2, Niederwald 1. Les anciennes dispositions de sauvegarde restent respectées.
 
-## Installation et retour à la version actuelle
+Hash inchangé du scénario : `5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57`.
 
-Installer `1870_V43_Graphismes_2D_Experimental_01.apk`. L’application s’appelle **1870 · Essai graphique 2D** et utilise `org.woerth1870.prototype.graphics2dexp` ; elle s’installe à côté de la version stable. Ne pas désinstaller le jeu actuel : sa partie reste dans son propre espace.
+Même format de sauvegarde, même `SaveStore` et même empreinte de pack. Relecture vérifiée d’une sauvegarde synthétique écrite par l’essai 1, réenregistrement d’une copie et comparaison intégrale du JSON ; original conservé. Les six états d’interface et les 76 bandes de force visibles des comparaisons sont identiques pour leur contenu et fonctionnement.
 
-Les sauvegardes de l’essai sont séparées. Leur format est inchangé et le test de sauvegarde/relecture conserve tout l’état. Android ne transfère pas automatiquement la partie du jeu stable vers cette seconde application ; aucun nouveau bouton d’import n’a été ajouté. Pour revenir au graphisme actuel, ouvrir simplement le jeu stable.
+## Installation
 
-Version Android `0.8.43.15-g2d1`, code 1 pour ce nouveau paquet, Android minimum 7.0/API 24, cible API 35. Compilation Godot 4.5.1, signature de développement vérifiée. Aucun essai physique Android réalisé.
+**Installer `1870_V43_Graphismes_2D_Experimental_02.apk` par-dessus l’essai 1, sans le désinstaller.** Paquet expérimental conservé : `org.woerth1870.prototype.graphics2dexp`, code Android 2, version `0.8.43.15-g2d2`, même certificat. La sauvegarde de l’essai 1 peut ainsi rester dans son espace.
 
-## Limites et validation attendue
+L’application s’appelle toujours **1870 · Essai graphique 2D**. Elle reste installable à côté du jeu stable, dont le paquet et les fichiers ne changent pas. Pour retrouver la version stable, ouvrir le jeu habituel. Il n’y a pas de transfert automatique de la partie stable vers l’application expérimentale.
 
-Ce prototype reste un rendu 2D illustré : textures volontairement discrètes et nombre de variantes limité. La taille des maisons est illustrative, sans effet sur l’occupation ni la couverture. Le rendu Android réel, l’échelle des détails et le confort sur votre écran restent à apprécier. Aucune intégration dans `main` avant votre validation visuelle.
+APK Godot 4.5.1 compilé, signature de développement vérifiée, Android minimum API 24/cible 35, ARMv7/ARM64/x86_64. Aucun essai sur appareil ou émulateur Android.
 
-Voir `TESTS_GRAPHISMES_2D.md` et `captures/graphismes2d/README.md` pour les comparaisons et les preuves.
+## Évaluation et limites
+
+5 036 assertions finales réussies. Les comparaisons montrent le jeu réellement rendu, avec le même état T11 et la même caméra dans chaque paire. Il ne s’agit pas d’une nouvelle bataille chronologique ni de la reproduction de la photo du joueur.
+
+Deux textures partagées, régions mises en cache, mipmaps, surfaces hors écran écartées, petites peaux SVG réutilisées. Aucun éclairage 3D, shader ou effet de particules ajouté. Sur la vue comparée, les appels de dessin passent de 3 462 à 2 844 ; temps et mémoire détaillés dans le rapport de tests. Le confort et la fluidité sur téléphone restent à apprécier.
+
+Quelques noms de localités restent partiellement recouverts par les pions dans les secteurs très denses, comme dans le témoin. Aucune unité ou localité n’a été déplacée pour arranger les captures. L’apparence vise la direction artistique de la référence tout en conservant la grille et la géographie exactes du jeu.
+
+Aucune fusion dans main avant validation visuelle. Comparaisons : `captures/graphismes2d2/README.md` ; tests et preuves : `TESTS_GRAPHISMES_2D.md`.

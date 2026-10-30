@@ -1,6 +1,7 @@
 extends Control
 const EngineRules=preload("res://war_engine/core/engine.gd")
 const SaveStore=preload("res://war_engine/platform/save_store.gd")
+const GraphicsSkin=preload("res://war_engine/presentation/graphics2d_skin.gd")
 const MapView=preload("res://war_engine/presentation/map_view.gd")
 const BODY=preload("res://assets/fonts/DejaVuSans.ttf")
 const TITLE=preload("res://assets/fonts/DejaVuSerif-Bold.ttf")
@@ -139,7 +140,10 @@ func reset_map_view():
 func place(node: Control,parent: Node,x: float,y: float,w: float,h: float):
 	parent.add_child(node);node.position=Vector2(x,y);node.size=Vector2(w,h);return node
 func panel(parent: Node,x: float,y: float,w: float,h: float,color: Color) -> ColorRect:
-	var p=ColorRect.new();p.color=color;place(p,parent,x,y,w,h);return p
+	var p=ColorRect.new();p.color=color;place(p,parent,x,y,w,h)
+	if h>=70 and color in [INK,Color("253e3e")]:
+		var skin=GraphicsSkin.new();skin.card=color!=INK;p.add_child(skin);skin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	return p
 func label(parent: Node,value: String,x: float,y: float,w: float,h: float,font_size: int=21,color: Color=PAPER,serif=false) -> Label:
 	var l=Label.new();l.text=value;l.add_theme_font_override("font",TITLE if serif else BODY)
 	l.add_theme_font_size_override("font_size",font_size);l.add_theme_color_override("font_color",color)
@@ -148,16 +152,10 @@ func button(parent: Node,value: String,x: float,y: float,w: float,h: float,callb
 	var b=Button.new();b.text=value;b.add_theme_font_override("font",BODY);b.add_theme_font_size_override("font_size",20)
 	b.add_theme_color_override("font_color",INK if primary else PAPER);b.add_theme_color_override("font_hover_color",INK if primary else Color.WHITE)
 	b.add_theme_color_override("font_pressed_color",INK if primary else PAPER);b.add_theme_color_override("font_disabled_color",Color("afbab1"))
-	for state in ["normal","hover","pressed","disabled","focus"]:
-		var style=StyleBoxFlat.new();style.bg_color=Color("dfbd79") if primary else Color("35514f")
-		if state=="hover":style.bg_color=style.bg_color.lightened(0.12)
-		if state=="pressed":style.bg_color=style.bg_color.darkened(0.14)
-		if state=="disabled":style.bg_color=Color("263b3a")
-		style.set_border_width_all(1);style.border_color=Color("ebd39a") if primary else Color("59716a")
-		if state=="disabled":style.border_color=Color("49615a")
-		style.set_corner_radius_all(5);style.content_margin_left=12;style.content_margin_right=12
-		if state=="focus":style.set_border_width_all(2);style.border_color=PAPER;style.draw_center=false
-		b.add_theme_stylebox_override(state,style)
+	for state in ["normal","hover","pressed","disabled"]:
+		b.add_theme_stylebox_override(state,GraphicsSkin.button_style(primary,state))
+	var focus=StyleBoxFlat.new();focus.bg_color=Color.TRANSPARENT;focus.draw_center=false;focus.set_border_width_all(2);focus.border_color=PAPER;focus.set_corner_radius_all(5)
+	b.add_theme_stylebox_override("focus",focus)
 	place(b,parent,x,y,w,h);b.pressed.connect(callback)
 	b.gui_input.connect(func(event): disabled_button_input(b,event))
 	return b
@@ -167,7 +165,7 @@ func logo(parent: Node,x: float,y: float,w: float,h: float):
 func build_ui():
 	map=MapView.new();map.engine=engine;map.texts=texts;place(map,self,0,92,1280,474);map.cell_tapped.connect(on_cell);map.fire_sound.connect(play_combat_sound);map.assault_sound.connect(play_assault_sound)
 	header=panel(self,0,0,1280,92,INK)
-	var rule=panel(header,0,91,1280,1,Color("738274"));rule.mouse_filter=Control.MOUSE_FILTER_IGNORE;rule.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE);rule.offset_top=-1
+	var rule=panel(header,0,91,1280,1,Color("9f8658"));rule.mouse_filter=Control.MOUSE_FILTER_IGNORE;rule.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE);rule.offset_top=-1
 	logo(header,14,14,188,64)
 	label(header,t("subtitle"),216,8,728,31,23,PAPER,true)
 	turn_label=label(header,"",216,44,410,36,26,GOLD)
@@ -210,7 +208,7 @@ func build_ui():
 	context_detail.text_overrun_behavior=TextServer.OVERRUN_TRIM_ELLIPSIS
 	for field in [unit_state,formation_label,terrain_label,unit_ap,weapon_label,ammo_label,support_label,supply_label,unit_reaction,encircled_label]:field.clip_text=true
 	actions.undo=button(footer,t("undo"),486,103,261,42,undo_move,true)
-	var undo_disabled=actions.undo.get_theme_stylebox("disabled").duplicate()
+	var undo_disabled=StyleBoxFlat.new();undo_disabled.bg_color=Color("10272e");undo_disabled.set_corner_radius_all(5)
 	undo_disabled.set_border_width_all(1);undo_disabled.border_color=Color("718379")
 	actions.undo.add_theme_stylebox_override("disabled",undo_disabled)
 	actions.undo.add_theme_color_override("font_disabled_color",Color("bac6bb"))

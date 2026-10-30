@@ -1,0 +1,8 @@
+{
+  "result": "PASS",
+  "same_state_camera_zoom": 5,
+  "same_left_card_layout": 5,
+  "same_force_strips_pixels": 76,
+  "same_control_snapshots": 6,
+  "left_card_skin": "intentionally changed; text/layout preserved"
+}

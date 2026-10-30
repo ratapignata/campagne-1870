@@ -1,3 +1,24 @@
+# Essai graphique 2D № 2 — carte peinte, pions et bandeaux
+
+Version expérimentale `0.8.43.15-g2d2`, inspirée de la référence visuelle du joueur. La [version stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main), inchangée.
+
+- **[Télécharger l’APK de l’essai 2](https://github.com/ratapignata/campagne-1870/raw/refs/heads/v43-graphismes-2d-experimental/experiments/graphismes-2d/essai-02/1870_V43_Graphismes_2D_Experimental_02.apk)**.
+- [Sources complètes ZIP](experiments/graphismes-2d/essai-02/1870_V43_Graphismes_2D_Experimental_02_Sources.zip).
+- [Voir les captures réelles avant/après](prototype_1870/captures/graphismes2d2/README.md) ou [télécharger la galerie](experiments/graphismes-2d/essai-02/1870_Graphismes_2D_Comparaisons_02.zip).
+- [Rapport détaillé](experiments/graphismes-2d/essai-02/GRAPHISMES_2D_EXPERIMENTAL.md), [tests](experiments/graphismes-2d/essai-02/TESTS_GRAPHISMES_2D.md), [fichiers modifiés](experiments/graphismes-2d/essai-02/FICHIERS_GRAPHISMES_2D.txt).
+
+Champs et prairies peints, bois plus denses, maisons et pions détaillés par arme/camp ; bandeaux bleu nuit et laiton, boutons mieux finis. Positions, géographie, forces, informations, commandes, IA, règles et animations conservées. Aucun bouton TIRER ajouté.
+
+**Installer par-dessus l’essai 1 sans le désinstaller pour conserver sa sauvegarde.** Même application « 1870 · Essai graphique 2D », paquet expérimental distinct du jeu stable, code Android 2. La sauvegarde de l’essai 1 est compatible. Le jeu stable et sa partie restent séparés ; aucun transfert automatique entre applications.
+
+**5 036 contrôles réussis**, six snapshots de commandes identiques, 76 bandes de force identiques pixel par pixel sur les comparaisons. APK compilé et signature vérifiée ; pas d’essai physique Android. Le rendu et les sources restent expérimentaux jusqu’à validation visuelle, sans fusion dans main.
+
+![Rendu réel de l’essai 2](prototype_1870/captures/graphismes2d2/after/overview.png)
+
+---
+
+# Archive — premier essai
+
 # Essai graphique 2D — branche expérimentale indépendante
 
 **La version stable V43.15 n’est pas remplacée.** [Revenir à la branche main](https://github.com/ratapignata/campagne-1870/tree/main).

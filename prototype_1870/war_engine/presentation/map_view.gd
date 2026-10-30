@@ -28,6 +28,7 @@ var fire_cells: Dictionary={}
 var zoom: float=1.18
 var focus=Vector2(765,580)
 var font=preload("res://assets/fonts/DejaVuSans.ttf")
+const LOCALITY_FONT=preload("res://assets/fonts/DejaVuSerif-Bold.ttf")
 const COUNTER_FONT=preload("res://assets/fonts/DejaVuSans-Bold.ttf")
 const R=34.0
 const Cartography=preload("res://war_engine/presentation/cartography.gd")
@@ -141,64 +142,15 @@ func woodland(p: Vector2,z: float,variant: int):
 			draw_circle(b+Vector2(-3,-2)*z,radius*0.72,Color("8da179"))
 			draw_circle(b+Vector2(3,-3)*z,radius*0.66,Color("82996f"))
 func horseman(p: Vector2,z: float,french: bool):
-	var edge=Color("152b30");var coat=Color("d8bd88");var light=Color("fff1cc")
-	var body=PackedVector2Array([p+Vector2(-17,-1)*z,p+Vector2(-8,-6)*z,p+Vector2(5,-5)*z,p+Vector2(8,-13)*z,p+Vector2(13,-13)*z,p+Vector2(18,-7)*z,p+Vector2(17,-3)*z,p+Vector2(12,-4)*z,p+Vector2(8,5)*z,p+Vector2(-11,6)*z])
-	outlined_shape(body,coat,edge,2*z)
-	for limb in [[Vector2(-12,4),Vector2(-15,13)],[Vector2(-6,4),Vector2(-3,13)],[Vector2(5,4),Vector2(10,13)],[Vector2(9,1),Vector2(15,9)]]:
-		draw_line(p+limb[0]*z,p+limb[1]*z,edge,4*z,true);draw_line(p+limb[0]*z,p+limb[1]*z,coat,2*z,true)
-	draw_line(p+Vector2(-16,-1)*z,p+Vector2(-21,6)*z,edge,3*z,true)
-	draw_line(p+Vector2(-7,-5)*z,p+Vector2(3,-5)*z,Color("963047") if french else Color("253b39"),5*z,true)
-	draw_line(p+Vector2(-3,-10)*z,p+Vector2(0,4)*z,edge,7*z,true)
-	draw_line(p+Vector2(-3,-10)*z,p+Vector2(-2,-3)*z,Color("6186a1") if french else Color("8b9b8d"),5*z,true)
-	draw_line(p+Vector2(-2,-2)*z,p+Vector2(0,6)*z,Color("ce5960") if french else Color("8b9b8d"),3*z,true)
-	draw_circle(p+Vector2(-3,-15)*z,3.4*z,light)
-	draw_line(p+Vector2(-7,-18)*z,p+Vector2(1,-18)*z,edge,3*z,true)
-	draw_line(p+Vector2(0,-9)*z,p+Vector2(7,-11)*z,light,1.5*z,true)
-	draw_line(p+Vector2(7,-11)*z,p+Vector2(10,-20)*z,light,1.4*z,true)
-	draw_circle(p+Vector2(13,-9)*z,0.9*z,edge)
+	Graphics2D.figure(self,"cavalry",p+Vector2(2,-1)*z,z/1.04,french)
 
 func soldier(p: Vector2,z: float,french: bool):
-	var coat=Color("84aac5") if french else Color("b1c2ba")
-	var trousers=Color("df5861") if french else Color("8da09b");var dark=Color("13242d")
-	# Outlined limbs and jacket retain their silhouette at the normal map zoom.
-	for leg in [[Vector2(-4,3),Vector2(-7,12)],[Vector2(1,3),Vector2(5,12)]]:
-		draw_line(p+leg[0]*z,p+leg[1]*z,dark,6*z,true);draw_line(p+leg[0]*z,p+leg[1]*z,trousers,3.8*z,true)
-	draw_line(p+Vector2(-7,12)*z,p+Vector2(-11,12)*z,dark,2.6*z,true)
-	draw_line(p+Vector2(5,12)*z,p+Vector2(8,12)*z,dark,2.6*z,true)
-	outlined_shape(PackedVector2Array([p+Vector2(-7,-8)*z,p+Vector2(2,-8)*z,p+Vector2(5,3)*z,p+Vector2(-8,3)*z]),coat,dark,1.4*z)
-	draw_line(p+Vector2(-5,-7)*z,p+Vector2(1,2)*z,Color("f1e9cc"),1.8*z,true)
-	draw_line(p+Vector2(-7,2)*z,p+Vector2(4,2)*z,dark,1.8*z,true)
-	draw_line(p+Vector2(-4,-8)*z,p+Vector2(1,-8)*z,Color("d1aa68"),1.2*z,true)
-	draw_circle(p+Vector2(-1,-2)*z,0.8*z,Color("f2db9b"))
-	draw_circle(p+Vector2(-2,-12)*z,4.5*z,dark);draw_circle(p+Vector2(-2,-12)*z,3.3*z,Color("efd1a8"))
-	draw_rect(Rect2(p+Vector2(-6,-18)*z,Vector2(9,4)*z),Color("c75460") if french else dark)
-	draw_line(p+Vector2(-7,-14)*z,p+Vector2(4,-14)*z,dark,2*z,true)
-	if not french:draw_line(p+Vector2(-2,-18)*z,p+Vector2(-2,-21)*z,Color("e8d298"),1.6*z,true)
-	draw_line(p+Vector2(-3,-6)*z,p+Vector2(7,-2)*z,dark,4.7*z,true)
-	draw_line(p+Vector2(-3,-6)*z,p+Vector2(7,-2)*z,coat,2.8*z,true)
-	draw_line(p+Vector2(6,8)*z,p+Vector2(13,-18)*z,dark,4*z,true)
-	draw_line(p+Vector2(6,8)*z,p+Vector2(10,-7)*z,Color("c49b6a"),2.5*z,true)
-	draw_line(p+Vector2(10,-7)*z,p+Vector2(13,-18)*z,Color("f0e9d6"),1.8*z,true)
-func cannon(p: Vector2,z: float,color: Color,deployed: bool):
-	var metal=Color("d9dfd8");var wood=Color("d2ac72");var dark=Color("14262b")
-	# Broad tapered tube, visible muzzle and two spoked wheels stay legible at phone scale.
-	var far=p+Vector2(-9,5)*z
-	draw_circle(far,7*z,dark);draw_arc(far,5.5*z,0,TAU,24,wood.darkened(0.22),2*z,true)
-	for k in range(6):draw_line(far,far+Vector2(cos(k*TAU/6),sin(k*TAU/6))*5*z,wood.darkened(0.22),z,true)
-	outlined_shape(PackedVector2Array([p+Vector2(-7,0)*z,p+Vector2(2,3)*z,p+Vector2(-18,13)*z,p+Vector2(-22,11)*z]),wood,dark,1.5*z)
-	draw_line(p+Vector2(-11,3)*z,p+Vector2(6,5)*z,dark,5*z,true)
-	draw_line(p+Vector2(-11,3)*z,p+Vector2(6,5)*z,wood,2.5*z,true)
-	outlined_shape(PackedVector2Array([p+Vector2(-13,-5)*z,p+Vector2(10,-15)*z,p+Vector2(13,-9)*z,p+Vector2(-10,2)*z]),metal,dark,1.7*z)
-	draw_line(p+Vector2(-10,-4)*z,p+Vector2(9,-12)*z,color,1.2*z,true)
-	draw_line(p+Vector2(10,-15)*z,p+Vector2(13,-9)*z,dark,3*z,true)
-	draw_line(p+Vector2(10.5,-13.5)*z,p+Vector2(12,-10.5)*z,Color("71817c"),1.2*z,true)
-	draw_circle(p+Vector2(-13,-1)*z,2.2*z,dark)
-	var near=p+Vector2(3,6)*z
-	draw_circle(near,8.5*z,dark);draw_arc(near,6.9*z,0,TAU,32,wood,2.5*z,true)
-	for k in range(8):draw_line(near,near+Vector2(cos(k*TAU/8),sin(k*TAU/8))*6.3*z,wood,1.1*z,true)
-	draw_circle(near,2.1*z,metal);draw_circle(near,0.8*z,dark)
-	if deployed:draw_line(p+Vector2(-22,15)*z,p+Vector2(13,15)*z,Color("e8c57b"),1.4*z,true)
-	else:draw_arc(p+Vector2(-23,11)*z,2*z,-PI/2,PI/2,8,wood,1.4*z,true)
+	Graphics2D.figure(self,"infantry",p+Vector2(4,-3)*z,z/1.10,french)
+
+func cannon(p: Vector2,z: float,color: Color,deployed: bool,french: bool=true):
+	Graphics2D.figure(self,"artillery",p+Vector2(0,-0.5)*z,z,french)
+	if deployed:draw_line(p+Vector2(-22,15)*z,p+Vector2(13,15)*z,color.lerp(Color("e8c57b"),0.8),1.4*z,true)
+
 func selection_outline(p: Vector2,z: float):
 	var points=PackedVector2Array()
 	for v in [Vector2(-24,-30),Vector2(24,-30),Vector2(29,-25),Vector2(29,25),Vector2(24,30),Vector2(-24,30),Vector2(-29,25),Vector2(-29,-25),Vector2(-24,-30)]:points.append(p+v*z)
@@ -219,9 +171,9 @@ func counter_back(p: Vector2,z: float,ink: Color,current: bool=true):
 	for k in range(shadow.size()):shadow[k]+=Vector2(1.5,2)*z
 	draw_colored_polygon(shadow,Color(0.07,0.12,0.13,0.22))
 	var colors=PackedColorArray()
-	for v in shape:colors.append(ink.lightened(0.12) if v.y<p.y else ink.darkened(0.06))
+	for v in shape:colors.append(ink.darkened(0.17) if v.y<p.y else ink.darkened(0.42))
 	draw_polygon(shape,colors)
-	var border=shape.duplicate();border.append(shape[0]);draw_polyline(border,Color("12262b"),2.4*z,true)
+	var border=shape.duplicate();border.append(shape[0]);draw_polyline(border,Color("a8996c"),1.6*z,true)
 	draw_line(p+Vector2(-22,-25)*z,p+Vector2(22,-25)*z,Color("eddfbf") if current else Color("9da78f"),1.2*z,true)
 	draw_line(p+Vector2(-24,-23)*z,p+Vector2(-24,22)*z,Color(0.94,0.90,0.76,0.28),0.9*z,true)
 	draw_line(p+Vector2(-22,25)*z,p+Vector2(22,25)*z,Color(0.05,0.12,0.14,0.42),1.0*z,true)
@@ -353,11 +305,6 @@ func _draw():
 		var terrain_key=engine.pack.map.tiles[i];var terrain=str(engine.pack.terrains[terrain_key].get("visual_type",terrain_key));var polygon=hexagon(p,h)
 		draw_colored_polygon(polygon,Color(engine.pack.terrains[terrain_key].color))
 		Graphics2D.ground(self,terrain,i,p,z)
-		if supply_overlay_source!=-2 and engine.fixed_hq():
-			var known=not engine.fog_enabled() or engine.state.finished or engine.cell_visible(int(engine.state.human_side),i)
-			var fill=Color(0.76,0.19,0.19,0.37) if known and supply_overlay_cells.has(i) else Color(0.37,0.40,0.42,0.37)
-			draw_colored_polygon(polygon,fill)
-		var outline=polygon.duplicate();outline.append(polygon[0]);draw_polyline(outline,Color(0.25,0.32,0.22,0.28),maxf(0.6,0.75*z),true)
 		Graphics2D.relief(self,i,p,z)
 		var road_ends=[]
 		for edge in engine.pack.map.get("road_edges",[]):
@@ -383,6 +330,11 @@ func _draw():
 			if terrain=="bridge":
 				for y in [-6,6]:draw_line(p+Vector2(-19,y)*z,p+Vector2(19,y)*z,Color("665c49"),3*z,true)
 		elif terrain=="water":draw_line(p-Vector2(5,19)*z,p+Vector2(3,19)*z,Color("bbd2c9"),2*z,true)
+		if supply_overlay_source!=-2 and engine.fixed_hq():
+			var known=not engine.fog_enabled() or engine.state.finished or engine.cell_visible(int(engine.state.human_side),i)
+			var fill=Color(0.76,0.19,0.19,0.37) if known and supply_overlay_cells.has(i) else Color(0.37,0.40,0.42,0.37)
+			draw_colored_polygon(polygon,fill)
+		var outline=polygon.duplicate();outline.append(polygon[0]);draw_polyline(outline,Color(0.25,0.32,0.22,0.28),maxf(0.6,0.75*z),true)
 		if not engine.cell_visible(int(engine.state.human_side),i):draw_colored_polygon(polygon,Color(0.13,0.20,0.20,0.29))
 		if fire_cells.has(i) and engine.artillery(selected) and not busy():
 			draw_colored_polygon(hexagon(p,h-2),Color(1.0,0.96,0.76,0.34))
@@ -405,7 +357,7 @@ func _draw():
 	draw_sauer()
 	for location in engine.pack.map.get("labels",[]):
 		var c=location.cell;var anchor=screen(engine.index(Vector2i(int(c[0]),int(c[1]))));var p=anchor+settlement_label_offset(str(location.text))*zoom
-		var fs=maxi(11,int(16*zoom));var text_size=font.get_string_size(location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs)
+		var fs=maxi(11,int(15*zoom));var text_size=LOCALITY_FONT.get_string_size(location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs)
 		if location.has("arrow_cell"):
 			if anchor.x< -text_size.x or anchor.x>size.x+text_size.x or anchor.y< -80 or anchor.y>size.y+100:continue
 			# One hexagon high, plain downward arrow in the exact road colour.
@@ -416,8 +368,8 @@ func _draw():
 			draw_line(start,tip,road_colour,stroke,true)
 			draw_polyline(PackedVector2Array([tip+Vector2(-12,-14)*zoom,tip,tip+Vector2(12,-14)*zoom]),road_colour,stroke,true)
 		else:p.x-=text_size.x/2
-		draw_string_outline(font,p,location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs,3,Color("ece7d1"))
-		draw_string(font,p,location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs,Color("435749"))
+		draw_string_outline(LOCALITY_FONT,p,location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs,3,Color("ece7d1"))
+		draw_string(LOCALITY_FONT,p,location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs,Color("253a29"))
 	if selected>=0 and engine.alive(selected) and (not engine.fog_enabled() or int(engine.state.units[selected].side)==int(engine.state.human_side)):
 		var center=engine.unit_cell(engine.state.units[selected]);var max_range=1 if engine.cavalry(selected) else int(engine.weapon(selected).range)
 		for i in range(engine.width*engine.height):
@@ -474,7 +426,7 @@ func _draw():
 		if fire_target_lit(n):ink=ink.lerp(Color("fff0bc"),0.42)
 		counter_back(p,z,ink,actionable)
 		if engine.headquarters(n):headquarters_symbol(p,z,int(u.side)==0)
-		elif engine.artillery(n):cannon(p+Vector2(-1,-3)*z,z,Color("fff3d1"),u.deployed)
+		elif engine.artillery(n):cannon(p+Vector2(-1,-3)*z,z,Color("fff3d1"),u.deployed,int(u.side)==0)
 		elif engine.cavalry(n):horseman(p+Vector2(-3,-3)*z,1.04*z,int(u.side)==0)
 		else:soldier(p+Vector2(-5,-1)*z,1.10*z,int(u.side)==0)
 		draw_rect(Rect2(p+Vector2(-25,14)*z,Vector2(50,12)*z),Color("963047") if int(u.side)==0 else Color("273532"))
@@ -571,7 +523,7 @@ func draw_contact(n: int):
 	counter_back(p,z,ink,current)
 	if report.type=="cavalry":horseman(p+Vector2(-3,-3)*z,1.04*z,side==1)
 	elif report.type=="hq":headquarters_symbol(p,z,int(engine.state.units[n].side)==0)
-	elif report.type=="artillery":cannon(p+Vector2(-1,-3)*z,z,Color("fff3d1"),bool(report.deployed))
+	elif report.type=="artillery":cannon(p+Vector2(-1,-3)*z,z,Color("fff3d1"),bool(report.deployed),side==1)
 	else:soldier(p+Vector2(-5,-1)*z,1.10*z,side==1)
 	draw_rect(Rect2(p+Vector2(-25,14)*z,Vector2(50,12)*z),Color("963047") if side==1 else Color("273532"))
 	if report.type!="hq":
