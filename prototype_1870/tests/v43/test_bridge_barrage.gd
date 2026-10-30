@@ -40,5 +40,7 @@ func _initialize():
  check(normal_order.kind=="limber" and e.toggle_deployment(3),"Normal attelage legal")
  var restored=AI.new();restored.profiles=profiles;restored.relocation=normal_ai.relocation.duplicate(true);view=e.observation(1,[1,4]);old_view=view.duplicate(true);old_view.state.ai_difficulty="hard"
  check(restored.choose(view)==baseline.choose(old_view),"Normal relocation resumes identically after AI restoration")
- e=fixture();e.state.side=0;view=e.observation(0,[0,2,3]);check(ai.choose(view)==old.choose(view),"French doctrine unchanged")
+ e=fixture();e.state.side=0;e.state.ai_difficulty="medium";view=e.observation(0,[0,2,3]);expected=view.duplicate(true);expected.state.ai_difficulty="hard";former=load("res://war_engine/ai/v4311_ai.gd").new();former.profiles=profiles
+ check(ai.choose(view)==former.choose(expected),"French Normal doctrine unchanged")
+ e.state.ai_difficulty="hard";view=e.observation(0,[0,2,3]);before=view.duplicate(true);ai.choose(view);check(ai.hard_defensive and not ai.offensive and view==before,"French Hard follows defensive planning on observed information")
  print("BRIDGE BARRAGE ",checks-failures,"/",checks);quit(1 if failures else 0)

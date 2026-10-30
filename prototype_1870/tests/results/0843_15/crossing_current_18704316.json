@@ -1,0 +1,174 @@
+{
+	"checks": 279,
+	"complete": true,
+	"failures": 0,
+	"first_capture": 8,
+	"initial_force": [
+		8000,
+		24200
+	],
+	"mode": "current",
+	"phases": [
+		{
+			"counts": {
+				"deploy": 1,
+				"end": 1,
+				"entrench": 2,
+				"fire": 2,
+				"formation": 5,
+				"move": 6
+			},
+			"losses": [
+				19,
+				87
+			],
+			"owner": 0,
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"counts": {
+				"assault": 1,
+				"deploy": 2,
+				"end": 1,
+				"entrench": 2,
+				"fire": 4,
+				"formation": 5,
+				"move": 13
+			},
+			"losses": [
+				402,
+				314
+			],
+			"owner": 0,
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"counts": {
+				"end": 1,
+				"entrench": 2,
+				"fire": 9,
+				"move": 1
+			},
+			"losses": [
+				437,
+				1022
+			],
+			"owner": 0,
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 0,
+			"turn": 7
+		},
+		{
+			"counts": {
+				"end": 1,
+				"entrench": 2,
+				"fire": 10,
+				"formation": 3,
+				"move": 6,
+				"rest": 1
+			},
+			"losses": [
+				735,
+				1131
+			],
+			"owner": 0,
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 1,
+			"turn": 7
+		},
+		{
+			"counts": {
+				"end": 1,
+				"fire": 9,
+				"formation": 1
+			},
+			"losses": [
+				781,
+				1690
+			],
+			"owner": 0,
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 0,
+			"turn": 8
+		},
+		{
+			"counts": {
+				"end": 1,
+				"entrench": 1,
+				"fire": 10,
+				"move": 3
+			},
+			"losses": [
+				1139,
+				1782
+			],
+			"owner": 1,
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 1,
+			"turn": 8
+		},
+		{
+			"counts": {
+				"end": 1,
+				"fire": 5,
+				"formation": 1,
+				"rally": 1,
+				"rest": 2
+			},
+			"losses": [
+				1176,
+				2010
+			],
+			"owner": 1,
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 0,
+			"turn": 9
+		},
+		{
+			"counts": {
+				"end": 1,
+				"entrench": 1,
+				"fire": 12,
+				"move": 4
+			},
+			"losses": [
+				1708,
+				2074
+			],
+			"owner": 1,
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 1,
+			"turn": 9
+		}
+	],
+	"protocol": "Synthetic T6 crossing engagement on unchanged Sauer terrain/LOS, one Woerth objective. Five French infantry plus battery/HQ against eight Prussian infantry, two batteries/two HQ. Original individual strengths/AP/weapons. All present at start; not a chronological main battle.",
+	"seed": 18704316
+}

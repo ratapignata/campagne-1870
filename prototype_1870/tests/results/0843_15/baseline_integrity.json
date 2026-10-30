@@ -1,0 +1,18 @@
+{
+  "reference_commit": "3f7f01c",
+  "identical_files": [
+    "packs/1870/regimental_trial_v43.json",
+    "packs/1870/ai_profiles.json",
+    "packs/1870/ai_profiles_v4311.json",
+    "war_engine/ai/v4311_ai.gd",
+    "war_engine/core/engine.gd",
+    "war_engine/core/rules_base.gd",
+    "war_engine/core/support.gd",
+    "war_engine/core/intel.gd",
+    "war_engine/platform/save_store.gd",
+    "war_engine/presentation/map_view.gd",
+    "war_engine/presentation/main.gd"
+  ],
+  "frozen_ai_exact": true,
+  "module_sha256": "755699c799cae9859fa8b4ad544c1310a369bc3cd57f2f47714f309627c1f4b6"
+}

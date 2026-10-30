@@ -11,3 +11,9 @@ Le 28 octobre 2026, après sa bataille en Difficile, l’utilisateur a validé l
 Avant toute modification tactique future, comparer au témoin V43.13 fourni dans les tests, avec les mêmes conditions et une défense active. Une amélioration locale ne garantit pas un résultat supérieur sur chaque graine.
 
 Pour une autre bataille, adapter explicitement ses axes et objectifs : les opérations actuelles sont volontairement conditionnées au scénario `regimental_trial_v43`. Ne pas recopier les coordonnées de Wœrth sur une nouvelle carte. Les règles et l’observation filtrée doivent rester les seules informations de décision.
+
+## Développement français V43.15 — demande du 30 octobre 2026
+
+L’utilisateur demande désormais une défense française Difficile efficace lorsqu’il joue la Prusse : terrain, réserves et résistance à une force supérieure. La V43.15 ajoute un module de défense par secteurs, préparation de la ligne, retranchements, stabilité des batteries et contre-attaques favorables. Il s’agit d’une évolution testée en développement ; elle n’a pas encore fait l’objet d’un retour de partie du joueur.
+
+L’ossature prussienne validée reste intacte. Les deux politiques Normal restent gelées. Les règles physiques ne changent pas. Le module français lit les objectifs et terrains du scénario, sans reprendre les coordonnées des axes offensifs prussiens. Son activation pour une prochaine bataille devra être explicite et accompagnée de ses propres tests.

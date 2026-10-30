@@ -1,7 +1,7 @@
 {
   "title": "1870",
   "subtitle": "FRŒSCHWILLER–WŒRTH",
-  "badge": "Prototype Android · v0.8.43.14",
+  "badge": "Prototype Android · v0.8.43.15",
   "start": "Commencer la bataille",
   "continue": "Continuer",
   "menu": "Menu",
@@ -333,7 +333,7 @@
   "difficulty_legacy": "IA précédente",
   "difficulty_easy_detail": "Un adversaire attentif au terrain, aux objectifs et à l’emploi de ses armes.",
   "difficulty_medium_detail": "Le comportement éprouvé de la V43.11, avec son calendrier de renforts habituel.",
-  "difficulty_hard_detail": "Offensive coordonnée sur Wœrth et votre aile droite. Renforts prussiens un tour plus tôt.",
+  "difficulty_hard_detail": "Prusse : offensive coordonnée. France : défense préparée, réserves et contre-attaques. Renforts prussiens un tour plus tôt.",
   "ammo_0": "Abondantes",
   "ammo_1": "Correctes",
   "ammo_2": "Faibles",

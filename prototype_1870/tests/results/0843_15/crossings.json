@@ -1,0 +1,116 @@
+[
+  {
+    "mode": "normal",
+    "seed": 18704315,
+    "capture": 8,
+    "losses": [
+      1549,
+      1703
+    ],
+    "prisoners": [
+      0,
+      0
+    ],
+    "french_fire": 23,
+    "checks": 295,
+    "forces": [
+      8000,
+      24200
+    ]
+  },
+  {
+    "mode": "reference",
+    "seed": 18704315,
+    "capture": 8,
+    "losses": [
+      1549,
+      1703
+    ],
+    "prisoners": [
+      0,
+      0
+    ],
+    "french_fire": 23,
+    "checks": 295,
+    "forces": [
+      8000,
+      24200
+    ]
+  },
+  {
+    "mode": "current",
+    "seed": 18704315,
+    "capture": 8,
+    "losses": [
+      1701,
+      2069
+    ],
+    "prisoners": [
+      0,
+      0
+    ],
+    "french_fire": 25,
+    "checks": 279,
+    "forces": [
+      8000,
+      24200
+    ]
+  },
+  {
+    "mode": "normal",
+    "seed": 18704316,
+    "capture": 8,
+    "losses": [
+      1541,
+      1746
+    ],
+    "prisoners": [
+      0,
+      0
+    ],
+    "french_fire": 23,
+    "checks": 295,
+    "forces": [
+      8000,
+      24200
+    ]
+  },
+  {
+    "mode": "reference",
+    "seed": 18704316,
+    "capture": 8,
+    "losses": [
+      1541,
+      1746
+    ],
+    "prisoners": [
+      0,
+      0
+    ],
+    "french_fire": 23,
+    "checks": 295,
+    "forces": [
+      8000,
+      24200
+    ]
+  },
+  {
+    "mode": "current",
+    "seed": 18704316,
+    "capture": 8,
+    "losses": [
+      1708,
+      2074
+    ],
+    "prisoners": [
+      0,
+      0
+    ],
+    "french_fire": 25,
+    "checks": 279,
+    "forces": [
+      8000,
+      24200
+    ]
+  }
+]

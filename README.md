@@ -1,4 +1,22 @@
-# Prototype courant : V43.14
+# Prototype courant : V43.15
+
+- [Télécharger l’APK V43.15](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.15.apk)
+- [Sources complètes V43.15](releases/1870_v0.8.43.15_Sources.zip)
+- [Changements](releases/VERSION_0843_15.md), [tests et comparaisons](releases/TESTS_V43_15.md), [référence tactique](releases/REFERENCE_IA_V43.md)
+
+**Pour jouer les Prussiens contre une défense française renforcée : sélectionner Difficile, puis Prussiens.** L’IA française répartit ses missions entre les objectifs, recherche le couvert, prépare ses formations et ses retranchements, conserve des réserves et contre-attaque les points perdus lorsque le rapport de forces est favorable. Les batteries gardent leurs positions de tir utiles.
+
+L’ossature prussienne V43.14 et les deux politiques Normal sont conservées. Aucun bonus de combat français, aucun changement des effectifs, coûts, portées, ripostes ou règles de sauvegarde. Le calendrier antérieur des renforts prussiens en Difficile reste inchangé.
+
+Comparaison de huit tours chronologiques avec une attaque prussienne active et identique en politique : la nouvelle défense garde **Frœschwiller et Niederwald**, contre Frœschwiller seul pour le témoin. Elle effectue **17 tirs de canon contre 10**, et 3 assauts contre 1. Les Français ont subi davantage de pertes pour défendre plus de terrain ; les pertes prussiennes restent proches. Une seule graine/style sur la grande carte ; calendrier physique commun pour isoler la politique française. Détails et deux graines de franchissement dans le rapport.
+
+**2 490 contrôles techniques réussis**, plus **6 901 contrôles de légalité/état** des simulations. APK compilé et signature vérifiée. Aucun nouveau test T1–T20 ni essai physique Android.
+
+Installer comme mise à jour **sans désinstaller**, pour conserver les sauvegardes.
+
+---
+
+# Archive : V43.14
 
 - [Télécharger l’APK V43.14](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.14.apk)
 - [Sources complètes V43.14](releases/1870_v0.8.43.14_Sources.zip)

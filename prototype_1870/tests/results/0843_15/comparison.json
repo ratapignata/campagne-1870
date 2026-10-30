@@ -1,0 +1,146 @@
+{
+  "normal": {
+    "mode": "normal",
+    "checks": 1712,
+    "failures": 0,
+    "phase_count": 16,
+    "french_cannon": 10,
+    "french_other_fire": 79,
+    "french_assaults": 1,
+    "french_moves": 123,
+    "french_entrench_commands": 36,
+    "french_covered_end8": 2,
+    "french_entrenched_end8": 10,
+    "losses": [
+      8290,
+      6660
+    ],
+    "prisoners": [
+      123,
+      0
+    ],
+    "goals": {
+      "elsasshausen": 1,
+      "froeschwiller": 0,
+      "niederwald": 1
+    },
+    "capture_history": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 4
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 6
+      }
+    ],
+    "french_median_ms": 2307.5,
+    "french_max_ms": 5703,
+    "french_phase_ms": 925322,
+    "seed": 18704315,
+    "style": 0,
+    "protocol": "T1-T8 chronological complete phases. French Normal policy isolated under common Hard live reinforcement calendar; fixed V43.14 Hard Prussian opponent. Reference and Normal reloaded at end T4; current uninterrupted."
+  },
+  "reference": {
+    "mode": "reference",
+    "checks": 1712,
+    "failures": 0,
+    "phase_count": 16,
+    "french_cannon": 10,
+    "french_other_fire": 79,
+    "french_assaults": 1,
+    "french_moves": 123,
+    "french_entrench_commands": 36,
+    "french_covered_end8": 2,
+    "french_entrenched_end8": 10,
+    "losses": [
+      8290,
+      6660
+    ],
+    "prisoners": [
+      123,
+      0
+    ],
+    "goals": {
+      "elsasshausen": 1,
+      "froeschwiller": 0,
+      "niederwald": 1
+    },
+    "capture_history": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 4
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 6
+      }
+    ],
+    "french_median_ms": 2262.0,
+    "french_max_ms": 9864,
+    "french_phase_ms": 917205,
+    "seed": 18704315,
+    "style": 0,
+    "protocol": "T1-T8 chronological complete phases. French Normal policy isolated under common Hard live reinforcement calendar; fixed V43.14 Hard Prussian opponent. Reference and Normal reloaded at end T4; current uninterrupted."
+  },
+  "current": {
+    "mode": "current",
+    "checks": 1739,
+    "failures": 0,
+    "phase_count": 16,
+    "french_cannon": 17,
+    "french_other_fire": 86,
+    "french_assaults": 3,
+    "french_moves": 133,
+    "french_entrench_commands": 33,
+    "french_covered_end8": 5,
+    "french_entrenched_end8": 10,
+    "losses": [
+      9751,
+      6648
+    ],
+    "prisoners": [
+      12,
+      159
+    ],
+    "goals": {
+      "elsasshausen": 1,
+      "froeschwiller": 0,
+      "niederwald": 0
+    },
+    "capture_history": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 3
+      },
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 0,
+        "turn": 4
+      },
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 4
+      }
+    ],
+    "french_median_ms": 2446.0,
+    "french_max_ms": 4544,
+    "french_phase_ms": 974124,
+    "seed": 18704315,
+    "style": 0,
+    "protocol": "T1-T8 chronological complete phases. French Normal policy isolated under common Hard live reinforcement calendar; fixed V43.14 Hard Prussian opponent. Reference and Normal reloaded at end T4; current uninterrupted."
+  }
+}
