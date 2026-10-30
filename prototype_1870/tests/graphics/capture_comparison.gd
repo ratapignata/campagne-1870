@@ -7,9 +7,12 @@ func digest_bytes(bytes: PackedByteArray) -> String:
 func _initialize():call_deferred("run")
 func set_case(kind: String):
  var pack=JSON.parse_string(FileAccess.get_file_as_string("res://packs/1870/regimental_trial_v43.json"));var state=JSON.parse_string(FileAccess.get_file_as_string("res://tests/fixtures/v4313_t11_simulation.json"))
- var e=game.EngineRules.new(pack,state);e.normalize();e.refresh_intel();game.engine=e;game.map.engine=e;game.selected=-1;game.clear_preview();game.support_notice_seen=int(e.state.get("support_serial",0));game.pending_hq_notice="";game.playing=true;game.ai_enabled=false
+ var e=game.EngineRules.new(pack,state)
+ if kind=="deplacement":e.new_game(0,"hard");e.state.seed=1870431503;e.state.ai_style=0
+ e.normalize();e.refresh_intel();game.engine=e;game.map.engine=e;game.selected=-1;game.clear_preview();game.support_notice_seen=int(e.state.get("support_serial",0));game.pending_hq_notice="";game.playing=true;game.ai_enabled=false
  var focus=e.index(Vector2i(14,9));var zoom=0.82
- if kind=="engagement":focus=e.index(Vector2i(15,7));zoom=1.05;game.selected=e.unit_index("fr_14")
+ if kind=="deplacement":focus=e.index(Vector2i(11,5));zoom=1.15;game.selected=e.unit_index("fr_9")
+ elif kind=="engagement":focus=e.index(Vector2i(15,7));zoom=1.05;game.selected=e.unit_index("fr_14")
  elif kind=="prussiens":
   e.state.human_side=1;e.end_side();e.refresh_intel();focus=e.index(Vector2i(16,9));zoom=1.05;game.selected=e.unit_index("pru_44");game.support_notice_seen=int(e.state.get("support_serial",0))
  elif kind=="isolement":
@@ -48,7 +51,7 @@ func run():
  out=OS.get_cmdline_user_args()[0];DirAccess.make_dir_recursive_absolute(out);root.content_scale_mode=Window.CONTENT_SCALE_MODE_DISABLED;root.size=Vector2i(1280,720)
  game=load("res://main.tscn").instantiate();root.add_child(game);game.ai_enabled=false;game.sound_enabled=false;game.music_player.stop();game.new_game(0);game.ai_enabled=false;game.music_player.stop()
  set_case("engagement");await capture("_warmup");report.captures.clear();DirAccess.remove_absolute(out+"/_warmup.png")
- for kind in ["overview","engagement","prussiens","isolement","detail"]:
+ for kind in ["overview","engagement","prussiens","isolement","detail","deplacement"]:
   set_case(kind);await capture(kind)
  set_case("engagement");await benchmark()
  var f=FileAccess.open(out+"/metrics.json",FileAccess.WRITE);f.store_string(JSON.stringify(report,"\t"));f.close()

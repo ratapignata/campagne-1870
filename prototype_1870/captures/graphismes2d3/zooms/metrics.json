@@ -1,0 +1,94 @@
+{
+	"benchmark": {
+
+	},
+	"captures": [
+		{
+			"case": "min_zoom",
+			"draw_calls": 5429.0,
+			"focus": [
+				714.0,
+				618.342163085938
+			],
+			"force_strips": {
+				"art_fr_Raoult0": "b6679d3d7c64aa40620f1ff6feadac188410913a61a7deeb5c0f7911888e8666",
+				"fr_1": "b4dad4cc71b5cdbe44ee6b7373f0ee46436381247d4561a6801aa0eee6a8159a",
+				"fr_10": "b99ed5bc65c7f216334eaca3a967f58eebdf0b969d40bf9a3d661c332625e9f4",
+				"fr_11": "facbe435740cc17facf50c0da6f1c2388f0d4dbfcde1e1231d74227740599c84",
+				"fr_12": "a37d284db20ac677f0243452e0e29b0f76272a4662def6b4c152f3dae4ef70ae",
+				"fr_13": "09162da8a673f112a3723e99b45466877fe1401d8fb56fd0e36fef3988917c51",
+				"fr_14": "b09a73200dc8d1f3ed95452652856c9a92ac1038c604d2e9b3bbaf94c2c01d24",
+				"fr_15": "acf4df535666ee4c574160384519f7a9c296a358b520d966bd5fe7f66f9ec2b2",
+				"fr_16": "90fef29aa81c890da2a3b92f46a040eb2b43b78ae1691ea6c04e64ff5b8a23c8",
+				"fr_17": "4a8edab2944afc8c34c6f8c96fb6fc7046431b643ce7dbbc3b1ab997a24e0dd1",
+				"fr_18": "f65069ba4ec41f4cee263e0137f4cf08ec6478c57be50ce25ab03fb496aceab6",
+				"fr_19": "c65ca727bbcb7a450b4cf731422d1945a3e8d58349d3e9148ae4f2a0d52e38e0",
+				"fr_2": "f65069ba4ec41f4cee263e0137f4cf08ec6478c57be50ce25ab03fb496aceab6",
+				"fr_20": "d9486f3f3826f855be3aeae326c07a44dfd6b9d9c60ff717f98dc70d6f3507a7",
+				"fr_21": "00b23b99bd46ab04875c4720478744caa79a71964fce1361ef6c8ab1b4a9aa34",
+				"fr_22": "b43e0490cb5975094d64068c71cd7478f5c057a69ad2793e9a77981346976143",
+				"fr_23": "00b23b99bd46ab04875c4720478744caa79a71964fce1361ef6c8ab1b4a9aa34",
+				"fr_24": "6f0767532d7af8bb869dbb7f6556db91930555b7ae27104a2faebbf5c46eac9b",
+				"fr_27": "28be6232869d24778e20db43a6041ef0047910ce65d4ba4eadbd37c2c1dbd277",
+				"fr_29": "46fa28a7617ea144b62588532090cbbd91293593db5d4414510ec94c4758be44",
+				"fr_3": "1c6d8527cc2a3dcc8f49c583772bcd4ea3f416d4962c0857280f45f210438b67",
+				"fr_31": "aec1096073f6c9ffb8668be764126478629c268ea115016a37aba9155a609a80",
+				"fr_32": "8a075d5c904288c5e876b27ba9e5e933844fbab515f11c18f82051b0893f0b08",
+				"fr_4": "ddcb272b9636330194201d8fa26ae0870a652bb18733abb56fac385a22788d96",
+				"fr_5": "5a5d4c95d16943e3e9f1a6172eeed7faf1813571a99b4eee5964beb17622db7b",
+				"fr_7": "c098fccda5972010fc6bcd0d66174caaa7bc479d7164d9390e0b5d21d0f3c752",
+				"fr_8": "4325d81bd8b08f128692514d278227da38f5fea045fc609d46219d07608f23f4",
+				"fr_9": "442fb28ea7bec271b103fcf18b2d6392970cbc25b139b2aa109cb49f0fc78c6f",
+				"qg_fr_Conseil-Dumesnil": "7ef86c4eb4bf81e90dadb498792bb0c754dbba3c92a07a75400707f30feed3f2",
+				"qg_fr_Pellé": "097f66d3a5eae0783dc6274227be4b2a30edb28a562f162730997eedfb77c63f",
+				"qg_fr_Raoult": "7ef86c4eb4bf81e90dadb498792bb0c754dbba3c92a07a75400707f30feed3f2"
+			},
+			"left_card_hash": "7ca9d3835ca8be267b521172a49bf94e1d4715fb9f25adddff42ff02cde186bc",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "5c78513f6e207475c2d2020f217a870c77651c27d5613b750433c7fa742c5586",
+			"video_memory": 41625158.0,
+			"zoom": 0.42
+		},
+		{
+			"case": "max_zoom",
+			"draw_calls": 1526.0,
+			"focus": [
+				816.0,
+				618.342163085938
+			],
+			"force_strips": {
+				"art_fr_Raoult0": "0d18db35c128254028486e1e6092707e4a9c5efab3753ea030526f7d617cec50",
+				"fr_15": "7efc721ab695d1f9071bbcfb49a057c4b19535d760c2b53f7ca89450f0cd446b",
+				"fr_16": "dfb8ee66158b98a03ec0f6ab17dc7833ee02a0f2aa7ac0d5593e86d757932749",
+				"fr_17": "73a52125e9e6bca3f250e08a9ad779108eddd8cc3aca7c1d45db7e4cfc58ca38",
+				"fr_18": "1d12dcc3c5ad8189f42f38cda7c7e88c9d1f8e32e7e4fa11a10259dfdb815deb",
+				"fr_7": "ee3bf1a457c238c03fc10305d45ac89dd877eba5bc4ba3e4821c6746cbdc915a"
+			},
+			"left_card_hash": "7ca9d3835ca8be267b521172a49bf94e1d4715fb9f25adddff42ff02cde186bc",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "5c78513f6e207475c2d2020f217a870c77651c27d5613b750433c7fa742c5586",
+			"video_memory": 43284266.0,
+			"zoom": 2.3
+		}
+	]
+}

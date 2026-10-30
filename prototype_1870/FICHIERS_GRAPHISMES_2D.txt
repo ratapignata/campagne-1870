@@ -1,5 +1,5 @@
-Essai graphique 2D № 2 — fichiers ajoutés/modifiés depuis la base stable V43.15 (34d8f73)
-Les sources/captures de l’essai 1 sont conservées. Les fichiers gameplay de la base restent identiques.
+Essai graphique 2D № 3 — fichiers ajoutés/modifiés depuis la base stable V43.15 (34d8f73)
+Les anciens assets et captures des essais 1/2 sont conservés. Les modules de règles, IA et données restent identiques.
 
 FICHIERS_GRAPHISMES_2D.txt
 GRAPHISMES_2D_EXPERIMENTAL.md
@@ -92,6 +92,46 @@ captures/graphismes2d2/preuves/zoom.log
 captures/graphismes2d2/zooms/max_zoom.png
 captures/graphismes2d2/zooms/metrics.json
 captures/graphismes2d2/zooms/min_zoom.png
+captures/graphismes2d3/README.md
+captures/graphismes2d3/after/deplacement.png
+captures/graphismes2d3/after/detail.png
+captures/graphismes2d3/after/engagement.png
+captures/graphismes2d3/after/isolement.png
+captures/graphismes2d3/after/metrics.json
+captures/graphismes2d3/after/overview.png
+captures/graphismes2d3/after/prussiens.png
+captures/graphismes2d3/banc/infantry_0_1999.png
+captures/graphismes2d3/banc/infantry_0_2000.png
+captures/graphismes2d3/banc/infantry_1_1999.png
+captures/graphismes2d3/banc/infantry_1_2000.png
+captures/graphismes2d3/banc/uniform_tiles_and_markers.png
+captures/graphismes2d3/before/deplacement.png
+captures/graphismes2d3/before/detail.png
+captures/graphismes2d3/before/engagement.png
+captures/graphismes2d3/before/isolement.png
+captures/graphismes2d3/before/metrics.json
+captures/graphismes2d3/before/overview.png
+captures/graphismes2d3/before/prussiens.png
+captures/graphismes2d3/index.html
+captures/graphismes2d3/preuves/animation_artillery.log
+captures/graphismes2d3/preuves/animation_infantry.log
+captures/graphismes2d3/preuves/apk_badging.txt
+captures/graphismes2d3/preuves/apk_info.json
+captures/graphismes2d3/preuves/apk_signature.txt
+captures/graphismes2d3/preuves/capture_after.log
+captures/graphismes2d3/preuves/capture_before.log
+captures/graphismes2d3/preuves/comparison.json
+captures/graphismes2d3/preuves/compat.log
+captures/graphismes2d3/preuves/contract.log
+captures/graphismes2d3/preuves/controls_after.json
+captures/graphismes2d3/preuves/controls_stable.json
+captures/graphismes2d3/preuves/regression.json
+captures/graphismes2d3/preuves/render.log
+captures/graphismes2d3/preuves/source_integrity.json
+captures/graphismes2d3/preuves/zoom.log
+captures/graphismes2d3/zooms/max_zoom.png
+captures/graphismes2d3/zooms/metrics.json
+captures/graphismes2d3/zooms/min_zoom.png
 development/graphics2d/CREDITS.md
 development/graphics2d/atlas_manifest.json
 development/graphics2d/build_atlas.gd
@@ -167,10 +207,15 @@ tests/graphics/check_source_integrity.py
 tests/graphics/controls_snapshot.gd
 tests/graphics/controls_snapshot.gd.uid
 tests/graphics/fixtures/essai01_slot.json
+tests/graphics/fixtures/essai02_slot.json
 tests/graphics/test_contract.gd
 tests/graphics/test_contract.gd.uid
+tests/graphics/test_experiment03_render.gd
+tests/graphics/test_experiment03_render.gd.uid
 tests/graphics/test_previous_save.gd
 tests/graphics/test_previous_save.gd.uid
+tests/graphics/uniform_board.gd
+tests/graphics/uniform_board.gd.uid
 war_engine/presentation/graphics2d_art.gd
 war_engine/presentation/graphics2d_art.gd.uid
 war_engine/presentation/graphics2d_skin.gd

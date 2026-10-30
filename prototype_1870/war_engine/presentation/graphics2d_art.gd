@@ -24,31 +24,77 @@ static func paint_hex(view,texture: Texture2D,region: Rect2,p: Vector2,z: float,
   if mirror:relative.x=1.0-relative.x
   uv.append((region.position+Vector2(3,3)+relative*(region.size-Vector2(6,6)))/Vector2(texture.get_size()))
  view.draw_polygon(polygon,PackedColorArray([tint]),uv,texture)
-static func ground(view,terrain: String,index: int,p: Vector2,z: float):
- var n=0;var variant=posmod(index*7+index/view.engine.width,2)
+static func terrain_style(terrain: String) -> int:
+ # Exactly one unmirrored material per terrain type; altitude remains public shading.
  match terrain:
-  "plain":n=variant
-  "cultivated":n=2+variant
-  "meadow":n=4+variant
-  "hill":n=6+variant
-  "forest":n=8
-  "village":n=9
-  "road","bridge":n=10
-  "water":return
-  _:n=11
+  "plain":return 0
+  "cultivated":return 3
+  "meadow":return 4
+  "hill":return 6
+  "forest":return 8
+  "village":return 9
+  "road","bridge":return 10
+  _:return 11
+static func ground(view,terrain: String,index: int,p: Vector2,z: float):
+ if terrain=="water":return
  var height=view.engine.elevation(index)
- paint_hex(view,GROUND,ground_rect(n),p,z,Color(1.0+0.008*height,1.0+0.003*height,1.0-0.012*height,0.90),index%5==0)
+ paint_hex(view,GROUND,ground_rect(terrain_style(terrain)),p,z,Color(0.94+0.008*height,1.0+0.003*height,1.0-0.012*height,0.62))
 static func decor(view,terrain: String,index: int,p: Vector2,z: float,road: bool):
  var key=""
- if terrain=="forest":key="forest_road" if road else "forest_"+str(index%2)
+ if terrain=="forest":key="forest_0"
  elif terrain=="village":key="village_"+str(index%3)
- if not key.is_empty():paint_hex(view,FIGURES,FIGURE_RECTS[key],p,z,Color.WHITE,index%3==0)
-static func figure(view,kind: String,p: Vector2,z: float,french: bool):
+ if not key.is_empty():paint_hex(view,FIGURES,FIGURE_RECTS[key],p,z)
+static func infantry_figures(strength: int) -> int:
+ return 2 if strength>=2000 else 1
+static func contact_figures(report: Dictionary) -> int:
+ if report.get("type","")!="infantry":return 1
+ if report.has("exact_strength"):return infantry_figures(int(report.exact_strength))
+ # An ambiguous interval uses a generic silhouette, never hidden live strength.
+ return 2 if int(report.get("low",0))>=2000 else 1
+static func figure(view,kind: String,p: Vector2,z: float,french: bool,figures: int=1):
  prepare()
  var key=kind+("_fr" if french else "_pr")
- # Same counter footprint: decorations never enter the force/flag strip.
- var rect=Rect2(p+Vector2(-24,-22.5)*z,Vector2(48,40)*z)
- view.draw_texture_rect(regions[key],rect,false)
+ var tint=Color(1.06,1.06,1.06) if french else Color(1.24,1.24,1.20)
+ if kind=="infantry" and figures>=2:
+  view.draw_texture_rect(regions[key],Rect2(p+Vector2(-24,-22.5)*z,Vector2(34,36)*z),false,tint*Color(0.94,0.96,0.98))
+  view.draw_texture_rect(regions[key],Rect2(p+Vector2(-10,-19)*z,Vector2(34,36)*z),false,tint)
+ else:view.draw_texture_rect(regions[key],Rect2(p+Vector2(-24,-22.5)*z,Vector2(48,40)*z),false,tint)
+static func movement_marker(view,p: Vector2,z: float):
+ view.draw_circle(p,maxf(3.8,6.0*z),Color("183b37"))
+ view.draw_circle(p,maxf(2.5,4.2*z),Color("fff2ce"))
+static func label_obstacles(view) -> Array:
+ var obstacles=[];var e=view.engine;var side=int(e.state.human_side)
+ for n in range(e.state.units.size()):
+  if int(e.state.units[n].side)!=side and e.fog_enabled() and not e.state.finished:continue
+  if e.alive(n):obstacles.append(Rect2(view.screen(e.unit_cell(e.state.units[n]))-Vector2(31,33)*view.zoom,Vector2(62,66)*view.zoom))
+ if e.fog_enabled() and not e.state.finished:
+  for report in e.state.contacts[side].values():
+   var c=report.cell;var p=view.screen(e.index(Vector2i(int(c[0]),int(c[1]))))
+   obstacles.append(Rect2(p-Vector2(31,33)*view.zoom,Vector2(62,66)*view.zoom))
+ return obstacles
+static func begin_labels(view,obstacles: Array):
+ var signature=[view.size,view.focus,view.zoom,view.engine.get_instance_id(),obstacles]
+ if signature!=view.graphics_label_signature:
+  view.graphics_label_signature=signature;view.graphics_label_positions.clear()
+static func label_position(view,anchor: Vector2,preferred: Vector2,text_size: Vector2,obstacles: Array,placed: Array,below: bool=false) -> Vector2:
+ var z=view.zoom;var half=text_size.x/2.0;var initial=preferred-Vector2(half,0)
+ var offsets=[Vector2.ZERO,Vector2(-half-38*z,0),Vector2(half+38*z,0),Vector2(0,50*z),Vector2(-half-38*z,50*z),Vector2(half+38*z,50*z)]
+ if not below:offsets.append_array([Vector2(0,-38*z),Vector2(-half-38*z,-38*z),Vector2(half+38*z,-38*z)])
+ var key=str([anchor,preferred,text_size,below])
+ if not view.graphics_label_signature.is_empty() and view.graphics_label_positions.has(key):
+  var cached=view.graphics_label_positions[key];placed.append(Rect2(cached-Vector2(3,text_size.y),text_size+Vector2(6,4)));return cached
+ var best=initial;var best_score=INF
+ for offset in offsets:
+  var p=initial+offset
+  p.x=clampf(p.x,4,maxf(4,view.size.x-text_size.x-4));p.y=clampf(p.y,text_size.y+4,maxf(text_size.y+4,view.size.y-5))
+  if below and p.y<anchor.y+30*z:continue
+  var box=Rect2(p-Vector2(3,text_size.y),text_size+Vector2(6,4));var score=p.distance_to(initial)
+  for occupied in obstacles+placed:
+   if box.intersects(occupied):score+=box.intersection(occupied).get_area()*100
+  if score<best_score:best=p;best_score=score
+ placed.append(Rect2(best-Vector2(3,text_size.y),text_size+Vector2(6,4)))
+ if not view.graphics_label_signature.is_empty():view.graphics_label_positions[key]=best
+ return best
 static func relief(view,index: int,p: Vector2,z: float):
  var height=view.engine.elevation(index)
  if height<=0:return

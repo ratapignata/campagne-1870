@@ -35,6 +35,8 @@ const Cartography=preload("res://war_engine/presentation/cartography.gd")
 const RIVER_FONT=preload("res://assets/fonts/DejaVuSerif-Italic.ttf")
 var river_curve: Curve2D
 var river_key=""
+var graphics_label_signature: Array=[]
+var graphics_label_positions: Dictionary={}
 var river_center=0.0
 var down=false
 var dragging=false
@@ -144,8 +146,8 @@ func woodland(p: Vector2,z: float,variant: int):
 func horseman(p: Vector2,z: float,french: bool):
 	Graphics2D.figure(self,"cavalry",p+Vector2(2,-1)*z,z/1.04,french)
 
-func soldier(p: Vector2,z: float,french: bool):
-	Graphics2D.figure(self,"infantry",p+Vector2(4,-3)*z,z/1.10,french)
+func soldier(p: Vector2,z: float,french: bool,figures: int=1):
+	Graphics2D.figure(self,"infantry",p+Vector2(4,-3)*z,z/1.10,french,figures)
 
 func cannon(p: Vector2,z: float,color: Color,deployed: bool,french: bool=true):
 	Graphics2D.figure(self,"artillery",p+Vector2(0,-0.5)*z,z,french)
@@ -306,6 +308,7 @@ func _draw():
 		draw_colored_polygon(polygon,Color(engine.pack.terrains[terrain_key].color))
 		Graphics2D.ground(self,terrain,i,p,z)
 		Graphics2D.relief(self,i,p,z)
+		if terrain=="forest":Graphics2D.decor(self,terrain,i,p,z,false)
 		var road_ends=[]
 		for edge in engine.pack.map.get("road_edges",[]):
 			if int(edge[0])==i or int(edge[1])==i:
@@ -323,7 +326,7 @@ func _draw():
 			Graphics2D.road(self,curve,z)
 		else:
 			for end in road_ends:Graphics2D.road(self,PackedVector2Array([p,end]),z)
-		Graphics2D.decor(self,terrain,i,p,z,not road_ends.is_empty())
+		if terrain!="forest":Graphics2D.decor(self,terrain,i,p,z,not road_ends.is_empty())
 		if terrain=="road" or terrain=="bridge":
 			for n in engine.neighbours(i):
 				if not engine.pack.map.has("road_edges") and engine.pack.map.tiles[n] in ["road","bridge"]:draw_line(p,(p+screen(n))/2,Color("ae9974"),4*z,true)
@@ -339,8 +342,8 @@ func _draw():
 		if fire_cells.has(i) and engine.artillery(selected) and not busy():
 			draw_colored_polygon(hexagon(p,h-2),Color(1.0,0.96,0.76,0.34))
 		if reachable.has(i) and (fire_cells.is_empty() or not engine.artillery(selected)):
-			draw_colored_polygon(hexagon(p,h-2),Color(0.15,0.50,0.41,0.19))
-			if engine.known_unit_at(i,int(engine.state.human_side))<0:draw_circle(p,2.8*z,Color(0.2,0.44,0.36,0.5))
+			draw_colored_polygon(hexagon(p,h-2),Color(0.10,0.50,0.44,0.27))
+			if engine.known_unit_at(i,int(engine.state.human_side))<0:Graphics2D.movement_marker(self,p,z)
 	# River boundaries are public map information. One permanent road bridge; no repairs.
 	for edge in engine.pack.map.get("river_edges",[]):
 		var a=screen(int(edge.a));var b=screen(int(edge.b));var middle=(a+b)/2
@@ -355,6 +358,8 @@ func _draw():
 				draw_line(middle+Vector2(-10,-10)*zoom,middle+Vector2(10,10)*zoom,Color("963c31"),3*zoom,true)
 				draw_line(middle+Vector2(-10,10)*zoom,middle+Vector2(10,-10)*zoom,Color("963c31"),3*zoom,true)
 	draw_sauer()
+	var label_obstacles=Graphics2D.label_obstacles(self);var placed_labels=[]
+	Graphics2D.begin_labels(self,label_obstacles)
 	for location in engine.pack.map.get("labels",[]):
 		var c=location.cell;var anchor=screen(engine.index(Vector2i(int(c[0]),int(c[1]))));var p=anchor+settlement_label_offset(str(location.text))*zoom
 		var fs=maxi(11,int(15*zoom));var text_size=LOCALITY_FONT.get_string_size(location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs)
@@ -367,7 +372,15 @@ func _draw():
 			var road_colour=Color("ae9974");var stroke=maxf(1.5,3*zoom)
 			draw_line(start,tip,road_colour,stroke,true)
 			draw_polyline(PackedVector2Array([tip+Vector2(-12,-14)*zoom,tip,tip+Vector2(12,-14)*zoom]),road_colour,stroke,true)
-		else:p.x-=text_size.x/2
+		else:
+			if anchor.x< -text_size.x or anchor.x>size.x+text_size.x or anchor.y< -80 or anchor.y>size.y+80:continue
+			var preferred=p-Vector2(text_size.x/2,0)
+			p=Graphics2D.label_position(self,anchor,p,text_size,label_obstacles,placed_labels,location.text=="Spachbach")
+			if p.distance_to(preferred)>8*zoom:
+				var label_box=Rect2(p-Vector2(0,text_size.y),text_size);var end=anchor.clamp(label_box.position,label_box.end)
+				if anchor.distance_to(end)>18*zoom:
+					draw_line(anchor,end,Color(0.96,0.92,0.77,0.7),2.5*zoom,true)
+					draw_line(anchor,end,Color(0.24,0.31,0.20,0.55),maxf(0.7,zoom),true)
 		draw_string_outline(LOCALITY_FONT,p,location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs,3,Color("ece7d1"))
 		draw_string(LOCALITY_FONT,p,location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs,Color("253a29"))
 	if selected>=0 and engine.alive(selected) and (not engine.fog_enabled() or int(engine.state.units[selected].side)==int(engine.state.human_side)):
@@ -428,7 +441,7 @@ func _draw():
 		if engine.headquarters(n):headquarters_symbol(p,z,int(u.side)==0)
 		elif engine.artillery(n):cannon(p+Vector2(-1,-3)*z,z,Color("fff3d1"),u.deployed,int(u.side)==0)
 		elif engine.cavalry(n):horseman(p+Vector2(-3,-3)*z,1.04*z,int(u.side)==0)
-		else:soldier(p+Vector2(-5,-1)*z,1.10*z,int(u.side)==0)
+		else:soldier(p+Vector2(-5,-1)*z,1.10*z,int(u.side)==0,Graphics2D.infantry_figures(int(u.strength)))
 		draw_rect(Rect2(p+Vector2(-25,14)*z,Vector2(50,12)*z),Color("963047") if int(u.side)==0 else Color("273532"))
 		# Vertical French tricolour / horizontal black-white-red: shape and colour identify camp.
 		if not engine.headquarters(n):
@@ -524,7 +537,7 @@ func draw_contact(n: int):
 	if report.type=="cavalry":horseman(p+Vector2(-3,-3)*z,1.04*z,side==1)
 	elif report.type=="hq":headquarters_symbol(p,z,int(engine.state.units[n].side)==0)
 	elif report.type=="artillery":cannon(p+Vector2(-1,-3)*z,z,Color("fff3d1"),bool(report.deployed),side==1)
-	else:soldier(p+Vector2(-5,-1)*z,1.10*z,side==1)
+	else:soldier(p+Vector2(-5,-1)*z,1.10*z,side==1,Graphics2D.contact_figures(report))
 	draw_rect(Rect2(p+Vector2(-25,14)*z,Vector2(50,12)*z),Color("963047") if side==1 else Color("273532"))
 	if report.type!="hq":
 		var flag_origin=p+Vector2(-22,16)*z

@@ -9,7 +9,7 @@ for primary in (False, True):
                       'pressed':('#b5813c','#c69750','#d1a45f'),'disabled':('#20373a','#122a2e','#10252a')}
         else:
             colors = {'normal':('#233e45','#102a32','#0b2128'),'hover':('#34565b','#1c3d44','#17343b'),
-                      'pressed':('#0a2028','#122e36','#1a353c'),'disabled':('#1d3338','#10272e','#0c2027')}
+                      'pressed':('#0a2028','#122e36','#1a353c'),'disabled':('#14292e','#0b1f25','#091a20')}
         top,mid,bottom=colors[state]
         edge = '#cda45e' if primary and state != 'disabled' else '#4b696b'
         light = '#fff0c7' if primary and state != 'disabled' else '#a5c1ba'
@@ -26,7 +26,7 @@ for kind in ('band','card'):
     radius=0 if kind=='band' else 4
     svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="96" height="64" viewBox="0 0 96 64">
 <defs><linearGradient id="g" x2="0" y2="1"><stop stop-color="{top}"/><stop offset=".4" stop-color="{mid}"/><stop offset="1" stop-color="{bottom}"/></linearGradient></defs>
-<rect x=".5" y=".5" width="95" height="63" rx="{radius}" fill="url(#g)" stroke="#7d754f" stroke-opacity=".58"/>
+<rect x=".5" y=".5" width="95" height="63" rx="{radius}" fill="url(#g)" stroke="#7d754f" stroke-opacity=".32"/>
 <path d="M5 2H91M2 5V59" fill="none" stroke="#afc1b7" stroke-opacity=".12"/>
 <path d="M5 61.5H91" stroke="#000b12" stroke-opacity=".7"/>
 </svg>'''

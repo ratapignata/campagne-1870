@@ -1,3 +1,24 @@
+# Essai graphique 2D № 3 — lisibilité et effectifs
+
+Version expérimentale `0.8.43.15-g2d3`. [La version stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main), inchangée.
+
+- **[Télécharger l’APK de l’essai 3](https://github.com/ratapignata/campagne-1870/raw/refs/heads/v43-graphismes-2d-experimental/experiments/graphismes-2d/essai-03/1870_V43_Graphismes_2D_Experimental_03.apk)**.
+- [Sources complètes ZIP](experiments/graphismes-2d/essai-03/1870_V43_Graphismes_2D_Experimental_03_Sources.zip).
+- [Comparaisons avant/après et banc des seuils](prototype_1870/captures/graphismes2d3/README.md) ou [galerie ZIP](experiments/graphismes-2d/essai-03/1870_Graphismes_2D_Comparaisons_03.zip).
+- [Rapport](experiments/graphismes-2d/essai-03/GRAPHISMES_2D_EXPERIMENTAL.md), [tests](experiments/graphismes-2d/essai-03/TESTS_GRAPHISMES_2D.md), [fichiers modifiés](experiments/graphismes-2d/essai-03/FICHIERS_GRAPHISMES_2D.txt).
+
+Un même motif par type de terrain, teintes plus douces, points de déplacement ivoire opaques à contour sombre. Infanterie : deux soldats à partir de 2 000 hommes actuels, un en dessous, dans le même pion. Pour l’ennemi, seules les données connues sont utilisées ; une estimation ambiguë reste générique. Contraste prussien amélioré, noms de villages moins masqués, bordures des bandeaux plus discrètes.
+
+**Installer par-dessus l’essai précédent sans le désinstaller pour conserver sa sauvegarde.** Même application « 1870 · Essai graphique 2D », même paquet expérimental distinct du jeu stable, code Android 3. Sauvegardes des essais 1/2 vérifiées ; pas de transfert automatique avec la stable. IA, règles, géographie, animations, commandes et chiffres de force conservés. Aucun bouton TIRER ajouté.
+
+**5 078 contrôles finaux réussis**, six snapshots de commandes identiques et 90 bandes de force identiques en pixels dans les comparaisons. APK compilé et signature vérifiée ; aucun essai physique Android. Aucune fusion dans main avant validation visuelle.
+
+![Rendu réel — déplacement de l’infanterie](prototype_1870/captures/graphismes2d3/after/deplacement.png)
+
+---
+
+# Archive — essai 2
+
 # Essai graphique 2D № 2 — carte peinte, pions et bandeaux
 
 Version expérimentale `0.8.43.15-g2d2`, inspirée de la référence visuelle du joueur. La [version stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main), inchangée.
