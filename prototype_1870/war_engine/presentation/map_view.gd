@@ -173,7 +173,7 @@ func counter_back(p: Vector2,z: float,ink: Color,current: bool=true):
 	for k in range(shadow.size()):shadow[k]+=Vector2(1.5,2)*z
 	draw_colored_polygon(shadow,Color(0.07,0.12,0.13,0.22))
 	var colors=PackedColorArray()
-	for v in shape:colors.append(ink.lightened(0.18) if v.y<p.y else ink.lightened(0.02))
+	for v in shape:colors.append(ink.lightened(0.10) if v.y<p.y else ink)
 	draw_polygon(shape,colors)
 	var border=shape.duplicate();border.append(shape[0]);draw_polyline(border,Color("a8996c"),1.6*z,true)
 	draw_line(p+Vector2(-22,-25)*z,p+Vector2(22,-25)*z,Color("eddfbf") if current else Color("9da78f"),1.2*z,true)
@@ -300,7 +300,7 @@ func refresh_supply_overlay():
 
 func _draw():
 	if engine==null:return
-	draw_rect(Rect2(Vector2.ZERO,size),Color("d4d8c1"))
+	draw_rect(Rect2(Vector2.ZERO,size),Color("c4c8aa"))
 	for i in range(engine.width*engine.height):
 		var p=screen(i);var z=zoom;var h=R*z
 		if p.x< -h or p.y< -h or p.x>size.x+h or p.y>size.y+h:continue
@@ -342,7 +342,7 @@ func _draw():
 		if fire_cells.has(i) and engine.artillery(selected) and not busy():
 			draw_colored_polygon(hexagon(p,h-2),Color(1.0,0.96,0.76,0.34))
 		if reachable.has(i) and (fire_cells.is_empty() or not engine.artillery(selected)):
-			draw_colored_polygon(hexagon(p,h-2),Color(0.10,0.50,0.44,0.27))
+			draw_colored_polygon(hexagon(p,h-2),Color(0.15,0.50,0.41,0.19))
 			if engine.known_unit_at(i,int(engine.state.human_side))<0:Graphics2D.movement_marker(self,p,z)
 	# River boundaries are public map information. One permanent road bridge; no repairs.
 	for edge in engine.pack.map.get("river_edges",[]):

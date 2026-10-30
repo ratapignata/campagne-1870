@@ -1,6 +1,5 @@
 extends RefCounted
 # Painted assets are presentation only. Geography and unit state come from the engine.
-const GROUND=preload("res://assets/graphics2d2/painted_ground.png")
 const FIGURES=preload("res://assets/graphics2d2/painted_figures.png")
 const FIGURE_RECTS={
  "infantry_fr":Rect2(35,52,360,330),"infantry_pr":Rect2(426,52,302,332),
@@ -36,16 +35,19 @@ static func terrain_style(terrain: String) -> int:
   "road","bridge":return 10
   _:return 11
 static func base_color(source: Color) -> Color:
- return source.lightened(0.14)
+ return source
 static func ground(view,terrain: String,index: int,p: Vector2,z: float):
- if terrain=="water":return
- var height=view.engine.elevation(index)
- paint_hex(view,GROUND,ground_rect(terrain_style(terrain)),p,z,Color(1.04+0.008*height,1.10+0.003*height,1.06-0.012*height,0.50))
+ # Stable V43.15 colour is already drawn by MapView. No green texture overlay.
+ pass
 static func decor(view,terrain: String,index: int,p: Vector2,z: float,road: bool):
  var key=""
  if terrain=="forest":key="forest_0"
  elif terrain=="village":key="village_"+str(index%3)
- if not key.is_empty():paint_hex(view,FIGURES,FIGURE_RECTS[key],p,z,Color(1.28,1.30,1.18) if terrain=="forest" else Color(1.10,1.10,1.08))
+ if not key.is_empty():
+  # The same transparent artwork provides a light underpainting, lifting shadows.
+  paint_hex(view,FIGURES,FIGURE_RECTS[key],p,z,Color(8,8,8))
+  var tint=Color(1.28,1.30,1.18,0.75) if terrain=="forest" else Color(1.10,1.10,1.08,0.90)
+  paint_hex(view,FIGURES,FIGURE_RECTS[key],p,z,tint)
 static func infantry_figures(strength: int) -> int:
  return 2 if strength>=2000 else 1
 static func contact_figures(report: Dictionary) -> int:
@@ -56,11 +58,14 @@ static func contact_figures(report: Dictionary) -> int:
 static func figure(view,kind: String,p: Vector2,z: float,french: bool,figures: int=1):
  prepare()
  var key=kind+("_fr" if french else "_pr")
- var tint=Color(1.18,1.18,1.16) if french else Color(1.45,1.45,1.38)
+ var tint=Color(1.18,1.18,1.16,0.82) if french else Color(1.45,1.45,1.38,0.82)
  if kind=="infantry" and figures>=2:
-  view.draw_texture_rect(regions[key],Rect2(p+Vector2(-24,-22.5)*z,Vector2(34,36)*z),false,tint*Color(0.97,0.99,1.0))
-  view.draw_texture_rect(regions[key],Rect2(p+Vector2(-10,-19)*z,Vector2(34,36)*z),false,tint)
- else:view.draw_texture_rect(regions[key],Rect2(p+Vector2(-24,-22.5)*z,Vector2(48,40)*z),false,tint)
+  draw_figure(view,key,Rect2(p+Vector2(-24,-22.5)*z,Vector2(34,36)*z),tint*Color(0.97,0.99,1.0))
+  draw_figure(view,key,Rect2(p+Vector2(-10,-19)*z,Vector2(34,36)*z),tint)
+ else:draw_figure(view,key,Rect2(p+Vector2(-24,-22.5)*z,Vector2(48,40)*z),tint)
+static func draw_figure(view,key: String,rect: Rect2,tint: Color):
+ view.draw_texture_rect(regions[key],rect,false,Color(4,4,4))
+ view.draw_texture_rect(regions[key],rect,false,tint)
 static func movement_marker(view,p: Vector2,z: float):
  view.draw_circle(p,maxf(3.8,6.0*z),Color("183b37"))
  view.draw_circle(p,maxf(2.5,4.2*z),Color("fff2ce"))

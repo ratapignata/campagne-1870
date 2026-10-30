@@ -1,3 +1,24 @@
+# Essai graphique 2D № 5 — clarté de référence V43.15
+
+Version expérimentale `0.8.43.15-g2d5`. [La version stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main), inchangée.
+
+- **[Télécharger l’APK de l’essai 5](https://github.com/ratapignata/campagne-1870/raw/refs/heads/v43-graphismes-2d-experimental/experiments/graphismes-2d/essai-05/1870_V43_Graphismes_2D_Experimental_05.apk)**.
+- [Sources complètes ZIP](experiments/graphismes-2d/essai-05/1870_V43_Graphismes_2D_Experimental_05_Sources.zip).
+- **[Comparaison V43.15 stable / essai 4 / essai 5](prototype_1870/captures/graphismes2d5/README.md)** ou [galerie ZIP](experiments/graphismes-2d/essai-05/1870_Graphismes_2D_Comparaisons_05.zip).
+- [Rapport](experiments/graphismes-2d/essai-05/GRAPHISMES_2D_EXPERIMENTAL.md), [tests](experiments/graphismes-2d/essai-05/TESTS_GRAPHISMES_2D.md), [fichiers modifiés](experiments/graphismes-2d/essai-05/FICHIERS_GRAPHISMES_2D.txt).
+
+Retour aux couleurs de fond exactes des hexagones de V43.15, sans la couche peinte verte. Bois, villages et soldats détaillés conservés, ombres des illustrations relevées. Les nouveaux dessins ne sont pas identiques aux anciens symboles ; leur luminosité est comparable à la stable et légèrement supérieure dans les zones de pions mesurées. Doubles soldats dès 2 000 hommes connus, marqueurs contrastés et noms mieux dégagés conservés.
+
+**Installer par-dessus l’essai précédent sans le désinstaller pour conserver sa sauvegarde.** Même application « 1870 · Essai graphique 2D », même paquet distinct de la stable, code Android 5. Sauvegardes des essais 1 à 4 vérifiées, pas de transfert automatique depuis la stable.
+
+**5 090 contrôles finaux réussis**, six états/commandes identiques à la stable et 90 bandes de force identiques en pixels. APK compilé/signature vérifiée ; aucun essai physique Android. Règles, IA, géographie et brouillard inchangés ; aucune fusion dans main avant validation visuelle.
+
+![Rendu réel — palette V43.15 et illustrations détaillées](prototype_1870/captures/graphismes2d5/after/deplacement.png)
+
+---
+
+# Archive — essai 4
+
 # Essai graphique 2D № 4 — carte et pions plus lumineux
 
 Version expérimentale `0.8.43.15-g2d4`. [La version stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main), inchangée.

@@ -1,0 +1,44 @@
+[
+  {
+    "case": "overview",
+    "stable_map": 173.54734620640346,
+    "trial_map": 174.96694213518413,
+    "stable_unit": 127.72092786324787,
+    "trial_unit": 133.17493608058606
+  },
+  {
+    "case": "engagement",
+    "stable_map": 164.51312493582589,
+    "trial_map": 167.07345612758093,
+    "stable_unit": 127.01534334412955,
+    "trial_unit": 131.45311214574897
+  },
+  {
+    "case": "prussiens",
+    "stable_map": 175.47373923549105,
+    "trial_map": 177.28405215262276,
+    "stable_unit": 104.16509828947369,
+    "trial_unit": 109.77854895789474
+  },
+  {
+    "case": "isolement",
+    "stable_map": 153.39069146240234,
+    "trial_map": 154.2093095790318,
+    "stable_unit": 131.72693803368585,
+    "trial_unit": 136.67260623775948
+  },
+  {
+    "case": "detail",
+    "stable_map": 154.3809723475865,
+    "trial_map": 156.9934614348493,
+    "stable_unit": 125.27902727596017,
+    "trial_unit": 128.65292285443337
+  },
+  {
+    "case": "deplacement",
+    "stable_map": 166.41399053606307,
+    "trial_map": 164.0828684284319,
+    "stable_unit": 131.09011257884973,
+    "trial_unit": 133.66512872603587
+  }
+]

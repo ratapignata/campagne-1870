@@ -14,10 +14,10 @@ func run():
  var data=JSON.parse_string(FileAccess.get_file_as_string("res://packs/1870/regimental_trial_v43.json"));var e=Rules.new(data);e.new_game(0,"hard");e.state.seed=18704315;e.refresh_intel()
  var view=View.new();view.engine=e;view.texts=JSON.parse_string(FileAccess.get_file_as_string("res://packs/1870/fr.json"));root.add_child(view);view.size=Vector2(1280,448);var state=JSON.stringify(e.state)
  check(e.width==30 and e.height==20 and e.state.units.size()==95,"actual V43.15 map and roster")
- check(Art.regions.size()==12 and Art.GROUND.get_width()==1536 and Art.GROUND.get_height()==1024 and Art.FIGURES.get_size()==Vector2(1536,1024),"two reusable painted atlases")
+ check(Art.regions.size()==12 and Art.FIGURES.get_size()==Vector2(1536,1024),"one reusable painted illustration atlas")
  for name in Art.FIGURE_RECTS:
   var texture=Art.regions[name];check(texture.atlas==Art.FIGURES and texture.filter_clip and Rect2(0,0,1536,1024).encloses(texture.region),"figure region bounded and shared "+name)
- for n in range(12):check(Rect2(0,0,1536,1024).encloses(Art.ground_rect(n)),"ground region bounded "+str(n))
+ for terrain in data.terrains:check(Art.base_color(Color(data.terrains[terrain].color))==Color(data.terrains[terrain].color),"exact V43.15 terrain palette "+terrain)
  var picture=Art.FIGURES.get_image();check(picture.get_pixel(0,0).a==0 and not picture.is_invisible(),"true transparency around painted illustrations")
  for z in [0.42,0.72,1.05,2.3]:
   view.zoom=z;view.focus=view.world(e.index(Vector2i(14,9)))

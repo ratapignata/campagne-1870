@@ -1,0 +1,9 @@
+{
+  "result": "PASS",
+  "reference": "stable V43.15 34d8f73",
+  "same_state_camera_zoom": 6,
+  "same_force_strip_pixels": 90,
+  "same_controls": 6,
+  "terrain_base_colors": "exact stable palette",
+  "illustrations": "different artwork, comparable lightness, not pixel identical"
+}
