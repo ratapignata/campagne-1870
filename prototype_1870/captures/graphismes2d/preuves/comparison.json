@@ -1,0 +1,11 @@
+{
+  "state_matches": 5,
+  "left_card_pixel_matches": 5,
+  "control_snapshots_identical": 6,
+  "dimensions": [
+    1280,
+    720
+  ],
+  "reference": "34d8f73",
+  "result": "PASS"
+}

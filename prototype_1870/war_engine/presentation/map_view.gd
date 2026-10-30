@@ -14,6 +14,7 @@ var press_unit=-1
 var press_topic=""
 const HELP_DELAY=0.55
 var engine
+const Graphics2D=preload("res://war_engine/presentation/graphics2d_art.gd")
 const SupportRules=preload("res://war_engine/core/support.gd")
 var supply_overlay_source=-2 # -2 off; -1 all; >=0 one source
 var supply_overlay_cells: Dictionary={}
@@ -55,6 +56,7 @@ var reaction_sounded=false
 var just_finished=false
 func _ready():
 	clip_contents=true;mouse_filter=Control.MOUSE_FILTER_STOP;set_process(false)
+	texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS;Graphics2D.prepare()
 	help_tip=Panel.new();help_tip.mouse_filter=Control.MOUSE_FILTER_IGNORE;help_tip.size=Vector2(398,116)
 	var style=StyleBoxFlat.new();style.bg_color=Color("192f31");style.border_color=Color("d4b06c");style.set_border_width_all(1);style.set_corner_radius_all(5)
 	help_tip.add_theme_stylebox_override("panel",style);add_child(help_tip);help_tip.hide()
@@ -215,10 +217,15 @@ func counter_back(p: Vector2,z: float,ink: Color,current: bool=true):
 	for v in [Vector2(-23,-27),Vector2(23,-27),Vector2(26,-24),Vector2(26,24),Vector2(23,27),Vector2(-23,27),Vector2(-26,24),Vector2(-26,-24)]:shape.append(p+v*z)
 	var shadow=shape.duplicate()
 	for k in range(shadow.size()):shadow[k]+=Vector2(1.5,2)*z
-	draw_colored_polygon(shadow,Color(0.08,0.15,0.17,0.3))
-	outlined_shape(shape,ink,Color("142c31"),2.4*z)
-	draw_line(p+Vector2(-22,-25)*z,p+Vector2(22,-25)*z,Color("e6d8b7") if current else Color("9da78f"),1.2*z,true)
-	draw_line(p+Vector2(-24,-23)*z,p+Vector2(-24,12)*z,ink.lightened(0.24),1.0*z,true)
+	draw_colored_polygon(shadow,Color(0.07,0.12,0.13,0.22))
+	var colors=PackedColorArray()
+	for v in shape:colors.append(ink.lightened(0.12) if v.y<p.y else ink.darkened(0.06))
+	draw_polygon(shape,colors)
+	var border=shape.duplicate();border.append(shape[0]);draw_polyline(border,Color("12262b"),2.4*z,true)
+	draw_line(p+Vector2(-22,-25)*z,p+Vector2(22,-25)*z,Color("eddfbf") if current else Color("9da78f"),1.2*z,true)
+	draw_line(p+Vector2(-24,-23)*z,p+Vector2(-24,22)*z,Color(0.94,0.90,0.76,0.28),0.9*z,true)
+	draw_line(p+Vector2(-22,25)*z,p+Vector2(22,25)*z,Color(0.05,0.12,0.14,0.42),1.0*z,true)
+
 func counter_number(p: Vector2,z: float,value) -> void:
 	var text="" if str(value).is_empty() else str(int(value))
 	var font_size=maxi(8,int((9 if text.length()>2 else 13)*z))
@@ -339,25 +346,19 @@ func refresh_supply_overlay():
 
 func _draw():
 	if engine==null:return
-	draw_rect(Rect2(Vector2.ZERO,size),Color("c4c8aa"))
+	draw_rect(Rect2(Vector2.ZERO,size),Color("c5cab2"))
 	for i in range(engine.width*engine.height):
 		var p=screen(i);var z=zoom;var h=R*z
 		if p.x< -h or p.y< -h or p.x>size.x+h or p.y>size.y+h:continue
 		var terrain_key=engine.pack.map.tiles[i];var terrain=str(engine.pack.terrains[terrain_key].get("visual_type",terrain_key));var polygon=hexagon(p,h)
 		draw_colored_polygon(polygon,Color(engine.pack.terrains[terrain_key].color))
+		Graphics2D.ground(self,terrain,i,p,z)
 		if supply_overlay_source!=-2 and engine.fixed_hq():
 			var known=not engine.fog_enabled() or engine.state.finished or engine.cell_visible(int(engine.state.human_side),i)
 			var fill=Color(0.76,0.19,0.19,0.37) if known and supply_overlay_cells.has(i) else Color(0.37,0.40,0.42,0.37)
 			draw_colored_polygon(polygon,fill)
-		var outline=polygon.duplicate();outline.append(polygon[0]);draw_polyline(outline,Color(0.22,0.29,0.22,0.17),0.7,true)
-		for lower in relief_edges(i):
-			var normal=(screen(lower)-p).normalized();var middle=(p+screen(lower))/2
-			var tangent=Vector2(-normal.y,normal.x)*R*z*0.5
-			draw_line(middle-tangent,middle+tangent,Color(0.40,0.32,0.21,0.60),maxf(1.1,1.7*z),true)
-			if engine.elevation(i)>=2:
-				var inset=normal*4*z
-				draw_line(middle-tangent*0.85-inset,middle+tangent*0.85-inset,Color(0.40,0.32,0.21,0.40),maxf(1.0,1.2*z),true)
-		if engine.pack.map.get("show_relief",true) and engine.elevation(i)>=2 and terrain!="hill":contours(p,z*0.72,i%4)
+		var outline=polygon.duplicate();outline.append(polygon[0]);draw_polyline(outline,Color(0.25,0.32,0.22,0.28),maxf(0.6,0.75*z),true)
+		Graphics2D.relief(self,i,p,z)
 		var road_ends=[]
 		for edge in engine.pack.map.get("road_edges",[]):
 			if int(edge[0])==i or int(edge[1])==i:
@@ -372,13 +373,11 @@ func _draw():
 			for k in range(9):
 				var t=float(k)/8.0
 				curve.append(road_ends[0].lerp(p,t).lerp(p.lerp(road_ends[1],t),t))
-			draw_polyline(curve,Color("ae9974"),4*z,true)
+			Graphics2D.road(self,curve,z)
 		else:
-			for end in road_ends:draw_line(p,end,Color("ae9974"),4*z,true)
-		if terrain=="forest":woodland(p,z,i%3)
-		elif terrain=="hill" and engine.pack.map.get("show_relief",true):contours(p,z,i%4)
-		elif terrain=="village":village(p,z)
-		elif terrain=="road" or terrain=="bridge":
+			for end in road_ends:Graphics2D.road(self,PackedVector2Array([p,end]),z)
+		Graphics2D.decor(self,terrain,i,p,z,not road_ends.is_empty())
+		if terrain=="road" or terrain=="bridge":
 			for n in engine.neighbours(i):
 				if not engine.pack.map.has("road_edges") and engine.pack.map.tiles[n] in ["road","bridge"]:draw_line(p,(p+screen(n))/2,Color("ae9974"),4*z,true)
 			if terrain=="bridge":
@@ -394,7 +393,7 @@ func _draw():
 	for edge in engine.pack.map.get("river_edges",[]):
 		var a=screen(int(edge.a));var b=screen(int(edge.b));var middle=(a+b)/2
 		var normal=(b-a).normalized();var tangent=Vector2(-normal.y,normal.x)*R*zoom/2
-		draw_line(middle-tangent,middle+tangent,Color("5792a5"),5*zoom,true)
+		Graphics2D.river(self,middle-tangent,middle+tangent,zoom)
 		if bool(edge.bridge) or edge.has("bridge_from_turn"):
 			draw_line(middle-normal*14*zoom,middle+normal*14*zoom,Color("ede2bb"),10*zoom,true)
 			for sign in [-1,1]:

@@ -1,0 +1,47 @@
+{
+  "names": [
+    "plain_0",
+    "plain_1",
+    "plain_2",
+    "plain_3",
+    "cultivated_0",
+    "cultivated_1",
+    "cultivated_2",
+    "cultivated_3",
+    "meadow_0",
+    "meadow_1",
+    "meadow_2",
+    "hill_0",
+    "hill_1",
+    "forest_ground_0",
+    "village_ground_0",
+    "road_0",
+    "water_0",
+    "bridge_0",
+    "forest_0",
+    "forest_0_road",
+    "forest_1",
+    "forest_1_road",
+    "forest_2",
+    "forest_2_road",
+    "forest_3",
+    "forest_3_road",
+    "village_0",
+    "village_1",
+    "village_2"
+  ],
+  "cell": [
+    220,
+    193
+  ],
+  "padding": 8,
+  "sprite": [
+    204,
+    177
+  ],
+  "columns": 6,
+  "size": [
+    1320,
+    965
+  ]
+}

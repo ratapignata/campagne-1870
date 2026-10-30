@@ -1,0 +1,128 @@
+{
+	"benchmark": {
+		"average_ms": 81.7084833333334,
+		"draw_calls": 3462.0,
+		"frames": 60,
+		"median_ms": 79.862,
+		"p95_ms": 100.213,
+		"renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+		"video_memory": 40179915.0
+	},
+	"captures": [
+		{
+			"case": "overview",
+			"draw_calls": 4026.0,
+			"focus": [
+				714.0,
+				618.342163085938
+			],
+			"left_card_hash": "ec4d7cbacab1bd29fc22e2bbd6cbcf8ea72eebb92c0cc979c8289d7fa865f090",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "5c78513f6e207475c2d2020f217a870c77651c27d5613b750433c7fa742c5586",
+			"video_memory": 39542293.0,
+			"zoom": 0.82
+		},
+		{
+			"case": "engagement",
+			"draw_calls": 3462.0,
+			"focus": [
+				765.0,
+				706.6767578125
+			],
+			"left_card_hash": "ab00b0fb2b9633382044a09f5e27c2c1f9ca98449503d6873ef52ea33f11318d",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "5c78513f6e207475c2d2020f217a870c77651c27d5613b750433c7fa742c5586",
+			"video_memory": 39393483.0,
+			"zoom": 1.05
+		},
+		{
+			"case": "prussiens",
+			"draw_calls": 3168.0,
+			"focus": [
+				816.0,
+				618.342163085938
+			],
+			"left_card_hash": "778475cef5a005fbb36a70fa68e421c3db7364364b43931949d9ef8684c5ab7c",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "a247c13442dcd2fb6b3ffcaeaec35d244a16d409736405381abbf2efac4f33f9",
+			"video_memory": 39429847.0,
+			"zoom": 1.05
+		},
+		{
+			"case": "isolement",
+			"draw_calls": 3510.0,
+			"focus": [
+				663.0,
+				942.235595703125
+			],
+			"left_card_hash": "2f41b71d24a531921864293566c2617db6f405a5c182e9a9975b528c1aab7d97",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "54df14aab041184fc77fc75ca297b922768b9de5bae8e3cced078f1f33989c5e",
+			"video_memory": 39570119.0,
+			"zoom": 1.0
+		},
+		{
+			"case": "detail",
+			"draw_calls": 2691.0,
+			"focus": [
+				867.0,
+				706.6767578125
+			],
+			"left_card_hash": "ab00b0fb2b9633382044a09f5e27c2c1f9ca98449503d6873ef52ea33f11318d",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "5c78513f6e207475c2d2020f217a870c77651c27d5613b750433c7fa742c5586",
+			"video_memory": 39977067.0,
+			"zoom": 1.55
+		}
+	]
+}

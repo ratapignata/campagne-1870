@@ -1,13 +1,13 @@
 config_version=5
 [application]
-config/name="1870 · Frœschwiller-Wœrth"
-config/version="0.8.43.15"
+config/name="1870 · Essai graphique 2D"
+config/version="0.8.43.15-g2d1"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 config/quit_on_go_back=false
 config/use_custom_user_dir=true
-config/custom_user_dir_name="1870-prototype-v02"
+config/custom_user_dir_name="1870-prototype-graphismes2d"
 [display]
 window/size/viewport_width=1280
 window/size/viewport_height=720

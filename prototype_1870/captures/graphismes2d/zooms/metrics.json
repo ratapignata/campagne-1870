@@ -1,0 +1,53 @@
+{
+	"benchmark": {
+
+	},
+	"captures": [
+		{
+			"case": "min_zoom",
+			"draw_calls": 5894.0,
+			"focus": [
+				714.0,
+				618.342163085938
+			],
+			"left_card_hash": "ec4d7cbacab1bd29fc22e2bbd6cbcf8ea72eebb92c0cc979c8289d7fa865f090",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "5c78513f6e207475c2d2020f217a870c77651c27d5613b750433c7fa742c5586",
+			"video_memory": 39969733.0,
+			"zoom": 0.42
+		},
+		{
+			"case": "max_zoom",
+			"draw_calls": 2304.0,
+			"focus": [
+				816.0,
+				618.342163085938
+			],
+			"left_card_hash": "ec4d7cbacab1bd29fc22e2bbd6cbcf8ea72eebb92c0cc979c8289d7fa865f090",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "5c78513f6e207475c2d2020f217a870c77651c27d5613b750433c7fa742c5586",
+			"video_memory": 41840521.0,
+			"zoom": 2.3
+		}
+	]
+}

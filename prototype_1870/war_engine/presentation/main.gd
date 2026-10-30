@@ -147,11 +147,14 @@ func label(parent: Node,value: String,x: float,y: float,w: float,h: float,font_s
 func button(parent: Node,value: String,x: float,y: float,w: float,h: float,callback: Callable,primary=false) -> Button:
 	var b=Button.new();b.text=value;b.add_theme_font_override("font",BODY);b.add_theme_font_size_override("font_size",20)
 	b.add_theme_color_override("font_color",INK if primary else PAPER);b.add_theme_color_override("font_hover_color",INK if primary else Color.WHITE)
-	b.add_theme_color_override("font_pressed_color",INK if primary else PAPER);b.add_theme_color_override("font_disabled_color",Color("88978d"))
+	b.add_theme_color_override("font_pressed_color",INK if primary else PAPER);b.add_theme_color_override("font_disabled_color",Color("afbab1"))
 	for state in ["normal","hover","pressed","disabled","focus"]:
-		var style=StyleBoxFlat.new();style.bg_color=GOLD if primary else Color("2e4746")
+		var style=StyleBoxFlat.new();style.bg_color=Color("dfbd79") if primary else Color("35514f")
 		if state=="hover":style.bg_color=style.bg_color.lightened(0.12)
-		if state=="disabled":style.bg_color=Color("273c3b")
+		if state=="pressed":style.bg_color=style.bg_color.darkened(0.14)
+		if state=="disabled":style.bg_color=Color("263b3a")
+		style.set_border_width_all(1);style.border_color=Color("ebd39a") if primary else Color("59716a")
+		if state=="disabled":style.border_color=Color("49615a")
 		style.set_corner_radius_all(5);style.content_margin_left=12;style.content_margin_right=12
 		if state=="focus":style.set_border_width_all(2);style.border_color=PAPER;style.draw_center=false
 		b.add_theme_stylebox_override(state,style)
@@ -164,6 +167,7 @@ func logo(parent: Node,x: float,y: float,w: float,h: float):
 func build_ui():
 	map=MapView.new();map.engine=engine;map.texts=texts;place(map,self,0,92,1280,474);map.cell_tapped.connect(on_cell);map.fire_sound.connect(play_combat_sound);map.assault_sound.connect(play_assault_sound)
 	header=panel(self,0,0,1280,92,INK)
+	var rule=panel(header,0,91,1280,1,Color("738274"));rule.mouse_filter=Control.MOUSE_FILTER_IGNORE;rule.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE);rule.offset_top=-1
 	logo(header,14,14,188,64)
 	label(header,t("subtitle"),216,8,728,31,23,PAPER,true)
 	turn_label=label(header,"",216,44,410,36,26,GOLD)

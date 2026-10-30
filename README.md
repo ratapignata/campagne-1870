@@ -1,3 +1,20 @@
+# Essai graphique 2D — branche expérimentale indépendante
+
+**La version stable V43.15 n’est pas remplacée.** [Revenir à la branche main](https://github.com/ratapignata/campagne-1870/tree/main).
+
+- [Télécharger l’APK expérimental](https://github.com/ratapignata/campagne-1870/raw/refs/heads/v43-graphismes-2d-experimental/experiments/graphismes-2d/1870_V43_Graphismes_2D_Experimental_01.apk) — application **1870 · Essai graphique 2D**, installable à côté du jeu actuel.
+- [Sources complètes ZIP](experiments/graphismes-2d/1870_V43_Graphismes_2D_Experimental_01_Sources.zip).
+- [Voir les cinq comparaisons avant/après](prototype_1870/captures/graphismes2d/README.md) ou [télécharger la galerie complète](experiments/graphismes-2d/1870_Graphismes_2D_Comparaisons.zip).
+- [Rapport des changements](experiments/graphismes-2d/GRAPHISMES_2D_EXPERIMENTAL.md), [tests exécutés](experiments/graphismes-2d/TESTS_GRAPHISMES_2D.md) et [inventaire des fichiers](experiments/graphismes-2d/FICHIERS_GRAPHISMES_2D.txt).
+
+Carte plus texturée, forêts et maisons illustrées, Sauer avec berges et reflets, bordures des pions et boutons plus lisibles. Illustrations militaires conservées, fiche inférieure gauche identique sur les cinq captures, mêmes commandes et dispositions. IA, règles, carte, animations et format de sauvegarde inchangés.
+
+**5 033 contrôles réussis**, APK compilé et signature vérifiée ; aucun essai physique Android. Application séparée et sauvegarde de test distincte : la partie du jeu actuel n’est pas transférée automatiquement. Garder le jeu actuel installé ; pour revenir au graphisme habituel, l’ouvrir simplement.
+
+Aucune intégration de cet essai dans main avant validation visuelle.
+
+---
+
 # Prototype courant : V43.15
 
 - [Télécharger l’APK V43.15](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.15.apk)
