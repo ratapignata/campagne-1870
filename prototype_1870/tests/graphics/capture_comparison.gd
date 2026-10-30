@@ -29,15 +29,17 @@ func capture(name):
   game.map.queue_redraw();await process_frame;await RenderingServer.frame_post_draw
  var state_before=JSON.stringify(game.engine.state)
  var image=root.get_texture().get_image();var region=game.unit_card.get_global_rect();var crop=image.get_region(Rect2i(region))
- var strips={}
+ var strips={};var artwork={}
  for n in range(game.engine.state.units.size()):
   var u=game.engine.state.units[n]
   if not game.engine.alive(n) or int(u.side)!=int(game.engine.state.human_side):continue
   var center=game.map.global_position+game.map.screen(game.engine.unit_cell(u));var z=game.map.zoom
   var rect=Rect2i(Rect2(center+Vector2(-20,16)*z,Vector2(43,9)*z))
   if Rect2i(game.map.get_global_rect()).encloses(rect):strips[str(u.id)]=digest_bytes(image.get_region(rect).get_data())
+  var art=Rect2i(Rect2(center+Vector2(-24,-25)*z,Vector2(48,37)*z))
+  if Rect2i(game.map.get_global_rect()).encloses(art):artwork[str(u.id)]={"side":int(u.side),"rect":[art.position.x,art.position.y,art.size.x,art.size.y]}
  var error=image.save_png(out+"/"+name+".png")
- report.captures.append({"case":name,"force_strips":strips,"png_error":error,"size":[image.get_width(),image.get_height()],"state_hash":state_before.sha256_text(),"left_card_hash":digest_bytes(crop.get_data()),"left_card_rect":[region.position.x,region.position.y,region.size.x,region.size.y],"focus":[game.map.focus.x,game.map.focus.y],"zoom":game.map.zoom,"draw_calls":Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME),"video_memory":Performance.get_monitor(Performance.RENDER_VIDEO_MEM_USED)})
+ report.captures.append({"case":name,"force_strips":strips,"artwork":artwork,"png_error":error,"size":[image.get_width(),image.get_height()],"state_hash":state_before.sha256_text(),"left_card_hash":digest_bytes(crop.get_data()),"left_card_rect":[region.position.x,region.position.y,region.size.x,region.size.y],"focus":[game.map.focus.x,game.map.focus.y],"zoom":game.map.zoom,"draw_calls":Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME),"video_memory":Performance.get_monitor(Performance.RENDER_VIDEO_MEM_USED)})
  print("CAPTURE ",name," ",error)
 func benchmark():
  var samples=[]

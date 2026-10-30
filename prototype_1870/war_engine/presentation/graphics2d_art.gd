@@ -35,15 +35,17 @@ static func terrain_style(terrain: String) -> int:
   "village":return 9
   "road","bridge":return 10
   _:return 11
+static func base_color(source: Color) -> Color:
+ return source.lightened(0.14)
 static func ground(view,terrain: String,index: int,p: Vector2,z: float):
  if terrain=="water":return
  var height=view.engine.elevation(index)
- paint_hex(view,GROUND,ground_rect(terrain_style(terrain)),p,z,Color(0.94+0.008*height,1.0+0.003*height,1.0-0.012*height,0.62))
+ paint_hex(view,GROUND,ground_rect(terrain_style(terrain)),p,z,Color(1.04+0.008*height,1.10+0.003*height,1.06-0.012*height,0.50))
 static func decor(view,terrain: String,index: int,p: Vector2,z: float,road: bool):
  var key=""
  if terrain=="forest":key="forest_0"
  elif terrain=="village":key="village_"+str(index%3)
- if not key.is_empty():paint_hex(view,FIGURES,FIGURE_RECTS[key],p,z)
+ if not key.is_empty():paint_hex(view,FIGURES,FIGURE_RECTS[key],p,z,Color(1.28,1.30,1.18) if terrain=="forest" else Color(1.10,1.10,1.08))
 static func infantry_figures(strength: int) -> int:
  return 2 if strength>=2000 else 1
 static func contact_figures(report: Dictionary) -> int:
@@ -54,9 +56,9 @@ static func contact_figures(report: Dictionary) -> int:
 static func figure(view,kind: String,p: Vector2,z: float,french: bool,figures: int=1):
  prepare()
  var key=kind+("_fr" if french else "_pr")
- var tint=Color(1.06,1.06,1.06) if french else Color(1.24,1.24,1.20)
+ var tint=Color(1.18,1.18,1.16) if french else Color(1.45,1.45,1.38)
  if kind=="infantry" and figures>=2:
-  view.draw_texture_rect(regions[key],Rect2(p+Vector2(-24,-22.5)*z,Vector2(34,36)*z),false,tint*Color(0.94,0.96,0.98))
+  view.draw_texture_rect(regions[key],Rect2(p+Vector2(-24,-22.5)*z,Vector2(34,36)*z),false,tint*Color(0.97,0.99,1.0))
   view.draw_texture_rect(regions[key],Rect2(p+Vector2(-10,-19)*z,Vector2(34,36)*z),false,tint)
  else:view.draw_texture_rect(regions[key],Rect2(p+Vector2(-24,-22.5)*z,Vector2(48,40)*z),false,tint)
 static func movement_marker(view,p: Vector2,z: float):

@@ -1,0 +1,31 @@
+{
+  "source_commit": "285db09632ec6a6627fdce185f0ee21463d63186",
+  "base_stable": "34d8f73",
+  "previous_experiment": "1e3f8fe",
+  "application_id": "org.woerth1870.prototype.graphics2dexp",
+  "android_version_code": 4,
+  "files": [
+    {
+      "name": "1870_V43_Graphismes_2D_Experimental_04.apk",
+      "bytes": 95168269,
+      "sha256": "8552d376c33eed36f348a76bbd123d07a4d3c4f90fafe1b98636a1d154b63b57"
+    },
+    {
+      "name": "1870_V43_Graphismes_2D_Experimental_04_Sources.zip",
+      "bytes": 69511232,
+      "sha256": "c5da707d969af90e7a9a040a2d3eff1cf39d582401bfa01d336de9edaf075789"
+    },
+    {
+      "name": "1870_Graphismes_2D_Comparaisons_04.zip",
+      "bytes": 18560422,
+      "sha256": "cdc0810abf78a972f19baedce65498ab434cd770980ae458e224de48cb3e4eba"
+    }
+  ],
+  "source_archive_verification": {
+    "zip_crc": "PASS",
+    "fresh_godot_import": "PASS, Godot 4.5.1",
+    "graphics_contract_repeat": "2435/2435, not counted twice",
+    "prior_saves_repeat": "21/21, not counted twice",
+    "physical_android_test": false
+  }
+}

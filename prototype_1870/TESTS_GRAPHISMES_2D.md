@@ -1,10 +1,10 @@
-# Tests — essai graphique 2D № 3
+# Tests — essai lumineux № 4
 
-30 octobre 2026, Godot **4.5.1 stable officiel**, sauvegardes de test isolées. Aucune sauvegarde personnelle du joueur n’a été ouverte.
+30 octobre 2026, Godot **4.5.1 stable officiel**, dossiers de sauvegarde de test isolés. Aucune sauvegarde personnelle du joueur n’a été utilisée.
 
 ## Bilan final
 
-**5 078 assertions réussies** : 2 487 dans les 23 suites existantes, 2 435 pour le contrat graphique/tactile, 14 pour les sauvegardes des essais 1/2, 53 pour le rendu canon, 54 pour le rendu fusil et 35 dans le nouveau banc de rendu. Aucun échec dans les exécutions finales. Les comparaisons supplémentaires ci-dessous ne sont pas ajoutées artificiellement au total.
+**5 085 assertions réussies** : 2 487 dans les 23 suites existantes, 2 435 pour le contrat graphique/tactile, 21 pour les sauvegardes des essais 1/2/3, 53 pour le rendu canon, 54 pour le fusil et 35 pour le banc de rendu. Aucun échec dans les exécutions finales. L’analyse comparative RGB et les snapshots ci-dessous ne sont pas ajoutés artificiellement à ce total.
 
 | Suite existante réexécutée | Résultat |
 | --- | --- |
@@ -32,73 +32,80 @@
 | `v43/test_raoult` | 42/42 |
 | `v43/test_v4315_ui` | 8/8 |
 
-Les sorties exactes sont dans `captures/graphismes2d3/preuves/regression.json`.
+Sorties exactes : `captures/graphismes2d4/preuves/regression.json`.
 
-## Nouveaux contrôles visuels — 35/35
+## Contrat et nouveaux rendus
 
-`test_experiment03_render.gd`, vrai viewport X11/OpenGL, et `uniform_board.gd` :
+`test_contract.gd` : **2 435/2 435**, dont 2 400 sélections des 600 centres d’hexagone aux quatre zooms 0,42 / 0,72 / 1,05 / 2,3 ; gestes injectés, ancrage, atlas, transparence, état moteur intact et sauvegarde/relecture.
 
-- Seuils 1 / 1 999 / 2 000 / 2 900 ; même règle pour les deux camps.
-- Rapports ennemis exacts et estimés : intervalle 1 500–2 000 ou 1 500–2 500 neutre, borne basse 2 000 double ; cavalerie/artillerie/QG non concernés.
-- Trois copies rendues de plaine, cultures et forêt à des indices différents, altitude nulle : même matériau, même orientation, forêt identique même lorsqu’une route est signalée au décor. Les tracés routiers sont testés par la carte réelle et dessinés séparément.
-- Chaque marqueur possède un centre ivoire opaque et un contour sombre sur les trois terrains.
-- Deux images réellement différentes à 1 999/2 000 pour chaque camp, via le renderer de production, avec bandes de force identiques. Banc isolé : unités restantes mises en attente, hauteurs neutralisées ; ce n’est pas une situation de bataille.
-- Deux mondes avec le même contact autorisé : effectif réel ennemi 1 999 / 2 000 / 2 500, même image. Déplacement réel masqué avec contact mémorisé fixe : même image et mêmes étiquettes. Les choix graphiques ne révèlent pas la vérité cachée.
-- Une étiquette évite une position préférée occupée lorsque de la place existe ; Spachbach garde son côté de rivière.
+`test_previous_save.gd` : **21/21** sur les fixtures synthétiques écrites par les essais 1, 2 et 3 : JSON courant/retour arrière complet conservé, nouvelle copie vérifiée et empreinte des originaux inchangée. `SaveStore` et format inchangés.
 
-Première comparaison de textures trop stricte : 33/35, car le rendu GPU de deux copies avait quelques composantes décalées de **1 sur 255** selon la position écran (maximum 34 pixels sur 3 696, mêmes UV/matériaux). Diagnostic effectué sur les pixels. Le test final accepte au maximum un pas de quantification par composante, pas de changement de motif : plaine écart 0, cultures/forêt écart maximal 1. Aucune règle de jeu ni donnée de terrain modifiée pour satisfaire le test.
+Banc hérité `test_experiment03_render.gd` : **35/35**. Seuils 1 999/2 000 pour les deux camps, autres armes conservées, force/drapeau non masqués, rapports exacts/estimés, deux mondes avec même information mais effectifs/mouvement cachés différents : images identiques. Noms et côté de rivière de Spachbach conservés. Marqueurs ivoire opaques à contour sombre toujours vérifiés sur plaine/cultures/forêt.
 
-## Contrat, commandes, sauvegardes et intégrité
+Une première exécution donnait 34/35 : le gain de couleur des bois amplifiait une différence de rasterisation à différentes positions écran jusqu’à 2/255. Le contrôle a été renforcé : les trois indices sont maintenant rendus successivement au **même emplacement écran**, avec exigence d’égalité exacte et non augmentation de tolérance. Résultat : écart maximal **0** pour les trois terrains. Aucun matériau ni règle de jeu modifié pour faire passer cette vérification.
 
-`test_contract.gd` : **2 435/2 435**, dont 2 400 sélections des 600 centres d’hexagone aux zooms 0,42 / 0,72 / 1,05 / 2,3 ; toucher/glissement/pincement/ancrage, atlas bornés/transparence, état moteur intact et sauvegarde/relecture.
+Les animations canon/fusil sont réellement rendues : **53/53** et **54/54**, couleurs, phases et visibilité conservées. Zooms extrêmes 0,42 et 2,3 rendus sans erreur. Pas de nouveau shader ou post-traitement.
 
-`test_previous_save.gd` : **14/14** sur les fixtures synthétiques réellement écrites par les essais 1 et 2. Payload courant/retour arrière relu et réécrit à l’identique en JSON, empreintes des originaux conservées. Le format, l’empreinte du pack et `SaveStore` ne changent pas.
+## Commandes et intégrité
 
-`controls_snapshot.gd` : **six états identiques à la stable** pour textes, rectangles, visibilité, désactivation, callbacks, filtres de souris, contenu de fiche et dimensions de bandeaux. Aucun bouton ajouté, renommé ou déplacé.
+Six snapshots identiques à la stable pour textes, rectangles, visibilité/désactivation, callbacks, filtres de souris, fiche et dimensions de bandeaux. Aucun bouton ajouté, renommé ou déplacé.
 
-`check_source_integrity.py` : **PASS**, référence V43.15 `34d8f73`. 1 333 fichiers identiques, cinq fichiers existants limités à présentation/configuration expérimentale. IA, core, plateforme, scènes, packs et géographie identiques. 118 fonctions sur 128 identiques dans les deux scripts de présentation existants. Hash du scénario `5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57`.
+Audit source : **PASS**, référence stable `34d8f73`. 1 333 fichiers identiques, cinq fichiers existants de présentation/configuration expérimentale concernés. IA, core, plateforme, scènes, packs et géographie identiques. 118 fonctions sur 128 identiques dans les deux scripts de présentation existants. Hash du pack `5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57`.
 
-## Comparaisons réelles
+## Six comparaisons avant/après
 
-Six paires essai 2/essai 3, 1280 × 720, même état sérialisé, caméra, zoom et sélection. **6/6 états et dispositions identiques ; 90/90 bandes de force identiques pixel par pixel.** Les fonds et illustrations changent volontairement. La scène déplacement est une nouvelle partie française T1 avec graine fixée et 78e RI de 2 000 hommes sélectionné à 4 PA. Les cinq autres utilisent la fixture T11 existante ; ce n’est pas une simulation chronologique T1–T11 ni une sauvegarde du joueur.
+Essai 3/essai 4, PNG 1280 × 720. **Même état, caméra, zoom, sélection et disposition dans 6/6 cas ; 90/90 bandes de force identiques pixel par pixel.** Cinq cas utilisent une fixture T11, et le déplacement une nouvelle partie française T1 à graine fixée. Ce ne sont ni une nouvelle simulation chronologique ni la partie du joueur.
 
-Galerie : `captures/graphismes2d3/README.md`. Les figures de seuil et terrains isolés sont rangés séparément dans `banc`. Zooms extrêmes 0,42 et 2,3 rendus sans erreur. Les routines d’animations, phases/couleurs des projectiles et visibilité du banc existant passent : canon **53/53**, fusil **54/54**.
+`compare_brightness.py` lit les images sans les réécrire. L’indice est une moyenne RGB pondérée 0..255, calculée dans la zone de carte et les rectangles centraux de pions visibles. Il ne mesure pas les nits, la luminosité ou la calibration d’un écran physique. Les rectangles et états sont vérifiés identiques avant comparaison. Carte et zones de pions sont plus claires dans **6/6 cas**.
 
-## Coût graphique
+| Cas | Carte avant | Carte après | Pions avant | Pions après |
+| --- | ---: | ---: | ---: | ---: |
+| overview | 145.31 | 161.12 | 101.12 | 129.68 |
+| engagement | 136.51 | 152.87 | 99.65 | 128.42 |
+| prussiens | 146.25 | 162.64 | 81.49 | 105.11 |
+| isolement | 122.55 | 138.11 | 106.15 | 133.81 |
+| detail | 127.46 | 143.82 | 99.81 | 125.56 |
+| deplacement | 130.90 | 145.06 | 101.37 | 129.69 |
 
-Vue engagement, 1280 × 720, zoom 1,05 ; exécutions successives sans tests concurrents, 15 images de chauffe puis 60 redessins forcés. Linux/Mesa llvmpipe : mesure CPU/rendu/attente, pas un profil Android. Après une première mesure plus lente du placement des noms, un cache de géométrie publique a été ajouté et les captures/tests ont été réexécutés.
+L’analyse optionnelle requiert Pillow, déjà disponible dans l’environnement de test. Le jeu et ses tests Godot n’en dépendent pas. Les PNG réels, journaux et mesures sont livrés dans `captures/graphismes2d4`.
 
-| Mesure finale | Essai 2 | Essai 3 |
+## Coût de rendu
+
+Vue engagement, 1280 × 720, zoom 1,05, 15 images de chauffe puis 60 redessins forcés. Exécutions successives sans tests concurrents, Linux/OpenGL Compatibility/Mesa llvmpipe : mesure globale CPU/rendu/attente, pas un profil GPU Android.
+
+| Mesure | Essai 3 | Essai 4 |
 | --- | ---: | ---: |
-| Médiane | 66.989 ms | 67.517 ms |
-| P95 | 74.357 ms | 78.352 ms |
-| Appels de dessin | 2844 | 2852 |
-| Mémoire vidéo rapportée | 42189458 octets | 42197234 octets |
+| Médiane | 73.242 ms | 73.626 ms |
+| P95 | 98.205 ms | 95.032 ms |
+| Appels de dessin | 2852 | 2852 |
+| Mémoire vidéo rapportée | 42197234 octets | 42197234 octets |
 
-Une passe par version, bruit de charge possible ; temps comparables sans garantie de FPS sur téléphone. Cache d’étiquettes limité à la vue courante et fondé uniquement sur positions connues, viewport/caméra et partie. Deux textures partagées réutilisées, aucun éclairage 3D, shader ou nouvelle particule.
+Une seule passe par version ; temps comparables sans garantie de FPS sur téléphone. Aucune image supplémentaire chargée, mêmes deux planches et mêmes primitives de dessin. Le nombre d’appels et la mémoire vidéo mesurée sont identiques.
 
 ## APK et limites
 
-Export Android réussi, intégrité ZIP et signature v2/v3 vérifiées. Paquet `org.woerth1870.prototype.graphics2dexp`, version `0.8.43.15-g2d3`, code 3, même certificat ; API 24/35, ARMv7/ARM64/x86_64. Tests/captures/outils exclus de l’APK.
+Export Android réussi ; intégrité ZIP et signature v2/v3 vérifiées. Paquet `org.woerth1870.prototype.graphics2dexp`, version `0.8.43.15-g2d4`, code 4, même certificat, API 24/35, ARMv7/ARM64/x86_64. Tests/captures/outils exclus.
 
-Fichier `1870_V43_Graphismes_2D_Experimental_03.apk`, 95168269 octets ; SHA-256 `645212a3afcb96ab630974b9b98529eb0858fbd5b5e5e2400028649e21cc11dd`.
+Fichier `1870_V43_Graphismes_2D_Experimental_04.apk`, 95168269 octets ; SHA-256 `8552d376c33eed36f348a76bbd123d07a4d3c4f90fafe1b98636a1d154b63b57`.
 
 
-Avertissements du banc : V-Sync non disponible sur le pilote logiciel ; après export réussi, sondage adb incapable de créer `/home/agent/.android` en lecture seule. Cela n’invalide pas le paquet signé. Aucun appareil connecté ou testé.
+Avertissements du banc : V-Sync non disponible sur le pilote logiciel ; après export réussi/vérifié, sondage adb incapable de créer `/home/agent/.android` en lecture seule. Aucun appareil connecté ou testé.
 
-**Non réalisés** : installation et jeu sur téléphone/émulateur, FPS/chauffe/batterie réels, nouvelle bataille complète T1–T20. Les règles et l’IA étant identiques, aucune nouvelle simulation chronologique n’est présentée. Les noms peuvent encore se recouvrir dans une zone sans place libre proche. Validation visuelle utilisateur et intégration à main : en attente.
+Non réalisés : installation/jeu sur appareil ou émulateur Android, luminosité et colorimétrie physiques, FPS/chauffe/batterie réels, nouvelle bataille T1–T20. Brouillard et routines d’animation inchangés, validation esthétique du joueur en attente, aucune fusion dans main.
 
 ## Reproduire
 
-Godot 4.5.1 depuis la racine, avec des dossiers de sauvegarde de test distincts :
+Godot 4.5.1 depuis la racine des sources, avec des dossiers utilisateur de test distincts :
 
 ```sh
 godot --headless --editor --path . --import --quit
 godot --headless --path . --script res://tests/graphics/test_contract.gd
 godot --headless --path . --script res://tests/graphics/test_previous_save.gd
 python3 tests/graphics/check_source_integrity.py --baseline-directory /chemin/sources_V43.15
-# Avec serveur graphique :
+# Serveur graphique nécessaire :
 godot --path . --rendering-method gl_compatibility --script res://tests/graphics/test_experiment03_render.gd
+# Après les captures, analyse facultative avec Pillow :
+python3 tests/graphics/compare_brightness.py /chemin/avant /chemin/apres /tmp/brightness.json
 ```
 
-Le même `capture_comparison.gd` peut être lancé sur les projets essai 2/3 avec deux dossiers de sortie distincts ; il produit six PNG, métriques et empreintes. Les scripts, fixtures, PNG et journaux sont livrés.
+Le même `capture_comparison.gd` est utilisé sur les essais 3/4 avec deux dossiers de sortie. Il produit six PNG et leurs métriques/empreintes.

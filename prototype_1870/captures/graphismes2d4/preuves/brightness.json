@@ -1,0 +1,44 @@
+[
+  {
+    "case": "overview",
+    "map_luminance_before": 145.3081405179269,
+    "map_luminance_after": 161.11550162632534,
+    "unit_mean_before": 101.11903645909646,
+    "unit_mean_after": 129.67708377289378
+  },
+  {
+    "case": "engagement",
+    "map_luminance_before": 136.5069918055943,
+    "map_luminance_after": 152.8696117675781,
+    "unit_mean_before": 99.65013624291497,
+    "unit_mean_after": 128.4224515951417
+  },
+  {
+    "case": "prussiens",
+    "map_luminance_before": 146.2531309664481,
+    "map_luminance_after": 162.64484842075893,
+    "unit_mean_before": 81.49375107894737,
+    "unit_mean_after": 105.11268418947368
+  },
+  {
+    "case": "isolement",
+    "map_luminance_before": 122.55082910679408,
+    "map_luminance_after": 138.1117946079799,
+    "unit_mean_before": 106.15270760869565,
+    "unit_mean_after": 133.80739358108107
+  },
+  {
+    "case": "detail",
+    "map_luminance_before": 127.45775171805245,
+    "map_luminance_after": 143.81730973563057,
+    "unit_mean_before": 99.80515835111427,
+    "unit_mean_after": 125.55545854077761
+  },
+  {
+    "case": "deplacement",
+    "map_luminance_before": 130.89951696010044,
+    "map_luminance_after": 145.0589687123326,
+    "unit_mean_before": 101.36905425479281,
+    "unit_mean_after": 129.69253911564624
+  }
+]

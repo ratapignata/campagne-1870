@@ -31,13 +31,17 @@ func run():
  var e=Rules.new(pack);e.new_game(0,"hard")
  board=load("res://tests/graphics/uniform_board.gd").new();board.engine=e;board.texts={};board.size=root.size;root.add_child(board)
  var picture=await frame();check(picture.save_png("user://uniform_tiles_and_markers.png")==OK,"terrain/marker screenshot")
+ # Compare at the same pixel position across frames, removing raster-position rounding.
+ var variants=[picture]
+ for offset in [29,58]:board.sample_index_offset=offset;variants.append(await frame())
+ board.sample_index_offset=0
  var ground_hashes=[]
  for row in range(3):
   var samples=[]
-  for col in range(3):samples.append(picture.get_region(Rect2i(127+col*200,62+row*145,66,56)))
+  for variant in variants:samples.append(variant.get_region(Rect2i(127,62+row*145,66,56)))
   var delta=maxi(max_pixel_delta(samples[0],samples[1]),max_pixel_delta(samples[0],samples[2]))
-  print("TILE ",row," maximum GPU byte difference ",delta)
-  check(delta<=1,"same rendered tile at three indices within one GPU quantization step "+str(row));ground_hashes.append(digest(samples[0].get_data()))
+  print("TILE ",row," same-position maximum byte difference ",delta)
+  check(delta==0,"identical tile at three indices rendered at the same position "+str(row));ground_hashes.append(digest(samples[0].get_data()))
   var center=picture.get_pixel(800,90+row*145);var edge=picture.get_pixel(805,90+row*145)
   check(center.is_equal_approx(Color("fff2ce")),"opaque ivory center "+str(row))
   check(edge.is_equal_approx(Color("183b37")),"dark marker edge "+str(row))

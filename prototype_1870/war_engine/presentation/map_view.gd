@@ -173,7 +173,7 @@ func counter_back(p: Vector2,z: float,ink: Color,current: bool=true):
 	for k in range(shadow.size()):shadow[k]+=Vector2(1.5,2)*z
 	draw_colored_polygon(shadow,Color(0.07,0.12,0.13,0.22))
 	var colors=PackedColorArray()
-	for v in shape:colors.append(ink.darkened(0.17) if v.y<p.y else ink.darkened(0.42))
+	for v in shape:colors.append(ink.lightened(0.18) if v.y<p.y else ink.lightened(0.02))
 	draw_polygon(shape,colors)
 	var border=shape.duplicate();border.append(shape[0]);draw_polyline(border,Color("a8996c"),1.6*z,true)
 	draw_line(p+Vector2(-22,-25)*z,p+Vector2(22,-25)*z,Color("eddfbf") if current else Color("9da78f"),1.2*z,true)
@@ -300,12 +300,12 @@ func refresh_supply_overlay():
 
 func _draw():
 	if engine==null:return
-	draw_rect(Rect2(Vector2.ZERO,size),Color("c5cab2"))
+	draw_rect(Rect2(Vector2.ZERO,size),Color("d4d8c1"))
 	for i in range(engine.width*engine.height):
 		var p=screen(i);var z=zoom;var h=R*z
 		if p.x< -h or p.y< -h or p.x>size.x+h or p.y>size.y+h:continue
 		var terrain_key=engine.pack.map.tiles[i];var terrain=str(engine.pack.terrains[terrain_key].get("visual_type",terrain_key));var polygon=hexagon(p,h)
-		draw_colored_polygon(polygon,Color(engine.pack.terrains[terrain_key].color))
+		draw_colored_polygon(polygon,Graphics2D.base_color(Color(engine.pack.terrains[terrain_key].color)))
 		Graphics2D.ground(self,terrain,i,p,z)
 		Graphics2D.relief(self,i,p,z)
 		if terrain=="forest":Graphics2D.decor(self,terrain,i,p,z,false)

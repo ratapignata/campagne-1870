@@ -1,3 +1,24 @@
+# Essai graphique 2D № 4 — carte et pions plus lumineux
+
+Version expérimentale `0.8.43.15-g2d4`. [La version stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main), inchangée.
+
+- **[Télécharger l’APK de l’essai 4](https://github.com/ratapignata/campagne-1870/raw/refs/heads/v43-graphismes-2d-experimental/experiments/graphismes-2d/essai-04/1870_V43_Graphismes_2D_Experimental_04.apk)**.
+- [Sources complètes ZIP](experiments/graphismes-2d/essai-04/1870_V43_Graphismes_2D_Experimental_04_Sources.zip).
+- [Comparaisons avant/après](prototype_1870/captures/graphismes2d4/README.md) ou [galerie ZIP](experiments/graphismes-2d/essai-04/1870_Graphismes_2D_Comparaisons_04.zip).
+- [Rapport](experiments/graphismes-2d/essai-04/GRAPHISMES_2D_EXPERIMENTAL.md), [tests](experiments/graphismes-2d/essai-04/TESTS_GRAPHISMES_2D.md), [fichiers modifiés](experiments/graphismes-2d/essai-04/FICHIERS_GRAPHISMES_2D.txt).
+
+Sol plus clair, bois éclaircis, fonds des pions moins sombres et silhouettes plus lumineuses, particulièrement prussiennes. Même palette nationale, même uniformisation des terrains, mêmes points contrastés et règle d’un/deux soldats à 2 000 hommes. Le brouillard garde sa surimpression et ses informations ; les bandeaux restent bleu nuit. Aucun shader, image lourde ou post-traitement supplémentaire.
+
+**Installer par-dessus l’essai précédent sans le désinstaller pour conserver sa sauvegarde.** Même application « 1870 · Essai graphique 2D », même paquet expérimental distinct de la stable, code Android 4. Sauvegardes des essais 1/2/3 vérifiées, pas de transfert automatique depuis la stable.
+
+**5 085 contrôles finaux réussis**, six états/commandes identiques et 90 bandes de force identiques en pixels ; carte et pions mesurés plus clairs dans les six comparaisons. APK compilé/signature vérifiée, aucun test physique Android. IA, règles, géographie, animations et commandes conservées. Aucune fusion dans main avant avis visuel.
+
+![Rendu réel — essai plus lumineux](prototype_1870/captures/graphismes2d4/after/deplacement.png)
+
+---
+
+# Archive — essai 3
+
 # Essai graphique 2D № 3 — lisibilité et effectifs
 
 Version expérimentale `0.8.43.15-g2d3`. [La version stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main), inchangée.
