@@ -1,3 +1,24 @@
+# Essai graphique 2D № 6 — bandeaux et fiche d’unité
+
+Version expérimentale `0.8.43.15-g2d6`. [La version stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main).
+
+- **[Télécharger l’APK de l’essai 6](https://github.com/ratapignata/campagne-1870/raw/refs/heads/v43-graphismes-2d-experimental/experiments/graphismes-2d/essai-06/1870_V43_Graphismes_2D_Experimental_06.apk)**.
+- [Sources complètes ZIP](experiments/graphismes-2d/essai-06/1870_V43_Graphismes_2D_Experimental_06_Sources.zip).
+- **[Comparaisons avant/après](prototype_1870/captures/graphismes2d6/README.md)** ou [galerie ZIP](experiments/graphismes-2d/essai-06/1870_Graphismes_2D_Comparaisons_06.zip).
+- [Rapport](experiments/graphismes-2d/essai-06/GRAPHISMES_2D_EXPERIMENTAL.md), [tests](experiments/graphismes-2d/essai-06/TESTS_GRAPHISMES_2D.md), [fichiers modifiés](experiments/graphismes-2d/essai-06/FICHIERS_GRAPHISMES_2D.txt).
+
+Heure/tour regroupés, commandes Journal/Aide/Menu avec pictogrammes, nom du régiment et PA mieux visibles. Repères de moral, munitions, riposte, commandement et ravitaillement, toujours accompagnés des textes. Aucun changement d’IA ou de règle. Carte et pions de l’essai 5 conservés ; bandeaux et commandes de mêmes dimensions.
+
+**Installer par-dessus l’essai précédent sans le désinstaller pour conserver sa sauvegarde.** Même application « 1870 · Essai graphique 2D », même paquet expérimental distinct de la stable, code Android 6. Sauvegardes des essais 1 à 5 vérifiées ; pas de transfert automatique depuis la stable.
+
+**5 183 contrôles finaux réussis**, six états/commandes identiques, carte et 90 bandes de force identiques en pixels à l’essai 5. Sources propres extraites, importées et testées. APK compilé/signature vérifiée ; aucun essai physique ou sur émulateur Android. Aucune fusion dans main avant validation visuelle.
+
+![Rendu réel — fiche en ordre et bandeaux plus lisibles](prototype_1870/captures/graphismes2d6/after/deplacement.png)
+
+---
+
+# Archive — essai 5
+
 # Essai graphique 2D № 5 — clarté de référence V43.15
 
 Version expérimentale `0.8.43.15-g2d5`. [La version stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main), inchangée.

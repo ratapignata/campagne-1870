@@ -1,0 +1,42 @@
+{
+  "initial": {
+    "before": {
+      "average_ms": 66.5660333333333,
+      "draw_calls": 2667.0,
+      "frames": 60,
+      "median_ms": 65.105,
+      "p95_ms": 79.706,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "video_memory": 35879141.0
+    },
+    "after": {
+      "average_ms": 87.5155,
+      "draw_calls": 2698.0,
+      "frames": 60,
+      "median_ms": 86.128,
+      "p95_ms": 103.429,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "video_memory": 35913757.0
+    }
+  },
+  "inverse": {
+    "before": {
+      "average_ms": 71.1916333333333,
+      "draw_calls": 2667.0,
+      "frames": 60,
+      "median_ms": 69.156,
+      "p95_ms": 88.681,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "video_memory": 35879141.0
+    },
+    "after": {
+      "average_ms": 72.6945666666667,
+      "draw_calls": 2698.0,
+      "frames": 60,
+      "median_ms": 72.211,
+      "p95_ms": 82.646,
+      "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+      "video_memory": 35913757.0
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "cases": 6,
+  "identical": true,
+  "scope": "all command rectangles, callbacks, enabled/visible states, texts, banner geometry"
+}

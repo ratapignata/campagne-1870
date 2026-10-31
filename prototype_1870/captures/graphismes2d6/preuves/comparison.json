@@ -1,0 +1,50 @@
+[
+  {
+    "case": "overview",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 14,
+    "map_pixel_identical": true,
+    "card_rectangle_identical": true
+  },
+  {
+    "case": "engagement",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 13,
+    "map_pixel_identical": true,
+    "card_rectangle_identical": true
+  },
+  {
+    "case": "prussiens",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 21,
+    "map_pixel_identical": true,
+    "card_rectangle_identical": true
+  },
+  {
+    "case": "isolement",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 20,
+    "map_pixel_identical": true,
+    "card_rectangle_identical": true
+  },
+  {
+    "case": "detail",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 8,
+    "map_pixel_identical": true,
+    "card_rectangle_identical": true
+  },
+  {
+    "case": "deplacement",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 14,
+    "map_pixel_identical": true,
+    "card_rectangle_identical": true
+  }
+]

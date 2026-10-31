@@ -1,0 +1,11 @@
+{
+  "package": "org.woerth1870.prototype.graphics2dexp",
+  "code": 6,
+  "version": "0.8.43.15-g2d6",
+  "cert_sha256": "57c00efad8c9b822d4a1d63238a4137b9afc97b6e9248076f4f54bb292ae846c",
+  "signed_v2": true,
+  "signed_v3": true,
+  "native_libraries": "'arm64-v8a' 'armeabi-v7a' 'x86_64'",
+  "apk_integrity": "PASS",
+  "stable_apk_unchanged": true
+}

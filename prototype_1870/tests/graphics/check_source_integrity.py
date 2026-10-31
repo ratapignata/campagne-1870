@@ -38,7 +38,7 @@ for name in files:
 assert set(changed) <= allowed, "Unexpected changes to stable files: " + str(set(changed) - allowed)
 functions = {}
 for name, permitted in {
-    "war_engine/presentation/main.gd": {"panel", "button", "build_ui"},
+    "war_engine/presentation/main.gd": {"panel", "button", "build_ui", "unit_heading", "layout_cards"},
     "war_engine/presentation/map_view.gd": {"_ready", "_draw", "counter_back", "horseman", "soldier", "cannon", "draw_contact"}
 }.items():
     def split_functions(source):

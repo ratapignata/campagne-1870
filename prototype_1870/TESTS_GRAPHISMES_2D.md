@@ -1,12 +1,10 @@
-# Tests — essai № 5, référence V43.15
+# Tests réellement exécutés — essai 6
 
-30 octobre 2026, Godot **4.5.1 stable officiel**, dossiers utilisateur isolés. Aucune sauvegarde personnelle du joueur utilisée.
+31 octobre 2026, Godot 4.5.1 officiel `f62fdbde1`. Sources V43.15 + essai 5 `75c0aae`. **5 183 assertions finales réussies**, sans compter deux fois les 84 assertions HUD communes aux passes headless et graphique. Aucun test final échoué ou désactivé.
 
-## Bilan final
+## Régression existante : 23 suites, 2 487 assertions
 
-**5 090 assertions réussies** : 2 487 dans 23 suites existantes, 2 433 pour le contrat graphique/tactile, 28 pour les sauvegardes des essais 1/2/3/4, 53 pour le rendu canon, 54 pour le fusil et 35 pour le banc des silhouettes/terrains/brouillard. Aucun échec dans les exécutions finales. Les analyses RGB et snapshots ci-dessous sont supplémentaires, sans gonfler le total.
-
-| Suite existante réexécutée | Résultat |
+| Suite | Résultat |
 | --- | --- |
 | `v43/test_v4315` | 28/28 |
 | `v43/test_v4314` | 25/25 |
@@ -32,74 +30,62 @@
 | `v43/test_raoult` | 42/42 |
 | `v43/test_v4315_ui` | 8/8 |
 
-Les sorties exactes sont dans `captures/graphismes2d5/preuves/regression.json`.
+Les comparaisons internes avant/après IA des anciennes suites sont leurs contrôles de référence, pas des modifications de l’IA dans cette livraison. Aucun nouveau benchmark de bataille complète : moteur et IA sont conservés à l’identique.
 
-## Palette, gestes et sauvegardes
+## Graphismes, sauvegardes et animations
 
-`test_contract.gd` : **2 433/2 433**. Contrôle de l’atlas d’illustrations, de la transparence et des dix couleurs de fond : `base_color` retourne exactement la couleur du pack V43.15. L’ancienne planche des sols n’est plus chargée. Sélection des 600 centres d’hexagone aux quatre zooms 0,42 / 0,72 / 1,05 / 2,3 : 2 400 contrôles ; toucher/glissement/pincement/ancrage, état moteur et sauvegarde/relecture conservés.
+| Suite | Résultat final |
+| --- | --- |
+| `graphics/test_contract` | 2433/2433 |
+| `graphics/test_previous_save` | 35/35 |
+| `graphics/test_hud06` | 86/86 |
+| `graphics/test_experiment03_render` | 35/35 |
+| `v43/test_animation_render` | 53/53 |
+| `v43/test_rifle_animation_render` | 54/54 |
 
-`test_previous_save.gd` : **28/28** sur les fixtures synthétiques effectivement générées par les essais 1 à 4. JSON courant/retour arrière complet relu et réécrit à l’identique, originaux inchangés. Format et `SaveStore` identiques.
+Le contrat contrôle notamment les 2 400 centres d’hexagones aux quatre zooms, les couleurs de terrain V43.15, le toucher/glissement/pincement et l’état/sauvegarde. Le test rendu contrôle les terrains uniformes, marqueurs contrastés, seuil 1/2 soldats, informations ennemies et bandes de force. Les anciens essais 1 à 5 se rechargent et se réécrivent sans perte : état courant + retour arrière comparés, originaux conservés.
 
-Banc hérité de l’essai 3 : **35/35**. Seuils 1 999/2 000 pour les deux camps, mêmes bandes de force ; autres armes conservées. Même image pour des effectifs réels ennemis différents lorsqu’un rapport autorisé identique est utilisé ; même rendu après mouvement masqué avec contact mémorisé fixe. Trois indices de chaque terrain rendus au même emplacement écran : égalité exacte, écart maximal 0. Marqueurs ivoire opaques à contour sombre et placement des noms contrôlés. Le banc est isolé, pas une situation de bataille.
+Nouveau test HUD : état normal/désorganisé/en déroute ; commandement seul perdu, ravitaillement seul perdu, double coupure ; informations inconnues sans indicateur trompeur ; jumeaux avec états ennemis cachés différents et rendu identique. Aucun changement de l’état moteur après décor, mises à jour idempotentes. PA fractionnaires, fin du tour 20, noms complets et boutons avec icônes contrôlés aux tailles 1280 × 606, 1280 × 720 et 1520 × 720. Les décorations ignorent les entrées, les deux lignes d’aide conservent leurs callbacks tactiles.
 
-Animations réellement rendues : canon **53/53**, fusil **54/54** ; phases, trajectoires et couleurs conservées. Zooms extrêmes 0,42 et 2,3 rendus sans erreur.
+Six instantanés de toutes les commandes (infanterie, cavalerie, artillerie, QG, isolement, trajet) : textes, rectangles, visibilité, désactivation, callbacks et filtres de souris strictement identiques à l’essai 5. Bandeau supérieur et inférieur de mêmes dimensions. Commandes du bandeau central inchangées.
 
-## Commandes et intégrité
+## Captures et intégrité
 
-Six snapshots de commandes identiques à la stable : textes, rectangles, visibilité/désactivation, callbacks, filtres de souris, fiche et bandeaux. Aucun bouton ajouté, déplacé ou renommé.
+Six situations synthétiques reproductibles, mêmes états et cadrages : vue générale, engagement, camp prussien, isolement, détail, déplacement. Toute la zone de carte et 90 bandes de force identiques en pixels ; état moteur et rectangle de fiche identiques. Les seules différences attendues sont dans les bandeaux. Captures réellement produites par Godot, sans retouche. La capture supplémentaire de double coupure est explicitement synthétique.
 
-Audit source **PASS**, référence `34d8f73` : 1 333 fichiers identiques dont IA, core, plateforme, scènes, packs et géographie. 118 fonctions sur 128 identiques dans les deux scripts de présentation existants. Hash du scénario `5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57`.
+Intégrité vs stable : 1 333 fichiers identiques ; tous les fichiers IA/core/plateforme/scènes/données géographiques intacts. 116/128 fonctions identiques dans `main.gd`/`map_view.gd`. Pack SHA-256 `5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57`. Vérification par `check_source_integrity.py`, sans élargir les exceptions aux règles ou à `refresh()`.
 
-## Comparaison réelle avec V43.15
+## Performances mesurées
 
-Galerie à trois colonnes : stable V43.15 / essai 4 / essai 5, mêmes états, zooms, caméra et sélection. **6/6 états et dispositions identiques ; 90/90 bandes de force identiques pixel par pixel.** Le cas déplacement est une nouvelle partie française T1 à graine fixée ; les cinq autres utilisent une fixture T11 existante. Aucune nouvelle simulation chronologique ni reproduction d’une partie du joueur.
+Rendu logiciel `llvmpipe`, GL Compatibility, 60 images après 15 de chauffe. Pas une mesure Android. Deux paires, la seconde dans l’ordre inverse ; variabilité de la machine cloud :
 
-L’analyse lit les PNG sans les modifier. Indices RGB pondérés 0..255, pas des mesures de nits, de calibration ou de luminosité physique. Rectangles identiques contrôlés avant comparaison. Les illustrations et la densité des bois étant différentes, la luminosité moyenne des régions ne peut être identique à chaque pixel ; les couleurs de fond des hexagones le sont.
+| Paire | Version | Médiane ms | P95 ms | Moyenne ms |
+| --- | --- | --- | --- | --- |
+| initial | before | 65.11 | 79.71 | 66.57 |
+| initial | after | 86.13 | 103.43 | 87.52 |
+| inverse | before | 69.16 | 88.68 | 71.19 |
+| inverse | after | 72.21 | 82.65 | 72.69 |
 
-| Cas | Carte V43.15 | Carte essai 5 | Pions V43.15 | Pions essai 5 |
-| --- | ---: | ---: | ---: | ---: |
-| overview | 173.55 | 174.97 | 127.72 | 133.17 |
-| engagement | 164.51 | 167.07 | 127.02 | 131.45 |
-| prussiens | 175.47 | 177.28 | 104.17 | 109.78 |
-| isolement | 153.39 | 154.21 | 131.73 | 136.67 |
-| detail | 154.38 | 156.99 | 125.28 | 128.65 |
-| deplacement | 166.41 | 164.08 | 131.09 | 133.67 |
+Sur la deuxième paire sans autres tests actifs, moyenne 71,19 → 72,69 ms (+2,1 %). L’écart plus grand de la première paire ne permet pas d’affirmer une performance identique ; aucune extrapolation au téléphone. Appels de dessin 2 667 → 2 698 (+31), mémoire vidéo +34 616 octets. Aucun polling par image, nouveau bitmap lourd, shader ou éclairage. L’IA elle-même est inchangée.
 
-Les valeurs montrent une carte proche de la stable et des pions légèrement plus lumineux. Le style des nouveaux soldats reste différent. Le réglage de l’écran du joueur n’est pas mesuré. Analyse facultative reproductible avec Pillow ; aucune dépendance Python dans le jeu.
+## Compilation Android
 
-## Rendu et mémoire
+APK code 6/version `0.8.43.15-g2d6`, paquet expérimental séparé, ARMv7/ARM64/x86_64, SDK minimum 24/cible 35. ZIP interne vérifié, signature v2/v3 vérifiée, certificat identique aux essais précédents. L’APK stable V43.15 reste identique en SHA-256. Tests/captures/outils de développement exclus de l’APK.
 
-Vue engagement 1280 × 720, zoom 1,05, 15 images de chauffe puis 60 redessins forcés. Linux/OpenGL Compatibility/Mesa llvmpipe, mesure CPU/rendu/attente, pas un profil Android.
+La sonde ADB de l’éditeur affiche un avertissement de répertoire `.android` non accessible ; la compilation et la vérification de signature se terminent. Aucun appareil ou émulateur disponible : installation, reprise réelle de partie, lisibilité et fluidité Android restent à essayer par le joueur.
 
-Médiane essai 5 : 65.480 ms ; P95 : 79.467 ms ; appels : 2667 ; mémoire vidéo rapportée : 35879141 octets.
-
-
-La suppression de la texture verte du sol réduit les changements de texture. La sous-couche claire réutilise le même atlas transparent, sans nouvel éclairage, shader ni post-traitement. L’ancienne planche de sol reste dans les sources, sans préchargement. Une passe logicielle par version, bruit de charge possible, aucune garantie de FPS sur téléphone.
-
-## APK et limites
-
-Export Android réussi, intégrité ZIP et signature v2/v3 vérifiées. Paquet `org.woerth1870.prototype.graphics2dexp`, version `0.8.43.15-g2d5`, code 5, même certificat ; API 24/35, ARMv7/ARM64/x86_64. Tests/captures/outils exclus de l’APK.
-
-Fichier `1870_V43_Graphismes_2D_Experimental_05.apk`, 95168269 octets ; SHA-256 `63c95ebf4d7f50a9da1eb38995114be07a9b1d88afbf5ec1e1b9a7c848f86bf4`.
-
-
-Avertissements habituels du banc : V-Sync non disponible sur le pilote logiciel ; après export réussi, sondage adb incapable de créer `/home/agent/.android` en lecture seule. Aucun appareil connecté ou testé.
-
-Non réalisés : installation/jeu sur appareil ou émulateur Android, calibration/couleurs physiques, FPS/chauffe/batterie réels, nouvelle bataille complète T1–T20. Règles, IA, brouillard et animations inchangés ; aucune fusion dans main. Des noms peuvent encore se recouvrir en zone très dense.
+Lors de la mise au point, une propriété d’icône a été corrigée vers la constante de thème Godot et une invocation a utilisé un nom de script de test erroné. Les relances finales emploient les bons fichiers et passent ; ces incidents ne sont pas comptés comme tests réussis. Résultats détaillés JSON dans `captures/graphismes2d6/preuves`.
 
 ## Reproduire
 
-Godot 4.5.1, depuis la racine des sources avec des sauvegardes de test distinctes :
-
 ```sh
-godot --headless --editor --path . --import --quit
+godot --headless --editor --path . --import
 godot --headless --path . --script res://tests/graphics/test_contract.gd
 godot --headless --path . --script res://tests/graphics/test_previous_save.gd
+godot --path . --rendering-method gl_compatibility --script res://tests/graphics/test_hud06.gd
+godot --path . --rendering-method gl_compatibility --script res://tests/graphics/capture_comparison.gd -- /tmp/captures_essai6
+python3 tests/graphics/compare_hud06.py /tmp/captures_essai5 /tmp/captures_essai6 /tmp/comparison.json
 python3 tests/graphics/check_source_integrity.py --baseline-directory /chemin/sources_V43.15
-# Serveur graphique nécessaire :
-godot --path . --rendering-method gl_compatibility --script res://tests/graphics/test_experiment03_render.gd
-# Analyse facultative, Pillow requis :
-python3 tests/graphics/compare_reference_palette.py /chemin/stable /chemin/essai5 /tmp/reference.json
 ```
 
-Utiliser le même `capture_comparison.gd` sur les projets stables et expérimentaux avec des dossiers de sortie distincts. Les PNG, métriques, bancs et journaux sont fournis dans `captures/graphismes2d5`.
+Pillow nécessaire uniquement au comparateur Python de captures. Pour les tests, utiliser un répertoire utilisateur isolé afin de ne pas toucher une partie réelle. L’archive propre du même code a été extraite dans un dossier séparé, importée avec Godot 4.5.1 puis vérifiée : contrat 2 433/2 433, sauvegardes 35/35, HUD headless 84/84 et intégrité vs dossier stable réussis. Ces répétitions ne sont pas ajoutées aux 5 183 assertions.

@@ -1,6 +1,7 @@
 extends Control
 const EngineRules=preload("res://war_engine/core/engine.gd")
 const SaveStore=preload("res://war_engine/platform/save_store.gd")
+const HudDetails=preload("res://war_engine/presentation/hud_details.gd")
 const GraphicsSkin=preload("res://war_engine/presentation/graphics2d_skin.gd")
 const MapView=preload("res://war_engine/presentation/map_view.gd")
 const BODY=preload("res://assets/fonts/DejaVuSans.ttf")
@@ -23,6 +24,7 @@ var ai_enabled=true
 var app_suspended=false
 var sound_enabled=true
 var music_enabled=true
+var hud_details
 const SCENARIOS={"v43":{"pack":"regimental_trial_v43.json","save":"save_v43.json"},"v42_lot8":{"pack":"regimental_trial_v42_lot8.json","save":"save_v42_lot8.json"},"historical":{"pack":"regimental_trial.json","save":"save_regimental0835.json"},"v42_experimental":{"pack":"regimental_trial_v42_experimental.json","save":"save_v42_experimental.json"},"classic":{"pack":"prototype.json","save":"save_classic_v0835.json"},"three":{"pack":"three_objectives.json","save":"save_three_v0835.json"}}
 var scenario_choice="v43"
 func active_scenario() -> String:return "v43" if engine!=null and engine.pack.get("id","")=="regimental_trial_v43" else "v42_lot8" if engine!=null and engine.pack.get("id","")=="regimental_trial_v42_lot8" else "v42_experimental" if engine!=null and engine.pack.get("id","")=="regimental_trial_v42_experimental" else "historical" if engine!=null and engine.pack.get("id","") in ["historical_terrain_trial0825","regimental_trial0828","regimental_trial0829","regimental_trial0830","regimental_trial0831","regimental_trial0832","regimental_trial0833","regimental_trial0834","regimental_trial0835"] else "three" if engine!=null and engine.pack.get("id","")=="trial_three_objectives_v0819" else "classic"
@@ -81,8 +83,8 @@ var hq_seen: Dictionary={}
 var pending_hq_notice=""
 func unit_heading(n: int) -> String:
 	var u=engine.state.units[n];var title=t(str(u.name_key)+"_short")
-	var fs=21
-	while fs>14 and BODY.get_string_size(title,HORIZONTAL_ALIGNMENT_LEFT,-1,fs).x>unit_label.size.x:fs-=1
+	var fs=23
+	while fs>14 and TITLE.get_string_size(title,HORIZONTAL_ALIGNMENT_LEFT,-1,fs).x>unit_label.size.x:fs-=1
 	unit_label.add_theme_font_size_override("font_size",fs)
 	unit_label.tooltip_text=t(str(u.name_key))
 	return title
@@ -168,7 +170,7 @@ func build_ui():
 	var rule=panel(header,0,91,1280,1,Color("9f8658"));rule.mouse_filter=Control.MOUSE_FILTER_IGNORE;rule.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE);rule.offset_top=-1
 	logo(header,14,14,188,64)
 	label(header,t("subtitle"),216,8,728,31,23,PAPER,true)
-	turn_label=label(header,"",216,44,410,36,26,GOLD)
+	turn_label=label(header,"",216,44,410,36,22,GOLD)
 	score_label=label(header,"",652,48,296,29,20)
 	header_buttons.append(button(header,t("journal"),960,22,106,50,show_journal))
 	header_buttons.append(button(header,t("help"),1075,22,85,50,show_help))
@@ -221,6 +223,7 @@ func build_ui():
 	# V42: the supply wagons on the map are the only supply-overlay controls.
 	logistics_button=null
 	status=label(footer,"",1011,129,251,21,12,Color("b0c4ad"))
+	hud_details=HudDetails.new();hud_details.game=self;footer.add_child(hud_details);hud_details.prepare()
 	resized.connect(layout);layout()
 func layout():
 	if map==null:return
@@ -278,6 +281,7 @@ func layout_cards():
 	var heading_size=22
 	while heading_size>16 and BODY.get_string_size(context_label.text,HORIZONTAL_ALIGNMENT_LEFT,-1,heading_size).x>context_label.size.x:heading_size-=1
 	context_label.add_theme_font_size_override("font_size",heading_size)
+	if hud_details!=null:hud_details.update_details()
 func camp(side: int) -> String:return t("france") if side==0 else t("germany")
 func ap_text(value) -> String:
 	var v=float(value)/4.0;return str(int(v)) if is_equal_approx(v,roundf(v)) else str(v).replace(".",",")
