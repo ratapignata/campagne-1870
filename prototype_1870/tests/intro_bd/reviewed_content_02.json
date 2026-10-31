@@ -1,0 +1,44 @@
+{
+  "titles": [
+    "Une Europe en transformation",
+    "Deux puissances rivales",
+    "La candidature Hohenzollern",
+    "La dépêche d’Ems",
+    "La déclaration de guerre",
+    "La mobilisation"
+  ],
+  "descriptions": [
+    "En 1866, la Prusse bat l’Autriche à Sadowa et l’écarte de la direction des affaires allemandes. En 1867, la Confédération de l’Allemagne du Nord réunit autour de Berlin la Prusse et les États du Nord.\n\nLes États du Sud restent en dehors, mais des traités militaires les lient à la Prusse. L’unification reste inachevée ; ce nouvel équilibre inquiète la France.",
+    "Après 1866, le Second Empire redoute une diminution de l’influence française en Europe. Napoléon III entend préserver l’équilibre des puissances et le prestige de son régime.\n\nBismarck cherche, lui, à rapprocher les États allemands du Sud de Berlin. Les crises diplomatiques et la presse nourrissent la rivalité. La guerre n’est pourtant pas inévitable : la question du trône d’Espagne déclenche l’escalade de juillet 1870.",
+    "En juillet 1870, la candidature de Léopold de Hohenzollern au trône d’Espagne inquiète Paris. La France redoute de voir un parent du roi de Prusse installé de l’autre côté des Pyrénées.\n\nLe 12 juillet, la candidature est retirée. Paris exige néanmoins que Guillaume Ier garantisse qu’elle ne sera jamais renouvelée. Une issue diplomatique possible devient une question de prestige.",
+    "Le 13 juillet 1870, à Ems, Guillaume Ier refuse à l’ambassadeur français Benedetti une garantie perpétuelle contre la candidature espagnole. Un compte rendu est télégraphié à Berlin.\n\nBismarck en abrège le texte et le publie sous une forme plus sèche. Diffusée le soir du 13, puis reprise par la presse le 14, cette version fait paraître l’échange humiliant et attise l’indignation dans les deux pays.",
+    "À Paris, le gouvernement présente l’affaire comme une atteinte à l’honneur national. Le 15 juillet, le Corps législatif vote les crédits de guerre. Le 19 juillet 1870, la France déclare officiellement la guerre à la Prusse.\n\nL’espoir d’isoler Berlin échoue : les États allemands du Sud se rangent aux côtés de la Prusse. La crise diplomatique devient une guerre.",
+    "La mobilisation révèle des préparations inégales. Les armées allemandes disposent de plans de rassemblement coordonnés et utilisent efficacement le chemin de fer. En France, les difficultés de transport, d’équipement et de regroupement retardent la concentration.\n\nAu début d’août, les forces se font face près de la frontière. Les premiers grands combats s’ouvrent en Alsace et en Lorraine : la campagne commence."
+  ],
+  "art": [
+    {
+      "file": "scene_1.png",
+      "sha256": "4c00ef38f557becb5b42e81962e2b06035ceeb49f6d0a3c6c62bd08a0f2adf2f"
+    },
+    {
+      "file": "scene_2.png",
+      "sha256": "14f9f3d356259ce52a7a882fd86d875107a185229155d94092174f2454294515"
+    },
+    {
+      "file": "scene_3.png",
+      "sha256": "e89ea00b923b642f5a8e6df5129ac7096332bad639643ab8b506ad6dd413a545"
+    },
+    {
+      "file": "scene_4.png",
+      "sha256": "57ee8abebf7a8b5d4545345942c6c8f40290a2e327b86ca9a6262cc51a474821"
+    },
+    {
+      "file": "scene_5.png",
+      "sha256": "d8f954cb33e861175c9f7c6a56df7d53525cd30c3d99743141b5871f511601e7"
+    },
+    {
+      "file": "scene_6.png",
+      "sha256": "fe7e4b17007b6fac11c622478139dcb2f8ebbc93b9a19b24909d8dc6c067f73c"
+    }
+  ]
+}

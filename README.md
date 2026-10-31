@@ -1,28 +1,26 @@
-# Campagne 1870 — introduction BD expérimentale V43
+# Campagne 1870 — introduction BD expérimentale, essai 2
 
-Branche **v43-intro-bd-experimental**, version `0.8.43.15-bd1`. Base : dernières sources complètes V43.15 + graphismes expérimentaux 12. [La version graphique 12 reste inchangée sur sa branche](https://github.com/ratapignata/campagne-1870/tree/v43-graphismes-2d-experimental) ; [main reste la stable](https://github.com/ratapignata/campagne-1870/tree/main).
+Version `0.8.43.15-bd2`, branche **v43-intro-bd-experimental**, base V43.15 + graphismes 12. Réparation des illustrations tronquées et récit historique développé, sans modification du jeu.
 
-## Téléchargements
+## Télécharger
 
-- **[APK Android — Essai introduction BD](https://raw.githubusercontent.com/ratapignata/campagne-1870/v43-intro-bd-experimental/experiments/intro-bd/essai-01/1870_V43_Intro_BD_Experimental_01.apk)**.
-- [Sources intégrées complètes ZIP](experiments/intro-bd/essai-01/1870_V43_Intro_BD_Experimental_01_Sources.zip).
-- [Captures des six tableaux et du parcours](prototype_1870/captures/introbd1/README.md) ou [galerie ZIP](experiments/intro-bd/essai-01/1870_V43_Intro_BD_Captures_01.zip).
-- [Rapport d’intégration](experiments/intro-bd/essai-01/INTRO_BD_EXPERIMENTAL.md), [tests réellement exécutés](experiments/intro-bd/essai-01/TESTS_INTRO_BD.md), [fichiers modifiés](experiments/intro-bd/essai-01/FICHIERS_INTRO_BD.txt).
+- **[APK Android — essai BD 2](https://raw.githubusercontent.com/ratapignata/campagne-1870/v43-intro-bd-experimental/experiments/intro-bd/essai-02/1870_V43_Intro_BD_Experimental_02.apk)**.
+- [Sources complètes ZIP](experiments/intro-bd/essai-02/1870_V43_Intro_BD_Experimental_02_Sources.zip).
+- [Captures avant/après et six tableaux](prototype_1870/captures/introbd2/README.md).
+- [Rapport](experiments/intro-bd/essai-02/INTRO_BD_EXPERIMENTAL.md), [tests exécutés](experiments/intro-bd/essai-02/TESTS_INTRO_BD.md), [repères historiques](experiments/intro-bd/essai-02/SOURCES_HISTORIQUES_BD.md), [fichiers modifiés](experiments/intro-bd/essai-02/FICHIERS_INTRO_BD.txt).
 
-## Essayer sans remplacer le jeu actuel
+**Installer par-dessus « 1870 · Essai introduction BD » précédent sans désinstaller**, pour conserver sa partie. Même paquet/certificat, code Android 2. L’application de jeu stable et l’essai graphique restent séparés. Leur partie n’est pas transférée automatiquement dans l’application BD.
 
-L’APK installe une **application distincte**, « **1870 · Essai introduction BD** », paquet `org.woerth1870.prototype.introbdexp`. Ne désinstaller aucune application existante. **La partie actuelle reste dans son application ; elle n’est pas transférée automatiquement.** Les parties créées dans cet essai se reprennent directement avec Continuer, sans revoir la BD. Le format de sauvegarde V43 reste inchangé et testé.
+## Corrections
 
-Menu → introduction générale (six tableaux) → fiche existante de configuration de la bataille → choix du camp → scénario. Suivant, Précédent, Passer l’introduction, Lecture automatique et Retour au menu. Passage immédiat possible pendant le fondu ; lecture en arrière-plan suspendue ; images chargées à la demande et libérées en quittant l’introduction.
+Les anciens JPEG étaient eux-mêmes tronqués : le cadre affichait déjà toute l’image disponible. Six compositions ont été réparées à partir des références, sans phrases coupées ni nouveau recadrage. Reconstitutions graphiques, pas récupération exacte de pixels manquants ; les six JPEG originaux restent archivés intacts dans les sources.
 
-Les six illustrations et textes fournis sont conservés. Les fragments de texte coupés sont déjà dans les JPEG originaux. **La présentation BD spécifique de Frœschwiller-Wœrth n’a pas été fournie ; elle n’est pas développée ni considérée comme terminée.** La fiche existante le précise.
+Six étapes conservées, récit développé : 1866 et Confédération de 1867, rivalités, retrait de la candidature espagnole le 12 juillet, Ems le 13 et diffusion du texte abrégé, crédits du 15, déclaration du 19 juillet, mobilisation. Bibliographie et limites explicites ; aucune BD de la bataille de Frœschwiller-Wœrth ajoutée.
 
-Aucun changement de gameplay, d’IA, de combat, de sauvegarde ou d’animation de bataille. Graphismes 12, pions historiques, coche en haut à droite et fonctions des bandeaux conservés. Aucune fusion avec main avant validation.
+Zone de lecture élargie, hauteur du titre ajustée, texte défilant avec indice si nécessaire. Lecture automatique **30 secondes**, avec défilement doux du paragraphe dépassant ; passage immédiat et cinq commandes conservés. Continuer reprend toujours la sauvegarde directement, sans charger les illustrations. Les règles, IA, graphismes de bataille et sauvegardes ne changent pas.
 
-## Vérifications
+**3 085 contrôles actuels réussis**, archive extraite/importée/vérifiée indépendamment, APK compilé et signature vérifiée. Aucun essai physique ou émulateur Android, aucune nouvelle simulation complète de bataille. Pas de fusion avec main ; [branche graphique 12 conservée](https://github.com/ratapignata/campagne-1870/tree/v43-graphismes-2d-experimental). [Livraison BD 1 conservée](experiments/intro-bd/essai-01/).
 
-Prototype seul 35/35 ; parcours intégré avec rendu/toucher 168/168 ; reprise dans un processus séparé 9/9 ; treize suites de régression 5 725 contrôles réussis. Archive extraite/importée/vérifiée séparément. APK compilé et signature vérifiée. Aucun essai Android physique ou émulateur, aucune nouvelle simulation complète de bataille. Avertissement audio de fermeture préexistant dans une ancienne suite UI, également reproduit sur la base sans introduction : détails dans le rapport.
+![Illustration réparée et récit développé](prototype_1870/captures/introbd2/scene_1.png)
 
-![Premier tableau intégré](prototype_1870/captures/introbd1/scene_1.png)
-
-![Sixième tableau intégré](prototype_1870/captures/introbd1/scene_6.png)
+![Développement de la dépêche d’Ems](prototype_1870/captures/introbd2/scene_4.png)

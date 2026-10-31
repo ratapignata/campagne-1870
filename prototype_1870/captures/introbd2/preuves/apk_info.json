@@ -1,0 +1,12 @@
+{
+  "package": "org.woerth1870.prototype.introbdexp",
+  "version": "0.8.43.15-bd2",
+  "code": 2,
+  "bytes": 97392732,
+  "signed_v2": true,
+  "signed_v3": true,
+  "certificate_sha256": "57c00efad8c9b822d4a1d63238a4137b9afc97b6e9248076f4f54bb292ae846c",
+  "zip_integrity": true,
+  "six_repaired_textures_match_imported_sources": true,
+  "original_jpegs_not_bundled": true
+}

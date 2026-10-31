@@ -1,0 +1,49 @@
+{
+  "version": "0.8.43.15-bd2",
+  "date_utc": "2026-10-31",
+  "branch": "v43-intro-bd-experimental",
+  "source_commit": "a8ee06510c4091611602a5092608909d0c0751f2",
+  "base_source_commit": "bf21d49ad7ca8c3562308050fe0fb0d5d3116dd3",
+  "base_publication_commit": "dbf16018ebf7b466922b6b07f1307003ad9f0521",
+  "main_unchanged": "55fca3f4b4ccc7a07ec00c11f7d7e7ebf07d6513",
+  "graphics_branch_unchanged": "ec50397d4029a83c6f43f863481b8e57e40280b0",
+  "files": [
+    {
+      "file": "1870_V43_Intro_BD_Experimental_02.apk",
+      "bytes": 97392732,
+      "sha256": "b0fa64bc01fbfe13dea95f7478f9de668c57ed755df394c67935e378d54b31a2"
+    },
+    {
+      "file": "1870_V43_Intro_BD_Experimental_02_Sources.zip",
+      "bytes": 44113214,
+      "sha256": "7d023146300ee233b670e480660d433f2c6214b61a1f7decc92fb263a9efa8a3"
+    },
+    {
+      "file": "1870_V43_Intro_BD_Captures_02.zip",
+      "bytes": 7088842,
+      "sha256": "c53abb03388aa2b63e486eaffaed8fb2dd53af8042079b855624568865f45978"
+    }
+  ],
+  "tests": {
+    "flow_with_render": 179,
+    "regression": 2906,
+    "total_distinct": 3085
+  },
+  "apk": {
+    "package": "org.woerth1870.prototype.introbdexp",
+    "version": "0.8.43.15-bd2",
+    "code": 2,
+    "bytes": 97392732,
+    "signed_v2": true,
+    "signed_v3": true,
+    "certificate_sha256": "57c00efad8c9b822d4a1d63238a4137b9afc97b6e9248076f4f54bb292ae846c",
+    "zip_integrity": true,
+    "six_repaired_textures_match_imported_sources": true,
+    "original_jpegs_not_bundled": true
+  },
+  "autoplay_seconds": 30,
+  "original_jpegs_preserved_in_source_archive": true,
+  "android_device_tested": false,
+  "emulator_tested": false,
+  "specific_battle_comic_supplied": false
+}

@@ -1,43 +1,37 @@
-# Introduction BD expérimentale — V43, essai 1
+# Introduction BD expérimentale — essai 2
 
-Version `0.8.43.15-bd1`, 31 octobre 2026. Branche **`v43-intro-bd-experimental`**, issue des dernières sources complètes disponibles : V43.15 + graphismes expérimentaux 12, commit source `a8652b5` / publication `ec50397`. Vérification des branches distantes réalisée avant modification. Ni main ni la branche graphique ne sont modifiées.
+Version `0.8.43.15-bd2`, 31 octobre 2026. Même branche `v43-intro-bd-experimental`, à partir de l’essai BD 1 (source `bf21d49`, publication `dbf1601`), lui-même basé sur la dernière V43 + graphismes 12. Main et branche graphique conservées.
 
-## Prototype examiné et testé seul
+## Image coupée : cause et correction
 
-Le ZIP fourni contient un projet Godot 4.3+, une scène `intro.tscn`, un script, un README et six JPEG de 850 × 590. Il s’agit d’une scène qui enchaîne **six tableaux**, et non de six fichiers de scène distincts. Import et exécution indépendante sous Godot 4.5.1 réussis : 35/35 contrôles, six captures et un vrai intervalle automatique de neuf secondes.
+Le cadre de l’essai 1 affichait déjà le JPEG entier. Les fragments tronqués étaient présents dans le fichier fourni ; agrandir le cadre ne pouvait pas récupérer la partie absente de la planche originale.
 
-Limites confirmées : pas de retour au menu, boutons de 31 pixels de haut, navigation suivante restant désactivée après la fin puis un retour en arrière. Les JPEG contiennent déjà des fragments de texte coupés sur leurs bords. Les six fichiers image, titres et textes historiques sont conservés à l’identique ; aucun nouveau recadrage ni image recréée. Leurs empreintes sont fournies. Les textes demeurent ceux du prototype, sans nouvelle validation historique revendiquée.
+Les six illustrations présentant ce défaut ont été recomposées à partir des références, à l’aide de l’outil de génération/retouche d’images : grands textes coupés supprimés, composition élargie, sujets principaux dégagés. Il s’agit d’une reconstitution graphique, pas de la récupération exacte de pixels perdus ni d’une image d’archives. Les six JPEG d’origine sont archivés intacts dans `development/intro_bd_source/assets`, avec le prototype autonome original.
 
-## Parcours intégré
+Les nouveaux PNG sont affichés entièrement, proportions respectées et sans nouveau recadrage. Le fond du premier tableau est une carte d’ambiance sans frontières politiques revendiquées. La dernière scène est un montage symbolique des deux armées ; elle ne représente pas une marche commune réelle. Voir `intro_bd/PROVENANCE.md`.
 
-Menu principal → introduction générale → fiche de configuration du scénario existante → choix du camp → début du scénario.
+## Développement historique
 
-La BD comporte : une Europe en transformation ; deux puissances rivales ; la candidature Hohenzollern ; la dépêche d’Ems ; la déclaration de guerre ; la mobilisation. Navigation Suivant/Précédent, passage immédiat, lecture automatique activable/désactivable (9 s par tableau), retour au menu. Retour Android renvoyant au menu. Fin/passage émis une seule fois ; timers et fondus arrêtés en quittant l’écran. La lecture se suspend en arrière-plan.
+Six titres et six étapes conservés ; paragraphes réécrits et développés, 59 à 65 mots chacun : Sadowa/1866 et Confédération/1867 ; rivalités d’influence sans guerre prétendument inévitable ; candidature espagnole et retrait du 12 juillet ; Ems le 13 puis diffusion du texte abrégé ; crédits du 15 et déclaration du 19 juillet ; mobilisation et concentration des armées.
 
-La fiche de configuration conserve les difficultés, paramètres et choix de camp existants. **La présentation BD particulière de Frœschwiller-Wœrth n’a pas été fournie et n’est pas développée ni considérée comme terminée.** Cette absence est indiquée dans la fiche. Aucun nouveau récit de bataille n’est inventé.
+Les textes ne sont pas un scénario de bataille ajouté. La BD propre à Frœschwiller-Wœrth reste non fournie et non développée. Références et limites : `SOURCES_HISTORIQUES_BD.md`. La chronologie a été recoupée dans l’ouvrage historique accessible ; aucune consultation de site institutionnel bloqué n’est revendiquée.
 
-Continuer/reprendre une sauvegarde donne directement accès à la partie. Une nouvelle partie reste soumise à la confirmation existante lorsqu’une sauvegarde est présente. Consulter puis abandonner l’introduction ne remplace pas cette sauvegarde ; seul le choix explicite d’un camp lance la nouvelle partie.
+## Lecture sur smartphone
 
-## Présentation et ressources
+Répartition plus équilibrée entre image et récit ; hauteur du titre adaptée au texte pour libérer de la place. Police du récit 25 en hauteur normale, 22 en format compact. Texte défilant si nécessaire avec indication visible. Les cinq commandes restent à leur place, boutons de 58 pixels logiques, passage immédiatement disponible.
 
-Paysage, images entières sans déformation dans un cadre, texte séparé lisible/défilant, boutons de 58 pixels logiques de haut, style bleu nuit/ivoire/or de la V43, fondu de 0,65 s. Tests de disposition à 1280 × 606, 1280 × 720, 1520 × 720.
+Lecture automatique portée de 9 à **30 secondes par tableau**, pour laisser lire les paragraphes développés. Si le texte dépasse, il défile doucement après huit secondes, atteint les dernières lignes en quatorze secondes supplémentaires, puis laisse un temps de lecture avant la suite. Un glissement du doigt rend la lecture manuelle. Fondus toujours 0,65 seconde ; pause/reprise en arrière-plan et arrêt des animations/timers en quittant l’introduction.
 
-Chargement à la demande : reprendre une sauvegarde ne charge aucune des six illustrations. Les références aux images sont libérées après la sortie de l’introduction, avant de jouer. Un timer et un fondu léger ; aucune nouvelle animation pendant la bataille, aucun traitement d’image par frame. Pas de voix, de musique supplémentaire ou d’animation de personnages ajoutée. Pas de benchmark Android ni promesse de fluidité sur appareil non testé.
+Textures importées au maximum à 1280 pixels, compression de texture qualité 0,85 ; sources PNG complètes conservées. Images chargées uniquement en lançant la BD et références libérées à la sortie. Continuer n’en charge aucune. Aucun traitement d’image par frame ni nouvelle animation pendant la bataille.
 
-## Préservation du jeu
+## Jeu et sauvegardes
 
-Code core, IA, plateforme, scènes de jeu, données de bataille, animations et modules graphiques 12 inchangés. `main.tscn` reste la scène principale. Dans le script principal, seules les entrées de menu/nouvelle partie, le bouton de nouvelle partie au résultat, le retour Android pendant l’introduction et la note sur la BD manquante changent. `new_game`, `resume`, combats, sauvegarde et IA conservent leur code.
+Moteur, IA, plateforme, scénario, scène principale, contrôleur de lancement du jeu et modules graphiques 12 identiques à l’essai BD 1. Aucun coût, charge 2 PA, riposte, liaison, isolement, reddition, renfort, score 60/20/20, objectif, durée de 20 tours, sauvegarde ou animation de combat modifié. Pions historiques, coche et bandeaux conservés.
 
-IA Normal/Difficile, charge 2 PA, artillerie, ripostes, liaisons, isolement/reddition, QG Raoult, variante B, 20 tours, trois objectifs 3/2/1 et score 60/20/20 conservés. Pions historiques, coche en haut à droite, bandeaux et commandes de l’essai 12 conservés ; aucun bouton TIRER ajouté.
+APK de **mise à jour de l’application BD**, même nom « 1870 · Essai introduction BD », paquet `org.woerth1870.prototype.introbdexp`, même certificat, code Android 2. **Installer par-dessus l’essai BD 1 sans désinstaller**, pour conserver sa partie. Les applications stable/graphique restent séparées ; leurs sauvegardes ne sont pas transférées automatiquement. Continuer charge directement une partie déjà enregistrée, sans imposer la BD.
 
-## Installation et sauvegardes
+## Livrables et limites
 
-L’APK est une **application distincte**, « **1870 · Essai introduction BD** », paquet `org.woerth1870.prototype.introbdexp`, code Android 1. Il s’installe à côté de la stable et de l’essai graphique ; ne désinstaller aucune application existante. Répertoire desktop séparé `1870-prototype-introbd`.
+Sources complètes, captures `captures/introbd2/README.md`, tests `TESTS_INTRO_BD.md`, liste `FICHIERS_INTRO_BD.txt`, APK signé de développement. Anciennes galeries non dupliquées dans le ZIP ; code, ressources de jeu et originaux du prototype conservés. Aucun cache, compilation ou temporaire dans les sources.
 
-L’application actuelle et sa partie restent intactes. **Ses sauvegardes ne sont pas transférées automatiquement** dans la nouvelle application Android. Le format V43 reste compatible ; chargement direct testé avec une sauvegarde V43 dans l’espace de l’application d’essai, ainsi qu’avec les anciennes fixtures. Les parties créées dans cet essai se reprennent avec Continuer, sans introduction.
-
-## Livraison et limites
-
-Sources complètes intégrées, captures `captures/introbd1/README.md`, tests `TESTS_INTRO_BD.md`, liste des fichiers `FICHIERS_INTRO_BD.txt`, APK signé de développement. Les anciennes galeries graphiques ne sont pas dupliquées dans le ZIP ; aucun code ni ressource nécessaire au jeu n’est omis. Caches, compilations et temporaires exclus.
-
-Aucun test sur appareil Android physique ou émulateur. Aucune nouvelle simulation complète de bataille. Fragments de texte coupés déjà présents dans les illustrations originales ; une nouvelle planche propre serait une amélioration future, hors de cette intégration. Aucun contenu spécifique de bataille inventé, aucune fusion avec main.
+Aucun test physique Android ou émulateur ; aucun nouveau test chronologique complet de bataille. Illustrations évocatrices, pas une expertise des uniformes, armoiries ou frontières. Aucun changement de gameplay, aucune fusion avec main.

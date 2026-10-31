@@ -2,22 +2,22 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ct1oyn7p2fykh"
-path="res://.godot/imported/scene_2.jpg-cc5ecc0e02d5580363a44065f1cad5d5.ctex"
+uid="uid://cy5lbfv6rdwmq"
+path="res://.godot/imported/scene_4.png-d1b2308fad656df1cab9d0b51edd25b1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://intro_bd/assets/scene_2.jpg"
-dest_files=["res://.godot/imported/scene_2.jpg-cc5ecc0e02d5580363a44065f1cad5d5.ctex"]
+source_file="res://intro_bd/assets/scene_4.png"
+dest_files=["res://.godot/imported/scene_4.png-d1b2308fad656df1cab9d0b51edd25b1.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=1
 compress/high_quality=false
-compress/lossy_quality=0.7
+compress/lossy_quality=0.85
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
@@ -36,5 +36,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=1280
 detect_3d/compress_to=1

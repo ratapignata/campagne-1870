@@ -38,12 +38,17 @@ func run():
  await shot("menu")
  var state=JSON.stringify(game.engine.state);var undo=JSON.stringify(game.engine.previous);var path=game.saver.path
  check(not FileAccess.file_exists(path),"no slot created before actual scenario start")
- await start_intro();var v=viewer();var original=JSON.parse_string(FileAccess.get_file_as_string("res://tests/intro_bd/original_content.json"))
- check(Array(v.TITLES)==original.titles and Array(v.DESCRIPTIONS)==original.descriptions,"six supplied titles and historical descriptions unchanged")
- check(v.ART.size()==6 and v.timer.wait_time==9.0,"six original images and nine-second autoplay")
- for art in original.art:
+ await start_intro();var v=viewer();var original=JSON.parse_string(FileAccess.get_file_as_string("res://tests/intro_bd/reviewed_content_02.json"))
+ check(Array(v.TITLES)==original.titles and Array(v.DESCRIPTIONS)==original.descriptions,"six approved titles and revised historical descriptions displayed")
+ check(v.ART.size()==6 and v.timer.wait_time==30.0,"six repaired images and thirty-second autoplay")
+ for item_index in range(original.art.size()):
+  var art=original.art[item_index]
   var f=FileAccess.open("res://intro_bd/assets/"+art.file,FileAccess.READ);var h=HashingContext.new();h.start(HashingContext.HASH_SHA256);h.update(f.get_buffer(f.get_length()));f.close()
-  check(h.finish().hex_encode()==art.sha256,"unaltered supplied illustration "+art.file)
+  check(h.finish().hex_encode()==art.sha256 and v.ART[item_index]!=null and v.ART[item_index]==load("res://intro_bd/assets/"+art.file),"repaired illustration matches reviewed and loaded asset "+art.file)
+ var preserved=JSON.parse_string(FileAccess.get_file_as_string("res://tests/intro_bd/original_content.json"))
+ for art in preserved.art:
+  var file=FileAccess.open("res://development/intro_bd_source/assets/"+art.file,FileAccess.READ);var hash=HashingContext.new();hash.start(HashingContext.HASH_SHA256);hash.update(file.get_buffer(file.get_length()));file.close()
+  check(hash.finish().hex_encode()==art.sha256,"original JPEG archived intact "+art.file)
  for dimensions in [Vector2i(1280,606),Vector2i(1280,720),Vector2i(1520,720)]:
   root.size=dimensions;await frame();await frame()
   var screen=Rect2(Vector2.ZERO,Vector2(dimensions))
@@ -58,7 +63,22 @@ func run():
    check(screen.encloses(v.art_holder.get_global_rect()) and screen.encloses(v.text_holder.get_global_rect()),"content fits landscape screen")
    check(v.previous_button.disabled==(k==0) and not v.next_button.disabled,"previous/next state is reset on every panel")
    if dimensions==Vector2i(1280,720):await shot("scene_"+str(k+1))
-  if dimensions.y==606:await shot("compact_606")
+  if dimensions.y==606:
+   await shot("compact_606")
+   v._show_scene(2);await frame();await frame();var bar=v.description_scroll.get_v_scroll_bar()
+   if bar.max_value>bar.page:
+    check(v.playback_note.text.contains("Glissez"),"overflowing history has a visible reading cue")
+    if DisplayServer.get_name()!="headless":
+     var point=v.description_scroll.get_global_rect().get_center();var press=InputEventScreenTouch.new();press.index=0;press.position=point;press.pressed=true;Input.parse_input_event(press);await frame()
+     var drag=InputEventScreenDrag.new();drag.index=0;drag.position=point+Vector2(0,-100);drag.relative=Vector2(0,-100);Input.parse_input_event(drag);await frame()
+     press=InputEventScreenTouch.new();press.index=0;press.position=drag.position;press.pressed=false;Input.parse_input_event(press);await frame()
+     check(v.description_scroll.scroll_vertical>0,"French history scrolls with a real finger drag")
+     await shot("compact_history_scrolled")
+    v._show_scene(2);await frame();await frame();v._toggle_auto();await frame();await frame()
+    check(v.scroll_anim!=null and v.scroll_anim.is_valid(),"automatic history creates scrolling only for overflowing text")
+    if v.scroll_anim!=null and v.scroll_anim.is_valid():v.scroll_anim.custom_step(23.0)
+    check(v.description_scroll.scroll_vertical>=int(bar.max_value-bar.page)-1,"automatic reading reaches the last history lines")
+    if v.auto_play:v._toggle_auto()
  check(JSON.stringify(game.engine.state)==state and JSON.stringify(game.engine.previous)==undo and not FileAccess.file_exists(path),"navigation and resize cannot alter engine, undo or slot")
  root.size=Vector2i(1280,720);await frame();v._show_scene(0);v.anim.pause()
  await tap(v.next_button);check(v.index==1,"real next touch advances one panel")
@@ -67,8 +87,8 @@ func run():
  v._notification(v.NOTIFICATION_APPLICATION_FOCUS_IN);v._notification(v.NOTIFICATION_APPLICATION_PAUSED);var left=v.timer.time_left
  await create_timer(0.15).timeout;check(is_equal_approx(v.timer.time_left,left),"background pauses reading time")
  v._notification(v.NOTIFICATION_APPLICATION_RESUMED)
- # One real nine-second interval, followed by a fast full-sequence timer exercise.
- await create_timer(9.1).timeout;check(v.index==1,"real integrated nine-second timer advances")
+ # One real thirty-second interval, followed by a fast full-sequence timer exercise.
+ await create_timer(30.1).timeout;check(v.index==1,"real integrated thirty-second timer advances")
  await tap(v.auto_button);check(not v.auto_play and v.timer.is_stopped(),"manual reading stops automatic timer")
  var illustration=weakref(v.ART[0]);v._show_scene(0);v.anim.pause();await tap(v.skip_button)
  await frame();await frame();check(illustration.get_ref()==null,"intro pictures released after leaving introduction")

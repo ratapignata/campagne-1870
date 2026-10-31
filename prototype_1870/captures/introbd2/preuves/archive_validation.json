@@ -1,0 +1,22 @@
+[
+  {
+    "test": "intro_bd/test_intro_flow",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nINTRO FLOW 167/167\n"
+  },
+  {
+    "test": "intro_bd/test_resume_direct",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nDIRECT RESUME 9/9\n"
+  },
+  {
+    "test": "graphics/test_previous_save",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nPREVIOUS EXPERIMENT SAVES 63/63\n"
+  },
+  {
+    "test": "source_integrity",
+    "exit": 0,
+    "output": "{\n  \"reference\": \"/workspace/graphics2d-baseline\",\n  \"tracked_files_identical\": 1333,\n  \"changed_existing_files\": [\n    \"export_presets.cfg\",\n    \"packs/1870/fr.json\",\n    \"project.godot\",\n    \"war_engine/presentation/main.gd\",\n    \"war_engine/presentation/map_view.gd\"\n  ],\n  \"functions\": {\n    \"war_engine/presentation/main.gd\": {\n      \"total\": 80,\n      \"identical\": 63,\n      \"presentation_changes\": [\n        \"_notification\",\n        \"build_ui\",\n        \"button\",\n        \"confirm_end\",\n        \"confirm_new\",\n        \"layout\",\n        \"layout_cards\",\n        \"next_unit\",\n        \"on_cell\",\n        \"panel\",\n        \"refresh\",\n        \"show_camp_choice\",\n        \"show_journal\",\n        \"show_menu\",\n        \"show_result\",\n        \"surrender_journal_lines\",\n        \"unit_heading\"\n      ]\n    },\n    \"war_engine/presentation/map_view.gd\": {\n      \"total\": 48,\n      \"identical\": 38,\n      \"presentation_changes\": [\n        \"_draw\",\n        \"_ready\",\n        \"cannon\",\n        \"counter_back\",\n        \"disorder_badge\",\n        \"draw_contact\",\n        \"horseman\",\n        \"selection_outline\",\n        \"shovel\",\n        \"soldier\"\n      ]\n    }\n  },\n  \"scenario_sha256\": \"5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57\",\n  \"result\": \"PASS\",\n  \"scope\": \"No modifications to AI, core, platform, map data, scenes or existing combat animations.\"\n}\n"
+  }
+]

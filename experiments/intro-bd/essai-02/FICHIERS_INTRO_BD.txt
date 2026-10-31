@@ -1,0 +1,58 @@
+Essai BD 2 depuis essai BD 1 (bf21d49), branche v43-intro-bd-experimental.
+Illustrations recomposées, originaux JPEG archivés, récit révisé, lecture 30 s, cadrage équilibré et défilement du texte.
+Gameplay, contrôleur principal, sauvegardes et graphismes du jeu inchangés.
+
+M	FICHIERS_INTRO_BD.txt
+M	INTRO_BD_EXPERIMENTAL.md
+A	SOURCES_HISTORIQUES_BD.md
+M	TESTS_INTRO_BD.md
+A	captures/introbd2/README.md
+A	captures/introbd2/avant_scene_1.png
+A	captures/introbd2/battle_card.png
+A	captures/introbd2/compact_606.png
+A	captures/introbd2/compact_history_scrolled.png
+A	captures/introbd2/menu.png
+A	captures/introbd2/preuves/apk_badging.txt
+A	captures/introbd2/preuves/apk_info.json
+A	captures/introbd2/preuves/apk_signature.txt
+A	captures/introbd2/preuves/flow_final.log
+A	captures/introbd2/preuves/regression.json
+A	captures/introbd2/preuves/scope.json
+A	captures/introbd2/preuves/source_historique.json
+A	captures/introbd2/preuves/source_integrity.json
+A	captures/introbd2/scenario_started.png
+A	captures/introbd2/scene_1.png
+A	captures/introbd2/scene_2.png
+A	captures/introbd2/scene_3.png
+A	captures/introbd2/scene_4.png
+A	captures/introbd2/scene_5.png
+A	captures/introbd2/scene_6.png
+R100	intro_bd/assets/scene_1.jpg	development/intro_bd_source/assets/scene_1.jpg
+R100	intro_bd/assets/scene_2.jpg	development/intro_bd_source/assets/scene_2.jpg
+R100	intro_bd/assets/scene_3.jpg	development/intro_bd_source/assets/scene_3.jpg
+R100	intro_bd/assets/scene_4.jpg	development/intro_bd_source/assets/scene_4.jpg
+R100	intro_bd/assets/scene_5.jpg	development/intro_bd_source/assets/scene_5.jpg
+R100	intro_bd/assets/scene_6.jpg	development/intro_bd_source/assets/scene_6.jpg
+M	export_presets.cfg
+M	intro_bd/PROVENANCE.md
+A	intro_bd/assets/scene_1.png
+R067	intro_bd/assets/scene_1.jpg.import	intro_bd/assets/scene_1.png.import
+A	intro_bd/assets/scene_2.png
+R067	intro_bd/assets/scene_2.jpg.import	intro_bd/assets/scene_2.png.import
+A	intro_bd/assets/scene_3.png
+R067	intro_bd/assets/scene_3.jpg.import	intro_bd/assets/scene_3.png.import
+A	intro_bd/assets/scene_4.png
+R067	intro_bd/assets/scene_4.jpg.import	intro_bd/assets/scene_4.png.import
+D	intro_bd/assets/scene_5.jpg.import
+A	intro_bd/assets/scene_5.png
+A	intro_bd/assets/scene_5.png.import
+D	intro_bd/assets/scene_6.jpg.import
+A	intro_bd/assets/scene_6.png
+A	intro_bd/assets/scene_6.png.import
+M	intro_bd/intro.gd
+M	packs/1870/fr.json
+M	project.godot
+A	tests/intro_bd/reviewed_content_02.json
+M	tests/intro_bd/test_intro_flow.gd
+M	tests/intro_bd/test_resume_direct.gd
+A	captures/introbd2/preuves/archive_validation.json
