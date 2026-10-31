@@ -39,6 +39,6 @@ func run():
  check(JSON.stringify(e.state)==state,"map preparation and gestures never mutate engine state")
  var slot=Store.new("user://graphics_compat.json",FileAccess.get_file_as_string("res://packs/1870/regimental_trial_v43.json").sha256_text());var restored=Rules.new(data)
  check(slot.save_game(e) and slot.load_game(restored) and restored.state==e.state,"save schema and complete state remain compatible")
- check(ProjectSettings.get_setting("application/config/custom_user_dir_name")=="1870-prototype-graphismes2d","experimental desktop storage isolated from stable")
+ check(ProjectSettings.get_setting("application/config/custom_user_dir_name")=="1870-prototype-introbd","intro desktop storage isolated from stable and graphics experiment")
  view.queue_free();await process_frame
  print("GRAPHICS CONTRACT ",checks-failures,"/",checks);quit(1 if failures else 0)

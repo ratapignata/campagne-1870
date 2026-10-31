@@ -1,0 +1,55 @@
+{
+  "reference": "34d8f73ecdce503adc7fc149474653876176af41",
+  "tracked_files_identical": 1333,
+  "changed_existing_files": [
+    "export_presets.cfg",
+    "packs/1870/fr.json",
+    "project.godot",
+    "war_engine/presentation/main.gd",
+    "war_engine/presentation/map_view.gd"
+  ],
+  "functions": {
+    "war_engine/presentation/main.gd": {
+      "total": 80,
+      "identical": 63,
+      "presentation_changes": [
+        "_notification",
+        "build_ui",
+        "button",
+        "confirm_end",
+        "confirm_new",
+        "layout",
+        "layout_cards",
+        "next_unit",
+        "on_cell",
+        "panel",
+        "refresh",
+        "show_camp_choice",
+        "show_journal",
+        "show_menu",
+        "show_result",
+        "surrender_journal_lines",
+        "unit_heading"
+      ]
+    },
+    "war_engine/presentation/map_view.gd": {
+      "total": 48,
+      "identical": 38,
+      "presentation_changes": [
+        "_draw",
+        "_ready",
+        "cannon",
+        "counter_back",
+        "disorder_badge",
+        "draw_contact",
+        "horseman",
+        "selection_outline",
+        "shovel",
+        "soldier"
+      ]
+    }
+  },
+  "scenario_sha256": "5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57",
+  "result": "PASS",
+  "scope": "No modifications to AI, core, platform, map data, scenes or existing combat animations."
+}

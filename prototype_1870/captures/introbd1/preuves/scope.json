@@ -1,0 +1,12 @@
+{
+  "base_source": "a8652b519d6945426e93f73ccdea5823b80d3982",
+  "base_publication": "ec50397d4029a83c6f43f863481b8e57e40280b0",
+  "main_changed_functions": [
+    "_notification",
+    "confirm_new",
+    "show_camp_choice",
+    "show_menu",
+    "show_result"
+  ],
+  "core_ai_platform_scenario_combat_animations_graphics12_unchanged": true
+}

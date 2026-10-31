@@ -3,6 +3,7 @@ const EngineRules=preload("res://war_engine/core/engine.gd")
 const SaveStore=preload("res://war_engine/platform/save_store.gd")
 const UnitAvailability=preload("res://war_engine/presentation/unit_availability.gd")
 const JournalView=preload("res://war_engine/presentation/journal_view.gd")
+const HistoricalIntro=preload("res://war_engine/presentation/historical_intro.gd")
 const HudDetails=preload("res://war_engine/presentation/hud_details.gd")
 const GraphicsSkin=preload("res://war_engine/presentation/graphics2d_skin.gd")
 const MapView=preload("res://war_engine/presentation/map_view.gd")
@@ -652,7 +653,7 @@ func show_menu():
 	label(box,t(str(engine.pack.get("description_key","intro_detail")))+(" · "+t("difficulty_"+str(engine.state.ai_difficulty)) if has_save else ""),40,410,794,45,16,Color("b6c5b2")).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	button(box,t("music_on" if music_enabled else "music_off"),40,459,385,43,func():toggle_music();show_menu())
 	button(box,t("sound_on" if sound_enabled else "sound_off"),449,459,385,43,func():toggle_sound();show_menu())
-	button(box,t("continue") if has_save else t("start"),40,516,491,60,resume if has_save else show_camp_choice,true)
+	button(box,t("continue") if has_save else t("start"),40,516,491,60,resume if has_save else func():HistoricalIntro.open(self),true)
 	button(box,t("again") if has_save else t("help"),550,516,284,60,confirm_new if has_save else show_help)
 	var export_button=button(box,"Exporter la sauvegarde",40,592,794,44,export_current_save)
 	export_button.disabled=not (playing or has_save)
@@ -705,7 +706,7 @@ func new_game(side: int=0):
 	save_preferences()
 	engine.new_game(side,difficulty_choice);support_notice_seen=int(engine.state.get("support_serial",0));selected=-1;clear_preview();playing=true;reset_map_view();map.feedback_ttl=0;map.combat_ttl=0;map.crossing_ttl=0;ai_clock=0
 	close_modal();persist();refresh(t("hint_select"))
-func confirm_new():confirm(t("new_confirm"),t("new_detail"),t("new_yes"),show_camp_choice,show_menu)
+func confirm_new():confirm(t("new_confirm"),t("new_detail"),t("new_yes"),func():HistoricalIntro.open(self),show_menu)
 func primary_action():
 	if engine.state.finished:show_result()
 	else:confirm_end()
@@ -819,7 +820,7 @@ func show_result():
 	label(box,t("result_actions")%[engine.state.moves,engine.state.shots,engine.state.assaults],38,507,964,27,17,Color("c6d0bc"))
 	button(box,t("battle_details"),38,535,964,44,show_battle_details)
 	button(box,t("inspect_battle"),38,599,472,56,inspect_battle,true)
-	button(box,t("again"),530,599,472,56,show_camp_choice)
+	button(box,t("again"),530,599,472,56,func():HistoricalIntro.open(self))
 func show_battle_details():
 	if not engine.state.finished:return
 	var box=modal_base(1040,650)
@@ -838,7 +839,8 @@ func _notification(what):
 		if music_player!=null:music_player.stream_paused=false
 	if what in [NOTIFICATION_APPLICATION_PAUSED,NOTIFICATION_APPLICATION_FOCUS_OUT] and playing and saver!=null and not export_in_progress:persist()
 	if what==NOTIFICATION_WM_GO_BACK_REQUEST:
-		if is_instance_valid(modal) and playing:close_modal()
+		if is_instance_valid(modal_box) and modal_box.has_node("Introduction1870"):show_menu()
+		elif is_instance_valid(modal) and playing:close_modal()
 		else:show_menu()
 
 func human_turn() -> bool:return not ai_enabled or int(engine.state.side)==int(engine.state.human_side)
@@ -889,6 +891,7 @@ func show_camp_choice():
 	else:label(box,t("choose_detail"),40,449,794,25,18).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	button(box,t("choose_france"),40,488,385,56,func():new_game(0),true)
 	button(box,t("choose_germany"),449,488,385,56,func():new_game(1),true)
+	label(box,"Présentation BD de cette bataille non fournie dans cet essai.",40,549,794,25,16,Color("b7c8bf")).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	button(box,t("menu"),40,581,794,48,show_menu)
 func _process(delta: float):
 	if engine==null or map==null:return

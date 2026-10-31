@@ -1,0 +1,48 @@
+{
+  "version": "0.8.43.15-bd1",
+  "date_utc": "2026-10-31",
+  "branch": "v43-intro-bd-experimental",
+  "source_commit": "bf21d49ad7ca8c3562308050fe0fb0d5d3116dd3",
+  "base_source_commit": "a8652b519d6945426e93f73ccdea5823b80d3982",
+  "base_publication_commit": "ec50397d4029a83c6f43f863481b8e57e40280b0",
+  "main_unchanged": "55fca3f4b4ccc7a07ec00c11f7d7e7ebf07d6513",
+  "files": [
+    {
+      "file": "1870_V43_Intro_BD_Experimental_01.apk",
+      "bytes": 98998364,
+      "sha256": "c1cb1a116c71380d14fda91d95920d2466536995c976f319a4235696b28b7630"
+    },
+    {
+      "file": "1870_V43_Intro_BD_Experimental_01_Sources.zip",
+      "bytes": 24775781,
+      "sha256": "4b5b1ddcee7f7a81fa355c48bbcf313b0954d5f14ce623a05bc2a7072b493232"
+    },
+    {
+      "file": "1870_V43_Intro_BD_Captures_01.zip",
+      "bytes": 6994292,
+      "sha256": "71b76e10cd3d73b557d760e10c4d6808faadc7ef3bcecfb345aae5aaeadfb776"
+    }
+  ],
+  "tests": {
+    "standalone_prototype": 35,
+    "integrated_flow_render": 168,
+    "direct_resume_process": 9,
+    "regression": 5725,
+    "total": 5937
+  },
+  "apk": {
+    "package": "org.woerth1870.prototype.introbdexp",
+    "version": "0.8.43.15-bd1",
+    "code": 1,
+    "bytes": 98998364,
+    "signed_v2": true,
+    "signed_v3": true,
+    "cert_sha256": "57c00efad8c9b822d4a1d63238a4137b9afc97b6e9248076f4f54bb292ae846c",
+    "zip_integrity": true,
+    "six_images_and_scene_packaged": true
+  },
+  "android_device_tested": false,
+  "emulator_tested": false,
+  "specific_battle_comic_supplied": false,
+  "source_zip_omissions": "Old graphical galleries only; all game code, resources, tests and current intro evidence included; no caches or builds."
+}

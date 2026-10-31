@@ -1,0 +1,44 @@
+{
+  "titles": [
+    "Une Europe en transformation",
+    "Deux puissances rivales",
+    "La candidature Hohenzollern",
+    "La dépêche d’Ems",
+    "La déclaration de guerre",
+    "La mobilisation"
+  ],
+  "descriptions": [
+    "Après sa victoire contre l’Autriche en 1866, la Prusse renforce son influence sur les États allemands. La perspective d’une unification modifie l’équilibre européen.",
+    "Napoléon III s’inquiète de la montée en puissance de la Prusse. Entre Paris et Berlin, les rivalités diplomatiques s’accentuent.",
+    "En 1870, la candidature d’un prince de la maison de Hohenzollern au trône d’Espagne provoque une crise. La France redoute un encerclement diplomatique.",
+    "Le 13 juillet 1870, Bismarck publie une version condensée de l’échange d’Ems entre le roi de Prusse et l’ambassadeur français. La tension s’enflamme.",
+    "Le 19 juillet 1870, la France déclare la guerre à la Prusse. La crise diplomatique débouche sur un conflit qui mobilise bientôt plusieurs États allemands.",
+    "Les armées se rassemblent et se mettent en marche. Début août, les premiers grands combats éclatent en Alsace et en Lorraine."
+  ],
+  "art": [
+    {
+      "file": "scene_1.jpg",
+      "sha256": "aadee899ff7467a07f61f1b276f184ac22d1f3431b793705eb378b57e182a3b6"
+    },
+    {
+      "file": "scene_2.jpg",
+      "sha256": "a654078d65a885c0f93bd6a28fa3838315f8af57b962123bc189939402e2c4d5"
+    },
+    {
+      "file": "scene_3.jpg",
+      "sha256": "15c8894af46589f9d0ea26f80010b1a97178fa716050b405b2d56406f288f427"
+    },
+    {
+      "file": "scene_4.jpg",
+      "sha256": "8b46a5b4f184741fc8c6608fca60e44cd0ef87fbd6a22391196e7b654d2ad55d"
+    },
+    {
+      "file": "scene_5.jpg",
+      "sha256": "e7f2b591e2423a867b2cc8f37b50dd4e01d9b5938340d7e8664fad270549c350"
+    },
+    {
+      "file": "scene_6.jpg",
+      "sha256": "4721f430c7d63f77237b548e6948b44b9522c6a147fd5845e8e00625d8a51e51"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "file": "scene_1.jpg",
+    "dimensions": [
+      850,
+      590
+    ],
+    "bytes": 142417,
+    "sha256": "aadee899ff7467a07f61f1b276f184ac22d1f3431b793705eb378b57e182a3b6"
+  },
+  {
+    "file": "scene_2.jpg",
+    "dimensions": [
+      850,
+      590
+    ],
+    "bytes": 140405,
+    "sha256": "a654078d65a885c0f93bd6a28fa3838315f8af57b962123bc189939402e2c4d5"
+  },
+  {
+    "file": "scene_3.jpg",
+    "dimensions": [
+      850,
+      590
+    ],
+    "bytes": 144596,
+    "sha256": "15c8894af46589f9d0ea26f80010b1a97178fa716050b405b2d56406f288f427"
+  },
+  {
+    "file": "scene_4.jpg",
+    "dimensions": [
+      850,
+      590
+    ],
+    "bytes": 136920,
+    "sha256": "8b46a5b4f184741fc8c6608fca60e44cd0ef87fbd6a22391196e7b654d2ad55d"
+  },
+  {
+    "file": "scene_5.jpg",
+    "dimensions": [
+      850,
+      590
+    ],
+    "bytes": 150144,
+    "sha256": "e7f2b591e2423a867b2cc8f37b50dd4e01d9b5938340d7e8664fad270549c350"
+  },
+  {
+    "file": "scene_6.jpg",
+    "dimensions": [
+      850,
+      590
+    ],
+    "bytes": 152224,
+    "sha256": "4721f430c7d63f77237b548e6948b44b9522c6a147fd5845e8e00625d8a51e51"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "test": "graphics/test_availability10",
+    "exit": 0,
+    "seconds": 3.593,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nUNIT AVAILABILITY 10 353/353\n"
+  },
+  {
+    "test": "graphics/test_previous_save",
+    "exit": 0,
+    "seconds": 2.766,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nPREVIOUS EXPERIMENT SAVES 63/63\n"
+  },
+  {
+    "test": "graphics/test_contract",
+    "exit": 0,
+    "seconds": 1.329,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nGRAPHICS CONTRACT 2433/2433\n"
+  },
+  {
+    "test": "graphics/test_header09",
+    "exit": 0,
+    "seconds": 2.144,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nHEADER EXPERIMENT 09 795/795\n"
+  },
+  {
+    "test": "graphics/test_hud06",
+    "exit": 0,
+    "seconds": 2.022,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nHUD EXPERIMENT 06 84/84\n"
+  },
+  {
+    "test": "graphics/test_guidance07",
+    "exit": 0,
+    "seconds": 1.946,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nGUIDANCE EXPERIMENT 07 137/137\n"
+  },
+  {
+    "test": "graphics/test_feedback12",
+    "exit": 0,
+    "seconds": 2.292,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nFEEDBACK 12 20/20\n"
+  },
+  {
+    "test": "v43/test_v4315",
+    "exit": 0,
+    "seconds": 11.907,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nCOVER {\"formation\":\"skirmish\",\"kind\":\"formation\",\"unit\":\"fr_8\"} -> {\"kind\":\"move\",\"path\":[160,190],\"unit\":\"fr_8\"}\nCOVER FOLLOW {\"kind\":\"entrench\",\"unit\":\"fr_8\"}\nBATTERY {\"kind\":\"limber\",\"path\":[160,190],\"unit\":\"art_fr_Pell\u00e90\"} -> {\"kind\":\"end\"}\nCOUNTERATTACK {\"kind\":\"assault\",\"target\":\"pru_36\",\"unit\":\"fr_9\"}\nSECTORS {\"0\":161,\"1\":161,\"2\":161,\"3\":313,\"4\":161,\"5\":161,\"6\":161,\"7\":161,\"8\":313,\"9\":198,\"11\":161,\"13\":161} RESERVES {\"0\":false,\"1\":true,\"2\":false,\"3\":false,\"4\":false,\"5\":false,\"7\":true}\nV43.15 DEFENCE 28/28\n"
+  },
+  {
+    "test": "v43/test_raoult",
+    "exit": 0,
+    "seconds": 13.078,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 RAOULT 42/42\n"
+  },
+  {
+    "test": "v43/test_surrender_journal",
+    "exit": 0,
+    "seconds": 1.767,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nSURRENDER JOURNAL 11/11\n"
+  },
+  {
+    "test": "v43/test_variant_b",
+    "exit": 0,
+    "seconds": 14.428,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 VARIANT B 1701/1701\n"
+  },
+  {
+    "test": "v43/test_ui",
+    "exit": 0,
+    "seconds": 3.053,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 UI 30/30\nWARNING: ObjectDB instances leaked at exit (run with --verbose for details).\n     at: cleanup (core/object/object.cpp:2514)\nERROR: 2 resources still in use at exit (run with --verbose for details).\n   at: clear (core/io/resource.cpp:795)\n"
+  },
+  {
+    "test": "v43_export/test_export",
+    "exit": 0,
+    "seconds": 2.006,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 EXPORT 28/28\n"
+  }
+]
