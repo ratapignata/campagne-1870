@@ -1,0 +1,8 @@
+{
+	"average_ms": 10.3109,
+	"iterations": 30,
+	"median_ms": 10.235,
+	"p95_ms": 12.285,
+	"scope": "Desktop CPU, T11 fixture, UI classification only; not an Android benchmark",
+	"state_unchanged": true
+}

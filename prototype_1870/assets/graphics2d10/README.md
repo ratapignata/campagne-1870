@@ -1,0 +1,1 @@
+Pictogrammes vectoriels originaux du journal : liste, combat, drapeau de reddition, objectif et renforts. Dessinés en SVG pour cet essai, sans ressource distante. La coche est dessinée dans graphics2d_art.gd ; les illustrations historiques des unités sont conservées.

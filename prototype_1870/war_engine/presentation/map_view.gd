@@ -19,6 +19,7 @@ const SupportRules=preload("res://war_engine/core/support.gd")
 var supply_overlay_source=-2 # -2 off; -1 all; >=0 one source
 var supply_overlay_cells: Dictionary={}
 var texts: Dictionary
+var exhausted: Dictionary={}
 var selected: int=-1
 var target: int=-1
 var route: Array=[]
@@ -430,7 +431,8 @@ func _draw():
 		if hq_member_highlighted(n):hq_outline(p,z)
 		var ink=Color("568db4") if int(u.side)==0 else Color("43504c")
 		var actionable=engine.actionable(n)
-		if u.done or int(u.ap)==0:ink=ink.lerp(Color("869088"),0.45)
+		var spent=bool(exhausted.get(n,u.done or int(u.ap)==0)) if int(u.side)==int(engine.state.human_side) else u.done or int(u.ap)==0
+		if spent:ink=ink.lerp(Color("869088"),0.45);actionable=false
 		if fire_target_lit(n):ink=ink.lerp(Color("fff0bc"),0.42)
 		counter_back(p,z,ink,actionable)
 		if engine.headquarters(n):headquarters_symbol(p,z,int(u.side)==0)
@@ -448,7 +450,7 @@ func _draw():
 			draw_rect(Rect2(flag_origin,Vector2(12,8)*z),Color("d9d9c5"),false,maxf(0.4,0.6*z))
 		draw_rect(Rect2(p+Vector2(-4,12)*z,Vector2(28,14)*z),Color("963047") if int(u.side)==0 else Color("162c31"))
 		draw_string(COUNTER_FONT,p+Vector2(-3,25)*z,str(maxi(1,ceili(float(u.strength)/float(u.initial_strength)*10))),HORIZONTAL_ALIGNMENT_CENTER,26*z,maxi(6,int(14*z)),Color("ffffff"))
-		if u.done or int(u.ap)==0:draw_string(font,p+Vector2(9,8)*z,"✓",HORIZONTAL_ALIGNMENT_LEFT,-1,maxi(10,int(16*z)),Color("e9e1c9"))
+		if spent:Graphics2D.action_check(self,p,z)
 		if u.morale=="shaken":
 			disorder_badge(p,z)
 		elif u.morale=="routed":

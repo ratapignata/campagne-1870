@@ -1,6 +1,8 @@
 extends Control
 const EngineRules=preload("res://war_engine/core/engine.gd")
 const SaveStore=preload("res://war_engine/platform/save_store.gd")
+const UnitAvailability=preload("res://war_engine/presentation/unit_availability.gd")
+const JournalView=preload("res://war_engine/presentation/journal_view.gd")
 const HudDetails=preload("res://war_engine/presentation/hud_details.gd")
 const GraphicsSkin=preload("res://war_engine/presentation/graphics2d_skin.gd")
 const MapView=preload("res://war_engine/presentation/map_view.gd")
@@ -25,6 +27,7 @@ var app_suspended=false
 var sound_enabled=true
 var music_enabled=true
 var hud_details
+var availability=UnitAvailability.new()
 const SCENARIOS={"v43":{"pack":"regimental_trial_v43.json","save":"save_v43.json"},"v42_lot8":{"pack":"regimental_trial_v42_lot8.json","save":"save_v42_lot8.json"},"historical":{"pack":"regimental_trial.json","save":"save_regimental0835.json"},"v42_experimental":{"pack":"regimental_trial_v42_experimental.json","save":"save_v42_experimental.json"},"classic":{"pack":"prototype.json","save":"save_classic_v0835.json"},"three":{"pack":"three_objectives.json","save":"save_three_v0835.json"}}
 var scenario_choice="v43"
 func active_scenario() -> String:return "v43" if engine!=null and engine.pack.get("id","")=="regimental_trial_v43" else "v42_lot8" if engine!=null and engine.pack.get("id","")=="regimental_trial_v42_lot8" else "v42_experimental" if engine!=null and engine.pack.get("id","")=="regimental_trial_v42_experimental" else "historical" if engine!=null and engine.pack.get("id","") in ["historical_terrain_trial0825","regimental_trial0828","regimental_trial0829","regimental_trial0830","regimental_trial0831","regimental_trial0832","regimental_trial0833","regimental_trial0834","regimental_trial0835"] else "three" if engine!=null and engine.pack.get("id","")=="trial_three_objectives_v0819" else "classic"
@@ -292,6 +295,7 @@ func terrain_caption(i: int) -> String:
 	return t("terrain_hill") if engine.pack.map.get("show_relief",true) and (engine.elevation(i)>=2 or engine.pack.terrains[engine.pack.map.tiles[i]].get("height_category",false)) else name
 var support_notice_seen=0
 func refresh(message: String=""):
+	availability.update(engine);map.exhausted=availability.exhausted
 	var recent_support=[]
 	for event in engine.state.get("support_events",[]):
 		if int(event.serial)>support_notice_seen and int(event.side)==int(engine.state.human_side):recent_support.append(event)
@@ -369,7 +373,7 @@ func refresh(message: String=""):
 	show_terrain_info()
 	terrain_label.add_theme_font_size_override("font_size",14 if terrain_label.text.length()>12 else 21)
 	context_label.size.x=504
-	context_label.text=t("available")%engine.available_count();context_detail.text=t("objectives_hint" if engine.objective_definitions().size()>1 else "objective_hint")
+	context_label.text="1 unité disponible" if availability.count==1 else t("available")%availability.count;context_detail.text=t("objectives_hint" if engine.objective_definitions().size()>1 else "objective_hint")
 	if engine.cavalry(selected):context_detail.text=t("hint_cavalry")%ap_text(engine.assault_cost(selected))
 	if engine.artillery(selected):
 		context_label.text=t("deployed" if engine.state.units[selected].deployed else "limbered")
@@ -408,7 +412,7 @@ func refresh(message: String=""):
 	actions.undo.visible=human_turn() and not engine.state.finished
 	if can_undo and target<0:context_label.text=t("undo_available")
 	actions.undo.disabled=not can_undo
-	actions.next.disabled=engine.available_count()==0 or not human_turn() or map.busy()
+	actions.next.disabled=availability.count==0 or not human_turn() or map.busy()
 	actions.end_turn.text=t("results" if engine.state.finished else "end_turn")
 	actions.end_turn.disabled=map.busy() or (not engine.state.finished and not human_turn())
 	actions.next.visible=not engine.state.finished
@@ -457,7 +461,7 @@ func on_cell(i: int):
 				else:refresh()
 				return
 			route=[];full_route=[];target=n;inspected=-1;refresh(t("hint_target"));return
-		selected=n;clear_preview();refresh(t("hint_path") if engine.can_act(n) else t("hint_enemy") if int(engine.state.units[n].side)!=int(engine.state.side) else t("hint_done"));return
+		selected=n;clear_preview();refresh(t("hint_path") if availability.usable.get(n,engine.can_act(n)) else t("hint_enemy") if int(engine.state.units[n].side)!=int(engine.state.side) else t("hint_done"));return
 	inspected=i
 	if selected<0:refresh();return
 	# Confirmation applies only to the reachable endpoint, never to the remote request.
@@ -626,9 +630,10 @@ func change_deployment():
 	if engine.toggle_deployment(selected):
 		clear_preview();persist();refresh(t("hint_deployed" if engine.state.units[selected].deployed else "hint_limbered"))
 func next_unit():
+	availability.update(engine)
 	for offset in range(1,engine.state.units.size()+1):
 		var n=(maxi(selected,-1)+offset)%engine.state.units.size()
-		if engine.actionable(n):selected=n;clear_preview();map.focus=map.world(engine.unit_cell(engine.state.units[n]));refresh(t("hint_path"));return
+		if availability.usable.get(n,false):selected=n;clear_preview();map.focus=map.world(engine.unit_cell(engine.state.units[n]));refresh(t("hint_path"));return
 	refresh(t("hint_none"))
 func close_modal():
 	if is_instance_valid(modal):modal.hide();modal.queue_free();modal=null;modal_box=null
@@ -706,7 +711,7 @@ func primary_action():
 	else:confirm_end()
 func confirm_end():
 	if not human_turn() or map.busy():return
-	if engine.available_count()>0:confirm(t("end_confirm"),t("end_detail")%engine.available_count(),t("end_yes"),end_side,close_modal)
+	if availability.count>0:confirm(t("end_confirm"),t("end_detail")%availability.count,t("end_yes"),end_side,close_modal)
 	else:end_side()
 func confirm(title: String,detail: String,yes: String,callback: Callable,back: Callable):
 	var box=modal_base(794,300);label(box,title,30,25,734,45,25,PAPER,true);label(box,detail,30,96,734,55,20)
@@ -775,77 +780,13 @@ func hq_arrival_lines(overdue_only: bool=false) -> Array:
 		lines.append(t("hq_arrival_delayed" if overdue else "hq_arrival_scheduled")%[t(u.name_key),due,int(u.cell[0]),int(u.cell[1])])
 	return lines
 func surrender_journal_lines() -> Array:
-	var side=int(engine.state.human_side);var found={};var records=[]
-	for event in engine.state.get("support_events",[]):
-		if event.kind=="surrender":records.append(event)
-	for event in engine.state.get("battle_history",[]):
-		if event.kind=="surrender":records.append(event)
 	var lines=[]
-	for event in records:
-		var id=str(event.unit)
-		if found.has(id):continue
-		var n=engine.unit_index(id)
-		if n<0:continue
-		var name=""
-		if int(event.side)==side or not engine.fog_enabled() or engine.state.finished:name=str(engine.state.units[n].name_key)
-		elif event.get("known_names",{}) is Dictionary:name=str(event.get("known_names",{}).get(str(side),""))
-		if name.is_empty():
-			for combat in engine.state.events:
-				if int(combat.turn)!=int(event.turn):continue
-				var slot=1 if int(combat.target)==n and int(combat.prisoners)>0 else 0 if int(combat.shooter)==n and int(combat.attacker_prisoners)>0 else -1
-				if slot>=0:name=str(combat.get("fog_names",{}).get(str(side),["fog_enemy_generic","fog_enemy_generic"])[slot]);break
-		if name.is_empty():continue
-		found[id]=true
-		lines.append("Tour %d — %s : %s se rend (%d prisonniers)."%[int(event.turn),camp(int(event.side)),t(name),int(event.prisoners)])
+	for row in JournalView.Model.surrenders(self):lines.append(row.body)
 	return lines
 
 func show_journal():
-	var box=modal_base(1040,630);label(box,t("journal"),30,18,980,42,27,GOLD,true)
-	var content=t("journal_empty")
-	# V42: cumulative losses are read from the engine, never from a resettable UI counter.
-	# Under fog of war, do not reveal exact losses of the opposing camp.
-	var own_side=int(engine.state.human_side)
-	var exact_totals=not engine.fog_enabled() or engine.state.finished
-	var french_total=str(engine.losses(0)) if exact_totals or own_side==0 else "?"
-	var german_total=str(engine.losses(1)) if exact_totals or own_side==1 else "?"
-	var cumulative_header="Tour %d — Pertes cumulées : %s %s | %s %s" % [int(engine.state.turn),camp(0),french_total,camp(1),german_total]
-	if not exact_totals:cumulative_header+=" (pertes adverses non confirmées)"
-	var capitulations=surrender_journal_lines()
-	cumulative_header+="\n\nRedditions confirmées"+"\n"+("\n".join(capitulations) if not capitulations.is_empty() else "Aucune reddition confirmée.")
-	var arrivals=hq_arrival_lines()
-	if not arrivals.is_empty():cumulative_header+="\n\n"+"\n".join(arrivals)
-	if not engine.state.events.is_empty():
-		content=""
-		for k in range(engine.state.events.size()-1,-1,-1):
-			var event=engine.state.events[k]
-			var names=[engine.state.units[int(event.shooter)].name_key,engine.state.units[int(event.target)].name_key]
-			if engine.fog_enabled() and not engine.state.finished:names=event.get("fog_names",{}).get(str(int(engine.state.human_side)),["fog_enemy_generic","fog_enemy_generic"])
-			content+=t("journal_combat")%[event.turn,t(names[0]),t(names[1]),t("kind_"+event.kind)]
-			content+="\n"+combat_summary(event)+"\n"+t("journal_reaction" if event.reaction else "journal_no_reaction")
-			if event.prisoners>0 and (not engine.fog_enabled() or engine.state.finished):content+=" • "+t("combat_prisoners")%[camp(1-int(event.side)),event.prisoners]
-			if event.attacker_prisoners>0 and (not engine.fog_enabled() or engine.state.finished):content+=" • "+t("combat_prisoners")%[camp(int(event.side)),event.attacker_prisoners]
-			if not event.retreat.is_empty() or not event.attacker_retreat.is_empty():content+=" • "+t("retreat")
-			content+="\n\n"
+	JournalView.open(self)
 
-	for event in engine.state.get("support_events",[]):
-		if event.kind=="surrender" or int(event.side)!=int(engine.state.human_side):continue
-		content+="\n"+t("support_journal_turn")%int(event.turn)+" · "+(t("support_surrender_notice")%[t(event.name_key),int(event.prisoners)] if event.kind=="surrender" else t("support_cut_notice")%t(event.name_key))+"\n"+link_journal_detail(event)
-	if active_scenario() in ["v43","v42_experimental","v42_lot8"]:
-		var goals=[]
-		for goal in engine.objective_definitions():goals.append(t(goal.get("name_key","objective"))+" : "+str(int(goal.points))+" points")
-		content=" · ".join(goals)+". Score : contrôle 60 %, durée 20 %, pertes 20 %.\n\n"+content
-	elif engine.objective_definitions().size()>1:content=t("scenario_help")+"\n\n"+content
-	var history="Historique en fin de tour — pertes cumulées ; prisonniers séparés\n"
-	if engine.state.get("loss_history",[]).is_empty():history+="Aucun tour enregistré. Les anciennes sauvegardes ne permettent pas de reconstituer les tours passés.\n"
-	if not engine.state.get("loss_history",[]).is_empty() and int(engine.state.loss_history[0].turn)>1:history+="Les tours antérieurs au premier relevé n’ont pas été enregistrés dans cette sauvegarde.\n"
-	for snapshot in engine.state.get("loss_history",[]):
-		var fr=str(snapshot.losses[0]) if exact_totals or own_side==0 else "?"
-		var de=str(snapshot.losses[1]) if exact_totals or own_side==1 else "?"
-		var pfr=str(snapshot.prisoners[0]) if exact_totals or own_side==0 else "?"
-		var pde=str(snapshot.prisoners[1]) if exact_totals or own_side==1 else "?"
-		history+="Fin T%d : %s %s (prisonniers %s) | %s %s (prisonniers %s)\n" % [int(snapshot.turn),camp(0),fr,pfr,camp(1),de,pde]
-	content=cumulative_header+"\n\n"+history+"\n"+content
-	scroll_text(box,content,82,454);button(box,t("close"),30,555,980,52,close_modal,true)
 func inspect_battle():
 	selected=-1;clear_preview();close_modal();refresh()
 func result_reason(result: Dictionary) -> String:

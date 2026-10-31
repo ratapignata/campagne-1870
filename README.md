@@ -1,3 +1,28 @@
+# Essai graphique 2D № 10 — journal filtré et fin d’action
+
+Version `0.8.43.15-g2d10`. [La stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main).
+
+- **[Télécharger l’APK de l’essai 10](https://github.com/ratapignata/campagne-1870/raw/refs/heads/v43-graphismes-2d-experimental/experiments/graphismes-2d/essai-10/1870_V43_Graphismes_2D_Experimental_10.apk)**.
+- [Sources complètes ZIP](experiments/graphismes-2d/essai-10/1870_V43_Graphismes_2D_Experimental_10_Sources.zip).
+- [Journal et exemples à 0,5 PA](prototype_1870/captures/graphismes2d10/README.md) ou [galerie ZIP](experiments/graphismes-2d/essai-10/1870_Graphismes_2D_Comparaisons_10.zip).
+- [Rapport](experiments/graphismes-2d/essai-10/GRAPHISMES_2D_EXPERIMENTAL.md), [tests](experiments/graphismes-2d/essai-10/TESTS_GRAPHISMES_2D.md), [fichiers modifiés](experiments/graphismes-2d/essai-10/FICHIERS_GRAPHISMES_2D.txt).
+
+Journal avec cinq filtres actifs, icônes et défilement tactile : Tous, Combats, Redditions, Objectifs, Renforts. Informations connues uniquement ; les arrivées anciennes sans date sont signalées. Longues listes chargées au défilement, explications d’arrivée de Raoult conservées.
+
+La coche indique l’absence de toute action active légale accessible, même s’il reste des PA. À 0,5 PA, un fantassin sans déplacement abordable est coché ; un cavalier pouvant encore avancer reste disponible. Aucun PA retiré, aucune activation clôturée de force ; les réactions restent inchangées. La coche disparaît si un allié libère un passage. Compteur, Unité suivante et confirmation de fin de tour cohérents avec cette disponibilité. Moteur/IA/règles inchangés.
+
+**Installer par-dessus l’essai précédent sans le désinstaller pour conserver sa partie.** Même application expérimentale, paquet et certificat, code Android 10. Sauvegardes des essais 1 à 9 vérifiées ; stable et partie stable séparées.
+
+**7 494 assertions finales réussies**, dont 353 contrôles de disponibilité et 990 contrôles du journal avec rendu. Source propre extraite/importée/testée, APK compilé/signature vérifiée. Aucun essai physique ou émulateur Android. Aucune intégration à main avant validation visuelle.
+
+![Journal fonctionnel — filtre Redditions](prototype_1870/captures/graphismes2d10/journal_surrender.png)
+
+![Fantassin coché avec 0,5 PA conservé](prototype_1870/captures/graphismes2d10/coche_05_0.png)
+
+---
+
+# Archive — essai 9
+
 # Essai graphique 2D № 9 — cadre horaire centré
 
 Version `0.8.43.15-g2d9`. [La stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main).

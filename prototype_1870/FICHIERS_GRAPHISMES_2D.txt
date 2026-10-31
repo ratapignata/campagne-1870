@@ -1,12 +1,23 @@
 Fichiers depuis V43.15 stable (34d8f73)
-Essai 9 : centrage du cadre heure/tours et dégagement du titre ; polices et fonctions conservées.
-ZIP : anciennes galeries 1 à 8 non dupliquées ; code et ressources complets.
+Essai 10 : journal filtré, disponibilité réelle en lecture seule, coche et navigation UI.
+IA/core/plateforme/scènes/règles de bataille inchangés. Anciennes galeries 1 à 9 non dupliquées dans le ZIP.
 
 A	FICHIERS_GRAPHISMES_2D.txt
 A	GRAPHISMES_2D_EXPERIMENTAL.md
 A	TESTS_GRAPHISMES_2D.md
 A	assets/graphics2d/terrain_atlas.png
 A	assets/graphics2d/terrain_atlas.png.import
+A	assets/graphics2d10/README.md
+A	assets/graphics2d10/all.svg
+A	assets/graphics2d10/all.svg.import
+A	assets/graphics2d10/combat.svg
+A	assets/graphics2d10/combat.svg.import
+A	assets/graphics2d10/objective.svg
+A	assets/graphics2d10/objective.svg.import
+A	assets/graphics2d10/reinforcement.svg
+A	assets/graphics2d10/reinforcement.svg.import
+A	assets/graphics2d10/surrender.svg
+A	assets/graphics2d10/surrender.svg.import
 A	assets/graphics2d2/painted_figures.png
 A	assets/graphics2d2/painted_figures.png.import
 A	assets/graphics2d2/painted_ground.png
@@ -70,6 +81,26 @@ A	captures/graphismes2d/preuves/zoom.log
 A	captures/graphismes2d/zooms/max_zoom.png
 A	captures/graphismes2d/zooms/metrics.json
 A	captures/graphismes2d/zooms/min_zoom.png
+A	captures/graphismes2d10/README.md
+A	captures/graphismes2d10/coche_05_0.png
+A	captures/graphismes2d10/coche_05_1.png
+A	captures/graphismes2d10/coche_05_2.png
+A	captures/graphismes2d10/journal_all.png
+A	captures/graphismes2d10/journal_before09.png
+A	captures/graphismes2d10/journal_combat.png
+A	captures/graphismes2d10/journal_objective.png
+A	captures/graphismes2d10/journal_reinforcement.png
+A	captures/graphismes2d10/journal_surrender.png
+A	captures/graphismes2d10/preuves/apk_badging.txt
+A	captures/graphismes2d10/preuves/apk_info.json
+A	captures/graphismes2d10/preuves/apk_signature.txt
+A	captures/graphismes2d10/preuves/archive_integrity.json
+A	captures/graphismes2d10/preuves/archive_smoke.json
+A	captures/graphismes2d10/preuves/checks.json
+A	captures/graphismes2d10/preuves/performance.json
+A	captures/graphismes2d10/preuves/regression.json
+A	captures/graphismes2d10/preuves/render.json
+A	captures/graphismes2d10/preuves/source_integrity.json
 A	captures/graphismes2d2/README.md
 A	captures/graphismes2d2/after/detail.png
 A	captures/graphismes2d2/after/engagement.png
@@ -447,8 +478,14 @@ A	tests/graphics/fixtures/essai05_slot.json
 A	tests/graphics/fixtures/essai06_slot.json
 A	tests/graphics/fixtures/essai07_slot.json
 A	tests/graphics/fixtures/essai08_slot.json
+A	tests/graphics/fixtures/essai09_slot.json
 A	tests/graphics/guidance_board.gd
 A	tests/graphics/guidance_board.gd.uid
+A	tests/graphics/measure_availability10.gd
+A	tests/graphics/test_availability10.gd
+A	tests/graphics/test_availability10.gd.uid
+A	tests/graphics/test_check10_ui.gd
+A	tests/graphics/test_check10_ui.gd.uid
 A	tests/graphics/test_contract.gd
 A	tests/graphics/test_contract.gd.uid
 A	tests/graphics/test_experiment03_render.gd
@@ -463,6 +500,8 @@ A	tests/graphics/test_header09.gd
 A	tests/graphics/test_header09.gd.uid
 A	tests/graphics/test_hud06.gd
 A	tests/graphics/test_hud06.gd.uid
+A	tests/graphics/test_journal10.gd
+A	tests/graphics/test_journal10.gd.uid
 A	tests/graphics/test_previous_save.gd
 A	tests/graphics/test_previous_save.gd.uid
 A	tests/graphics/uniform_board.gd
@@ -473,5 +512,11 @@ A	war_engine/presentation/graphics2d_skin.gd
 A	war_engine/presentation/graphics2d_skin.gd.uid
 A	war_engine/presentation/hud_details.gd
 A	war_engine/presentation/hud_details.gd.uid
+A	war_engine/presentation/journal_model.gd
+A	war_engine/presentation/journal_model.gd.uid
+A	war_engine/presentation/journal_view.gd
+A	war_engine/presentation/journal_view.gd.uid
 M	war_engine/presentation/main.gd
 M	war_engine/presentation/map_view.gd
+A	war_engine/presentation/unit_availability.gd
+A	war_engine/presentation/unit_availability.gd.uid

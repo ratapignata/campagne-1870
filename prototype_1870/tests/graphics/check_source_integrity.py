@@ -38,7 +38,7 @@ for name in files:
 assert set(changed) <= allowed, "Unexpected changes to stable files: " + str(set(changed) - allowed)
 functions = {}
 for name, permitted in {
-    "war_engine/presentation/main.gd": {"panel", "button", "build_ui", "unit_heading", "layout_cards", "layout"},
+    "war_engine/presentation/main.gd": {"panel", "button", "build_ui", "unit_heading", "layout_cards", "layout", "refresh", "next_unit", "surrender_journal_lines", "show_journal", "confirm_end", "on_cell"},
     "war_engine/presentation/map_view.gd": {"_ready", "_draw", "counter_back", "horseman", "soldier", "cannon", "draw_contact", "selection_outline"}
 }.items():
     def split_functions(source):
@@ -49,7 +49,7 @@ for name, permitted in {
     assert set(old) == set(new), "Function added/deleted in " + name
     delta = {k for k in old if old[k] != new[k]}
     assert delta <= permitted, "Unexpected function edits: " + str(delta - permitted)
-    functions[name] = {"total": len(old), "identical": len(old) - len(delta), "cosmetic_changes": sorted(delta)}
+    functions[name] = {"total": len(old), "identical": len(old) - len(delta), "presentation_changes": sorted(delta)}
 old_texts = json.loads(baseline("packs/1870/fr.json"))
 new_texts = json.loads((root / "packs/1870/fr.json").read_text())
 assert {k: v for k, v in old_texts.items() if k != "badge"} == {k: v for k, v in new_texts.items() if k != "badge"}

@@ -1,0 +1,17 @@
+[
+  {
+    "test": "graphics/test_previous_save",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nPREVIOUS EXPERIMENT SAVES 63/63\n"
+  },
+  {
+    "test": "graphics/test_availability10",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nUNIT AVAILABILITY 10 353/353\n"
+  },
+  {
+    "test": "graphics/test_journal10",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nJOURNAL 10 985/985\n"
+  }
+]
