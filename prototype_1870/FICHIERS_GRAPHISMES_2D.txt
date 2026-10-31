@@ -1,6 +1,7 @@
 Fichiers depuis V43.15 stable (34d8f73)
-Essai 10 : journal filtré, disponibilité réelle en lecture seule, coche et navigation UI.
-IA/core/plateforme/scènes/règles de bataille inchangés. Anciennes galeries 1 à 9 non dupliquées dans le ZIP.
+Essai 11 : coche en haut à droite, métadonnées et preuves actualisées.
+Comparaison essai 10 : uniquement position du dessin action_check, aucun autre comportement.
+Core/IA/plateforme/scènes/règles et sauvegardes inchangés. Anciennes galeries non dupliquées dans le ZIP.
 
 A	FICHIERS_GRAPHISMES_2D.txt
 A	GRAPHISMES_2D_EXPERIMENTAL.md
@@ -520,3 +521,22 @@ M	war_engine/presentation/main.gd
 M	war_engine/presentation/map_view.gd
 A	war_engine/presentation/unit_availability.gd
 A	war_engine/presentation/unit_availability.gd.uid
+A	captures/graphismes2d11/README.md
+A	captures/graphismes2d11/avant_coche_05_0.png
+A	captures/graphismes2d11/avant_coche_05_1.png
+A	captures/graphismes2d11/avant_coche_05_2.png
+A	captures/graphismes2d11/coche_05_0.png
+A	captures/graphismes2d11/coche_05_1.png
+A	captures/graphismes2d11/coche_05_2.png
+A	captures/graphismes2d11/coche_etats_zoom_0.6.png
+A	captures/graphismes2d11/coche_etats_zoom_1.0.png
+A	captures/graphismes2d11/coche_etats_zoom_2.3.png
+A	captures/graphismes2d11/preuves/apk_badging.txt
+A	captures/graphismes2d11/preuves/apk_info.json
+A	captures/graphismes2d11/preuves/apk_signature.txt
+A	captures/graphismes2d11/preuves/archive_smoke.json
+A	captures/graphismes2d11/preuves/capture_check11.gd
+A	captures/graphismes2d11/preuves/render_dummy.log
+A	captures/graphismes2d11/preuves/results.json
+A	captures/graphismes2d11/preuves/scope.json
+A	captures/graphismes2d11/preuves/source_integrity.json

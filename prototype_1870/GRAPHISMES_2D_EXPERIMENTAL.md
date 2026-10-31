@@ -1,37 +1,28 @@
-# Essai graphique № 10 — journal filtré et coche de fin d’action
+# Essai graphique № 11 — coche en haut à droite
 
-Version `0.8.43.15-g2d10`, 31 octobre 2026. Branche `v43-graphismes-2d-experimental`. Essai 9 conservé au commit source `693ed1d` et dans ses livraisons. Stable/main préservées.
+Version `0.8.43.15-g2d11`, 31 octobre 2026. Branche `v43-graphismes-2d-experimental`, base essai 10 (`76e96df`). Stable/main et essai 10 préservés dans leurs commits et livraisons.
 
-## Journal approuvé
+## Changement demandé
 
-Fenêtre bleu nuit/ivoire/or dans le style du jeu, cinq filtres actifs : Tous, Combats, Redditions, Objectifs, Renforts. Icônes, titres et horaires par tour, texte plus aéré, liste tactile défilante, bouton habituel de retour à la carte. Adaptation aux écrans logiques 1280 × 606 / 1280 × 720 / 1520 × 720. Les longues listes chargent leurs lignes par tranches de 40 au défilement.
+La coche de fin d’action passe du milieu droit au coin supérieur droit du pion : centre local `(18, -18)` au lieu de `(9, 3)`, multiplié par le zoom existant. Même dessin, même taille, mêmes couleurs et mêmes conditions d’affichage. Elle reste dans les dimensions du pion, au-dessus de la force et à l’opposé du marqueur de désorganisation. Aucun numéro d’unité réintroduit.
 
-Les pertes, ripostes, prisonniers autorisés, captures d’objectifs et bilans de fin de tour restent disponibles. Les liaisons restent dans Tous. Les arrivées de QG reportées restent prioritaires et expliquées, notamment Raoult. Les horaires correspondent au début des tours ; les bilans de fin de tour portent leur heure de fin.
+La coche signifie toujours qu’aucune action active légale accessible ne reste, même avec 0,5 PA ou un autre budget positif. Aucun PA retiré ou `done` forcé ; elle peut disparaître lorsqu’un passage se libère. Les ripostes restent inchangées.
 
-Les données viennent de la partie et respectent les informations autorisées : noms de combat enregistrés sous brouillard, redditions confirmées, pertes adverses non confirmées masquées. Les renforts détaillés sont ceux du joueur. Une arrivée ancienne sans date effective conservée est signalée « date non consignée », jamais attribuée arbitrairement au tour prévu. Aucune capture absente d’une vieille sauvegarde n’est reconstituée. Les filtres n’enregistrent ni ordre ni sauvegarde.
+Le journal de l’essai 10 conserve ses cinq filtres fonctionnels : Tous, Combats, Redditions, Objectifs et Renforts, son défilement tactile et ses restrictions de brouillard. Tous les autres graphismes et commandes restent ceux de l’essai 10.
 
-## Coche demandée
+## Périmètre
 
-Une unité du joueur porte la coche quand aucune action active légale accessible ne reste, même avec des PA positifs : déplacement vers une case libre (y compris transit à travers des amis), tir sur une cible connue, assaut/charge, ralliement, changement de formation, mise en batterie/attelage, retranchement accessible dans l’interface.
+Une seule modification de rendu : `war_engine/presentation/graphics2d_art.gd`, fonction `action_check`. Métadonnées de l’essai 11 dans `project.godot`, `export_presets.cfg` et le badge de `packs/1870/fr.json`. Rapports, liste des fichiers et captures actualisés. Aucun changement au moteur, à l’IA, aux scènes, données de bataille, disponibilité des actions, sauvegardes ou animations.
 
-Ce n’est pas un seuil fixe : à 0,5 PA, un fantassin sans déplacement abordable est coché, mais un fantassin sur route ou un cavalier pouvant encore avancer reste disponible. À 0,25 PA, une route peut encore permettre un déplacement de cavalerie. Toutes les vérifications utilisent les coûts, terrains, rivières, occupation connue et conditions du moteur existant. Une voie libérée par un allié peut faire disparaître la coche.
+## Livraison
 
-Le compteur, Unité suivante et la confirmation de fin de tour utilisent la même disponibilité réelle. Une unité cochée reste consultable. La coche et la teinte grisée sont purement visuelles : aucun PA retiré, aucun `done=true` imposé, aucun ordre exécuté. Les réactions défensives et le réapprovisionnement automatique ne sont pas des actions actives ; ils restent inchangés. Annuler un mouvement garde son fonctionnement global existant.
+- `1870_V43_Graphismes_2D_Experimental_11.apk`.
+- `1870_V43_Graphismes_2D_Experimental_11_Sources.zip` : code et ressources complets du jeu, tests, rapports, preuves actuelles ; anciens dossiers de captures 1 à 10 non dupliqués. Aucun cache ni fichier de compilation inclus.
+- Galerie comparative : `captures/graphismes2d11/README.md`.
+- Résultats : `TESTS_GRAPHISMES_2D.md`.
 
-La classification lit un instantané isolé du moteur ; ses caches ne touchent pas la partie. Elle évalue le budget propre sans déclarer toutes les unités terminées à cause de la seule phase adverse. Les positions ennemies inconnues n’influencent pas la coche ; aucune nouvelle information d’action/PA ennemie n’est affichée. Calcul uniquement au rafraîchissement de la fiche/partie, pas à chaque image ou déplacement de caméra.
-
-## Conservation des règles et du rendu
-
-IA Normal/Difficile et doctrine inchangées, charge 2 PA, ripostes, variante B, commandement/ravitaillement, isolement/reddition, 20 tours, score 60/20/20, objectifs 3/2/1, 95 000 Allemands/50 unités allemandes, effectifs/renforts, correction du QG Raoult, brouillard et animations conservés. Aucun bouton TIRER. Aucun module core/IA/plateforme/scène ou donnée de bataille modifié.
-
-Carte et illustrations historiques de l’essai 9 conservées, une/deux silhouettes au seuil existant de 2 000 hommes connus. Grande police et cadre horaire centré conservés. Les nouveaux signes du journal sont de petits SVG ; la coche est vectorielle et ne masque pas le chiffre de force. Bandeaux et commandes de carte de mêmes dimensions ; nouvelles commandes limitées à la navigation du journal.
-
-## Installation et livraison
-
-Installer `1870_V43_Graphismes_2D_Experimental_10.apk` par-dessus l’essai précédent **sans le désinstaller**. Même application « 1870 · Essai graphique 2D », paquet expérimental et certificat, code Android 10. Sauvegardes des essais 1 à 9 vérifiées. Aucun champ de journal ou de coche ajouté au format ; tout se reconstruit à partir des données disponibles. Application stable et partie stable séparées, sans transfert automatique.
-
-Sources complètes du jeu, ressources, tests, rapports et galerie courante inclus. Anciennes galeries 1 à 9 non dupliquées dans le ZIP, toujours dans GitHub/historique. Caches et compilations exclus ; aucun fichier nécessaire au jeu omis. Galerie : `captures/graphismes2d10/README.md`. Tests : `TESTS_GRAPHISMES_2D.md`. Liste exhaustive : `FICHIERS_GRAPHISMES_2D.txt`.
+Installer par-dessus l’essai précédent **sans désinstaller**, pour conserver sa partie. Paquet `org.woerth1870.prototype.graphics2dexp`, même certificat de développement, code Android 11. Application stable séparée ; aucune intégration à main.
 
 ## Limites
 
-7 494 assertions finales réussies, APK compilé/signature vérifiée, captures réelles Godot 4.5.1/Linux. Aucun essai physique ou émulateur Android. Les horaires d’arrivée non enregistrés des renforts restent inconnus. La navigation du journal revient à Tous à sa réouverture. Aucun changement intégré à main avant validation visuelle.
+Captures réelles sous Godot 4.5.1/Linux dans des états synthétiques, vérifications automatisées et signature APK contrôlées. Aucun test sur appareil physique ou émulateur Android. Les suggestions d’amélioration d’interface ne sont pas intégrées à cet essai.

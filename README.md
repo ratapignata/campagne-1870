@@ -1,3 +1,22 @@
+# Essai graphique 2D № 11 — coche en haut à droite
+
+Version `0.8.43.15-g2d11`. La coche occupe maintenant le coin supérieur droit du pion, sans masquer le chiffre de force. Même taille, couleur et logique de disponibilité que dans l’essai 10. Journal filtré et toutes les autres fonctions conservés.
+
+- **[Télécharger l’APK de l’essai 11](https://raw.githubusercontent.com/ratapignata/campagne-1870/v43-graphismes-2d-experimental/experiments/graphismes-2d/essai-11/1870_V43_Graphismes_2D_Experimental_11.apk)**.
+- [Sources complètes ZIP](experiments/graphismes-2d/essai-11/1870_V43_Graphismes_2D_Experimental_11_Sources.zip).
+- [Captures comparatives et zooms](prototype_1870/captures/graphismes2d11/README.md).
+- [Rapport](experiments/graphismes-2d/essai-11/GRAPHISMES_2D_EXPERIMENTAL.md), [tests réellement exécutés](experiments/graphismes-2d/essai-11/TESTS_GRAPHISMES_2D.md), [fichiers modifiés](experiments/graphismes-2d/essai-11/FICHIERS_GRAPHISMES_2D.txt).
+
+**Installer par-dessus l’essai précédent sans le désinstaller pour conserver sa partie.** Même application expérimentale, paquet et certificat, code Android 11. La version stable et sa partie restent séparées. Aucune modification de main.
+
+Six suites existantes relancées et contrôles avec rendu : 4 641 assertions distinctes réussies. Disponibilité, journal, bandeau, sauvegardes et intégrité contrôlés ; source extraite et vérifiée indépendamment. APK compilé et signature vérifiée. Aucun test physique ou émulateur Android.
+
+![Coche en haut à droite et force conservée](prototype_1870/captures/graphismes2d11/coche_05_0.png)
+
+---
+
+# Archive — essai 10
+
 # Essai graphique 2D № 10 — journal filtré et fin d’action
 
 Version `0.8.43.15-g2d10`. [La stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main).

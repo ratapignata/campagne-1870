@@ -70,7 +70,8 @@ static func movement_marker(view,p: Vector2,z: float):
  view.draw_circle(p,maxf(3.8,6.0*z),Color("183b37"))
  view.draw_circle(p,maxf(2.5,4.2*z),Color("fff2ce"))
 static func action_check(view,p: Vector2,z: float):
- var center=p+Vector2(9,3)*z
+ # Reserved top-right corner: clear of force strip, morale badge and entrenchment.
+ var center=p+Vector2(18,-18)*z
  view.draw_circle(center,7.4*z,Color("10272e"))
  view.draw_arc(center,7.4*z,0,TAU,20,Color("d7dfc5"),maxf(.5,.8*z),true)
  view.draw_polyline(PackedVector2Array([center+Vector2(-3,0)*z,center+Vector2(-1,2.5)*z,center+Vector2(4,-3)*z]),Color("fff4d7"),maxf(.9,1.8*z),true)
