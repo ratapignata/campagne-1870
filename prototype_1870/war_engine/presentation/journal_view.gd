@@ -3,6 +3,7 @@ const Model=preload("res://war_engine/presentation/journal_model.gd")
 const JournalSkin=preload("res://war_engine/presentation/graphics2d_skin.gd")
 const TouchScroll=preload("res://war_engine/presentation/touch_scroll.gd")
 const ICONS={"all":preload("res://assets/graphics2d10/all.svg"),"combat":preload("res://assets/graphics2d10/combat.svg"),"surrender":preload("res://assets/graphics2d10/surrender.svg"),"objective":preload("res://assets/graphics2d10/objective.svg"),"reinforcement":preload("res://assets/graphics2d10/reinforcement.svg")}
+const CATEGORY_COLORS={"all":Color("9bb7ac"),"combat":Color("e2a394"),"surrender":Color("d8e2e5"),"objective":Color("e8c56f"),"reinforcement":Color("8fcbd1")}
 var game
 var data: Dictionary
 var buttons: Dictionary={}
@@ -54,7 +55,7 @@ func set_filter(category: String):
 		b.add_theme_color_override("font_hover_color",game.INK if active else Color.WHITE)
 		b.add_theme_color_override("font_pressed_color",game.INK if active else game.PAPER)
 
-		for color in ["icon_normal_color","icon_hover_color","icon_pressed_color","icon_focus_color"]:b.add_theme_color_override(color,game.INK if active else game.PAPER)
+		for color in ["icon_normal_color","icon_hover_color","icon_pressed_color","icon_focus_color"]:b.add_theme_color_override(color,game.INK if active else CATEGORY_COLORS[key])
 		b.set_meta("active",active)
 	for child in list.get_children():list.remove_child(child);child.queue_free()
 	if visible_rows.is_empty():
@@ -80,13 +81,14 @@ func load_near_bottom(value: float):
 func add_row(item: Dictionary):
 	var panel=PanelContainer.new();panel.mouse_filter=Control.MOUSE_FILTER_IGNORE
 	panel.size_flags_horizontal=Control.SIZE_EXPAND_FILL
-	var style=StyleBoxFlat.new();style.bg_color=Color("122c31");style.border_color=Color("48615e");style.border_width_bottom=1
+	var accent=CATEGORY_COLORS.get(item.category,CATEGORY_COLORS.all)
+	var style=StyleBoxFlat.new();style.bg_color=Color("122c31");style.border_color=accent;style.border_width_left=3;style.border_width_bottom=1
 	style.content_margin_left=12;style.content_margin_right=12;style.content_margin_top=10;style.content_margin_bottom=12
 	panel.add_theme_stylebox_override("panel",style);list.add_child(panel)
 	var row_box=HBoxContainer.new();row_box.mouse_filter=Control.MOUSE_FILTER_IGNORE;row_box.add_theme_constant_override("separation",14);panel.add_child(row_box)
 	var icon=TextureRect.new();icon.texture=ICONS.get(item.category,ICONS.all);icon.custom_minimum_size=Vector2(38,38)
 	icon.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;icon.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;icon.size_flags_vertical=Control.SIZE_SHRINK_BEGIN
-	icon.mouse_filter=Control.MOUSE_FILTER_IGNORE;icon.modulate=game.GOLD if item.category=="objective" else game.PAPER;row_box.add_child(icon)
+	icon.mouse_filter=Control.MOUSE_FILTER_IGNORE;icon.modulate=accent;row_box.add_child(icon)
 	var column=VBoxContainer.new();column.mouse_filter=Control.MOUSE_FILTER_IGNORE;column.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 	column.custom_minimum_size.x=size.x-156;column.add_theme_constant_override("separation",4);row_box.add_child(column)
 	var head=HBoxContainer.new();head.mouse_filter=Control.MOUSE_FILTER_IGNORE;column.add_child(head)

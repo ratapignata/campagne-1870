@@ -281,11 +281,7 @@ func shot_effect(origin: Vector2,dest: Vector2,progress: float,is_cannon: bool):
 			draw_circle(dest+offset*zoom,(4.0+phase*14.0)*scale*zoom,dust)
 		draw_arc(dest,(8.0+phase*(25.0 if is_cannon else 14.0))*zoom,0,TAU,28,Color(0.95,0.72,0.35,fade*0.85),(3.5 if is_cannon else 2.0)*zoom,true)
 func shovel(p: Vector2,z: float):
-	var metal=Color("fff2c8")
-	draw_circle(p,11*z,Color("14272d"));draw_circle(p,9.5*z,Color("244043"));draw_arc(p,9.5*z,0,TAU,24,Color("e4c486"),1.5*z,true)
-	draw_rect(Rect2(p+Vector2(-3,-8)*z,Vector2(6,4)*z),metal,false,1.6*z)
-	draw_line(p+Vector2(0,-4)*z,p+Vector2(0,2)*z,Color("deb985"),2.6*z,true)
-	draw_colored_polygon(PackedVector2Array([p+Vector2(-4,1)*z,p+Vector2(4,1)*z,p+Vector2(4,5)*z,p+Vector2(0,8)*z,p+Vector2(-4,5)*z]),metal)
+	Graphics2D.condition_badge(self,p,z,"entrenched")
 func set_supply_overlay(source_index: int):
 	supply_overlay_source=source_index
 	supply_overlay_cells={}
@@ -454,13 +450,12 @@ func _draw():
 		if u.morale=="shaken":
 			disorder_badge(p,z)
 		elif u.morale=="routed":
-			var badge=p+Vector2(-23,-16)*z
-			draw_circle(badge,10*z,Color("152a2f"));draw_circle(badge,8.5*z,Color("b95343"));draw_string(font,badge+Vector2(-5,5)*z,"»",HORIZONTAL_ALIGNMENT_CENTER,10*z,maxi(10,int(15*z)),Color("fff3db"))
+			Graphics2D.condition_badge(self,p+Vector2(-18,-18)*z,z,"routed")
 		if engine.fixed_hq() and not engine.headquarters(n) and int(u.side)==int(engine.state.human_side) and u.get("is_hq",false):
 			var badge=Rect2(p+Vector2(-15,-43)*z,Vector2(30,15)*z)
 			draw_rect(badge,Color("203533"));draw_rect(badge,Color("d4b06c"),false,maxf(1,zoom))
 			draw_string(COUNTER_FONT,p+Vector2(-13,-31)*z,str(texts.get("hq_badge","QG")),HORIZONTAL_ALIGNMENT_CENTER,26*z,maxi(9,int(12*z)),Color("f5d483"))
-		if u.get("entrenched",false):shovel(p+Vector2(21,3)*z,z)
+		if u.get("entrenched",false):shovel(p+Vector2(18,3)*z,z)
 		# Draw outside the counter and selection so the red border stays visible.
 		# Both links must be cut; enemy logistics are never exposed.
 		if int(u.side)==int(engine.state.human_side) and not u.get("command_ok",true) and not u.get("supply_ok",true):
@@ -546,7 +541,7 @@ func draw_contact(n: int):
 	if current and int(report.level)==2:
 		if report.morale=="shaken":
 			disorder_badge(p,z)
-		if report.entrenched:shovel(p+Vector2(21,3)*z,z)
+		if report.entrenched:shovel(p+Vector2(18,3)*z,z)
 	if n==target:draw_arc(p,33*z,0,TAU,32,Color("b04f42"),3*z,true)
 	elif n==selected and current:selection_outline(p,z)
 func show_feedback(i: int,value: String):
@@ -651,11 +646,7 @@ func _gui_input(event):
 		clamp_focus();queue_redraw()
 
 func disorder_badge(p: Vector2,z: float):
-	# A corner badge leaves the unit silhouette, number and strength visible.
-	var badge=p+Vector2(-22,-17)*z
-	draw_circle(badge,11*z,Color("172e32"))
-	draw_arc(badge,10*z,0,TAU,24,Color("edc77b"),maxf(1,1.3*z),true)
-	draw_string(COUNTER_FONT,badge+Vector2(-8,6)*z,"D",HORIZONTAL_ALIGNMENT_CENTER,16*z,maxi(10,int(17*z)),Color("ffe0a0"))
+	Graphics2D.condition_badge(self,p+Vector2(-18,-18)*z,z,"shaken")
 
 func draw_sauer():
 	if not engine.pack.map.get("north_left",false):return

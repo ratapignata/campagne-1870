@@ -1,0 +1,1093 @@
+{
+	"benchmark": {
+		"average_ms": 66.0301333333333,
+		"draw_calls": 2716.0,
+		"frames": 60,
+		"median_ms": 64.61,
+		"p95_ms": 77.99,
+		"renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+		"video_memory": 35811069.0
+	},
+	"captures": [
+		{
+			"artwork": {
+				"art_fr_Raoult0": {
+					"rect": [
+						745,
+						319,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_14": {
+					"rect": [
+						703,
+						440,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_15": {
+					"rect": [
+						703,
+						343,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_16": {
+					"rect": [
+						829,
+						271,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_17": {
+					"rect": [
+						829,
+						319,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_18": {
+					"rect": [
+						787,
+						343,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_19": {
+					"rect": [
+						1205,
+						247,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_20": {
+					"rect": [
+						327,
+						271,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_21": {
+					"rect": [
+						369,
+						247,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_22": {
+					"rect": [
+						243,
+						464,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_23": {
+					"rect": [
+						369,
+						295,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_24": {
+					"rect": [
+						327,
+						174,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_4": {
+					"rect": [
+						745,
+						464,
+						39,
+						30
+					],
+					"side": 0
+				},
+				"fr_7": {
+					"rect": [
+						871,
+						295,
+						39,
+						30
+					],
+					"side": 0
+				}
+			},
+			"case": "overview",
+			"draw_calls": 3139.0,
+			"focus": [
+				714.0,
+				618.342163085938
+			],
+			"force_strips": {
+				"art_fr_Raoult0": "3924ee9e72677f0fa23f8b9331e561af268a2685e2736df3fd77f650307a5e0c",
+				"fr_14": "cd73ec2cedae67e94ed661c2067366d446cb6b82e1a70664aa64ec5a972f9cda",
+				"fr_15": "6084bad5a8115996e43b034f4d0e689d6d453f99981b22571d06a91e43a7d1af",
+				"fr_16": "c65fb076e9ef395a238914d9229d8884f0324a1c44de643e11a4e532b8caf863",
+				"fr_17": "9fd077c61fd06f220a6220b8dab525198df0f1fbd6f6e980a4e35037b390a0f9",
+				"fr_18": "d80357a521840c721a624a87d4b9b826b93bdc4ae365050c19c3c0cc7f27a7a3",
+				"fr_19": "456b9f328bdf411fcef9d9f37669fbef090423dcbae15f8f232abd733ae3a2c9",
+				"fr_20": "310df8b2fcbe2d552f527f52546386ea1019ee312298bb27b786e862661ce465",
+				"fr_21": "9b12379a238c89c610fd4decc09d8eda2229644566d35acd9dfa4f102d3e6623",
+				"fr_22": "03b6e3a0c3a4491ddc3b7e40e2657f63d9232943418d53118222b1b0b0484307",
+				"fr_23": "4319aa579c6c9f9f6c81249576e1abfbe27b60f8ab561348acb7bc31d7ff4249",
+				"fr_24": "399a88339ca018306405d3174fed27bb24b860f7b44c6ca0a118264a0341c11d",
+				"fr_4": "6962b465551054f5ee22c7bfe2cdb776ad780624f3b234a639f98043961f55c7",
+				"fr_7": "62f2dded754924f8feb901a9ceaae128bc279c298ffce25d63efb52a49867f74"
+			},
+			"left_card_hash": "e1ee28ce2521813f49035d5d123bd8b7dfd51f6948a7e7441180d823232f8dda",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "5c78513f6e207475c2d2020f217a870c77651c27d5613b750433c7fa742c5586",
+			"video_memory": 34628279.0,
+			"zoom": 0.82
+		},
+		{
+			"artwork": {
+				"art_fr_Raoult0": {
+					"rect": [
+						721,
+						227,
+						50,
+						38
+					],
+					"side": 0
+				},
+				"fr_14": {
+					"rect": [
+						668,
+						382,
+						50,
+						38
+					],
+					"side": 0
+				},
+				"fr_15": {
+					"rect": [
+						668,
+						258,
+						50,
+						38
+					],
+					"side": 0
+				},
+				"fr_16": {
+					"rect": [
+						829,
+						166,
+						50,
+						38
+					],
+					"side": 0
+				},
+				"fr_17": {
+					"rect": [
+						829,
+						227,
+						50,
+						38
+					],
+					"side": 0
+				},
+				"fr_18": {
+					"rect": [
+						775,
+						258,
+						50,
+						38
+					],
+					"side": 0
+				},
+				"fr_20": {
+					"rect": [
+						186,
+						166,
+						50,
+						38
+					],
+					"side": 0
+				},
+				"fr_21": {
+					"rect": [
+						239,
+						135,
+						50,
+						38
+					],
+					"side": 0
+				},
+				"fr_22": {
+					"rect": [
+						79,
+						413,
+						50,
+						38
+					],
+					"side": 0
+				},
+				"fr_23": {
+					"rect": [
+						239,
+						196,
+						50,
+						38
+					],
+					"side": 0
+				},
+				"fr_4": {
+					"rect": [
+						721,
+						413,
+						50,
+						38
+					],
+					"side": 0
+				},
+				"fr_7": {
+					"rect": [
+						882,
+						196,
+						50,
+						38
+					],
+					"side": 0
+				},
+				"fr_9": {
+					"rect": [
+						79,
+						475,
+						50,
+						38
+					],
+					"side": 0
+				}
+			},
+			"case": "engagement",
+			"draw_calls": 2716.0,
+			"focus": [
+				765.0,
+				706.6767578125
+			],
+			"force_strips": {
+				"art_fr_Raoult0": "44c7eb7e251e9244476ccc53941ba50262fa8fe0975de54f9b4c77f9dcd5bc6c",
+				"fr_14": "059674f6ea453df0c087ba9f4e9a0a49846f920832c39e0111682442f2092ec1",
+				"fr_15": "0830a5ca01eee01db4c7585a3f4f00f9be99c9eee43dba01ae3dba87c7161b29",
+				"fr_16": "db6f8328c3fc4aca10571a10d90c3286cc3629e1ad985ff989b2f0cbc1041826",
+				"fr_17": "e3656536c6627f84507f090ac3ab486ca50c31225a37a7a037468d4c18630f44",
+				"fr_18": "a0ba4c31383a48b9e5ce78397245ee24fc044de49e60ac68deb715ea309da212",
+				"fr_20": "c0a12ce3517b22b8a9fbe4d5590802623aae42f8db20fb379b0c4fdb92816aed",
+				"fr_21": "0c8be06cb48e14b43a1723848972791be966cc17c016bf075b94b75fbdb675be",
+				"fr_22": "cf5f75dfe87dbd910d66286d54af6a19cb4f6972542dc66b659ecbf790f77e4d",
+				"fr_23": "6a675dd86c0f07b5929709315c57506300055a8ed5ab73f91cf3906937bfc6c3",
+				"fr_4": "306c3414e762bdf4ee084005b67ccb55075a49e835025d30de2bcfe98a9f7922",
+				"fr_7": "6c138f82f029e2bb4a2b4dd4380c3eb7b6b5907147a72d8deeb96155cbbc475c",
+				"fr_9": "7478a05d4d129470b8f29e3e04c672617dec949eff6eb692d8599a6000bd5ce6"
+			},
+			"left_card_hash": "cd4974ad332de61ab1ee8db8c489de0834f23a07ba073d28b8bcba828a7ad1a2",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "5c78513f6e207475c2d2020f217a870c77651c27d5613b750433c7fa742c5586",
+			"video_memory": 34500349.0,
+			"zoom": 1.05
+		},
+		{
+			"artwork": {
+				"art_pr_Sandrart1": {
+					"rect": [
+						400,
+						104,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"pru_37": {
+					"rect": [
+						454,
+						196,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"pru_38": {
+					"rect": [
+						507,
+						413,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"pru_39": {
+					"rect": [
+						507,
+						166,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"pru_40": {
+					"rect": [
+						293,
+						289,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"pru_44": {
+					"rect": [
+						668,
+						382,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"pru_47": {
+					"rect": [
+						721,
+						475,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"pru_55": {
+					"rect": [
+						454,
+						382,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"pru_57": {
+					"rect": [
+						454,
+						320,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"qg_pr_Sandrart": {
+					"rect": [
+						400,
+						166,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"qg_pr_Schachtmeyer": {
+					"rect": [
+						721,
+						104,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"qg_pr_Schmidt": {
+					"rect": [
+						454,
+						135,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"v42_de_reserve_01": {
+					"rect": [
+						507,
+						289,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"v42_de_reserve_02": {
+					"rect": [
+						293,
+						475,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"v42_de_reserve_04": {
+					"rect": [
+						400,
+						475,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"v42_de_reserve_05": {
+					"rect": [
+						614,
+						227,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"v42_de_reserve_08": {
+					"rect": [
+						561,
+						258,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"v42_de_reserve_12": {
+					"rect": [
+						936,
+						413,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"v42_de_reserve_13": {
+					"rect": [
+						1043,
+						351,
+						50,
+						38
+					],
+					"side": 1
+				},
+				"v42_de_reserve_14": {
+					"rect": [
+						989,
+						320,
+						50,
+						38
+					],
+					"side": 1
+				}
+			},
+			"case": "prussiens",
+			"draw_calls": 2426.0,
+			"focus": [
+				816.0,
+				618.342163085938
+			],
+			"force_strips": {
+				"art_pr_Sandrart1": "1faff5979bb4d586b6590912002bcf2ae4eba4b0563510509d90d555c4702011",
+				"pru_37": "45847898bf16294acc143177319554279f3d99a854626c9f192dfd691d464b0a",
+				"pru_38": "c271a56e9f85ee7de3b821eef5e9f2d101349d7627afc69a1ef55f7c41b256ac",
+				"pru_39": "eef20f0fa2cdb78eabfc778db5c8e1b6bb5484508c948c70eeb0964497a1a075",
+				"pru_40": "e0a3d845226a0ada4f908063c31cb3110c4523822959c7192b96c202d9670887",
+				"pru_44": "678f925e605422dcaf901e08ad870a26ecff75fb2072dbfca0cad6e43b482cf8",
+				"pru_47": "0e9d7077fb41cbe5b91ab16cb44252e1a4b96dfccf1e0edb0834164dd7754149",
+				"pru_55": "5d9e5666b5481e4ce6e785454764894d7da29138766b8056d62f209c85085c0b",
+				"pru_57": "e2eaa13d81218e12f8ef54e5c25bae0d628f8ab79c0e11f46ee24572bf96e44b",
+				"qg_pr_Gersdorff": "c7edea2cb52fd5dae280be8f693e89b38595b645c93794c8d1f93e91aa00c5d6",
+				"qg_pr_Sandrart": "0257b0b5f04f3f661501d3f6eaa004f7f4155fd0a33f8419e74084bad6284a64",
+				"qg_pr_Schachtmeyer": "6bacdc7b979f5280d4967a39933f1731f65e6f7d9c677a5353df206145a851e0",
+				"qg_pr_Schmidt": "8636bc5dd18ff13b4acb00ab9ce70ba430558f1e5fa3c9e225596e5c1aeb8451",
+				"v42_de_reserve_01": "c4c3a7886e68a16768bb9b8cff12d5265abe953341c042960d5f117c6db483f3",
+				"v42_de_reserve_02": "bccea3697f8e29f163e2e7b22adf6a196391660a26d43772853ad2c06337e3be",
+				"v42_de_reserve_04": "dbfa1a1ee18eb264effdbb181f195448b77c03a2c88cbd3b6da257413779205b",
+				"v42_de_reserve_05": "f66e07f6048636f4764a4623cdf0b4208818323ed85209cc2b9b161ca13b99ef",
+				"v42_de_reserve_08": "f9c7d0da63022d5375d6ebc03860b7b0ea4a069add8a9c74533e34d9f8daf636",
+				"v42_de_reserve_12": "e6b83ceebc649f0ad3604c035f98e89d132e9824015070eabbe6daaa1f174e50",
+				"v42_de_reserve_13": "b5dd05a96cc610be13401e431d819a756850f4815a671468cf349cb56e2c3934",
+				"v42_de_reserve_14": "c4c3a7886e68a16768bb9b8cff12d5265abe953341c042960d5f117c6db483f3"
+			},
+			"left_card_hash": "aae320637b0f425a026bc0fc2c9983209ae5aba356b87ef4edbf11c73f741d2c",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "a247c13442dcd2fb6b3ffcaeaec35d244a16d409736405381abbf2efac4f33f9",
+			"video_memory": 34579587.0,
+			"zoom": 1.05
+		},
+		{
+			"artwork": {
+				"fr_1": {
+					"rect": [
+						718,
+						467,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_10": {
+					"rect": [
+						463,
+						320,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_11": {
+					"rect": [
+						616,
+						349,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_12": {
+					"rect": [
+						463,
+						261,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_13": {
+					"rect": [
+						565,
+						320,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_14": {
+					"rect": [
+						769,
+						143,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_2": {
+					"rect": [
+						514,
+						349,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_22": {
+					"rect": [
+						208,
+						173,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_25": {
+					"rect": [
+						667,
+						497,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_26": {
+					"rect": [
+						565,
+						497,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_27": {
+					"rect": [
+						259,
+						320,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_29": {
+					"rect": [
+						565,
+						379,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_3": {
+					"rect": [
+						361,
+						261,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_31": {
+					"rect": [
+						565,
+						438,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_32": {
+					"rect": [
+						616,
+						467,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_4": {
+					"rect": [
+						820,
+						173,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_5": {
+					"rect": [
+						514,
+						408,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_8": {
+					"rect": [
+						412,
+						291,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"fr_9": {
+					"rect": [
+						208,
+						232,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"qg_fr_Conseil-Dumesnil": {
+					"rect": [
+						208,
+						291,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"qg_fr_Ducrot": {
+					"rect": [
+						463,
+						497,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"qg_fr_Pellé": {
+					"rect": [
+						514,
+						467,
+						48,
+						37
+					],
+					"side": 0
+				},
+				"qg_fr_Raoult": {
+					"rect": [
+						463,
+						438,
+						48,
+						37
+					],
+					"side": 0
+				}
+			},
+			"case": "isolement",
+			"draw_calls": 2769.0,
+			"focus": [
+				663.0,
+				942.235595703125
+			],
+			"force_strips": {
+				"fr_1": "e94945a2de2af5311e98517216eebae2c0d7d3850a70adf83f96cb56a8a98e01",
+				"fr_10": "0c1f0d9d0823cfc4fd0dfa391662d937aeba2454e1303b04173485e675d26c09",
+				"fr_11": "444b27333c264822d1c06ac5cdcd89a1ee8ca0ac7314f401b1a98e1ed62dbdd9",
+				"fr_12": "693c0c5434c2a0c84a3e511edc5da2d473bc87359cb0a353b131e926532bef09",
+				"fr_13": "0c1f0d9d0823cfc4fd0dfa391662d937aeba2454e1303b04173485e675d26c09",
+				"fr_14": "693c0c5434c2a0c84a3e511edc5da2d473bc87359cb0a353b131e926532bef09",
+				"fr_2": "5b7f7781abcb43570e2654bec8fc0117a7c6f49bf5cb63994de9a0924afa50d5",
+				"fr_22": "77cdafcfa1622e37318437904a7ba4361bea7dd2b37b203c4a9ad704ccd9a2e7",
+				"fr_27": "0c1f0d9d0823cfc4fd0dfa391662d937aeba2454e1303b04173485e675d26c09",
+				"fr_29": "0c1f0d9d0823cfc4fd0dfa391662d937aeba2454e1303b04173485e675d26c09",
+				"fr_3": "0c1f0d9d0823cfc4fd0dfa391662d937aeba2454e1303b04173485e675d26c09",
+				"fr_31": "7aded6e92225cc851b26ae7f643e1d6653ece8fb2c856674d2be186948f6327c",
+				"fr_32": "0c1f0d9d0823cfc4fd0dfa391662d937aeba2454e1303b04173485e675d26c09",
+				"fr_4": "693c0c5434c2a0c84a3e511edc5da2d473bc87359cb0a353b131e926532bef09",
+				"fr_5": "7aded6e92225cc851b26ae7f643e1d6653ece8fb2c856674d2be186948f6327c",
+				"fr_8": "ff54b6bbacc4a7e4fb73049ca51e3fd1dff97c50412e87fc6275a271d0fb03b7",
+				"fr_9": "9b8729713a370adff7b39e254ac91b97982756dabfd261370665edcc23edc7be",
+				"qg_fr_Conseil-Dumesnil": "3073628b344d4f8f650558e7248887d8b8c23ba39bbfd3b726ffa957df3db34f",
+				"qg_fr_Pellé": "3073628b344d4f8f650558e7248887d8b8c23ba39bbfd3b726ffa957df3db34f",
+				"qg_fr_Raoult": "3073628b344d4f8f650558e7248887d8b8c23ba39bbfd3b726ffa957df3db34f"
+			},
+			"left_card_hash": "cc36afd441f26fb7020d64158b674a73737b5d05803ee40fbc7a46308b87c724",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "54df14aab041184fc77fc75ca297b922768b9de5bae8e3cced078f1f33989c5e",
+			"video_memory": 34689081.0,
+			"zoom": 1.0
+		},
+		{
+			"artwork": {
+				"art_fr_Raoult0": {
+					"rect": [
+						602,
+						185,
+						74,
+						57
+					],
+					"side": 0
+				},
+				"fr_14": {
+					"rect": [
+						523,
+						414,
+						74,
+						57
+					],
+					"side": 0
+				},
+				"fr_15": {
+					"rect": [
+						523,
+						231,
+						74,
+						57
+					],
+					"side": 0
+				},
+				"fr_16": {
+					"rect": [
+						760,
+						94,
+						74,
+						57
+					],
+					"side": 0
+				},
+				"fr_17": {
+					"rect": [
+						760,
+						185,
+						74,
+						57
+					],
+					"side": 0
+				},
+				"fr_18": {
+					"rect": [
+						681,
+						231,
+						74,
+						57
+					],
+					"side": 0
+				},
+				"fr_4": {
+					"rect": [
+						602,
+						459,
+						74,
+						57
+					],
+					"side": 0
+				},
+				"fr_7": {
+					"rect": [
+						839,
+						140,
+						74,
+						57
+					],
+					"side": 0
+				}
+			},
+			"case": "detail",
+			"draw_calls": 1918.0,
+			"focus": [
+				867.0,
+				706.6767578125
+			],
+			"force_strips": {
+				"art_fr_Raoult0": "f9a2856cd409d55449b7cfd3631ecc90bcb3c729400b4bea61a619c2cb522c35",
+				"fr_14": "b896924b4ef579933e6dfc4f320bd52bf5e462680361480fd3f8b4ae95f31eb1",
+				"fr_15": "baaf6e0d39cee135a807378ea7f01230c6a04dbb591046ecff5fda5cb818a495",
+				"fr_16": "6aa78a498cf69ddcae8425ccabe9f133465b0d698eeb413d5e7d166f9a618376",
+				"fr_17": "9827bbe4e8a226c82686ac8c72912803bb561caacb5ce64b7d24c421a08fa59e",
+				"fr_18": "f9a2856cd409d55449b7cfd3631ecc90bcb3c729400b4bea61a619c2cb522c35",
+				"fr_4": "f9a2856cd409d55449b7cfd3631ecc90bcb3c729400b4bea61a619c2cb522c35",
+				"fr_7": "a9a956b8589515454a041e9668e7aa38fce3fdd116d9efd1241d688189335098"
+			},
+			"left_card_hash": "cd4974ad332de61ab1ee8db8c489de0834f23a07ba073d28b8bcba828a7ad1a2",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "5c78513f6e207475c2d2020f217a870c77651c27d5613b750433c7fa742c5586",
+			"video_memory": 35037949.0,
+			"zoom": 1.55
+		},
+		{
+			"artwork": {
+				"art_fr_Ducrot0": {
+					"rect": [
+						319,
+						321,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"art_fr_Pellé0": {
+					"rect": [
+						612,
+						287,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"fr_1": {
+					"rect": [
+						377,
+						354,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"fr_10": {
+					"rect": [
+						729,
+						354,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"fr_2": {
+					"rect": [
+						319,
+						388,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"fr_3": {
+					"rect": [
+						377,
+						422,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"fr_4": {
+					"rect": [
+						377,
+						287,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"fr_5": {
+					"rect": [
+						436,
+						388,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"fr_6": {
+					"rect": [
+						671,
+						388,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"fr_7": {
+					"rect": [
+						612,
+						354,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"fr_8": {
+					"rect": [
+						671,
+						456,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"fr_9": {
+					"rect": [
+						671,
+						321,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"qg_fr_Ducrot": {
+					"rect": [
+						319,
+						456,
+						55,
+						42
+					],
+					"side": 0
+				},
+				"qg_fr_Pellé": {
+					"rect": [
+						612,
+						422,
+						55,
+						42
+					],
+					"side": 0
+				}
+			},
+			"case": "deplacement",
+			"draw_calls": 1794.0,
+			"focus": [
+				561.0,
+				824.456176757812
+			],
+			"force_strips": {
+				"art_fr_Ducrot0": "8e14c41b4c328ec34e472d323dc1945c2500e7859eceaafedb4bff8f3e12f5d6",
+				"art_fr_Pellé0": "e0d826ac0519a4747cb4d6d1896ece02b0190b5f2b93f059e34a01f96eb122b2",
+				"fr_1": "8061a4672868d9ffc182fa241be0adcf0c8c7465b14c24044ecf80e679adbe37",
+				"fr_10": "3224327427b8c712a9ba3d2738fd46ddcf7532ee98069c082aa44bf2d035f1fa",
+				"fr_2": "de5d88e1ed263448e6277e4fd7bc18bd76861c79723f965fc1a18c9c4cee4203",
+				"fr_3": "c8dcc616769c310bc27505fe1c72757f873295c9acadd1b42468bbf1a6406853",
+				"fr_4": "de10564c489613c50398f276af5ecd8de9cdde59199249fc926e5cbf5df37b21",
+				"fr_5": "98316eebfee899ed19b35697f042213b7011a03de1d9ece23750b92d391ac8c6",
+				"fr_6": "3039282d258e8aaf0c2cb7c3633ae0b77f1b4b2024c4bdf98d6b185e65fe9c0e",
+				"fr_7": "8287a2a16149483b426afd10bba7b8ad94729c56c10ec18b7517693bf96b4662",
+				"fr_8": "6e9701f042815dcffd6e9853329da3fabbc8110fdccc173b1d0f08a3f4b60b12",
+				"fr_9": "d1dc461d3051207f1659e58cab996350b32f88ab0431aaf3a0b1b3af85dfa398",
+				"qg_fr_Ducrot": "2d53b0c8dcf6ef112d0e26b011574b5e1779f4fb00fe130e078b8d27d94d3f31",
+				"qg_fr_Pellé": "41d437e49bef1e6340b5f507bc1da54009723a06cdcfd13a798306b0e98938cb"
+			},
+			"left_card_hash": "1cbedc8b804cfc215022c5ea42616f6ebbdfadaec2f34df330873c6fbfa34acb",
+			"left_card_rect": [
+				12.0,
+				546.0,
+				486.0,
+				168.0
+			],
+			"png_error": 0,
+			"size": [
+				1280,
+				720
+			],
+			"state_hash": "316fac4ca28fa7c0c6d812cfa1e274dca5a034507f3f064b4c57bde6b53e8f2e",
+			"video_memory": 35616885.0,
+			"zoom": 1.15
+		}
+	]
+}

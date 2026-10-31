@@ -1,28 +1,26 @@
-# Essai graphique № 11 — coche en haut à droite
+# Essai graphique № 12 — lisibilité des pions, carte, fiche et journal
 
-Version `0.8.43.15-g2d11`, 31 octobre 2026. Branche `v43-graphismes-2d-experimental`, base essai 10 (`76e96df`). Stable/main et essai 10 préservés dans leurs commits et livraisons.
+Version `0.8.43.15-g2d12`, 31 octobre 2026. Branche `v43-graphismes-2d-experimental`, base essai 11 (`914265f`). Essais précédents conservés dans leurs commits/livraisons ; stable/main préservées.
 
-## Changement demandé
+## Quatre retouches approuvées
 
-La coche de fin d’action passe du milieu droit au coin supérieur droit du pion : centre local `(18, -18)` au lieu de `(9, 3)`, multiplié par le zoom existant. Même dessin, même taille, mêmes couleurs et mêmes conditions d’affichage. Elle reste dans les dimensions du pion, au-dessus de la force et à l’opposé du marqueur de désorganisation. Aucun numéro d’unité réintroduit.
+1. **Pions** : même disque de rayon 7,4 unités de dessin, mêmes bordures fines et emplacements fixes pour les états. Coche en haut à droite `(18,-18)`, désorganisation D ou déroute » en haut à gauche `(-18,-18)`, retranchement à droite `(18,3)`. Le chiffre de force reste en bas. Les illustrations historiques et la distinction une/deux silhouettes sont conservées. Les contacts ennemis utilisent toujours exclusivement les états connus autorisés ; aucun nouvel indicateur ennemi.
+2. **Carte au dézoom** : illustrations de forêts et villages adoucies progressivement entre les zooms 0,45 et 0,95. Un seul petit atlas 192 × 128, dérivé une fois au démarrage des illustrations existantes, est réutilisé. Les mêmes contours d’hexagones, couleurs de fond, routes, rivière, ponts, relief, localités et coordonnées sont conservés. À partir du zoom 0,95, les décors détaillés précédents sont identiques. Pas d’éclairage, de shader coûteux ou de nouvelle dépendance.
+3. **Fiche d’unité** : surbrillance or discrète de 0,85 seconde sur les effectifs, les PA et l’état moral lorsqu’une valeur déjà affichée change pour la même unité du joueur. Première consultation, changement d’unité, chargement d’une partie et fiche ennemie ne déclenchent aucun signal. L’effet est décoratif, sans interception tactile ni déplacement de texte ; il s’arrête sans interrogation continue de l’état du jeu. Les couleurs tactiques et les mots restent lisibles.
+4. **Journal** : fin liseré coloré à gauche des entrées et icônes coordonnées. Combats terre cuite, redditions ivoire, objectifs or, renforts bleu clair. Les intitulés, icônes, textes, filtres, horaires, informations connues et défilement restent présents : la couleur n’est jamais la seule indication.
 
-La coche signifie toujours qu’aucune action active légale accessible ne reste, même avec 0,5 PA ou un autre budget positif. Aucun PA retiré ou `done` forcé ; elle peut disparaître lorsqu’un passage se libère. Les ripostes restent inchangées.
+## Conservation du jeu
 
-Le journal de l’essai 10 conserve ses cinq filtres fonctionnels : Tous, Combats, Redditions, Objectifs et Renforts, son défilement tactile et ses restrictions de brouillard. Tous les autres graphismes et commandes restent ceux de l’essai 10.
+Aucun changement de moteur, IA Normal/Difficile, règles, scénarios, géographie, renforts, sauvegardes ou animations de combat. Charge 2 PA, ripostes, commandement/ravitaillement, isolement/reddition, QG Raoult, variante B, 20 tours, objectifs 3/2/1 et score 60/20/20 conservés. Aucun bouton TIRER. La coche conserve exactement sa logique de l’essai 10 : aucune action active légale disponible, même avec PA restants ; une possibilité retrouvée fait disparaître la coche.
 
-## Périmètre
+Bandeau supérieur, cadre horaire centré, dimensions et disposition de la fiche inférieure gauche et des commandes centrales conservés. Aucun bouton ajouté, supprimé, renommé ou déplacé.
 
-Une seule modification de rendu : `war_engine/presentation/graphics2d_art.gd`, fonction `action_check`. Métadonnées de l’essai 11 dans `project.godot`, `export_presets.cfg` et le badge de `packs/1870/fr.json`. Rapports, liste des fichiers et captures actualisés. Aucun changement au moteur, à l’IA, aux scènes, données de bataille, disponibilité des actions, sauvegardes ou animations.
+## Installation et sources
 
-## Livraison
+Installer `1870_V43_Graphismes_2D_Experimental_12.apk` par-dessus l’essai précédent **sans désinstaller**, pour conserver la partie. Même application expérimentale, paquet et certificat ; code Android 12. Application stable séparée. Aucune intégration à main.
 
-- `1870_V43_Graphismes_2D_Experimental_11.apk`.
-- `1870_V43_Graphismes_2D_Experimental_11_Sources.zip` : code et ressources complets du jeu, tests, rapports, preuves actuelles ; anciens dossiers de captures 1 à 10 non dupliqués. Aucun cache ni fichier de compilation inclus.
-- Galerie comparative : `captures/graphismes2d11/README.md`.
-- Résultats : `TESTS_GRAPHISMES_2D.md`.
+Archive `1870_V43_Graphismes_2D_Experimental_12_Sources.zip` : code complet, ressources, tests, rapports et preuves courantes ; caches/compilations exclus, anciennes galeries 1 à 11 non dupliquées, toujours disponibles dans les livraisons précédentes. Galerie : `captures/graphismes2d12/README.md`. Résultats : `TESTS_GRAPHISMES_2D.md`. Liste complète : `FICHIERS_GRAPHISMES_2D.txt`.
 
-Installer par-dessus l’essai précédent **sans désinstaller**, pour conserver sa partie. Paquet `org.woerth1870.prototype.graphics2dexp`, même certificat de développement, code Android 11. Application stable séparée ; aucune intégration à main.
+## Validation et limites
 
-## Limites
-
-Captures réelles sous Godot 4.5.1/Linux dans des états synthétiques, vérifications automatisées et signature APK contrôlées. Aucun test sur appareil physique ou émulateur Android. Les suggestions d’amélioration d’interface ne sont pas intégrées à cet essai.
+5 006 assertions distinctes dans la campagne ciblée, captures réelles Godot 4.5.1/Linux, APK compilé et signature vérifiée. Aucun essai physique ou émulateur Android, aucune nouvelle simulation complète de bataille. Les mesures de rendu logiciel jointes ne valident pas la fluidité sur smartphone. Archive indépendante : voir le rapport de tests.

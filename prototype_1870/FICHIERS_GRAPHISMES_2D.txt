@@ -1,7 +1,7 @@
 Fichiers depuis V43.15 stable (34d8f73)
-Essai 11 : coche en haut à droite, métadonnées et preuves actualisées.
-Comparaison essai 10 : uniquement position du dessin action_check, aucun autre comportement.
-Core/IA/plateforme/scènes/règles et sauvegardes inchangés. Anciennes galeries non dupliquées dans le ZIP.
+Essai 12 : marqueurs harmonisés, décors adoucis au dézoom, surbrillance décorative de la fiche, repères colorés du journal.
+Depuis essai 11 : seuls graphics2d_art, map_view, hud_details et journal_view modifiés dans le rendu ; métadonnées, test et rapports actualisés.
+Moteur/IA/plateforme/scènes/données et animations de combat inchangés. Anciennes galeries 1 à 11 non dupliquées dans le ZIP.
 
 A	FICHIERS_GRAPHISMES_2D.txt
 A	GRAPHISMES_2D_EXPERIMENTAL.md
@@ -102,6 +102,25 @@ A	captures/graphismes2d10/preuves/performance.json
 A	captures/graphismes2d10/preuves/regression.json
 A	captures/graphismes2d10/preuves/render.json
 A	captures/graphismes2d10/preuves/source_integrity.json
+A	captures/graphismes2d11/README.md
+A	captures/graphismes2d11/avant_coche_05_0.png
+A	captures/graphismes2d11/avant_coche_05_1.png
+A	captures/graphismes2d11/avant_coche_05_2.png
+A	captures/graphismes2d11/coche_05_0.png
+A	captures/graphismes2d11/coche_05_1.png
+A	captures/graphismes2d11/coche_05_2.png
+A	captures/graphismes2d11/coche_etats_zoom_0.6.png
+A	captures/graphismes2d11/coche_etats_zoom_1.0.png
+A	captures/graphismes2d11/coche_etats_zoom_2.3.png
+A	captures/graphismes2d11/preuves/apk_badging.txt
+A	captures/graphismes2d11/preuves/apk_info.json
+A	captures/graphismes2d11/preuves/apk_signature.txt
+A	captures/graphismes2d11/preuves/archive_smoke.json
+A	captures/graphismes2d11/preuves/capture_check11.gd
+A	captures/graphismes2d11/preuves/render_dummy.log
+A	captures/graphismes2d11/preuves/results.json
+A	captures/graphismes2d11/preuves/scope.json
+A	captures/graphismes2d11/preuves/source_integrity.json
 A	captures/graphismes2d2/README.md
 A	captures/graphismes2d2/after/detail.png
 A	captures/graphismes2d2/after/engagement.png
@@ -521,22 +540,45 @@ M	war_engine/presentation/main.gd
 M	war_engine/presentation/map_view.gd
 A	war_engine/presentation/unit_availability.gd
 A	war_engine/presentation/unit_availability.gd.uid
-A	captures/graphismes2d11/README.md
-A	captures/graphismes2d11/avant_coche_05_0.png
-A	captures/graphismes2d11/avant_coche_05_1.png
-A	captures/graphismes2d11/avant_coche_05_2.png
-A	captures/graphismes2d11/coche_05_0.png
-A	captures/graphismes2d11/coche_05_1.png
-A	captures/graphismes2d11/coche_05_2.png
-A	captures/graphismes2d11/coche_etats_zoom_0.6.png
-A	captures/graphismes2d11/coche_etats_zoom_1.0.png
-A	captures/graphismes2d11/coche_etats_zoom_2.3.png
-A	captures/graphismes2d11/preuves/apk_badging.txt
-A	captures/graphismes2d11/preuves/apk_info.json
-A	captures/graphismes2d11/preuves/apk_signature.txt
-A	captures/graphismes2d11/preuves/archive_smoke.json
-A	captures/graphismes2d11/preuves/capture_check11.gd
-A	captures/graphismes2d11/preuves/render_dummy.log
-A	captures/graphismes2d11/preuves/results.json
-A	captures/graphismes2d11/preuves/scope.json
-A	captures/graphismes2d11/preuves/source_integrity.json
+A	captures/graphismes2d12/README.md
+A	captures/graphismes2d12/after/deplacement.png
+A	captures/graphismes2d12/after/detail.png
+A	captures/graphismes2d12/after/engagement.png
+A	captures/graphismes2d12/after/isolement.png
+A	captures/graphismes2d12/after/overview.png
+A	captures/graphismes2d12/after/prussiens.png
+A	captures/graphismes2d12/before/deplacement.png
+A	captures/graphismes2d12/before/detail.png
+A	captures/graphismes2d12/before/engagement.png
+A	captures/graphismes2d12/before/isolement.png
+A	captures/graphismes2d12/before/overview.png
+A	captures/graphismes2d12/before/prussiens.png
+A	captures/graphismes2d12/coche_05_0.png
+A	captures/graphismes2d12/coche_05_1.png
+A	captures/graphismes2d12/coche_05_2.png
+A	captures/graphismes2d12/coche_etats_zoom_0.6.png
+A	captures/graphismes2d12/coche_etats_zoom_1.0.png
+A	captures/graphismes2d12/coche_etats_zoom_2.3.png
+A	captures/graphismes2d12/fiche_apres.png
+A	captures/graphismes2d12/fiche_avant.png
+A	captures/graphismes2d12/fiche_pendant.png
+A	captures/graphismes2d12/journal_all.png
+A	captures/graphismes2d12/journal_combat.png
+A	captures/graphismes2d12/journal_objective.png
+A	captures/graphismes2d12/journal_reinforcement.png
+A	captures/graphismes2d12/journal_surrender.png
+A	captures/graphismes2d12/preuves/after_metrics.json
+A	captures/graphismes2d12/preuves/apk_badging.txt
+A	captures/graphismes2d12/preuves/apk_info.json
+A	captures/graphismes2d12/preuves/apk_signature.txt
+A	captures/graphismes2d12/preuves/archive_smoke.json
+A	captures/graphismes2d12/preuves/before_metrics.json
+A	captures/graphismes2d12/preuves/capture_markers.gd
+A	captures/graphismes2d12/preuves/checks.json
+A	captures/graphismes2d12/preuves/feedback_render.log
+A	captures/graphismes2d12/preuves/journal_render.log
+A	captures/graphismes2d12/preuves/markers_final.log
+A	captures/graphismes2d12/preuves/source_integrity.json
+A	captures/graphismes2d12/preuves/tiles.log
+A	tests/graphics/test_feedback12.gd
+A	tests/graphics/test_feedback12.gd.uid

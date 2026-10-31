@@ -13,9 +13,14 @@ var clock_panel: Panel
 var clock_icon: TextureRect
 var cues: Dictionary={}
 var help_targets: Dictionary={}
+const FEEDBACK_SECONDS=0.85
+var feedback_unit=""
+var feedback_values: Dictionary={}
+var feedback_pulses: Dictionary={}
 
 func prepare():
 	mouse_filter=Control.MOUSE_FILTER_IGNORE
+	set_process(false)
 	for n in range(game.header_buttons.size()):
 		var b=game.header_buttons[n]
 		var original_size=b.size
@@ -113,7 +118,29 @@ func update_details():
 		if help_targets[topic].visible:
 			help_targets[topic].position=Vector2(maxf(game.unit_card.position.x,p.x-20),p.y-14)
 			help_targets[topic].tooltip_text=fields[topic].text+" — Toucher pour une explication"
+	update_feedback()
 	queue_redraw()
+
+func update_feedback():
+	# Compare only the currently displayed own card. No hidden or off-screen values.
+	var e=game.engine
+	var n=game.target if e!=null and e.alive(game.target) else game.selected
+	if not game.playing or e==null or not e.alive(n) or int(e.state.units[n].side)!=int(e.state.human_side) or game.unit_ap.text.is_empty():
+		feedback_unit="";feedback_values.clear();feedback_pulses.clear();set_process(false);return
+	var token=str(e.get_instance_id())+":"+str(e.state.units[n].id)
+	var values={"strength":game.unit_info.text,"ap":game.unit_ap.text,"morale":game.unit_state.text}
+	if token!=feedback_unit:
+		feedback_unit=token;feedback_values=values;feedback_pulses.clear();set_process(false);return
+	for key in values:
+		if values[key]!=feedback_values.get(key,values[key]) and not values[key].is_empty():feedback_pulses[key]=FEEDBACK_SECONDS
+	feedback_values=values;set_process(not feedback_pulses.is_empty())
+
+func _process(delta: float):
+	for key in feedback_pulses.keys():
+		feedback_pulses[key]=maxf(0,feedback_pulses[key]-delta)
+		if feedback_pulses[key]<=0:feedback_pulses.erase(key)
+	queue_redraw()
+	if feedback_pulses.is_empty():set_process(false)
 
 func mark_position(field: Label,right_column: bool) -> Vector2:
 	var p=Vector2(30,field.position.y+field.size.y/2)
@@ -150,6 +177,12 @@ func mark(field: Label,color: Color,kind: String,right_column=false):
 
 func _draw():
 	if cues.is_empty():return
+	var fields={"strength":game.unit_info,"ap":game.unit_ap,"morale":game.unit_state}
+	for key in feedback_pulses:
+		var field=fields[key];var fade=smoothstep(0.0,FEEDBACK_SECONDS,float(feedback_pulses[key]))
+		var rect=Rect2(field.position+Vector2(0,1),field.size-Vector2(0,2))
+		draw_rect(rect,Color(1.0,0.85,0.53,0.11*fade))
+		draw_line(Vector2(rect.position.x,rect.end.y),rect.end,Color(1.0,0.85,0.53,0.9*fade),2,true)
 	draw_line(Vector2(22,35),Vector2(game.unit_card.position.x+game.unit_card.size.x-12,35),Color("72847a55"),1,true)
 	draw_line(Vector2(22,68),Vector2(game.unit_card.position.x+game.unit_card.size.x-12,68),Color("9bb7ac44"),1,true)
 	mark(game.unit_state,cues.morale,"morale")

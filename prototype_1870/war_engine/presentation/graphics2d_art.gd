@@ -9,19 +9,25 @@ const FIGURE_RECTS={
  "forest_road":Rect2(0,705,383,319),"village_0":Rect2(385,686,382,338),
  "village_1":Rect2(769,717,382,307),"village_2":Rect2(1153,708,383,316)}
 static var regions: Dictionary={}
+static var distant_decor: Texture2D
 static func prepare():
  if not regions.is_empty():return
  for name in FIGURE_RECTS:
   var t=AtlasTexture.new();t.atlas=FIGURES;t.region=FIGURE_RECTS[name];t.filter_clip=true;regions[name]=t
+ # One small reusable image, sampled once at startup. Historical artwork is retained.
+ var distant=FIGURES.get_image()
+ if distant.is_compressed():distant.decompress()
+ distant.resize(192,128,Image.INTERPOLATE_LANCZOS)
+ distant_decor=ImageTexture.create_from_image(distant)
 static func ground_rect(n: int) -> Rect2:
  return Rect2((n%4)*384,(n/4)*1024.0/3.0,384,1024.0/3.0)
-static func paint_hex(view,texture: Texture2D,region: Rect2,p: Vector2,z: float,tint: Color=Color.WHITE,mirror: bool=false):
+static func paint_hex(view,texture: Texture2D,region: Rect2,p: Vector2,z: float,tint: Color=Color.WHITE,mirror: bool=false,gutter: float=3.0):
  var polygon=view.hexagon(p,view.R*z);var uv=PackedVector2Array()
  var extent=Vector2(view.R*2,view.R*sqrt(3.0))*z
  for vertex in polygon:
   var relative=(vertex-p)/extent+Vector2(0.5,0.5)
   if mirror:relative.x=1.0-relative.x
-  uv.append((region.position+Vector2(3,3)+relative*(region.size-Vector2(6,6)))/Vector2(texture.get_size()))
+  uv.append((region.position+Vector2.ONE*gutter+relative*(region.size-Vector2.ONE*gutter*2))/Vector2(texture.get_size()))
  view.draw_polygon(polygon,PackedColorArray([tint]),uv,texture)
 static func terrain_style(terrain: String) -> int:
  # Exactly one unmirrored material per terrain type; altitude remains public shading.
@@ -44,9 +50,18 @@ static func decor(view,terrain: String,index: int,p: Vector2,z: float,road: bool
  if terrain=="forest":key="forest_0"
  elif terrain=="village":key="village_"+str(index%3)
  if not key.is_empty():
-  # The same transparent artwork provides a light underpainting, lifting shadows.
-  paint_hex(view,FIGURES,FIGURE_RECTS[key],p,z,Color(8,8,8))
+  # Public decor only: smooth detail reduction, with terrain boundaries unchanged.
+  var detail=smoothstep(0.45,0.95,z)
   var tint=Color(1.28,1.30,1.18,0.75) if terrain=="forest" else Color(1.10,1.10,1.08,0.90)
+  if detail<1.0:
+   var small=Rect2(FIGURE_RECTS[key].position/8.0,FIGURE_RECTS[key].size/8.0)
+   paint_hex(view,distant_decor,small,p,z,Color(8,8,8,1.0-detail),false,0.375)
+   var distant_tint=tint;distant_tint.a*=(1.0-detail)*0.85
+   paint_hex(view,distant_decor,small,p,z,distant_tint,false,0.375)
+  if detail<=0.0:return
+  # The same transparent artwork provides a light underpainting, lifting shadows.
+  paint_hex(view,FIGURES,FIGURE_RECTS[key],p,z,Color(8,8,8,detail))
+  tint.a*=detail
   paint_hex(view,FIGURES,FIGURE_RECTS[key],p,z,tint)
 static func infantry_figures(strength: int) -> int:
  return 2 if strength>=2000 else 1
@@ -72,9 +87,22 @@ static func movement_marker(view,p: Vector2,z: float):
 static func action_check(view,p: Vector2,z: float):
  # Reserved top-right corner: clear of force strip, morale badge and entrenchment.
  var center=p+Vector2(18,-18)*z
- view.draw_circle(center,7.4*z,Color("10272e"))
- view.draw_arc(center,7.4*z,0,TAU,20,Color("d7dfc5"),maxf(.5,.8*z),true)
+ status_disc(view,center,z,Color("d7dfc5"))
  view.draw_polyline(PackedVector2Array([center+Vector2(-3,0)*z,center+Vector2(-1,2.5)*z,center+Vector2(4,-3)*z]),Color("fff4d7"),maxf(.9,1.8*z),true)
+static func status_disc(view,center: Vector2,z: float,ink: Color):
+ view.draw_circle(center,7.4*z,Color("10272e"))
+ view.draw_arc(center,7.4*z,0,TAU,20,ink,maxf(.5,.8*z),true)
+static func condition_badge(view,center: Vector2,z: float,kind: String):
+ var ink=Color("f08078") if kind=="routed" else Color("edc77b")
+ status_disc(view,center,z,ink)
+ if kind=="entrenched":
+  view.draw_rect(Rect2(center+Vector2(-2,-5)*z,Vector2(4,3)*z),ink,false,maxf(.6,z))
+  view.draw_line(center+Vector2(0,-2)*z,center+Vector2(0,2)*z,ink,maxf(.7,1.4*z),true)
+  view.draw_colored_polygon(PackedVector2Array([center+Vector2(-3,1)*z,center+Vector2(3,1)*z,center+Vector2(3,4)*z,center+Vector2(0,6)*z,center+Vector2(-3,4)*z]),Color("fff2c8"))
+ else:
+  var text="»" if kind=="routed" else "D";var font_size=maxi(6,int(13*z))
+  var extent=view.COUNTER_FONT.get_string_size(text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size)
+  view.draw_string(view.COUNTER_FONT,center+Vector2(-extent.x/2,4*z),text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size,ink)
 static func selection_brackets(view,p: Vector2,z: float):
  # Outside the unchanged red/green tactical rectangle; never cover the force strip.
  for sx in [-1,1]:

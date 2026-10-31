@@ -1,3 +1,28 @@
+# Essai graphique 2D № 12 — lisibilité des pions et de l’interface
+
+Version `0.8.43.15-g2d12`, base essai 11. Quatre retouches visuelles approuvées :
+
+- Marqueurs de même taille et emplacements fixes : coche en haut à droite, D/déroute en haut à gauche, retranchement à droite ; force préservée.
+- Forêts et villages adoucis progressivement au dézoom, mêmes illustrations et détails conservés de près.
+- Surbrillance discrète de 0,85 seconde lorsqu’un effectif, des PA ou l’état moral affiché de la même unité du joueur change.
+- Fin liseré et icônes colorés par catégorie dans le journal ; cinq filtres et informations connues conservés.
+
+**[Télécharger l’APK de l’essai 12](https://raw.githubusercontent.com/ratapignata/campagne-1870/v43-graphismes-2d-experimental/experiments/graphismes-2d/essai-12/1870_V43_Graphismes_2D_Experimental_12.apk)** · [Sources complètes ZIP](experiments/graphismes-2d/essai-12/1870_V43_Graphismes_2D_Experimental_12_Sources.zip) · [Captures avant/après](prototype_1870/captures/graphismes2d12/README.md).
+
+[Rapport](experiments/graphismes-2d/essai-12/GRAPHISMES_2D_EXPERIMENTAL.md) · [Tests réellement exécutés](experiments/graphismes-2d/essai-12/TESTS_GRAPHISMES_2D.md) · [Fichiers modifiés](experiments/graphismes-2d/essai-12/FICHIERS_GRAPHISMES_2D.txt).
+
+**Installer par-dessus l’essai précédent sans le désinstaller pour conserver sa partie.** Même paquet expérimental et certificat, code Android 12. La stable reste sur main, séparée, sans aucune intégration de cet essai.
+
+Disposition et dimensions des bandeaux, règles, IA, sauvegardes et animations de combat conservées. Aucun bouton TIRER ou autre commande de jeu ajouté. **5 006 assertions distinctes réussies**, captures réelles Godot 4.5.1/Linux, source extraite et vérifiée indépendamment, APK compilé et signature vérifiée. Aucun essai physique ou émulateur Android ; aucun gain de fluidité Android revendiqué.
+
+![Marqueurs harmonisés, force conservée](prototype_1870/captures/graphismes2d12/coche_etats_zoom_2.3.png)
+
+![Journal avec repères colorés](prototype_1870/captures/graphismes2d12/journal_all.png)
+
+---
+
+# Archive — essai 11
+
 # Essai graphique 2D № 11 — coche en haut à droite
 
 Version `0.8.43.15-g2d11`. La coche occupe maintenant le coin supérieur droit du pion, sans masquer le chiffre de force. Même taille, couleur et logique de disponibilité que dans l’essai 10. Journal filtré et toutes les autres fonctions conservés.
