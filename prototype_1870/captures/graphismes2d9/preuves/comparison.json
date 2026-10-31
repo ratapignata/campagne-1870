@@ -1,0 +1,50 @@
+[
+  {
+    "case": "overview",
+    "map_and_footer_pixel_identical": true,
+    "state_identical": true,
+    "strength_strips": 14
+  },
+  {
+    "case": "engagement",
+    "map_and_footer_pixel_identical": true,
+    "state_identical": true,
+    "strength_strips": 13
+  },
+  {
+    "case": "prussiens",
+    "map_and_footer_pixel_identical": true,
+    "state_identical": true,
+    "strength_strips": 21
+  },
+  {
+    "case": "isolement",
+    "map_and_footer_pixel_identical": true,
+    "state_identical": true,
+    "strength_strips": 20
+  },
+  {
+    "case": "detail",
+    "map_and_footer_pixel_identical": true,
+    "state_identical": true,
+    "strength_strips": 8
+  },
+  {
+    "case": "deplacement",
+    "map_and_footer_pixel_identical": true,
+    "state_identical": true,
+    "strength_strips": 14
+  },
+  {
+    "case": "trajet",
+    "map_and_footer_pixel_identical": true,
+    "state_identical": true,
+    "strength_strips": 10
+  },
+  {
+    "case": "selection_isolee",
+    "map_and_footer_pixel_identical": true,
+    "state_identical": true,
+    "strength_strips": 21
+  }
+]

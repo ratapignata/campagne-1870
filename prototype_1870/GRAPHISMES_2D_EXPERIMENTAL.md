@@ -1,25 +1,15 @@
-# Essai graphique № 8 — caractères du bandeau supérieur agrandis
+# Essai graphique № 9 — cadre horaire centré
 
-Version `0.8.43.15-g2d8`, 31 octobre 2026, branche `v43-graphismes-2d-experimental`. Essai 7 conservé au commit source `857308c` et dans ses livraisons ; V43.15 stable/main préservées.
+Version `0.8.43.15-g2d9`, 31 octobre 2026. Branche `v43-graphismes-2d-experimental`. Essai 8 conservé au commit source `a6b1e9b` et dans ses livraisons ; stable/main préservées.
 
-## Demande et résultat
+Le cadre heure/tours a désormais le même centre vertical que Journal, Aide et Menu : 47 pixels logiques, au lieu de 61. Son centrage est calculé à partir de la position et de la hauteur du bouton Journal. Le cadre reste haut de 36 pixels, les boutons de 50 ; leurs centres coïncident.
 
-Heure et tours : police 20 → 24 (+20 %). Journal, Aide et Menu : 17 → 22 (+29 %), pictogrammes 16 → 18. Les trois boutons s’élargissent horizontalement à 130/110/116 pixels logiques et le cartouche horaire à 332 pixels, sans augmenter la hauteur du bandeau (92 pixels). Camp et cartouche restent séparés. Titre historique conservé.
+Le cadre est légèrement décalé à droite et sa largeur ajustée à 310 pixels pour dégager le titre. Le titre conserve sa police et ses caractères ; seule sa boîte vide est resserrée. Heure/tours restent en 24, Journal/Aide/Menu en 22, avec les mêmes textes, boutons et fonctions. Pas de perte de place pour la carte : bandeau supérieur 92, inférieur 180, carte 448 pixels à 1280 × 720.
 
-Même contenu, mêmes callbacks et fonctions. Aucun bouton d’action ajouté. Le bandeau inférieur reste à 180 pixels et la carte à 448 pixels de haut à 1280 × 720. La carte, les pions, leur luminosité, les cadres tactiques, le trajet préparé, les aides tactiles et la fiche de l’essai 7 sont préservés. Huit comparaisons confirment l’identité exacte de tous les pixels sous l’en-tête.
+Carte, pions, luminosité, fiche, aides tactiles, actions, IA Normal/Difficile, charge 2 PA, ripostes, commandement/ravitaillement, isolement/reddition, 20 tours, score 60/20/20, objectifs/pondérations, effectifs/renforts, variante B, QG Raoult, brouillard, sauvegardes et animations inchangés. Aucun bouton TIRER. Les huit vues comparées ont exactement les mêmes pixels sous l’en-tête que l’essai 8.
 
-IA Normal/Difficile, combat, charge 2 PA, ripostes, variante B, isolement/reddition, commandement/ravitaillement, 20 tours, score 60/20/20, objectifs/pondérations, effectifs/renforts, QG Raoult, brouillard, sauvegardes et animations inchangés. Aucun bouton TIRER.
+Installer `1870_V43_Graphismes_2D_Experimental_09.apk` par-dessus l’essai précédent, **sans le désinstaller**. Même application « 1870 · Essai graphique 2D », même paquet expérimental, même certificat ; code Android 9. Sauvegardes des essais 1 à 8 relues/réécrites sans perte, originaux préservés. Stable et partie stable séparées, sans transfert automatique.
 
-## Installation et sources
+Sources complètes du jeu et galerie courante incluses. Anciennes galeries 1 à 8 non dupliquées dans le ZIP, toujours disponibles dans GitHub/historique. Aucun fichier nécessaire au jeu omis ; caches et compilations exclus. Galerie : `captures/graphismes2d9/README.md`. Tests : `TESTS_GRAPHISMES_2D.md`. Fichiers : `FICHIERS_GRAPHISMES_2D.txt`.
 
-Installer `1870_V43_Graphismes_2D_Experimental_08.apk` par-dessus l’essai précédent, **sans le désinstaller**, pour conserver sa partie. Même application « 1870 · Essai graphique 2D », même paquet `org.woerth1870.prototype.graphics2dexp`, même certificat, code Android 8. Les sauvegardes des essais 1 à 7 se rechargent/réécrivent sans perte ; les originaux restent intacts. Application stable et sauvegarde stable séparées, sans transfert automatique.
-
-ZIP complet du jeu : scripts, scènes, ressources, tests, rapports et galerie courante. Anciennes galeries 1 à 7 omises pour éviter la duplication ; elles restent dans l’historique et les anciennes livraisons GitHub. Aucun fichier nécessaire au jeu omis ; caches et compilations exclus.
-
-Galerie : `captures/graphismes2d8/README.md`. Tests : `TESTS_GRAPHISMES_2D.md`. Fichiers : `FICHIERS_GRAPHISMES_2D.txt`.
-
-## Vérification et limites
-
-5 971 assertions finales réussies. Trois tailles logiques testées : 1280 × 606, 1280 × 720, 1520 × 720 ; deux camps, deux phases, tours 1 à 20 et affichage final. APK compilé/signature vérifiée. Captures réelles sous Godot 4.5.1 ; aucun test physique ou émulateur Android. Les fenêtres d’aide/journal existantes ne sont pas redessinées dans cette étape. Aucune intégration dans main avant validation visuelle.
-
-Pour une étape ultérieure : réglage de taille du texte dans le menu et filtres du journal. Ce sont des propositions, pas des fonctions ajoutées à cet essai.
+3 369 assertions finales réussies, APK compilé et signature vérifiée. Captures Godot 4.5.1/Linux ; aucun test physique ou émulateur Android. Aucune intégration à main avant validation visuelle.

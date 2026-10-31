@@ -31,7 +31,7 @@ func prepare():
 	game.header.add_child(clock_panel);game.header.move_child(clock_panel,1)
 	clock_icon=TextureRect.new();clock_icon.texture=CLOCK;clock_icon.mouse_filter=Control.MOUSE_FILTER_IGNORE
 	clock_icon.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
-	clock_panel.add_child(clock_icon);clock_icon.position=Vector2(10,9);clock_icon.size=Vector2(18,18)
+	clock_panel.add_child(clock_icon);clock_icon.position=Vector2(8,9);clock_icon.size=Vector2(18,18)
 	for topic in ["morale","ammo","reaction","command","supply"]:
 		var area=Control.new();area.name="Help_"+topic;area.mouse_filter=Control.MOUSE_FILTER_STOP
 		area.mouse_default_cursor_shape=Control.CURSOR_POINTING_HAND;area.size=Vector2(44,28)
@@ -87,8 +87,10 @@ func link_color(field: Label,command: bool) -> Color:
 func update_details():
 	# Keep the original row spacing, card height and every control rectangle.
 	size=game.footer.size
-	clock_panel.position=Vector2(game.header_buttons[0].position.x-346,43);clock_panel.size=Vector2(332,36)
-	game.score_label.position=clock_panel.position+Vector2(36,3);game.score_label.size=Vector2(288,30)
+	clock_panel.size=Vector2(310,36)
+	var anchor=game.header_buttons[0]
+	clock_panel.position=Vector2(anchor.position.x-clock_panel.size.x-14,anchor.position.y+(anchor.size.y-clock_panel.size.y)/2)
+	game.score_label.position=clock_panel.position+Vector2(30,3);game.score_label.size=Vector2(272,30)
 	game.score_label.add_theme_font_size_override("font_size",24)
 	game.score_label.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	var w=game.unit_card.size.x

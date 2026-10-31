@@ -1,6 +1,6 @@
 Fichiers depuis V43.15 stable (34d8f73)
-Essai 8 : polices de l’en-tête, largeur des trois boutons et cartouche, version, tests et preuves.
-Règles, IA, carte et bandeau inférieur inchangés. Anciennes galeries 1 à 7 non dupliquées dans le ZIP.
+Essai 9 : centrage du cadre heure/tours et dégagement du titre ; polices et fonctions conservées.
+ZIP : anciennes galeries 1 à 8 non dupliquées ; code et ressources complets.
 
 A	FICHIERS_GRAPHISMES_2D.txt
 A	GRAPHISMES_2D_EXPERIMENTAL.md
@@ -329,6 +329,36 @@ A	captures/graphismes2d8/preuves/header_headless.log
 A	captures/graphismes2d8/preuves/header_render.log
 A	captures/graphismes2d8/preuves/regression.json
 A	captures/graphismes2d8/preuves/source_integrity.json
+A	captures/graphismes2d9/README.md
+A	captures/graphismes2d9/after/deplacement.png
+A	captures/graphismes2d9/after/detail.png
+A	captures/graphismes2d9/after/engagement.png
+A	captures/graphismes2d9/after/isolement.png
+A	captures/graphismes2d9/after/metrics.json
+A	captures/graphismes2d9/after/overview.png
+A	captures/graphismes2d9/after/prussiens.png
+A	captures/graphismes2d9/after/selection_isolee.png
+A	captures/graphismes2d9/after/trajet.png
+A	captures/graphismes2d9/before/deplacement.png
+A	captures/graphismes2d9/before/detail.png
+A	captures/graphismes2d9/before/engagement.png
+A	captures/graphismes2d9/before/isolement.png
+A	captures/graphismes2d9/before/metrics.json
+A	captures/graphismes2d9/before/overview.png
+A	captures/graphismes2d9/before/prussiens.png
+A	captures/graphismes2d9/before/selection_isolee.png
+A	captures/graphismes2d9/before/trajet.png
+A	captures/graphismes2d9/header_tour12_synthetique.png
+A	captures/graphismes2d9/preuves/apk_badging.txt
+A	captures/graphismes2d9/preuves/apk_info.json
+A	captures/graphismes2d9/preuves/apk_signature.txt
+A	captures/graphismes2d9/preuves/archive_integrity.json
+A	captures/graphismes2d9/preuves/archive_smoke.json
+A	captures/graphismes2d9/preuves/checks.json
+A	captures/graphismes2d9/preuves/comparison.json
+A	captures/graphismes2d9/preuves/header_headless.log
+A	captures/graphismes2d9/preuves/header_render.log
+A	captures/graphismes2d9/preuves/source_integrity.json
 A	development/graphics2d/CREDITS.md
 A	development/graphics2d/atlas_manifest.json
 A	development/graphics2d/build_atlas.gd
@@ -416,6 +446,7 @@ A	tests/graphics/fixtures/essai04_slot.json
 A	tests/graphics/fixtures/essai05_slot.json
 A	tests/graphics/fixtures/essai06_slot.json
 A	tests/graphics/fixtures/essai07_slot.json
+A	tests/graphics/fixtures/essai08_slot.json
 A	tests/graphics/guidance_board.gd
 A	tests/graphics/guidance_board.gd.uid
 A	tests/graphics/test_contract.gd
@@ -428,6 +459,8 @@ A	tests/graphics/test_guidance07_render.gd
 A	tests/graphics/test_guidance07_render.gd.uid
 A	tests/graphics/test_header08.gd
 A	tests/graphics/test_header08.gd.uid
+A	tests/graphics/test_header09.gd
+A	tests/graphics/test_header09.gd.uid
 A	tests/graphics/test_hud06.gd
 A	tests/graphics/test_hud06.gd.uid
 A	tests/graphics/test_previous_save.gd

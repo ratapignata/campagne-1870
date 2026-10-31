@@ -1,3 +1,24 @@
+# Essai graphique 2D № 9 — cadre horaire centré
+
+Version `0.8.43.15-g2d9`. [La stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main).
+
+- **[Télécharger l’APK de l’essai 9](https://github.com/ratapignata/campagne-1870/raw/refs/heads/v43-graphismes-2d-experimental/experiments/graphismes-2d/essai-09/1870_V43_Graphismes_2D_Experimental_09.apk)**.
+- [Sources complètes ZIP](experiments/graphismes-2d/essai-09/1870_V43_Graphismes_2D_Experimental_09_Sources.zip).
+- [Captures avant/après](prototype_1870/captures/graphismes2d9/README.md) ou [galerie ZIP](experiments/graphismes-2d/essai-09/1870_Graphismes_2D_Comparaisons_09.zip).
+- [Rapport](experiments/graphismes-2d/essai-09/GRAPHISMES_2D_EXPERIMENTAL.md), [tests](experiments/graphismes-2d/essai-09/TESTS_GRAPHISMES_2D.md), [fichiers modifiés](experiments/graphismes-2d/essai-09/FICHIERS_GRAPHISMES_2D.txt).
+
+Le cadre heure/tours partage désormais le centre vertical des boutons Journal/Aide/Menu. Titre dégagé, polices agrandies 24/22 conservées, même hauteur de bandeau. Carte, pions, fiche et commandes inférieures identiques en pixels à l’essai 8 dans huit vues. IA, règles, animations et sauvegardes inchangées.
+
+**Installer par-dessus l’essai précédent sans le désinstaller pour garder sa partie.** Même application expérimentale, même paquet et certificat, code Android 9. Sauvegardes des essais 1 à 8 vérifiées ; application stable et partie stable séparées.
+
+**3 369 assertions finales réussies**, APK compilé/signature vérifiée, sources extraites/importées/testées. Aucun essai sur appareil ou émulateur Android. Aucune intégration à main avant validation visuelle.
+
+![Rendu réel — cadre centré](prototype_1870/captures/graphismes2d9/after/trajet.png)
+
+---
+
+# Archive — essai 8
+
 # Essai graphique 2D № 8 — heure, tours et commandes agrandis
 
 Version `0.8.43.15-g2d8`. [La stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main).

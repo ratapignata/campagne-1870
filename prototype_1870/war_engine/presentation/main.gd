@@ -169,7 +169,7 @@ func build_ui():
 	header=panel(self,0,0,1280,92,INK)
 	var rule=panel(header,0,91,1280,1,Color("9f8658"));rule.mouse_filter=Control.MOUSE_FILTER_IGNORE;rule.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE);rule.offset_top=-1
 	logo(header,14,14,188,64)
-	label(header,t("subtitle"),216,8,650,31,23,PAPER,true)
+	label(header,t("subtitle"),216,8,350,31,23,PAPER,true)
 	turn_label=label(header,"",216,44,314,36,22,GOLD)
 	score_label=label(header,"",652,48,296,29,20)
 	header_buttons.append(button(header,t("journal"),892,22,130,50,show_journal))
