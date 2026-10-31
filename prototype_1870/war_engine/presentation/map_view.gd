@@ -154,10 +154,7 @@ func cannon(p: Vector2,z: float,color: Color,deployed: bool,french: bool=true):
 	if deployed:draw_line(p+Vector2(-22,15)*z,p+Vector2(13,15)*z,color.lerp(Color("e8c57b"),0.8),1.4*z,true)
 
 func selection_outline(p: Vector2,z: float):
-	var points=PackedVector2Array()
-	for v in [Vector2(-24,-30),Vector2(24,-30),Vector2(29,-25),Vector2(29,25),Vector2(24,30),Vector2(-24,30),Vector2(-29,25),Vector2(-29,-25),Vector2(-24,-30)]:points.append(p+v*z)
-	draw_polyline(points,Color("263d3b"),maxf(5,7*z),true)
-	draw_polyline(points,Color("ffe27a"),maxf(3.0,4.5*z),true)
+	Graphics2D.selection_brackets(self,p,z)
 func hq_member_highlighted(n: int) -> bool:
 	if target>=0 or not engine.alive(selected) or not engine.headquarters(selected) or not engine.alive(n) or n==selected:return false
 	var hq=engine.state.units[selected];var member=engine.state.units[n]
@@ -381,8 +378,7 @@ func _draw():
 				if anchor.distance_to(end)>18*zoom:
 					draw_line(anchor,end,Color(0.96,0.92,0.77,0.7),2.5*zoom,true)
 					draw_line(anchor,end,Color(0.24,0.31,0.20,0.55),maxf(0.7,zoom),true)
-		draw_string_outline(LOCALITY_FONT,p,location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs,3,Color("ece7d1"))
-		draw_string(LOCALITY_FONT,p,location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs,Color("253a29"))
+		Graphics2D.locality_name(self,p,str(location.text),fs)
 	if selected>=0 and engine.alive(selected) and (not engine.fog_enabled() or int(engine.state.units[selected].side)==int(engine.state.human_side)):
 		var center=engine.unit_cell(engine.state.units[selected]);var max_range=1 if engine.cavalry(selected) else int(engine.weapon(selected).range)
 		for i in range(engine.width*engine.height):
@@ -397,9 +393,8 @@ func _draw():
 	if route.size()>1:
 		var points=PackedVector2Array()
 		for i in route:points.append(screen(i))
-		draw_polyline(points,Color("465448"),7*zoom,true);draw_polyline(points,Color("f6d57f"),4*zoom,true)
-		for j in range(1,route.size()):draw_circle(screen(route[j]),4*zoom,Color("fff0bc"))
-		var endpoint=screen(route[-1]);draw_arc(endpoint,25*zoom,0,TAU,40,Color("66552f"),5*zoom,true);draw_arc(endpoint,25*zoom,0,TAU,40,Color("f5d37d"),2.5*zoom,true)
+		Graphics2D.route_preview(self,points,zoom)
+		var endpoint=screen(route[-1])
 		if full_route.size()>route.size():draw_string(font,endpoint+Vector2(-30,-32)*zoom,texts.limit,HORIZONTAL_ALIGNMENT_CENTER,60*zoom,int(14*zoom),Color("283b33"))
 	# Only the currently confirmable route receives a crossing marker.
 	for edge in crossing_edges(route):

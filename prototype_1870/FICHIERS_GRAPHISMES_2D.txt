@@ -1,7 +1,7 @@
 Fichiers ajoutés/modifiés depuis V43.15 stable (34d8f73)
-Essai 6 : HUD/bandeaux, quatre SVG, version, tests/compatibilité essai 5, captures et rapports.
-Aucun module IA/core/plateforme/scène ou donnée de jeu modifié.
-Les anciennes galeries restent dans Git ; le ZIP courant ne duplique que la galerie essai 6.
+Essai 7 : sélection, trajet, halo des localités, fiche, états désactivés, aides tactiles et validation.
+Aucun changement des règles, de l’IA, des scènes, de la plateforme ou de la géographie.
+ZIP : anciennes galeries 1 à 6 omises ; code, ressources, tests et galerie courante complets.
 
 A	FICHIERS_GRAPHISMES_2D.txt
 A	GRAPHISMES_2D_EXPERIMENTAL.md
@@ -262,6 +262,42 @@ A	captures/graphismes2d6/preuves/graphics_headless.json
 A	captures/graphismes2d6/preuves/graphics_render.json
 A	captures/graphismes2d6/preuves/regression.json
 A	captures/graphismes2d6/preuves/source_integrity.json
+A	captures/graphismes2d7/README.md
+A	captures/graphismes2d7/after/deplacement.png
+A	captures/graphismes2d7/after/detail.png
+A	captures/graphismes2d7/after/engagement.png
+A	captures/graphismes2d7/after/isolement.png
+A	captures/graphismes2d7/after/metrics.json
+A	captures/graphismes2d7/after/overview.png
+A	captures/graphismes2d7/after/prussiens.png
+A	captures/graphismes2d7/after/selection_isolee.png
+A	captures/graphismes2d7/after/trajet.png
+A	captures/graphismes2d7/aide_ammo.png
+A	captures/graphismes2d7/aide_command.png
+A	captures/graphismes2d7/before/deplacement.png
+A	captures/graphismes2d7/before/detail.png
+A	captures/graphismes2d7/before/engagement.png
+A	captures/graphismes2d7/before/isolement.png
+A	captures/graphismes2d7/before/metrics.json
+A	captures/graphismes2d7/before/overview.png
+A	captures/graphismes2d7/before/prussiens.png
+A	captures/graphismes2d7/before/selection_isolee.png
+A	captures/graphismes2d7/before/trajet.png
+A	captures/graphismes2d7/preuves/apk_badging.txt
+A	captures/graphismes2d7/preuves/apk_info.json
+A	captures/graphismes2d7/preuves/apk_signature.txt
+A	captures/graphismes2d7/preuves/archive_integrity.json
+A	captures/graphismes2d7/preuves/archive_smoke.json
+A	captures/graphismes2d7/preuves/benchmarks.json
+A	captures/graphismes2d7/preuves/comparison.json
+A	captures/graphismes2d7/preuves/controls_after.json
+A	captures/graphismes2d7/preuves/controls_before.json
+A	captures/graphismes2d7/preuves/controls_comparison.json
+A	captures/graphismes2d7/preuves/graphics_headless.json
+A	captures/graphismes2d7/preuves/graphics_render.json
+A	captures/graphismes2d7/preuves/regression.json
+A	captures/graphismes2d7/preuves/source_integrity.json
+A	captures/graphismes2d7/selection_destination_4_zooms.png
 A	development/graphics2d/CREDITS.md
 A	development/graphics2d/atlas_manifest.json
 A	development/graphics2d/build_atlas.gd
@@ -333,8 +369,11 @@ M	packs/1870/fr.json
 M	project.godot
 A	tests/graphics/capture_comparison.gd
 A	tests/graphics/capture_comparison.gd.uid
+A	tests/graphics/capture_experiment07.gd
+A	tests/graphics/capture_experiment07.gd.uid
 A	tests/graphics/check_source_integrity.py
 A	tests/graphics/compare_brightness.py
+A	tests/graphics/compare_guidance07.py
 A	tests/graphics/compare_hud06.py
 A	tests/graphics/compare_reference_palette.py
 A	tests/graphics/controls_snapshot.gd
@@ -344,10 +383,17 @@ A	tests/graphics/fixtures/essai02_slot.json
 A	tests/graphics/fixtures/essai03_slot.json
 A	tests/graphics/fixtures/essai04_slot.json
 A	tests/graphics/fixtures/essai05_slot.json
+A	tests/graphics/fixtures/essai06_slot.json
+A	tests/graphics/guidance_board.gd
+A	tests/graphics/guidance_board.gd.uid
 A	tests/graphics/test_contract.gd
 A	tests/graphics/test_contract.gd.uid
 A	tests/graphics/test_experiment03_render.gd
 A	tests/graphics/test_experiment03_render.gd.uid
+A	tests/graphics/test_guidance07.gd
+A	tests/graphics/test_guidance07.gd.uid
+A	tests/graphics/test_guidance07_render.gd
+A	tests/graphics/test_guidance07_render.gd.uid
 A	tests/graphics/test_hud06.gd
 A	tests/graphics/test_hud06.gd.uid
 A	tests/graphics/test_previous_save.gd

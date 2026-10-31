@@ -1,0 +1,41 @@
+{
+  "reference": "34d8f73ecdce503adc7fc149474653876176af41",
+  "tracked_files_identical": 1333,
+  "changed_existing_files": [
+    "export_presets.cfg",
+    "packs/1870/fr.json",
+    "project.godot",
+    "war_engine/presentation/main.gd",
+    "war_engine/presentation/map_view.gd"
+  ],
+  "functions": {
+    "war_engine/presentation/main.gd": {
+      "total": 80,
+      "identical": 75,
+      "cosmetic_changes": [
+        "build_ui",
+        "button",
+        "layout_cards",
+        "panel",
+        "unit_heading"
+      ]
+    },
+    "war_engine/presentation/map_view.gd": {
+      "total": 48,
+      "identical": 40,
+      "cosmetic_changes": [
+        "_draw",
+        "_ready",
+        "cannon",
+        "counter_back",
+        "draw_contact",
+        "horseman",
+        "selection_outline",
+        "soldier"
+      ]
+    }
+  },
+  "scenario_sha256": "5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57",
+  "result": "PASS",
+  "scope": "No modifications to AI, core, platform, map data, scenes or existing combat animations."
+}

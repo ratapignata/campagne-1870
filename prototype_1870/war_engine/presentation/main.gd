@@ -153,7 +153,7 @@ func label(parent: Node,value: String,x: float,y: float,w: float,h: float,font_s
 func button(parent: Node,value: String,x: float,y: float,w: float,h: float,callback: Callable,primary=false) -> Button:
 	var b=Button.new();b.text=value;b.add_theme_font_override("font",BODY);b.add_theme_font_size_override("font_size",20)
 	b.add_theme_color_override("font_color",INK if primary else PAPER);b.add_theme_color_override("font_hover_color",INK if primary else Color.WHITE)
-	b.add_theme_color_override("font_pressed_color",INK if primary else PAPER);b.add_theme_color_override("font_disabled_color",Color("afbab1"))
+	b.add_theme_color_override("font_pressed_color",INK if primary else PAPER);b.add_theme_color_override("font_disabled_color",Color("bac6bb"))
 	for state in ["normal","hover","pressed","disabled"]:
 		b.add_theme_stylebox_override(state,GraphicsSkin.button_style(primary,state))
 	var focus=StyleBoxFlat.new();focus.bg_color=Color.TRANSPARENT;focus.draw_center=false;focus.set_border_width_all(2);focus.border_color=PAPER;focus.set_corner_radius_all(5)

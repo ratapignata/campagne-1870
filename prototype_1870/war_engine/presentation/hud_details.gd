@@ -1,6 +1,6 @@
 extends Control
 ## Cosmetic HUD only. Status cues read the already authorised, displayed labels.
-## No engine, AI, save, input handling or per-frame polling belongs here.
+## Read-only help hit areas; no engine, AI, save or per-frame polling here.
 const BOLD=preload("res://assets/fonts/DejaVuSans-Bold.ttf")
 const ICONS=[preload("res://assets/graphics2d6/journal.svg"),preload("res://assets/graphics2d6/aide.svg"),preload("res://assets/graphics2d6/menu.svg")]
 const CLOCK=preload("res://assets/graphics2d6/horloge.svg")
@@ -12,6 +12,7 @@ var game
 var clock_panel: Panel
 var clock_icon: TextureRect
 var cues: Dictionary={}
+var help_targets: Dictionary={}
 
 func prepare():
 	mouse_filter=Control.MOUSE_FILTER_IGNORE
@@ -31,6 +32,44 @@ func prepare():
 	clock_icon=TextureRect.new();clock_icon.texture=CLOCK;clock_icon.mouse_filter=Control.MOUSE_FILTER_IGNORE
 	clock_icon.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
 	clock_panel.add_child(clock_icon);clock_icon.position=Vector2(10,10);clock_icon.size=Vector2(16,16)
+	for topic in ["morale","ammo","reaction","command","supply"]:
+		var area=Control.new();area.name="Help_"+topic;area.mouse_filter=Control.MOUSE_FILTER_STOP
+		area.mouse_default_cursor_shape=Control.CURSOR_POINTING_HAND;area.size=Vector2(44,28)
+		area.gui_input.connect(help_input.bind(topic,area));add_child(area);help_targets[topic]=area
+
+func help_input(event: InputEvent,topic: String,area: Control):
+	var pressed=event is InputEventScreenTouch and event.pressed
+	pressed=pressed or (event is InputEventMouseButton and event.button_index==MOUSE_BUTTON_LEFT and event.pressed)
+	if not pressed or not area.visible:return
+	show_status_help(topic);area.accept_event()
+
+func help_text(topic: String) -> Array:
+	# These are the same public strings shown on the card, never hidden unit fields.
+	if topic=="morale" and cues.get("morale",Color.TRANSPARENT).a>0:
+		return ["Moral",game.unit_state.text+"\n\nLe moral décrit la cohésion de l’unité. En ordre : cohésion préservée. Désorganisée : efficacité réduite. En déroute : capacités offensives limitées et retraite. La couleur complète toujours le texte."]
+	if topic=="ammo" and not game.ammo_label.text.is_empty():
+		return ["Munitions",game.ammo_label.text+"\n\nCe niveau représente des réserves abstraites, pas un nombre de cartouches. Des munitions faibles réduisent l’efficacité des tirs. Le ravitaillement décrit une liaison, pas le stock disponible."]
+	if topic=="reaction" and reaction_known():
+		if game.unit_reaction.text==game.t("cavalry_contact"):
+			return ["Combat au contact",game.unit_reaction.text+"\n\nCette indication rappelle le rôle de la cavalerie au contact. La charge conserve son coût et ses conditions habituelles."]
+		return ["Riposte",game.unit_reaction.text+"\n\nCet état indique la disponibilité de la réaction défensive. Une riposte éventuelle est résolue automatiquement selon les règles existantes."]
+	return []
+
+func show_status_help(topic: String):
+	if topic in ["command","supply"]:
+		if cues.get(topic,Color.TRANSPARENT).a>0:game.show_link_info(topic=="command")
+		return
+	var content=help_text(topic)
+	if content.is_empty():return
+	var box=game.modal_base(760,380)
+	game.label(box,content[0],30,20,700,38,27,game.GOLD,true)
+	game.scroll_text(box,content[1],76,210)
+	game.button(box,game.t("close"),30,310,700,48,game.close_modal,true)
+
+func reaction_known() -> bool:
+	for key in ["reaction_ready","reaction_spent","reaction_routed","reaction_limbered","cavalry_contact"]:
+		if game.unit_reaction.text==game.t(key):return true
+	return false
 
 func morale_color(text: String) -> Color:
 	for item in [["stable",GOOD],["shaken",CAUTION],["routed",DANGER]]:
@@ -63,16 +102,29 @@ func update_details():
 	while title_size>14 and title_font.get_string_size(game.unit_label.text,HORIZONTAL_ALIGNMENT_LEFT,-1,title_size).x>game.unit_label.size.x:title_size-=1
 	game.unit_label.add_theme_font_size_override("font_size",title_size)
 	cues={"morale":morale_color(game.unit_state.text),"command":link_color(game.support_label,true),"supply":link_color(game.supply_label,false)}
+	var fields={"morale":game.unit_state,"ammo":game.ammo_label,"reaction":game.unit_reaction,"command":game.support_label,"supply":game.supply_label}
+	for topic in help_targets:
+		var right=topic in ["command","supply"];var p=mark_position(fields[topic],right)
+		var available=not help_text(topic).is_empty() if not right else cues[topic].a>0
+		help_targets[topic].visible=available and p.is_finite()
+		if help_targets[topic].visible:
+			help_targets[topic].position=Vector2(maxf(game.unit_card.position.x,p.x-20),p.y-14)
+			help_targets[topic].tooltip_text=fields[topic].text+" — Toucher pour une explication"
 	queue_redraw()
 
-func mark(field: Label,color: Color,kind: String,right_column=false):
-	if field.text.is_empty() or color.a==0:return
+func mark_position(field: Label,right_column: bool) -> Vector2:
 	var p=Vector2(30,field.position.y+field.size.y/2)
 	if right_column:
 		var font=field.get_theme_font("font");var fs=field.get_theme_font_size("font_size")
 		var text_width=font.get_string_size(field.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs).x
 		p.x=field.position.x+field.size.x-text_width-16
-		if p.x<field.position.x+8:return # Never collide with long or translated text.
+		if p.x<field.position.x+8:return Vector2.INF
+	return p
+
+func mark(field: Label,color: Color,kind: String,right_column=false):
+	if field.text.is_empty() or color.a==0:return
+	var p=mark_position(field,right_column)
+	if not p.is_finite():return
 	var dark=Color("10272e")
 	draw_circle(p,10,dark)
 	if kind=="morale":
@@ -96,6 +148,7 @@ func mark(field: Label,color: Color,kind: String,right_column=false):
 func _draw():
 	if cues.is_empty():return
 	draw_line(Vector2(22,35),Vector2(game.unit_card.position.x+game.unit_card.size.x-12,35),Color("72847a55"),1,true)
+	draw_line(Vector2(22,68),Vector2(game.unit_card.position.x+game.unit_card.size.x-12,68),Color("9bb7ac44"),1,true)
 	mark(game.unit_state,cues.morale,"morale")
 	if not game.ammo_label.text.is_empty():
 		var low=game.ammo_label.text==game.t("ammo_status")%game.t("ammo_2")

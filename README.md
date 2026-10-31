@@ -1,3 +1,24 @@
+# Essai graphique 2D № 7 — sélection et guidage tactile
+
+Version expérimentale `0.8.43.15-g2d7`. [La version stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main).
+
+- **[Télécharger l’APK de l’essai 7](https://github.com/ratapignata/campagne-1870/raw/refs/heads/v43-graphismes-2d-experimental/experiments/graphismes-2d/essai-07/1870_V43_Graphismes_2D_Experimental_07.apk)**.
+- [Sources complètes ZIP](experiments/graphismes-2d/essai-07/1870_V43_Graphismes_2D_Experimental_07_Sources.zip).
+- **[Captures avant/après et aides tactiles](prototype_1870/captures/graphismes2d7/README.md)** ou [galerie ZIP](experiments/graphismes-2d/essai-07/1870_Graphismes_2D_Comparaisons_07.zip).
+- [Rapport](experiments/graphismes-2d/essai-07/GRAPHISMES_2D_EXPERIMENTAL.md), [tests](experiments/graphismes-2d/essai-07/TESTS_GRAPHISMES_2D.md), [fichiers modifiés](experiments/graphismes-2d/essai-07/FICHIERS_GRAPHISMES_2D.txt).
+
+Sélection par coins ivoire, trajet bleu bordé de clair, destination en losange doré, noms de localités mieux détachés. Fiche séparée plus clairement et actions indisponibles plus lisibles. Toucher les pictogrammes de la fiche pour lire une explication ; aucun ordre n’est déclenché. Même luminosité, mêmes illustrations, mêmes dimensions des bandeaux et mêmes commandes.
+
+**Installer par-dessus l’essai précédent sans le désinstaller pour conserver sa sauvegarde.** Même application « 1870 · Essai graphique 2D », même paquet expérimental distinct de la stable, code Android 7. Sauvegardes des essais 1 à 6 vérifiées ; pas de transfert automatique depuis la stable.
+
+**5 350 contrôles finaux réussis**, huit situations et 121 zones de chiffres de force comparées. Les cadres tactiques rouges/verts restent inchangés ; un drapeau voisin anciennement recouvert par le contour plein est dégagé. Sources propres extraites/importées et testées. APK compilé/signature vérifiée ; aucun essai physique ou émulateur Android. IA, règles, géographie et animations conservées. Aucune fusion dans main avant validation visuelle.
+
+![Rendu réel — trajet préparé et destination](prototype_1870/captures/graphismes2d7/after/trajet.png)
+
+---
+
+# Archive — essai 6
+
 # Essai graphique 2D № 6 — bandeaux et fiche d’unité
 
 Version expérimentale `0.8.43.15-g2d6`. [La version stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main).

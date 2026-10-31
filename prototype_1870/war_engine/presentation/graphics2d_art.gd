@@ -69,6 +69,29 @@ static func draw_figure(view,key: String,rect: Rect2,tint: Color):
 static func movement_marker(view,p: Vector2,z: float):
  view.draw_circle(p,maxf(3.8,6.0*z),Color("183b37"))
  view.draw_circle(p,maxf(2.5,4.2*z),Color("fff2ce"))
+static func selection_brackets(view,p: Vector2,z: float):
+ # Outside the unchanged red/green tactical rectangle; never cover the force strip.
+ for sx in [-1,1]:
+  for sy in [-1,1]:
+   var corner=p+Vector2(33*sx,34*sy)*z
+   var points=PackedVector2Array([corner+Vector2(-8*sx,0)*z,corner,corner+Vector2(0,-8*sy)*z])
+   view.draw_polyline(points,Color("243b3a"),maxf(4,5.2*z),true)
+   view.draw_polyline(points,Color("fff4d7"),maxf(2,2.8*z),true)
+static func route_preview(view,points: PackedVector2Array,z: float):
+ if points.size()<2:return
+ view.draw_polyline(points,Color("183b37"),maxf(5,8*z),true)
+ view.draw_polyline(points,Color("fff4d7"),maxf(3.5,5.8*z),true)
+ view.draw_polyline(points,Color("286a70"),maxf(1.7,3*z),true)
+ for k in range(1,points.size()-1):view.draw_circle(points[k],maxf(2,3*z),Color("286a70"))
+ var endpoint=points[-1];var radius=maxf(7,10*z)
+ var diamond=PackedVector2Array([endpoint+Vector2(0,-radius),endpoint+Vector2(radius,0),endpoint+Vector2(0,radius),endpoint+Vector2(-radius,0)])
+ view.draw_colored_polygon(diamond,Color("ffe09a"));diamond.append(diamond[0])
+ view.draw_polyline(diamond,Color("183b37"),maxf(1.5,2*z),true)
+ view.draw_arc(endpoint,maxf(11,18*z),0,TAU,32,Color("183b37"),maxf(3,4*z),true)
+ view.draw_arc(endpoint,maxf(11,18*z),0,TAU,32,Color("fff4d7"),maxf(1.5,2*z),true)
+static func locality_name(view,p: Vector2,text: String,font_size: int):
+ view.draw_string_outline(view.LOCALITY_FONT,p,text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size,clampi(roundi(3.2*view.zoom),3,5),Color("fff5df"))
+ view.draw_string(view.LOCALITY_FONT,p,text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size,Color("253a29"))
 static func label_obstacles(view) -> Array:
  var obstacles=[];var e=view.engine;var side=int(e.state.human_side)
  for n in range(e.state.units.size()):

@@ -1,0 +1,164 @@
+[
+  {
+    "case": "overview",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 14,
+    "header_pixel_identical": true,
+    "restored_neighbour_flags": [],
+    "numeric_force_identical": true,
+    "card_rectangle_identical": true,
+    "map_rgb_mean_before": [
+      178.93882359095983,
+      176.5122820172991,
+      147.96349225725447
+    ],
+    "map_rgb_mean_after": [
+      179.04261474609376,
+      176.58911307198662,
+      148.04007045200893
+    ]
+  },
+  {
+    "case": "engagement",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 13,
+    "header_pixel_identical": true,
+    "restored_neighbour_flags": [],
+    "numeric_force_identical": true,
+    "card_rectangle_identical": true,
+    "map_rgb_mean_before": [
+      171.5673113141741,
+      168.37525460379464,
+      140.94547991071428
+    ],
+    "map_rgb_mean_after": [
+      171.72993512834822,
+      168.50438232421874,
+      141.08406982421874
+    ]
+  },
+  {
+    "case": "prussiens",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 21,
+    "header_pixel_identical": true,
+    "restored_neighbour_flags": [],
+    "numeric_force_identical": true,
+    "card_rectangle_identical": true,
+    "map_rgb_mean_before": [
+      181.58535853794643,
+      178.78210972377232,
+      149.77894810267858
+    ],
+    "map_rgb_mean_after": [
+      181.72193080357144,
+      178.89124232700894,
+      149.90119280133928
+    ]
+  },
+  {
+    "case": "isolement",
+    "state_identical": true,
+    "force_strips_identical": false,
+    "strip_count": 20,
+    "header_pixel_identical": true,
+    "restored_neighbour_flags": [
+      "fr_5"
+    ],
+    "numeric_force_identical": true,
+    "card_rectangle_identical": true,
+    "map_rgb_mean_before": [
+      152.4003644670759,
+      157.17037004743304,
+      130.2042027064732
+    ],
+    "map_rgb_mean_after": [
+      152.4316615513393,
+      157.22227608816965,
+      130.37056710379466
+    ]
+  },
+  {
+    "case": "detail",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 8,
+    "header_pixel_identical": true,
+    "restored_neighbour_flags": [],
+    "numeric_force_identical": true,
+    "card_rectangle_identical": true,
+    "map_rgb_mean_before": [
+      162.52129255022322,
+      157.94183698381696,
+      131.32178431919644
+    ],
+    "map_rgb_mean_after": [
+      162.97010149274553,
+      158.31731828962054,
+      131.75027553013393
+    ]
+  },
+  {
+    "case": "deplacement",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 14,
+    "header_pixel_identical": true,
+    "restored_neighbour_flags": [],
+    "numeric_force_identical": true,
+    "card_rectangle_identical": true,
+    "map_rgb_mean_before": [
+      159.88084542410715,
+      167.86831752232143,
+      138.95817173549108
+    ],
+    "map_rgb_mean_after": [
+      160.0759748186384,
+      168.0420671735491,
+      139.25448346819198
+    ]
+  },
+  {
+    "case": "trajet",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 10,
+    "header_pixel_identical": true,
+    "restored_neighbour_flags": [],
+    "numeric_force_identical": true,
+    "card_rectangle_identical": true,
+    "map_rgb_mean_before": [
+      159.40574602399553,
+      165.3883527483259,
+      137.17736293247768
+    ],
+    "map_rgb_mean_after": [
+      159.18302001953126,
+      165.41184953962053,
+      137.6081508091518
+    ]
+  },
+  {
+    "case": "selection_isolee",
+    "state_identical": true,
+    "force_strips_identical": true,
+    "strip_count": 21,
+    "header_pixel_identical": true,
+    "restored_neighbour_flags": [],
+    "numeric_force_identical": true,
+    "card_rectangle_identical": true,
+    "map_rgb_mean_before": [
+      166.49947684151786,
+      164.74223981584822,
+      139.38630022321428
+    ],
+    "map_rgb_mean_after": [
+      166.65242047991072,
+      164.86333879743304,
+      139.51440604073662
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+{
+  "cases": 6,
+  "identical": true,
+  "scope": "all existing button rectangles, text, callbacks, enabled and visible states, banner geometry"
+}
