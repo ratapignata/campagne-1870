@@ -1,3 +1,24 @@
+# Essai graphique 2D № 8 — heure, tours et commandes agrandis
+
+Version `0.8.43.15-g2d8`. [La stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main).
+
+- **[Télécharger l’APK de l’essai 8](https://github.com/ratapignata/campagne-1870/raw/refs/heads/v43-graphismes-2d-experimental/experiments/graphismes-2d/essai-08/1870_V43_Graphismes_2D_Experimental_08.apk)**.
+- [Sources complètes ZIP](experiments/graphismes-2d/essai-08/1870_V43_Graphismes_2D_Experimental_08_Sources.zip).
+- [Captures avant/après](prototype_1870/captures/graphismes2d8/README.md) ou [galerie ZIP](experiments/graphismes-2d/essai-08/1870_Graphismes_2D_Comparaisons_08.zip).
+- [Rapport](experiments/graphismes-2d/essai-08/GRAPHISMES_2D_EXPERIMENTAL.md), [tests](experiments/graphismes-2d/essai-08/TESTS_GRAPHISMES_2D.md), [fichiers modifiés](experiments/graphismes-2d/essai-08/FICHIERS_GRAPHISMES_2D.txt).
+
+Heure/tours : police 20 → 24 (+20 %). Journal/Aide/Menu : 17 → 22 (+29 %), pictogrammes plus grands, boutons un peu plus larges. Même hauteur du bandeau, aucune place retirée à la carte. Carte, pions, fiche et commandes inférieures identiques en pixels à l’essai 7 dans huit vues. IA, règles, animations et sauvegardes conservées.
+
+**Installer par-dessus l’essai précédent sans le désinstaller pour conserver sa partie.** Même application « 1870 · Essai graphique 2D », même paquet expérimental distinct de la stable, même certificat, code Android 8. Sauvegardes des essais 1 à 7 vérifiées ; pas de transfert automatique depuis la stable.
+
+**5 971 assertions finales réussies**, dont tests de lisibilité et d’ouverture des trois commandes par événements tactiles simulés. APK compilé/signature vérifiée et sources extraites/importées/testées. Aucun essai physique ou émulateur Android. Aucune intégration à main avant validation visuelle.
+
+![Rendu réel — caractères agrandis](prototype_1870/captures/graphismes2d8/after/trajet.png)
+
+---
+
+# Archive — essai 7
+
 # Essai graphique 2D № 7 — sélection et guidage tactile
 
 Version expérimentale `0.8.43.15-g2d7`. [La version stable V43.15 reste sur main](https://github.com/ratapignata/campagne-1870/tree/main).

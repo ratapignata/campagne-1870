@@ -169,12 +169,12 @@ func build_ui():
 	header=panel(self,0,0,1280,92,INK)
 	var rule=panel(header,0,91,1280,1,Color("9f8658"));rule.mouse_filter=Control.MOUSE_FILTER_IGNORE;rule.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE);rule.offset_top=-1
 	logo(header,14,14,188,64)
-	label(header,t("subtitle"),216,8,728,31,23,PAPER,true)
-	turn_label=label(header,"",216,44,410,36,22,GOLD)
+	label(header,t("subtitle"),216,8,650,31,23,PAPER,true)
+	turn_label=label(header,"",216,44,314,36,22,GOLD)
 	score_label=label(header,"",652,48,296,29,20)
-	header_buttons.append(button(header,t("journal"),960,22,106,50,show_journal))
-	header_buttons.append(button(header,t("help"),1075,22,85,50,show_help))
-	header_buttons.append(button(header,t("menu"),1169,22,94,50,show_menu))
+	header_buttons.append(button(header,t("journal"),892,22,130,50,show_journal))
+	header_buttons.append(button(header,t("help"),1030,22,110,50,show_help))
+	header_buttons.append(button(header,t("menu"),1148,22,116,50,show_menu))
 	hint_bar=panel(self,0,530,1280,36,Color("d6d9bd"));hint=label(hint_bar,t("hint_select"),22,2,1236,32,18,INK)
 	hint_bar.hide()
 	footer=panel(self,0,540,1280,180,INK)
@@ -230,7 +230,7 @@ func layout():
 	var extra=size-Vector2(1280,720)
 	map.size=Vector2(size.x,448+extra.y);header.size.x=size.x;footer.size.x=size.x
 	footer.position.y=540+extra.y;hint_bar.position.y=504+extra.y;hint_bar.size.x=size.x;hint.size.x=size.x-44
-	for k in range(header_buttons.size()):header_buttons[k].position.x=[960,1075,1169][k]+extra.x
+	for k in range(header_buttons.size()):header_buttons[k].position.x=[892,1030,1148][k]+extra.x
 	for key in ["end_turn","next"]:actions[key].position.x=1011+extra.x
 	status.position.x=1011+extra.x
 	if logistics_button!=null:logistics_button.position.x=1011+extra.x

@@ -25,9 +25,9 @@ func run():
 		check(hud.clock_panel.position.x+hud.clock_panel.size.x<=game.header_buttons[0].position.x-14,"clock clear of commands")
 		for index in range(game.header_buttons.size()):
 			var b=game.header_buttons[index]
-			check(b.size==Vector2([106,85,94][index],50),"original button dimensions retained")
+			check(b.size==Vector2([130,110,116][index],50),"enlarged header button dimensions retained")
 			var style=b.get_theme_stylebox("normal");var text_w=b.get_theme_font("font").get_string_size(b.text,HORIZONTAL_ALIGNMENT_LEFT,-1,b.get_theme_font_size("font_size")).x
-			check(b.icon!=null and b.size.x>=text_w+16+4+style.get_minimum_size().x,"icon and complete button label fit "+b.text)
+			check(b.icon!=null and b.size.x>=text_w+18+6+style.get_minimum_size().x,"icon and complete button label fit "+b.text)
 		for value in [0,2,16]:
 			u.ap=value;game.refresh()
 			check(game.unit_ap.get_theme_font("font").get_string_size(game.unit_ap.text,HORIZONTAL_ALIGNMENT_LEFT,-1,game.unit_ap.get_theme_font_size("font_size")).x<=game.unit_ap.size.x,"complete AP including fractions fits")

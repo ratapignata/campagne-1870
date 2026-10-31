@@ -1,0 +1,38 @@
+{
+  "version": "0.8.43.15-g2d8",
+  "date_utc": "2026-10-31",
+  "source_commit": "a6b1e9be811f6b2f50221b2e3e61680dddc8ad0d",
+  "previous_source_commit": "857308c",
+  "stable_reference": "34d8f73",
+  "branch": "v43-graphismes-2d-experimental",
+  "main_unchanged": "55fca3f4b4ccc7a07ec00c11f7d7e7ebf07d6513",
+  "files": [
+    {
+      "file": "1870_V43_Graphismes_2D_Experimental_08.apk",
+      "bytes": 95185662,
+      "sha256": "0af3fdd9ffeb69facc327c774a7e5e109ed23a5a4619cdd271c57047297f8ac5"
+    },
+    {
+      "file": "1870_V43_Graphismes_2D_Experimental_08_Sources.zip",
+      "bytes": 25682239,
+      "sha256": "43c34a3008656ce72f60223e9867c8ff4832ff7e8975c60647d79ea74da2ea07"
+    },
+    {
+      "file": "1870_Graphismes_2D_Comparaisons_08.zip",
+      "bytes": 8768923,
+      "sha256": "0afd56d5e100bb120ba3d9ba2cdca2f90b99ba0fbe78d2a595cb82ca471b2fb6"
+    }
+  ],
+  "tests_unique_assertions": 5971,
+  "android_device_tested": false,
+  "emulator_tested": false,
+  "apk": {
+    "package": "org.woerth1870.prototype.graphics2dexp",
+    "code": 8,
+    "version": "0.8.43.15-g2d8",
+    "cert_sha256": "57c00efad8c9b822d4a1d63238a4137b9afc97b6e9248076f4f54bb292ae846c",
+    "signed_v2": true,
+    "signed_v3": true
+  },
+  "source_zip_omissions": "Only archived galleries 1 to 7; all game code/resources and current evidence included; no caches/builds."
+}

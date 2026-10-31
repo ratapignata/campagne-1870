@@ -1,0 +1,22 @@
+[
+  {
+    "test": "graphics/test_contract",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nGRAPHICS CONTRACT 2433/2433\n"
+  },
+  {
+    "test": "graphics/test_previous_save",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nPREVIOUS EXPERIMENT SAVES 49/49\n"
+  },
+  {
+    "test": "graphics/test_hud06",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nHUD EXPERIMENT 06 84/84\n"
+  },
+  {
+    "test": "graphics/test_guidance07",
+    "exit": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nGUIDANCE EXPERIMENT 07 137/137\n"
+  }
+]
