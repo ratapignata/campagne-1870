@@ -7,3 +7,7 @@ Le prototype initial fourni par l’utilisateur est conservé dans `development/
 Les nouvelles sources sont les PNG `intro_bd/assets/scene_1.png` à `scene_6.png` ; import Godot limité à 1280 pixels, compression de texture avec perte à qualité 0,85. Les originaux complets de génération sont laissés sur le poste de travail et les PNG fournis dans les sources sont inchangés. Les six titres et les six étapes narratives sont conservés ; les paragraphes ont été révisés et développés. Voir `SOURCES_HISTORIQUES_BD.md` pour les repères et limites documentaires.
 
 Texte à droite, illustrations sans nouveau recadrage à gauche ; aucun changement de géographie, d’illustrations des pions ou de règles du jeu. La présentation BD spécifique de Frœschwiller-Wœrth n’est toujours pas fournie.
+
+## Essai BD 3 — vignette de mobilisation
+
+Seule la vignette 6 a été retouchée à nouveau à la demande de l’utilisateur : profils prussiens différenciés (recrue, moustaches, barbe grise, favoris roux), tuniques bleu sombre et pantalons gris plus lisibles, épaulettes françaises rouges, groupes des deux camps mieux séparés. Les cinq autres images, le récit et la navigation restent ceux de l’essai BD 2. Il s’agit toujours d’une évocation illustrée ; elle ne certifie pas chaque détail d’un régiment ou d’un modèle d’équipement.

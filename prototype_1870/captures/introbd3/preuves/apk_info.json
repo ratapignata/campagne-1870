@@ -1,0 +1,11 @@
+{
+  "package": "org.woerth1870.prototype.introbdexp",
+  "version": "0.8.43.15-bd3",
+  "code": 3,
+  "bytes": 97437788,
+  "certificate_sha256": "57c00efad8c9b822d4a1d63238a4137b9afc97b6e9248076f4f54bb292ae846c",
+  "signature_verified": true,
+  "zip_integrity": true,
+  "six_apk_textures_match_tested_imports": true,
+  "physical_android_test": false
+}

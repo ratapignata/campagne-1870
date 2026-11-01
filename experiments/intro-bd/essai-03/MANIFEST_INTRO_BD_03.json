@@ -1,0 +1,30 @@
+{
+  "release": "0.8.43.15-bd3",
+  "date": "2026-11-01",
+  "source_commit": "57d4d8bc1729a581a82d74215592a5424dc9191a",
+  "source_base": "a8ee06510c4091611602a5092608909d0c0751f2",
+  "publication_base": "141b184d0a45e399cf46d62f73d734aa3e1d11b0",
+  "branch": "v43-intro-bd-experimental",
+  "main_preserved": "55fca3f4b4ccc7a07ec00c11f7d7e7ebf07d6513",
+  "graphics_branch_preserved": "ec50397d4029a83c6f43f863481b8e57e40280b0",
+  "assertions_passed": 3085,
+  "extracted_archive_resume_assertions": 9,
+  "physical_android_test": false,
+  "artifacts": [
+    {
+      "file": "1870_V43_Intro_BD_Experimental_03.apk",
+      "bytes": 97437788,
+      "sha256": "5137d67498e924379b97a61c99094eaedf538587c2fd1a55f37d6ff292ff3f20"
+    },
+    {
+      "file": "1870_V43_Intro_BD_Experimental_03_Sources.zip",
+      "bytes": 39711655,
+      "sha256": "5c86e37968f80099752d93f8063bcf51118dca30f6dc82c1d07e899fccdeb41e"
+    },
+    {
+      "file": "1870_V43_Intro_BD_Captures_03.zip",
+      "bytes": 2571806,
+      "sha256": "4a5848ceec4d7a2e1a0871e6a647b8e77734b6c8e6f41ea3734109de8f82ae8d"
+    }
+  ]
+}

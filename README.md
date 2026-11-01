@@ -1,26 +1,22 @@
-# Campagne 1870 — introduction BD expérimentale, essai 2
+# Campagne 1870 — introduction BD expérimentale, essai 3
 
-Version `0.8.43.15-bd2`, branche **v43-intro-bd-experimental**, base V43.15 + graphismes 12. Réparation des illustrations tronquées et récit historique développé, sans modification du jeu.
+Version `0.8.43.15-bd3`, branche **v43-intro-bd-experimental**, base V43.15 + graphismes 12. Nouvelle vignette de mobilisation, sans modification du jeu.
 
 ## Télécharger
 
-- **[APK Android — essai BD 2](https://raw.githubusercontent.com/ratapignata/campagne-1870/v43-intro-bd-experimental/experiments/intro-bd/essai-02/1870_V43_Intro_BD_Experimental_02.apk)**.
-- [Sources complètes ZIP](experiments/intro-bd/essai-02/1870_V43_Intro_BD_Experimental_02_Sources.zip).
-- [Captures avant/après et six tableaux](prototype_1870/captures/introbd2/README.md).
-- [Rapport](experiments/intro-bd/essai-02/INTRO_BD_EXPERIMENTAL.md), [tests exécutés](experiments/intro-bd/essai-02/TESTS_INTRO_BD.md), [repères historiques](experiments/intro-bd/essai-02/SOURCES_HISTORIQUES_BD.md), [fichiers modifiés](experiments/intro-bd/essai-02/FICHIERS_INTRO_BD.txt).
+- **[APK Android — essai BD 3](https://raw.githubusercontent.com/ratapignata/campagne-1870/v43-intro-bd-experimental/experiments/intro-bd/essai-03/1870_V43_Intro_BD_Experimental_03.apk)**
+- [Sources complètes ZIP](experiments/intro-bd/essai-03/1870_V43_Intro_BD_Experimental_03_Sources.zip)
+- [Comparatif avant/après de la vignette 6](prototype_1870/captures/introbd3/README.md)
+- [Rapport](experiments/intro-bd/essai-03/INTRO_BD_EXPERIMENTAL.md), [tests](experiments/intro-bd/essai-03/TESTS_INTRO_BD.md), [uniformes et propositions](experiments/intro-bd/essai-03/UNIFORMES_ET_PISTES_BD.md), [fichiers modifiés](experiments/intro-bd/essai-03/FICHIERS_INTRO_BD.txt)
 
-**Installer par-dessus « 1870 · Essai introduction BD » précédent sans désinstaller**, pour conserver sa partie. Même paquet/certificat, code Android 2. L’application de jeu stable et l’essai graphique restent séparés. Leur partie n’est pas transférée automatiquement dans l’application BD.
+**Installer par-dessus « 1870 · Essai introduction BD » précédent sans désinstaller**, pour conserver sa partie. Même paquet/certificat, code Android 3. Applications stable et graphique séparées ; leurs sauvegardes ne sont pas transférées automatiquement.
 
-## Corrections
+## Vignette 6
 
-Les anciens JPEG étaient eux-mêmes tronqués : le cadre affichait déjà toute l’image disponible. Six compositions ont été réparées à partir des références, sans phrases coupées ni nouveau recadrage. Reconstitutions graphiques, pas récupération exacte de pixels manquants ; les six JPEG originaux restent archivés intacts dans les sources.
+Visages prussiens distincts, tuniques bleu sombre et pantalons gris plus lisibles, casque à pointe conservé. Épaulettes françaises rouges et deux colonnes séparées dans un montage symbolique. Illustration évocatrice, sans certification régimentaire. Les références de musées essayées ont été bloquées par HTTP 403 ; elles ne sont pas présentées comme consultées.
 
-Six étapes conservées, récit développé : 1866 et Confédération de 1867, rivalités, retrait de la candidature espagnole le 12 juillet, Ems le 13 et diffusion du texte abrégé, crédits du 15, déclaration du 19 juillet, mobilisation. Bibliographie et limites explicites ; aucune BD de la bataille de Frœschwiller-Wœrth ajoutée.
+Les images 1 à 5, les textes historiques, la navigation, la lecture automatique de 30 secondes, les graphismes de bataille, les règles, l’IA et les sauvegardes restent inchangés. Les propositions pour les autres vignettes sont uniquement documentées.
 
-Zone de lecture élargie, hauteur du titre ajustée, texte défilant avec indice si nécessaire. Lecture automatique **30 secondes**, avec défilement doux du paragraphe dépassant ; passage immédiat et cinq commandes conservés. Continuer reprend toujours la sauvegarde directement, sans charger les illustrations. Les règles, IA, graphismes de bataille et sauvegardes ne changent pas.
+**3 085 contrôles réussis**, source ZIP extraite/importée et reprise vérifiée indépendamment ; APK compilé et signature vérifiée. Aucun essai physique ou émulateur Android, aucune nouvelle bataille complète. Aucune fusion avec main ou [la branche graphique](https://github.com/ratapignata/campagne-1870/tree/v43-graphismes-2d-experimental). [Essai BD 2 conservé](experiments/intro-bd/essai-02/).
 
-**3 085 contrôles actuels réussis**, archive extraite/importée/vérifiée indépendamment, APK compilé et signature vérifiée. Aucun essai physique ou émulateur Android, aucune nouvelle simulation complète de bataille. Pas de fusion avec main ; [branche graphique 12 conservée](https://github.com/ratapignata/campagne-1870/tree/v43-graphismes-2d-experimental). [Livraison BD 1 conservée](experiments/intro-bd/essai-01/).
-
-![Illustration réparée et récit développé](prototype_1870/captures/introbd2/scene_1.png)
-
-![Développement de la dépêche d’Ems](prototype_1870/captures/introbd2/scene_4.png)
+![Vignette 6 révisée](prototype_1870/captures/introbd3/scene_6.png)

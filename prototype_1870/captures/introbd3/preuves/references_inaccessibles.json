@@ -1,0 +1,27 @@
+[
+  {
+    "id": "met_helmets",
+    "url": "https://collectionapi.metmuseum.org/public/collection/v1/search?q=Prussian%20helmet",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "commons_pickelhaube",
+    "url": "https://commons.wikimedia.org/wiki/Category:Pickelhauben_of_Prussia",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "iwm",
+    "url": "https://www.iwm.org.uk/collections/search?query=prussian%20helmet",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "armymuseum",
+    "url": "https://www.nam.ac.uk/explore/franco-prussian-war",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "id": "vanda",
+    "url": "https://api.vam.ac.uk/v2/objects/search?q=prussian%20helmet",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

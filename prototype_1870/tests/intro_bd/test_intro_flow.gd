@@ -38,7 +38,7 @@ func run():
  await shot("menu")
  var state=JSON.stringify(game.engine.state);var undo=JSON.stringify(game.engine.previous);var path=game.saver.path
  check(not FileAccess.file_exists(path),"no slot created before actual scenario start")
- await start_intro();var v=viewer();var original=JSON.parse_string(FileAccess.get_file_as_string("res://tests/intro_bd/reviewed_content_02.json"))
+ await start_intro();var v=viewer();var original=JSON.parse_string(FileAccess.get_file_as_string("res://tests/intro_bd/reviewed_content_03.json"))
  check(Array(v.TITLES)==original.titles and Array(v.DESCRIPTIONS)==original.descriptions,"six approved titles and revised historical descriptions displayed")
  check(v.ART.size()==6 and v.timer.wait_time==30.0,"six repaired images and thirty-second autoplay")
  for item_index in range(original.art.size()):

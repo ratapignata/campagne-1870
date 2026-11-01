@@ -1,0 +1,31 @@
+Essai BD 3 depuis essai BD 2 (a8ee065), branche v43-intro-bd-experimental.
+Vignette 6 : visages variés, couleurs d’uniformes clarifiées, épaulettes françaises rouges et colonnes séparées. Images 1–5, récit et navigation inchangés.
+Gameplay, contrôleur principal, sauvegardes et graphismes du jeu inchangés.
+
+M	FICHIERS_INTRO_BD.txt
+M	INTRO_BD_EXPERIMENTAL.md
+M	TESTS_INTRO_BD.md
+M	export_presets.cfg
+M	intro_bd/PROVENANCE.md
+M	intro_bd/assets/scene_6.png
+M	packs/1870/fr.json
+M	project.godot
+M	tests/intro_bd/test_intro_flow.gd
+A	UNIFORMES_ET_PISTES_BD.md
+A	captures/introbd3/README.md
+A	captures/introbd3/avant_scene_6.png
+A	captures/introbd3/compact_606.png
+A	captures/introbd3/preuves/apk_badging.txt
+A	captures/introbd3/preuves/apk_info.json
+A	captures/introbd3/preuves/apk_signature.txt
+A	captures/introbd3/preuves/archive_source_integrity.json
+A	captures/introbd3/preuves/archive_validation.json
+A	captures/introbd3/preuves/baseline_assets.json
+A	captures/introbd3/preuves/flow.log
+A	captures/introbd3/preuves/references_inaccessibles.json
+A	captures/introbd3/preuves/regression.json
+A	captures/introbd3/preuves/scope.json
+A	captures/introbd3/preuves/source_integrity.json
+A	captures/introbd3/scenario_started.png
+A	captures/introbd3/scene_6.png
+A	tests/intro_bd/reviewed_content_03.json

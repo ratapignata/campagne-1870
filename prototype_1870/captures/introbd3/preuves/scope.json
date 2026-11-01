@@ -1,0 +1,16 @@
+{
+  "source_base": "a8ee06510c4091611602a5092608909d0c0751f2",
+  "publication_base": "141b184d0a45e399cf46d62f73d734aa3e1d11b0",
+  "image_6_only_changed": true,
+  "images_1_to_5_identical": true,
+  "intro_script_identical": true,
+  "gameplay_and_graphics12_identical": true,
+  "changed_source_paths_before_documentation": [
+    "export_presets.cfg",
+    "intro_bd/PROVENANCE.md",
+    "intro_bd/assets/scene_6.png",
+    "packs/1870/fr.json",
+    "project.godot",
+    "tests/intro_bd/test_intro_flow.gd"
+  ]
+}
