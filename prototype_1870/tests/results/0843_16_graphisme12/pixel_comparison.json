@@ -1,0 +1,68 @@
+[
+  {
+    "case": "overview",
+    "size": [
+      1280,
+      720
+    ],
+    "identical_pixels": true,
+    "changed_pixels": 0,
+    "total_pixels": 921600,
+    "bounding_box": null
+  },
+  {
+    "case": "engagement",
+    "size": [
+      1280,
+      720
+    ],
+    "identical_pixels": true,
+    "changed_pixels": 0,
+    "total_pixels": 921600,
+    "bounding_box": null
+  },
+  {
+    "case": "prussiens",
+    "size": [
+      1280,
+      720
+    ],
+    "identical_pixels": true,
+    "changed_pixels": 0,
+    "total_pixels": 921600,
+    "bounding_box": null
+  },
+  {
+    "case": "isolement",
+    "size": [
+      1280,
+      720
+    ],
+    "identical_pixels": true,
+    "changed_pixels": 0,
+    "total_pixels": 921600,
+    "bounding_box": null
+  },
+  {
+    "case": "detail",
+    "size": [
+      1280,
+      720
+    ],
+    "identical_pixels": true,
+    "changed_pixels": 0,
+    "total_pixels": 921600,
+    "bounding_box": null
+  },
+  {
+    "case": "deplacement",
+    "size": [
+      1280,
+      720
+    ],
+    "identical_pixels": true,
+    "changed_pixels": 0,
+    "total_pixels": 921600,
+    "bounding_box": null
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "test": "graphics/test_contract",
+    "exit": 0,
+    "passed": true,
+    "seconds": 1.486,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nGRAPHICS CONTRACT 2433/2433\n"
+  },
+  {
+    "test": "graphics/test_previous_save",
+    "exit": 0,
+    "passed": true,
+    "seconds": 2.783,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nPREVIOUS EXPERIMENT SAVES 63/63\n"
+  },
+  {
+    "test": "v43/test_v4316",
+    "exit": 0,
+    "passed": true,
+    "seconds": 32.802,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nPOCKET {\"kind\":\"fire\",\"target\":\"pru_36\",\"unit\":\"fr_10\"} -> {\"kind\":\"move\",\"path\":[198,197],\"unit\":\"fr_10\"} origin risk 3.5\nFRONTAL {\"kind\":\"fire\",\"target\":\"pru_36\",\"unit\":\"fr_10\"}\nGUN {\"kind\":\"fire\",\"target\":\"pru_36\",\"unit\":\"art_fr_Pell\u00e90\"} -> {\"kind\":\"limber\",\"path\":[198,197],\"unit\":\"art_fr_Pell\u00e90\"}\nHQ {\"kind\":\"move\",\"path\":[198,167,166],\"unit\":\"qg_fr_Pell\u00e9\"}\nREAR GUARD {\"kind\":\"move\",\"path\":[162,132,102],\"unit\":\"fr_8\"}\nV43.16 DEFENCE 56/56\n"
+  }
+]

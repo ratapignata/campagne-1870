@@ -1,3 +1,17 @@
+# V43.16 + Graphisme 12
+
+Toutes les corrections de la dernière V43.16, avec le rendu exact de l’essai Graphisme 12. L’IA, les règles, les sauvegardes et les animations de combat de V43.16 restent identiques.
+
+- **[Télécharger l’APK — 95 Mo](https://raw.githubusercontent.com/ratapignata/campagne-1870/v43-16-graphisme12/releases/1870_v0.8.43.16_Graphisme12.apk)**
+- [Sources complètes ZIP](releases/1870_v0.8.43.16_Graphisme12_Sources.zip)
+- [Version et installation](releases/VERSION_0843_16_GRAPHISME12.md), [tests exécutés](releases/TESTS_V43_16_GRAPHISME12.md), [captures réelles](prototype_1870/captures/v4316_graphisme12/README.md).
+
+Met à jour l’application **Graphisme 12** sans la désinstaller (même paquet/signature, code Android 13). La V43.16 classique garde son application et ses données séparées. Aucune introduction BD ajoutée.
+
+7 487 assertions distinctes réussies, six vues identiques pixel par pixel au Graphisme 12 d’origine, archive extraite et testée, APK compilé et signé. Aucun essai sur appareil Android. Branche séparée `v43-16-graphisme12` ; main, V43.16 classique, graphismes et BD d’origine préservés.
+
+---
+
 # V43.16 — défense française Difficile
 
 Candidate issue de la V43.15 stable, branche `v43-16-defense-francaise`. Prévention des encerclements, replis vers le couvert et protection des arrières, sans changement des règles ni de l’IA prussienne. Version stable et essais graphiques/BD préservés.

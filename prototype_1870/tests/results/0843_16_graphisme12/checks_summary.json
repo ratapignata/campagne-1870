@@ -1,0 +1,15 @@
+{
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "headless_suites": 31,
+  "headless_checks": 6428,
+  "render_suites": 5,
+  "render_checks": 1079,
+  "shared_feedback_checks": 20,
+  "distinct_checks": 7487,
+  "identical_pixel_comparisons": 6,
+  "cold_checks_repeated_not_added": 2552,
+  "same_core_ai_platform_and_scenario_as_v4316": true,
+  "android_device_tested": false,
+  "android_emulator_tested": false,
+  "full_battle_simulation_rerun": false
+}

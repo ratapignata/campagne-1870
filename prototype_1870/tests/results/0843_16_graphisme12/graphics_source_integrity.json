@@ -1,0 +1,707 @@
+{
+  "graphics_commit": "ec50397d4029a83c6f43f863481b8e57e40280b0",
+  "files_exactly_preserved": 175,
+  "files": [
+    {
+      "path": "prototype_1870/assets/graphics2d/terrain_atlas.png",
+      "git_blob": "3ccb31f61c21b9fa624292f0f39dbc01a03b5e1e"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d/terrain_atlas.png.import",
+      "git_blob": "9d6cf79c63486750ba9c6b340aa76dd9fa987e50"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d10/README.md",
+      "git_blob": "a454da116152ba8d50ddd336d967b65e0249c496"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d10/all.svg",
+      "git_blob": "acefd322c78a4abf432ff554a5459cce80dfbe98"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d10/all.svg.import",
+      "git_blob": "69b0a1af4cfbf3ddf85fa40b2ead03cb7cdec4ac"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d10/combat.svg",
+      "git_blob": "b28eb427af6b9aa05cc268c64507b48da5efe952"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d10/combat.svg.import",
+      "git_blob": "1aeb72ebb28d6ae5f23dedc3eb52e44a61764ed4"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d10/objective.svg",
+      "git_blob": "0d53d75fce3c2aea2eabc8a2a0405259e6b96e9d"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d10/objective.svg.import",
+      "git_blob": "3c7f3fff8f35cbd7f792e644b819ea45d4e181b3"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d10/reinforcement.svg",
+      "git_blob": "62a1e056319736689f706fa5ace016ee476c8ce6"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d10/reinforcement.svg.import",
+      "git_blob": "99d45b332a14829364ad353b2031b22ce09c8907"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d10/surrender.svg",
+      "git_blob": "2a6e26808ebb240deeee64e705430a3ee1e1ff7f"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d10/surrender.svg.import",
+      "git_blob": "8e0469fbf4557a84ec175d37e65c79ec557713a0"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/painted_figures.png",
+      "git_blob": "0be050ed7da1c988e16ecb5e7e9e33a600767495"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/painted_figures.png.import",
+      "git_blob": "4d34bbe31861dc2e121221ee4fa6e36ee1d6093d"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/painted_ground.png",
+      "git_blob": "a3be86ed6ffe14400576b923ff557b0e65dce67f"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/painted_ground.png.import",
+      "git_blob": "48a77a551ad5c4cf2a670985565da0367dbddba4"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/band.svg",
+      "git_blob": "6c0bb9d36b75208a0e97539eb3fd180e50957ac3"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/band.svg.import",
+      "git_blob": "756da20205a38bc1c240f7a8641122a2296a0d08"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/card.svg",
+      "git_blob": "3b1b2ad21dacd8f24d6b86fd5e074d2e63170e1c"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/card.svg.import",
+      "git_blob": "ba0979af663d7f897d8331ec5339824956c9594c"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/dark_disabled.svg",
+      "git_blob": "4599526f512fe0ca6a956d2d1a5c9217b4397e5f"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/dark_disabled.svg.import",
+      "git_blob": "ac3fc442b036f7c212f1cbd747c32992ae92d213"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/dark_hover.svg",
+      "git_blob": "9e0b988c4085dd82d4d95734bab6561998d1b022"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/dark_hover.svg.import",
+      "git_blob": "fa8911fb33780fbade72529db68215e6ac710cfc"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/dark_normal.svg",
+      "git_blob": "9c213d087c64c14c01651feae6cb6f4c29a1856a"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/dark_normal.svg.import",
+      "git_blob": "1a4ef5a80b819911620d3b2781293884156fedeb"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/dark_pressed.svg",
+      "git_blob": "6ee6a886c38e9546bf157e7d33dd455df898327d"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/dark_pressed.svg.import",
+      "git_blob": "fa0593d6b99aeb8527601bea54b5009714cc77aa"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/gold_disabled.svg",
+      "git_blob": "f7bcf0bdb418ca9c4fc9f3c748b664eea9d127af"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/gold_disabled.svg.import",
+      "git_blob": "5af14f4a803600ab0f8c15454d0b7321027d07e5"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/gold_hover.svg",
+      "git_blob": "8481944405d855dd77c5e4c5d5aa1e996e9ea8ee"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/gold_hover.svg.import",
+      "git_blob": "b85979020bbde573777f68e89eba8d3bf194467a"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/gold_normal.svg",
+      "git_blob": "03a0a4eb8ca46ad6ae512beb30bbf00b0abf6f3b"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/gold_normal.svg.import",
+      "git_blob": "0cb60b5c7a0e19c3b4da63a9d300a6da71d6b23c"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/gold_pressed.svg",
+      "git_blob": "60f65e1dd013594971964e98be50e5ea356e6e3d"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d2/ui/gold_pressed.svg.import",
+      "git_blob": "4e15beedcf9631f7af7559bcc317bd410e3c4a89"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d6/README.md",
+      "git_blob": "e47fd2c79517afbe469abd473823ceb67687b932"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d6/aide.svg",
+      "git_blob": "c224105d2e3a17b8f12306f9925e075684ce9bb0"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d6/aide.svg.import",
+      "git_blob": "1979212fdbcc02c4d8cef4c3956ff7f229114635"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d6/horloge.svg",
+      "git_blob": "deeb955cff3d87d38bd0cbfbaf51f55a423b3fe8"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d6/horloge.svg.import",
+      "git_blob": "fa27e77f0f6fa33a82abab1ec8f5e11aa5130c88"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d6/journal.svg",
+      "git_blob": "7712598a19bb7a467c2cadcd4d81b2a3b0bccf74"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d6/journal.svg.import",
+      "git_blob": "2ab671ca05d008af214f8ef026dae5ae587b710d"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d6/menu.svg",
+      "git_blob": "8dff07e3a17a6c09ddd3d18c12de75cb646d4ccc"
+    },
+    {
+      "path": "prototype_1870/assets/graphics2d6/menu.svg.import",
+      "git_blob": "e66809071eebb722a3c6d5ade7ef4184cadedf0a"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/CREDITS.md",
+      "git_blob": "a44c84e19462e1408af9563a818429a385407261"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/atlas_manifest.json",
+      "git_blob": "40fe328c7ffca3864cfd88c8f9794efe47c4c9fe"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/build_atlas.gd",
+      "git_blob": "da3f6b4bb582f7ba654a8bc3e1f6f8d6b1bd592a"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/build_atlas.gd.uid",
+      "git_blob": "db8ee1153f50c196a0a4f7523dcd642b648f42c6"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/generate_svg.py",
+      "git_blob": "964bcbb0c465d3126dc03ee5087f864731e4e5b8"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/bridge_0.svg",
+      "git_blob": "d46ca545da3c638bb9041a344734103d68910d8e"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/bridge_0.svg.import",
+      "git_blob": "7eb3b806406ac6385368d2dbc579441d4899d775"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/cultivated_0.svg",
+      "git_blob": "e13073e2d9af4d257b930bc89ec3175f355fdacf"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/cultivated_0.svg.import",
+      "git_blob": "ea83a3027bcfdb35ad3bab10cacf74b76aae3786"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/cultivated_1.svg",
+      "git_blob": "e0b2c8b596691d52219e5fa8f47a9c5289af0e7d"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/cultivated_1.svg.import",
+      "git_blob": "0988d5b64dfdb24a26307b70dfdb13ce1fcf7068"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/cultivated_2.svg",
+      "git_blob": "c047400f355471e99f066af1def1039b3d086290"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/cultivated_2.svg.import",
+      "git_blob": "b050113690a0d87b42c058b43aa39156aaefe7c0"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/cultivated_3.svg",
+      "git_blob": "4e092404dff0f63908abdf668601d202cab2ae8e"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/cultivated_3.svg.import",
+      "git_blob": "ca959a1c91976654b2128de34625a59a51a771a9"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_0.svg",
+      "git_blob": "6b0a47586d0b29b53da1b88ccd5fe1d9aa491f60"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_0.svg.import",
+      "git_blob": "2b88eabc03a3d6351b8a626eece07304c3359a8f"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_0_road.svg",
+      "git_blob": "5678e7b3b56293e3d41a6f3de541a7a2a388f561"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_0_road.svg.import",
+      "git_blob": "e41cc6be37c7b5be12c7203231c592b4040e8b42"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_1.svg",
+      "git_blob": "0b43bc95df02087ae14f7701dcc81b645b210da4"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_1.svg.import",
+      "git_blob": "353030ab039c97dfd349dd67891a32a2f34ffa9b"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_1_road.svg",
+      "git_blob": "ac6d117dc50737ca22173123c0b503bca0486e26"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_1_road.svg.import",
+      "git_blob": "134e63b9811fd9b5b5ed05c1dd238b4770d6863d"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_2.svg",
+      "git_blob": "3e4270582f6ed72452863838795f1ea6113531c5"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_2.svg.import",
+      "git_blob": "8eae88adb8f54364994c73aecbc728ebd88c5d63"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_2_road.svg",
+      "git_blob": "bf5657e503bf826b70e017c7081711602ed7e28e"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_2_road.svg.import",
+      "git_blob": "6fe530734ce2a49b9b150b2222535d27f9772d71"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_3.svg",
+      "git_blob": "4e06179c03ba43457cd676f7b92ae8a992a0792a"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_3.svg.import",
+      "git_blob": "cf78b758cd53463bd2751a9d2dda8742842fd639"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_3_road.svg",
+      "git_blob": "a7df25b64f5e342032ed851e03ddaa3e4c069f20"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_3_road.svg.import",
+      "git_blob": "d6092b317aa783eb6d92ba9c4c305869cf64d518"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_ground_0.svg",
+      "git_blob": "d9d8a237ecb86b496ef15b91a7890476c8928c23"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/forest_ground_0.svg.import",
+      "git_blob": "cac7d98b9c3e65cafc6bd2396e6f9aeaf1caaa3e"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/hill_0.svg",
+      "git_blob": "d2495ac7e8b3fdcfbdf6d47110ccf1a3a4f5ac61"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/hill_0.svg.import",
+      "git_blob": "d79d1a93b55e703c37d5ed31591a4ea0de049ac0"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/hill_1.svg",
+      "git_blob": "1f79a76b79b713597618ae026ebdbcded069376f"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/hill_1.svg.import",
+      "git_blob": "37338e2e8a83c418166ba320beb1806b2cc75d77"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/meadow_0.svg",
+      "git_blob": "219635425e960765c9655030652e504ec5335404"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/meadow_0.svg.import",
+      "git_blob": "7bd255640c9dc40dce1a9164453604081ddbdff9"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/meadow_1.svg",
+      "git_blob": "7401c812c4f7a332730a7f157c0aaff157d45933"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/meadow_1.svg.import",
+      "git_blob": "8bfa302e19959cbd472388c69896ca45d892d3a5"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/meadow_2.svg",
+      "git_blob": "b768cd4ed05d0682fe19b5f4ceb6b2cdb8b548d0"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/meadow_2.svg.import",
+      "git_blob": "449f25372d8670633c31af88e47bfc4865409946"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/plain_0.svg",
+      "git_blob": "d6e6725f884b387745012c295742999ff41b78c7"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/plain_0.svg.import",
+      "git_blob": "5be99a1e4cd8a0d995102e889718ec2a9e1166f1"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/plain_1.svg",
+      "git_blob": "55710c955279612c7196862040c1581a4671ea6c"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/plain_1.svg.import",
+      "git_blob": "c7e61882e6dfb31d15b080ca32efdd86d10b66e2"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/plain_2.svg",
+      "git_blob": "119086d7e8452ef9ffe15fadb317d32a8f1dd773"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/plain_2.svg.import",
+      "git_blob": "fd01f765d480c2932c35fc29bd3b9909b5b4e7df"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/plain_3.svg",
+      "git_blob": "13bdf21858258b50dcb39c3f9ab3813d8f542b71"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/plain_3.svg.import",
+      "git_blob": "fdafe17ae8f1c39a51d4ea0a3f2fecafab5b8d88"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/road_0.svg",
+      "git_blob": "69793211b158ab35af481c9fb30bbef95bc24c7f"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/road_0.svg.import",
+      "git_blob": "d00150ad9f056d03c28d6e0462be02ea6831bbe7"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/village_0.svg",
+      "git_blob": "e9f60266e29f1ca1b8a9fc538d43ca70ae1b8ff6"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/village_0.svg.import",
+      "git_blob": "8461913fc2fabba24aeef0089161226e965397f7"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/village_1.svg",
+      "git_blob": "bcfe9e5b80391a7cae37b841cf00f3a8acc713cd"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/village_1.svg.import",
+      "git_blob": "a8ac857b180a9aee40bcdb95b70e8d3ec550cdde"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/village_2.svg",
+      "git_blob": "c75d57dbc1d6eeedf7110e7f8c54989dbe02ba18"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/village_2.svg.import",
+      "git_blob": "797e30fb9957a2b47d7f46ff55a7eb8fb56e5bb7"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/village_ground_0.svg",
+      "git_blob": "2c7e066ab81c5497ba70d0f685a27b948fb24098"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/village_ground_0.svg.import",
+      "git_blob": "f9f0969fe9651c9ef489504de2ffc52f36695758"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/water_0.svg",
+      "git_blob": "c8c091d069fe58d36f011d7326a6afd0aa8b1bd6"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d/svg/water_0.svg.import",
+      "git_blob": "75351d8f97bdeac99cec551db91d6bbf8dc80fa5"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d2/CREDITS.md",
+      "git_blob": "8cb4bfa1ca9d98cdb32cbf24e565d26096fc05ca"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d2/atlas_manifest.json",
+      "git_blob": "cd5aa0689bca73746f230be09bcf506d448227c5"
+    },
+    {
+      "path": "prototype_1870/development/graphics2d2/build_ui_assets.py",
+      "git_blob": "2fdac1fd1f3d4c0f608c72d590efc62420400021"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/capture_comparison.gd",
+      "git_blob": "dd48f16289ffad2fcf3d8420bcfcca1fe8077166"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/capture_comparison.gd.uid",
+      "git_blob": "8158db4f90981a1d0fecce3d9cadce9a13813bdf"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/capture_experiment07.gd",
+      "git_blob": "fec4dfc3bf1da0acd51668a7a47dc6c5ff15dd47"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/capture_experiment07.gd.uid",
+      "git_blob": "3829e748bdc88a85af84ffcfec6faaf0044af313"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/check_source_integrity.py",
+      "git_blob": "5883ef5543c534401e89395e694daa251ad8dc76"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/compare_brightness.py",
+      "git_blob": "45814015632abb0367e0fa8f4532f1d618c85a3f"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/compare_guidance07.py",
+      "git_blob": "72af60fcd661587a825f23ab618fdd6ae25ba790"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/compare_hud06.py",
+      "git_blob": "cc2b2784530b346be3aeba40a32b76854e897749"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/compare_reference_palette.py",
+      "git_blob": "490c8862ab18a28460e30b3941d9705826cb0c86"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/controls_snapshot.gd",
+      "git_blob": "9df05cbdb4caa6fab12caca090d1fd09fdf5dc2d"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/controls_snapshot.gd.uid",
+      "git_blob": "2f34720490608fbe34482778ba59384215dc2752"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/fixtures/essai01_slot.json",
+      "git_blob": "f11ce09034bcd0ad4357b1b04986ed8bcadf2205"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/fixtures/essai02_slot.json",
+      "git_blob": "d740f6ae4978aa1484f317f00b6daed87ab95038"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/fixtures/essai03_slot.json",
+      "git_blob": "d740f6ae4978aa1484f317f00b6daed87ab95038"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/fixtures/essai04_slot.json",
+      "git_blob": "d740f6ae4978aa1484f317f00b6daed87ab95038"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/fixtures/essai05_slot.json",
+      "git_blob": "f11ce09034bcd0ad4357b1b04986ed8bcadf2205"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/fixtures/essai06_slot.json",
+      "git_blob": "d740f6ae4978aa1484f317f00b6daed87ab95038"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/fixtures/essai07_slot.json",
+      "git_blob": "d740f6ae4978aa1484f317f00b6daed87ab95038"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/fixtures/essai08_slot.json",
+      "git_blob": "f11ce09034bcd0ad4357b1b04986ed8bcadf2205"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/fixtures/essai09_slot.json",
+      "git_blob": "d740f6ae4978aa1484f317f00b6daed87ab95038"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/guidance_board.gd",
+      "git_blob": "59fbe89beefb4a5980c88d868b90c78abf142674"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/guidance_board.gd.uid",
+      "git_blob": "62669c5437bd501eefb9c83a6b8eb6286c93f2cd"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/measure_availability10.gd",
+      "git_blob": "e7e29c70261c289d5182d80cf788f392430909d8"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_availability10.gd",
+      "git_blob": "f021658cb767b72feceb78605057f2a8ebce611d"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_availability10.gd.uid",
+      "git_blob": "4eb708bbf51dec053d8f71fdab2359e11a74ab12"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_check10_ui.gd",
+      "git_blob": "fda8d3ab4119cdc1528fbe1a186815a4d15d27b4"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_check10_ui.gd.uid",
+      "git_blob": "9f470ee4fda92bab77e1e7e33f0342b8383e3164"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_contract.gd",
+      "git_blob": "e4ca7627ac10a5d299f2f0674e5c41a3fc031f4f"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_contract.gd.uid",
+      "git_blob": "765338e3385143b8be8e7cc91f7d4087068b17f7"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_experiment03_render.gd",
+      "git_blob": "997a5d0f33cf19a0d68d3b8832ef935ce5d35a87"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_experiment03_render.gd.uid",
+      "git_blob": "8bf1237b81f909573febd1577e6aac75d117fbac"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_feedback12.gd",
+      "git_blob": "362b5b93409397a7f6bdebc8908180b364a76c58"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_feedback12.gd.uid",
+      "git_blob": "d5494cffb7bbc3e2df528f2554802aed12935633"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_guidance07.gd",
+      "git_blob": "a9ec0c4793a9f72bc13a2dbbcf34371cc5c4f56b"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_guidance07.gd.uid",
+      "git_blob": "d0ed34337eb205d54c911d747c7df631d7965c2e"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_guidance07_render.gd",
+      "git_blob": "06b944e652c7b4236330f5cc9c2c6861b5dd88ff"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_guidance07_render.gd.uid",
+      "git_blob": "b334fe96d7cc6cbe8d3b5cd7a5a8dd63b936215d"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_header08.gd",
+      "git_blob": "4fbca03918d564bf1fc1c7cbe4e3c6dec6f75354"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_header08.gd.uid",
+      "git_blob": "0f34631e701e38e413c9f7185bd6152e602cb998"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_header09.gd",
+      "git_blob": "35ed9c598cbe37e525b0f542c9fb3f0ec2c48fb1"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_header09.gd.uid",
+      "git_blob": "0a4a4cfb4ac179c6a5a1b6940a69bdea1c9503c6"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_hud06.gd",
+      "git_blob": "5a4e6bf4b1a3526d19e32b088b829ab8449a9c6a"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_hud06.gd.uid",
+      "git_blob": "37ba5ecd97b4c674d1b38223db06aafa2cad2e82"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_journal10.gd",
+      "git_blob": "e99316e29c4282bcc0ebd9bb3f4af2a8e56ad869"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_journal10.gd.uid",
+      "git_blob": "0dd7ff33e5c5533404d284b79fdcfb5e61f0ddcf"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_previous_save.gd",
+      "git_blob": "27be1b4d97cc4b4c19bcd09ff71dc775f102460f"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/test_previous_save.gd.uid",
+      "git_blob": "130a109f4827db59cd8626b6eca1be8a22f639f5"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/uniform_board.gd",
+      "git_blob": "fcbc52f9b623543f21233d1786d97755cddc1b07"
+    },
+    {
+      "path": "prototype_1870/tests/graphics/uniform_board.gd.uid",
+      "git_blob": "dde5cc62856c2ffc9599e82f7f898e492011019f"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/graphics2d_art.gd",
+      "git_blob": "fd740df652e6a15960d1fd533f8f44e2739cec1c"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/graphics2d_art.gd.uid",
+      "git_blob": "bac62a8646123ec2ec2c4e51cae56597fa6adbc5"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/graphics2d_skin.gd",
+      "git_blob": "85b950bed00c0f49a125c3dce14e9bfb4c95330a"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/graphics2d_skin.gd.uid",
+      "git_blob": "9708c6017006db29026428e4c1c4b06e0ef43c7e"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/hud_details.gd",
+      "git_blob": "42b052ae07bb8c235644004f8fcee52c31411821"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/hud_details.gd.uid",
+      "git_blob": "73fd8faaea001337717acf25f30a6049ef9b2182"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/journal_model.gd",
+      "git_blob": "7fdd610d583a4fc98ed10b99736f3600e307d3cf"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/journal_model.gd.uid",
+      "git_blob": "d11c9736531f521415115df99c38eeb410478d59"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/journal_view.gd",
+      "git_blob": "36baccad785c65a33668a97e3d9966dca170b426"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/journal_view.gd.uid",
+      "git_blob": "f9e67c5d7ea02e292bb1d3746315b54f1b4249e3"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/main.gd",
+      "git_blob": "b2abb8d80909246786490a3f485b6b6da50e957a"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/map_view.gd",
+      "git_blob": "32c7c423e6ae3b35e5e8ab9fcf3fc9c9d0b2a9c0"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/unit_availability.gd",
+      "git_blob": "8f828f794e9644940e3fc355877c2e1887a35c6f"
+    },
+    {
+      "path": "prototype_1870/war_engine/presentation/unit_availability.gd.uid",
+      "git_blob": "71a7db05fa18da527d29cc4889fa00a1d76ee257"
+    }
+  ],
+  "all_match": true
+}

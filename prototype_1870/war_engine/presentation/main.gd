@@ -1,6 +1,10 @@
 extends Control
 const EngineRules=preload("res://war_engine/core/engine.gd")
 const SaveStore=preload("res://war_engine/platform/save_store.gd")
+const UnitAvailability=preload("res://war_engine/presentation/unit_availability.gd")
+const JournalView=preload("res://war_engine/presentation/journal_view.gd")
+const HudDetails=preload("res://war_engine/presentation/hud_details.gd")
+const GraphicsSkin=preload("res://war_engine/presentation/graphics2d_skin.gd")
 const MapView=preload("res://war_engine/presentation/map_view.gd")
 const BODY=preload("res://assets/fonts/DejaVuSans.ttf")
 const TITLE=preload("res://assets/fonts/DejaVuSerif-Bold.ttf")
@@ -22,6 +26,8 @@ var ai_enabled=true
 var app_suspended=false
 var sound_enabled=true
 var music_enabled=true
+var hud_details
+var availability=UnitAvailability.new()
 const SCENARIOS={"v43":{"pack":"regimental_trial_v43.json","save":"save_v43.json"},"v42_lot8":{"pack":"regimental_trial_v42_lot8.json","save":"save_v42_lot8.json"},"historical":{"pack":"regimental_trial.json","save":"save_regimental0835.json"},"v42_experimental":{"pack":"regimental_trial_v42_experimental.json","save":"save_v42_experimental.json"},"classic":{"pack":"prototype.json","save":"save_classic_v0835.json"},"three":{"pack":"three_objectives.json","save":"save_three_v0835.json"}}
 var scenario_choice="v43"
 func active_scenario() -> String:return "v43" if engine!=null and engine.pack.get("id","")=="regimental_trial_v43" else "v42_lot8" if engine!=null and engine.pack.get("id","")=="regimental_trial_v42_lot8" else "v42_experimental" if engine!=null and engine.pack.get("id","")=="regimental_trial_v42_experimental" else "historical" if engine!=null and engine.pack.get("id","") in ["historical_terrain_trial0825","regimental_trial0828","regimental_trial0829","regimental_trial0830","regimental_trial0831","regimental_trial0832","regimental_trial0833","regimental_trial0834","regimental_trial0835"] else "three" if engine!=null and engine.pack.get("id","")=="trial_three_objectives_v0819" else "classic"
@@ -80,8 +86,8 @@ var hq_seen: Dictionary={}
 var pending_hq_notice=""
 func unit_heading(n: int) -> String:
 	var u=engine.state.units[n];var title=t(str(u.name_key)+"_short")
-	var fs=21
-	while fs>14 and BODY.get_string_size(title,HORIZONTAL_ALIGNMENT_LEFT,-1,fs).x>unit_label.size.x:fs-=1
+	var fs=23
+	while fs>14 and TITLE.get_string_size(title,HORIZONTAL_ALIGNMENT_LEFT,-1,fs).x>unit_label.size.x:fs-=1
 	unit_label.add_theme_font_size_override("font_size",fs)
 	unit_label.tooltip_text=t(str(u.name_key))
 	return title
@@ -139,7 +145,10 @@ func reset_map_view():
 func place(node: Control,parent: Node,x: float,y: float,w: float,h: float):
 	parent.add_child(node);node.position=Vector2(x,y);node.size=Vector2(w,h);return node
 func panel(parent: Node,x: float,y: float,w: float,h: float,color: Color) -> ColorRect:
-	var p=ColorRect.new();p.color=color;place(p,parent,x,y,w,h);return p
+	var p=ColorRect.new();p.color=color;place(p,parent,x,y,w,h)
+	if h>=70 and color in [INK,Color("253e3e")]:
+		var skin=GraphicsSkin.new();skin.card=color!=INK;p.add_child(skin);skin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	return p
 func label(parent: Node,value: String,x: float,y: float,w: float,h: float,font_size: int=21,color: Color=PAPER,serif=false) -> Label:
 	var l=Label.new();l.text=value;l.add_theme_font_override("font",TITLE if serif else BODY)
 	l.add_theme_font_size_override("font_size",font_size);l.add_theme_color_override("font_color",color)
@@ -147,14 +156,11 @@ func label(parent: Node,value: String,x: float,y: float,w: float,h: float,font_s
 func button(parent: Node,value: String,x: float,y: float,w: float,h: float,callback: Callable,primary=false) -> Button:
 	var b=Button.new();b.text=value;b.add_theme_font_override("font",BODY);b.add_theme_font_size_override("font_size",20)
 	b.add_theme_color_override("font_color",INK if primary else PAPER);b.add_theme_color_override("font_hover_color",INK if primary else Color.WHITE)
-	b.add_theme_color_override("font_pressed_color",INK if primary else PAPER);b.add_theme_color_override("font_disabled_color",Color("88978d"))
-	for state in ["normal","hover","pressed","disabled","focus"]:
-		var style=StyleBoxFlat.new();style.bg_color=GOLD if primary else Color("2e4746")
-		if state=="hover":style.bg_color=style.bg_color.lightened(0.12)
-		if state=="disabled":style.bg_color=Color("273c3b")
-		style.set_corner_radius_all(5);style.content_margin_left=12;style.content_margin_right=12
-		if state=="focus":style.set_border_width_all(2);style.border_color=PAPER;style.draw_center=false
-		b.add_theme_stylebox_override(state,style)
+	b.add_theme_color_override("font_pressed_color",INK if primary else PAPER);b.add_theme_color_override("font_disabled_color",Color("bac6bb"))
+	for state in ["normal","hover","pressed","disabled"]:
+		b.add_theme_stylebox_override(state,GraphicsSkin.button_style(primary,state))
+	var focus=StyleBoxFlat.new();focus.bg_color=Color.TRANSPARENT;focus.draw_center=false;focus.set_border_width_all(2);focus.border_color=PAPER;focus.set_corner_radius_all(5)
+	b.add_theme_stylebox_override("focus",focus)
 	place(b,parent,x,y,w,h);b.pressed.connect(callback)
 	b.gui_input.connect(func(event): disabled_button_input(b,event))
 	return b
@@ -164,13 +170,14 @@ func logo(parent: Node,x: float,y: float,w: float,h: float):
 func build_ui():
 	map=MapView.new();map.engine=engine;map.texts=texts;place(map,self,0,92,1280,474);map.cell_tapped.connect(on_cell);map.fire_sound.connect(play_combat_sound);map.assault_sound.connect(play_assault_sound)
 	header=panel(self,0,0,1280,92,INK)
+	var rule=panel(header,0,91,1280,1,Color("9f8658"));rule.mouse_filter=Control.MOUSE_FILTER_IGNORE;rule.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE);rule.offset_top=-1
 	logo(header,14,14,188,64)
-	label(header,t("subtitle"),216,8,728,31,23,PAPER,true)
-	turn_label=label(header,"",216,44,410,36,26,GOLD)
+	label(header,t("subtitle"),216,8,350,31,23,PAPER,true)
+	turn_label=label(header,"",216,44,314,36,22,GOLD)
 	score_label=label(header,"",652,48,296,29,20)
-	header_buttons.append(button(header,t("journal"),960,22,106,50,show_journal))
-	header_buttons.append(button(header,t("help"),1075,22,85,50,show_help))
-	header_buttons.append(button(header,t("menu"),1169,22,94,50,show_menu))
+	header_buttons.append(button(header,t("journal"),892,22,130,50,show_journal))
+	header_buttons.append(button(header,t("help"),1030,22,110,50,show_help))
+	header_buttons.append(button(header,t("menu"),1148,22,116,50,show_menu))
 	hint_bar=panel(self,0,530,1280,36,Color("d6d9bd"));hint=label(hint_bar,t("hint_select"),22,2,1236,32,18,INK)
 	hint_bar.hide()
 	footer=panel(self,0,540,1280,180,INK)
@@ -206,7 +213,7 @@ func build_ui():
 	context_detail.text_overrun_behavior=TextServer.OVERRUN_TRIM_ELLIPSIS
 	for field in [unit_state,formation_label,terrain_label,unit_ap,weapon_label,ammo_label,support_label,supply_label,unit_reaction,encircled_label]:field.clip_text=true
 	actions.undo=button(footer,t("undo"),486,103,261,42,undo_move,true)
-	var undo_disabled=actions.undo.get_theme_stylebox("disabled").duplicate()
+	var undo_disabled=StyleBoxFlat.new();undo_disabled.bg_color=Color("10272e");undo_disabled.set_corner_radius_all(5)
 	undo_disabled.set_border_width_all(1);undo_disabled.border_color=Color("718379")
 	actions.undo.add_theme_stylebox_override("disabled",undo_disabled)
 	actions.undo.add_theme_color_override("font_disabled_color",Color("bac6bb"))
@@ -219,13 +226,14 @@ func build_ui():
 	# V42: the supply wagons on the map are the only supply-overlay controls.
 	logistics_button=null
 	status=label(footer,"",1011,129,251,21,12,Color("b0c4ad"))
+	hud_details=HudDetails.new();hud_details.game=self;footer.add_child(hud_details);hud_details.prepare()
 	resized.connect(layout);layout()
 func layout():
 	if map==null:return
 	var extra=size-Vector2(1280,720)
 	map.size=Vector2(size.x,448+extra.y);header.size.x=size.x;footer.size.x=size.x
 	footer.position.y=540+extra.y;hint_bar.position.y=504+extra.y;hint_bar.size.x=size.x;hint.size.x=size.x-44
-	for k in range(header_buttons.size()):header_buttons[k].position.x=[960,1075,1169][k]+extra.x
+	for k in range(header_buttons.size()):header_buttons[k].position.x=[892,1030,1148][k]+extra.x
 	for key in ["end_turn","next"]:actions[key].position.x=1011+extra.x
 	status.position.x=1011+extra.x
 	if logistics_button!=null:logistics_button.position.x=1011+extra.x
@@ -276,6 +284,7 @@ func layout_cards():
 	var heading_size=22
 	while heading_size>16 and BODY.get_string_size(context_label.text,HORIZONTAL_ALIGNMENT_LEFT,-1,heading_size).x>context_label.size.x:heading_size-=1
 	context_label.add_theme_font_size_override("font_size",heading_size)
+	if hud_details!=null:hud_details.update_details()
 func camp(side: int) -> String:return t("france") if side==0 else t("germany")
 func ap_text(value) -> String:
 	var v=float(value)/4.0;return str(int(v)) if is_equal_approx(v,roundf(v)) else str(v).replace(".",",")
@@ -286,6 +295,7 @@ func terrain_caption(i: int) -> String:
 	return t("terrain_hill") if engine.pack.map.get("show_relief",true) and (engine.elevation(i)>=2 or engine.pack.terrains[engine.pack.map.tiles[i]].get("height_category",false)) else name
 var support_notice_seen=0
 func refresh(message: String=""):
+	availability.update(engine);map.exhausted=availability.exhausted
 	var recent_support=[]
 	for event in engine.state.get("support_events",[]):
 		if int(event.serial)>support_notice_seen and int(event.side)==int(engine.state.human_side):recent_support.append(event)
@@ -363,7 +373,7 @@ func refresh(message: String=""):
 	show_terrain_info()
 	terrain_label.add_theme_font_size_override("font_size",14 if terrain_label.text.length()>12 else 21)
 	context_label.size.x=504
-	context_label.text=t("available")%engine.available_count();context_detail.text=t("objectives_hint" if engine.objective_definitions().size()>1 else "objective_hint")
+	context_label.text="1 unité disponible" if availability.count==1 else t("available")%availability.count;context_detail.text=t("objectives_hint" if engine.objective_definitions().size()>1 else "objective_hint")
 	if engine.cavalry(selected):context_detail.text=t("hint_cavalry")%ap_text(engine.assault_cost(selected))
 	if engine.artillery(selected):
 		context_label.text=t("deployed" if engine.state.units[selected].deployed else "limbered")
@@ -402,7 +412,7 @@ func refresh(message: String=""):
 	actions.undo.visible=human_turn() and not engine.state.finished
 	if can_undo and target<0:context_label.text=t("undo_available")
 	actions.undo.disabled=not can_undo
-	actions.next.disabled=engine.available_count()==0 or not human_turn() or map.busy()
+	actions.next.disabled=availability.count==0 or not human_turn() or map.busy()
 	actions.end_turn.text=t("results" if engine.state.finished else "end_turn")
 	actions.end_turn.disabled=map.busy() or (not engine.state.finished and not human_turn())
 	actions.next.visible=not engine.state.finished
@@ -451,7 +461,7 @@ func on_cell(i: int):
 				else:refresh()
 				return
 			route=[];full_route=[];target=n;inspected=-1;refresh(t("hint_target"));return
-		selected=n;clear_preview();refresh(t("hint_path") if engine.can_act(n) else t("hint_enemy") if int(engine.state.units[n].side)!=int(engine.state.side) else t("hint_done"));return
+		selected=n;clear_preview();refresh(t("hint_path") if availability.usable.get(n,engine.can_act(n)) else t("hint_enemy") if int(engine.state.units[n].side)!=int(engine.state.side) else t("hint_done"));return
 	inspected=i
 	if selected<0:refresh();return
 	# Confirmation applies only to the reachable endpoint, never to the remote request.
@@ -620,9 +630,10 @@ func change_deployment():
 	if engine.toggle_deployment(selected):
 		clear_preview();persist();refresh(t("hint_deployed" if engine.state.units[selected].deployed else "hint_limbered"))
 func next_unit():
+	availability.update(engine)
 	for offset in range(1,engine.state.units.size()+1):
 		var n=(maxi(selected,-1)+offset)%engine.state.units.size()
-		if engine.actionable(n):selected=n;clear_preview();map.focus=map.world(engine.unit_cell(engine.state.units[n]));refresh(t("hint_path"));return
+		if availability.usable.get(n,false):selected=n;clear_preview();map.focus=map.world(engine.unit_cell(engine.state.units[n]));refresh(t("hint_path"));return
 	refresh(t("hint_none"))
 func close_modal():
 	if is_instance_valid(modal):modal.hide();modal.queue_free();modal=null;modal_box=null
@@ -700,7 +711,7 @@ func primary_action():
 	else:confirm_end()
 func confirm_end():
 	if not human_turn() or map.busy():return
-	if engine.available_count()>0:confirm(t("end_confirm"),t("end_detail")%engine.available_count(),t("end_yes"),end_side,close_modal)
+	if availability.count>0:confirm(t("end_confirm"),t("end_detail")%availability.count,t("end_yes"),end_side,close_modal)
 	else:end_side()
 func confirm(title: String,detail: String,yes: String,callback: Callable,back: Callable):
 	var box=modal_base(794,300);label(box,title,30,25,734,45,25,PAPER,true);label(box,detail,30,96,734,55,20)
@@ -769,77 +780,13 @@ func hq_arrival_lines(overdue_only: bool=false) -> Array:
 		lines.append(t("hq_arrival_delayed" if overdue else "hq_arrival_scheduled")%[t(u.name_key),due,int(u.cell[0]),int(u.cell[1])])
 	return lines
 func surrender_journal_lines() -> Array:
-	var side=int(engine.state.human_side);var found={};var records=[]
-	for event in engine.state.get("support_events",[]):
-		if event.kind=="surrender":records.append(event)
-	for event in engine.state.get("battle_history",[]):
-		if event.kind=="surrender":records.append(event)
 	var lines=[]
-	for event in records:
-		var id=str(event.unit)
-		if found.has(id):continue
-		var n=engine.unit_index(id)
-		if n<0:continue
-		var name=""
-		if int(event.side)==side or not engine.fog_enabled() or engine.state.finished:name=str(engine.state.units[n].name_key)
-		elif event.get("known_names",{}) is Dictionary:name=str(event.get("known_names",{}).get(str(side),""))
-		if name.is_empty():
-			for combat in engine.state.events:
-				if int(combat.turn)!=int(event.turn):continue
-				var slot=1 if int(combat.target)==n and int(combat.prisoners)>0 else 0 if int(combat.shooter)==n and int(combat.attacker_prisoners)>0 else -1
-				if slot>=0:name=str(combat.get("fog_names",{}).get(str(side),["fog_enemy_generic","fog_enemy_generic"])[slot]);break
-		if name.is_empty():continue
-		found[id]=true
-		lines.append("Tour %d — %s : %s se rend (%d prisonniers)."%[int(event.turn),camp(int(event.side)),t(name),int(event.prisoners)])
+	for row in JournalView.Model.surrenders(self):lines.append(row.body)
 	return lines
 
 func show_journal():
-	var box=modal_base(1040,630);label(box,t("journal"),30,18,980,42,27,GOLD,true)
-	var content=t("journal_empty")
-	# V42: cumulative losses are read from the engine, never from a resettable UI counter.
-	# Under fog of war, do not reveal exact losses of the opposing camp.
-	var own_side=int(engine.state.human_side)
-	var exact_totals=not engine.fog_enabled() or engine.state.finished
-	var french_total=str(engine.losses(0)) if exact_totals or own_side==0 else "?"
-	var german_total=str(engine.losses(1)) if exact_totals or own_side==1 else "?"
-	var cumulative_header="Tour %d — Pertes cumulées : %s %s | %s %s" % [int(engine.state.turn),camp(0),french_total,camp(1),german_total]
-	if not exact_totals:cumulative_header+=" (pertes adverses non confirmées)"
-	var capitulations=surrender_journal_lines()
-	cumulative_header+="\n\nRedditions confirmées"+"\n"+("\n".join(capitulations) if not capitulations.is_empty() else "Aucune reddition confirmée.")
-	var arrivals=hq_arrival_lines()
-	if not arrivals.is_empty():cumulative_header+="\n\n"+"\n".join(arrivals)
-	if not engine.state.events.is_empty():
-		content=""
-		for k in range(engine.state.events.size()-1,-1,-1):
-			var event=engine.state.events[k]
-			var names=[engine.state.units[int(event.shooter)].name_key,engine.state.units[int(event.target)].name_key]
-			if engine.fog_enabled() and not engine.state.finished:names=event.get("fog_names",{}).get(str(int(engine.state.human_side)),["fog_enemy_generic","fog_enemy_generic"])
-			content+=t("journal_combat")%[event.turn,t(names[0]),t(names[1]),t("kind_"+event.kind)]
-			content+="\n"+combat_summary(event)+"\n"+t("journal_reaction" if event.reaction else "journal_no_reaction")
-			if event.prisoners>0 and (not engine.fog_enabled() or engine.state.finished):content+=" • "+t("combat_prisoners")%[camp(1-int(event.side)),event.prisoners]
-			if event.attacker_prisoners>0 and (not engine.fog_enabled() or engine.state.finished):content+=" • "+t("combat_prisoners")%[camp(int(event.side)),event.attacker_prisoners]
-			if not event.retreat.is_empty() or not event.attacker_retreat.is_empty():content+=" • "+t("retreat")
-			content+="\n\n"
+	JournalView.open(self)
 
-	for event in engine.state.get("support_events",[]):
-		if event.kind=="surrender" or int(event.side)!=int(engine.state.human_side):continue
-		content+="\n"+t("support_journal_turn")%int(event.turn)+" · "+(t("support_surrender_notice")%[t(event.name_key),int(event.prisoners)] if event.kind=="surrender" else t("support_cut_notice")%t(event.name_key))+"\n"+link_journal_detail(event)
-	if active_scenario() in ["v43","v42_experimental","v42_lot8"]:
-		var goals=[]
-		for goal in engine.objective_definitions():goals.append(t(goal.get("name_key","objective"))+" : "+str(int(goal.points))+" points")
-		content=" · ".join(goals)+". Score : contrôle 60 %, durée 20 %, pertes 20 %.\n\n"+content
-	elif engine.objective_definitions().size()>1:content=t("scenario_help")+"\n\n"+content
-	var history="Historique en fin de tour — pertes cumulées ; prisonniers séparés\n"
-	if engine.state.get("loss_history",[]).is_empty():history+="Aucun tour enregistré. Les anciennes sauvegardes ne permettent pas de reconstituer les tours passés.\n"
-	if not engine.state.get("loss_history",[]).is_empty() and int(engine.state.loss_history[0].turn)>1:history+="Les tours antérieurs au premier relevé n’ont pas été enregistrés dans cette sauvegarde.\n"
-	for snapshot in engine.state.get("loss_history",[]):
-		var fr=str(snapshot.losses[0]) if exact_totals or own_side==0 else "?"
-		var de=str(snapshot.losses[1]) if exact_totals or own_side==1 else "?"
-		var pfr=str(snapshot.prisoners[0]) if exact_totals or own_side==0 else "?"
-		var pde=str(snapshot.prisoners[1]) if exact_totals or own_side==1 else "?"
-		history+="Fin T%d : %s %s (prisonniers %s) | %s %s (prisonniers %s)\n" % [int(snapshot.turn),camp(0),fr,pfr,camp(1),de,pde]
-	content=cumulative_header+"\n\n"+history+"\n"+content
-	scroll_text(box,content,82,454);button(box,t("close"),30,555,980,52,close_modal,true)
 func inspect_battle():
 	selected=-1;clear_preview();close_modal();refresh()
 func result_reason(result: Dictionary) -> String:

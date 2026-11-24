@@ -14,10 +14,12 @@ var press_unit=-1
 var press_topic=""
 const HELP_DELAY=0.55
 var engine
+const Graphics2D=preload("res://war_engine/presentation/graphics2d_art.gd")
 const SupportRules=preload("res://war_engine/core/support.gd")
 var supply_overlay_source=-2 # -2 off; -1 all; >=0 one source
 var supply_overlay_cells: Dictionary={}
 var texts: Dictionary
+var exhausted: Dictionary={}
 var selected: int=-1
 var target: int=-1
 var route: Array=[]
@@ -27,12 +29,15 @@ var fire_cells: Dictionary={}
 var zoom: float=1.18
 var focus=Vector2(765,580)
 var font=preload("res://assets/fonts/DejaVuSans.ttf")
+const LOCALITY_FONT=preload("res://assets/fonts/DejaVuSerif-Bold.ttf")
 const COUNTER_FONT=preload("res://assets/fonts/DejaVuSans-Bold.ttf")
 const R=34.0
 const Cartography=preload("res://war_engine/presentation/cartography.gd")
 const RIVER_FONT=preload("res://assets/fonts/DejaVuSerif-Italic.ttf")
 var river_curve: Curve2D
 var river_key=""
+var graphics_label_signature: Array=[]
+var graphics_label_positions: Dictionary={}
 var river_center=0.0
 var down=false
 var dragging=false
@@ -55,6 +60,7 @@ var reaction_sounded=false
 var just_finished=false
 func _ready():
 	clip_contents=true;mouse_filter=Control.MOUSE_FILTER_STOP;set_process(false)
+	texture_filter=CanvasItem.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS;Graphics2D.prepare()
 	help_tip=Panel.new();help_tip.mouse_filter=Control.MOUSE_FILTER_IGNORE;help_tip.size=Vector2(398,116)
 	var style=StyleBoxFlat.new();style.bg_color=Color("192f31");style.border_color=Color("d4b06c");style.set_border_width_all(1);style.set_corner_radius_all(5)
 	help_tip.add_theme_stylebox_override("panel",style);add_child(help_tip);help_tip.hide()
@@ -139,69 +145,17 @@ func woodland(p: Vector2,z: float,variant: int):
 			draw_circle(b+Vector2(-3,-2)*z,radius*0.72,Color("8da179"))
 			draw_circle(b+Vector2(3,-3)*z,radius*0.66,Color("82996f"))
 func horseman(p: Vector2,z: float,french: bool):
-	var edge=Color("152b30");var coat=Color("d8bd88");var light=Color("fff1cc")
-	var body=PackedVector2Array([p+Vector2(-17,-1)*z,p+Vector2(-8,-6)*z,p+Vector2(5,-5)*z,p+Vector2(8,-13)*z,p+Vector2(13,-13)*z,p+Vector2(18,-7)*z,p+Vector2(17,-3)*z,p+Vector2(12,-4)*z,p+Vector2(8,5)*z,p+Vector2(-11,6)*z])
-	outlined_shape(body,coat,edge,2*z)
-	for limb in [[Vector2(-12,4),Vector2(-15,13)],[Vector2(-6,4),Vector2(-3,13)],[Vector2(5,4),Vector2(10,13)],[Vector2(9,1),Vector2(15,9)]]:
-		draw_line(p+limb[0]*z,p+limb[1]*z,edge,4*z,true);draw_line(p+limb[0]*z,p+limb[1]*z,coat,2*z,true)
-	draw_line(p+Vector2(-16,-1)*z,p+Vector2(-21,6)*z,edge,3*z,true)
-	draw_line(p+Vector2(-7,-5)*z,p+Vector2(3,-5)*z,Color("963047") if french else Color("253b39"),5*z,true)
-	draw_line(p+Vector2(-3,-10)*z,p+Vector2(0,4)*z,edge,7*z,true)
-	draw_line(p+Vector2(-3,-10)*z,p+Vector2(-2,-3)*z,Color("6186a1") if french else Color("8b9b8d"),5*z,true)
-	draw_line(p+Vector2(-2,-2)*z,p+Vector2(0,6)*z,Color("ce5960") if french else Color("8b9b8d"),3*z,true)
-	draw_circle(p+Vector2(-3,-15)*z,3.4*z,light)
-	draw_line(p+Vector2(-7,-18)*z,p+Vector2(1,-18)*z,edge,3*z,true)
-	draw_line(p+Vector2(0,-9)*z,p+Vector2(7,-11)*z,light,1.5*z,true)
-	draw_line(p+Vector2(7,-11)*z,p+Vector2(10,-20)*z,light,1.4*z,true)
-	draw_circle(p+Vector2(13,-9)*z,0.9*z,edge)
+	Graphics2D.figure(self,"cavalry",p+Vector2(2,-1)*z,z/1.04,french)
 
-func soldier(p: Vector2,z: float,french: bool):
-	var coat=Color("84aac5") if french else Color("b1c2ba")
-	var trousers=Color("df5861") if french else Color("8da09b");var dark=Color("13242d")
-	# Outlined limbs and jacket retain their silhouette at the normal map zoom.
-	for leg in [[Vector2(-4,3),Vector2(-7,12)],[Vector2(1,3),Vector2(5,12)]]:
-		draw_line(p+leg[0]*z,p+leg[1]*z,dark,6*z,true);draw_line(p+leg[0]*z,p+leg[1]*z,trousers,3.8*z,true)
-	draw_line(p+Vector2(-7,12)*z,p+Vector2(-11,12)*z,dark,2.6*z,true)
-	draw_line(p+Vector2(5,12)*z,p+Vector2(8,12)*z,dark,2.6*z,true)
-	outlined_shape(PackedVector2Array([p+Vector2(-7,-8)*z,p+Vector2(2,-8)*z,p+Vector2(5,3)*z,p+Vector2(-8,3)*z]),coat,dark,1.4*z)
-	draw_line(p+Vector2(-5,-7)*z,p+Vector2(1,2)*z,Color("f1e9cc"),1.8*z,true)
-	draw_line(p+Vector2(-7,2)*z,p+Vector2(4,2)*z,dark,1.8*z,true)
-	draw_line(p+Vector2(-4,-8)*z,p+Vector2(1,-8)*z,Color("d1aa68"),1.2*z,true)
-	draw_circle(p+Vector2(-1,-2)*z,0.8*z,Color("f2db9b"))
-	draw_circle(p+Vector2(-2,-12)*z,4.5*z,dark);draw_circle(p+Vector2(-2,-12)*z,3.3*z,Color("efd1a8"))
-	draw_rect(Rect2(p+Vector2(-6,-18)*z,Vector2(9,4)*z),Color("c75460") if french else dark)
-	draw_line(p+Vector2(-7,-14)*z,p+Vector2(4,-14)*z,dark,2*z,true)
-	if not french:draw_line(p+Vector2(-2,-18)*z,p+Vector2(-2,-21)*z,Color("e8d298"),1.6*z,true)
-	draw_line(p+Vector2(-3,-6)*z,p+Vector2(7,-2)*z,dark,4.7*z,true)
-	draw_line(p+Vector2(-3,-6)*z,p+Vector2(7,-2)*z,coat,2.8*z,true)
-	draw_line(p+Vector2(6,8)*z,p+Vector2(13,-18)*z,dark,4*z,true)
-	draw_line(p+Vector2(6,8)*z,p+Vector2(10,-7)*z,Color("c49b6a"),2.5*z,true)
-	draw_line(p+Vector2(10,-7)*z,p+Vector2(13,-18)*z,Color("f0e9d6"),1.8*z,true)
-func cannon(p: Vector2,z: float,color: Color,deployed: bool):
-	var metal=Color("d9dfd8");var wood=Color("d2ac72");var dark=Color("14262b")
-	# Broad tapered tube, visible muzzle and two spoked wheels stay legible at phone scale.
-	var far=p+Vector2(-9,5)*z
-	draw_circle(far,7*z,dark);draw_arc(far,5.5*z,0,TAU,24,wood.darkened(0.22),2*z,true)
-	for k in range(6):draw_line(far,far+Vector2(cos(k*TAU/6),sin(k*TAU/6))*5*z,wood.darkened(0.22),z,true)
-	outlined_shape(PackedVector2Array([p+Vector2(-7,0)*z,p+Vector2(2,3)*z,p+Vector2(-18,13)*z,p+Vector2(-22,11)*z]),wood,dark,1.5*z)
-	draw_line(p+Vector2(-11,3)*z,p+Vector2(6,5)*z,dark,5*z,true)
-	draw_line(p+Vector2(-11,3)*z,p+Vector2(6,5)*z,wood,2.5*z,true)
-	outlined_shape(PackedVector2Array([p+Vector2(-13,-5)*z,p+Vector2(10,-15)*z,p+Vector2(13,-9)*z,p+Vector2(-10,2)*z]),metal,dark,1.7*z)
-	draw_line(p+Vector2(-10,-4)*z,p+Vector2(9,-12)*z,color,1.2*z,true)
-	draw_line(p+Vector2(10,-15)*z,p+Vector2(13,-9)*z,dark,3*z,true)
-	draw_line(p+Vector2(10.5,-13.5)*z,p+Vector2(12,-10.5)*z,Color("71817c"),1.2*z,true)
-	draw_circle(p+Vector2(-13,-1)*z,2.2*z,dark)
-	var near=p+Vector2(3,6)*z
-	draw_circle(near,8.5*z,dark);draw_arc(near,6.9*z,0,TAU,32,wood,2.5*z,true)
-	for k in range(8):draw_line(near,near+Vector2(cos(k*TAU/8),sin(k*TAU/8))*6.3*z,wood,1.1*z,true)
-	draw_circle(near,2.1*z,metal);draw_circle(near,0.8*z,dark)
-	if deployed:draw_line(p+Vector2(-22,15)*z,p+Vector2(13,15)*z,Color("e8c57b"),1.4*z,true)
-	else:draw_arc(p+Vector2(-23,11)*z,2*z,-PI/2,PI/2,8,wood,1.4*z,true)
+func soldier(p: Vector2,z: float,french: bool,figures: int=1):
+	Graphics2D.figure(self,"infantry",p+Vector2(4,-3)*z,z/1.10,french,figures)
+
+func cannon(p: Vector2,z: float,color: Color,deployed: bool,french: bool=true):
+	Graphics2D.figure(self,"artillery",p+Vector2(0,-0.5)*z,z,french)
+	if deployed:draw_line(p+Vector2(-22,15)*z,p+Vector2(13,15)*z,color.lerp(Color("e8c57b"),0.8),1.4*z,true)
+
 func selection_outline(p: Vector2,z: float):
-	var points=PackedVector2Array()
-	for v in [Vector2(-24,-30),Vector2(24,-30),Vector2(29,-25),Vector2(29,25),Vector2(24,30),Vector2(-24,30),Vector2(-29,25),Vector2(-29,-25),Vector2(-24,-30)]:points.append(p+v*z)
-	draw_polyline(points,Color("263d3b"),maxf(5,7*z),true)
-	draw_polyline(points,Color("ffe27a"),maxf(3.0,4.5*z),true)
+	Graphics2D.selection_brackets(self,p,z)
 func hq_member_highlighted(n: int) -> bool:
 	if target>=0 or not engine.alive(selected) or not engine.headquarters(selected) or not engine.alive(n) or n==selected:return false
 	var hq=engine.state.units[selected];var member=engine.state.units[n]
@@ -215,10 +169,15 @@ func counter_back(p: Vector2,z: float,ink: Color,current: bool=true):
 	for v in [Vector2(-23,-27),Vector2(23,-27),Vector2(26,-24),Vector2(26,24),Vector2(23,27),Vector2(-23,27),Vector2(-26,24),Vector2(-26,-24)]:shape.append(p+v*z)
 	var shadow=shape.duplicate()
 	for k in range(shadow.size()):shadow[k]+=Vector2(1.5,2)*z
-	draw_colored_polygon(shadow,Color(0.08,0.15,0.17,0.3))
-	outlined_shape(shape,ink,Color("142c31"),2.4*z)
-	draw_line(p+Vector2(-22,-25)*z,p+Vector2(22,-25)*z,Color("e6d8b7") if current else Color("9da78f"),1.2*z,true)
-	draw_line(p+Vector2(-24,-23)*z,p+Vector2(-24,12)*z,ink.lightened(0.24),1.0*z,true)
+	draw_colored_polygon(shadow,Color(0.07,0.12,0.13,0.22))
+	var colors=PackedColorArray()
+	for v in shape:colors.append(ink.lightened(0.10) if v.y<p.y else ink)
+	draw_polygon(shape,colors)
+	var border=shape.duplicate();border.append(shape[0]);draw_polyline(border,Color("a8996c"),1.6*z,true)
+	draw_line(p+Vector2(-22,-25)*z,p+Vector2(22,-25)*z,Color("eddfbf") if current else Color("9da78f"),1.2*z,true)
+	draw_line(p+Vector2(-24,-23)*z,p+Vector2(-24,22)*z,Color(0.94,0.90,0.76,0.28),0.9*z,true)
+	draw_line(p+Vector2(-22,25)*z,p+Vector2(22,25)*z,Color(0.05,0.12,0.14,0.42),1.0*z,true)
+
 func counter_number(p: Vector2,z: float,value) -> void:
 	var text="" if str(value).is_empty() else str(int(value))
 	var font_size=maxi(8,int((9 if text.length()>2 else 13)*z))
@@ -322,11 +281,7 @@ func shot_effect(origin: Vector2,dest: Vector2,progress: float,is_cannon: bool):
 			draw_circle(dest+offset*zoom,(4.0+phase*14.0)*scale*zoom,dust)
 		draw_arc(dest,(8.0+phase*(25.0 if is_cannon else 14.0))*zoom,0,TAU,28,Color(0.95,0.72,0.35,fade*0.85),(3.5 if is_cannon else 2.0)*zoom,true)
 func shovel(p: Vector2,z: float):
-	var metal=Color("fff2c8")
-	draw_circle(p,11*z,Color("14272d"));draw_circle(p,9.5*z,Color("244043"));draw_arc(p,9.5*z,0,TAU,24,Color("e4c486"),1.5*z,true)
-	draw_rect(Rect2(p+Vector2(-3,-8)*z,Vector2(6,4)*z),metal,false,1.6*z)
-	draw_line(p+Vector2(0,-4)*z,p+Vector2(0,2)*z,Color("deb985"),2.6*z,true)
-	draw_colored_polygon(PackedVector2Array([p+Vector2(-4,1)*z,p+Vector2(4,1)*z,p+Vector2(4,5)*z,p+Vector2(0,8)*z,p+Vector2(-4,5)*z]),metal)
+	Graphics2D.condition_badge(self,p,z,"entrenched")
 func set_supply_overlay(source_index: int):
 	supply_overlay_source=source_index
 	supply_overlay_cells={}
@@ -344,20 +299,10 @@ func _draw():
 		var p=screen(i);var z=zoom;var h=R*z
 		if p.x< -h or p.y< -h or p.x>size.x+h or p.y>size.y+h:continue
 		var terrain_key=engine.pack.map.tiles[i];var terrain=str(engine.pack.terrains[terrain_key].get("visual_type",terrain_key));var polygon=hexagon(p,h)
-		draw_colored_polygon(polygon,Color(engine.pack.terrains[terrain_key].color))
-		if supply_overlay_source!=-2 and engine.fixed_hq():
-			var known=not engine.fog_enabled() or engine.state.finished or engine.cell_visible(int(engine.state.human_side),i)
-			var fill=Color(0.76,0.19,0.19,0.37) if known and supply_overlay_cells.has(i) else Color(0.37,0.40,0.42,0.37)
-			draw_colored_polygon(polygon,fill)
-		var outline=polygon.duplicate();outline.append(polygon[0]);draw_polyline(outline,Color(0.22,0.29,0.22,0.17),0.7,true)
-		for lower in relief_edges(i):
-			var normal=(screen(lower)-p).normalized();var middle=(p+screen(lower))/2
-			var tangent=Vector2(-normal.y,normal.x)*R*z*0.5
-			draw_line(middle-tangent,middle+tangent,Color(0.40,0.32,0.21,0.60),maxf(1.1,1.7*z),true)
-			if engine.elevation(i)>=2:
-				var inset=normal*4*z
-				draw_line(middle-tangent*0.85-inset,middle+tangent*0.85-inset,Color(0.40,0.32,0.21,0.40),maxf(1.0,1.2*z),true)
-		if engine.pack.map.get("show_relief",true) and engine.elevation(i)>=2 and terrain!="hill":contours(p,z*0.72,i%4)
+		draw_colored_polygon(polygon,Graphics2D.base_color(Color(engine.pack.terrains[terrain_key].color)))
+		Graphics2D.ground(self,terrain,i,p,z)
+		Graphics2D.relief(self,i,p,z)
+		if terrain=="forest":Graphics2D.decor(self,terrain,i,p,z,false)
 		var road_ends=[]
 		for edge in engine.pack.map.get("road_edges",[]):
 			if int(edge[0])==i or int(edge[1])==i:
@@ -372,29 +317,32 @@ func _draw():
 			for k in range(9):
 				var t=float(k)/8.0
 				curve.append(road_ends[0].lerp(p,t).lerp(p.lerp(road_ends[1],t),t))
-			draw_polyline(curve,Color("ae9974"),4*z,true)
+			Graphics2D.road(self,curve,z)
 		else:
-			for end in road_ends:draw_line(p,end,Color("ae9974"),4*z,true)
-		if terrain=="forest":woodland(p,z,i%3)
-		elif terrain=="hill" and engine.pack.map.get("show_relief",true):contours(p,z,i%4)
-		elif terrain=="village":village(p,z)
-		elif terrain=="road" or terrain=="bridge":
+			for end in road_ends:Graphics2D.road(self,PackedVector2Array([p,end]),z)
+		if terrain!="forest":Graphics2D.decor(self,terrain,i,p,z,not road_ends.is_empty())
+		if terrain=="road" or terrain=="bridge":
 			for n in engine.neighbours(i):
 				if not engine.pack.map.has("road_edges") and engine.pack.map.tiles[n] in ["road","bridge"]:draw_line(p,(p+screen(n))/2,Color("ae9974"),4*z,true)
 			if terrain=="bridge":
 				for y in [-6,6]:draw_line(p+Vector2(-19,y)*z,p+Vector2(19,y)*z,Color("665c49"),3*z,true)
 		elif terrain=="water":draw_line(p-Vector2(5,19)*z,p+Vector2(3,19)*z,Color("bbd2c9"),2*z,true)
+		if supply_overlay_source!=-2 and engine.fixed_hq():
+			var known=not engine.fog_enabled() or engine.state.finished or engine.cell_visible(int(engine.state.human_side),i)
+			var fill=Color(0.76,0.19,0.19,0.37) if known and supply_overlay_cells.has(i) else Color(0.37,0.40,0.42,0.37)
+			draw_colored_polygon(polygon,fill)
+		var outline=polygon.duplicate();outline.append(polygon[0]);draw_polyline(outline,Color(0.25,0.32,0.22,0.28),maxf(0.6,0.75*z),true)
 		if not engine.cell_visible(int(engine.state.human_side),i):draw_colored_polygon(polygon,Color(0.13,0.20,0.20,0.29))
 		if fire_cells.has(i) and engine.artillery(selected) and not busy():
 			draw_colored_polygon(hexagon(p,h-2),Color(1.0,0.96,0.76,0.34))
 		if reachable.has(i) and (fire_cells.is_empty() or not engine.artillery(selected)):
 			draw_colored_polygon(hexagon(p,h-2),Color(0.15,0.50,0.41,0.19))
-			if engine.known_unit_at(i,int(engine.state.human_side))<0:draw_circle(p,2.8*z,Color(0.2,0.44,0.36,0.5))
+			if engine.known_unit_at(i,int(engine.state.human_side))<0:Graphics2D.movement_marker(self,p,z)
 	# River boundaries are public map information. One permanent road bridge; no repairs.
 	for edge in engine.pack.map.get("river_edges",[]):
 		var a=screen(int(edge.a));var b=screen(int(edge.b));var middle=(a+b)/2
 		var normal=(b-a).normalized();var tangent=Vector2(-normal.y,normal.x)*R*zoom/2
-		draw_line(middle-tangent,middle+tangent,Color("5792a5"),5*zoom,true)
+		Graphics2D.river(self,middle-tangent,middle+tangent,zoom)
 		if bool(edge.bridge) or edge.has("bridge_from_turn"):
 			draw_line(middle-normal*14*zoom,middle+normal*14*zoom,Color("ede2bb"),10*zoom,true)
 			for sign in [-1,1]:
@@ -404,9 +352,11 @@ func _draw():
 				draw_line(middle+Vector2(-10,-10)*zoom,middle+Vector2(10,10)*zoom,Color("963c31"),3*zoom,true)
 				draw_line(middle+Vector2(-10,10)*zoom,middle+Vector2(10,-10)*zoom,Color("963c31"),3*zoom,true)
 	draw_sauer()
+	var label_obstacles=Graphics2D.label_obstacles(self);var placed_labels=[]
+	Graphics2D.begin_labels(self,label_obstacles)
 	for location in engine.pack.map.get("labels",[]):
 		var c=location.cell;var anchor=screen(engine.index(Vector2i(int(c[0]),int(c[1]))));var p=anchor+settlement_label_offset(str(location.text))*zoom
-		var fs=maxi(11,int(16*zoom));var text_size=font.get_string_size(location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs)
+		var fs=maxi(11,int(15*zoom));var text_size=LOCALITY_FONT.get_string_size(location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs)
 		if location.has("arrow_cell"):
 			if anchor.x< -text_size.x or anchor.x>size.x+text_size.x or anchor.y< -80 or anchor.y>size.y+100:continue
 			# One hexagon high, plain downward arrow in the exact road colour.
@@ -416,9 +366,16 @@ func _draw():
 			var road_colour=Color("ae9974");var stroke=maxf(1.5,3*zoom)
 			draw_line(start,tip,road_colour,stroke,true)
 			draw_polyline(PackedVector2Array([tip+Vector2(-12,-14)*zoom,tip,tip+Vector2(12,-14)*zoom]),road_colour,stroke,true)
-		else:p.x-=text_size.x/2
-		draw_string_outline(font,p,location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs,3,Color("ece7d1"))
-		draw_string(font,p,location.text,HORIZONTAL_ALIGNMENT_LEFT,-1,fs,Color("435749"))
+		else:
+			if anchor.x< -text_size.x or anchor.x>size.x+text_size.x or anchor.y< -80 or anchor.y>size.y+80:continue
+			var preferred=p-Vector2(text_size.x/2,0)
+			p=Graphics2D.label_position(self,anchor,p,text_size,label_obstacles,placed_labels,location.text=="Spachbach")
+			if p.distance_to(preferred)>8*zoom:
+				var label_box=Rect2(p-Vector2(0,text_size.y),text_size);var end=anchor.clamp(label_box.position,label_box.end)
+				if anchor.distance_to(end)>18*zoom:
+					draw_line(anchor,end,Color(0.96,0.92,0.77,0.7),2.5*zoom,true)
+					draw_line(anchor,end,Color(0.24,0.31,0.20,0.55),maxf(0.7,zoom),true)
+		Graphics2D.locality_name(self,p,str(location.text),fs)
 	if selected>=0 and engine.alive(selected) and (not engine.fog_enabled() or int(engine.state.units[selected].side)==int(engine.state.human_side)):
 		var center=engine.unit_cell(engine.state.units[selected]);var max_range=1 if engine.cavalry(selected) else int(engine.weapon(selected).range)
 		for i in range(engine.width*engine.height):
@@ -433,9 +390,8 @@ func _draw():
 	if route.size()>1:
 		var points=PackedVector2Array()
 		for i in route:points.append(screen(i))
-		draw_polyline(points,Color("465448"),7*zoom,true);draw_polyline(points,Color("f6d57f"),4*zoom,true)
-		for j in range(1,route.size()):draw_circle(screen(route[j]),4*zoom,Color("fff0bc"))
-		var endpoint=screen(route[-1]);draw_arc(endpoint,25*zoom,0,TAU,40,Color("66552f"),5*zoom,true);draw_arc(endpoint,25*zoom,0,TAU,40,Color("f5d37d"),2.5*zoom,true)
+		Graphics2D.route_preview(self,points,zoom)
+		var endpoint=screen(route[-1])
 		if full_route.size()>route.size():draw_string(font,endpoint+Vector2(-30,-32)*zoom,texts.limit,HORIZONTAL_ALIGNMENT_CENTER,60*zoom,int(14*zoom),Color("283b33"))
 	# Only the currently confirmable route receives a crossing marker.
 	for edge in crossing_edges(route):
@@ -471,13 +427,14 @@ func _draw():
 		if hq_member_highlighted(n):hq_outline(p,z)
 		var ink=Color("568db4") if int(u.side)==0 else Color("43504c")
 		var actionable=engine.actionable(n)
-		if u.done or int(u.ap)==0:ink=ink.lerp(Color("869088"),0.45)
+		var spent=bool(exhausted.get(n,u.done or int(u.ap)==0)) if int(u.side)==int(engine.state.human_side) else u.done or int(u.ap)==0
+		if spent:ink=ink.lerp(Color("869088"),0.45);actionable=false
 		if fire_target_lit(n):ink=ink.lerp(Color("fff0bc"),0.42)
 		counter_back(p,z,ink,actionable)
 		if engine.headquarters(n):headquarters_symbol(p,z,int(u.side)==0)
-		elif engine.artillery(n):cannon(p+Vector2(-1,-3)*z,z,Color("fff3d1"),u.deployed)
+		elif engine.artillery(n):cannon(p+Vector2(-1,-3)*z,z,Color("fff3d1"),u.deployed,int(u.side)==0)
 		elif engine.cavalry(n):horseman(p+Vector2(-3,-3)*z,1.04*z,int(u.side)==0)
-		else:soldier(p+Vector2(-5,-1)*z,1.10*z,int(u.side)==0)
+		else:soldier(p+Vector2(-5,-1)*z,1.10*z,int(u.side)==0,Graphics2D.infantry_figures(int(u.strength)))
 		draw_rect(Rect2(p+Vector2(-25,14)*z,Vector2(50,12)*z),Color("963047") if int(u.side)==0 else Color("273532"))
 		# Vertical French tricolour / horizontal black-white-red: shape and colour identify camp.
 		if not engine.headquarters(n):
@@ -489,17 +446,16 @@ func _draw():
 			draw_rect(Rect2(flag_origin,Vector2(12,8)*z),Color("d9d9c5"),false,maxf(0.4,0.6*z))
 		draw_rect(Rect2(p+Vector2(-4,12)*z,Vector2(28,14)*z),Color("963047") if int(u.side)==0 else Color("162c31"))
 		draw_string(COUNTER_FONT,p+Vector2(-3,25)*z,str(maxi(1,ceili(float(u.strength)/float(u.initial_strength)*10))),HORIZONTAL_ALIGNMENT_CENTER,26*z,maxi(6,int(14*z)),Color("ffffff"))
-		if u.done or int(u.ap)==0:draw_string(font,p+Vector2(9,8)*z,"✓",HORIZONTAL_ALIGNMENT_LEFT,-1,maxi(10,int(16*z)),Color("e9e1c9"))
+		if spent:Graphics2D.action_check(self,p,z)
 		if u.morale=="shaken":
 			disorder_badge(p,z)
 		elif u.morale=="routed":
-			var badge=p+Vector2(-23,-16)*z
-			draw_circle(badge,10*z,Color("152a2f"));draw_circle(badge,8.5*z,Color("b95343"));draw_string(font,badge+Vector2(-5,5)*z,"»",HORIZONTAL_ALIGNMENT_CENTER,10*z,maxi(10,int(15*z)),Color("fff3db"))
+			Graphics2D.condition_badge(self,p+Vector2(-18,-18)*z,z,"routed")
 		if engine.fixed_hq() and not engine.headquarters(n) and int(u.side)==int(engine.state.human_side) and u.get("is_hq",false):
 			var badge=Rect2(p+Vector2(-15,-43)*z,Vector2(30,15)*z)
 			draw_rect(badge,Color("203533"));draw_rect(badge,Color("d4b06c"),false,maxf(1,zoom))
 			draw_string(COUNTER_FONT,p+Vector2(-13,-31)*z,str(texts.get("hq_badge","QG")),HORIZONTAL_ALIGNMENT_CENTER,26*z,maxi(9,int(12*z)),Color("f5d483"))
-		if u.get("entrenched",false):shovel(p+Vector2(21,3)*z,z)
+		if u.get("entrenched",false):shovel(p+Vector2(18,3)*z,z)
 		# Draw outside the counter and selection so the red border stays visible.
 		# Both links must be cut; enemy logistics are never exposed.
 		if int(u.side)==int(engine.state.human_side) and not u.get("command_ok",true) and not u.get("supply_ok",true):
@@ -572,8 +528,8 @@ func draw_contact(n: int):
 	counter_back(p,z,ink,current)
 	if report.type=="cavalry":horseman(p+Vector2(-3,-3)*z,1.04*z,side==1)
 	elif report.type=="hq":headquarters_symbol(p,z,int(engine.state.units[n].side)==0)
-	elif report.type=="artillery":cannon(p+Vector2(-1,-3)*z,z,Color("fff3d1"),bool(report.deployed))
-	else:soldier(p+Vector2(-5,-1)*z,1.10*z,side==1)
+	elif report.type=="artillery":cannon(p+Vector2(-1,-3)*z,z,Color("fff3d1"),bool(report.deployed),side==1)
+	else:soldier(p+Vector2(-5,-1)*z,1.10*z,side==1,Graphics2D.contact_figures(report))
 	draw_rect(Rect2(p+Vector2(-25,14)*z,Vector2(50,12)*z),Color("963047") if side==1 else Color("273532"))
 	if report.type!="hq":
 		var flag_origin=p+Vector2(-22,16)*z
@@ -585,7 +541,7 @@ func draw_contact(n: int):
 	if current and int(report.level)==2:
 		if report.morale=="shaken":
 			disorder_badge(p,z)
-		if report.entrenched:shovel(p+Vector2(21,3)*z,z)
+		if report.entrenched:shovel(p+Vector2(18,3)*z,z)
 	if n==target:draw_arc(p,33*z,0,TAU,32,Color("b04f42"),3*z,true)
 	elif n==selected and current:selection_outline(p,z)
 func show_feedback(i: int,value: String):
@@ -690,11 +646,7 @@ func _gui_input(event):
 		clamp_focus();queue_redraw()
 
 func disorder_badge(p: Vector2,z: float):
-	# A corner badge leaves the unit silhouette, number and strength visible.
-	var badge=p+Vector2(-22,-17)*z
-	draw_circle(badge,11*z,Color("172e32"))
-	draw_arc(badge,10*z,0,TAU,24,Color("edc77b"),maxf(1,1.3*z),true)
-	draw_string(COUNTER_FONT,badge+Vector2(-8,6)*z,"D",HORIZONTAL_ALIGNMENT_CENTER,16*z,maxi(10,int(17*z)),Color("ffe0a0"))
+	Graphics2D.condition_badge(self,p+Vector2(-18,-18)*z,z,"shaken")
 
 func draw_sauer():
 	if not engine.pack.map.get("north_left",false):return

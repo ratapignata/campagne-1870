@@ -1,0 +1,13 @@
+{
+  "file": "1870_v0.8.43.16_Graphisme12.apk",
+  "bytes": 95211878,
+  "sha256": "876cb492fa061214fa49640a7f8f9e37712839b7b480c74205a0ee22f6961aa1",
+  "package": "org.woerth1870.prototype.graphics2dexp",
+  "version": "0.8.43.16-g2d12",
+  "code": 13,
+  "same_certificate_as_graphisme12": true,
+  "android_device_tested": false,
+  "emulator_tested": false,
+  "apk_zip_valid": true,
+  "zipalign_valid": true
+}
