@@ -1,0 +1,45 @@
+{
+  "version": "0.8.43.16-g2d12",
+  "branch": "v43-16-graphisme12",
+  "game_base_commit": "8176972f87157578d5ca48dd8ea6c6eafe78aabb",
+  "graphics_commit": "ec50397d4029a83c6f43f863481b8e57e40280b0",
+  "source_commit": "8f9ea7bbb44b72dac0012f150fb8622b9d0d1681",
+  "apk": {
+    "file": "1870_v0.8.43.16_Graphisme12.apk",
+    "bytes": 95211878,
+    "sha256": "876cb492fa061214fa49640a7f8f9e37712839b7b480c74205a0ee22f6961aa1",
+    "package": "org.woerth1870.prototype.graphics2dexp",
+    "version": "0.8.43.16-g2d12",
+    "code": 13,
+    "same_certificate_as_graphisme12": true,
+    "android_device_tested": false,
+    "emulator_tested": false,
+    "apk_zip_valid": true,
+    "zipalign_valid": true
+  },
+  "sources": {
+    "file": "1870_v0.8.43.16_Graphisme12_Sources.zip",
+    "bytes": 23568925,
+    "sha256": "08bdff260b1f8f692039f61d23477e0d0a9b7c5d8df89a3e408493a38315cfb0",
+    "crc_valid": true,
+    "matches_committed_sources": true,
+    "runtime_identical_to_cold_tested_archive": true
+  },
+  "tests": {
+    "godot": "4.5.1.stable.official.f62fdbde1",
+    "headless_suites": 31,
+    "headless_checks": 6428,
+    "render_suites": 5,
+    "render_checks": 1079,
+    "shared_feedback_checks": 20,
+    "distinct_checks": 7487,
+    "identical_pixel_comparisons": 6,
+    "cold_checks_repeated_not_added": 2552,
+    "same_core_ai_platform_and_scenario_as_v4316": true,
+    "android_device_tested": false,
+    "android_emulator_tested": false,
+    "full_battle_simulation_rerun": false
+  },
+  "scenario_sha256": "5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57",
+  "scope": "All V43.16 AI, core, platform, scenario, saves and combat animations preserved. Exact Graphisme12 presentation. Same graphics experimental app/package/certificate; classical app separate. No BD intro. No main/other branch merge."
+}
