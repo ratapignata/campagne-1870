@@ -1,0 +1,59 @@
+{
+  "version": "0.8.43.16",
+  "status": "experimental_candidate_no_main_merge",
+  "branch": "v43-16-defense-francaise",
+  "base_version": "0.8.43.15",
+  "base_commit": "55fca3f4b4ccc7a07ec00c11f7d7e7ebf07d6513",
+  "source_commit": "b66c88c85d553eec186682cf64b855967caf917d",
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "apk": {
+    "file": "1870_v0.8.43.16.apk",
+    "bytes": 88205938,
+    "sha256": "7f1f47ea882815e34451b0e593cd8d143e4451aae38ba30b8730440c4329d4c4",
+    "package": "org.woerth1870.prototype.v02",
+    "version": "0.8.43.16",
+    "code": 73,
+    "same_certificate_as_v4315": true,
+    "android_device_tested": false,
+    "emulator_tested": false,
+    "apk_zip_valid": true,
+    "zipalign_valid": true
+  },
+  "sources": {
+    "file": "1870_v0.8.43.16_Sources.zip",
+    "bytes": 9931216,
+    "sha256": "e094c02d0ef0a2ce84cf6930d8f836b3b16dcd95ae3021004b4777bceb0696d9",
+    "zip_crc_valid": true,
+    "matches_committed_project": true,
+    "runtime_matches_cold_import_and_test": true
+  },
+  "tests": {
+    "suites": 24,
+    "checks": 2543,
+    "personal_save_checks": 7,
+    "total_technical_checks": 2550,
+    "cold_archive_defence_checks": 56,
+    "repeated_checks_counted_twice": false,
+    "complete_20_turn_synthetic_battles": 4,
+    "synthetic_battle_units": 29,
+    "main_scenario_units": 95,
+    "main_scenario_turns_per_run": 2,
+    "main_scenario_complete_battle_tested": false,
+    "trap_runs": 4,
+    "trap_turns": 6,
+    "personal_game_replayed_exactly": false,
+    "android_device_tested": false,
+    "emulator_tested": false
+  },
+  "scope": "French Hard only; Normal, Prussian policies and game rules preserved. Stable main, graphics and BD branches preserved. Targeted anti-encirclement gain is measured; no universal difficulty claim.",
+  "ai_sha256": {
+    "war_engine/ai/french_defence.gd": "19a18897d9ace2580f947fbbe36f23201b4dfbb5aeee392ef3635a9e6bec852a",
+    "war_engine/ai/tactical_ai.gd": "7366f1534b145749f4db4d2c8e4e79b676e7c1f58a418e51a10903657a98a099"
+  },
+  "reports": [
+    "VERSION_0843_16.md",
+    "ANALYSE_PARTIE_V43_15.md",
+    "TESTS_V43_16.md",
+    "FICHIERS_MODIFIES_V43_16.txt"
+  ]
+}
