@@ -1,3 +1,15 @@
+# V43.16 — défense française Difficile
+
+Candidate issue de la V43.15 stable, branche `v43-16-defense-francaise`. Prévention des encerclements, replis vers le couvert et protection des arrières, sans changement des règles ni de l’IA prussienne. Version stable et essais graphiques/BD préservés.
+
+- [APK Android V43.16](https://raw.githubusercontent.com/ratapignata/campagne-1870/v43-16-defense-francaise/releases/1870_v0.8.43.16.apk)
+- [Sources complètes ZIP](releases/1870_v0.8.43.16_Sources.zip)
+- [Changements](releases/VERSION_0843_16.md), [analyse de la partie et comparaisons](releases/ANALYSE_PARTIE_V43_15.md), [tests réellement exécutés](releases/TESTS_V43_16.md)
+
+Même paquet et certificat que l’application stable V43.15. Pour tester la nouvelle IA : Prussiens / Difficile. APK compilé et signé ; aucun essai physique Android. Les détails des scénarios synthétiques et les limites de validation figurent dans les rapports.
+
+---
+
 # Prototype courant : V43.15
 
 - [Télécharger l’APK V43.15](https://github.com/ratapignata/campagne-1870/raw/refs/heads/main/releases/1870_v0.8.43.15.apk)

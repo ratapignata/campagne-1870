@@ -1,0 +1,13 @@
+{
+  "file": "1870_v0.8.43.16.apk",
+  "bytes": 88205938,
+  "sha256": "7f1f47ea882815e34451b0e593cd8d143e4451aae38ba30b8730440c4329d4c4",
+  "package": "org.woerth1870.prototype.v02",
+  "version": "0.8.43.16",
+  "code": 73,
+  "same_certificate_as_v4315": true,
+  "android_device_tested": false,
+  "emulator_tested": false,
+  "apk_zip_valid": true,
+  "zipalign_valid": true
+}

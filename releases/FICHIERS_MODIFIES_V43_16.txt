@@ -1,0 +1,26 @@
+V43.16 — différences par rapport à la stable V43.15 (55fca3f)
+
+PRODUCTION
+war_engine/ai/french_defence.gd : risque de fermeture des arrières, puissance défensive native, sorties vers les liaisons, repli court, réaction à la double coupure, protection de l’entrée de ravitaillement par une réserve disponible.
+war_engine/ai/tactical_ai.gd : branche française Difficile uniquement ; libération conditionnelle des verrous de garnison/batterie, priorité au repli plutôt qu’au retranchement en urgence, réévaluation du risque d’un trajet mémorisé.
+project.godot : version 0.8.43.16.
+export_presets.cfg : version/code Android 0.8.43.16/73, nom et chemin d’export ; paquet et signature conservés.
+packs/1870/fr.json : badge de version uniquement.
+
+TESTS AJOUTÉS
+ tests/v43/test_v4316.gd (+ .uid) : tests ciblés de défense/encerclement et préservation des autres politiques.
+ tests/v43/reference_french_defence_v4315.gd (+ .uid) : témoin figé du code stable.
+ tests/v43/reference_tactical_ai_v4315.gd (+ .uid) : témoin figé, seul preload redirigé vers la défense témoin.
+ tests/v43/simulate_v4316_defence.gd (+ .uid) : comparaison reproductible contre adversaire actif ; déploiement synthétique de 29 unités ou scénario principal original.
+ tests/v43/simulate_v4316_trap.gd (+ .uid) : fermeture ciblée d’un piège par ordres prussiens légaux.
+ tests/v43/check_exported_battle_v4316.gd (+ .uid) : contrôle d’un export fourni séparément ; n’inclut pas le fichier personnel.
+ tests/fixtures/v4316_major_objective.json : position synthétique reproductible de garnison majeure.
+ tests/results/0843_16/* : résultats finaux, comparaisons, vérifications d’intégrité/signature et bilan de la sauvegarde, sans export personnel original.
+
+DOCUMENTATION
+ VERSION_0843_16.md, ANALYSE_PARTIE_V43_15.md, TESTS_V43_16.md et ce récapitulatif.
+ README du dépôt : accès aux livrables et limites de validation.
+ releases/*V43_16* et releases/1870_v0.8.43.16* : copies des rapports, APK, ZIP sources, manifeste et sommes de contrôle.
+
+PRÉSERVÉS
+ Moteur, réseaux, sauvegarde, LOS, profils IA, politique Normal, carte, règles, unités, renforts, UI, animations et ressources graphiques. Pas de fichier de jeu personnel publié. Branche main et branches graphiques/BD non fusionnées.

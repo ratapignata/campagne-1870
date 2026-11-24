@@ -1,0 +1,344 @@
+{
+	"checks": 65,
+	"complete": true,
+	"failures": 0,
+	"french_prisoners": 0,
+	"french_remaining": 1934,
+	"mode": "current",
+	"phases": [
+		{
+			"command": true,
+			"french_cell": [
+				15,
+				4
+			],
+			"french_prisoners": 0,
+			"french_strength": 2000,
+			"isolation_turns": 0,
+			"orders": [
+				{
+					"kind": "move",
+					"path": [
+						75,
+						45,
+						46,
+						17,
+						18
+					],
+					"unit": "qg_fr_Pellé"
+				},
+				{
+					"kind": "move",
+					"path": [
+						198,
+						167,
+						166,
+						135
+					],
+					"unit": "fr_10"
+				},
+				{
+					"kind": "end"
+				}
+			],
+			"side": 0,
+			"supply": true,
+			"turn": 1
+		},
+		{
+			"command": true,
+			"french_cell": [
+				15,
+				4
+			],
+			"french_prisoners": 0,
+			"french_strength": 2000,
+			"isolation_turns": 0,
+			"orders": [
+				{
+					"kind": "move",
+					"path": [
+						258,
+						228
+					],
+					"unit": "pru_36"
+				},
+				{
+					"kind": "move",
+					"path": [
+						170,
+						169,
+						199
+					],
+					"unit": "pru_37"
+				},
+				{
+					"kind": "move",
+					"path": [
+						110,
+						109,
+						139,
+						169
+					],
+					"unit": "pru_38"
+				},
+				{
+					"kind": "move",
+					"path": [
+						257,
+						227,
+						197
+					],
+					"unit": "pru_39"
+				},
+				{
+					"kind": "move",
+					"path": [
+						226,
+						196,
+						167
+					],
+					"unit": "pru_40"
+				},
+				{
+					"kind": "move",
+					"path": [
+						107,
+						137,
+						168
+					],
+					"unit": "pru_41"
+				}
+			],
+			"side": 1,
+			"supply": true,
+			"turn": 1
+		},
+		{
+			"command": true,
+			"french_cell": [
+				15,
+				4
+			],
+			"french_prisoners": 0,
+			"french_strength": 1977,
+			"isolation_turns": 0,
+			"orders": [
+				{
+					"kind": "move",
+					"path": [
+						18,
+						17,
+						46,
+						45
+					],
+					"unit": "qg_fr_Pellé"
+				},
+				{
+					"kind": "fire",
+					"target": "pru_40",
+					"unit": "fr_10"
+				},
+				{
+					"kind": "fire",
+					"target": "pru_40",
+					"unit": "fr_10"
+				},
+				{
+					"kind": "end"
+				}
+			],
+			"side": 0,
+			"supply": true,
+			"turn": 2
+		},
+		{
+			"command": true,
+			"french_cell": [
+				15,
+				4
+			],
+			"french_prisoners": 0,
+			"french_strength": 1977,
+			"isolation_turns": 0,
+			"orders": [],
+			"side": 1,
+			"supply": true,
+			"turn": 2
+		},
+		{
+			"command": true,
+			"french_cell": [
+				15,
+				4
+			],
+			"french_prisoners": 0,
+			"french_strength": 1954,
+			"isolation_turns": 0,
+			"orders": [
+				{
+					"kind": "fire",
+					"target": "pru_40",
+					"unit": "fr_10"
+				},
+				{
+					"kind": "fire",
+					"target": "pru_40",
+					"unit": "fr_10"
+				},
+				{
+					"kind": "entrench",
+					"unit": "qg_fr_Pellé"
+				},
+				{
+					"kind": "end"
+				}
+			],
+			"side": 0,
+			"supply": true,
+			"turn": 3
+		},
+		{
+			"command": true,
+			"french_cell": [
+				15,
+				4
+			],
+			"french_prisoners": 0,
+			"french_strength": 1954,
+			"isolation_turns": 0,
+			"orders": [],
+			"side": 1,
+			"supply": true,
+			"turn": 3
+		},
+		{
+			"command": true,
+			"french_cell": [
+				15,
+				4
+			],
+			"french_prisoners": 0,
+			"french_strength": 1934,
+			"isolation_turns": 0,
+			"orders": [
+				{
+					"kind": "fire",
+					"target": "pru_40",
+					"unit": "fr_10"
+				},
+				{
+					"kind": "fire",
+					"target": "pru_40",
+					"unit": "fr_10"
+				},
+				{
+					"kind": "end"
+				}
+			],
+			"side": 0,
+			"supply": true,
+			"turn": 4
+		},
+		{
+			"command": true,
+			"french_cell": [
+				15,
+				4
+			],
+			"french_prisoners": 0,
+			"french_strength": 1934,
+			"isolation_turns": 0,
+			"orders": [],
+			"side": 1,
+			"supply": true,
+			"turn": 4
+		},
+		{
+			"command": true,
+			"french_cell": [
+				15,
+				4
+			],
+			"french_prisoners": 0,
+			"french_strength": 1934,
+			"isolation_turns": 0,
+			"orders": [
+				{
+					"kind": "fire",
+					"target": "pru_39",
+					"unit": "fr_10"
+				},
+				{
+					"kind": "fire",
+					"target": "pru_39",
+					"unit": "fr_10"
+				},
+				{
+					"kind": "end"
+				}
+			],
+			"side": 0,
+			"supply": true,
+			"turn": 5
+		},
+		{
+			"command": true,
+			"french_cell": [
+				15,
+				4
+			],
+			"french_prisoners": 0,
+			"french_strength": 1934,
+			"isolation_turns": 0,
+			"orders": [],
+			"side": 1,
+			"supply": true,
+			"turn": 5
+		},
+		{
+			"command": true,
+			"french_cell": [
+				15,
+				4
+			],
+			"french_prisoners": 0,
+			"french_strength": 1934,
+			"isolation_turns": 0,
+			"orders": [
+				{
+					"kind": "fire",
+					"target": "pru_39",
+					"unit": "fr_10"
+				},
+				{
+					"kind": "fire",
+					"target": "pru_39",
+					"unit": "fr_10"
+				},
+				{
+					"kind": "end"
+				}
+			],
+			"side": 0,
+			"supply": true,
+			"turn": 6
+		},
+		{
+			"command": true,
+			"french_cell": [
+				15,
+				4
+			],
+			"french_prisoners": 0,
+			"french_strength": 1934,
+			"isolation_turns": 0,
+			"orders": [],
+			"side": 1,
+			"supply": true,
+			"turn": 6
+		}
+	],
+	"protocol": "Focused synthetic closing trap, not a chronological battle. Ten original-strength units, all visible, plain map with two woods and no river. Same fixed legal Prussian ring-closing orders around the original Niederwald hex in both cases. Encircling troops hold the ring rather than pursue. French AI remains active. Measures warning/redeployment and real isolation surrender only; does not measure an adaptive human's win rate.",
+	"seed": 18704316
+}

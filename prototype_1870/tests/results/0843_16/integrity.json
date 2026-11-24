@@ -1,0 +1,12 @@
+{
+  "baseline_commit": "55fca3f4b4ccc7a07ec00c11f7d7e7ebf07d6513",
+  "identical_files": 105,
+  "changed_files": [
+    "war_engine/ai/french_defence.gd",
+    "war_engine/ai/tactical_ai.gd",
+    "packs/1870/fr.json"
+  ],
+  "scenario_sha256": "5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57",
+  "core_map_weapons_support_saves_graphics_unchanged": true,
+  "ai_profiles_and_normal_ai_unchanged": true
+}

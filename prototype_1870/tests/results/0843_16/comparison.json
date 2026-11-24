@@ -1,0 +1,364 @@
+{
+  "pincer_reference_18704316": {
+    "finished": true,
+    "checks": 1703,
+    "losses": [
+      9512,
+      6094
+    ],
+    "prisoners": [
+      0,
+      0
+    ],
+    "french": {
+      "covered": 4,
+      "double_cut": 0,
+      "entrenched": 4,
+      "hq": 3,
+      "living": 7,
+      "routed": 0,
+      "strength": 5238
+    },
+    "result": {
+      "level": "major_win",
+      "loss_advantage": 0.405900963775341,
+      "margin": 71.7846859421735,
+      "parts": [
+        [
+          0.0,
+          8.16666666666667,
+          4.77960784313726
+        ],
+        [
+          60.0,
+          11.8333333333333,
+          12.8976271186441
+        ]
+      ],
+      "reason": "major",
+      "totals": [
+        12.9462745098039,
+        84.7309604519774
+      ],
+      "winner": 1
+    },
+    "captures": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 4
+      },
+      {
+        "kind": "capture",
+        "objective": "froeschwiller",
+        "side": 1,
+        "turn": 11
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 14
+      }
+    ],
+    "last_turn": 20
+  },
+  "pincer_reference_18704317": {
+    "finished": true,
+    "checks": 1691,
+    "losses": [
+      8968,
+      5990
+    ],
+    "prisoners": [
+      0,
+      0
+    ],
+    "french": {
+      "covered": 5,
+      "double_cut": 0,
+      "entrenched": 3,
+      "hq": 2,
+      "living": 7,
+      "routed": 1,
+      "strength": 5782
+    },
+    "result": {
+      "level": "major_win",
+      "loss_advantage": 0.373098039215686,
+      "margin": 71.1286274509804,
+      "parts": [
+        [
+          0.0,
+          8.16666666666667,
+          4.69803921568627
+        ],
+        [
+          60.0,
+          11.8333333333333,
+          12.16
+        ]
+      ],
+      "reason": "major",
+      "totals": [
+        12.8647058823529,
+        83.9933333333333
+      ],
+      "winner": 1
+    },
+    "captures": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 4
+      },
+      {
+        "kind": "capture",
+        "objective": "froeschwiller",
+        "side": 1,
+        "turn": 11
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 14
+      }
+    ],
+    "last_turn": 20
+  },
+  "full_reference_18704316": {
+    "finished": false,
+    "checks": 205,
+    "losses": [
+      749,
+      193
+    ],
+    "prisoners": [
+      0,
+      0
+    ],
+    "french": {
+      "covered": 5,
+      "double_cut": 0,
+      "entrenched": 1,
+      "hq": 4,
+      "living": 38,
+      "routed": 0,
+      "strength": 36901
+    },
+    "result": {
+      "level": "pending",
+      "margin": 61.7117622046334,
+      "parts": [
+        [
+          60.0,
+          2.0,
+          0.0406315789473684
+        ],
+        [
+          0.0,
+          0.0,
+          0.328869374313941
+        ]
+      ],
+      "reason": "weighted",
+      "totals": [
+        62.0406315789474,
+        0.328869374313941
+      ],
+      "winner": -1
+    },
+    "captures": [],
+    "last_turn": 2
+  },
+  "pincer_current_18704316": {
+    "finished": true,
+    "checks": 1759,
+    "losses": [
+      10187,
+      5927
+    ],
+    "prisoners": [
+      0,
+      0
+    ],
+    "french": {
+      "covered": 4,
+      "double_cut": 0,
+      "entrenched": 3,
+      "hq": 3,
+      "living": 7,
+      "routed": 0,
+      "strength": 4563
+    },
+    "result": {
+      "level": "major_win",
+      "loss_advantage": 0.458212695247591,
+      "margin": 74.1642539049518,
+      "parts": [
+        [
+          0.0,
+          7.5,
+          4.64862745098039
+        ],
+        [
+          60.0,
+          12.5,
+          13.8128813559322
+        ]
+      ],
+      "reason": "major",
+      "totals": [
+        12.1486274509804,
+        86.3128813559322
+      ],
+      "winner": 1
+    },
+    "captures": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 4
+      },
+      {
+        "kind": "capture",
+        "objective": "froeschwiller",
+        "side": 1,
+        "turn": 10
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 12
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 0,
+        "turn": 14
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 15
+      }
+    ],
+    "last_turn": 20
+  },
+  "pincer_current_18704317": {
+    "finished": true,
+    "checks": 1739,
+    "losses": [
+      9437,
+      6058
+    ],
+    "prisoners": [
+      0,
+      0
+    ],
+    "french": {
+      "covered": 5,
+      "double_cut": 0,
+      "entrenched": 4,
+      "hq": 3,
+      "living": 8,
+      "routed": 0,
+      "strength": 5313
+    },
+    "result": {
+      "level": "major_win",
+      "loss_advantage": 0.402227982718511,
+      "margin": 72.0445596543702,
+      "parts": [
+        [
+          0.0,
+          8.0,
+          4.75137254901961
+        ],
+        [
+          60.0,
+          12.0,
+          12.7959322033898
+        ]
+      ],
+      "reason": "major",
+      "totals": [
+        12.7513725490196,
+        84.7959322033898
+      ],
+      "winner": 1
+    },
+    "captures": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 4
+      },
+      {
+        "kind": "capture",
+        "objective": "froeschwiller",
+        "side": 1,
+        "turn": 11
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 13
+      }
+    ],
+    "last_turn": 20
+  },
+  "full_current_18704316": {
+    "finished": false,
+    "checks": 205,
+    "losses": [
+      749,
+      193
+    ],
+    "prisoners": [
+      0,
+      0
+    ],
+    "french": {
+      "covered": 5,
+      "double_cut": 0,
+      "entrenched": 1,
+      "hq": 4,
+      "living": 38,
+      "routed": 0,
+      "strength": 36901
+    },
+    "result": {
+      "level": "pending",
+      "margin": 61.7117622046334,
+      "parts": [
+        [
+          60.0,
+          2.0,
+          0.0406315789473684
+        ],
+        [
+          0.0,
+          0.0,
+          0.328869374313941
+        ]
+      ],
+      "reason": "weighted",
+      "totals": [
+        62.0406315789474,
+        0.328869374313941
+      ],
+      "winner": -1
+    },
+    "captures": [],
+    "last_turn": 2
+  }
+}

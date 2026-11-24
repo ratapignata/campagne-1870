@@ -1,0 +1,628 @@
+{
+	"captures": [
+		{
+			"kind": "capture",
+			"objective": "elsasshausen",
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"kind": "capture",
+			"objective": "niederwald",
+			"side": 1,
+			"turn": 13
+		},
+		{
+			"kind": "capture",
+			"objective": "froeschwiller",
+			"side": 1,
+			"turn": 16
+		}
+	],
+	"checks": 7,
+	"failures": 0,
+	"initial_force": [
+		45550,
+		95000
+	],
+	"losses": [
+		16574,
+		13900
+	],
+	"phases": [
+		{
+			"losses": [
+				0,
+				0
+			],
+			"prisoners": [
+				0,
+				0
+			],
+			"turn": 1
+		},
+		{
+			"losses": [
+				722,
+				173
+			],
+			"prisoners": [
+				0,
+				0
+			],
+			"turn": 2
+		},
+		{
+			"losses": [
+				1636,
+				936
+			],
+			"prisoners": [
+				0,
+				0
+			],
+			"turn": 3
+		},
+		{
+			"losses": [
+				2590,
+				1769
+			],
+			"prisoners": [
+				0,
+				0
+			],
+			"turn": 4
+		},
+		{
+			"losses": [
+				3382,
+				3165
+			],
+			"prisoners": [
+				0,
+				0
+			],
+			"turn": 5
+		},
+		{
+			"losses": [
+				4377,
+				4746
+			],
+			"prisoners": [
+				0,
+				0
+			],
+			"turn": 6
+		},
+		{
+			"losses": [
+				5632,
+				6274
+			],
+			"prisoners": [
+				614,
+				0
+			],
+			"turn": 7
+		},
+		{
+			"losses": [
+				6131,
+				7413
+			],
+			"prisoners": [
+				614,
+				120
+			],
+			"turn": 8
+		},
+		{
+			"losses": [
+				7376,
+				9131
+			],
+			"prisoners": [
+				614,
+				120
+			],
+			"turn": 9
+		},
+		{
+			"losses": [
+				8388,
+				9877
+			],
+			"prisoners": [
+				13503,
+				120
+			],
+			"turn": 10
+		},
+		{
+			"losses": [
+				9335,
+				11052
+			],
+			"prisoners": [
+				13503,
+				120
+			],
+			"turn": 11
+		},
+		{
+			"losses": [
+				11527,
+				12102
+			],
+			"prisoners": [
+				13705,
+				120
+			],
+			"turn": 12
+		},
+		{
+			"losses": [
+				14149,
+				12926
+			],
+			"prisoners": [
+				14410,
+				120
+			],
+			"turn": 13
+		},
+		{
+			"losses": [
+				16414,
+				13675
+			],
+			"prisoners": [
+				15121,
+				120
+			],
+			"turn": 14
+		},
+		{
+			"losses": [
+				16524,
+				13810
+			],
+			"prisoners": [
+				21050,
+				120
+			],
+			"turn": 15
+		},
+		{
+			"losses": [
+				16573,
+				13900
+			],
+			"prisoners": [
+				27124,
+				120
+			],
+			"turn": 16
+		},
+		{
+			"losses": [
+				16573,
+				13900
+			],
+			"prisoners": [
+				28976,
+				120
+			],
+			"turn": 17
+		},
+		{
+			"losses": [
+				16573,
+				13900
+			],
+			"prisoners": [
+				28976,
+				120
+			],
+			"turn": 18
+		},
+		{
+			"losses": [
+				16574,
+				13900
+			],
+			"prisoners": [
+				28976,
+				120
+			],
+			"turn": 19
+		},
+		{
+			"losses": [
+				16574,
+				13900
+			],
+			"prisoners": [
+				28976,
+				120
+			],
+			"turn": 20
+		}
+	],
+	"prisoners": [
+		28976,
+		120
+	],
+	"remaining": [
+		0,
+		80980
+	],
+	"result": {
+		"level": "major_win",
+		"loss_advantage": 0.852421052631579,
+		"margin": 77.3817543859649,
+		"parts": [
+			[
+				0.0,
+				9.83333333333333,
+				2.95157894736842
+			],
+			[
+				60.0,
+				10.1666666666667,
+				20.0
+			]
+		],
+		"reason": "major",
+		"totals": [
+			12.7849122807018,
+			90.1666666666667
+		],
+		"winner": 1
+	},
+	"surrenders": [
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_4",
+				"1": "reg_fr_4"
+			},
+			"prisoners": 614,
+			"side": 0,
+			"turn": 7,
+			"unit": "fr_4"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_pru_54",
+				"1": "reg_pru_54"
+			},
+			"prisoners": 120,
+			"side": 1,
+			"turn": 8,
+			"unit": "pru_54"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_9",
+				"1": "reg_fr_9"
+			},
+			"prisoners": 905,
+			"side": 0,
+			"turn": 10,
+			"unit": "fr_9"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_10",
+				"1": "reg_fr_10"
+			},
+			"prisoners": 1982,
+			"side": 0,
+			"turn": 10,
+			"unit": "fr_10"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_14",
+				"1": "reg_fr_14"
+			},
+			"prisoners": 1977,
+			"side": 0,
+			"turn": 10,
+			"unit": "fr_14"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_15",
+				"1": "reg_fr_15"
+			},
+			"prisoners": 1955,
+			"side": 0,
+			"turn": 10,
+			"unit": "fr_15"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_16",
+				"1": "reg_fr_16"
+			},
+			"prisoners": 700,
+			"side": 0,
+			"turn": 10,
+			"unit": "fr_16"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_17",
+				"1": "reg_fr_17"
+			},
+			"prisoners": 1643,
+			"side": 0,
+			"turn": 10,
+			"unit": "fr_17"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_18",
+				"1": "reg_fr_18"
+			},
+			"prisoners": 1668,
+			"side": 0,
+			"turn": 10,
+			"unit": "fr_18"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_19",
+				"1": "reg_fr_19"
+			},
+			"prisoners": 1816,
+			"side": 0,
+			"turn": 10,
+			"unit": "fr_19"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_22",
+				"1": "reg_fr_22"
+			},
+			"prisoners": 243,
+			"side": 0,
+			"turn": 10,
+			"unit": "fr_22"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_29",
+				"1": "reg_fr_29"
+			},
+			"prisoners": 54,
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_29"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_26",
+				"1": "reg_fr_26"
+			},
+			"prisoners": 102,
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_26"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_32",
+				"1": "reg_fr_32"
+			},
+			"prisoners": 46,
+			"side": 0,
+			"turn": 12,
+			"unit": "fr_32"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_31",
+				"1": "reg_fr_31"
+			},
+			"prisoners": 168,
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_31"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_25",
+				"1": "reg_fr_25"
+			},
+			"prisoners": 24,
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_25"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_23",
+				"1": "reg_fr_23"
+			},
+			"prisoners": 513,
+			"side": 0,
+			"turn": 13,
+			"unit": "fr_23"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_27",
+				"1": "reg_fr_27"
+			},
+			"prisoners": 95,
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_27"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_24",
+				"1": "reg_fr_24"
+			},
+			"prisoners": 616,
+			"side": 0,
+			"turn": 14,
+			"unit": "fr_24"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_7",
+				"1": "reg_fr_7"
+			},
+			"prisoners": 1400,
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_7"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_8",
+				"1": "reg_fr_8"
+			},
+			"prisoners": 688,
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_8"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_11",
+				"1": "reg_fr_11"
+			},
+			"prisoners": 700,
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_11"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_12",
+				"1": "reg_fr_12"
+			},
+			"prisoners": 1166,
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_12"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_13",
+				"1": "reg_fr_13"
+			},
+			"prisoners": 1725,
+			"side": 0,
+			"turn": 15,
+			"unit": "fr_13"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_art_fr_Pellé0",
+				"1": "fog_enemy_generic"
+			},
+			"prisoners": 250,
+			"side": 0,
+			"turn": 15,
+			"unit": "art_fr_Pellé0"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_1",
+				"1": "reg_fr_1"
+			},
+			"prisoners": 26,
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_1"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_3",
+				"1": "reg_fr_3"
+			},
+			"prisoners": 1821,
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_3"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_5",
+				"1": "reg_fr_5"
+			},
+			"prisoners": 1927,
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_5"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_20",
+				"1": "reg_fr_20"
+			},
+			"prisoners": 534,
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_20"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_21",
+				"1": "reg_fr_21"
+			},
+			"prisoners": 1766,
+			"side": 0,
+			"turn": 16,
+			"unit": "fr_21"
+		},
+		{
+			"kind": "surrender",
+			"known_names": {
+				"0": "reg_fr_2",
+				"1": "reg_fr_2"
+			},
+			"prisoners": 1852,
+			"side": 0,
+			"turn": 17,
+			"unit": "fr_2"
+		}
+	]
+}
