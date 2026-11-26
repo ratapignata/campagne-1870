@@ -1,0 +1,46 @@
+{
+  "version": "0.8.43.17-g2d12",
+  "branch": "v43-17-france-difficile",
+  "base_commit": "29008a8a185312764a3721c68884f19541095e5f",
+  "source_commit": "4925e60a87e472803738aa568d06df860e46ae1b",
+  "graphics_commit": "ec50397d4029a83c6f43f863481b8e57e40280b0",
+  "apk": {
+    "file": "1870_v0.8.43.17_Graphisme12.apk",
+    "bytes": 95257463,
+    "sha256": "187119111d8c677ac0c69584f72ee7fe16aae4eea09ac93fcdc63428b3f55c17",
+    "package": "org.woerth1870.prototype.graphics2dexp",
+    "version": "0.8.43.17-g2d12",
+    "code": 14,
+    "same_certificate_as_graphisme12": true,
+    "android_device_tested": false,
+    "emulator_tested": false,
+    "apk_zip_valid": true,
+    "zipalign_valid": true
+  },
+  "sources": {
+    "file": "1870_v0.8.43.17_Graphisme12_Sources.zip",
+    "bytes": 26990095,
+    "sha256": "6fb204e0cb17be70594579ecfd0f0962b5150561eeb079f2e5c9be56cd54cbb4",
+    "crc_valid": true,
+    "matches_committed_sources": true,
+    "runtime_identical_to_cold_tested_archive": true
+  },
+  "tests": {
+    "headless_suites": 33,
+    "headless_checks": 6574,
+    "render_checks": 1079,
+    "shared_feedback_checks_not_duplicated": 20,
+    "private_export_checks": 18,
+    "distinct_technical_checks": 7651,
+    "simulation_checks": 8394,
+    "four_complete_synthetic_20_turn_battles": true,
+    "full_95_unit_turns_per_case": 2,
+    "android_device_tested": false,
+    "android_emulator_tested": false,
+    "cold_repeated_checks": 2642,
+    "godot": "4.5.1.stable.official.f62fdbde1"
+  },
+  "scenario_sha256": "c1b927a7c29e8a63b403df53ea6ecd00c06a0794b7fcaa8c7bd8cd8191a3faa1",
+  "scope": "Frozen V43.16 French Hard becomes Normal; experimental French Hard preparation/reserves/fallback/artillery coordination. Active infantry Chassepot range4 in both levels, reaction range3 preserved. Same Graphisme12 package/certificate. No main/old branch merge.",
+  "measured_limit": "29-unit synthetic single-seed 20-turn comparisons: cannon17 vs7, entrench51 vs35 at range4; earlier objective losses mean global difficulty superiority is not validated. Full95 scenario tested only through turn2. No physical Android or emulator test."
+}
