@@ -1,0 +1,233 @@
+[
+  {
+    "mode": "medium",
+    "range": 3,
+    "cannon_fire": 12,
+    "entrench_orders": 36,
+    "assaults": 1,
+    "french_losses": 8730,
+    "prussian_losses": 6780,
+    "french_prisoners": 0,
+    "french_remaining": 6020,
+    "objectives": {
+      "elsasshausen": 1,
+      "froeschwiller": 1,
+      "niederwald": 1
+    },
+    "score": [
+      12.9843137254902,
+      84.1706214689266
+    ],
+    "history": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 4
+      },
+      {
+        "kind": "capture",
+        "objective": "froeschwiller",
+        "side": 1,
+        "turn": 10
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 13
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 0,
+        "turn": 16
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 17
+      }
+    ]
+  },
+  {
+    "mode": "hard",
+    "range": 3,
+    "cannon_fire": 18,
+    "entrench_orders": 48,
+    "assaults": 1,
+    "french_losses": 8532,
+    "prussian_losses": 5881,
+    "french_prisoners": 0,
+    "french_remaining": 6218,
+    "objectives": {
+      "elsasshausen": 1,
+      "froeschwiller": 1,
+      "niederwald": 1
+    },
+    "score": [
+      11.7792156862745,
+      84.4021468926554
+    ],
+    "history": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 4
+      },
+      {
+        "kind": "capture",
+        "objective": "froeschwiller",
+        "side": 1,
+        "turn": 9
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 12
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 0,
+        "turn": 15
+      },
+      {
+        "kind": "capture",
+        "objective": "froeschwiller",
+        "side": 0,
+        "turn": 17
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 17
+      },
+      {
+        "kind": "capture",
+        "objective": "froeschwiller",
+        "side": 1,
+        "turn": 17
+      }
+    ]
+  },
+  {
+    "mode": "medium",
+    "range": 4,
+    "cannon_fire": 7,
+    "entrench_orders": 35,
+    "assaults": 1,
+    "french_losses": 9438,
+    "prussian_losses": 5972,
+    "french_prisoners": 0,
+    "french_remaining": 5312,
+    "objectives": {
+      "elsasshausen": 1,
+      "froeschwiller": 1,
+      "niederwald": 1
+    },
+    "score": [
+      10.8505882352941,
+      86.6306214689265
+    ],
+    "history": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 4
+      },
+      {
+        "kind": "capture",
+        "objective": "froeschwiller",
+        "side": 1,
+        "turn": 8
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 10
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 0,
+        "turn": 11
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 12
+      }
+    ]
+  },
+  {
+    "mode": "hard",
+    "range": 4,
+    "cannon_fire": 17,
+    "entrench_orders": 51,
+    "assaults": 2,
+    "french_losses": 7126,
+    "prussian_losses": 4984,
+    "french_prisoners": 779,
+    "french_remaining": 6845,
+    "objectives": {
+      "elsasshausen": 1,
+      "froeschwiller": 1,
+      "niederwald": 1
+    },
+    "score": [
+      9.24235294117647,
+      85.3853107344633
+    ],
+    "history": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 4
+      },
+      {
+        "kind": "surrender",
+        "known_names": {
+          "0": "reg_fr_10",
+          "1": "reg_fr_10"
+        },
+        "prisoners": 779,
+        "side": 0,
+        "turn": 5,
+        "unit": "fr_10"
+      },
+      {
+        "kind": "capture",
+        "objective": "froeschwiller",
+        "side": 1,
+        "turn": 7
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 8
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 0,
+        "turn": 14
+      },
+      {
+        "kind": "capture",
+        "objective": "niederwald",
+        "side": 1,
+        "turn": 15
+      }
+    ]
+  }
+]

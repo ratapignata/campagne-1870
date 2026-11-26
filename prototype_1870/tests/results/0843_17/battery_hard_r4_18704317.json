@@ -1,0 +1,965 @@
+{
+	"actions": [
+		{
+			"action": {
+				"kind": "limber",
+				"path": [
+					161,
+					162,
+					163,
+					194
+				],
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 1193,
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					161,
+					162,
+					163,
+					194
+				],
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 48,
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"action": {
+				"kind": "end"
+			},
+			"ms": 29,
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					311,
+					281,
+					251
+				],
+				"unit": "pru_36"
+			},
+			"ms": 38,
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"action": {
+				"kind": "fire",
+				"target": "fr_7",
+				"unit": "pru_36"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					341,
+					311,
+					281
+				],
+				"unit": "pru_37"
+			},
+			"ms": 37,
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					281,
+					280,
+					250
+				],
+				"unit": "pru_37"
+			},
+			"ms": 6,
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"action": {
+				"kind": "end"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"action": {
+				"kind": "deploy",
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 33,
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"action": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 58,
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"action": {
+				"kind": "end"
+			},
+			"ms": 27,
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"action": {
+				"kind": "assault",
+				"target": "fr_7",
+				"unit": "pru_36"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					221,
+					191
+				],
+				"unit": "pru_36"
+			},
+			"ms": 3,
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					250,
+					220,
+					190
+				],
+				"unit": "pru_37"
+			},
+			"ms": 15,
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"action": {
+				"kind": "fire",
+				"target": "fr_7",
+				"unit": "pru_37"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"action": {
+				"kind": "end"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"action": {
+				"kind": "limber",
+				"path": [
+					194,
+					163
+				],
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 158,
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					194,
+					163
+				],
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 57,
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"action": {
+				"kind": "deploy",
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 30,
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"action": {
+				"kind": "rest",
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 129,
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"action": {
+				"kind": "end"
+			},
+			"ms": 28,
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"action": {
+				"kind": "assault",
+				"target": "fr_7",
+				"unit": "pru_36"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					161,
+					131
+				],
+				"unit": "pru_36"
+			},
+			"ms": 2,
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					190,
+					160,
+					130
+				],
+				"unit": "pru_37"
+			},
+			"ms": 16,
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"action": {
+				"kind": "fire",
+				"target": "fr_7",
+				"unit": "pru_37"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"action": {
+				"kind": "end"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"action": {
+				"kind": "limber",
+				"path": [
+					163,
+					193,
+					224,
+					225
+				],
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 172,
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					163,
+					193,
+					224,
+					225
+				],
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 35,
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"action": {
+				"kind": "end"
+			},
+			"ms": 31,
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					131,
+					101
+				],
+				"unit": "pru_36"
+			},
+			"ms": 9,
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"action": {
+				"kind": "fire",
+				"target": "fr_7",
+				"unit": "pru_36"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"action": {
+				"kind": "fire",
+				"target": "qg_fr_Pellé",
+				"unit": "pru_37"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					130,
+					100
+				],
+				"unit": "pru_37"
+			},
+			"ms": 1,
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"action": {
+				"kind": "end"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"action": {
+				"kind": "deploy",
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 33,
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"action": {
+				"kind": "fire",
+				"target": "pru_36",
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 46,
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"action": {
+				"kind": "end"
+			},
+			"ms": 44,
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					101,
+					71
+				],
+				"unit": "pru_36"
+			},
+			"ms": 11,
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"action": {
+				"kind": "fire",
+				"target": "qg_fr_Pellé",
+				"unit": "pru_36"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"action": {
+				"kind": "assault",
+				"target": "qg_fr_Pellé",
+				"unit": "pru_37"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"action": {
+				"kind": "end"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"action": {
+				"kind": "limber",
+				"path": [
+					225,
+					224
+				],
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 110,
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					225,
+					224
+				],
+				"unit": "art_fr_Pellé0"
+			},
+			"ms": 37,
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"action": {
+				"kind": "end"
+			},
+			"ms": 20,
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					71,
+					41
+				],
+				"unit": "pru_36"
+			},
+			"ms": 9,
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"action": {
+				"kind": "fire",
+				"target": "fr_7",
+				"unit": "pru_36"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"action": {
+				"kind": "fire",
+				"target": "fr_7",
+				"unit": "pru_37"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"action": {
+				"kind": "move",
+				"path": [
+					70,
+					39
+				],
+				"unit": "pru_37"
+			},
+			"ms": 2,
+			"side": 1,
+			"turn": 6
+		},
+		{
+			"action": {
+				"kind": "end"
+			},
+			"ms": 0,
+			"side": 1,
+			"turn": 6
+		}
+	],
+	"chassepot_range": 4,
+	"checks": 111,
+	"complete": true,
+	"elapsed_ms": 5067,
+	"failures": 0,
+	"finished": false,
+	"history": [
+		{
+			"kind": "capture",
+			"objective": "froeschwiller",
+			"side": 1,
+			"turn": 3
+		}
+	],
+	"initial_force": [
+		1900,
+		6050
+	],
+	"initial_units": 6,
+	"last_turn": 6,
+	"phases": [
+		{
+			"cannon": 0,
+			"french": {
+				"covered": 0,
+				"double_cut": 0,
+				"entrenched": 1,
+				"hq": 1,
+				"living": 3,
+				"routed": 0,
+				"strength": 1900
+			},
+			"losses": [
+				0,
+				0
+			],
+			"ms": 1417,
+			"objectives": {
+				"froeschwiller": 0
+			},
+			"orders": {
+				"end": 1,
+				"limber": 1,
+				"move": 1
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 0,
+			"turn": 1
+		},
+		{
+			"cannon": 0,
+			"french": {
+				"covered": 0,
+				"double_cut": 0,
+				"entrenched": 1,
+				"hq": 1,
+				"living": 3,
+				"routed": 0,
+				"strength": 1810
+			},
+			"losses": [
+				90,
+				68
+			],
+			"ms": 335,
+			"objectives": {
+				"froeschwiller": 0
+			},
+			"orders": {
+				"end": 1,
+				"fire": 1,
+				"move": 3
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 1,
+			"turn": 1
+		},
+		{
+			"cannon": 1,
+			"french": {
+				"covered": 0,
+				"double_cut": 0,
+				"entrenched": 1,
+				"hq": 1,
+				"living": 3,
+				"routed": 0,
+				"strength": 1810
+			},
+			"losses": [
+				90,
+				123
+			],
+			"ms": 258,
+			"objectives": {
+				"froeschwiller": 0
+			},
+			"orders": {
+				"deploy": 1,
+				"end": 1,
+				"fire": 1
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 0,
+			"turn": 2
+		},
+		{
+			"cannon": 0,
+			"french": {
+				"covered": 0,
+				"double_cut": 0,
+				"entrenched": 0,
+				"hq": 1,
+				"living": 3,
+				"routed": 0,
+				"strength": 1384
+			},
+			"losses": [
+				516,
+				328
+			],
+			"ms": 310,
+			"objectives": {
+				"froeschwiller": 0
+			},
+			"orders": {
+				"assault": 1,
+				"end": 1,
+				"fire": 1,
+				"move": 2
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 1,
+			"turn": 2
+		},
+		{
+			"cannon": 0,
+			"french": {
+				"covered": 0,
+				"double_cut": 0,
+				"entrenched": 0,
+				"hq": 1,
+				"living": 3,
+				"routed": 0,
+				"strength": 1384
+			},
+			"losses": [
+				516,
+				328
+			],
+			"ms": 548,
+			"objectives": {
+				"froeschwiller": 0
+			},
+			"orders": {
+				"deploy": 1,
+				"end": 1,
+				"limber": 1,
+				"move": 1,
+				"rest": 1
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 0,
+			"turn": 3
+		},
+		{
+			"cannon": 0,
+			"french": {
+				"covered": 0,
+				"double_cut": 0,
+				"entrenched": 0,
+				"hq": 1,
+				"living": 3,
+				"routed": 1,
+				"strength": 975
+			},
+			"losses": [
+				925,
+				417
+			],
+			"ms": 312,
+			"objectives": {
+				"froeschwiller": 1
+			},
+			"orders": {
+				"assault": 1,
+				"end": 1,
+				"fire": 1,
+				"move": 2
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 1,
+			"turn": 3
+		},
+		{
+			"cannon": 0,
+			"french": {
+				"covered": 0,
+				"double_cut": 0,
+				"entrenched": 0,
+				"hq": 1,
+				"living": 3,
+				"routed": 1,
+				"strength": 975
+			},
+			"losses": [
+				925,
+				417
+			],
+			"ms": 437,
+			"objectives": {
+				"froeschwiller": 1
+			},
+			"orders": {
+				"end": 1,
+				"limber": 1,
+				"move": 1
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 0,
+			"turn": 4
+		},
+		{
+			"cannon": 0,
+			"french": {
+				"covered": 0,
+				"double_cut": 0,
+				"entrenched": 0,
+				"hq": 1,
+				"living": 3,
+				"routed": 1,
+				"strength": 864
+			},
+			"losses": [
+				1036,
+				423
+			],
+			"ms": 341,
+			"objectives": {
+				"froeschwiller": 1
+			},
+			"orders": {
+				"end": 1,
+				"fire": 2,
+				"move": 2
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 1,
+			"turn": 4
+		},
+		{
+			"cannon": 1,
+			"french": {
+				"covered": 0,
+				"double_cut": 0,
+				"entrenched": 0,
+				"hq": 1,
+				"living": 3,
+				"routed": 1,
+				"strength": 864
+			},
+			"losses": [
+				1036,
+				440
+			],
+			"ms": 276,
+			"objectives": {
+				"froeschwiller": 1
+			},
+			"orders": {
+				"deploy": 1,
+				"end": 1,
+				"fire": 1
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 0,
+			"turn": 5
+		},
+		{
+			"cannon": 0,
+			"french": {
+				"covered": 0,
+				"double_cut": 2,
+				"entrenched": 0,
+				"hq": 0,
+				"living": 2,
+				"routed": 1,
+				"strength": 676
+			},
+			"losses": [
+				1224,
+				455
+			],
+			"ms": 231,
+			"objectives": {
+				"froeschwiller": 1
+			},
+			"orders": {
+				"assault": 1,
+				"end": 1,
+				"fire": 1,
+				"move": 1
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 1,
+			"turn": 5
+		},
+		{
+			"cannon": 0,
+			"french": {
+				"covered": 0,
+				"double_cut": 2,
+				"entrenched": 0,
+				"hq": 0,
+				"living": 2,
+				"routed": 1,
+				"strength": 676
+			},
+			"losses": [
+				1224,
+				455
+			],
+			"ms": 292,
+			"objectives": {
+				"froeschwiller": 1
+			},
+			"orders": {
+				"end": 1,
+				"limber": 1,
+				"move": 1
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 0,
+			"turn": 6
+		},
+		{
+			"cannon": 0,
+			"french": {
+				"covered": 0,
+				"double_cut": 2,
+				"entrenched": 0,
+				"hq": 0,
+				"living": 2,
+				"routed": 0,
+				"strength": 563
+			},
+			"losses": [
+				1337,
+				455
+			],
+			"ms": 277,
+			"objectives": {
+				"froeschwiller": 1
+			},
+			"orders": {
+				"end": 1,
+				"fire": 2,
+				"move": 2
+			},
+			"prisoners": [
+				0,
+				0
+			],
+			"side": 1,
+			"turn": 6
+		}
+	],
+	"policy": "hard",
+	"protocol": "Targeted six-unit gun-lane fixture: one original-stat French deployed gun on an objective, a fixed entrenched friendly infantry screen blocking its LOS, HQ, two original-stat active scripted Prussian attackers and HQ. Plain test terrain, one objective, all visible, six turns; not a full battle or user replay. Same rules/AP/ammo/support, initial positions and scripted attacker for Normal/Hard. Only the gun is controlled by the French policy; screen retains reactions.",
+	"result": {
+		"level": "pending",
+		"margin": 74.5695519791214,
+		"parts": [
+			[
+				0.0,
+				2.0,
+				1.50413223140496
+			],
+			[
+				60.0,
+				4.0,
+				14.0736842105263
+			]
+		],
+		"reason": "weighted",
+		"totals": [
+			3.50413223140496,
+			78.0736842105263
+		],
+		"winner": -1
+	},
+	"scenario": "battery",
+	"seed": 18704317,
+	"style": 0
+}

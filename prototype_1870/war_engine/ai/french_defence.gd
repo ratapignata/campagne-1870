@@ -2,6 +2,8 @@ extends RefCounted
 const Support=preload("res://war_engine/core/support.gd")
 # Tactical priorities only. Receives the same sanitized planning engine as the AI.
 # No live state, unseen enemy, combat modifier or persistent save field.
+var rear_targets: Dictionary={}
+var guards: Dictionary={}
 var assignments: Dictionary={}
 var reserves: Dictionary={}
 var priorities: Dictionary={}
@@ -16,7 +18,7 @@ var threats: Array=[]
 var origin_links: Dictionary={}
 func prepare(e,links: Dictionary={}):
  assignments={};reserves={};priorities={};nearest={};goals=e.objective_definitions();garrisons={}
- networks=links;blockers={};exits={};risks={};threats=[];origin_links={}
+ networks=links;blockers={};exits={};risks={};threats=[];origin_links={};rear_targets={};guards={}
  if not networks.is_empty():
   blockers=Support.link_blockers(e,int(e.state.side))
   for n in range(e.state.units.size()):
@@ -77,6 +79,7 @@ func prepare(e,links: Dictionary={}):
    if score>best:best=score;chosen=pos
   if chosen>=0:assignments[n]=chosen
  protect_rear(e)
+ intercept_penetrations(e)
 
 # These are planning estimates from observed enemies, not changes to ZOC,
 # logistics or movement. The caller still uses reach()/step_cost() for each order.
@@ -143,12 +146,15 @@ func holding_power(e,n: int,attacker: int,pos: int) -> float:
 func needs_withdrawal(e,n: int,pos: int) -> bool:
  var threshold=2.5;var objective=e.objective_at(pos)
  var u=e.state.units[n]
+ if e.artillery(n) and battery_exposed(e,n,pos):return true
  var at_origin=not origin_links.has(n) or int(origin_links[n].pos)==pos
  if at_origin and not objective.is_empty() and e.objective_owner(objective)==int(e.state.side) and u.get("command_ok",true) and u.get("supply_ok",true) and not u.get("encircled",false):
   if int(objective.points)>=3 or safe_exits(e,n,pos)>=2:return false
  # Give a valuable, still defensible strongpoint time to receive reserves.
  # A narrowing exit (risk >=4), real enclosure, or a second isolation count
  # still releases it before the existing third-count consequences.
+ if int(u.get("isolation_turns",0))>=1 and not u.get("command_ok",true) and not u.get("supply_ok",true):
+  if objective.is_empty() or int(objective.points)<3 or int(u.isolation_turns)>=2 or u.get("encircled",false):return true
  if not objective.is_empty() and e.objective_owner(objective)==int(e.state.side) and int(e.state.units[n].get("isolation_turns",0))<2:threshold+=maxi(0,int(objective.points)-1)*0.75
  return encirclement_risk(e,n,pos)>=threshold
 
@@ -228,7 +234,11 @@ func movement(e,n: int,start: int,dest: int,anchor: int,current_fire: float,next
   elif risk_after<=risk_before and fallback_distance(e,n,dest)<fallback_distance(e,n,start):escape_value=260.0-float(travel)*24.0
   if restores_link:escape_value+=100.0
   if int(e.state.units[n].get("isolation_turns",0))>=2 and escape_value>0:escape_value+=120.0
- if e.headquarters(n):return escape_value
+ if e.artillery(n) and battery_exposed(e,n,start):
+  escape_value+=clampf(float(enemy_distance(e,dest)-enemy_distance(e,start)),0.0,3.0)*90.0
+ if e.headquarters(n):
+  var separation=minf(5,enemy_distance(e,dest))-minf(5,enemy_distance(e,start))
+  return escape_value+separation*70.0
  var u=e.state.units[n];var before=float(e.pack.terrains[e.pack.map.tiles[start]].fire_received);var after=float(e.pack.terrains[e.pack.map.tiles[dest]].fire_received)
  # Keep a protected firing line unless a safer move, better lane or liaison
  # restoration justifies leaving it. Entrenchment is lost by a real move.
@@ -237,6 +247,13 @@ func movement(e,n: int,start: int,dest: int,anchor: int,current_fire: float,next
  score+=escape_value
  if u.get("entrenched",false) and not restores_link and not withdrawing:score-=70.0
  if next_fire>0 and current_fire<=0:score+=40.0
+ if e.artillery(n) and not withdrawing:
+  if current_fire<=0 and next_fire>0:score+=340.0
+  if next_fire>0 and int(u.ap)>=int(e.weapon(n).ap)+int(e.weapon(n).deployment_ap):score+=70.0
+  if enemy_distance(e,dest)<=2:score-=160.0
+  elif enemy_distance(e,dest)==3:score-=80.0
+  elif next_fire>0:score+=minf(2,maxi(0,enemy_distance(e,dest)-4))*100.0
+  if next_fire<=0 and current_fire<=0 and e.elevation(dest)>e.elevation(start):score+=20.0
  if not e.artillery(n) and not e.cavalry(n) and int(u.ap)<int(e.weapon(n).ap) and enemy_distance(e,dest)<=3:score-=55.0
  # A damaged unit can move to a safer second line, still close to its sector.
  if float(u.strength)<float(u.initial_strength)*0.4 and danger<current_threat and e.distance(dest,anchor)<=3:score+=60.0
@@ -254,11 +271,58 @@ func counterattack_value(e,n: int,j: int) -> float:
  if not objective.is_empty() and e.objective_owner(objective)!=int(e.state.side):return 170.0+float(objective.points)*30.0
  var own=e.objective_at(e.unit_cell(e.state.units[n]))
  if not own.is_empty() and e.objective_owner(own)==int(e.state.side):return -INF
- if nearest_goal_distance(e,target)<=2 and e.state.units[j].morale in ["shaken","routed"]:return 35.0
+ if rear_targets.has(j):return 240.0
+ if nearest_goal_distance(e,target)<=2 and e.state.units[j].morale in ["shaken","routed"]:return 80.0
  return -45.0
 func release_cavalry_garrison(e,n: int) -> bool:
  if not e.cavalry(n) or enemy_distance(e,e.unit_cell(e.state.units[n]))<=3:return false
  for k in range(e.state.units.size()):
   var u=e.state.units[k]
   if int(u.side)==int(e.state.side) and not e.headquarters(k) and not e.artillery(k) and not e.cavalry(k) and u.morale!="routed" and e.distance(e.unit_cell(u),e.unit_cell(e.state.units[n]))<=2:return true
+ return false
+
+func prepared_position(e,n: int,pos: int,anchor: int) -> bool:
+ if e.artillery(n) or e.cavalry(n) or e.headquarters(n) or bool(reserves.get(n,false)) or guards.has(n):return false
+ if anchor<0 or e.distance(pos,anchor)>2:return false
+ var terrain=e.pack.terrains[e.pack.map.tiles[pos]]
+ return pos==anchor or float(terrain.fire_received)<=0.65 or e.elevation(pos)>=2
+
+func intercept_penetrations(e):
+ # At most two real reserves; the first objective defenders are never taken.
+ var anchors=[]
+ for source in e.pack.rules.support.supply_sources[int(e.state.side)]:anchors.append(e.index(Vector2i(int(source[0]),int(source[1]))))
+ for n in origin_links:
+  if e.headquarters(n):anchors.append(int(origin_links[n].pos))
+ for j in threats:
+  var pos=e.unit_cell(e.state.units[j])
+  for anchor in anchors:
+   if e.distance(pos,anchor)<=3:rear_targets[j]=true;break
+ var ordered=rear_targets.keys();ordered.sort()
+ var enemy_strength=0.0;var assigned_strength=0.0
+ for j in ordered:enemy_strength+=float(e.state.units[j].strength)
+ for j in ordered:
+  if guards.size()>=2 or (not guards.is_empty() and assigned_strength>=enemy_strength*1.25):break
+  var target=e.unit_cell(e.state.units[j]);var selected=-1;var best=10000.0
+  for n in assignments:
+   var u=e.state.units[n];var pos=e.unit_cell(u)
+   if guards.has(n) or garrisons.has(n) or not e.can_act(n) or e.artillery(n) or e.cavalry(n) or e.headquarters(n) or u.morale!="stable":continue
+   if (not u.get("command_ok",true) and not u.get("supply_ok",true)) or not e.objective_at(pos).is_empty():continue
+   var distance=e.distance(pos,target)
+   if distance>5 or float(u.strength)<float(u.initial_strength)*0.6:continue
+   var score=float(distance)-(1.0 if reserves.get(n,false) else 0.0)
+   if score<best:best=score;selected=n
+  if selected>=0:guards[selected]=target;assignments[selected]=target;reserves[selected]=false;assigned_strength+=float(e.state.units[selected].strength)
+
+func battery_exposed(e,n: int,pos: int) -> bool:
+ for j in threats:
+  var foe=e.state.units[j]
+  if e.headquarters(j) or float(foe.strength)<float(foe.initial_strength)*0.45:continue
+  var enemy=e.unit_cell(foe);var distance=e.distance(pos,enemy)
+  if distance> (4 if e.cavalry(j) else 3):continue
+  var screened=false
+  for ally in origin_links:
+   if e.artillery(ally) or e.cavalry(ally) or e.headquarters(ally) or e.state.units[ally].morale=="routed":continue
+   var cell=int(origin_links[ally].pos)
+   if e.distance(pos,cell)<=2 and e.distance(cell,enemy)<distance:screened=true;break
+  if not screened:return true
  return false

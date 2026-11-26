@@ -1,0 +1,16 @@
+{
+  "base_commit": "29008a8a185312764a3721c68884f19541095e5f",
+  "scenario_changes": [
+    "weapons.chassepot.range=4",
+    "weapons.chassepot.distance_factors[3]=0.216",
+    "weapons.chassepot.reaction_range=3",
+    "save_migrations.previous_v4316_hash"
+  ],
+  "map_rules_units_other_weapons_unchanged": true,
+  "french_normal_code_exact_v4316": true,
+  "normal_frozen_preload_only_redirected": true,
+  "new_scenario_sha256": "c1b927a7c29e8a63b403df53ea6ecd00c06a0794b7fcaa8c7bd8cd8191a3faa1",
+  "original_scenario_sha256": "5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57",
+  "graphics12_resources_and_scripts_unchanged": true,
+  "unchanged_graphic_runtime_files": 96
+}

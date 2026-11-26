@@ -1,3 +1,17 @@
+# V43.17 — France renforcée, essai Chassepot 4, Graphisme12
+
+Nouvelle branche expérimentale `v43-17-france-difficile`, basée sur V43.16 + Graphisme12. Le Normal français reprend la politique de l’ancienne France Difficile. Le nouveau Difficile prépare davantage ses positions, protège ses arrières et donne priorité à ses canons. Portée active du Chassepot portée à quatre hexagones dans les deux modes, ripostes conservées à trois. Aucun bonus de dégâts/PA/renseignements ; coûts, vingt tours, objectifs et score conservés.
+
+- **[Télécharger l’APK V43.17 Graphisme12 — 95 Mo](https://raw.githubusercontent.com/ratapignata/campagne-1870/v43-17-france-difficile/releases/1870_v0.8.43.17_Graphisme12.apk)**
+- [Sources complètes ZIP](releases/1870_v0.8.43.17_Graphisme12_Sources.zip)
+- [Changements et installation](releases/VERSION_0843_17.md), [comparaison mesurée des IA](releases/COMPARAISON_IA_V43_17.md), [tests exécutés](releases/TESTS_V43_17.md), [captures](prototype_1870/captures/v4317_graphisme12/README.md).
+
+**Essai à évaluer en partie** : le gain de tirs d’artillerie est mesuré, mais ne garantit pas une meilleure tenue des objectifs. Le rapport expose aussi les résultats défavorables. Quatre batailles synthétiques de 29 unités sur vingt tours ; le véritable scénario de 95 unités n’a été rejoué que sur deux tours. Aucun essai physique Android.
+
+Installer par-dessus V43.16 Graphisme12, sans désinstaller (même paquet/certificat, code Android 14). Pour comparer les deux politiques françaises, lancer une nouvelle partie en jouant les Prussiens. Anciennes branches, version classique et introduction BD préservées ; aucune fusion avec main.
+
+---
+
 # V43.16 + Graphisme 12
 
 Toutes les corrections de la dernière V43.16, avec le rendu exact de l’essai Graphisme 12. L’IA, les règles, les sauvegardes et les animations de combat de V43.16 restent identiques.

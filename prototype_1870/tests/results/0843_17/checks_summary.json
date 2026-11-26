@@ -1,0 +1,14 @@
+{
+  "headless_suites": 33,
+  "headless_checks": 6574,
+  "render_checks": 1079,
+  "shared_feedback_checks_not_duplicated": 20,
+  "private_export_checks": 18,
+  "distinct_technical_checks": 7651,
+  "simulation_checks": 8394,
+  "four_complete_synthetic_20_turn_battles": true,
+  "full_95_unit_turns_per_case": 2,
+  "android_device_tested": false,
+  "android_emulator_tested": false,
+  "cold_repeated_checks": 2642
+}

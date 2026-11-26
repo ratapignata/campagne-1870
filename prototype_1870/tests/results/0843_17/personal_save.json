@@ -1,0 +1,61 @@
+{
+	"checks": 18,
+	"chronological_replay_performed": false,
+	"failures": 0,
+	"losses": [
+		27062,
+		18335
+	],
+	"prisoners": [
+		16686,
+		0
+	],
+	"remaining": [
+		1802,
+		76665
+	],
+	"result": {
+		"level": "major_win",
+		"loss_advantage": 0.767439077936334,
+		"margin": 77.68211489206,
+		"parts": [
+			[
+				0.0,
+				8.83333333333333,
+				3.86
+			],
+			[
+				60.0,
+				11.1666666666667,
+				19.2087815587267
+			]
+		],
+		"reason": "major",
+		"totals": [
+			12.6933333333333,
+			90.3754482253933
+		],
+		"winner": 1
+	},
+	"steps": [
+		{
+			"alive": true,
+			"count": 1,
+			"morale": "stable",
+			"turn": 2
+		},
+		{
+			"alive": true,
+			"count": 2,
+			"morale": "shaken",
+			"turn": 3
+		},
+		{
+			"alive": false,
+			"count": 3,
+			"morale": "routed",
+			"turn": 4
+		}
+	],
+	"version": "0.8.43.16-g2d12"
+}

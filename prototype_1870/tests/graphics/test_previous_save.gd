@@ -13,7 +13,7 @@ func verify(version: String):
  var location="res://tests/graphics/fixtures/essai"+version+"_slot.json"
  var raw=FileAccess.get_file_as_string(location);var before=raw.sha256_text()
  var pack=FileAccess.get_file_as_string("res://packs/1870/regimental_trial_v43.json")
- var old=Store.new(location,pack.sha256_text());var data=old.read_slot(location)
+ var old=Store.new(location,pack.sha256_text(),JSON.parse_string(pack).get("save_migrations",{}));var data=old.read_slot(location)
  check(not data.is_empty(),"real prior experimental save is readable")
  if data.is_empty():return
  var engine=Rules.new(JSON.parse_string(pack))

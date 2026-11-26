@@ -1,0 +1,44 @@
+[
+  {
+    "test": "capture_comparison",
+    "exit": 0,
+    "passed": true,
+    "checks": 0,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\nWARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.\n     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)\nOpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)\n\nCAPTURE _warmup 0\nCAPTURE overview 0\nCAPTURE engagement 0\nCAPTURE prussiens 0\nCAPTURE isolement 0\nCAPTURE detail 0\nCAPTURE deplacement 0\nCAPTURES COMPLETE {\"average_ms\":212.319383333333,\"draw_calls\":2704.0,\"frames\":60,\"median_ms\":215.928,\"p95_ms\":272.418,\"renderer\":\"llvmpipe (LLVM 19.1.7, 256 bits)\",\"video_memory\":35650187.0}\n"
+  },
+  {
+    "test": "test_journal10",
+    "exit": 0,
+    "passed": true,
+    "checks": 990,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\nWARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.\n     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)\nOpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)\n\nJOURNAL 10 990/990\n"
+  },
+  {
+    "test": "test_feedback12",
+    "exit": 0,
+    "passed": true,
+    "checks": 23,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\nWARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.\n     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)\nOpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)\n\nFEEDBACK 12 23/23\n"
+  },
+  {
+    "test": "test_check10_ui",
+    "exit": 0,
+    "passed": true,
+    "checks": 9,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\nWARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.\n     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)\nOpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)\n\nCHECK UI 10 9/9\n"
+  },
+  {
+    "test": "test_experiment03_render",
+    "exit": 0,
+    "passed": true,
+    "checks": 35,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\nWARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.\n     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)\nOpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)\n\nTILE 0 same-position maximum byte difference 0\nTILE 1 same-position maximum byte difference 0\nTILE 2 same-position maximum byte difference 0\nEXPERIMENT 03 RENDER 35/35\n"
+  },
+  {
+    "test": "test_guidance07_render",
+    "exit": 0,
+    "passed": true,
+    "checks": 22,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\nWARNING: Could not set V-Sync mode, as changing V-Sync mode is not supported by the graphics driver.\n     at: set_use_vsync (platform/linuxbsd/x11/gl_manager_x11.cpp:364)\nOpenGL API 4.5 (Core Profile) Mesa 25.0.7-2+deb13u1 - Compatibility - Using Device: Mesa - llvmpipe (LLVM 19.1.7, 256 bits)\n\nGUIDANCE RENDER 07 22/22\n"
+  }
+]

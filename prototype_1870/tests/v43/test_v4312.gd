@@ -25,9 +25,9 @@ func _initialize():
  for side in [0,1]:
   var e=Rules.new(small);e.new_game(0,"medium");e.state.side=side;e.state.seed=42;e.state.ai_style=0;e.refresh_intel()
   var view=e.observation(side);var before=view.duplicate(true);var ref=view.duplicate(true);ref.state.ai_difficulty="hard"
-  var former=Frozen.new();former.profiles=profiles
+  var former=Frozen.new() if side==1 else load("res://war_engine/ai/v4316_ai.gd").new();former.profiles=profiles
   var current=bot();var chosen=current.choose(view)
-  check(chosen==former.choose(ref),"Normal exactly V43.11 Hard side "+str(side));check(view==before,"Normal observation intact")
+  check(chosen==former.choose(ref),"approved Normal reference side "+str(side));check(view==before,"Normal observation intact")
   check(dispatch(e,chosen) and e.validate(e.state),"Normal action legal")
   e.state.ai_difficulty="hard";view=e.observation(side);before=view.duplicate(true)
   var h=bot();var action=h.choose(view);check(view==before,"Hard observation intact")

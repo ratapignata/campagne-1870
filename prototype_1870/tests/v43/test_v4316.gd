@@ -97,7 +97,7 @@ func _initialize():
  check(a.kind=="move" and view==before,"own known double cut triggers a legal attempt to leave without locating a hidden enemy")
  e=small(["fr_7","qg_fr_Pellé"],[[11,5],[8,1]]);e.state.units[0].entrenched=true
  view=observed(e);view.state.units[0].command_ok=false;view.state.units[0].supply_ok=false;view.state.units[0].isolation_turns=1;view.state.units[0].ap=8;view.state.units[0].turn_ap_limit=8
- a=bot().choose(view);check(a.kind!="move","first unexplained cut does not empty the major strongpoint for an unproven restoration")
+ a=bot().choose(view);check(a.kind!="move","major strongpoint with no observed enclosure is not emptied at the first unconfirmed cut")
  view.state.units[0].isolation_turns=2;a=bot().choose(view)
  check(a.kind=="move","second isolation count releases the garrison before the unchanged third-count consequences")
  # An already closed ring cannot be escaped by inventing a path or a bonus.
@@ -119,8 +119,11 @@ func _initialize():
    if side==0 and mode=="hard":continue
    world=Rules.new(data);world.new_game(1,mode);world.state.side=side;world.state.seed=18704316;world.state.ai_style=0;world.refresh_intel()
    var current=bot();var prior=old_bot();view=world.observation(side)
+   if side==0 and mode=="medium":prior=load("res://war_engine/ai/v4316_ai.gd").new();prior.profiles=profiles
    for step in range(4):
-    var x=current.choose(view);var y=prior.choose(view)
+    var reference_view=view.duplicate(true)
+    if side==0 and mode=="medium":reference_view.state.ai_difficulty="hard"
+    var x=current.choose(view);var y=prior.choose(reference_view)
     check(x==y and current.relocation==prior.relocation,"other policy unchanged side %d mode %s step %d"%[side,mode,step])
     check(dispatch(world,x) and world.validate(world.state),"unchanged other-policy order remains legal")
     view=world.observation(int(world.state.side))

@@ -27,6 +27,7 @@ func new_game(human: int=0,difficulty: String="medium") -> void:
 	vision_cache=[];state.contacts=[{},{}];state.revealed=[[],[]];refresh_intel()
 func normalize() -> void:
 	super.normalize()
+	if state.has("completed_turn_limit"):state.completed_turn_limit=int(state.completed_turn_limit)
 	for snapshot in state.get("loss_history",[]):
 		if not snapshot.has("losses") and snapshot.has("casualties"):
 			snapshot.losses=snapshot.casualties
@@ -380,7 +381,7 @@ func reaction_status(defender: int,attacker: int) -> String:
 	if a.morale=="routed":return "routed"
 	if int(a.reactions)<=0:return "spent"
 	if artillery(defender) and not a.deployed:return "limbered"
-	if distance(unit_cell(a),unit_cell(b))>int(weapon(defender).range):return "range"
+	if distance(unit_cell(a),unit_cell(b))>int(weapon(defender).get("reaction_range",weapon(defender).range)):return "range"
 	physical_lines=true
 	var line=line_status(unit_cell(a),unit_cell(b))
 	physical_lines=false
@@ -662,7 +663,7 @@ func reinforcement_turn(u: Dictionary) -> int:
 	var scheduled=int(u.get("arrival_turn",1))
 	# Keep stored dates and V43.11 save fingerprints intact. Only Hard's
 	# Prussian calendar changes, as explicitly requested; no extra units/AP.
-	if str(pack.id)=="regimental_trial_v43" and state.get("ai_difficulty","medium")=="hard" and int(u.side)==1 and scheduled>1:return scheduled-1
+	if str(pack.id)=="regimental_trial_v43" and (state.get("ai_difficulty","medium")=="hard" or int(state.get("human_side",0))==1) and int(u.side)==1 and scheduled>1:return scheduled-1
 	return scheduled
 func arrive_reinforcements() -> void:
 	state.reinforcements_arrived=0

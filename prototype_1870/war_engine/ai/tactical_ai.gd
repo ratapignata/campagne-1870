@@ -1,6 +1,8 @@
 extends RefCounted
 # Decisions consume a sanitized observation only. No access to the live engine.
 const Rules=preload("res://war_engine/ai/planning_engine.gd")
+const FrenchArtillery=preload("res://war_engine/ai/french_artillery.gd")
+const FrenchNormal4316=preload("res://war_engine/ai/v4316_ai.gd")
 const FrenchDefence=preload("res://war_engine/ai/french_defence.gd")
 const Normal4311=preload("res://war_engine/ai/v4311_ai.gd")
 const Legacy=preload("res://war_engine/ai/legacy_ai.gd")
@@ -21,6 +23,7 @@ var objective_pressure: Dictionary={}
 var enemy_screen: Dictionary={}
 var bridge_targets: Dictionary={}
 var normal_brain
+var french_normal_brain
 var operation_goals: Dictionary={}
 var hard_offensive=false
 var battery_targets: Dictionary={}
@@ -28,6 +31,16 @@ var hard_defensive=false
 var defence
 func choose(view: Dictionary) -> Dictionary:
 	var difficulty=str(view.state.get("ai_difficulty","legacy"))
+	# The French Normal baseline is exactly the approved V43.16 Hard policy.
+	# Prussian Normal retains its V43.11 policy below. No rule or stat override.
+	if difficulty=="medium" and int(view.state.side)==0 and str(view.pack.id)=="regimental_trial_v43":
+		if french_normal_brain==null:french_normal_brain=FrenchNormal4316.new()
+		french_normal_brain.profiles=profiles
+		french_normal_brain.relocation=relocation.duplicate(true)
+		var french_view=view.duplicate(true);french_view.state.ai_difficulty="hard"
+		var decision=french_normal_brain.choose(french_view)
+		relocation=french_normal_brain.relocation.duplicate(true)
+		return decision
 	# Normal is exactly the former V43.11 Hard policy, including relocation state.
 	if difficulty=="medium":
 		if normal_brain==null:
@@ -56,6 +69,9 @@ func choose(view: Dictionary) -> Dictionary:
 			enemy_screen[pos]=6 if e.state.units[j].get("entrenched",false) else 3
 	var continuation=continue_relocation(e)
 	if not continuation.is_empty():return continuation
+	if hard_defensive:
+		var battery_order=FrenchArtillery.choose(e,defence)
+		if not battery_order.is_empty():return battery_order
 	operation_goals={}
 	if hard_offensive:
 		for k in range(e.state.units.size()):
@@ -131,15 +147,17 @@ func choose(view: Dictionary) -> Dictionary:
 				# At a 3-AP command limit, a French battery can deploy now and fire next turn.
 				offer({"kind":"deploy","unit":u.id},0.8*float(settings.deploy)+(45 if offensive else 0))
 			u.deployed=false;u.ap+=int(e.weapon(n).deployment_ap)
-		if not withdrawing and e.entrench_status(n)=="ok" and (start==goal or (not offensive and e.enemy_distance(n,start)<=int(e.weapon(n).range))):
+		if not withdrawing and e.entrench_status(n)=="ok" and (start==goal or (not offensive and e.enemy_distance(n,start)<=int(e.weapon(n).range)) or hard_defensive and defence.prepared_position(e,n,start,goal)):
 			offer({"kind":"entrench","unit":u.id},float(settings.entrench_goal if start==goal else settings.entrench)+(120.0 if hard_defensive and not e.artillery(n) and not e.cavalry(n) and not e.headquarters(n) and (start==goal or float(e.pack.terrains[e.pack.map.tiles[start]].fire_received)<=0.65) else 0.0))
+		if hard_defensive and not withdrawing and e.entrench_status(n)=="ok" and defence.prepared_position(e,n,start,goal):
+			offer({"kind":"entrench","unit":u.id},290.0 if e.formation(n)!="column" else 200.0)
 		if ready_battery:continue
 		# The objective's garrison stays in place; other troops can support it.
 		var clear_entry=false
 		if hard_planning and e.enemy_distance(n,start)>2:
 			for incoming in view.get("own_reinforcements",[]):
 				if int(incoming.arrival_turn)<=int(e.state.turn)+1 and start==e.index(Vector2i(int(incoming.cell[0]),int(incoming.cell[1]))):clear_entry=true
-		if hard_defensive and defence.release_cavalry_garrison(e,n):clear_entry=true
+		if hard_defensive and (defence.release_cavalry_garrison(e,n) or e.artillery(n) and best_fire(e,n,true)<=0):clear_entry=true
 		if start==goal and not clear_entry and not withdrawing and (not e.strict_links() or u.get("command_ok",true) and u.get("supply_ok",true)):continue
 		var original_ap=int(u.ap);var original_deployed=bool(u.deployed)
 		var current_threat=threat(e,n);var current_cover=float(e.pack.terrains[e.pack.map.tiles[start]].fire_received)
@@ -223,6 +241,9 @@ func choose(view: Dictionary) -> Dictionary:
 				var support_distance=infantry_distance(e,n,dest)
 				score-=maxi(0,support_distance-3)*80.0
 				if next_fire<=0 and support_distance>battery_anchor:score-=120.0
+			if hard_defensive and defence.guards.has(n):
+				follow_assault=move_assault_target(e,n,true)
+				if not follow_assault.is_empty():score+=250.0
 			var danger=threat(e,n)
 			if hard_defensive:
 				var defence_score=defence.movement(e,n,start,dest,goal,current_fire,next_fire,current_threat,danger,restores_link)
@@ -279,7 +300,7 @@ func continue_relocation(e) -> Dictionary:
 	var u=e.state.units[n]
 	if str(plan.get("kind",""))=="assault_approach":
 		var target=e.unit_index(str(plan.target))
-		if not hard_offensive or target<0 or e.unit_cell(u)!=int(plan.path[-1]) or int(u.ap)!=int(plan.ap) or e.assault_status(n,target)!="ok":return {}
+		if not (hard_offensive or hard_defensive and target>=0 and defence.rear_targets.has(target)) or target<0 or e.unit_cell(u)!=int(plan.path[-1]) or int(u.ap)!=int(plan.ap) or e.assault_status(n,target)!="ok":return {}
 		var forecast=assault_forecast(e,n,target)
 		if float(forecast.ratio)>=float(forecast.minimum):return {"kind":"assault","unit":u.id,"target":e.state.units[target].id}
 		return {}
@@ -478,6 +499,11 @@ func group_distance(e,n: int,pos: int) -> float:
 	return total/maxi(1,count)
 
 func mission_goal(e,n: int,fields: Dictionary) -> int:
+	# Silent French guns follow an observed engagement supported by infantry,
+	# instead of remaining assigned to an unproductive objective sector.
+	if hard_defensive and e.artillery(n) and not defence.needs_withdrawal(e,n,e.unit_cell(e.state.units[n])):
+		var firing_support=battery_support_goal(e,n)
+		if firing_support>=0:return firing_support
 	if hard_defensive and defence!=null and defence.goal(n)>=0:return defence.goal(n)
 	if hard_offensive and e.artillery(n):
 		var support_goal=battery_support_goal(e,n)
@@ -623,11 +649,12 @@ func assault_forecast(e,n: int,j: int) -> Dictionary:
 	if hard_planning and offensive and not e.cavalry(n) and e.state.units[j].morale in ["shaken","routed"] and friends_near(e,n,e.unit_cell(e.state.units[j]))>=1:minimum=maxf(1.05,minimum-0.15)
 	if hard_offensive and not e.cavalry(n) and not e.headquarters(n) and friends_near(e,n,e.unit_cell(e.state.units[j]))>=2 and int(e.state.turn)>=4 and float(u.strength)>=float(u.initial_strength)*0.35:minimum=minf(minimum,1.15 if e.state.units[j].get("entrenched",false) else 1.10)
 	return {"response":response,"ratio":power/maxf(1,e.defence_power_against(j,n)),"minimum":minimum}
-func move_assault_target(e,n: int) -> String:
+func move_assault_target(e,n: int,rear_only: bool=false) -> String:
 	if e.cavalry(n) or e.headquarters(n) or int(e.state.units[n].ap)<e.assault_cost(n):return ""
 	for cell in e.neighbours(e.unit_cell(e.state.units[n])):
 		var j=e.unit_at(cell)
 		if j<0 or int(e.state.units[j].side)==int(e.state.side) or e.assault_status(n,j)!="ok":continue
+		if rear_only and not defence.rear_targets.has(j):continue
 		var f=assault_forecast(e,n,j)
 		if float(f.ratio)>=float(f.minimum):return str(e.state.units[j].id)
 	return ""

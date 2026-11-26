@@ -3961,16 +3961,18 @@
   "weapons": {
     "chassepot": {
       "name_key": "weapon_chassepot",
-      "range": 3,
+      "range": 4,
       "ap": 8,
       "base_losses": 110,
       "variance": 0.1,
       "distance_factors": [
         1,
         0.6,
-        0.36
+        0.36,
+        0.216
       ],
-      "historical_status": "ADAPTATION_GAMEPLAY"
+      "historical_status": "ADAPTATION_GAMEPLAY",
+      "reaction_range": 3
     },
     "dreyse": {
       "name_key": "weapon_dreyse",
@@ -4208,6 +4210,9 @@
     "6a44f0421df5983355ea59792e27ed67a9e9ac89def0c295b8ebdfab2a12574b": {
       "turns": 20,
       "objective_layout": "v4312"
+    },
+    "5a69f33d1e4704966eb00ed1f643fa91463ecca1427419b5af9ce36d290f9b57": {
+      "turns": 20
     }
   },
   "v42_experimental": {
