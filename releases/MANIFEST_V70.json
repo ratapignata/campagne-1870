@@ -1,0 +1,55 @@
+{
+  "version": "0.8.70",
+  "name": "V70 Graphisme12 + Introduction BD2",
+  "branch": "v70-france-artillerie-bd2",
+  "source_commit": "30e60c2bfc07cad59dba4ab7f0df0fffb472dace",
+  "game_base_commit": "896d8211e56403020baee6c5ecda30a1befa0595",
+  "graphics12_commit": "ec50397d4029a83c6f43f863481b8e57e40280b0",
+  "bd2_commit": "141b184d0a45e399cf46d62f73d734aa3e1d11b0",
+  "apk": {
+    "file": "1870_V70_Graphisme12_BD2.apk",
+    "bytes": 97492285,
+    "sha256": "2250ce4c61ffb913a3f22518f3846b4503889f4290d2a45b85c5719e4ced038c",
+    "package": "org.woerth1870.prototype.graphics2dexp",
+    "version": "0.8.70",
+    "code": 15,
+    "same_certificate_as_graphisme12": true,
+    "android_device_tested": false,
+    "emulator_tested": false,
+    "apk_zip_valid": true,
+    "zipalign_valid": true
+  },
+  "sources": {
+    "file": "1870_V70_Graphisme12_BD2_Sources.zip",
+    "bytes": 55110665,
+    "sha256": "28ded17b8add6309a5e2f793fbbbb7304a292a078a0e918b9622dc6d81dad105",
+    "crc_valid": true,
+    "all_members_match_committed_sources": true,
+    "production_identical_to_cold_tested_archive": true
+  },
+  "tests": {
+    "godot": "4.5.1.stable.official.f62fdbde1",
+    "headless_suites": 35,
+    "headless_checks": 6610,
+    "render_checks": 1079,
+    "feedback_duplicates_subtracted": 20,
+    "bd2_render_flow_checks": 179,
+    "private_load_roundtrip_checks": 272,
+    "technical_distinct_checks": 8120,
+    "cold_repeated_checks": 2643,
+    "simulation_checks": 3542,
+    "full_scenario_units": 95,
+    "full_scenario_turns_per_policy": 8,
+    "full_20_turn_battle_executed": false,
+    "android_device_tested": false,
+    "android_emulator_tested": false
+  },
+  "scope": "French Normal exactly prior V43.17 Hard; French Hard three approved battery planning/stability/protection changes only. Prussian doctrines unchanged. Exact BD2 reader and six images, Graphisme12 retained; all core/platform/scenario/assets unchanged. Same graphics app/certificate, no main/old branch merge.",
+  "limits": {
+    "artillery_fire_volume_increase_validated": false,
+    "artillery_fire_damage_increase_validated": false,
+    "global_win_rate_increase_validated": false,
+    "comparison": "T1-T8 actual95-unit scenario, one seed669381/style0, active fixed PrussianAI. Not exact human replay. Normal22 cannon shots/853 direct losses vs Hard21/741; gun crew losses200 vs118; all6batteries survive both; Woe captureT3 vsT5. No full20-turn simulation or Android device/emulator test."
+  },
+  "scenario_sha256": "c1b927a7c29e8a63b403df53ea6ecd00c06a0794b7fcaa8c7bd8cd8191a3faa1"
+}
