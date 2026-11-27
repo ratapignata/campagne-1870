@@ -1,0 +1,58 @@
+{
+  "version": "0.8.70.1",
+  "name": "V70.1 Graphisme12 + Introduction BD2",
+  "branch": "v70-1-feu-artillerie",
+  "source_commit": "4210d8750a671f5fed20d0c371f946ed3dc6a20c",
+  "game_base_commit": "bab765567b3932ff48d52b526fac668836ba775d",
+  "apk": {
+    "file": "1870_V70_1_Graphisme12_BD2.apk",
+    "bytes": 97500656,
+    "sha256": "e3ee075622bba3b9c46409f482034ebf998dbc3c51f1b79d4538ce22b0b137f9",
+    "package": "org.woerth1870.prototype.graphics2dexp",
+    "version": "0.8.70.1",
+    "code": 16,
+    "same_certificate_as_graphisme12": true,
+    "android_device_tested": false,
+    "emulator_tested": false,
+    "apk_zip_valid": true,
+    "zipalign_valid": true,
+    "certificate_sha256": "57c00efad8c9b822d4a1d63238a4137b9afc97b6e9248076f4f54bb292ae846c"
+  },
+  "sources": {
+    "file": "1870_V70_1_Graphisme12_BD2_Sources.zip",
+    "bytes": 56137582,
+    "sha256": "096ac9b0e4ce67f7dea9a7b7300139e88daea2c3fe58536aa8271b219612b562",
+    "crc_valid": true,
+    "all_members_match_committed_sources": true,
+    "production_identical_to_cold_tested_archive": true,
+    "production_files_compared": 315
+  },
+  "tests": {
+    "godot": "4.5.1.stable.official.f62fdbde1",
+    "headless_suites": 36,
+    "headless_checks": 6653,
+    "render_flow_checks": 8,
+    "private_save_roundtrip_checks": 272,
+    "technical_checks": 6933,
+    "native_reference_replay_checks": 2170,
+    "comparison_window_checks": 1208,
+    "cold_repeated_checks": 2666,
+    "previous_BD179_and_graphics1079_rerun": false,
+    "full_20_turn_battle_executed": false,
+    "android_device_tested": false,
+    "android_emulator_tested": false
+  },
+  "comparison": {
+    "scope": "Two chronological T2-T4 windows, actual95-unit scenario, same verified starting state, seed669381/style0, active fixed PrussianV43.17HardAI. Both French controllers are Hard. Not exact human replay or full20-turn battle.",
+    "v70_cannon_shots": 5,
+    "v701_cannon_shots": 7,
+    "shot_gain_percent": 40,
+    "v70_direct_cannon_losses": 257,
+    "v701_direct_cannon_losses": 357,
+    "v70_crew_losses": 61,
+    "v701_crew_losses": 32,
+    "global_20turn_increase_validated": false
+  },
+  "preserved": "FrenchNormal unchanged fromV70 (V43.17Hard); PrussianNormal andHard unchanged; Graphisme12 and exactBD2 retained; native combat/AP/range/reactions/command/supply/isolation/surrender/scenario unchanged. No main/old branch merge.",
+  "scenario_sha256": "c1b927a7c29e8a63b403df53ea6ecd00c06a0794b7fcaa8c7bd8cd8191a3faa1"
+}
