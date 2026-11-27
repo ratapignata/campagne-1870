@@ -1,0 +1,50 @@
+{
+	"active": {
+		"artillery": 18,
+		"infantry": 241
+	},
+	"checks": 272,
+	"chronological_replay_performed": false,
+	"direct_losses": {
+		"artillery": 709,
+		"infantry": 11561
+	},
+	"failures": 0,
+	"game_sources_modified": false,
+	"military_losses": [
+		32780,
+		19179
+	],
+	"prisoners": [
+		11952,
+		4137
+	],
+	"reactions": {
+		"artillery": 7,
+		"infantry": 71
+	},
+	"result": {
+		"level": "major_win",
+		"loss_advantage": 0.736610133456583,
+		"margin": 80.065536002465,
+		"parts": [
+			[
+				0.0,
+				7.33333333333333,
+				4.90863157894737
+			],
+			[
+				60.0,
+				12.6666666666667,
+				19.640834248079
+			]
+		],
+		"reason": "major",
+		"totals": [
+			12.2419649122807,
+			92.3075009147457
+		],
+		"winner": 1
+	},
+	"version": "0.8.43.17-g2d12"
+}

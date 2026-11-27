@@ -1,0 +1,9 @@
+{
+  "normal_french_exact_prior_hard_except_frozen_preloads": true,
+  "unchanged_core_platform_scenario_assets_files": 133,
+  "scenario_sha256": "c1b927a7c29e8a63b403df53ea6ecd00c06a0794b7fcaa8c7bd8cd8191a3faa1",
+  "intro_bd2_exact_runtime_files": 9,
+  "bd2_commit": "141b184d0a45e399cf46d62f73d734aa3e1d11b0",
+  "base_commit": "896d8211e56403020baee6c5ecda30a1befa0595",
+  "gameplay_changed_only_in_french_ai": true
+}

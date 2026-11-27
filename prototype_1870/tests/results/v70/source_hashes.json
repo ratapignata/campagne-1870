@@ -1,0 +1,10 @@
+{
+  "war_engine/ai/tactical_ai.gd": "4f0a96ccff19056f4444a622a11927dd6ee37f6a3cebda3b8612ec1a36abe115",
+  "war_engine/ai/french_defence.gd": "888289ebd0ab8bb0c7e05b4f08a09dc5a981ec8e5841218008359fa820b58681",
+  "war_engine/ai/french_artillery.gd": "8420a31a725bcce92d44aa94da1e30312e743d27793e0d0b1e985ff84e4f67c6",
+  "war_engine/ai/french_batteries.gd": "89933aadb11a79830495885798a276be7833eaa6b5011a4c6e35e5b0c4a09f62",
+  "war_engine/presentation/main.gd": "6d5ccc41a5167cf2497daff3e6c3318056940e9cab26f87f12f9aa2fb0717d08",
+  "project.godot": "83c875f6a96a792358e294e3b5bbb66b108e98c63c7fe6a5bd9a28bbe468d589",
+  "export_presets.cfg": "a0faf16ad8cdafd367424346fdc72341b672e80902ee4cbe8e579aec57cfaf04",
+  "packs/1870/fr.json": "7ec38d1200e0ad7cbb54235e2f11ffdcfdfbd7a2d5372fed03d149e0c4524a81"
+}

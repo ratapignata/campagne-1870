@@ -1,0 +1,444 @@
+[
+  {
+    "mode": "medium",
+    "cannon": 22,
+    "all_active_fire": 95,
+    "entrench": 53,
+    "limber": 5,
+    "deploy": 9,
+    "living_batteries_after_8": 6,
+    "french_losses": 7199,
+    "prussian_losses": 5780,
+    "prisoners": [
+      587,
+      0
+    ],
+    "objectives": {
+      "elsasshausen": 1,
+      "froeschwiller": 0,
+      "niederwald": 0
+    },
+    "unused_legal_guns": 0,
+    "checks": 1711,
+    "finished": false,
+    "elapsed_ms": 2628120,
+    "history": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 3
+      },
+      {
+        "kind": "surrender",
+        "known_names": {
+          "0": "reg_fr_19",
+          "1": "reg_fr_19"
+        },
+        "prisoners": 587,
+        "side": 0,
+        "turn": 8,
+        "unit": "fr_19"
+      }
+    ],
+    "batteries": [
+      {
+        "unit": "art_fr_Ducrot0",
+        "shots": 5,
+        "direct_losses": 211,
+        "remaining": 226,
+        "casualties": 24,
+        "prisoners": 0,
+        "turns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "positions": [
+          [
+            10,
+            7
+          ],
+          [
+            10,
+            7
+          ],
+          [
+            10,
+            7
+          ],
+          [
+            10,
+            7
+          ],
+          [
+            10,
+            7
+          ]
+        ]
+      },
+      {
+        "unit": "art_fr_Pellé0",
+        "shots": 5,
+        "direct_losses": 182,
+        "remaining": 82,
+        "casualties": 168,
+        "prisoners": 0,
+        "turns": [
+          3,
+          5,
+          6,
+          7,
+          8
+        ],
+        "positions": [
+          [
+            13,
+            6
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            11,
+            7
+          ],
+          [
+            11,
+            7
+          ]
+        ]
+      },
+      {
+        "unit": "art_fr_Raoult0",
+        "shots": 3,
+        "direct_losses": 134,
+        "remaining": 250,
+        "casualties": 0,
+        "prisoners": 0,
+        "turns": [
+          3,
+          4,
+          5
+        ],
+        "positions": [
+          [
+            15,
+            6
+          ],
+          [
+            15,
+            6
+          ],
+          [
+            15,
+            6
+          ]
+        ]
+      },
+      {
+        "unit": "art_fr_Lartigue0",
+        "shots": 1,
+        "direct_losses": 26,
+        "remaining": 250,
+        "casualties": 0,
+        "prisoners": 0,
+        "turns": [
+          5
+        ],
+        "positions": [
+          [
+            22,
+            3
+          ]
+        ]
+      },
+      {
+        "unit": "art_fr_Conseil-Dumesnil0",
+        "shots": 4,
+        "direct_losses": 111,
+        "remaining": 250,
+        "casualties": 0,
+        "prisoners": 0,
+        "turns": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "positions": [
+          [
+            7,
+            9
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            7,
+            9
+          ]
+        ]
+      },
+      {
+        "unit": "reserve_art_00",
+        "shots": 4,
+        "direct_losses": 189,
+        "remaining": 242,
+        "casualties": 8,
+        "prisoners": 0,
+        "turns": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "positions": [
+          [
+            9,
+            7
+          ],
+          [
+            9,
+            7
+          ],
+          [
+            9,
+            7
+          ],
+          [
+            9,
+            7
+          ]
+        ]
+      }
+    ],
+    "cannon_direct_losses": 853,
+    "cannon_crew_remaining": 1300
+  },
+  {
+    "mode": "hard",
+    "cannon": 21,
+    "all_active_fire": 103,
+    "entrench": 50,
+    "limber": 5,
+    "deploy": 9,
+    "living_batteries_after_8": 6,
+    "french_losses": 7985,
+    "prussian_losses": 6762,
+    "prisoners": [
+      0,
+      0
+    ],
+    "objectives": {
+      "elsasshausen": 1,
+      "froeschwiller": 0,
+      "niederwald": 0
+    },
+    "unused_legal_guns": 0,
+    "checks": 1831,
+    "finished": false,
+    "elapsed_ms": 2868639,
+    "history": [
+      {
+        "kind": "capture",
+        "objective": "elsasshausen",
+        "side": 1,
+        "turn": 5
+      }
+    ],
+    "batteries": [
+      {
+        "unit": "art_fr_Ducrot0",
+        "shots": 5,
+        "direct_losses": 126,
+        "remaining": 250,
+        "casualties": 0,
+        "prisoners": 0,
+        "turns": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "positions": [
+          [
+            10,
+            7
+          ],
+          [
+            10,
+            7
+          ],
+          [
+            10,
+            7
+          ],
+          [
+            10,
+            7
+          ],
+          [
+            10,
+            7
+          ]
+        ]
+      },
+      {
+        "unit": "art_fr_Pellé0",
+        "shots": 3,
+        "direct_losses": 199,
+        "remaining": 195,
+        "casualties": 55,
+        "prisoners": 0,
+        "turns": [
+          2,
+          3,
+          6
+        ],
+        "positions": [
+          [
+            13,
+            9
+          ],
+          [
+            13,
+            9
+          ],
+          [
+            11,
+            7
+          ]
+        ]
+      },
+      {
+        "unit": "art_fr_Raoult0",
+        "shots": 5,
+        "direct_losses": 213,
+        "remaining": 250,
+        "casualties": 0,
+        "prisoners": 0,
+        "turns": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "positions": [
+          [
+            15,
+            6
+          ],
+          [
+            15,
+            6
+          ],
+          [
+            15,
+            6
+          ],
+          [
+            15,
+            6
+          ],
+          [
+            15,
+            6
+          ]
+        ]
+      },
+      {
+        "unit": "art_fr_Lartigue0",
+        "shots": 1,
+        "direct_losses": 33,
+        "remaining": 206,
+        "casualties": 44,
+        "prisoners": 0,
+        "turns": [
+          8
+        ],
+        "positions": [
+          [
+            17,
+            2
+          ]
+        ]
+      },
+      {
+        "unit": "art_fr_Conseil-Dumesnil0",
+        "shots": 4,
+        "direct_losses": 79,
+        "remaining": 231,
+        "casualties": 19,
+        "prisoners": 0,
+        "turns": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "positions": [
+          [
+            7,
+            9
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            7,
+            9
+          ]
+        ]
+      },
+      {
+        "unit": "reserve_art_00",
+        "shots": 3,
+        "direct_losses": 91,
+        "remaining": 250,
+        "casualties": 0,
+        "prisoners": 0,
+        "turns": [
+          6,
+          7,
+          8
+        ],
+        "positions": [
+          [
+            9,
+            7
+          ],
+          [
+            9,
+            7
+          ],
+          [
+            9,
+            7
+          ]
+        ]
+      }
+    ],
+    "cannon_direct_losses": 741,
+    "cannon_crew_remaining": 1382
+  }
+]

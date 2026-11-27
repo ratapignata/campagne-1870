@@ -1,0 +1,44 @@
+[
+  {
+    "test": "v43/test_v4317_rules",
+    "exit": 0,
+    "passed": true,
+    "seconds": 2.736,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43.17 RULES 126/126\n"
+  },
+  {
+    "test": "v43/test_v70",
+    "exit": 0,
+    "passed": true,
+    "seconds": 2.923,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV70 ARTILLERY/NORMAL 26/26\n"
+  },
+  {
+    "test": "graphics/test_contract",
+    "exit": 0,
+    "passed": true,
+    "seconds": 1.391,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nGRAPHICS CONTRACT 2433/2433\n"
+  },
+  {
+    "test": "intro_bd/test_resume_direct",
+    "exit": 0,
+    "passed": true,
+    "seconds": 1.761,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nDIRECT RESUME 9/9\n"
+  },
+  {
+    "test": "v43/test_v4317_ai",
+    "exit": 0,
+    "passed": true,
+    "seconds": 4.276,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nGUN FIRST {\"kind\":\"fire\",\"target\":\"pru_36\",\"unit\":\"art_fr_Pell\u00e90\"}\nDEPLOY THREE {\"kind\":\"deploy\",\"unit\":\"art_fr_Pell\u00e90\"}\nBLOCKED GUN {\"kind\":\"move\",\"path\":[161,192],\"unit\":\"art_fr_Pell\u00e90\"}\nPREPARE {\"kind\":\"entrench\",\"unit\":\"fr_9\"}\nCOUNTER {\"kind\":\"assault\",\"target\":\"pru_54\",\"unit\":\"fr_8\"}\nV43.17 FRENCH HARD 21/21\n"
+  },
+  {
+    "test": "v43_export/test_export",
+    "exit": 0,
+    "passed": true,
+    "seconds": 2.516,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 EXPORT 28/28\n"
+  }
+]

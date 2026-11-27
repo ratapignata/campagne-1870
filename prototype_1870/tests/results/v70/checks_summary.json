@@ -1,0 +1,17 @@
+{
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "headless_suites": 35,
+  "headless_checks": 6610,
+  "render_checks": 1079,
+  "feedback_duplicates_subtracted": 20,
+  "bd2_render_flow_checks": 179,
+  "private_load_roundtrip_checks": 272,
+  "technical_distinct_checks": 8120,
+  "cold_repeated_checks": 2643,
+  "simulation_checks": 3542,
+  "full_scenario_units": 95,
+  "full_scenario_turns_per_policy": 8,
+  "full_20_turn_battle_executed": false,
+  "android_device_tested": false,
+  "android_emulator_tested": false
+}

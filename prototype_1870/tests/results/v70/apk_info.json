@@ -1,0 +1,13 @@
+{
+  "file": "1870_V70_Graphisme12_BD2.apk",
+  "bytes": 97492285,
+  "sha256": "2250ce4c61ffb913a3f22518f3846b4503889f4290d2a45b85c5719e4ced038c",
+  "package": "org.woerth1870.prototype.graphics2dexp",
+  "version": "0.8.70",
+  "code": 15,
+  "same_certificate_as_graphisme12": true,
+  "android_device_tested": false,
+  "emulator_tested": false,
+  "apk_zip_valid": true,
+  "zipalign_valid": true
+}
