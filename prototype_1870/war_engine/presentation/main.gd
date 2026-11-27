@@ -3,6 +3,7 @@ const EngineRules=preload("res://war_engine/core/engine.gd")
 const SaveStore=preload("res://war_engine/platform/save_store.gd")
 const UnitAvailability=preload("res://war_engine/presentation/unit_availability.gd")
 const JournalView=preload("res://war_engine/presentation/journal_view.gd")
+const HistoricalIntro=preload("res://war_engine/presentation/historical_intro.gd")
 const HudDetails=preload("res://war_engine/presentation/hud_details.gd")
 const GraphicsSkin=preload("res://war_engine/presentation/graphics2d_skin.gd")
 const MapView=preload("res://war_engine/presentation/map_view.gd")
@@ -652,7 +653,7 @@ func show_menu():
 	label(box,t(str(engine.pack.get("description_key","intro_detail")))+(" · "+t("difficulty_"+str(engine.state.ai_difficulty)) if has_save else ""),40,410,794,45,16,Color("b6c5b2")).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	button(box,t("music_on" if music_enabled else "music_off"),40,459,385,43,func():toggle_music();show_menu())
 	button(box,t("sound_on" if sound_enabled else "sound_off"),449,459,385,43,func():toggle_sound();show_menu())
-	button(box,t("continue") if has_save else t("start"),40,516,491,60,resume if has_save else show_camp_choice,true)
+	button(box,t("continue") if has_save else t("start"),40,516,491,60,resume if has_save else func():HistoricalIntro.open(self),true)
 	button(box,t("again") if has_save else t("help"),550,516,284,60,confirm_new if has_save else show_help)
 	var export_button=button(box,"Exporter la sauvegarde",40,592,794,44,export_current_save)
 	export_button.disabled=not (playing or has_save)
@@ -660,7 +661,7 @@ func export_current_save():
 	# A menu pauses command dispatch. Capture once, before the external picker opens.
 	var snapshot=saver.export_snapshot(engine,{"version":ProjectSettings.get_setting("application/config/version",""),"created_utc":Time.get_datetime_string_from_system(true),"objectives":engine.objective_definitions().duplicate(true),"ai_relocation":ai.relocation.duplicate(true) if ai_thread==null else {},"ai_pending":ai_pending.duplicate(true) if ai_thread==null else {},"ai_worker_busy":ai_thread!=null})
 	if snapshot.is_empty():show_export_notice(false);return
-	var filename="1870_V43_T%02d_%s.json"%[int(engine.state.turn),Time.get_datetime_string_from_system(true).replace(":","-")]
+	var filename="1870_V70_T%02d_%s.json"%[int(engine.state.turn),Time.get_datetime_string_from_system(true).replace(":","-")]
 	export_in_progress=true
 	if DisplayServer.has_feature(DisplayServer.FEATURE_NATIVE_DIALOG_FILE):
 		var error=DisplayServer.file_dialog_show("Exporter la sauvegarde",OS.get_system_dir(OS.SYSTEM_DIR_DOWNLOADS),filename,false,DisplayServer.FILE_DIALOG_MODE_SAVE_FILE,PackedStringArray(["*.json"]),complete_save_export.bind(snapshot))
@@ -705,7 +706,7 @@ func new_game(side: int=0):
 	save_preferences()
 	engine.new_game(side,difficulty_choice);support_notice_seen=int(engine.state.get("support_serial",0));selected=-1;clear_preview();playing=true;reset_map_view();map.feedback_ttl=0;map.combat_ttl=0;map.crossing_ttl=0;ai_clock=0
 	close_modal();persist();refresh(t("hint_select"))
-func confirm_new():confirm(t("new_confirm"),t("new_detail"),t("new_yes"),show_camp_choice,show_menu)
+func confirm_new():confirm(t("new_confirm"),t("new_detail"),t("new_yes"),func():HistoricalIntro.open(self),show_menu)
 func primary_action():
 	if engine.state.finished:show_result()
 	else:confirm_end()
@@ -819,7 +820,7 @@ func show_result():
 	label(box,t("result_actions")%[engine.state.moves,engine.state.shots,engine.state.assaults],38,507,964,27,17,Color("c6d0bc"))
 	button(box,t("battle_details"),38,535,964,44,show_battle_details)
 	button(box,t("inspect_battle"),38,599,472,56,inspect_battle,true)
-	button(box,t("again"),530,599,472,56,show_camp_choice)
+	button(box,t("again"),530,599,472,56,func():HistoricalIntro.open(self))
 func show_battle_details():
 	if not engine.state.finished:return
 	var box=modal_base(1040,650)
@@ -838,7 +839,8 @@ func _notification(what):
 		if music_player!=null:music_player.stream_paused=false
 	if what in [NOTIFICATION_APPLICATION_PAUSED,NOTIFICATION_APPLICATION_FOCUS_OUT] and playing and saver!=null and not export_in_progress:persist()
 	if what==NOTIFICATION_WM_GO_BACK_REQUEST:
-		if is_instance_valid(modal) and playing:close_modal()
+		if is_instance_valid(modal_box) and modal_box.has_node("Introduction1870"):show_menu()
+		elif is_instance_valid(modal) and playing:close_modal()
 		else:show_menu()
 
 func human_turn() -> bool:return not ai_enabled or int(engine.state.side)==int(engine.state.human_side)
@@ -876,7 +878,7 @@ func resume_scenario():
 func show_camp_choice():
 	var box=modal_base(874,660);logo(box,48,8,778,100)
 	label(box,t("scenario_title"),40,120,794,36,28,GOLD,true).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
-	label(box,"V43 · Frœschwiller-Wœrth",40,180,794,48,30,GOLD,true).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	label(box,"V70 · Frœschwiller-Wœrth",40,180,794,48,30,GOLD,true).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	label(box,"95 000 Allemands · 50 unités · 20 tours · variante B expérimentale",40,245,794,38,18).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	label(box,t("difficulty_title"),40,291,794,30,22,GOLD).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	var levels=["medium","hard"]
@@ -889,6 +891,7 @@ func show_camp_choice():
 	else:label(box,t("choose_detail"),40,449,794,25,18).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	button(box,t("choose_france"),40,488,385,56,func():new_game(0),true)
 	button(box,t("choose_germany"),449,488,385,56,func():new_game(1),true)
+	label(box,"Présentation BD de cette bataille non fournie dans cet essai.",40,549,794,25,16,Color("b7c8bf")).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	button(box,t("menu"),40,581,794,48,show_menu)
 func _process(delta: float):
 	if engine==null or map==null:return

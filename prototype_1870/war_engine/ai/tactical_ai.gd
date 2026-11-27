@@ -1,8 +1,9 @@
 extends RefCounted
 # Decisions consume a sanitized observation only. No access to the live engine.
 const Rules=preload("res://war_engine/ai/planning_engine.gd")
+const FrenchBatteries=preload("res://war_engine/ai/french_batteries.gd")
 const FrenchArtillery=preload("res://war_engine/ai/french_artillery.gd")
-const FrenchNormal4316=preload("res://war_engine/ai/v4316_ai.gd")
+const FrenchNormal4317=preload("res://war_engine/ai/v4317_ai.gd")
 const FrenchDefence=preload("res://war_engine/ai/french_defence.gd")
 const Normal4311=preload("res://war_engine/ai/v4311_ai.gd")
 const Legacy=preload("res://war_engine/ai/legacy_ai.gd")
@@ -31,10 +32,10 @@ var hard_defensive=false
 var defence
 func choose(view: Dictionary) -> Dictionary:
 	var difficulty=str(view.state.get("ai_difficulty","legacy"))
-	# The French Normal baseline is exactly the approved V43.16 Hard policy.
+	# The French Normal baseline is exactly the approved V43.17 Hard policy.
 	# Prussian Normal retains its V43.11 policy below. No rule or stat override.
 	if difficulty=="medium" and int(view.state.side)==0 and str(view.pack.id)=="regimental_trial_v43":
-		if french_normal_brain==null:french_normal_brain=FrenchNormal4316.new()
+		if french_normal_brain==null:french_normal_brain=FrenchNormal4317.new()
 		french_normal_brain.profiles=profiles
 		french_normal_brain.relocation=relocation.duplicate(true)
 		var french_view=view.duplicate(true);french_view.state.ai_difficulty="hard"
@@ -167,6 +168,7 @@ func choose(view: Dictionary) -> Dictionary:
 		# A battery with a useful lane waits for its next shot instead of using its
 		# remaining AP to limber and drift toward the objective like infantry.
 		if (offensive or hard_defensive) and not withdrawing and original_deployed and current_fire>0 and e.enemy_distance(n,start)>1 and current_threat<maxf(100,float(u.strength)*0.35) and (not has_bridge_mission(e,n) or current_bridge>0):continue
+		if hard_defensive and e.artillery(n) and original_deployed and current_fire>0 and not withdrawing and (FrenchBatteries.nearest(e,defence,start)>=3 or FrenchBatteries.screen(e,defence,n,start)):continue
 		if original_deployed:
 			if int(u.ap)<=int(e.weapon(n).deployment_ap):continue
 			u.deployed=false;u.ap-=int(e.weapon(n).deployment_ap)
@@ -502,7 +504,7 @@ func mission_goal(e,n: int,fields: Dictionary) -> int:
 	# Silent French guns follow an observed engagement supported by infantry,
 	# instead of remaining assigned to an unproductive objective sector.
 	if hard_defensive and e.artillery(n) and not defence.needs_withdrawal(e,n,e.unit_cell(e.state.units[n])):
-		var firing_support=battery_support_goal(e,n)
+		var firing_support=FrenchBatteries.anchor(e,defence,n)
 		if firing_support>=0:return firing_support
 	if hard_defensive and defence!=null and defence.goal(n)>=0:return defence.goal(n)
 	if hard_offensive and e.artillery(n):

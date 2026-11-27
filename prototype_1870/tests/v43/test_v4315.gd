@@ -71,7 +71,7 @@ func _initialize():
    if side==0 and mode=="hard":continue
    var world=Rules.new(data);world.new_game(1,mode);world.state.seed=18704315;world.state.ai_style=0;world.state.side=side;world.refresh_intel();view=world.observation(side)
    var reference=old_bot();var reference_view=view.duplicate(true)
-   if side==0 and mode=="medium":reference=load("res://war_engine/ai/v4316_ai.gd").new();reference.profiles=profiles;reference_view.state.ai_difficulty="hard"
+   if side==0 and mode=="medium":reference=load("res://war_engine/ai/v4317_ai.gd").new();reference.profiles=profiles;reference_view.state.ai_difficulty="hard"
    check(bot().choose(view)==reference.choose(reference_view),"approved Normal policy side %d mode %s"%[side,mode])
  # Save/reload has no new mandatory AI state or hidden information.
  e=Rules.new(data);e.new_game(1,"hard");var store=Store.new("user://v4315.json","v4315");var resumed=Rules.new(data)

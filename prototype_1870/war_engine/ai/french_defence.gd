@@ -1,7 +1,9 @@
 extends RefCounted
+const Batteries=preload("res://war_engine/ai/french_batteries.gd")
 const Support=preload("res://war_engine/core/support.gd")
 # Tactical priorities only. Receives the same sanitized planning engine as the AI.
 # No live state, unseen enemy, combat modifier or persistent save field.
+var battery_screens: Dictionary={}
 var rear_targets: Dictionary={}
 var guards: Dictionary={}
 var assignments: Dictionary={}
@@ -18,7 +20,7 @@ var threats: Array=[]
 var origin_links: Dictionary={}
 func prepare(e,links: Dictionary={}):
  assignments={};reserves={};priorities={};nearest={};goals=e.objective_definitions();garrisons={}
- networks=links;blockers={};exits={};risks={};threats=[];origin_links={};rear_targets={};guards={}
+ networks=links;blockers={};exits={};risks={};threats=[];origin_links={};rear_targets={};guards={};battery_screens={}
  if not networks.is_empty():
   blockers=Support.link_blockers(e,int(e.state.side))
   for n in range(e.state.units.size()):
@@ -80,6 +82,7 @@ func prepare(e,links: Dictionary={}):
   if chosen>=0:assignments[n]=chosen
  protect_rear(e)
  intercept_penetrations(e)
+ Batteries.protect(e,self)
 
 # These are planning estimates from observed enemies, not changes to ZOC,
 # logistics or movement. The caller still uses reach()/step_cost() for each order.
@@ -247,7 +250,11 @@ func movement(e,n: int,start: int,dest: int,anchor: int,current_fire: float,next
  score+=escape_value
  if u.get("entrenched",false) and not restores_link and not withdrawing:score-=70.0
  if next_fire>0 and current_fire<=0:score+=40.0
+ if battery_screens.has(n):score+=float(e.distance(start,battery_screens[n])-e.distance(dest,battery_screens[n]))*90.0
  if e.artillery(n) and not withdrawing:
+  score+=Batteries.position_value(e,self,n,dest)-Batteries.position_value(e,self,n,start)
+  # An unproductive move is less useful than retaining a firing position.
+  if current_fire>0 and next_fire<=current_fire and not restores_link:score-=160.0
   if current_fire<=0 and next_fire>0:score+=340.0
   if next_fire>0 and int(u.ap)>=int(e.weapon(n).ap)+int(e.weapon(n).deployment_ap):score+=70.0
   if enemy_distance(e,dest)<=2:score-=160.0
@@ -314,15 +321,4 @@ func intercept_penetrations(e):
   if selected>=0:guards[selected]=target;assignments[selected]=target;reserves[selected]=false;assigned_strength+=float(e.state.units[selected].strength)
 
 func battery_exposed(e,n: int,pos: int) -> bool:
- for j in threats:
-  var foe=e.state.units[j]
-  if e.headquarters(j) or float(foe.strength)<float(foe.initial_strength)*0.45:continue
-  var enemy=e.unit_cell(foe);var distance=e.distance(pos,enemy)
-  if distance> (4 if e.cavalry(j) else 3):continue
-  var screened=false
-  for ally in origin_links:
-   if e.artillery(ally) or e.cavalry(ally) or e.headquarters(ally) or e.state.units[ally].morale=="routed":continue
-   var cell=int(origin_links[ally].pos)
-   if e.distance(pos,cell)<=2 and e.distance(cell,enemy)<distance:screened=true;break
-  if not screened:return true
- return false
+ return Batteries.urgent(e,self,n,pos)

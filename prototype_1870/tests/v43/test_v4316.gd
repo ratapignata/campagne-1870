@@ -119,7 +119,7 @@ func _initialize():
    if side==0 and mode=="hard":continue
    world=Rules.new(data);world.new_game(1,mode);world.state.side=side;world.state.seed=18704316;world.state.ai_style=0;world.refresh_intel()
    var current=bot();var prior=old_bot();view=world.observation(side)
-   if side==0 and mode=="medium":prior=load("res://war_engine/ai/v4316_ai.gd").new();prior.profiles=profiles
+   if side==0 and mode=="medium":prior=load("res://war_engine/ai/v4317_ai.gd").new();prior.profiles=profiles
    for step in range(4):
     var reference_view=view.duplicate(true)
     if side==0 and mode=="medium":reference_view.state.ai_difficulty="hard"

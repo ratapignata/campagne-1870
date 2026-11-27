@@ -1,3 +1,19 @@
+# V70 — France, Graphisme12 et introduction BD 2
+
+Nouvelle branche `v70-france-artillerie-bd2`, basée sur la dernière V43.17. **France Normal = ancienne France Difficile V43.17**. France Difficile reçoit trois améliorations : positionnement, stabilité et protection locale des batteries. Les doctrines prussiennes restent celles de V43.17.
+
+- **[Télécharger l’APK V70 — environ 97 Mo](https://raw.githubusercontent.com/ratapignata/campagne-1870/v70-france-artillerie-bd2/releases/1870_V70_Graphisme12_BD2.apk)**
+- [Sources complètes ZIP](releases/1870_V70_Graphisme12_BD2_Sources.zip)
+- [Version et installation](releases/VERSION_V70.md), [comparaison tactique](releases/COMPARAISON_IA_V70.md), [tests réellement exécutés](releases/TESTS_V70.md), [captures](prototype_1870/captures/v70/README.md).
+
+Introduction BD **2 exacte**, six illustrations et textes développés ; aucune substitution BD 3. La BD générale précède une nouvelle partie ; une sauvegarde se reprend directement. Graphisme12 conservé, Chassepot actif quatre hexagones/riposte trois, Dreyse deux ; règles, coûts, effectifs, vingt tours et score inchangés.
+
+Installer **par-dessus V43.17 Graphisme12 sans désinstaller** (même paquet/certificat, code Android 15). Une partie chargée garde son mode enregistré ; pour essayer le Normal de référence, commencer une nouvelle partie Prussiens / Normal. Les anciennes branches, la version classique et l’application BD historique restent préservées.
+
+Comparaison des deux politiques sur les huit premiers tours chronologiques du scénario réel de 95 unités, pas une nouvelle bataille complète à vingt tours. APK compilé et signé ; aucun essai physique ou émulateur Android. Voir les mesures et limites dans les rapports. Aucune fusion avec main.
+
+---
+
 # V43.17 — France renforcée, essai Chassepot 4, Graphisme12
 
 Nouvelle branche expérimentale `v43-17-france-difficile`, basée sur V43.16 + Graphisme12. Le Normal français reprend la politique de l’ancienne France Difficile. Le nouveau Difficile prépare davantage ses positions, protège ses arrières et donne priorité à ses canons. Portée active du Chassepot portée à quatre hexagones dans les deux modes, ripostes conservées à trois. Aucun bonus de dégâts/PA/renseignements ; coûts, vingt tours, objectifs et score conservés.

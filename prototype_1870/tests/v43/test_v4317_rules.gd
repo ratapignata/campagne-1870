@@ -1,5 +1,5 @@
 extends "res://tests/test_ai_compat0833.gd"
-const Frozen=preload("res://war_engine/ai/v4316_ai.gd")
+const Frozen=preload("res://war_engine/ai/v4317_ai.gd")
 func sample(mode: String="hard",human: int=1):
  var p=data.duplicate(true);p.rules.support.enabled=false;p.rules.fog.enabled=false;p.map.tiles.fill("plain");p.map.elevations.fill(0);p.map.river_edges=[];p.units=[]
  for id in ["fr_9","pru_36"]:
