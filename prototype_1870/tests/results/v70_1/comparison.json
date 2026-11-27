@@ -1,0 +1,248 @@
+[
+  {
+    "mode": "v70",
+    "cannon_shots": 5,
+    "cannon_direct_losses": 257,
+    "gun_crew_losses": 61,
+    "guns": [
+      {
+        "unit": "art_fr_Ducrot0",
+        "shots": 1,
+        "direct_losses": 13,
+        "shot_turns": [
+          4
+        ],
+        "positions": [
+          [
+            10,
+            7
+          ]
+        ],
+        "strength": 250,
+        "crew_losses": 0,
+        "alive": true,
+        "pending": false
+      },
+      {
+        "unit": "art_fr_Pell\u00e90",
+        "shots": 2,
+        "direct_losses": 160,
+        "shot_turns": [
+          2,
+          3
+        ],
+        "positions": [
+          [
+            13,
+            9
+          ],
+          [
+            13,
+            9
+          ]
+        ],
+        "strength": 233,
+        "crew_losses": 17,
+        "alive": true,
+        "pending": false
+      },
+      {
+        "unit": "art_fr_Raoult0",
+        "shots": 2,
+        "direct_losses": 84,
+        "shot_turns": [
+          3,
+          4
+        ],
+        "positions": [
+          [
+            15,
+            6
+          ],
+          [
+            15,
+            6
+          ]
+        ],
+        "strength": 250,
+        "crew_losses": 0,
+        "alive": true,
+        "pending": false
+      },
+      {
+        "unit": "art_fr_Lartigue0",
+        "shots": 0,
+        "direct_losses": 0,
+        "shot_turns": [],
+        "positions": [],
+        "strength": 206,
+        "crew_losses": 44,
+        "alive": true,
+        "pending": false
+      },
+      {
+        "unit": "art_fr_Conseil-Dumesnil0",
+        "shots": 0,
+        "direct_losses": 0,
+        "shot_turns": [],
+        "positions": [],
+        "strength": 250,
+        "crew_losses": 0,
+        "alive": true,
+        "pending": false
+      },
+      {
+        "unit": "reserve_art_00",
+        "shots": 0,
+        "direct_losses": 0,
+        "shot_turns": [],
+        "positions": [],
+        "strength": 250,
+        "crew_losses": 0,
+        "alive": true,
+        "pending": false
+      }
+    ],
+    "french_cumulative_losses": 2222,
+    "prussian_cumulative_losses": 1141,
+    "prisoners": [
+      0,
+      0
+    ],
+    "objectives": {
+      "elsasshausen": 0,
+      "froeschwiller": 0,
+      "niederwald": 0
+    },
+    "elapsed_ms": 729377,
+    "checks": 591
+  },
+  {
+    "mode": "v701",
+    "cannon_shots": 7,
+    "cannon_direct_losses": 357,
+    "gun_crew_losses": 32,
+    "guns": [
+      {
+        "unit": "art_fr_Ducrot0",
+        "shots": 2,
+        "direct_losses": 31,
+        "shot_turns": [
+          3,
+          4
+        ],
+        "positions": [
+          [
+            11,
+            7
+          ],
+          [
+            11,
+            7
+          ]
+        ],
+        "strength": 250,
+        "crew_losses": 0,
+        "alive": true,
+        "pending": false
+      },
+      {
+        "unit": "art_fr_Pell\u00e90",
+        "shots": 3,
+        "direct_losses": 241,
+        "shot_turns": [
+          2,
+          3,
+          4
+        ],
+        "positions": [
+          [
+            13,
+            9
+          ],
+          [
+            13,
+            9
+          ],
+          [
+            13,
+            9
+          ]
+        ],
+        "strength": 218,
+        "crew_losses": 32,
+        "alive": true,
+        "pending": false
+      },
+      {
+        "unit": "art_fr_Raoult0",
+        "shots": 2,
+        "direct_losses": 85,
+        "shot_turns": [
+          3,
+          4
+        ],
+        "positions": [
+          [
+            15,
+            6
+          ],
+          [
+            15,
+            6
+          ]
+        ],
+        "strength": 250,
+        "crew_losses": 0,
+        "alive": true,
+        "pending": false
+      },
+      {
+        "unit": "art_fr_Lartigue0",
+        "shots": 0,
+        "direct_losses": 0,
+        "shot_turns": [],
+        "positions": [],
+        "strength": 250,
+        "crew_losses": 0,
+        "alive": true,
+        "pending": false
+      },
+      {
+        "unit": "art_fr_Conseil-Dumesnil0",
+        "shots": 0,
+        "direct_losses": 0,
+        "shot_turns": [],
+        "positions": [],
+        "strength": 250,
+        "crew_losses": 0,
+        "alive": true,
+        "pending": false
+      },
+      {
+        "unit": "reserve_art_00",
+        "shots": 0,
+        "direct_losses": 0,
+        "shot_turns": [],
+        "positions": [],
+        "strength": 250,
+        "crew_losses": 0,
+        "alive": true,
+        "pending": false
+      }
+    ],
+    "french_cumulative_losses": 1744,
+    "prussian_cumulative_losses": 1237,
+    "prisoners": [
+      0,
+      0
+    ],
+    "objectives": {
+      "elsasshausen": 0,
+      "froeschwiller": 0,
+      "niederwald": 0
+    },
+    "elapsed_ms": 804380,
+    "checks": 617
+  }
+]

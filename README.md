@@ -1,3 +1,17 @@
+# V70.1 — davantage de tirs d’artillerie française
+
+France **Difficile** : dégagement des lignes de tir et recherche de positions utiles. **Normal français et les deux IA prussiennes conservés**, avec Graphisme 12 et l’introduction BD 2 exacte de V70. Aucun changement des règles de combat, des coûts ou des portées.
+
+- **[Télécharger l’APK V70.1 — environ 97 Mo](https://raw.githubusercontent.com/ratapignata/campagne-1870/v70-1-feu-artillerie/releases/1870_V70_1_Graphisme12_BD2.apk)**
+- [Sources complètes ZIP](releases/1870_V70_1_Graphisme12_BD2_Sources.zip)
+- [Version et installation](releases/VERSION_V70_1.md), [comparaison mesurée](releases/COMPARAISON_IA_V70_1.md), [tests](releases/TESTS_V70_1.md), [captures réelles](prototype_1870/captures/v701/README.md).
+
+Comparaison depuis le même état, avec adversaire actif, aux tours **2 à 4** : **7 tirs de canon contre 5** pour V70 Difficile, 357 pertes directes contre 257. Une seule graine : ce gain de 40 % ne garantit pas le résultat d’une bataille complète. Pas de nouvelle simulation à vingt tours ni de test physique ou émulateur Android.
+
+Installer **par-dessus V70 sans désinstaller** : même application Graphisme 12 et certificat, code Android 16. Pour essayer le changement : jouer les Prussiens en Difficile. Sauvegardes conservées. Branche séparée `v70-1-feu-artillerie`, aucune fusion avec main ou les versions précédentes.
+
+---
+
 # V70 — France, Graphisme12 et introduction BD 2
 
 Nouvelle branche `v70-france-artillerie-bd2`, basée sur la dernière V43.17. **France Normal = ancienne France Difficile V43.17**. France Difficile reçoit trois améliorations : positionnement, stabilité et protection locale des batteries. Les doctrines prussiennes restent celles de V43.17.

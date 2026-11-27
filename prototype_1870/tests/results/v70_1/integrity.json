@@ -1,0 +1,7 @@
+{
+  "base_commit": "bab7655",
+  "scenario_sha256": "c1b927a7c29e8a63b403df53ea6ecd00c06a0794b7fcaa8c7bd8cd8191a3faa1",
+  "unchanged_core_platform_pack_assets_bd_files": 149,
+  "v70_french_protection_and_normal_helpers_unchanged": true,
+  "frozen_v70_test_reference_exact_except_preloads": true
+}

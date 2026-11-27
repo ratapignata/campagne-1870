@@ -1,0 +1,44 @@
+[
+  {
+    "test": "v43/test_v701",
+    "exit": 0,
+    "passed": true,
+    "seconds": 5.614,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nMASKED BATTERY V70=0 V70.1=1\nDOUBLE SCREEN V70=0 V70.1=1\nRESERVED SETUP {\"kind\":\"move\",\"path\":[160,190,220],\"unit\":\"art_fr_Pell\u00e90\"}\nV70.1 ARTILLERY 44/44\n"
+  },
+  {
+    "test": "v43/test_v70",
+    "exit": 0,
+    "passed": true,
+    "seconds": 3.09,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV70 ARTILLERY/NORMAL 26/26\n"
+  },
+  {
+    "test": "v43/test_v4317_rules",
+    "exit": 0,
+    "passed": true,
+    "seconds": 3.468,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43.17 RULES 126/126\n"
+  },
+  {
+    "test": "graphics/test_contract",
+    "exit": 0,
+    "passed": true,
+    "seconds": 1.491,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nGRAPHICS CONTRACT 2433/2433\n"
+  },
+  {
+    "test": "intro_bd/test_resume_direct",
+    "exit": 0,
+    "passed": true,
+    "seconds": 2.016,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nDIRECT RESUME 9/9\n"
+  },
+  {
+    "test": "v43_export/test_export",
+    "exit": 0,
+    "passed": true,
+    "seconds": 2.726,
+    "output": "Godot Engine v4.5.1.stable.official.f62fdbde1 - https://godotengine.org\n\nV43 EXPORT 28/28\n"
+  }
+]

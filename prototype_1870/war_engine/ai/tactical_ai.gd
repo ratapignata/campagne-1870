@@ -1,6 +1,7 @@
 extends RefCounted
 # Decisions consume a sanitized observation only. No access to the live engine.
 const Rules=preload("res://war_engine/ai/planning_engine.gd")
+const FrenchFirePlan=preload("res://war_engine/ai/french_fire_plan.gd")
 const FrenchBatteries=preload("res://war_engine/ai/french_batteries.gd")
 const FrenchArtillery=preload("res://war_engine/ai/french_artillery.gd")
 const FrenchNormal4317=preload("res://war_engine/ai/v4317_ai.gd")
@@ -73,6 +74,13 @@ func choose(view: Dictionary) -> Dictionary:
 	if hard_defensive:
 		var battery_order=FrenchArtillery.choose(e,defence)
 		if not battery_order.is_empty():return battery_order
+		battery_order=FrenchFirePlan.clear_lane(e,defence)
+		if battery_order.is_empty():battery_order=FrenchFirePlan.relocation(e,defence)
+		if not battery_order.is_empty():
+			if battery_order.kind=="limber":
+				var gun=e.unit_index(battery_order.unit)
+				relocation={"unit":battery_order.unit,"path":battery_order.path.duplicate(),"turn":e.state.turn,"side":e.state.side,"ap":int(e.state.units[gun].ap)-int(e.weapon(gun).deployment_ap)}
+			return battery_order
 	operation_goals={}
 	if hard_offensive:
 		for k in range(e.state.units.size()):

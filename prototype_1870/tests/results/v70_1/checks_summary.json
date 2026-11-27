@@ -1,0 +1,21 @@
+{
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "headless_suites": 36,
+  "headless_checks": 6653,
+  "new_render_ui_checks": 8,
+  "actual_old_save_checks": 272,
+  "current_technical_checks": 6933,
+  "native_reference_replay_checks": 2170,
+  "cold_repeated_checks": 2666,
+  "new_window_turns": [
+    2,
+    4
+  ],
+  "new_window_declared_units": 95,
+  "new_complete_20_turn_battle": false,
+  "new_complete_8_turn_battle": false,
+  "android_device_tested": false,
+  "android_emulator_tested": false,
+  "window_checks": 1208,
+  "common_starting_state_hash": "034ce798907c5662a238c30df19867db42038565424622b46ccf7c82a00b381c"
+}

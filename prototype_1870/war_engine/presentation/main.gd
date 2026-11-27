@@ -661,7 +661,7 @@ func export_current_save():
 	# A menu pauses command dispatch. Capture once, before the external picker opens.
 	var snapshot=saver.export_snapshot(engine,{"version":ProjectSettings.get_setting("application/config/version",""),"created_utc":Time.get_datetime_string_from_system(true),"objectives":engine.objective_definitions().duplicate(true),"ai_relocation":ai.relocation.duplicate(true) if ai_thread==null else {},"ai_pending":ai_pending.duplicate(true) if ai_thread==null else {},"ai_worker_busy":ai_thread!=null})
 	if snapshot.is_empty():show_export_notice(false);return
-	var filename="1870_V70_T%02d_%s.json"%[int(engine.state.turn),Time.get_datetime_string_from_system(true).replace(":","-")]
+	var filename="1870_V70_1_T%02d_%s.json"%[int(engine.state.turn),Time.get_datetime_string_from_system(true).replace(":","-")]
 	export_in_progress=true
 	if DisplayServer.has_feature(DisplayServer.FEATURE_NATIVE_DIALOG_FILE):
 		var error=DisplayServer.file_dialog_show("Exporter la sauvegarde",OS.get_system_dir(OS.SYSTEM_DIR_DOWNLOADS),filename,false,DisplayServer.FILE_DIALOG_MODE_SAVE_FILE,PackedStringArray(["*.json"]),complete_save_export.bind(snapshot))
@@ -878,7 +878,7 @@ func resume_scenario():
 func show_camp_choice():
 	var box=modal_base(874,660);logo(box,48,8,778,100)
 	label(box,t("scenario_title"),40,120,794,36,28,GOLD,true).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
-	label(box,"V70 · Frœschwiller-Wœrth",40,180,794,48,30,GOLD,true).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	label(box,"V70.1 · Frœschwiller-Wœrth",40,180,794,48,30,GOLD,true).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	label(box,"95 000 Allemands · 50 unités · 20 tours · variante B expérimentale",40,245,794,38,18).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	label(box,t("difficulty_title"),40,291,794,30,22,GOLD).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	var levels=["medium","hard"]

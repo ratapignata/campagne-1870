@@ -1,7 +1,7 @@
 {
   "title": "1870",
   "subtitle": "FRŒSCHWILLER–WŒRTH",
-  "badge": "V70 · GRAPHISMES 12 · INTRODUCTION BD 2",
+  "badge": "V70.1 · GRAPHISMES 12 · INTRODUCTION BD 2",
   "start": "Commencer la bataille",
   "continue": "Continuer",
   "menu": "Menu",
@@ -333,7 +333,7 @@
   "difficulty_legacy": "IA précédente",
   "difficulty_easy_detail": "Un adversaire attentif au terrain, aux objectifs et à l’emploi de ses armes.",
   "difficulty_medium_detail": "France : défense V43.17 conservée. Prusse : offensive Normal conservée.",
-  "difficulty_hard_detail": "France : canons mieux placés, stables et protégés. Prusse : offensive Difficile conservée.",
+  "difficulty_hard_detail": "France : fenêtres de tir des canons, positions et protection. Prusse : offensive Difficile conservée.",
   "ammo_0": "Abondantes",
   "ammo_1": "Correctes",
   "ammo_2": "Faibles",

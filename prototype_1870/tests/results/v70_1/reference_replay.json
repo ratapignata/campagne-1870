@@ -1,0 +1,7 @@
+{
+  "checks": 2170,
+  "failures": 0,
+  "native_orders_and_combat_reproduced": true,
+  "all_95_final_positions_and_forces_match": true,
+  "human_game_replay": false
+}
